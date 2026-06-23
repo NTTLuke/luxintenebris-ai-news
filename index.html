@@ -1,33 +1,86 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Daily News • 2026-06-22</title>
-    <style>
-        body { font-family: system-ui, -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #111; }
-        .card { border: 1px solid #ddd; padding: 24px; margin: 20px 0; border-radius: 12px; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luke Daily AI News</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      text-align: center;
+      padding: 40px 0 60px;
+    }
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 700;
+      margin: 0 0 16px;
+      letter-spacing: -0.04em;
+    }
+    .hero p {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 420px;
+      margin: 0 auto 40px;
+    }
+    .nav-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .nav-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.2s ease;
+      display: block;
+    }
+    .nav-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+    .nav-card h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+    .nav-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+  </style>
 </head>
 <body>
-    <h1>AI Daily News</h1>
-    <p><strong>22 June 2026</strong></p>
-    
-    <div class="card">
-        <h2><a href="technical.html">Technical Recap</a></h2>
-        <p>Agenti, LLM, ricerca e sviluppi tecnici</p>
+  <div class="container">
+    <div class="hero">
+      <div class="brand" style="margin-bottom: 16px;">DAILY BRIEFING</div>
+      <h1>Luke Daily<br>AI News</h1>
+      <p>Curated technical, general & frontier model updates every day</p>
     </div>
-    
-    <div class="card">
-        <h2><a href="general.html">General News</a></h2>
-        <p>Prodotti, industria e notizie generali</p>
+
+    <div class="nav-cards">
+      <a href="technical.html" class="nav-card">
+        <h3>Technology</h3>
+        <p>Models, papers, benchmarks, infrastructure & releases</p>
+      </a>
+      <a href="general.html" class="nav-card">
+        <h3>General</h3>
+        <p>Business, funding, policy, startups & industry moves</p>
+      </a>
+      <a href="models.html" class="nav-card">
+        <h3>Models</h3>
+        <p>New open-source weights & frontier model launches</p>
+      </a>
     </div>
-    
-    <footer style="margin-top: 60px; color: #666; font-size: 0.9em;">
-        Generato automaticamente • <a href="https://github.com/nttluke/luxintenebris-ai-news">GitHub</a>
+
+    <footer style="margin-top: 100px;">
+      Updated daily • Powered by Hermes Agent
     </footer>
+  </div>
 </body>
 </html>
