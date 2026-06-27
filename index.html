@@ -1,33 +1,565 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Daily News • 2026-06-26</title>
-    <style>
-        body { font-family: system-ui, -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #111; }
-        .card { border: 1px solid #ddd; padding: 24px; margin: 20px 0; border-radius: 12px; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lux in Tenebris — AI dispatches · 27 June 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>AI Daily News</h1>
-    <p><strong>26 June 2026</strong></p>
+  <div class="container">
+
+    <header class="masthead">
+      <div class="topline"></div>
+      <div class="ears">
+        <span class="left">Est. MMXXVI</span>
+        <span class="right">No. 9</span>
+      </div>
+      <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>27 June 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>63 stories</span>
+      </div>
+      <hr class="rule-thin">
+    </header>
+
     
-    <div class="card">
-        <h2><a href="technical.html">Technical Recap</a></h2>
-        <p>Agenti, LLM, ricerca e sviluppi tecnici</p>
+
+    <div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/OpenAI/status/2070555272230384038" target="_blank" rel="noopener">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Top Story</p>
+        <h1>OpenAI Launches GPT-5.6 Family: Sol, Terra, Luna</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">OpenAI released GPT-5.6 Sol (new flagship), Terra (GPT-5.5-level at ~2x lower cost), and Luna (fastest/cheapest). Sol sets a new SOTA on Terminal-Bench 2.1 for complex agentic workflows with robust cyber-risk protections.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-06-26</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
     </div>
-    
-    <div class="card">
-        <h2><a href="general.html">General News</a></h2>
-        <p>Prodotti, industria e notizie generali</p>
+  </a>
+</article>
+
     </div>
-    
-    <footer style="margin-top: 60px; color: #666; font-size: 0.9em;">
-        Generato automaticamente • <a href="https://github.com/nttluke/luxintenebris-ai-news">GitHub</a>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/sama/status/2070607488274358364" target="_blank" rel="noopener">
+    <h3>U.S. Government Forces Limited Preview for GPT-5.6 Launch</h3>
+    <p>At the request of the U.S. government, OpenAI shifted the GPT-5.6 rollout from a wide open launch to a limited preview for select trusted partners. Sam Altman emphasized iterative deployment and willingness to collaborate with regulators.</p>
+    <p class="byline"><span class="src">OpenAI / Sam Altman</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://deploymentsafety.openai.com/gpt-5-6-preview" target="_blank" rel="noopener">
+    <h3>GPT-5.6 Preview System Card</h3>
+    <p>OpenAI published the system card for GPT-5.6 Preview, a family of three models (Sol, Terra, Luna) rated High in Biological/Chemical and Cybersecurity capability under the Preparedness Framework — the first time smaller/faster members of a model family have received High designation. Initial deployment is a limited preview for trusted partners shared with the U.S. government, with 700,000+ A100e GPU hours of safeguard testing.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/TechCrunch/status/2070577133790126237" target="_blank" rel="noopener">
+    <h3>TechCrunch: GPT-5.6 Restricted Launch Sparks Safety-Access Debate</h3>
+    <p>TechCrunch reported on OpenAI's restricted GPT-5.6 rollout, noting that OpenAI stated such access limits 'shouldn't be the norm.' Coverage highlights robust safety measures alongside growing debate about government involvement in frontier model deployment.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-06-26</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://huggingface.co/papers/2606.26300" target="_blank" rel="noopener">
+    <h4>The Verification Horizon: No Silver Bullet for Coding Agent Rewards</h4>
+    <p>For modern coding agents, verifying solutions is harder than generating them. Targeted adaptive verification suppresses reward hacking but no static verifier remains effective as generator capability grows.</p>
+    <p class="byline"><span class="src">HF</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2606.27377" target="_blank" rel="noopener">
+    <h4>DanceOPD: On-Policy Generative Field Distillation</h4>
+    <p>ByteDance-Seed proposes on-policy generative field distillation unifying T2I, local edit, and global edit in flow-matching models. Achieves +8.1% GEditBench in T2I+edit and +16.1% in local+global at ~10x higher training efficiency.</p>
+    <p class="byline"><span class="src">HF</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="#" target="_blank" rel="noopener">
+    <h4>AutoCog: Automated Cognitive Scientist</h4>
+    <p>Fully autonomous agentic-AI system that builds cognitive science theories as executable models, designs discriminating experiments, and collects data online. Generated theories outperformed established seeded theories.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://cascading-feats.github.io/" target="_blank" rel="noopener">
+    <h4>Cascading Linear Features for Sycophancy Detection and Steering</h4>
+    <p>Iterative data generation pipeline isolates cascading linear features responsible for sycophantic behavior. Matches or outperforms LLM-as-a-judge on detection and steering with lower compute and stronger interpretability.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2606.26790" target="_blank" rel="noopener">
+    <h4>OPID: On-Policy Skill Distillation for Agentic RL</h4>
+    <p>Extracts hierarchical skill supervision from completed on-policy trajectories. Demonstrates sample-efficiency gains on ALFWorld, WebShop, and search-based QA over outcome-only RL baselines.</p>
+    <p class="byline"><span class="src">HF</span> · 2026-06-26</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/NeoAIForecast/article/2070438384913572071" target="_blank" rel="noopener">
+    <h4>DeepReinforce releases Ornith-1.0 family (9B/31B/35B MoE/397B)</h4>
+    <p>New open-weights agentic coding model family. All 4 sizes trending on HuggingFace on 2026-06-27.</p>
+    <p class="byline"><span class="src">X/Twitter</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/WeiboAI/VibeThinker-3B" target="_blank" rel="noopener">
+    <h4>WeiboAI VibeThinker-3B — frontier math+code parity at 3B parameters</h4>
+    <p>MIT-licensed Qwen2.5-Coder-3B finetune claiming frontier math+code parity at just 3B parameters.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-06-27</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B" target="_blank" rel="noopener">
+    <h4>Qwen-AgentWorld-35B-A3B — new agent-specialized Qwen variant</h4>
+    <p>35B total / 3B active. Qwen agent-world specialist variant, trending on HuggingFace.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-06-27</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.cnbc.com/2026/06/26/sk-hynix-us-listing-ipo-hsbc-price-target.html" target="_blank" rel="noopener">
+    <h4>SK Hynix prepares U.S. listing — HSBC sees 20% premium in $29B Nasdaq ADR deal</h4>
+    <p>HSBC analysts project the South Korean memory giant's planned Nasdaq listing (ADR trading starting July 10) will raise ~$29.4 billion and unlock a 20% share-price premium, underscoring how HBM demand has turned memory suppliers into core AI-investment assets.</p>
+    <p class="byline"><span class="src">CNBC</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://marketchameleon.com/articles/b/2026/6/26/micron-ai-memory-revenue-boom" target="_blank" rel="noopener">
+    <h4>Micron Rides AI Memory Surge: Record Q2 FY2026 Revenue of $23.86B</h4>
+    <p>Micron reported record quarterly revenue of $23.86B in Q2 FY2026, driven by insatiable HBM and data-center memory demand; the blowout forecast sent shares surging and confirmed AI memory as the hottest slice of the semiconductor industry.</p>
+    <p class="byline"><span class="src">Market Chameleon</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.fool.com/investing/2026/06/26/openai-is-building-its-own-ai-chip-with-broadcom-s" target="_blank" rel="noopener">
+    <h4>OpenAI Is Building Its Own AI Chip With Broadcom</h4>
+    <p>OpenAI and Broadcom's custom 'Jalapeno' inference chip, designed for 10 GW of accelerator capacity between H2 2026 and 2029, is being analyzed as a potential structural headwind for Nvidia. Broadcom's AI-semiconductor revenue jumped 143% YoY to $10.8B.</p>
+    <p class="byline"><span class="src">The Motley Fool</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=GsqW5MPFajw" target="_blank" rel="noopener">
+    <h4>NVIDIA &amp; Coherent: Reindustrializing America for the AI Era</h4>
+    <p>NVIDIA CEO Jensen Huang joined Coherent CEO at Coherent's Sherman, Texas InP fab to announce major expansion of AI-optical infrastructure manufacturing, backed by NVIDIA's multi-billion dollar procurement commitment and a $50M CHIPS Act Letter of Intent.</p>
+    <p class="byline"><span class="src">NVIDIA</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://medium.com/@noahbean3396/qualcomm-investor-day-2026-what-the-dragonfly-roadmap-actually-means-8348a0e55b50" target="_blank" rel="noopener">
+    <h4>Qualcomm Investor Day 2026: Dragonfly Roadmap and $3.92B Modular Acquisition</h4>
+    <p>Qualcomm's June 24 Investor Day confirmed the $3.92B acquisition of AI-software firm Modular and outlined a physical-AI and agentic-AI roadmap spanning gigawatt-scale data centers, industrial AI, and 6G.</p>
+    <p class="byline"><span class="src">Medium</span> · 2026-06-26</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Agents</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.producthunt.com/posts/browseract" target="_blank" rel="noopener">
+    <h4>BrowserAct — web browser automation for AI agents</h4>
+    <p>Open tooling for AI agents to drive web browsers with full DOM/control plane access.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/inkeep/open-knowledge" target="_blank" rel="noopener">
+    <h4>OpenKnowledge — AI-first alternative to Obsidian and Notion</h4>
+    <p>Show HN project: open-source, AI-first knowledge management tool targeting Obsidian and Notion users.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/@viktor" target="_blank" rel="noopener">
+    <h4>Viktor.com — AI Employee for Slack and Teams</h4>
+    <p>AI employee that does real workflow work inside Slack and Teams, handling tasks end-to-end.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-06-27</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://thursdai.news/releases/2026-06" target="_blank" rel="noopener">
+    <h4>Agent Arena — public battleground for AI agents</h4>
+    <p>LMSys-style battle arena for AI agents, with users pitting agents against each other on real tasks.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-06-27</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/posts/gemini-spark" target="_blank" rel="noopener">
+    <h4>Gemini Spark — Google's 24/7 personal AI agent</h4>
+    <p>Google launches Gemini Spark as a persistent personal AI agent available 24/7 for task management.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-06-27</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents" target="_blank" rel="noopener">
+    <h4>Patronus AI lands $50M Series B to build 'digital worlds' that stress-test AI agents</h4>
+    <p>Ex-Meta AI researchers raised $50M Series B to build simulation environments for AI agent evaluation. Enterprise demand near-insatiable.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs" target="_blank" rel="noopener">
+    <h4>Adobe acquires AI image/video enhancement startup Topaz Labs</h4>
+    <p>Adobe acquires Topaz Labs, maker of popular AI-powered image and video enhancement tools (upscaling, sharpening, restoration). Expands Creative Cloud GenAI stack.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-06-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/06/26/ftc-gives-musk-the-ok-to-acquire-spacex-alumni-startup-mesh" target="_blank" rel="noopener">
+    <h4>FTC clears Musk/SpaceX acquisition of Mesh Optical Technologies</h4>
+    <p>FTC cleared Elon Musk's acquisition of Mesh Optical, a startup developing optical transceivers for data-center communications. Founded by three ex-SpaceX engineers.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-06-26</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">calesthio/OpenMontage</span>
+    <span class="t-meta">⭐22,457 (+3,434 today) · Python · Agentic video production system</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/google-labs-code/design.md" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">google-labs-code/design.md</span>
+    <span class="t-meta">⭐19,712 (+1,475 today) · TypeScript · Visual identity format spec for coding agents</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/apple/container" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">apple/container</span>
+    <span class="t-meta">⭐43,328 (+1,351 today) · Swift · Linux containers via lightweight VMs on Mac</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JCodesMore/ai-website-cloner-template" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">JCodesMore/ai-website-cloner-template</span>
+    <span class="t-meta">⭐20,689 (+1,024 today) · TypeScript · Clone any website with AI</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">garrytan/gstack</span>
+    <span class="t-meta">⭐115,971 (+767 today) · TypeScript · Claude Code setup: 23 opinionated tools</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/opendatalab/MinerU" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">opendatalab/MinerU</span>
+    <span class="t-meta">⭐69,782 (+644 today) · Python · PDFs/Docs → LLM-ready markdown</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">mukul975/Anthropic-Cybersecurity-Skills</span>
+    <span class="t-meta">⭐21,391 (+571 today) · Python · 817 cybersecurity skills for agents</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/NanmiCoder/MediaCrawler" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NanmiCoder/MediaCrawler</span>
+    <span class="t-meta">⭐52,934 (+398 today) · Python · Multi-platform social media crawler</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/xbtlin/ai-berkshire" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">xbtlin/ai-berkshire</span>
+    <span class="t-meta">⭐2,248 (+309 today) · Python · AI-era Berkshire investing on Claude Code</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/shanraisshan/claude-code-best-practice" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">shanraisshan/claude-code-best-practice</span>
+    <span class="t-meta">⭐60,774 (+287 today) · HTML · From vibe coding to agentic engineering</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mauriceboe/TREK" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">mauriceboe/TREK</span>
+    <span class="t-meta">⭐6,901 (+241 today) · TypeScript · Self-hosted trip planner with SSO</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/IceWhaleTech/CasaOS" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">IceWhaleTech/CasaOS</span>
+    <span class="t-meta">⭐34,931 (+223 today) · Go · Personal Cloud system</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/alibaba/page-agent" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">alibaba/page-agent</span>
+    <span class="t-meta">⭐19,965 (+163 today) · TypeScript · In-page GUI agent</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Free-TV/IPTV" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Free-TV/IPTV</span>
+    <span class="t-meta">⭐18,287 (+139 today) · Python · Free TV M3U playlist</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/aws/agent-toolkit-for-aws" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">aws/agent-toolkit-for-aws</span>
+    <span class="t-meta">⭐1,186 (+47 today) · Python · Official AWS MCP servers for agents</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">baidu/Unlimited-OCR</span>
+    <span class="t-meta">Baidu OCR model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">zai-org/GLM-5.2</span>
+    <span class="t-meta">Frontier open-weights, MIT, 744B/40B MoE, 1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">yuxinlu1/gemma-4-12B-agentic-GGUF</span>
+    <span class="t-meta">Gemma-4-12B agentic GGUF quant</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">empero-ai/Qwythos-9B-Claude-Mythos-5-GGUF</span>
+    <span class="t-meta">Qwen-based 9B, 1M ctx, GGUF</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">yuxinlu1/gemma-4-12B-coder-fable5-v1-GGUF</span>
+    <span class="t-meta">Gemma-4-12B coder GGUF</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">empero-ai/Qwythos-9B-Claude-Mythos-5-1M</span>
+    <span class="t-meta">9B dense, 1M ctx, unquantized</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Qwen/Qwen-AgentWorld-35B-A3B</span>
+    <span class="t-meta">35B/3B active, agent specialist</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/krea/Krea-2-Turbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">krea/Krea-2-Turbo</span>
+    <span class="t-meta">Krea image-gen v2 turbo</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/WeiboAI/VibeThinker-3B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">WeiboAI/VibeThinker-3B</span>
+    <span class="t-meta">MIT Qwen2.5-Coder-3B finetune, frontier at 3B</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/GLM-5.2-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">unsloth/GLM-5.2-GGUF</span>
+    <span class="t-meta">Unsloth GGUF quant of GLM-5.2</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/AnthropicAI/status/2070528971687755796" target="_blank" rel="noopener"><span class="qh-title">Anthropic: AI Economic Impact Measurable in Granular Real-Time Usage Data</span><span class="qh-src">Anthropic</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2606.26027" target="_blank" rel="noopener"><span class="qh-title">Why Multi-Step Tool-Use RL Collapses and How Supervisory Signals Fix It</span><span class="qh-src">HF</span></a></li>
+
+    <li><a href="#" target="_blank" rel="noopener"><span class="qh-title">WatchAct Benchmark: Long-Horizon Robot Manipulation from Observed Human Behavior</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="#" target="_blank" rel="noopener"><span class="qh-title">CORE-Bench Hard: Measuring Agents Beyond Accuracy Saturation</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="#" target="_blank" rel="noopener"><span class="qh-title">AHOIS: Multi-Agent AI Scientist with Socratic Midwifery</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="#" target="_blank" rel="noopener"><span class="qh-title">LeanGuard: Lightweight Bidirectional Reasoning Guardrail</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="#" target="_blank" rel="noopener"><span class="qh-title">Narration-of-Thought (NoT): Prompt for Stakeholder and Uncertainty Collapse</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="#" target="_blank" rel="noopener"><span class="qh-title">HauntAttack: Black-Box Adversarial Attacks on LRMs via Reasoning Questions</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2606.14397" target="_blank" rel="noopener"><span class="qh-title">Running the Gauntlet: Re-Evaluating Agents Beyond Familiar Environments</span><span class="qh-src">HF</span></a></li>
+
+    <li><a href="#" target="_blank" rel="noopener"><span class="qh-title">Inattentional Gap: Machine Analogue of Human Inattentional Blindness in LLMs</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2606.27326" target="_blank" rel="noopener"><span class="qh-title">Hallucination in World Models is Predictable and Preventable</span><span class="qh-src">HF</span></a></li>
+
+    <li><a href="https://www.producthunt.com/posts/zaro" target="_blank" rel="noopener"><span class="qh-title">Zaro — build agents and apps from context with one prompt</span><span class="qh-src">Product Hunt</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-06-27 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
     </footer>
+
+  </div>
 </body>
 </html>
