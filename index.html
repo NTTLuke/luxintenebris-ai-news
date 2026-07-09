@@ -3,57 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LVX IN TENEBRIS — AI dispatches · July 08, 2026</title>
+  <title>LVX IN TENEBRIS — AI dispatches · July 09, 2026</title>
   <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
   <link rel="stylesheet" href="style.css">
   <style>
-/* ── Podcast Pill ──────────────────────────── */
-.podcast-pill {
-  margin: 12px 0 0;
-  display: flex;
-}
-.podcast-pill a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 14px 5px 12px;
-  border: 1px solid var(--rule);
-  border-radius: 20px;
-  text-decoration: none;
-  color: var(--type);
-  font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  transition: border-color .25s ease, color .25s ease;
-  line-height: 1;
-}
-.podcast-pill a:hover {
-  border-color: var(--lux);
-  color: var(--lux);
-}
-.podcast-pill .pill-wave {
-  flex-shrink: 0;
-  animation: pill-pulse 2s ease-in-out infinite;
-}
-@keyframes pill-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .65; }
-}
-.podcast-pill .pill-wave .wave-bar { transition: opacity .3s; }
-.podcast-pill a:hover .pill-wave { animation: none; }
-.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
-.podcast-pill .pill-wave .b2 { animation-delay: .15s; }
-.podcast-pill .pill-wave .b3 { animation-delay: .3s; }
-.podcast-pill .pill-wave .b4 { animation-delay: .45s; }
-.podcast-pill .pill-wave .b5 { animation-delay: .6s; }
-.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
-.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
-.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
-.podcast-pill .pill-label { color: var(--type-dim); }
-/* ── End Podcast Pill ──────────────────────── */
-</style>
-<style>
 /* ── Podcast Pill (inline player) ──────────── */
 .podcast-pill {
   margin: 12px 0 0;
@@ -121,7 +74,7 @@
 .podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
 .podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
 .podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
-.podcast-pill .pill-label { color: var(--type-dim); }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
 /* Progress bar */
 .podcast-pill .pill-progress {
   width: 100%;
@@ -154,7 +107,7 @@
 }
 /* ── End Podcast Pill ──────────────────────── */
 </style>
-</head>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
   <body>
   <div class="container">
 
@@ -162,39 +115,124 @@
     <div class="topline"></div>
     <div class="ears">
       <span class="left">Est. MMXXVI</span>
-      <span class="right">No. 11 <a href="/luxintenebris-ai-news/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
+      <span class="right">No. 13 <a href="/luxintenebris-ai-news/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
     </div>
     <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
       <hr class="rule-double">
       <div class="dateline">
-        <span>July 08, 2026</span>
+        <span>July 09, 2026</span>
         <span class="dot">◆</span>
         <span class="tag">AI dispatches from the dark</span>
         <span class="dot">◆</span>
-        <span>61 stories</span>
+        <span>55 stories</span>
       </div>
       <hr class="rule-thin">
     </header>
 
     
 
-    <div class="lead-zone">
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Corsair Offers Discounts Up to 50% on Gaming Gear and PC Components" data-b="According to WIRED, Corsair is currently running multiple promotions across its product lineup, giving shoppers several ways to save. The company, known for gaming peripherals and PC components like memory and power supplies, has discounts ranging from 10% to 50% depending on the category.
+
+The deepest savings come from Corsair&#x27;s certified refurbished section, where products are marked down up to 50% off retail. This includes popular keyboard series like the K90 and K70, along with PC components such as CPU coolers, case fans, and power supplies. A separate &quot;special offers&quot; page also features up to 50% off on items like keyboards, headphones, and gaming chairs.
+
+For those building or upgrading a PC, Corsair is offering up to 30% off popular components including memory, cases, and power supplies. The WIRED review notes that the Corsair Void V2 Wireless headset was praised for its lightweight design and breathable earcups, making it suitable for users with larger heads.
+
+Students can claim a 15% discount through UNiDAYS using a valid student email address, which applies to the full Corsair catalog. Additionally, signing up for text alerts provides a 10% discount code. WIRED also highlights a VENGEANCE a7500 Gaming PC marked down by $500 to $3,300, and a VIRTUOSO RGB WIRELESS headset priced at $90.
+
+*While a roundup of promo codes makes for a practical consumer read, it&#x27;s a curious pick for a publication that usually covers technology innovation and culture.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/corsair-coupon/"><span class="tih">Corsair Offers Discounts Up to 50% on Gaming Gear and PC Components</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta reportedly developing &#x27;super sensing&#x27; smart glasses that never stop recording" data-b="According to the Financial Times, as reported by The Verge, Meta is working on prototype smart glasses capable of continuous audio recording and near-constant photo capture — snapping images every few seconds. The always-on concept, internally referred to as &quot;super sensing,&quot; would allow wearers to query Meta AI about everything the device has seen and heard throughout the day.
+
+Notably, the raw footage and audio may never be stored by Meta or made accessible to the user. Instead, the company is exploring a system where only metadata extracted from the captured content is uploaded to servers for AI processing — an approach proponents argue carries fewer privacy risks.
+
+The project raises serious privacy questions, particularly given Meta&#x27;s existing controversies around facial recognition features, reports of users filming others without consent, and third-party services that disable the glasses&#x27; LED recording indicator. Meta recently announced an update that would automatically disable the camera if the LED is tampered with. However, the company reportedly plans to keep the LED off during &quot;super sensing&quot; mode, reserving the indicator only for &quot;active capture&quot; scenarios to avoid desensitizing users to its presence.
+
+Meta is also considering whether to use the captured data for AI model training and may eventually bring the features to existing Ray-Ban Meta glasses. CEO Mark Zuckerberg has described the vision of glasses evolving into a persistent personal agent that stays with the user throughout the day.
+
+*The privacy implications of a wearable that records everything while keeping its indicator light off are hard to overstate — this is a product that could fundamentally rewire the norms of public space.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/963138/meta-smart-glasses-recording-super-sensing-ai"><span class="tih">Meta reportedly developing &#x27;super sensing&#x27; smart glasses that never stop recording</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="NHTSA Orders Self-Driving Car Firms to Stop Blocking Emergency Crews" data-b="U.S. regulators have sent a direct warning to autonomous vehicle developers over a growing pattern of driverless cars getting in the way of police and medics, according to TechCrunch. National Highway Traffic Safety Administration chief Jonathan Morrison wrote in a letter that robot-driven vehicles have repeatedly driven into active emergency scenes, blocked ambulances and fire trucks, and failed to react to basic cues like flashing lights, flares, smoke, and traffic cones. He called the pattern a &quot;functional insufficiency&quot; rather than a rare edge case and ordered companies to present fixes by the end of the month.
+
+The letter does not name any specific company, but the details point toward major robotaxi operators. TechCrunch previously documented at least six incidents where first responders had to physically take control of Waymo vehicles during emergencies — including one case where an officer was mid-response to a mass shooting and another where a Waymo blocked fire crews heading to a natural gas explosion. Waymo declined to comment on the directive.
+
+NHTSA did not specify what penalties AV firms would face if they fail to comply, though the agency suggested it would hold them to the same standard as human drivers, who face fines and jail time for obstructing emergency response. Separately, the agency is advancing proposals to loosen Federal Motor Vehicle Safety Standards for cars built without steering wheels, pedals, windshield wipers, or defogging systems.
+
+*The tension is straightforward: autonomous vehicles can&#x27;t just work in ideal conditions — they need to handle the messy realities of public roads, and regulators are running out of patience with the gap.*
+
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/08/feds-demand-autonomous-vehicle-companies-stop-interfering-with-first-responders/"><span class="tih">NHTSA Orders Self-Driving Car Firms to Stop Blocking Emergency Crews</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Brown&#x27;s Hard Numbers on AI Cheating" data-b="According to reporting by El País and Inside Higher Ed, a Brown University economics professor, Roberto Serrano, uncovered what appears to be widespread generative AI cheating in his spring 2026 course. After a campus tragedy, Serrano allowed take-home exams for his notoriously difficult ECON 1170. Enrollment surged from a typical maximum of 30 students to 86, and midterm scores were extraordinarily high — with a historically normal average of 65 to 80 percent replaced by an average of 96 out of 100, and 40 students achieving a perfect score.
+
+Suspicious that answers felt &quot;convoluted&quot; and matched ChatGPT outputs, Serrano pivoted to an in-person final. Eighteen students immediately dropped the course, and nine more skipped the exam entirely — 22 of those 27 had scored 100 on the midterm. Among the remaining test-takers, the average score fell to 48. 
+
+Serrano, who went blind at 17 and learned Braille before attending Harvard, argues that universities must defend genuine human learning. He told Inside Higher Ed that normalizing cheating among elite students leads toward a &quot;failed society.&quot;
+
+*The clearest measure of AI cheating might simply be the chasm between take-home and proctored scores — numbers don&#x27;t lie.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/"><span class="tih">Brown&#x27;s Hard Numbers on AI Cheating</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="Messi, Ronaldo, and Salah Take Different Paths Beyond the Pitch" data-b="According to a WIRED report, Lionel Messi, Cristiano Ronaldo, and Mohamed Salah—who have defined soccer&#x27;s modern era—are preparing for life after football as the 2026 World Cup marks a turning point for all three. But their off-field strategies are diverging sharply.
+
+Messi and Ronaldo have increasingly embraced equity stakes in technology and startup companies, a shift that reflects a broader trend where elite athletes trade endorsement fees for ownership positions. Messi&#x27;s investment firm, Play Time HoldCo, has built a portfolio resembling a Silicon Valley venture fund, with stakes in AI companies, sports technology, and esports. He also received an ownership component as part of his 2023 move to Inter Miami—an unprecedented arrangement in Major League Soccer.
+
+Ronaldo&#x27;s investments center on health technology, aligning with his personal brand around fitness and longevity. He became an investor in wearable fitness tracker Whoop in 2024 and acquired a 10 percent stake in a Herbalife subsidiary behind a personalized wellness platform. He is also an early investor in an AI-powered supplements company and reportedly holds ownership in Saudi Pro League club Al-Nassr.
+
+Salah, by contrast, has taken a more traditional approach, concentrating his business interests in commercial holding companies and real estate rather than disclosed technology investments.
+
+*The contrast is striking: Messi and Ronaldo are betting on equity and innovation, while Salah&#x27;s more conservative path may prove equally wise if the startup market cools.*
+
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/messi-ronaldo-tech-portfolios-salah-playing-a-different-game/"><span class="tih">Messi, Ronaldo, and Salah Take Different Paths Beyond the Pitch</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Corsair Offers Discounts Up to 50% on Gaming Gear and PC Components" data-b="According to WIRED, Corsair is currently running multiple promotions across its product lineup, giving shoppers several ways to save. The company, known for gaming peripherals and PC components like memory and power supplies, has discounts ranging from 10% to 50% depending on the category.
+
+The deepest savings come from Corsair&#x27;s certified refurbished section, where products are marked down up to 50% off retail. This includes popular keyboard series like the K90 and K70, along with PC components such as CPU coolers, case fans, and power supplies. A separate &quot;special offers&quot; page also features up to 50% off on items like keyboards, headphones, and gaming chairs.
+
+For those building or upgrading a PC, Corsair is offering up to 30% off popular components including memory, cases, and power supplies. The WIRED review notes that the Corsair Void V2 Wireless headset was praised for its lightweight design and breathable earcups, making it suitable for users with larger heads.
+
+Students can claim a 15% discount through UNiDAYS using a valid student email address, which applies to the full Corsair catalog. Additionally, signing up for text alerts provides a 10% discount code. WIRED also highlights a VENGEANCE a7500 Gaming PC marked down by $500 to $3,300, and a VIRTUOSO RGB WIRELESS headset priced at $90.
+
+*While a roundup of promo codes makes for a practical consumer read, it&#x27;s a curious pick for a publication that usually covers technology innovation and culture.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/corsair-coupon/"><span class="tih">Corsair Offers Discounts Up to 50% on Gaming Gear and PC Components</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta reportedly developing &#x27;super sensing&#x27; smart glasses that never stop recording" data-b="According to the Financial Times, as reported by The Verge, Meta is working on prototype smart glasses capable of continuous audio recording and near-constant photo capture — snapping images every few seconds. The always-on concept, internally referred to as &quot;super sensing,&quot; would allow wearers to query Meta AI about everything the device has seen and heard throughout the day.
+
+Notably, the raw footage and audio may never be stored by Meta or made accessible to the user. Instead, the company is exploring a system where only metadata extracted from the captured content is uploaded to servers for AI processing — an approach proponents argue carries fewer privacy risks.
+
+The project raises serious privacy questions, particularly given Meta&#x27;s existing controversies around facial recognition features, reports of users filming others without consent, and third-party services that disable the glasses&#x27; LED recording indicator. Meta recently announced an update that would automatically disable the camera if the LED is tampered with. However, the company reportedly plans to keep the LED off during &quot;super sensing&quot; mode, reserving the indicator only for &quot;active capture&quot; scenarios to avoid desensitizing users to its presence.
+
+Meta is also considering whether to use the captured data for AI model training and may eventually bring the features to existing Ray-Ban Meta glasses. CEO Mark Zuckerberg has described the vision of glasses evolving into a persistent personal agent that stays with the user throughout the day.
+
+*The privacy implications of a wearable that records everything while keeping its indicator light off are hard to overstate — this is a product that could fundamentally rewire the norms of public space.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/963138/meta-smart-glasses-recording-super-sensing-ai"><span class="tih">Meta reportedly developing &#x27;super sensing&#x27; smart glasses that never stop recording</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="NHTSA Orders Self-Driving Car Firms to Stop Blocking Emergency Crews" data-b="U.S. regulators have sent a direct warning to autonomous vehicle developers over a growing pattern of driverless cars getting in the way of police and medics, according to TechCrunch. National Highway Traffic Safety Administration chief Jonathan Morrison wrote in a letter that robot-driven vehicles have repeatedly driven into active emergency scenes, blocked ambulances and fire trucks, and failed to react to basic cues like flashing lights, flares, smoke, and traffic cones. He called the pattern a &quot;functional insufficiency&quot; rather than a rare edge case and ordered companies to present fixes by the end of the month.
+
+The letter does not name any specific company, but the details point toward major robotaxi operators. TechCrunch previously documented at least six incidents where first responders had to physically take control of Waymo vehicles during emergencies — including one case where an officer was mid-response to a mass shooting and another where a Waymo blocked fire crews heading to a natural gas explosion. Waymo declined to comment on the directive.
+
+NHTSA did not specify what penalties AV firms would face if they fail to comply, though the agency suggested it would hold them to the same standard as human drivers, who face fines and jail time for obstructing emergency response. Separately, the agency is advancing proposals to loosen Federal Motor Vehicle Safety Standards for cars built without steering wheels, pedals, windshield wipers, or defogging systems.
+
+*The tension is straightforward: autonomous vehicles can&#x27;t just work in ideal conditions — they need to handle the messy realities of public roads, and regulators are running out of patience with the gap.*
+
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/08/feds-demand-autonomous-vehicle-companies-stop-interfering-with-first-responders/"><span class="tih">NHTSA Orders Self-Driving Car Firms to Stop Blocking Emergency Crews</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Brown&#x27;s Hard Numbers on AI Cheating" data-b="According to reporting by El País and Inside Higher Ed, a Brown University economics professor, Roberto Serrano, uncovered what appears to be widespread generative AI cheating in his spring 2026 course. After a campus tragedy, Serrano allowed take-home exams for his notoriously difficult ECON 1170. Enrollment surged from a typical maximum of 30 students to 86, and midterm scores were extraordinarily high — with a historically normal average of 65 to 80 percent replaced by an average of 96 out of 100, and 40 students achieving a perfect score.
+
+Suspicious that answers felt &quot;convoluted&quot; and matched ChatGPT outputs, Serrano pivoted to an in-person final. Eighteen students immediately dropped the course, and nine more skipped the exam entirely — 22 of those 27 had scored 100 on the midterm. Among the remaining test-takers, the average score fell to 48. 
+
+Serrano, who went blind at 17 and learned Braille before attending Harvard, argues that universities must defend genuine human learning. He told Inside Higher Ed that normalizing cheating among elite students leads toward a &quot;failed society.&quot;
+
+*The clearest measure of AI cheating might simply be the chasm between take-home and proctored scores — numbers don&#x27;t lie.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/"><span class="tih">Brown&#x27;s Hard Numbers on AI Cheating</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="Messi, Ronaldo, and Salah Take Different Paths Beyond the Pitch" data-b="According to a WIRED report, Lionel Messi, Cristiano Ronaldo, and Mohamed Salah—who have defined soccer&#x27;s modern era—are preparing for life after football as the 2026 World Cup marks a turning point for all three. But their off-field strategies are diverging sharply.
+
+Messi and Ronaldo have increasingly embraced equity stakes in technology and startup companies, a shift that reflects a broader trend where elite athletes trade endorsement fees for ownership positions. Messi&#x27;s investment firm, Play Time HoldCo, has built a portfolio resembling a Silicon Valley venture fund, with stakes in AI companies, sports technology, and esports. He also received an ownership component as part of his 2023 move to Inter Miami—an unprecedented arrangement in Major League Soccer.
+
+Ronaldo&#x27;s investments center on health technology, aligning with his personal brand around fitness and longevity. He became an investor in wearable fitness tracker Whoop in 2024 and acquired a 10 percent stake in a Herbalife subsidiary behind a personalized wellness platform. He is also an early investor in an AI-powered supplements company and reportedly holds ownership in Saudi Pro League club Al-Nassr.
+
+Salah, by contrast, has taken a more traditional approach, concentrating his business interests in commercial holding companies and real estate rather than disclosed technology investments.
+
+*The contrast is striking: Messi and Ronaldo are betting on equity and innovation, while Salah&#x27;s more conservative path may prove equally wise if the startup market cools.*
+
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/messi-ronaldo-tech-portfolios-salah-playing-a-different-game/"><span class="tih">Messi, Ronaldo, and Salah Take Different Paths Beyond the Pitch</span> <span class="tis">— wired.com</span></div></div></div>
+<div class="lead-zone">
       <article class="lead">
-  <a href="https://www.bloomberg.com/news/articles/2026-07-07/chinese-ai-startup-deepseek-developing-own-ai-chip-reuters-says" target="_blank" rel="noopener">
-    <img src="images/lead_2026-07-08.jpg" alt="" class="lead-image">
+  <a href="https://x.com/OpenAI/status/2074704958419792299" target="_blank" rel="noopener">
+    <img src="images/lead_2026-07-09.jpg" alt="" class="lead-image">
     <div class="lead-grid">
       <div class="lead-head">
-        <p class="kicker">Hardware Sovereignty</p>
-        <h1>DeepSeek developing its own AI inference chip to reduce reliance on NVIDIA and Huawei</h1>
+        <p class="kicker">AI's next frontier</p>
+        <h1>OpenAI announces GPT-5.6 Sol, Terra and Luna models launching July 10</h1>
       </div>
       <div class="lead-body">
-        <p class="deck">The Chinese AI startup is building a custom inference chip, marking a strategic pivot from software-only innovation to full-stack hardware sovereignty. The move, reported by Bloomberg via Reuters, signals deepening vertical integration across the industry as firms seek alternatives to dominant GPU suppliers.</p>
-        <p class="byline"><span class="src">Bloomberg / Reuters</span> · <span>2026-07-07</span> · <span class="more">Read the dispatch →</span></p>
+        <p class="deck">OpenAI unveiled GPT-5.6 Sol, its next-generation flagship model, along with specialized variants Terra and Luna for targeted domains. Global preview access is expanding now ahead of the public launch on Thursday, marking the company's most significant model release since GPT-5.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-07-08</span> · <span class="more">Read the dispatch →</span></p>
       </div>
     </div>
   </a>
-
-
 
 <div class="podcast-pill">
   <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
@@ -208,10 +246,12 @@
     <span class="pill-label">Podcast Pill</span>
     <span class="pill-divider">·</span>
     <span class="pill-show">The Divide</span>
-    <span class="pill-duration">1:59</span>
+    <span class="pill-duration">0:54</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-model">xai/grok-tts-v1</span>
   </button>
   <audio class="pill-audio" preload="none">
-    <source src="podcasts/lead_2026-07-08.ogg" type="audio/ogg">
+    <source src="podcasts/lead_2026-07-09.ogg" type="audio/ogg">
   </audio>
   <div class="pill-progress" aria-hidden="true">
     <span class="pill-progress-bar"></span>
@@ -223,26 +263,26 @@
 
     <div class="topstories">
 <article class="story">
-  <a href="https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/" target="_blank" rel="noopener">
-    <h3>Meta launches Muse Image and Muse Video — free AI generation with native audio</h3>
-    <p>Meta released Muse Image, a free AI image generator available in Meta AI, Instagram Stories, and WhatsApp with prompt-based editing and Marketplace integration, alongside Muse Video which delivers high visual fidelity with native audio support.</p>
-    <p class="byline"><span class="src">Meta AI</span> · 2026-07-07</p>
+  <a href="https://x.com/OpenAI/status/2074907025537224840" target="_blank" rel="noopener">
+    <h3>OpenAI introduces GPT-Live, a full-duplex voice model for natural conversation</h3>
+    <p>A new generation of voice AI that listens and speaks simultaneously, rolling out to ChatGPT on iOS, Android, and web with API support coming soon.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation" target="_blank" rel="noopener">
-    <h3>Norm AI raises $120M Series C at $1.2B valuation for legal AI platform</h3>
-    <p>Khosla Ventures led the round for Norm AI, an AI-native law firm building supervised AI agents for legal work. Bain, Craft Ventures, Coatue, and Vanguard also participated, marking one of the largest legal AI rounds to date.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-07</p>
+  <a href="https://x.ai/news/grok-4-5" target="_blank" rel="noopener">
+    <h3>xAI launches Grok 4.5 as its smartest model yet, rivals GPT-5.5 at 1/5 the cost</h3>
+    <p>Trained on tens of thousands of NVIDIA GB300 GPUs with large-scale RL, served at 80 TPS, and priced at $2/M input and $6/M output tokens. Available in Grok Build, Cursor, and the SpaceXAI API.</p>
+    <p class="byline"><span class="src">xAI</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://x.com/omarsar0/status/2074556579580711050" target="_blank" rel="noopener">
-    <h3>LLM verifiers emerge as a new scaling axis: continuous scoring without fine-tuning</h3>
-    <p>A Stanford, NVIDIA, and UC Berkeley paper demonstrates extracting calibrated scores from LLM scoring-token logits, achieving 86.5% on Terminal-Bench V2 without fine-tuning, establishing verification as a new scaling axis alongside pre-training and test-time compute.</p>
-    <p class="byline"><span class="src">omarsar0 / Stanford, NVIDIA, UC Berkeley</span> · 2026-07-08</p>
+  <a href="https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close" target="_blank" rel="noopener">
+    <h3>SambaNova raises $1B at $11B valuation in Series F first close</h3>
+    <p>The AI chip maker for enterprise inference infrastructure drew a $1 billion round led by General Atlantic with Intel participating.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-08</p>
   </a>
 </article>
 
@@ -256,45 +296,45 @@
     <span class="line"></span>
     <span class="n">05</span>
   </div>
-  <a href="https://arxiv.org/abs/2607.02642" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-07-08.jpg" alt="" class="section-hero-img"><h4 class="hero-title">GigaWorld-1: roadmap to build world models for robot policy evaluation</h4></a>
+  <a href="https://arxiv.org/abs/2607.02770" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-07-09.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Gemma 4 Technical Report: Google's open-weight multimodal LLMs set new SOTA</h4></a>
   <div class="section-grid">
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.02642" target="_blank" rel="noopener">
-    <h4>GigaWorld-1: roadmap to build world models for robot policy evaluation</h4>
-    <p>A systematic study of 7 video world models with WMBench benchmark (324K+ simulated rollouts) finds evaluator quality is dominated by long-horizon action consistency, not short-term visual realism.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-07</p>
+  <a href="https://arxiv.org/abs/2607.02770" target="_blank" rel="noopener">
+    <h4>Gemma 4 Technical Report: Google's open-weight multimodal LLMs set new SOTA</h4>
+    <p>Google introduces open-weight multimodal LLMs (2.3B-31B, dense + MoE) with thinking mode, encoder-free 12B architecture, and KV-cache optimizations, establishing SOTA on STEM, multimodal, and long-context benchmarks.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.05155" target="_blank" rel="noopener">
-    <h4>EdgeBench: agent real-world learning follows log-sigmoid scaling laws</h4>
-    <p>First evidence that agent real-world learning follows a log-sigmoid scaling law (R²=0.998) across 134 tasks and 38K hours of interaction. Agent learning speed doubles every 3 months.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-07</p>
+  <a href="https://arxiv.org/abs/2607.05722" target="_blank" rel="noopener">
+    <h4>Nemotron-Labs-Diffusion: NVIDIA unifies autoregressive, diffusion and self-speculation decoding</h4>
+    <p>NVIDIA's tri-mode LM at 8B scale decodes 6x more tokens per forward than Qwen3-8B with comparable accuracy, delivering 4x higher throughput on SPEED-Bench.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.04033" target="_blank" rel="noopener">
-    <h4>OmniOpt: comprehensive taxonomy and benchmarking of modern deep learning optimizers</h4>
-    <p>A 91-page survey taxonomy and geometric analysis of modern optimizers (Adam, Lion, Sophia, etc.) with standardized evaluation across multiple tasks.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-07</p>
+  <a href="https://huggingface.co/papers/2607.06560" target="_blank" rel="noopener">
+    <h4>SenseNova-Vision: All CV tasks reformulated as unified multimodal generation</h4>
+    <p>Formulates detection, segmentation, depth, keypoints and pose as multimodal generation within a single UMM without task-specific heads, matching specialized systems across diverse vision benchmarks.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.03973" target="_blank" rel="noopener">
-    <h4>MANCE: manifold-aware concept erasure preserves unrelated information</h4>
-    <p>Proposes the Manifold Constraint Hypothesis — constraining concept removal to the natural representation manifold better preserves unrelated data, achieving SOTA across 119 settings spanning text and vision models.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-07</p>
+  <a href="https://huggingface.co/papers/2607.06559" target="_blank" rel="noopener">
+    <h4>RynnWorld-4D: Alibaba's 4D embodied world model for robotic manipulation</h4>
+    <p>Jointly predicts synchronized RGB, depth and optical flow from a single RGB-D image and language instruction. Features a tri-branch Diffusion Transformer enabling &gt;9 Hz closed-loop bimanual control.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.05061" target="_blank" rel="noopener">
-    <h4>KVpop: predictive online pruning for key-value cache compression</h4>
-    <p>An online KV cache pruning method that predicts which attention keys and values to drop during LLM inference, reducing memory usage while maintaining generation quality.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-07</p>
+  <a href="https://huggingface.co/papers/2607.03509" target="_blank" rel="noopener">
+    <h4>Flex-Forcing: NVIDIA unifies autoregressive and bidirectional video diffusion</h4>
+    <p>A unified video diffusion framework enabling flexible generation with both forward and bidirectional conditioning in a single architecture.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-08</p>
   </a>
 </article>
 
@@ -307,72 +347,29 @@
     <span class="line"></span>
     <span class="n">03</span>
   </div>
-  <a href="https://www.youtube.com/watch?v=WUeMqk_ABmY" target="_blank" rel="noopener" class="section-hero"><img src="images/section_youtube-video_2026-07-08.jpg" alt="" class="section-hero-img"><h4 class="hero-title">AI market pivots from token-subsidized experimentation to token scarcity</h4></a>
+  <a href="https://www.youtube.com/watch?v=U3uX115I9sY" target="_blank" rel="noopener" class="section-hero"><img src="images/section_youtube-video_2026-07-09.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Grok 4.5 rivals GPT-5.5, outperforms Opus 4.8 at 1/5 the price</h4></a>
   <div class="section-grid">
 <article class="item">
-  <a href="https://www.youtube.com/watch?v=WUeMqk_ABmY" target="_blank" rel="noopener">
-    <h4>AI market pivots from token-subsidized experimentation to token scarcity</h4>
-    <p>June 2026 marks a fundamental shift as enterprises move from subsidized AI experimentation to token scarcity, forcing cost and efficiency prioritization. Fable 5 launch and new US export controls on AI models intensify the debate.</p>
-    <p class="byline"><span class="src">YouTube — The AI Daily Brief</span> · 2026-07-07</p>
+  <a href="https://www.youtube.com/watch?v=U3uX115I9sY" target="_blank" rel="noopener">
+    <h4>Grok 4.5 rivals GPT-5.5, outperforms Opus 4.8 at 1/5 the price</h4>
+    <p>Analysis from Theo — t3.gg benchmarks Grok 4.5 against leading models, showing competitive performance at a fraction of the cost with significantly better token efficiency.</p>
+    <p class="byline"><span class="src">Theo - t3.gg</span> · 2026-07-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.youtube.com/watch?v=PnEWo_AKzIU" target="_blank" rel="noopener">
-    <h4>OpenAI proposes transferring 5% stake to US sovereign fund</h4>
-    <p>OpenAI's proposal to transfer a 5% equity stake to a US sovereign fund sparks political debate over corporate-government AI ties. KPMG and Box studies show AI adoption correlates with headcount growth.</p>
-    <p class="byline"><span class="src">YouTube — The AI Daily Brief</span> · 2026-07-07</p>
+  <a href="https://www.youtube.com/watch?v=DbciOS1UJNM" target="_blank" rel="noopener">
+    <h4>OpenAI expands GPT-5.6 release globally after Trump administration approval</h4>
+    <p>Bloomberg's AI editor reports on the global rollout of OpenAI's most advanced model following regulatory clearance.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.youtube.com/watch?v=1yBU41auQhw" target="_blank" rel="noopener">
-    <h4>DeepSeek publishes new AI speed optimization paper</h4>
-    <p>DeepSeek released a new research paper (arXiv 2607.05147) detailing a novel speed optimization technique for AI inference, promising significant performance improvements.</p>
-    <p class="byline"><span class="src">YouTube — Two Minute Papers</span> · 2026-07-07</p>
-  </a>
-</article>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <h2>Hardware &amp; Robotics</h2>
-    <span class="line"></span>
-    <span class="n">04</span>
-  </div>
-  <a href="http://english.scio.gov.cn/m/chinavoices/2026-07/07/content_118587160.html" target="_blank" rel="noopener" class="section-hero"><img src="images/section_hardware-robotics_2026-07-08.jpg" alt="" class="section-hero-img"><h4 class="hero-title">China expects humanoid robot output to exceed 100,000 units this year</h4></a>
-  <div class="section-grid">
-<article class="item">
-  <a href="http://english.scio.gov.cn/m/chinavoices/2026-07/07/content_118587160.html" target="_blank" rel="noopener">
-    <h4>China expects humanoid robot output to exceed 100,000 units this year</h4>
-    <p>Senior official Gan Xiaobin announced the projection at a press conference for the upcoming WAIC in Shanghai, highlighting China's booming robotics industry powered by evolving AI applications.</p>
-    <p class="byline"><span class="src">SCIO / Xinhua</span> · 2026-07-07</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.roboticstomorrow.com/news/2026/07/07/uma-unveils-its-vision-for-the-next-generation-of-humanoid-robots/26813" target="_blank" rel="noopener">
-    <h4>UMA unveils first humanoid robot design with real-time learning architecture</h4>
-    <p>At the Machina Summit in Paris, Physical AI company UMA introduced a new architecture enabling robots to learn skills through demonstration rather than manual programming, targeting factories, warehouses, and logistics centers.</p>
-    <p class="byline"><span class="src">RoboticsTomorrow</span> · 2026-07-07</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.autonews.com/hyundai/ane-hyundai-robot-fifa-world-cup-0707" target="_blank" rel="noopener">
-    <h4>Hyundai showcases Atlas humanoid robot at FIFA World Cup</h4>
-    <p>Hyundai's Atlas humanoid robot handed the game ball to the referee during the Brazil-Norway match, demonstrating advanced bipedal locomotion and manipulation in a high-visibility public setting.</p>
-    <p class="byline"><span class="src">Automotive News</span> · 2026-07-07</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.therobotreport.com/abb-robotics-includes-vslam-navigation-f712-autonomous-forklift" target="_blank" rel="noopener">
-    <h4>ABB Robotics launches Flexley Stack F712 autonomous forklift with vSLAM</h4>
-    <p>The autonomous forklift features visual SLAM navigation eliminating the need for pre-installed infrastructure, handling loads up to 2,000 kg with ±10 mm positional accuracy.</p>
-    <p class="byline"><span class="src">The Robot Report</span> · 2026-07-07</p>
+  <a href="https://www.youtube.com/watch?v=0BWf3goAKUA" target="_blank" rel="noopener">
+    <h4>Bank of America reverses course, extends $520M credit line to OpenAI</h4>
+    <p>Bloomberg sources reveal BofA is now extending a $520 million credit line to OpenAI after initially passing on the opportunity, signaling growing financial confidence.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-07-08</p>
   </a>
 </article>
 
@@ -385,88 +382,45 @@
     <span class="line"></span>
     <span class="n">05</span>
   </div>
-  <a href="https://www.theverge.com/tech/962481/notions-new-app-is-a-hub-for-ai-agents" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-07-08.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Notion launches dedicated iOS app for chatting with AI agents</h4></a>
+  <a href="https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-07-09.jpg" alt="" class="section-hero-img"><h4 class="hero-title">ZML/LLMD: Free inference server runs open-weight models across Nvidia, AMD, Apple and Intel chips</h4></a>
   <div class="section-grid">
 <article class="item">
-  <a href="https://www.theverge.com/tech/962481/notions-new-app-is-a-hub-for-ai-agents" target="_blank" rel="noopener">
-    <h4>Notion launches dedicated iOS app for chatting with AI agents</h4>
-    <p>Notion Agents brings custom AI agents and connected models like ChatGPT, Gemini, and Claude to a single iOS app, supporting text, photos, and voice notes.</p>
-    <p class="byline"><span class="src">The Verge</span> · 2026-07-07</p>
+  <a href="https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips" target="_blank" rel="noopener">
+    <h4>ZML/LLMD: Free inference server runs open-weight models across Nvidia, AMD, Apple and Intel chips</h4>
+    <p>French AI startup ZML released a free LLM inference server supporting multi-chip deployment (Nvidia, AMD, Google TPU, Apple Metal, Intel Arc), promising maximum performance without vendor lock-in.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.theverge.com/news/662490/linkedin-ai-job-search-tool-availability" target="_blank" rel="noopener">
-    <h4>LinkedIn launches generative AI job search for Premium subscribers</h4>
-    <p>The new tool lets users describe their ideal role in natural language instead of using restrictive filters, powered by generative AI.</p>
-    <p class="byline"><span class="src">The Verge</span> · 2026-07-07</p>
+  <a href="https://news.ycombinator.com/item?id=48819808" target="_blank" rel="noopener">
+    <h4>Rowboat: Open-source, local-first alternative to Claude Desktop with memory</h4>
+    <p>An AI coworker with dedicated work surfaces for email, meetings, notes, browser, and coding. Reached #2 on Show HN with 168 points.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-07-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://news.ycombinator.com/item?id=48811644" target="_blank" rel="noopener">
-    <h4>Ternlight ships 7 MB embedding model in browser via WASM</h4>
-    <p>An open-source ternary-quantized embedding model distilled from MiniLM, shipping in Rust/WASM SIMD at just 7 MB for on-device semantic search with no API dependencies.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-07</p>
+  <a href="https://news.ycombinator.com/item?id=48818098" target="_blank" rel="noopener">
+    <h4>Halo: Open-source, tamper-evident runtime evidence for AI agents</h4>
+    <p>Generates verifiable audit trails proving what an agent did with data, aiming to solve the compliance and trust gap in the post-agentic enterprise.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-07-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom" target="_blank" rel="noopener">
-    <h4>Savi Security launches app to protect consumers from AI-generated scams</h4>
-    <p>Backed by $7M in seed funding from Acrew Capital, Savi protects against AI-generated scams via text, email, and phone calls including realistic kidnapping ransom demands.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-07</p>
+  <a href="https://www.producthunt.com/products/framer" target="_blank" rel="noopener">
+    <h4>Framer launches AI Agents for design and publishing on the canvas</h4>
+    <p>AI-powered design, writing, analysis, and organization tools on the Framer canvas, plus branching for safer team collaboration.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.producthunt.com/products/katalyst" target="_blank" rel="noopener">
-    <h4>Katalyst launches AI sales agent for Salesforce pipeline management</h4>
-    <p>The AI agent automatically summarizes calls, updates Salesforce records, drafts follow-ups, and surfaces deal signals for enterprise sales teams.</p>
-    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-07</p>
-  </a>
-</article>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <h2>Money &amp; Markets</h2>
-    <span class="line"></span>
-    <span class="n">04</span>
-  </div>
-  <a href="https://techstartups.com/2026/07/07/venture-capital-startup-funding-roundup-july-7-2026" target="_blank" rel="noopener" class="section-hero"><img src="images/section_money-markets_2026-07-08.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Monogram raises $40M seed for visual AI interface</h4></a>
-  <div class="section-grid">
-<article class="item">
-  <a href="https://techstartups.com/2026/07/07/venture-capital-startup-funding-roundup-july-7-2026" target="_blank" rel="noopener">
-    <h4>Monogram raises $40M seed for visual AI interface</h4>
-    <p>DST Global and Lux Capital led the round for a visual and voice-driven AI app that generates interactive UIs from natural language queries, founded by Coursera co-founder Eren Bali.</p>
-    <p class="byline"><span class="src">TechStartups</span> · 2026-07-07</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.businesswire.com/news/home/20260707861533/en/Agave-Raises-%2415M-Series-A-to-Bring-AI-to-Construction-Financials" target="_blank" rel="noopener">
-    <h4>Agave raises $15M Series A to bring AI to construction financials</h4>
-    <p>Accel led the round for Agave's AI platform handling budgeting, invoicing, and lien releases across 80,000+ projects representing $100B+ in construction volume.</p>
-    <p class="byline"><span class="src">BusinessWire</span> · 2026-07-07</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://tech.eu/2026/07/07/luffy-secures-ps81m-to-scale-real-time-adaptive-control-technology" target="_blank" rel="noopener">
-    <h4>Luffy AI secures £8.1M Series A for neuroplastic industrial AI control</h4>
-    <p>BGF led the round for Luffy's neuroplastic AI platform providing real-time adaptive control for motors, robotics, and drones using sparse neural networks trained in simulation.</p>
-    <p class="byline"><span class="src">Tech.eu</span> · 2026-07-07</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://tech.eu/2026/07/07/arc-intelligence-raises-eur4m-to-scale-its-ai-native-finance-platform" target="_blank" rel="noopener">
-    <h4>ARC Intelligence raises €4M seed for AI-native finance OS</h4>
-    <p>42CAP led the round for ARC's AI-native Finance OS connecting ERP and CRM systems, having already supported 200,000+ business decisions.</p>
-    <p class="byline"><span class="src">Tech.eu</span> · 2026-07-07</p>
+  <a href="https://www.producthunt.com/products/assemblyai" target="_blank" rel="noopener">
+    <h4>Universal-3.5 Pro: AssemblyAI's most accurate speech-to-text model</h4>
+    <p>Targets high-accuracy transcription use cases across multiple languages and domains with improved precision.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-08</p>
   </a>
 </article>
 
@@ -484,106 +438,122 @@
     </div>
     <ul class="t-list">
       <li>
-  <a href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener">
-    <span class="t-ranking">#01</span>
-    <span class="t-name">MadsLorentzen/ai-job-search</span>
-    <span class="t-meta">TypeScript · 11,104 ★ · +2,514 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/Zackriya-Solutions/meetily" target="_blank" rel="noopener">
-    <span class="t-ranking">#02</span>
-    <span class="t-name">Zackriya-Solutions/meetily</span>
-    <span class="t-meta">Rust · 20,797 ★ · +1,777 today</span>
-  </a>
-</li>
-
-<li>
   <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#03</span>
+    <span class="t-ranking">#01</span>
     <span class="t-name">addyosmani/agent-skills</span>
-    <span class="t-meta">JavaScript · 72,208 ★ · +1,317 today</span>
+    <span class="t-meta">JavaScript · 74,072 ★ · +1,297 today</span>
   </a>
 </li>
 
 <li>
   <a href="https://github.com/ruvnet/RuView" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
+    <span class="t-ranking">#02</span>
     <span class="t-name">ruvnet/RuView</span>
-    <span class="t-meta">Rust · 78,533 ★ · +1,129 today</span>
+    <span class="t-meta">Rust · 79,144 ★ · +799 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/asgeirtj/system_prompts_leaks" target="_blank" rel="noopener">
+  <a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">TencentCloud/TencentDB-Agent-Memory</span>
+    <span class="t-meta">TypeScript · 7,644 ★ · +318 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/prisma/prisma" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">prisma/prisma</span>
+    <span class="t-meta">TypeScript · 46,554 ★ · +46 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener">
     <span class="t-ranking">#05</span>
-    <span class="t-name">asgeirtj/system_prompts_leaks</span>
-    <span class="t-meta">JavaScript · 53,054 ★ · +1,691 today</span>
+    <span class="t-name">mvanhorn/last30days-skill</span>
+    <span class="t-meta">Python · 50,751 ★ · +352 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/TencentCloud/CubeSandbox" target="_blank" rel="noopener">
+  <a href="https://github.com/argoproj/argo-cd" target="_blank" rel="noopener">
     <span class="t-ranking">#06</span>
-    <span class="t-name">TencentCloud/CubeSandbox</span>
-    <span class="t-meta">Rust · 8,486 ★ · +664 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/AhmadIbrahiim/Website-downloader" target="_blank" rel="noopener">
-    <span class="t-ranking">#07</span>
-    <span class="t-name">AhmadIbrahiim/Website-downloader</span>
-    <span class="t-meta">HTML · 4,041 ★ · +140 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/steipete/CodexBar" target="_blank" rel="noopener">
-    <span class="t-ranking">#08</span>
-    <span class="t-name">steipete/CodexBar</span>
-    <span class="t-meta">Swift · 17,051 ★ · +376 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/dotnet/skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#09</span>
-    <span class="t-name">dotnet/skills</span>
-    <span class="t-meta">C# · 4,319 ★ · +64 today</span>
+    <span class="t-name">argoproj/argo-cd</span>
+    <span class="t-meta">Go · 23,433 ★ · +29 today</span>
   </a>
 </li>
 
 <li>
   <a href="https://github.com/iOfficeAI/OfficeCLI" target="_blank" rel="noopener">
-    <span class="t-ranking">#10</span>
+    <span class="t-ranking">#07</span>
     <span class="t-name">iOfficeAI/OfficeCLI</span>
-    <span class="t-meta">C# · 10,070 ★ · +893 today</span>
+    <span class="t-meta">C# · 11,824 ★ · +1,717 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/asgeirtj/system_prompts_leaks" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">asgeirtj/system_prompts_leaks</span>
+    <span class="t-meta">JavaScript · 54,192 ★ · +1,218 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">obra/superpowers</span>
+    <span class="t-meta">Shell · 249,817 ★ · +1,116 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/alibaba/zvec" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">alibaba/zvec</span>
+    <span class="t-meta">C++ · 14,407 ★ · +395 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Diolinux/PhotoGIMP" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Diolinux/PhotoGIMP</span>
+    <span class="t-meta">CSS · 15,033 ★ · +1,125 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">wonderwhy-er/DesktopCommanderMCP</span>
+    <span class="t-meta">TypeScript · 6,375 ★ · +28 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/huxingyi/autoremesher" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">huxingyi/autoremesher</span>
+    <span class="t-meta">C++ · 2,009 ★ · +296 today</span>
   </a>
 </li>
 
 <li>
   <a href="https://github.com/bradautomates/claude-video" target="_blank" rel="noopener">
-    <span class="t-ranking">#11</span>
+    <span class="t-ranking">#14</span>
     <span class="t-name">bradautomates/claude-video</span>
-    <span class="t-meta">Python · 5,204 ★ · +965 today</span>
+    <span class="t-meta">Python · 6,053 ★ · +951 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/kyutai-labs/pocket-tts" target="_blank" rel="noopener">
-    <span class="t-ranking">#12</span>
-    <span class="t-name">kyutai-labs/pocket-tts</span>
-    <span class="t-meta">Python · 6,206 ★ · +531 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/hesreallyhim/awesome-claude-code" target="_blank" rel="noopener">
-    <span class="t-ranking">#13</span>
-    <span class="t-name">hesreallyhim/awesome-claude-code</span>
-    <span class="t-meta">Python · 49,145 ★ · +144 today</span>
+  <a href="https://github.com/TencentCloud/CubeSandbox" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">TencentCloud/CubeSandbox</span>
+    <span class="t-meta">Rust · 8,929 ★ · +564 today</span>
   </a>
 </li>
 
@@ -598,10 +568,10 @@
     </div>
     <ul class="t-list">
       <li>
-  <a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M" target="_blank" rel="noopener">
     <span class="t-ranking">#01</span>
-    <span class="t-name">empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF</span>
-    <span class="t-meta">GGUF quantized 9B fine-tune, Qwen3.5 base with Claude Mythos-5 style, Apache-2.0</span>
+    <span class="t-name">empero-ai/Qwythos-9B-Claude-Mythos-5-1M</span>
+    <span class="t-meta">9B full-parameter reasoning model, uncensored, built on Qwen3.5-9B with over 500M tokens of Claude Mythos/Fable traces</span>
   </a>
 </li>
 
@@ -609,7 +579,7 @@
   <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener">
     <span class="t-ranking">#02</span>
     <span class="t-name">tencent/Hy3</span>
-    <span class="t-meta">295B MoE, 21B active, Apache 2.0, 256K context, reasoning-capable</span>
+    <span class="t-meta">Tencent Hy3 multimodal model, Apache 2.0 licensed</span>
   </a>
 </li>
 
@@ -617,7 +587,7 @@
   <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener">
     <span class="t-ranking">#03</span>
     <span class="t-name">zai-org/GLM-5.2</span>
-    <span class="t-meta">1M-token context flagship model for long-horizon tasks</span>
+    <span class="t-meta">Top-ranked agent model, ranked #3 overall on leaderboard, 3.66k likes</span>
   </a>
 </li>
 
@@ -625,7 +595,7 @@
   <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener">
     <span class="t-ranking">#04</span>
     <span class="t-name">baidu/Unlimited-OCR</span>
-    <span class="t-meta">One-shot long-horizon parsing OCR model by Baidu</span>
+    <span class="t-meta">One-shot long-horizon OCR parsing, 1.87k likes</span>
   </a>
 </li>
 
@@ -633,7 +603,7 @@
   <a href="https://huggingface.co/InternScience/Agents-A1" target="_blank" rel="noopener">
     <span class="t-ranking">#05</span>
     <span class="t-name">InternScience/Agents-A1</span>
-    <span class="t-meta">35B-A3B agent model, trillion-parameter performance through reasoning scaling</span>
+    <span class="t-meta">35B-A3B agent model, trillion-parameter performance through scaling horizon, 399 likes</span>
   </a>
 </li>
 
@@ -641,7 +611,7 @@
   <a href="https://huggingface.co/google/tabfm-1.0.0-pytorch" target="_blank" rel="noopener">
     <span class="t-ranking">#06</span>
     <span class="t-name">google/tabfm-1.0.0-pytorch</span>
-    <span class="t-meta">Zero-shot tabular foundation model for classification and regression</span>
+    <span class="t-meta">Zero-shot tabular foundation model from Google Research, no fine-tuning required</span>
   </a>
 </li>
 
@@ -649,7 +619,7 @@
   <a href="https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF" target="_blank" rel="noopener">
     <span class="t-ranking">#07</span>
     <span class="t-name">deepreinforce-ai/Ornith-1.0-35B-GGUF</span>
-    <span class="t-meta">GGUF quantized 35B agentic coding model</span>
+    <span class="t-meta">35B GGUF quantized model</span>
   </a>
 </li>
 
@@ -657,7 +627,7 @@
   <a href="https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4" target="_blank" rel="noopener">
     <span class="t-ranking">#08</span>
     <span class="t-name">nvidia/Qwen3.6-27B-NVFP4</span>
-    <span class="t-meta">FP4 quantized Qwen3.6 multimodal model by NVIDIA, 27B, 262K context</span>
+    <span class="t-meta">NVIDIA FP4 quantized Qwen3.6-27B, Apache 2.0, optimized for deployment</span>
   </a>
 </li>
 
@@ -665,7 +635,7 @@
   <a href="https://huggingface.co/AliesTaha/fable-traces" target="_blank" rel="noopener">
     <span class="t-ranking">#09</span>
     <span class="t-name">AliesTaha/fable-traces</span>
-    <span class="t-meta">Fine-tuning traces dataset for Claude Fable model</span>
+    <span class="t-meta">Training traces dataset</span>
   </a>
 </li>
 
@@ -673,7 +643,7 @@
   <a href="https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF" target="_blank" rel="noopener">
     <span class="t-ranking">#10</span>
     <span class="t-name">yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF</span>
-    <span class="t-meta">GGUF quantized Gemma-4 12B agentic fine-tune with Fable5 and Composer</span>
+    <span class="t-meta">Gemma-4-12B based agentic GGUF with Fable 5 composer</span>
   </a>
 </li>
 
@@ -689,29 +659,29 @@
     <span class="n">12</span>
   </div>
   <ul class="qh-list">
-    <li><a href="https://x.com/togethercompute/status/2074597298303070522" target="_blank" rel="noopener"><span class="qh-title">GLM-5.2 ranks #1 on Artificial Analysis for speed and latency via Together AI</span><span class="qh-src">@togethercompute</span></a></li>
+    <li><a href="https://x.com/OpenAI/status/2074972179385720836" target="_blank" rel="noopener"><span class="qh-title">OpenAI audits SWE-Bench Pro, finds 30% of tasks broken, retracts recommendation</span><span class="qh-src">OpenAI</span></a></li>
 
-    <li><a href="https://x.com/GoogleDeepMind/status/2074513661750546762" target="_blank" rel="noopener"><span class="qh-title">Google DeepMind launches 'Predicting the Past' skill for historians</span><span class="qh-src">GoogleDeepMind</span></a></li>
+    <li><a href="https://x.com/AnthropicAI/status/2075005777522172146" target="_blank" rel="noopener"><span class="qh-title">Anthropic and AE Studio release GRAM: removable dual-use capabilities in AI models</span><span class="qh-src">AnthropicAI</span></a></li>
 
-    <li><a href="https://x.com/NousResearch/status/2074502059479421252" target="_blank" rel="noopener"><span class="qh-title">Nous Research ships multi-vault secret support in Hermes Agent</span><span class="qh-src">NousResearch</span></a></li>
+    <li><a href="https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents" target="_blank" rel="noopener"><span class="qh-title">Prime Intellect raises $130M Series A at $1B valuation for enterprise AI agents</span><span class="qh-src">TechCrunch</span></a></li>
 
-    <li><a href="https://x.com/ylecun/status/2074499817661731084" target="_blank" rel="noopener"><span class="qh-title">LeCun deep-dives on world models, JEPA, and anti-collapse methods</span><span class="qh-src">ylecun</span></a></li>
+    <li><a href="https://huggingface.co/collections/robbyant/lingbot-video" target="_blank" rel="noopener"><span class="qh-title">LingBot-Video: Open-weights 30B MoE video foundation model for embodied intelligence</span><span class="qh-src">@_akhaliq</span></a></li>
 
-    <li><a href="https://x.com/huggingface/status/2074508881984934265" target="_blank" rel="noopener"><span class="qh-title">Hugging Face runs live tutorial on model distillation for custom agents</span><span class="qh-src">huggingface</span></a></li>
+    <li><a href="https://huggingface.co/collections/robbyant/lingbot-world-v2" target="_blank" rel="noopener"><span class="qh-title">LingBot-World 2.0 Infinity: Interactive world model with hour-long zero-drift generation</span><span class="qh-src">@_akhaliq</span></a></li>
 
-    <li><a href="https://x.com/omarsar0/status/2074495218666144125" target="_blank" rel="noopener"><span class="qh-title">MiniMax M3 uses sparse attention for long-horizon multimodal agents</span><span class="qh-src">omarsar0</span></a></li>
+    <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/more-than-75-data-center-build-outs-worth-usd130-billion-have-been-successfully-blocked-in-the-first-four-months-of-2026-bipartisan-opposition-mounts-nationwide-over-fears-of-soaring-power-and-water-costs" target="_blank" rel="noopener"><span class="qh-title">More than 75 data center build-outs worth $130 billion blocked in Q1 2026</span><span class="qh-src">Tom's Hardware</span></a></li>
 
-    <li><a href="https://www.producthunt.com/products/badge-3" target="_blank" rel="noopener"><span class="qh-title">Badge uses AI agents to collect peer reviews for verifiable proof of work</span><span class="qh-src">Product Hunt</span></a></li>
+    <li><a href="https://www.raisesummit.com/" target="_blank" rel="noopener"><span class="qh-title">RAISE Summit and MACHINA Physical AI Summit draw 9,000 leaders in Paris</span><span class="qh-src">RAISE Summit</span></a></li>
 
-    <li><a href="https://www.producthunt.com/products/mira-the-ai-moderator" target="_blank" rel="noopener"><span class="qh-title">Mira launches AI-moderated interviews for UX research</span><span class="qh-src">Product Hunt</span></a></li>
+    <li><a href="https://mistral.ai/news/robostral-navigate" target="_blank" rel="noopener"><span class="qh-title">Mistral releases Robostral Navigate: 8B model for embodied robot navigation with single RGB camera</span><span class="qh-src">Mistral</span></a></li>
 
-    <li><a href="https://www.producthunt.com/products/ai-emaily-unified-ai-inbox" target="_blank" rel="noopener"><span class="qh-title">AI Emaily releases unified AI inbox with autopilot replies</span><span class="qh-src">Product Hunt</span></a></li>
+    <li><a href="https://huggingface.co/papers/2607.06291" target="_blank" rel="noopener"><span class="qh-title">AlayaWorld: Long-horizon and playable video world generation</span><span class="qh-src">HuggingFace</span></a></li>
 
-    <li><a href="https://www.producthunt.com/products/ellis-your-conversations-remembered" target="_blank" rel="noopener"><span class="qh-title">Ellis captures AI notes for in-person meetings</span><span class="qh-src">Product Hunt</span></a></li>
+    <li><a href="https://huggingface.co/papers/2607.05147" target="_blank" rel="noopener"><span class="qh-title">DSpark: DeepSeek's confidence-scheduled speculative decoding with semi-autoregressive generation</span><span class="qh-src">HuggingFace</span></a></li>
 
-    <li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/" target="_blank" rel="noopener"><span class="qh-title">Google DeepMind expands Gemini Managed Agents with background tasks and remote MCP</span><span class="qh-src">Google DeepMind</span></a></li>
+    <li><a href="https://x.com/_philschmid/status/2074894632396177671" target="_blank" rel="noopener"><span class="qh-title">Google AI Studio now supports GitHub project import and sync</span><span class="qh-src">@_philschmid</span></a></li>
 
-    <li><a href="https://x.com/_philschmid/status/2074533915038027972" target="_blank" rel="noopener"><span class="qh-title">Google DeepMind upgrades Gemini Managed Agents with background execution and MCP</span><span class="qh-src">_philschmid</span></a></li>
+    <li><a href="https://x.com/omarsar0/status/2074876501640593702" target="_blank" rel="noopener"><span class="qh-title">AI practitioners advise startups to focus on structured workflows over raw intelligence</span><span class="qh-src">@omarsar0</span></a></li>
 
   </ul>
 </section>
@@ -719,7 +689,7 @@
 
     <footer class="colophon">
       <p class="mark">Per aspera ad astra</p>
-      <p class="meta">Compiled by Hermes Agent · 2026-07-08 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Compiled by Hermes Agent · 2026-07-09 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
     </footer>
 
   </div>
@@ -782,5 +752,6 @@
   window.togglePodcast = togglePodcast;
 })();
 </script>
-</body>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
 </html>
