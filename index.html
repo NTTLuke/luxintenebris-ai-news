@@ -6,7 +6,108 @@
   <title>LVX IN TENEBRIS — AI dispatches · July 10, 2026</title>
   <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
   <link rel="stylesheet" href="style.css">
-  </head>
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+</head>
   <body>
   <div class="container">
 
@@ -28,7 +129,90 @@
       <hr class="rule-thin">
     </header>
 
-    
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Thousands of Pokemon Go Players Pack Times Square to Take Down Mega Mewtwo Y" data-b="According to a report by WIRED, close to 2,000 Pokemon Go players converged on Times Square this week for what may be one of the biggest in-person raids the game has ever seen. The invitation-only gathering marked the 10th anniversary of the mobile game&#x27;s release and finally delivered on a promise made in the very first trailer — a massive, billboard-dominated battle against the legendary Mewtwo in the heart of New York City.
+
+Players, selected through community ambassadors across the five boroughs, received in-game notifications directing them to Times Square for a special event. There, attendees watched a live EDM set by Loud Luxury before Mega Mewtwo Y took over the surrounding screens and a coordinated raid began. The legendary Pokemon was ultimately defeated. The event was livestreamed across Pokemon&#x27;s official websites and social channels, and a free virtual version of the same raid is available to all players this weekend.
+
+WIRED notes that the company now has over 3,000 community ambassadors worldwide, up from just 50 two years ago. A longtime player and FAA worker told the publication that the gathering contrasted sharply with the disastrous 2017 Pokemon Go Fest in Chicago, where overloaded networks and unstable servers crippled the experience. He credited the game with helping him socialize and even meeting his wife through it.
+
+*Ten years on, Pokemon Go&#x27;s ability to turn a virtual battle into a real-world spectacle remains its most underrated superpower.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/thousands-of-pokemon-go-players-descend-on-times-square-to-defeat-mewtwo/"><span class="tih">Thousands of Pokemon Go Players Pack Times Square to Take Down Mega Mewtwo Y</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI designates GPT 5.6 as Microsoft Copilot 365&#x27;s &#x27;preferred model&#x27; amid split speculation" data-b="Earlier this week, Bloomberg reported that Microsoft was substituting some of OpenAI&#x27;s software with its own in-house models, known as MAI, to reduce expenses — particularly in apps like Word and Excel. The story fueled growing speculation about whether the two longtime partners were drifting apart.
+
+Now OpenAI has pushed back against those rumors. During the launch of GPT 5.6 on Thursday, the company announced that the model would serve as the &quot;preferred model&quot; for Microsoft&#x27;s 365 Copilot across its productivity suite, including Word, Excel, PowerPoint, and Cowork. In a blog post, OpenAI stated that the partnership has always centered on delivering advanced AI to more people and organizations, adding that it is excited to continue building on that shared commitment.
+
+What exactly &quot;preferred model&quot; means in practice remains somewhat ambiguous, the article notes — other than that OpenAI&#x27;s software will continue powering Microsoft&#x27;s apps. Crucially, it was never reported that ChatGPT&#x27;s technology would be removed from Microsoft&#x27;s services; the original story was simply that Microsoft was leaning more on its own MAI models to lower costs. The new announcement does not appear to contradict that earlier reporting, according to TechCrunch.
+
+*It is one thing to be named the preferred model, and another to be the only model — the fine print matters more than the headline.*
+
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/"><span class="tih">OpenAI designates GPT 5.6 as Microsoft Copilot 365&#x27;s &#x27;preferred model&#x27; amid split speculation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Microsoft&#x27;s carbon footprint grew 25% in 2025, report says" data-b="Microsoft&#x27;s carbon emissions climbed 25 percent in 2025, reaching 34 million metric tons, according to the company&#x27;s 2026 sustainability report as covered by The Verge. The jump was largely driven by the expansion of Microsoft&#x27;s datacenter infrastructure and a policy change last February that halted purchases of certain renewable energy certificates.
+
+This marks another setback for Microsoft&#x27;s pledge to become carbon negative by 2030 — a target that requires the company to remove more emissions than it produces. A similar increase was already recorded in the 2024 sustainability report. The latest document acknowledges that while AI infrastructure is accelerating demand for energy, water, land, and materials, sustainability solutions are not scaling quickly enough to match that appetite.
+
+Microsoft is not alone in this trend. Google reported a comparable 25 percent rise in its supply chain emissions in its own 2026 report, while Amazon posted a 16 percent increase. Amazon also disclosed that its data centers consumed 2.5 billion gallons of water in 2025, which it claims is less than Microsoft&#x27;s water usage.
+
+*The uncomfortable truth emerging from every major tech sustainability report is that AI expansion and climate commitments are on a direct collision course, and so far, the cloud is winning.*
+
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026"><span class="tih">Microsoft&#x27;s carbon footprint grew 25% in 2025, report says</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fidji Simo steps down from OpenAI&#x27;s No. 2 role" data-b="OpenAI&#x27;s second-highest-ranking executive, Fidji Simo, is leaving her full-time position and moving to a part-time advisory role, according to TechCrunch, citing a staff memo. Simo cited an ongoing medical leave for a neuroimmune condition relapse that proved more difficult than anticipated.
+
+Simo joined OpenAI&#x27;s board in 2024 and came on as CEO of Applications in May 2025, a role that consolidated business and product operations under her. COO Brad Lightcap, CFO Sarah Friar, and CPO Kevin Weil all reported to her, allowing Sam Altman to focus on research and safety. Weil has since left the company as well. Prior to OpenAI, Simo served as Instacart&#x27;s CEO through its 2023 IPO and spent over a decade at Meta, where she ran the Facebook app.
+
+Her departure creates a leadership gap as OpenAI eyes a potential IPO. Simo was widely considered a candidate for greater responsibility post-IPO. She focused on growing OpenAI&#x27;s consumer business, but ChatGPT&#x27;s growth slowed late last year and missed internal revenue targets, pushing the company to invest more in coding tools — an area where it trails Anthropic.
+
+Altman responded on X, expressing sadness and gratitude for Simo&#x27;s contributions. The announcement came on the same day OpenAI launched its GPT-5.6 family of models and a new agent called ChatGPT Work. TechCrunch notes that Denise Dresser, a former Slack CEO who joined as chief revenue officer in December, could take on a broader role.
+
+*Simo&#x27;s exit leaves OpenAI&#x27;s executive bench conspicuously thin for an $852 billion company navigating a possible IPO and intensifying competition with Anthropic.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/"><span class="tih">Fidji Simo steps down from OpenAI&#x27;s No. 2 role</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fidji Simo steps down as OpenAI AGI chief, becomes part-time advisor" data-b="Fidji Simo is stepping away from her full-time position as OpenAI&#x27;s AGI chief and moving into a part-time advisory role, according to The Verge. Simo announced the transition on X, following a medical leave she began in April due to a neuroimmune condition.
+
+Simo had only recently taken on the AGI chief title after previously serving as the company&#x27;s CEO of applications. Her initial leave announcement set off a cascade of executive changes at the lab. COO Brad Lightcap stepped down to work on special projects, and CMO Kate Rouch also left her role to focus on her health, with plans to return in a narrower capacity.
+
+During Simo&#x27;s absence, OpenAI president Greg Brockman took over product oversight, including the company&#x27;s super app ambition. By mid-May, a broader reorganization saw Brockman officially leading product strategy and scaling across four pillars. In a memo seen by The Verge, Brockman described the restructuring as a move to unify OpenAI&#x27;s products around a single agentic platform, merging ChatGPT and Codex into one experience.
+
+Simo wrote on X that her medical leave revealed a longer and more complex recovery than expected, and that she needed to fully commit to it. She reflected on the surreal experience of helping build the future while managing a chronic illness with no known cure. CEO Sam Altman responded publicly, saying he was genuinely saddened by the news.
+
+*A stark reminder that even those building the future of intelligence are not immune to the fragility of the human body.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor"><span class="tih">Fidji Simo steps down as OpenAI AGI chief, becomes part-time advisor</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Thousands of Pokemon Go Players Pack Times Square to Take Down Mega Mewtwo Y" data-b="According to a report by WIRED, close to 2,000 Pokemon Go players converged on Times Square this week for what may be one of the biggest in-person raids the game has ever seen. The invitation-only gathering marked the 10th anniversary of the mobile game&#x27;s release and finally delivered on a promise made in the very first trailer — a massive, billboard-dominated battle against the legendary Mewtwo in the heart of New York City.
+
+Players, selected through community ambassadors across the five boroughs, received in-game notifications directing them to Times Square for a special event. There, attendees watched a live EDM set by Loud Luxury before Mega Mewtwo Y took over the surrounding screens and a coordinated raid began. The legendary Pokemon was ultimately defeated. The event was livestreamed across Pokemon&#x27;s official websites and social channels, and a free virtual version of the same raid is available to all players this weekend.
+
+WIRED notes that the company now has over 3,000 community ambassadors worldwide, up from just 50 two years ago. A longtime player and FAA worker told the publication that the gathering contrasted sharply with the disastrous 2017 Pokemon Go Fest in Chicago, where overloaded networks and unstable servers crippled the experience. He credited the game with helping him socialize and even meeting his wife through it.
+
+*Ten years on, Pokemon Go&#x27;s ability to turn a virtual battle into a real-world spectacle remains its most underrated superpower.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/thousands-of-pokemon-go-players-descend-on-times-square-to-defeat-mewtwo/"><span class="tih">Thousands of Pokemon Go Players Pack Times Square to Take Down Mega Mewtwo Y</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI designates GPT 5.6 as Microsoft Copilot 365&#x27;s &#x27;preferred model&#x27; amid split speculation" data-b="Earlier this week, Bloomberg reported that Microsoft was substituting some of OpenAI&#x27;s software with its own in-house models, known as MAI, to reduce expenses — particularly in apps like Word and Excel. The story fueled growing speculation about whether the two longtime partners were drifting apart.
+
+Now OpenAI has pushed back against those rumors. During the launch of GPT 5.6 on Thursday, the company announced that the model would serve as the &quot;preferred model&quot; for Microsoft&#x27;s 365 Copilot across its productivity suite, including Word, Excel, PowerPoint, and Cowork. In a blog post, OpenAI stated that the partnership has always centered on delivering advanced AI to more people and organizations, adding that it is excited to continue building on that shared commitment.
+
+What exactly &quot;preferred model&quot; means in practice remains somewhat ambiguous, the article notes — other than that OpenAI&#x27;s software will continue powering Microsoft&#x27;s apps. Crucially, it was never reported that ChatGPT&#x27;s technology would be removed from Microsoft&#x27;s services; the original story was simply that Microsoft was leaning more on its own MAI models to lower costs. The new announcement does not appear to contradict that earlier reporting, according to TechCrunch.
+
+*It is one thing to be named the preferred model, and another to be the only model — the fine print matters more than the headline.*
+
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/"><span class="tih">OpenAI designates GPT 5.6 as Microsoft Copilot 365&#x27;s &#x27;preferred model&#x27; amid split speculation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Microsoft&#x27;s carbon footprint grew 25% in 2025, report says" data-b="Microsoft&#x27;s carbon emissions climbed 25 percent in 2025, reaching 34 million metric tons, according to the company&#x27;s 2026 sustainability report as covered by The Verge. The jump was largely driven by the expansion of Microsoft&#x27;s datacenter infrastructure and a policy change last February that halted purchases of certain renewable energy certificates.
+
+This marks another setback for Microsoft&#x27;s pledge to become carbon negative by 2030 — a target that requires the company to remove more emissions than it produces. A similar increase was already recorded in the 2024 sustainability report. The latest document acknowledges that while AI infrastructure is accelerating demand for energy, water, land, and materials, sustainability solutions are not scaling quickly enough to match that appetite.
+
+Microsoft is not alone in this trend. Google reported a comparable 25 percent rise in its supply chain emissions in its own 2026 report, while Amazon posted a 16 percent increase. Amazon also disclosed that its data centers consumed 2.5 billion gallons of water in 2025, which it claims is less than Microsoft&#x27;s water usage.
+
+*The uncomfortable truth emerging from every major tech sustainability report is that AI expansion and climate commitments are on a direct collision course, and so far, the cloud is winning.*
+
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026"><span class="tih">Microsoft&#x27;s carbon footprint grew 25% in 2025, report says</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fidji Simo steps down from OpenAI&#x27;s No. 2 role" data-b="OpenAI&#x27;s second-highest-ranking executive, Fidji Simo, is leaving her full-time position and moving to a part-time advisory role, according to TechCrunch, citing a staff memo. Simo cited an ongoing medical leave for a neuroimmune condition relapse that proved more difficult than anticipated.
+
+Simo joined OpenAI&#x27;s board in 2024 and came on as CEO of Applications in May 2025, a role that consolidated business and product operations under her. COO Brad Lightcap, CFO Sarah Friar, and CPO Kevin Weil all reported to her, allowing Sam Altman to focus on research and safety. Weil has since left the company as well. Prior to OpenAI, Simo served as Instacart&#x27;s CEO through its 2023 IPO and spent over a decade at Meta, where she ran the Facebook app.
+
+Her departure creates a leadership gap as OpenAI eyes a potential IPO. Simo was widely considered a candidate for greater responsibility post-IPO. She focused on growing OpenAI&#x27;s consumer business, but ChatGPT&#x27;s growth slowed late last year and missed internal revenue targets, pushing the company to invest more in coding tools — an area where it trails Anthropic.
+
+Altman responded on X, expressing sadness and gratitude for Simo&#x27;s contributions. The announcement came on the same day OpenAI launched its GPT-5.6 family of models and a new agent called ChatGPT Work. TechCrunch notes that Denise Dresser, a former Slack CEO who joined as chief revenue officer in December, could take on a broader role.
+
+*Simo&#x27;s exit leaves OpenAI&#x27;s executive bench conspicuously thin for an $852 billion company navigating a possible IPO and intensifying competition with Anthropic.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/"><span class="tih">Fidji Simo steps down from OpenAI&#x27;s No. 2 role</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fidji Simo steps down as OpenAI AGI chief, becomes part-time advisor" data-b="Fidji Simo is stepping away from her full-time position as OpenAI&#x27;s AGI chief and moving into a part-time advisory role, according to The Verge. Simo announced the transition on X, following a medical leave she began in April due to a neuroimmune condition.
+
+Simo had only recently taken on the AGI chief title after previously serving as the company&#x27;s CEO of applications. Her initial leave announcement set off a cascade of executive changes at the lab. COO Brad Lightcap stepped down to work on special projects, and CMO Kate Rouch also left her role to focus on her health, with plans to return in a narrower capacity.
+
+During Simo&#x27;s absence, OpenAI president Greg Brockman took over product oversight, including the company&#x27;s super app ambition. By mid-May, a broader reorganization saw Brockman officially leading product strategy and scaling across four pillars. In a memo seen by The Verge, Brockman described the restructuring as a move to unify OpenAI&#x27;s products around a single agentic platform, merging ChatGPT and Codex into one experience.
+
+Simo wrote on X that her medical leave revealed a longer and more complex recovery than expected, and that she needed to fully commit to it. She reflected on the surreal experience of helping build the future while managing a chronic illness with no known cure. CEO Sam Altman responded publicly, saying he was genuinely saddened by the news.
+
+*A stark reminder that even those building the future of intelligence are not immune to the fragility of the human body.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor"><span class="tih">Fidji Simo steps down as OpenAI AGI chief, becomes part-time advisor</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="notice"><b>Editor's note —</b> A busy follow-up day after yesterday's wave of launches — fresh stories on hardware, agents, and open-source innovation fill today's edition.</div>
 
     <div class="lead-zone">
       <article class="lead">
@@ -45,6 +229,30 @@
       </div>
     </div>
   </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:14</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-model">xai/grok-tts-v1</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-07-10.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
 </article>
 
     </div>
@@ -508,5 +716,64 @@
     </footer>
 
   </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
 </body>
 </html>
