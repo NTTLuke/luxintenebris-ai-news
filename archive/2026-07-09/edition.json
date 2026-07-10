@@ -1,0 +1,373 @@
+{
+  "issue_no": 13,
+  "date_iso": "2026-07-09",
+  "date_human": "July 09, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "AI's next frontier",
+    "title": "OpenAI announces GPT-5.6 Sol, Terra and Luna models launching July 10",
+    "summary": "OpenAI unveiled GPT-5.6 Sol, its next-generation flagship model, along with specialized variants Terra and Luna for targeted domains. Global preview access is expanding now ahead of the public launch on Thursday, marking the company's most significant model release since GPT-5.",
+    "source": "OpenAI",
+    "date": "2026-07-08",
+    "url": "https://x.com/OpenAI/status/2074704958419792299",
+    "image": "images/lead_2026-07-09.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "OpenAI introduces GPT-Live, a full-duplex voice model for natural conversation",
+      "summary": "A new generation of voice AI that listens and speaks simultaneously, rolling out to ChatGPT on iOS, Android, and web with API support coming soon.",
+      "source": "OpenAI",
+      "date": "2026-07-08",
+      "url": "https://x.com/OpenAI/status/2074907025537224840"
+    },
+    {
+      "title": "xAI launches Grok 4.5 as its smartest model yet, rivals GPT-5.5 at 1/5 the cost",
+      "summary": "Trained on tens of thousands of NVIDIA GB300 GPUs with large-scale RL, served at 80 TPS, and priced at $2/M input and $6/M output tokens. Available in Grok Build, Cursor, and the SpaceXAI API.",
+      "source": "xAI",
+      "date": "2026-07-08",
+      "url": "https://x.ai/news/grok-4-5"
+    },
+    {
+      "title": "SambaNova raises $1B at $11B valuation in Series F first close",
+      "summary": "The AI chip maker for enterprise inference infrastructure drew a $1 billion round led by General Atlantic with Intel participating.",
+      "source": "TechCrunch",
+      "date": "2026-07-08",
+      "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close"
+    },
+    {
+      "title": "Anthropic expands Claude Cowork to mobile and web in beta launch",
+      "summary": "Claude Cowork moves beyond desktop to iOS, Android, and web. Sessions run in the cloud by default, span devices, and continue even when the laptop is closed. Available to Max subscribers first.",
+      "source": "The Verge",
+      "date": "2026-07-08",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Gemma 4 Technical Report: Google's open-weight multimodal LLMs set new SOTA",
+          "summary": "Google introduces open-weight multimodal LLMs (2.3B-31B, dense + MoE) with thinking mode, encoder-free 12B architecture, and KV-cache optimizations, establishing SOTA on STEM, multimodal, and long-context benchmarks.",
+          "source": "arXiv",
+          "date": "2026-07-08",
+          "url": "https://arxiv.org/abs/2607.02770",
+          "image": "images/section_research-papers_2026-07-09.jpg"
+        },
+        {
+          "title": "Nemotron-Labs-Diffusion: NVIDIA unifies autoregressive, diffusion and self-speculation decoding",
+          "summary": "NVIDIA's tri-mode LM at 8B scale decodes 6x more tokens per forward than Qwen3-8B with comparable accuracy, delivering 4x higher throughput on SPEED-Bench.",
+          "source": "arXiv",
+          "date": "2026-07-08",
+          "url": "https://arxiv.org/abs/2607.05722"
+        },
+        {
+          "title": "SenseNova-Vision: All CV tasks reformulated as unified multimodal generation",
+          "summary": "Formulates detection, segmentation, depth, keypoints and pose as multimodal generation within a single UMM without task-specific heads, matching specialized systems across diverse vision benchmarks.",
+          "source": "HuggingFace",
+          "date": "2026-07-08",
+          "url": "https://huggingface.co/papers/2607.06560"
+        },
+        {
+          "title": "RynnWorld-4D: Alibaba's 4D embodied world model for robotic manipulation",
+          "summary": "Jointly predicts synchronized RGB, depth and optical flow from a single RGB-D image and language instruction. Features a tri-branch Diffusion Transformer enabling >9 Hz closed-loop bimanual control.",
+          "source": "HuggingFace",
+          "date": "2026-07-08",
+          "url": "https://huggingface.co/papers/2607.06559"
+        },
+        {
+          "title": "Flex-Forcing: NVIDIA unifies autoregressive and bidirectional video diffusion",
+          "summary": "A unified video diffusion framework enabling flexible generation with both forward and bidirectional conditioning in a single architecture.",
+          "source": "HuggingFace",
+          "date": "2026-07-08",
+          "url": "https://huggingface.co/papers/2607.03509"
+        }
+      ]
+    },
+    {
+      "title": "YouTube & Video",
+      "items": [
+        {
+          "title": "Grok 4.5 rivals GPT-5.5, outperforms Opus 4.8 at 1/5 the price",
+          "summary": "Analysis from Theo — t3.gg benchmarks Grok 4.5 against leading models, showing competitive performance at a fraction of the cost with significantly better token efficiency.",
+          "source": "Theo - t3.gg",
+          "date": "2026-07-09",
+          "url": "https://www.youtube.com/watch?v=U3uX115I9sY",
+          "image": "images/section_youtube-video_2026-07-09.jpg"
+        },
+        {
+          "title": "OpenAI expands GPT-5.6 release globally after Trump administration approval",
+          "summary": "Bloomberg's AI editor reports on the global rollout of OpenAI's most advanced model following regulatory clearance.",
+          "source": "Bloomberg Technology",
+          "date": "2026-07-08",
+          "url": "https://www.youtube.com/watch?v=DbciOS1UJNM"
+        },
+        {
+          "title": "Bank of America reverses course, extends $520M credit line to OpenAI",
+          "summary": "Bloomberg sources reveal BofA is now extending a $520 million credit line to OpenAI after initially passing on the opportunity, signaling growing financial confidence.",
+          "source": "Bloomberg Technology",
+          "date": "2026-07-08",
+          "url": "https://www.youtube.com/watch?v=0BWf3goAKUA"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "ZML/LLMD: Free inference server runs open-weight models across Nvidia, AMD, Apple and Intel chips",
+          "summary": "French AI startup ZML released a free LLM inference server supporting multi-chip deployment (Nvidia, AMD, Google TPU, Apple Metal, Intel Arc), promising maximum performance without vendor lock-in.",
+          "source": "TechCrunch",
+          "date": "2026-07-08",
+          "url": "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips",
+          "image": "images/section_tools-startups_2026-07-09.jpg"
+        },
+        {
+          "title": "Rowboat: Open-source, local-first alternative to Claude Desktop with memory",
+          "summary": "An AI coworker with dedicated work surfaces for email, meetings, notes, browser, and coding. Reached #2 on Show HN with 168 points.",
+          "source": "Hacker News",
+          "date": "2026-07-09",
+          "url": "https://news.ycombinator.com/item?id=48819808"
+        },
+        {
+          "title": "Halo: Open-source, tamper-evident runtime evidence for AI agents",
+          "summary": "Generates verifiable audit trails proving what an agent did with data, aiming to solve the compliance and trust gap in the post-agentic enterprise.",
+          "source": "Hacker News",
+          "date": "2026-07-09",
+          "url": "https://news.ycombinator.com/item?id=48818098"
+        },
+        {
+          "title": "Framer launches AI Agents for design and publishing on the canvas",
+          "summary": "AI-powered design, writing, analysis, and organization tools on the Framer canvas, plus branching for safer team collaboration.",
+          "source": "Product Hunt",
+          "date": "2026-07-08",
+          "url": "https://www.producthunt.com/products/framer"
+        },
+        {
+          "title": "Universal-3.5 Pro: AssemblyAI's most accurate speech-to-text model",
+          "summary": "Targets high-accuracy transcription use cases across multiple languages and domains with improved precision.",
+          "source": "Product Hunt",
+          "date": "2026-07-08",
+          "url": "https://www.producthunt.com/products/assemblyai"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-07-09",
+      "items": [
+        {
+          "name": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "meta": "JavaScript · 74,072 ★ · +1,297 today"
+        },
+        {
+          "name": "ruvnet/RuView",
+          "url": "https://github.com/ruvnet/RuView",
+          "meta": "Rust · 79,144 ★ · +799 today"
+        },
+        {
+          "name": "TencentCloud/TencentDB-Agent-Memory",
+          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+          "meta": "TypeScript · 7,644 ★ · +318 today"
+        },
+        {
+          "name": "prisma/prisma",
+          "url": "https://github.com/prisma/prisma",
+          "meta": "TypeScript · 46,554 ★ · +46 today"
+        },
+        {
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "meta": "Python · 50,751 ★ · +352 today"
+        },
+        {
+          "name": "argoproj/argo-cd",
+          "url": "https://github.com/argoproj/argo-cd",
+          "meta": "Go · 23,433 ★ · +29 today"
+        },
+        {
+          "name": "iOfficeAI/OfficeCLI",
+          "url": "https://github.com/iOfficeAI/OfficeCLI",
+          "meta": "C# · 11,824 ★ · +1,717 today"
+        },
+        {
+          "name": "asgeirtj/system_prompts_leaks",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "meta": "JavaScript · 54,192 ★ · +1,218 today"
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "meta": "Shell · 249,817 ★ · +1,116 today"
+        },
+        {
+          "name": "alibaba/zvec",
+          "url": "https://github.com/alibaba/zvec",
+          "meta": "C++ · 14,407 ★ · +395 today"
+        },
+        {
+          "name": "Diolinux/PhotoGIMP",
+          "url": "https://github.com/Diolinux/PhotoGIMP",
+          "meta": "CSS · 15,033 ★ · +1,125 today"
+        },
+        {
+          "name": "wonderwhy-er/DesktopCommanderMCP",
+          "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+          "meta": "TypeScript · 6,375 ★ · +28 today"
+        },
+        {
+          "name": "huxingyi/autoremesher",
+          "url": "https://github.com/huxingyi/autoremesher",
+          "meta": "C++ · 2,009 ★ · +296 today"
+        },
+        {
+          "name": "bradautomates/claude-video",
+          "url": "https://github.com/bradautomates/claude-video",
+          "meta": "Python · 6,053 ★ · +951 today"
+        },
+        {
+          "name": "TencentCloud/CubeSandbox",
+          "url": "https://github.com/TencentCloud/CubeSandbox",
+          "meta": "Rust · 8,929 ★ · +564 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-07-09",
+      "items": [
+        {
+          "name": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+          "meta": "9B full-parameter reasoning model, uncensored, built on Qwen3.5-9B with over 500M tokens of Claude Mythos/Fable traces"
+        },
+        {
+          "name": "tencent/Hy3",
+          "url": "https://huggingface.co/tencent/Hy3",
+          "meta": "Tencent Hy3 multimodal model, Apache 2.0 licensed"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "Top-ranked agent model, ranked #3 overall on leaderboard, 3.66k likes"
+        },
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "meta": "One-shot long-horizon OCR parsing, 1.87k likes"
+        },
+        {
+          "name": "InternScience/Agents-A1",
+          "url": "https://huggingface.co/InternScience/Agents-A1",
+          "meta": "35B-A3B agent model, trillion-parameter performance through scaling horizon, 399 likes"
+        },
+        {
+          "name": "google/tabfm-1.0.0-pytorch",
+          "url": "https://huggingface.co/google/tabfm-1.0.0-pytorch",
+          "meta": "Zero-shot tabular foundation model from Google Research, no fine-tuning required"
+        },
+        {
+          "name": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
+          "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
+          "meta": "35B GGUF quantized model"
+        },
+        {
+          "name": "nvidia/Qwen3.6-27B-NVFP4",
+          "url": "https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4",
+          "meta": "NVIDIA FP4 quantized Qwen3.6-27B, Apache 2.0, optimized for deployment"
+        },
+        {
+          "name": "AliesTaha/fable-traces",
+          "url": "https://huggingface.co/AliesTaha/fable-traces",
+          "meta": "Training traces dataset"
+        },
+        {
+          "name": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+          "meta": "Gemma-4-12B based agentic GGUF with Fable 5 composer"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "OpenAI audits SWE-Bench Pro, finds 30% of tasks broken, retracts recommendation",
+      "source": "OpenAI",
+      "date": "2026-07-08",
+      "url": "https://x.com/OpenAI/status/2074972179385720836"
+    },
+    {
+      "title": "Anthropic and AE Studio release GRAM: removable dual-use capabilities in AI models",
+      "source": "AnthropicAI",
+      "date": "2026-07-08",
+      "url": "https://x.com/AnthropicAI/status/2075005777522172146"
+    },
+    {
+      "title": "Prime Intellect raises $130M Series A at $1B valuation for enterprise AI agents",
+      "source": "TechCrunch",
+      "date": "2026-07-08",
+      "url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents"
+    },
+    {
+      "title": "LingBot-Video: Open-weights 30B MoE video foundation model for embodied intelligence",
+      "source": "@_akhaliq",
+      "date": "2026-07-08",
+      "url": "https://huggingface.co/collections/robbyant/lingbot-video"
+    },
+    {
+      "title": "LingBot-World 2.0 Infinity: Interactive world model with hour-long zero-drift generation",
+      "source": "@_akhaliq",
+      "date": "2026-07-08",
+      "url": "https://huggingface.co/collections/robbyant/lingbot-world-v2"
+    },
+    {
+      "title": "More than 75 data center build-outs worth $130 billion blocked in Q1 2026",
+      "source": "Tom's Hardware",
+      "date": "2026-07-09",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/more-than-75-data-center-build-outs-worth-usd130-billion-have-been-successfully-blocked-in-the-first-four-months-of-2026-bipartisan-opposition-mounts-nationwide-over-fears-of-soaring-power-and-water-costs"
+    },
+    {
+      "title": "RAISE Summit and MACHINA Physical AI Summit draw 9,000 leaders in Paris",
+      "source": "RAISE Summit",
+      "date": "2026-07-08",
+      "url": "https://www.raisesummit.com/"
+    },
+    {
+      "title": "Mistral releases Robostral Navigate: 8B model for embodied robot navigation with single RGB camera",
+      "source": "Mistral",
+      "date": "2026-07-08",
+      "url": "https://mistral.ai/news/robostral-navigate"
+    },
+    {
+      "title": "AlayaWorld: Long-horizon and playable video world generation",
+      "source": "HuggingFace",
+      "date": "2026-07-08",
+      "url": "https://huggingface.co/papers/2607.06291"
+    },
+    {
+      "title": "DSpark: DeepSeek's confidence-scheduled speculative decoding with semi-autoregressive generation",
+      "source": "HuggingFace",
+      "date": "2026-07-08",
+      "url": "https://huggingface.co/papers/2607.05147"
+    },
+    {
+      "title": "Google AI Studio now supports GitHub project import and sync",
+      "source": "@_philschmid",
+      "date": "2026-07-08",
+      "url": "https://x.com/_philschmid/status/2074894632396177671"
+    },
+    {
+      "title": "AI practitioners advise startups to focus on structured workflows over raw intelligence",
+      "source": "@omarsar0",
+      "date": "2026-07-08",
+      "url": "https://x.com/omarsar0/status/2074876501640593702"
+    }
+  ]
+}
