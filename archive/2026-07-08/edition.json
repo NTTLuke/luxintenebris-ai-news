@@ -1,5 +1,5 @@
 {
-  "issue_no": 11,
+  "issue_no": 13,
   "date_iso": "2026-07-08",
   "date_human": "July 08, 2026",
   "notice": null,
@@ -14,7 +14,7 @@
   },
   "top_stories": [
     {
-      "title": "Meta launches Muse Image and Muse Video — free AI generation with native audio",
+      "title": "Meta launches Muse Image and Muse Video \u2014 free AI generation with native audio",
       "summary": "Meta released Muse Image, a free AI image generator available in Meta AI, Instagram Stories, and WhatsApp with prompt-based editing and Marketplace integration, alongside Muse Video which delivers high visual fidelity with native audio support.",
       "source": "Meta AI",
       "date": "2026-07-07",
@@ -56,7 +56,7 @@
         },
         {
           "title": "EdgeBench: agent real-world learning follows log-sigmoid scaling laws",
-          "summary": "First evidence that agent real-world learning follows a log-sigmoid scaling law (R²=0.998) across 134 tasks and 38K hours of interaction. Agent learning speed doubles every 3 months.",
+          "summary": "First evidence that agent real-world learning follows a log-sigmoid scaling law (R\u00b2=0.998) across 134 tasks and 38K hours of interaction. Agent learning speed doubles every 3 months.",
           "source": "arXiv",
           "date": "2026-07-07",
           "url": "https://arxiv.org/abs/2607.05155"
@@ -70,7 +70,7 @@
         },
         {
           "title": "MANCE: manifold-aware concept erasure preserves unrelated information",
-          "summary": "Proposes the Manifold Constraint Hypothesis — constraining concept removal to the natural representation manifold better preserves unrelated data, achieving SOTA across 119 settings spanning text and vision models.",
+          "summary": "Proposes the Manifold Constraint Hypothesis \u2014 constraining concept removal to the natural representation manifold better preserves unrelated data, achieving SOTA across 119 settings spanning text and vision models.",
           "source": "arXiv",
           "date": "2026-07-07",
           "url": "https://arxiv.org/abs/2607.03973"
@@ -91,21 +91,21 @@
           "image": "images/section_youtube-video_2026-07-08.jpg",
           "title": "AI market pivots from token-subsidized experimentation to token scarcity",
           "summary": "June 2026 marks a fundamental shift as enterprises move from subsidized AI experimentation to token scarcity, forcing cost and efficiency prioritization. Fable 5 launch and new US export controls on AI models intensify the debate.",
-          "source": "YouTube — The AI Daily Brief",
+          "source": "YouTube \u2014 The AI Daily Brief",
           "date": "2026-07-07",
           "url": "https://www.youtube.com/watch?v=WUeMqk_ABmY"
         },
         {
           "title": "OpenAI proposes transferring 5% stake to US sovereign fund",
           "summary": "OpenAI's proposal to transfer a 5% equity stake to a US sovereign fund sparks political debate over corporate-government AI ties. KPMG and Box studies show AI adoption correlates with headcount growth.",
-          "source": "YouTube — The AI Daily Brief",
+          "source": "YouTube \u2014 The AI Daily Brief",
           "date": "2026-07-07",
           "url": "https://www.youtube.com/watch?v=PnEWo_AKzIU"
         },
         {
           "title": "DeepSeek publishes new AI speed optimization paper",
           "summary": "DeepSeek released a new research paper (arXiv 2607.05147) detailing a novel speed optimization technique for AI inference, promising significant performance improvements.",
-          "source": "YouTube — Two Minute Papers",
+          "source": "YouTube \u2014 Two Minute Papers",
           "date": "2026-07-07",
           "url": "https://www.youtube.com/watch?v=1yBU41auQhw"
         }
@@ -138,7 +138,7 @@
         },
         {
           "title": "ABB Robotics launches Flexley Stack F712 autonomous forklift with vSLAM",
-          "summary": "The autonomous forklift features visual SLAM navigation eliminating the need for pre-installed infrastructure, handling loads up to 2,000 kg with ±10 mm positional accuracy.",
+          "summary": "The autonomous forklift features visual SLAM navigation eliminating the need for pre-installed infrastructure, handling loads up to 2,000 kg with \u00b110 mm positional accuracy.",
           "source": "The Robot Report",
           "date": "2026-07-07",
           "url": "https://www.therobotreport.com/abb-robotics-includes-vslam-navigation-f712-autonomous-forklift"
@@ -205,14 +205,14 @@
           "url": "https://www.businesswire.com/news/home/20260707861533/en/Agave-Raises-%2415M-Series-A-to-Bring-AI-to-Construction-Financials"
         },
         {
-          "title": "Luffy AI secures £8.1M Series A for neuroplastic industrial AI control",
+          "title": "Luffy AI secures \u00a38.1M Series A for neuroplastic industrial AI control",
           "summary": "BGF led the round for Luffy's neuroplastic AI platform providing real-time adaptive control for motors, robotics, and drones using sparse neural networks trained in simulation.",
           "source": "Tech.eu",
           "date": "2026-07-07",
           "url": "https://tech.eu/2026/07/07/luffy-secures-ps81m-to-scale-real-time-adaptive-control-technology"
         },
         {
-          "title": "ARC Intelligence raises €4M seed for AI-native finance OS",
+          "title": "ARC Intelligence raises \u20ac4M seed for AI-native finance OS",
           "summary": "42CAP led the round for ARC's AI-native Finance OS connecting ERP and CRM systems, having already supported 200,000+ business decisions.",
           "source": "Tech.eu",
           "date": "2026-07-07",
@@ -231,67 +231,67 @@
         {
           "name": "MadsLorentzen/ai-job-search",
           "url": "https://github.com/MadsLorentzen/ai-job-search",
-          "meta": "TypeScript · 11,104 ★ · +2,514 today"
+          "meta": "TypeScript \u00b7 11,104 \u2605 \u00b7 +2,514 today"
         },
         {
           "name": "Zackriya-Solutions/meetily",
           "url": "https://github.com/Zackriya-Solutions/meetily",
-          "meta": "Rust · 20,797 ★ · +1,777 today"
+          "meta": "Rust \u00b7 20,797 \u2605 \u00b7 +1,777 today"
         },
         {
           "name": "addyosmani/agent-skills",
           "url": "https://github.com/addyosmani/agent-skills",
-          "meta": "JavaScript · 72,208 ★ · +1,317 today"
+          "meta": "JavaScript \u00b7 72,208 \u2605 \u00b7 +1,317 today"
         },
         {
           "name": "ruvnet/RuView",
           "url": "https://github.com/ruvnet/RuView",
-          "meta": "Rust · 78,533 ★ · +1,129 today"
+          "meta": "Rust \u00b7 78,533 \u2605 \u00b7 +1,129 today"
         },
         {
           "name": "asgeirtj/system_prompts_leaks",
           "url": "https://github.com/asgeirtj/system_prompts_leaks",
-          "meta": "JavaScript · 53,054 ★ · +1,691 today"
+          "meta": "JavaScript \u00b7 53,054 \u2605 \u00b7 +1,691 today"
         },
         {
           "name": "TencentCloud/CubeSandbox",
           "url": "https://github.com/TencentCloud/CubeSandbox",
-          "meta": "Rust · 8,486 ★ · +664 today"
+          "meta": "Rust \u00b7 8,486 \u2605 \u00b7 +664 today"
         },
         {
           "name": "AhmadIbrahiim/Website-downloader",
           "url": "https://github.com/AhmadIbrahiim/Website-downloader",
-          "meta": "HTML · 4,041 ★ · +140 today"
+          "meta": "HTML \u00b7 4,041 \u2605 \u00b7 +140 today"
         },
         {
           "name": "steipete/CodexBar",
           "url": "https://github.com/steipete/CodexBar",
-          "meta": "Swift · 17,051 ★ · +376 today"
+          "meta": "Swift \u00b7 17,051 \u2605 \u00b7 +376 today"
         },
         {
           "name": "dotnet/skills",
           "url": "https://github.com/dotnet/skills",
-          "meta": "C# · 4,319 ★ · +64 today"
+          "meta": "C# \u00b7 4,319 \u2605 \u00b7 +64 today"
         },
         {
           "name": "iOfficeAI/OfficeCLI",
           "url": "https://github.com/iOfficeAI/OfficeCLI",
-          "meta": "C# · 10,070 ★ · +893 today"
+          "meta": "C# \u00b7 10,070 \u2605 \u00b7 +893 today"
         },
         {
           "name": "bradautomates/claude-video",
           "url": "https://github.com/bradautomates/claude-video",
-          "meta": "Python · 5,204 ★ · +965 today"
+          "meta": "Python \u00b7 5,204 \u2605 \u00b7 +965 today"
         },
         {
           "name": "kyutai-labs/pocket-tts",
           "url": "https://github.com/kyutai-labs/pocket-tts",
-          "meta": "Python · 6,206 ★ · +531 today"
+          "meta": "Python \u00b7 6,206 \u2605 \u00b7 +531 today"
         },
         {
           "name": "hesreallyhim/awesome-claude-code",
           "url": "https://github.com/hesreallyhim/awesome-claude-code",
-          "meta": "Python · 49,145 ★ · +144 today"
+          "meta": "Python \u00b7 49,145 \u2605 \u00b7 +144 today"
         }
       ]
     },

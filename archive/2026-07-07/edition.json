@@ -1,5 +1,5 @@
 {
-  "issue_no": 11,
+  "issue_no": 12,
   "date_iso": "2026-07-07",
   "date_human": "July 07, 2026",
   "notice": null,
@@ -14,7 +14,7 @@
   },
   "top_stories": [
     {
-      "title": "Anthropic reveals Claude's internal 'global workspace' — J-Space interpretability breakthrough",
+      "title": "Anthropic reveals Claude's internal 'global workspace' \u2014 J-Space interpretability breakthrough",
       "summary": "Anthropic researchers identified a privileged subspace (J-Space) in Claude's activations that functions like a global workspace for conscious access. Claude can perform silent reasoning steps there, and hidden goals become visible. An interactive demo is available on Neuronpedia.",
       "source": "AnthropicAI",
       "date": "2026-07-06",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Are humanoid robots ready to be deployed? The New Yorker examines the state of the field",
-      "summary": "A feature article surveys a dozen humanoid models — including 1X Technologies' Neo, Figure 03, Boston Dynamics' Atlas, and Tesla Optimus — as they prepare to hit the market. Experts warn physical AI lacks a 'ChatGPT moment,' and safety around children and pets remains unresolved. The Neo lists at $20,000 with over 10,000 deposits.",
+      "summary": "A feature article surveys a dozen humanoid models \u2014 including 1X Technologies' Neo, Figure 03, Boston Dynamics' Atlas, and Tesla Optimus \u2014 as they prepare to hit the market. Experts warn physical AI lacks a 'ChatGPT moment,' and safety around children and pets remains unresolved. The Neo lists at $20,000 with over 10,000 deposits.",
       "source": "The New Yorker",
       "date": "2026-07-06",
       "url": "https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed"
@@ -144,7 +144,7 @@
         },
         {
           "title": "Pulpie: Pareto-optimal models for web content extraction, 20x cheaper",
-          "summary": "Feyn's family of models matches SOTA extraction quality while being 20x cheaper — cleaning 1 billion pages costs $7,900 with Pulpie vs $159,000 with alternatives. Open-source on Hugging Face.",
+          "summary": "Feyn's family of models matches SOTA extraction quality while being 20x cheaper \u2014 cleaning 1 billion pages costs $7,900 with Pulpie vs $159,000 with alternatives. Open-source on Hugging Face.",
           "source": "Feyn",
           "date": "2026-07-06",
           "url": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web/"
@@ -193,21 +193,81 @@
       "link_label": "github.com/trending",
       "date": "2026-07-07",
       "items": [
-        {"name": "asgeirtj/system_prompts_leaks", "url": "https://github.com/asgeirtj/system_prompts_leaks", "meta": "JavaScript · 51,800 ★ · +1,378 today"},
-        {"name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "meta": "JavaScript · 71,027 ★ · +1,112 today"},
-        {"name": "Zackriya-Solutions/meetily", "url": "https://github.com/Zackriya-Solutions/meetily", "meta": "Rust · 19,600 ★ · +2,494 today"},
-        {"name": "ruvnet/RuView", "url": "https://github.com/ruvnet/RuView", "meta": "Rust · 77,649 ★ · +470 today"},
-        {"name": "Leonxlnx/taste-skill", "url": "https://github.com/Leonxlnx/taste-skill", "meta": "JavaScript · 59,210 ★ · +1,458 today"},
-        {"name": "alirezarezvani/claude-skills", "url": "https://github.com/alirezarezvani/claude-skills", "meta": "Python · 21,245 ★ · +610 today"},
-        {"name": "openai/codex-plugin-cc", "url": "https://github.com/openai/codex-plugin-cc", "meta": "JavaScript · 26,361 ★ · +906 today"},
-        {"name": "mvanhorn/last30days-skill", "url": "https://github.com/mvanhorn/last30days-skill", "meta": "Python · 49,877 ★ · +458 today"},
-        {"name": "ogulcancelik/herdr", "url": "https://github.com/ogulcancelik/herdr", "meta": "Rust · 12,971 ★ · +779 today"},
-        {"name": "bradautomates/claude-video", "url": "https://github.com/bradautomates/claude-video", "meta": "Python · 4,398 ★ · +427 today"},
-        {"name": "karakeep-app/karakeep", "url": "https://github.com/karakeep-app/karakeep", "meta": "TypeScript · 26,959 ★ · +199 today"},
-        {"name": "firecrawl/firecrawl", "url": "https://github.com/firecrawl/firecrawl", "meta": "TypeScript · 146,461 ★ · +867 today"},
-        {"name": "steipete/CodexBar", "url": "https://github.com/steipete/CodexBar", "meta": "Swift · 16,782 ★ · +598 today"},
-        {"name": "alibaba/zvec", "url": "https://github.com/alibaba/zvec", "meta": "C++ · 13,592 ★ · +382 today"},
-        {"name": "sindresorhus/awesome", "url": "https://github.com/sindresorhus/awesome", "meta": "482,396 ★ · +345 today"}
+        {
+          "name": "asgeirtj/system_prompts_leaks",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "meta": "JavaScript \u00b7 51,800 \u2605 \u00b7 +1,378 today"
+        },
+        {
+          "name": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "meta": "JavaScript \u00b7 71,027 \u2605 \u00b7 +1,112 today"
+        },
+        {
+          "name": "Zackriya-Solutions/meetily",
+          "url": "https://github.com/Zackriya-Solutions/meetily",
+          "meta": "Rust \u00b7 19,600 \u2605 \u00b7 +2,494 today"
+        },
+        {
+          "name": "ruvnet/RuView",
+          "url": "https://github.com/ruvnet/RuView",
+          "meta": "Rust \u00b7 77,649 \u2605 \u00b7 +470 today"
+        },
+        {
+          "name": "Leonxlnx/taste-skill",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "meta": "JavaScript \u00b7 59,210 \u2605 \u00b7 +1,458 today"
+        },
+        {
+          "name": "alirezarezvani/claude-skills",
+          "url": "https://github.com/alirezarezvani/claude-skills",
+          "meta": "Python \u00b7 21,245 \u2605 \u00b7 +610 today"
+        },
+        {
+          "name": "openai/codex-plugin-cc",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "meta": "JavaScript \u00b7 26,361 \u2605 \u00b7 +906 today"
+        },
+        {
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "meta": "Python \u00b7 49,877 \u2605 \u00b7 +458 today"
+        },
+        {
+          "name": "ogulcancelik/herdr",
+          "url": "https://github.com/ogulcancelik/herdr",
+          "meta": "Rust \u00b7 12,971 \u2605 \u00b7 +779 today"
+        },
+        {
+          "name": "bradautomates/claude-video",
+          "url": "https://github.com/bradautomates/claude-video",
+          "meta": "Python \u00b7 4,398 \u2605 \u00b7 +427 today"
+        },
+        {
+          "name": "karakeep-app/karakeep",
+          "url": "https://github.com/karakeep-app/karakeep",
+          "meta": "TypeScript \u00b7 26,959 \u2605 \u00b7 +199 today"
+        },
+        {
+          "name": "firecrawl/firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "meta": "TypeScript \u00b7 146,461 \u2605 \u00b7 +867 today"
+        },
+        {
+          "name": "steipete/CodexBar",
+          "url": "https://github.com/steipete/CodexBar",
+          "meta": "Swift \u00b7 16,782 \u2605 \u00b7 +598 today"
+        },
+        {
+          "name": "alibaba/zvec",
+          "url": "https://github.com/alibaba/zvec",
+          "meta": "C++ \u00b7 13,592 \u2605 \u00b7 +382 today"
+        },
+        {
+          "name": "sindresorhus/awesome",
+          "url": "https://github.com/sindresorhus/awesome",
+          "meta": "482,396 \u2605 \u00b7 +345 today"
+        }
       ]
     },
     "huggingface": {
@@ -216,16 +276,56 @@
       "link_label": "huggingface.co/models",
       "date": "2026-07-07",
       "items": [
-        {"name": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF", "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF", "meta": "9B GGUF, Image-Text-to-Text, Claude Mythos merge"},
-        {"name": "zai-org/GLM-5.2", "url": "https://huggingface.co/zai-org/GLM-5.2", "meta": "753B, 1M-token context, flagship long-horizon model"},
-        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "3B, universal OCR model for images"},
-        {"name": "tencent/Hy3", "url": "https://huggingface.co/tencent/Hy3", "meta": "299B MoE (21B active), Apache 2.0, new open release"},
-        {"name": "InternScience/Agents-A1", "url": "https://huggingface.co/InternScience/Agents-A1", "meta": "35B-A3B, agentic model, trillion-parameter performance"},
-        {"name": "nvidia/Qwen3.6-27B-NVFP4", "url": "https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4", "meta": "18B, FP4 quantized Qwen3.6-27B from NVIDIA"},
-        {"name": "deepreinforce-ai/Ornith-1.0-35B-GGUF", "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF", "meta": "35B GGUF quant of Ornith 1.0"},
-        {"name": "google/tabfm-1.0.0-pytorch", "url": "https://huggingface.co/google/tabfm-1.0.0-pytorch", "meta": "Tabular foundation model, classification"},
-        {"name": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF", "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF", "meta": "12B GGUF, Gemma-4 agentic fine-tune with fable5"},
-        {"name": "AliesTaha/fable-traces", "url": "https://huggingface.co/AliesTaha/fable-traces", "meta": "4B, fable traces text generation model"}
+        {
+          "name": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "meta": "9B GGUF, Image-Text-to-Text, Claude Mythos merge"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "753B, 1M-token context, flagship long-horizon model"
+        },
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "meta": "3B, universal OCR model for images"
+        },
+        {
+          "name": "tencent/Hy3",
+          "url": "https://huggingface.co/tencent/Hy3",
+          "meta": "299B MoE (21B active), Apache 2.0, new open release"
+        },
+        {
+          "name": "InternScience/Agents-A1",
+          "url": "https://huggingface.co/InternScience/Agents-A1",
+          "meta": "35B-A3B, agentic model, trillion-parameter performance"
+        },
+        {
+          "name": "nvidia/Qwen3.6-27B-NVFP4",
+          "url": "https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4",
+          "meta": "18B, FP4 quantized Qwen3.6-27B from NVIDIA"
+        },
+        {
+          "name": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
+          "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
+          "meta": "35B GGUF quant of Ornith 1.0"
+        },
+        {
+          "name": "google/tabfm-1.0.0-pytorch",
+          "url": "https://huggingface.co/google/tabfm-1.0.0-pytorch",
+          "meta": "Tabular foundation model, classification"
+        },
+        {
+          "name": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+          "meta": "12B GGUF, Gemma-4 agentic fine-tune with fable5"
+        },
+        {
+          "name": "AliesTaha/fable-traces",
+          "url": "https://huggingface.co/AliesTaha/fable-traces",
+          "meta": "4B, fable traces text generation model"
+        }
       ]
     }
   },
@@ -285,7 +385,7 @@
       "url": "https://github.com/D0NMEGA/donnyclaude"
     },
     {
-      "title": "Worldmodeldata lands £7M seed to turn gaming data into AI training data for world models and robotics",
+      "title": "Worldmodeldata lands \u00a37M seed to turn gaming data into AI training data for world models and robotics",
       "source": "Tech.eu",
       "date": "2026-07-06",
       "url": "https://tech.eu/2026/07/06/worldmodeldata-lands-ps7m-to-turn-gaming-data-into-ai-training"
