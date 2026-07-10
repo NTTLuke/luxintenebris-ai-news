@@ -6,108 +6,7 @@
   <title>LVX IN TENEBRIS — AI dispatches · July 10, 2026</title>
   <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
   <link rel="stylesheet" href="style.css">
-  <style>
-/* ── Podcast Pill (inline player) ──────────── */
-.podcast-pill {
-  margin: 12px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-}
-.podcast-pill .pill-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 14px 5px 12px;
-  border: 1px solid var(--rule);
-  border-radius: 20px;
-  text-decoration: none;
-  color: var(--type);
-  font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  line-height: 1;
-  cursor: pointer;
-  background: none;
-  transition: border-color .25s ease, color .25s ease;
-}
-.podcast-pill .pill-btn:hover {
-  border-color: var(--lux);
-  color: var(--lux);
-}
-.podcast-pill .pill-btn:focus-visible {
-  outline: 1px solid var(--lux);
-  outline-offset: 2px;
-}
-/* Playing state */
-.podcast-pill.is-playing .pill-btn {
-  border-color: var(--ember);
-  color: var(--ember);
-}
-.podcast-pill .pill-wave {
-  flex-shrink: 0;
-  animation: pill-pulse 2s ease-in-out infinite;
-}
-.podcast-pill.is-playing .pill-wave {
-  animation: none;
-}
-.podcast-pill.is-playing .pill-wave .wave-bar {
-  animation: pill-bar 0.6s ease-in-out infinite alternate;
-  transform-origin: bottom;
-}
-@keyframes pill-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .65; }
-}
-@keyframes pill-bar {
-  0% { transform: scaleY(0.3); }
-  100% { transform: scaleY(1); }
-}
-.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
-.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
-.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
-.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
-.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
-.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
-.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
-.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
-.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
-/* Progress bar */
-.podcast-pill .pill-progress {
-  width: 100%;
-  height: 2px;
-  background: var(--rule);
-  border-radius: 1px;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity .3s ease;
-}
-.podcast-pill.is-playing .pill-progress,
-.podcast-pill.is-paused .pill-progress {
-  opacity: 1;
-}
-.podcast-pill .pill-progress-bar {
-  display: block;
-  height: 100%;
-  width: 0%;
-  background: var(--ember);
-  border-radius: 1px;
-  transition: width .3s linear;
-}
-/* Hide audio element */
-.podcast-pill .pill-audio {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  pointer-events: none;
-}
-/* ── End Podcast Pill ──────────────────────── */
-</style>
-<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  </head>
   <body>
   <div class="container">
 
@@ -124,162 +23,54 @@
         <span class="dot">◆</span>
         <span class="tag">AI dispatches from the dark</span>
         <span class="dot">◆</span>
-        <span>57 stories</span>
+        <span>58 stories</span>
       </div>
       <hr class="rule-thin">
     </header>
 
-    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Thousands of Pokemon Go Players Pack Times Square to Take Down Mega Mewtwo Y" data-b="According to a report by WIRED, close to 2,000 Pokemon Go players converged on Times Square this week for what may be one of the biggest in-person raids the game has ever seen. The invitation-only gathering marked the 10th anniversary of the mobile game&#x27;s release and finally delivered on a promise made in the very first trailer — a massive, billboard-dominated battle against the legendary Mewtwo in the heart of New York City.
-
-Players, selected through community ambassadors across the five boroughs, received in-game notifications directing them to Times Square for a special event. There, attendees watched a live EDM set by Loud Luxury before Mega Mewtwo Y took over the surrounding screens and a coordinated raid began. The legendary Pokemon was ultimately defeated. The event was livestreamed across Pokemon&#x27;s official websites and social channels, and a free virtual version of the same raid is available to all players this weekend.
-
-WIRED notes that the company now has over 3,000 community ambassadors worldwide, up from just 50 two years ago. A longtime player and FAA worker told the publication that the gathering contrasted sharply with the disastrous 2017 Pokemon Go Fest in Chicago, where overloaded networks and unstable servers crippled the experience. He credited the game with helping him socialize and even meeting his wife through it.
-
-*Ten years on, Pokemon Go&#x27;s ability to turn a virtual battle into a real-world spectacle remains its most underrated superpower.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/thousands-of-pokemon-go-players-descend-on-times-square-to-defeat-mewtwo/"><span class="tih">Thousands of Pokemon Go Players Pack Times Square to Take Down Mega Mewtwo Y</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI designates GPT 5.6 as Microsoft Copilot 365&#x27;s &#x27;preferred model&#x27; amid split speculation" data-b="Earlier this week, Bloomberg reported that Microsoft was substituting some of OpenAI&#x27;s software with its own in-house models, known as MAI, to reduce expenses — particularly in apps like Word and Excel. The story fueled growing speculation about whether the two longtime partners were drifting apart.
-
-Now OpenAI has pushed back against those rumors. During the launch of GPT 5.6 on Thursday, the company announced that the model would serve as the &quot;preferred model&quot; for Microsoft&#x27;s 365 Copilot across its productivity suite, including Word, Excel, PowerPoint, and Cowork. In a blog post, OpenAI stated that the partnership has always centered on delivering advanced AI to more people and organizations, adding that it is excited to continue building on that shared commitment.
-
-What exactly &quot;preferred model&quot; means in practice remains somewhat ambiguous, the article notes — other than that OpenAI&#x27;s software will continue powering Microsoft&#x27;s apps. Crucially, it was never reported that ChatGPT&#x27;s technology would be removed from Microsoft&#x27;s services; the original story was simply that Microsoft was leaning more on its own MAI models to lower costs. The new announcement does not appear to contradict that earlier reporting, according to TechCrunch.
-
-*It is one thing to be named the preferred model, and another to be the only model — the fine print matters more than the headline.*
-
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/"><span class="tih">OpenAI designates GPT 5.6 as Microsoft Copilot 365&#x27;s &#x27;preferred model&#x27; amid split speculation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Microsoft&#x27;s carbon footprint grew 25% in 2025, report says" data-b="Microsoft&#x27;s carbon emissions climbed 25 percent in 2025, reaching 34 million metric tons, according to the company&#x27;s 2026 sustainability report as covered by The Verge. The jump was largely driven by the expansion of Microsoft&#x27;s datacenter infrastructure and a policy change last February that halted purchases of certain renewable energy certificates.
-
-This marks another setback for Microsoft&#x27;s pledge to become carbon negative by 2030 — a target that requires the company to remove more emissions than it produces. A similar increase was already recorded in the 2024 sustainability report. The latest document acknowledges that while AI infrastructure is accelerating demand for energy, water, land, and materials, sustainability solutions are not scaling quickly enough to match that appetite.
-
-Microsoft is not alone in this trend. Google reported a comparable 25 percent rise in its supply chain emissions in its own 2026 report, while Amazon posted a 16 percent increase. Amazon also disclosed that its data centers consumed 2.5 billion gallons of water in 2025, which it claims is less than Microsoft&#x27;s water usage.
-
-*The uncomfortable truth emerging from every major tech sustainability report is that AI expansion and climate commitments are on a direct collision course, and so far, the cloud is winning.*
-
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026"><span class="tih">Microsoft&#x27;s carbon footprint grew 25% in 2025, report says</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fidji Simo steps down from OpenAI&#x27;s No. 2 role" data-b="OpenAI&#x27;s second-highest-ranking executive, Fidji Simo, is leaving her full-time position and moving to a part-time advisory role, according to TechCrunch, citing a staff memo. Simo cited an ongoing medical leave for a neuroimmune condition relapse that proved more difficult than anticipated.
-
-Simo joined OpenAI&#x27;s board in 2024 and came on as CEO of Applications in May 2025, a role that consolidated business and product operations under her. COO Brad Lightcap, CFO Sarah Friar, and CPO Kevin Weil all reported to her, allowing Sam Altman to focus on research and safety. Weil has since left the company as well. Prior to OpenAI, Simo served as Instacart&#x27;s CEO through its 2023 IPO and spent over a decade at Meta, where she ran the Facebook app.
-
-Her departure creates a leadership gap as OpenAI eyes a potential IPO. Simo was widely considered a candidate for greater responsibility post-IPO. She focused on growing OpenAI&#x27;s consumer business, but ChatGPT&#x27;s growth slowed late last year and missed internal revenue targets, pushing the company to invest more in coding tools — an area where it trails Anthropic.
-
-Altman responded on X, expressing sadness and gratitude for Simo&#x27;s contributions. The announcement came on the same day OpenAI launched its GPT-5.6 family of models and a new agent called ChatGPT Work. TechCrunch notes that Denise Dresser, a former Slack CEO who joined as chief revenue officer in December, could take on a broader role.
-
-*Simo&#x27;s exit leaves OpenAI&#x27;s executive bench conspicuously thin for an $852 billion company navigating a possible IPO and intensifying competition with Anthropic.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/"><span class="tih">Fidji Simo steps down from OpenAI&#x27;s No. 2 role</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fidji Simo steps down as OpenAI AGI chief, becomes part-time advisor" data-b="Fidji Simo is stepping away from her full-time position as OpenAI&#x27;s AGI chief and moving into a part-time advisory role, according to The Verge. Simo announced the transition on X, following a medical leave she began in April due to a neuroimmune condition.
-
-Simo had only recently taken on the AGI chief title after previously serving as the company&#x27;s CEO of applications. Her initial leave announcement set off a cascade of executive changes at the lab. COO Brad Lightcap stepped down to work on special projects, and CMO Kate Rouch also left her role to focus on her health, with plans to return in a narrower capacity.
-
-During Simo&#x27;s absence, OpenAI president Greg Brockman took over product oversight, including the company&#x27;s super app ambition. By mid-May, a broader reorganization saw Brockman officially leading product strategy and scaling across four pillars. In a memo seen by The Verge, Brockman described the restructuring as a move to unify OpenAI&#x27;s products around a single agentic platform, merging ChatGPT and Codex into one experience.
-
-Simo wrote on X that her medical leave revealed a longer and more complex recovery than expected, and that she needed to fully commit to it. She reflected on the surreal experience of helping build the future while managing a chronic illness with no known cure. CEO Sam Altman responded publicly, saying he was genuinely saddened by the news.
-
-*A stark reminder that even those building the future of intelligence are not immune to the fragility of the human body.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor"><span class="tih">Fidji Simo steps down as OpenAI AGI chief, becomes part-time advisor</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Thousands of Pokemon Go Players Pack Times Square to Take Down Mega Mewtwo Y" data-b="According to a report by WIRED, close to 2,000 Pokemon Go players converged on Times Square this week for what may be one of the biggest in-person raids the game has ever seen. The invitation-only gathering marked the 10th anniversary of the mobile game&#x27;s release and finally delivered on a promise made in the very first trailer — a massive, billboard-dominated battle against the legendary Mewtwo in the heart of New York City.
-
-Players, selected through community ambassadors across the five boroughs, received in-game notifications directing them to Times Square for a special event. There, attendees watched a live EDM set by Loud Luxury before Mega Mewtwo Y took over the surrounding screens and a coordinated raid began. The legendary Pokemon was ultimately defeated. The event was livestreamed across Pokemon&#x27;s official websites and social channels, and a free virtual version of the same raid is available to all players this weekend.
-
-WIRED notes that the company now has over 3,000 community ambassadors worldwide, up from just 50 two years ago. A longtime player and FAA worker told the publication that the gathering contrasted sharply with the disastrous 2017 Pokemon Go Fest in Chicago, where overloaded networks and unstable servers crippled the experience. He credited the game with helping him socialize and even meeting his wife through it.
-
-*Ten years on, Pokemon Go&#x27;s ability to turn a virtual battle into a real-world spectacle remains its most underrated superpower.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/thousands-of-pokemon-go-players-descend-on-times-square-to-defeat-mewtwo/"><span class="tih">Thousands of Pokemon Go Players Pack Times Square to Take Down Mega Mewtwo Y</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI designates GPT 5.6 as Microsoft Copilot 365&#x27;s &#x27;preferred model&#x27; amid split speculation" data-b="Earlier this week, Bloomberg reported that Microsoft was substituting some of OpenAI&#x27;s software with its own in-house models, known as MAI, to reduce expenses — particularly in apps like Word and Excel. The story fueled growing speculation about whether the two longtime partners were drifting apart.
-
-Now OpenAI has pushed back against those rumors. During the launch of GPT 5.6 on Thursday, the company announced that the model would serve as the &quot;preferred model&quot; for Microsoft&#x27;s 365 Copilot across its productivity suite, including Word, Excel, PowerPoint, and Cowork. In a blog post, OpenAI stated that the partnership has always centered on delivering advanced AI to more people and organizations, adding that it is excited to continue building on that shared commitment.
-
-What exactly &quot;preferred model&quot; means in practice remains somewhat ambiguous, the article notes — other than that OpenAI&#x27;s software will continue powering Microsoft&#x27;s apps. Crucially, it was never reported that ChatGPT&#x27;s technology would be removed from Microsoft&#x27;s services; the original story was simply that Microsoft was leaning more on its own MAI models to lower costs. The new announcement does not appear to contradict that earlier reporting, according to TechCrunch.
-
-*It is one thing to be named the preferred model, and another to be the only model — the fine print matters more than the headline.*
-
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/"><span class="tih">OpenAI designates GPT 5.6 as Microsoft Copilot 365&#x27;s &#x27;preferred model&#x27; amid split speculation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Microsoft&#x27;s carbon footprint grew 25% in 2025, report says" data-b="Microsoft&#x27;s carbon emissions climbed 25 percent in 2025, reaching 34 million metric tons, according to the company&#x27;s 2026 sustainability report as covered by The Verge. The jump was largely driven by the expansion of Microsoft&#x27;s datacenter infrastructure and a policy change last February that halted purchases of certain renewable energy certificates.
-
-This marks another setback for Microsoft&#x27;s pledge to become carbon negative by 2030 — a target that requires the company to remove more emissions than it produces. A similar increase was already recorded in the 2024 sustainability report. The latest document acknowledges that while AI infrastructure is accelerating demand for energy, water, land, and materials, sustainability solutions are not scaling quickly enough to match that appetite.
-
-Microsoft is not alone in this trend. Google reported a comparable 25 percent rise in its supply chain emissions in its own 2026 report, while Amazon posted a 16 percent increase. Amazon also disclosed that its data centers consumed 2.5 billion gallons of water in 2025, which it claims is less than Microsoft&#x27;s water usage.
-
-*The uncomfortable truth emerging from every major tech sustainability report is that AI expansion and climate commitments are on a direct collision course, and so far, the cloud is winning.*
-
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026"><span class="tih">Microsoft&#x27;s carbon footprint grew 25% in 2025, report says</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fidji Simo steps down from OpenAI&#x27;s No. 2 role" data-b="OpenAI&#x27;s second-highest-ranking executive, Fidji Simo, is leaving her full-time position and moving to a part-time advisory role, according to TechCrunch, citing a staff memo. Simo cited an ongoing medical leave for a neuroimmune condition relapse that proved more difficult than anticipated.
-
-Simo joined OpenAI&#x27;s board in 2024 and came on as CEO of Applications in May 2025, a role that consolidated business and product operations under her. COO Brad Lightcap, CFO Sarah Friar, and CPO Kevin Weil all reported to her, allowing Sam Altman to focus on research and safety. Weil has since left the company as well. Prior to OpenAI, Simo served as Instacart&#x27;s CEO through its 2023 IPO and spent over a decade at Meta, where she ran the Facebook app.
-
-Her departure creates a leadership gap as OpenAI eyes a potential IPO. Simo was widely considered a candidate for greater responsibility post-IPO. She focused on growing OpenAI&#x27;s consumer business, but ChatGPT&#x27;s growth slowed late last year and missed internal revenue targets, pushing the company to invest more in coding tools — an area where it trails Anthropic.
-
-Altman responded on X, expressing sadness and gratitude for Simo&#x27;s contributions. The announcement came on the same day OpenAI launched its GPT-5.6 family of models and a new agent called ChatGPT Work. TechCrunch notes that Denise Dresser, a former Slack CEO who joined as chief revenue officer in December, could take on a broader role.
-
-*Simo&#x27;s exit leaves OpenAI&#x27;s executive bench conspicuously thin for an $852 billion company navigating a possible IPO and intensifying competition with Anthropic.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/"><span class="tih">Fidji Simo steps down from OpenAI&#x27;s No. 2 role</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fidji Simo steps down as OpenAI AGI chief, becomes part-time advisor" data-b="Fidji Simo is stepping away from her full-time position as OpenAI&#x27;s AGI chief and moving into a part-time advisory role, according to The Verge. Simo announced the transition on X, following a medical leave she began in April due to a neuroimmune condition.
-
-Simo had only recently taken on the AGI chief title after previously serving as the company&#x27;s CEO of applications. Her initial leave announcement set off a cascade of executive changes at the lab. COO Brad Lightcap stepped down to work on special projects, and CMO Kate Rouch also left her role to focus on her health, with plans to return in a narrower capacity.
-
-During Simo&#x27;s absence, OpenAI president Greg Brockman took over product oversight, including the company&#x27;s super app ambition. By mid-May, a broader reorganization saw Brockman officially leading product strategy and scaling across four pillars. In a memo seen by The Verge, Brockman described the restructuring as a move to unify OpenAI&#x27;s products around a single agentic platform, merging ChatGPT and Codex into one experience.
-
-Simo wrote on X that her medical leave revealed a longer and more complex recovery than expected, and that she needed to fully commit to it. She reflected on the surreal experience of helping build the future while managing a chronic illness with no known cure. CEO Sam Altman responded publicly, saying he was genuinely saddened by the news.
-
-*A stark reminder that even those building the future of intelligence are not immune to the fragility of the human body.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor"><span class="tih">Fidji Simo steps down as OpenAI AGI chief, becomes part-time advisor</span> <span class="tis">— theverge.com</span></div></div></div>
-<div class="notice"><b>Editor's note —</b> A busy follow-up day after yesterday's wave of launches — fresh stories on hardware, agents, and open-source innovation fill today's edition.</div>
-
+    
 
     <div class="lead-zone">
       <article class="lead">
-  <a href="https://www.reuters.com/world/asia-pacific/meta-put-ai-chip-into-production-september-it-looks-double-computing-capacity-2026-07-09" target="_blank" rel="noopener">
+  <a href="https://x.com/OpenAI/status/2074704958419792299" target="_blank" rel="noopener">
     <img src="images/lead_2026-07-10.jpg" alt="" class="lead-image">
     <div class="lead-grid">
       <div class="lead-head">
-        <p class="kicker">Chip Independence</p>
-        <h1>Meta to manufacture Iris AI chip starting September, targets 14GW capacity by 2027</h1>
+        <p class="kicker">AI's next frontier</p>
+        <h1>OpenAI announces GPT-5.6 Sol, Terra and Luna models launching July 10</h1>
       </div>
       <div class="lead-body">
-        <p class="deck">Meta plans to produce its in-house Iris AI chip from September 2026 under the MTIA program, with Broadcom designing and TSMC fabricating. An internal memo reveals a target of 14 gigawatts of AI computing capacity by 2027 backed by up to $145 billion in infrastructure spending. The chip passed bug-testing in just six weeks.</p>
-        <p class="byline"><span class="src">Reuters</span> · <span>2026-07-09</span> · <span class="more">Read the dispatch →</span></p>
+        <p class="deck">OpenAI unveiled GPT-5.6 Sol, its next-generation flagship model, along with specialized variants Terra and Luna for targeted domains. Global preview access is expanding now ahead of the public launch on Thursday, marking the company's most significant model release since GPT-5.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-07-08</span> · <span class="more">Read the dispatch →</span></p>
       </div>
     </div>
   </a>
-
-<div class="podcast-pill">
-  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
-    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
-      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
-      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
-      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
-      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
-    </svg>
-    <span class="pill-label">Podcast Pill</span>
-    <span class="pill-divider">·</span>
-    <span class="pill-show">The Divide</span>
-    <span class="pill-duration">1:14</span>
-    <span class="pill-divider">·</span>
-    <span class="pill-model">xai/grok-tts-v1</span>
-  </button>
-  <audio class="pill-audio" preload="none">
-    <source src="podcasts/lead_2026-07-10.ogg" type="audio/ogg">
-  </audio>
-  <div class="pill-progress" aria-hidden="true">
-    <span class="pill-progress-bar"></span>
-  </div>
-</div>
 </article>
 
     </div>
 
     <div class="topstories">
 <article class="story">
-  <a href="https://x.com/OpenAI/status/2075274271845404744" target="_blank" rel="noopener">
-    <h3>OpenAI launches ChatGPT Work, an autonomous agent powered by Codex and GPT-5.6</h3>
-    <p>ChatGPT Work is a new agent product that persists on projects for hours, pulls context from apps and files, performs deep analysis, and produces shareable hosted sites, dashboards, and polished documents.</p>
-    <p class="byline"><span class="src">OpenAI</span> · 2026-07-09</p>
+  <a href="https://x.com/OpenAI/status/2074907025537224840" target="_blank" rel="noopener">
+    <h3>OpenAI introduces GPT-Live, a full-duplex voice model for natural conversation</h3>
+    <p>A new generation of voice AI that listens and speaks simultaneously, rolling out to ChatGPT on iOS, Android, and web with API support coming soon.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://x.com/omarsar0/status/2075228158186426497" target="_blank" rel="noopener">
-    <h3>Meta releases Muse Spark 1.1 with 1M context window and computer-use capabilities</h3>
-    <p>Meta counter-programmed OpenAI's launch with Muse Spark 1.1 via a new Meta Model API. The model features a 1M token context window, computer-use actions, and strong agentic/coding performance near GPT-5.5 levels.</p>
-    <p class="byline"><span class="src">omarsar0</span> · 2026-07-09</p>
+  <a href="https://x.ai/news/grok-4-5" target="_blank" rel="noopener">
+    <h3>xAI launches Grok 4.5 as its smartest model yet, rivals GPT-5.5 at 1/5 the cost</h3>
+    <p>Trained on tens of thousands of NVIDIA GB300 GPUs with large-scale RL, served at 80 TPS, and priced at $2/M input and $6/M output tokens. Available in Grok Build, Cursor, and the SpaceXAI API.</p>
+    <p class="byline"><span class="src">xAI</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://openai.com/index/bio-bug-bounty/" target="_blank" rel="noopener">
-    <h3>OpenAI launches Bio Bug Bounty program targeting biosafety and biosecurity risks</h3>
-    <p>OpenAI launched a bug bounty program specifically inviting researchers to identify vulnerabilities in AI models related to biosafety and biosecurity risks.</p>
-    <p class="byline"><span class="src">OpenAI</span> · 2026-07-09</p>
+  <a href="https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close" target="_blank" rel="noopener">
+    <h3>SambaNova raises $1B at $11B valuation in Series F first close</h3>
+    <p>The AI chip maker for enterprise inference infrastructure drew a $1 billion round led by General Atlantic with Intel participating.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-08</p>
   </a>
 </article>
 
@@ -293,45 +84,45 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
     <span class="line"></span>
     <span class="n">05</span>
   </div>
-  <a href="https://huggingface.co/papers/2607.07708" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-07-10.jpg" alt="" class="section-hero-img"><h4 class="hero-title">SciReasoner: Multimodal model achieves SOTA on 67 of 86 scientific benchmarks</h4></a>
+  <a href="https://arxiv.org/abs/2607.02770" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-07-10.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Gemma 4 Technical Report: Google's open-weight multimodal LLMs set new SOTA</h4></a>
   <div class="section-grid">
 <article class="item">
-  <a href="https://huggingface.co/papers/2607.07708" target="_blank" rel="noopener">
-    <h4>SciReasoner: Multimodal model achieves SOTA on 67 of 86 scientific benchmarks</h4>
-    <p>A multimodal scientific foundation model that discretizes structural elements into a unified token vocabulary for interpretable reasoning. Achieves SOTA on 67 of 86 benchmarks, improves Gene Ontology F_max from 0.42 to 0.55 for low-homology proteins.</p>
-    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-10</p>
+  <a href="https://arxiv.org/abs/2607.02770" target="_blank" rel="noopener">
+    <h4>Gemma 4 Technical Report: Google's open-weight multimodal LLMs set new SOTA</h4>
+    <p>Google introduces open-weight multimodal LLMs (2.3B-31B, dense + MoE) with thinking mode, encoder-free 12B architecture, and KV-cache optimizations, establishing SOTA on STEM, multimodal, and long-context benchmarks.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://huggingface.co/papers/2607.07508" target="_blank" rel="noopener">
-    <h4>Single-rollout asynchronous optimization beats GRPO for LLM post-training</h4>
-    <p>SAO replaces group-wise sampling in GRPO with single-rollout sampling and strict double-side token-level clipping to stabilize asynchronous RL. Consistently outperforms GRPO on SWE-Bench Verified, BeyondAIME, and IMOAnswerBench. Deployed in GLM-5.2's agentic RL pipeline.</p>
-    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-10</p>
+  <a href="https://arxiv.org/abs/2607.05722" target="_blank" rel="noopener">
+    <h4>Nemotron-Labs-Diffusion: NVIDIA unifies autoregressive, diffusion and self-speculation decoding</h4>
+    <p>NVIDIA's tri-mode LM at 8B scale decodes 6x more tokens per forward than Qwen3-8B with comparable accuracy, delivering 4x higher throughput on SPEED-Bench.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://huggingface.co/papers/2607.07386" target="_blank" rel="noopener">
-    <h4>Sparse Delta Memory scales linear RNN capacity through sparse reads and writes</h4>
-    <p>SDM extends Gated DeltaNet with sparse reads and writes to a large explicit memory, scaling hidden state capacity by orders of magnitude under isoFLOP constraint. Improves in-context learning and long-context retrieval over dense linear RNNs.</p>
-    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-10</p>
+  <a href="https://huggingface.co/papers/2607.06560" target="_blank" rel="noopener">
+    <h4>SenseNova-Vision: All CV tasks reformulated as unified multimodal generation</h4>
+    <p>Formulates detection, segmentation, depth, keypoints and pose as multimodal generation within a single UMM without task-specific heads, matching specialized systems across diverse vision benchmarks.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://huggingface.co/papers/2607.07608" target="_blank" rel="noopener">
-    <h4>Dual Latent Memory enables long-horizon robotic manipulation in VLA models</h4>
-    <p>LaMem-VLA introduces four coordinated memory components that represent, retrieve, and consume historical experience entirely in latent embedding space. Demonstrates superiority over Markovian VLA baselines on SimplerEnv and LIBERO.</p>
-    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-09</p>
+  <a href="https://huggingface.co/papers/2607.06559" target="_blank" rel="noopener">
+    <h4>RynnWorld-4D: Alibaba's 4D embodied world model for robotic manipulation</h4>
+    <p>Jointly predicts synchronized RGB, depth and optical flow from a single RGB-D image and language instruction. Features a tri-branch Diffusion Transformer enabling &gt;9 Hz closed-loop bimanual control.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://huggingface.co/papers/2607.06838" target="_blank" rel="noopener">
-    <h4>WildCity: NVIDIA's city-scale testbed for rendering, simulation, and spatial intelligence</h4>
-    <p>NVIDIA's dataset contains 18 trajectories averaging 83.7 km each from autonomous fleets in complex urban environments, with multimodal data for city-scale spatial representation and closed-loop simulation.</p>
-    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-09</p>
+  <a href="https://huggingface.co/papers/2607.03509" target="_blank" rel="noopener">
+    <h4>Flex-Forcing: NVIDIA unifies autoregressive and bidirectional video diffusion</h4>
+    <p>A unified video diffusion framework enabling flexible generation with both forward and bidirectional conditioning in a single architecture.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-08</p>
   </a>
 </article>
 
@@ -340,33 +131,33 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
 
 <section class="section">
   <div class="section-head">
-    <h2>Open Source &amp; Models</h2>
+    <h2>YouTube &amp; Video</h2>
     <span class="line"></span>
     <span class="n">03</span>
   </div>
-  <a href="https://x.com/togethercompute/status/2075330897734213677" target="_blank" rel="noopener" class="section-hero"><img src="images/section_open-source-models_2026-07-10.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Ollama reaches 9M+ active builders and raises funding, cementing open models as default</h4></a>
+  <a href="https://www.youtube.com/watch?v=U3uX115I9sY" target="_blank" rel="noopener" class="section-hero"><img src="images/section_youtube-video_2026-07-10.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Grok 4.5 rivals GPT-5.5, outperforms Opus 4.8 at 1/5 the price</h4></a>
   <div class="section-grid">
 <article class="item">
-  <a href="https://x.com/togethercompute/status/2075330897734213677" target="_blank" rel="noopener">
-    <h4>Ollama reaches 9M+ active builders and raises funding, cementing open models as default</h4>
-    <p>Together AI highlights Ollama's fundraising milestone and 9M+ active builders, noting that open models are becoming the default path for developers who want to build, run, and own their AI stack.</p>
-    <p class="byline"><span class="src">@togethercompute</span> · 2026-07-09</p>
+  <a href="https://www.youtube.com/watch?v=U3uX115I9sY" target="_blank" rel="noopener">
+    <h4>Grok 4.5 rivals GPT-5.5, outperforms Opus 4.8 at 1/5 the price</h4>
+    <p>Analysis from Theo — t3.gg benchmarks Grok 4.5 against leading models, showing competitive performance at a fraction of the cost with significantly better token efficiency.</p>
+    <p class="byline"><span class="src">Theo - t3.gg</span> · 2026-07-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://x.com/lmsysorg/status/2075062638254379300" target="_blank" rel="noopener">
-    <h4>MosiAI releases MOSS-Transcribe-Diarize-0.9B, open-source end-to-end ASR model</h4>
-    <p>A compact 0.9B parameter model for long-form multi-speaker transcription with built-in diarization. Supports 128K context (~90 minutes of audio), hotword boosting, runs on-device, and is Apache 2.0 licensed with day-0 SGLang support.</p>
-    <p class="byline"><span class="src">lmsysorg</span> · 2026-07-09</p>
+  <a href="https://www.youtube.com/watch?v=DbciOS1UJNM" target="_blank" rel="noopener">
+    <h4>OpenAI expands GPT-5.6 release globally after Trump administration approval</h4>
+    <p>Bloomberg's AI editor reports on the global rollout of OpenAI's most advanced model following regulatory clearance.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://x.com/NousResearch/status/2075270903458373640" target="_blank" rel="noopener">
-    <h4>Nous Research adds GPT-5.6 support to Hermes Agent on day one</h4>
-    <p>Nous Research quickly integrated GPT-5.6 into Hermes Agent, making it available via the Nous Portal with full agent orchestration, tool use, and reasoning capabilities.</p>
-    <p class="byline"><span class="src">NousResearch</span> · 2026-07-09</p>
+  <a href="https://www.youtube.com/watch?v=0BWf3goAKUA" target="_blank" rel="noopener">
+    <h4>Bank of America reverses course, extends $520M credit line to OpenAI</h4>
+    <p>Bloomberg sources reveal BofA is now extending a $520 million credit line to OpenAI after initially passing on the opportunity, signaling growing financial confidence.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-07-08</p>
   </a>
 </article>
 
@@ -379,45 +170,45 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
     <span class="line"></span>
     <span class="n">05</span>
   </div>
-  <a href="https://techcrunch.com/2026/07/09/character-ai-enters-the-microdrama-arena-with-its-own-productions-but-with-a-twist" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-07-10.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Character.AI launches AI-generated microdramas with interactive characters</h4></a>
+  <a href="https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-07-10.jpg" alt="" class="section-hero-img"><h4 class="hero-title">ZML/LLMD: Free inference server runs open-weight models across Nvidia, AMD, Apple and Intel chips</h4></a>
   <div class="section-grid">
 <article class="item">
-  <a href="https://techcrunch.com/2026/07/09/character-ai-enters-the-microdrama-arena-with-its-own-productions-but-with-a-twist" target="_blank" rel="noopener">
-    <h4>Character.AI launches AI-generated microdramas with interactive characters</h4>
-    <p>Character.AI entered the microdrama market by producing AI-generated short dramas where users can chat with characters, ask questions, and roleplay alternative storylines. Also testing c.ai FM for audio series.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-09</p>
+  <a href="https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips" target="_blank" rel="noopener">
+    <h4>ZML/LLMD: Free inference server runs open-weight models across Nvidia, AMD, Apple and Intel chips</h4>
+    <p>French AI startup ZML released a free LLM inference server supporting multi-chip deployment (Nvidia, AMD, Google TPU, Apple Metal, Intel Arc), promising maximum performance without vendor lock-in.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai" target="_blank" rel="noopener">
-    <h4>Anthropic launches Claude Reflect analytics to show users their usage patterns</h4>
-    <p>Claude Reflect shows users what topics they've discussed, usage patterns, and tasks they rely on Claude for — designed to subtly demonstrate value and build habitual usage.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-09</p>
+  <a href="https://news.ycombinator.com/item?id=48819808" target="_blank" rel="noopener">
+    <h4>Rowboat: Open-source, local-first alternative to Claude Desktop with memory</h4>
+    <p>An AI coworker with dedicated work surfaces for email, meetings, notes, browser, and coding. Reached #2 on Show HN with 168 points.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-07-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://microsoft.github.io/flint-chart/#/" target="_blank" rel="noopener">
-    <h4>Microsoft releases Flint, a visualization language for debugging AI agents</h4>
-    <p>Microsoft released Flint, a new visualization language and charting library designed for debugging, monitoring, and understanding AI agent behavior. Published under MIT license.</p>
-    <p class="byline"><span class="src">Microsoft</span> · 2026-07-09</p>
+  <a href="https://news.ycombinator.com/item?id=48818098" target="_blank" rel="noopener">
+    <h4>Halo: Open-source, tamper-evident runtime evidence for AI agents</h4>
+    <p>Generates verifiable audit trails proving what an agent did with data, aiming to solve the compliance and trust gap in the post-agentic enterprise.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-07-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://github.com/Northwood-Systems/foreman" target="_blank" rel="noopener">
-    <h4>Foreman: Self-hosted LLM gateway for cost-aware model routing</h4>
-    <p>An open-source self-hosted LLM gateway that routes prompts to the most cost-effective model based on task requirements. Supports multiple backends with built-in cost tracking.</p>
-    <p class="byline"><span class="src">GitHub (Northwood Systems)</span> · 2026-07-09</p>
+  <a href="https://www.producthunt.com/products/framer" target="_blank" rel="noopener">
+    <h4>Framer launches AI Agents for design and publishing on the canvas</h4>
+    <p>AI-powered design, writing, analysis, and organization tools on the Framer canvas, plus branching for safer team collaboration.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-08</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai" target="_blank" rel="noopener">
-    <h4>Google launches AI-generated ad disclosures in My Ad Center</h4>
-    <p>Google introduced a new feature disclosing when an ad was created or edited with AI. Automatically enabled for ads made with Google's generative AI tools; third-party tool users must self-declare.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-09</p>
+  <a href="https://www.producthunt.com/products/assemblyai" target="_blank" rel="noopener">
+    <h4>Universal-3.5 Pro: AssemblyAI's most accurate speech-to-text model</h4>
+    <p>Targets high-accuracy transcription use cases across multiple languages and domains with improved precision.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-08</p>
   </a>
 </article>
 
@@ -426,41 +217,33 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
 
 <section class="section">
   <div class="section-head">
-    <h2>Money &amp; Markets</h2>
+    <h2>Italia AI Spotlight</h2>
     <span class="line"></span>
-    <span class="n">04</span>
+    <span class="n">03</span>
   </div>
-  <a href="https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia" target="_blank" rel="noopener" class="section-hero"><img src="images/section_money-markets_2026-07-10.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Paris-based voice AI startup Gradium raises $100M seed, backed by Nvidia</h4></a>
+  <div class="section-hero"><img src="images/section_italia-spotlight_2026-07-10.jpg" alt="" class="section-hero-img"></div>
   <div class="section-grid">
 <article class="item">
-  <a href="https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia" target="_blank" rel="noopener">
-    <h4>Paris-based voice AI startup Gradium raises $100M seed, backed by Nvidia</h4>
-    <p>A $100M seed round (re-opened from $70M) for foundational voice AI models. Lead investor Nvidia joined FirstMark Capital, Eurazeo, DST Global, Eric Schmidt, and Xavier Niel.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-09</p>
+  <a href="https://www.ai4business.it/intelligenza-artificiale/logistica-italiana-come-lai-trasforma-una-crisi-in-leva/" target="_blank" rel="noopener">
+    <h4>Italian Logistics: How AI Transforms a Crisis into a Competitive Lever</h4>
+    <p>With 79,000 companies in the supply chain and a market projected beyond €117 billion, Italian logistics continues to grow despite geopolitical tensions. AI, data, automation, and new commercial skills are key to turning uncertainty into competitive advantage.</p>
+    <p class="byline"><span class="src">AI4Business</span> · 2026-07-10</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise" target="_blank" rel="noopener">
-    <h4>AI agent startup lets its own agent run its $100M Series B fundraise</h4>
-    <p>A startup used its AI agent 'SivaClaw' to field 130+ investors, raising $400M in interest from Silicon Valley, Middle East, and finance. Closed $100M Series B at ~$500M valuation.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-09</p>
+  <a href="https://www.ai4business.it/intelligenza-artificiale/ai-manager/losito-ibm-ecco-le-quattro-domande-da-porsi-per-valutare-i-processi-aziendali/" target="_blank" rel="noopener">
+    <h4>Losito (IBM Italy): 'Four Questions to Ask When Evaluating Business Processes'</h4>
+    <p>Nico Losito, General Manager of IBM Italia, outlines the revealing questions for innovating with AI in companies, the internal system applied at IBM, and guidelines for riding the wave of AI in Italian business.</p>
+    <p class="byline"><span class="src">AI4Business</span> · 2026-07-10</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://techcrunch.com/2026/07/09/mercor-is-in-talks-for-a-20b-valuation" target="_blank" rel="noopener">
-    <h4>Mercor in talks for $20B valuation, up from $10B in October 2025</h4>
-    <p>The AI training data startup is in early-stage talks for a new round at $20B valuation. Also acquiring Deeptune for AI agent training.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-09</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://finance.yahoo.com/healthcare/articles/alchemab-therapeutics-announces-largest-ever-080000775.html" target="_blank" rel="noopener">
-    <h4>Alchemab Therapeutics raises £25M Series A for AI-enabled antibody discovery</h4>
-    <p>Largest life sciences investment by the British Business Bank to date, expanding Alchemab's antibody dataset from 500M to 1B+ sequences for AI-powered drug discovery.</p>
-    <p class="byline"><span class="src">Yahoo Finance</span> · 2026-07-09</p>
+  <a href="https://www.ai4business.it/intelligenza-artificiale/la-crisi-dei-token-che-spaventa-i-budget-aziendali/" target="_blank" rel="noopener">
+    <h4>The Token Crisis Frightening Corporate Budgets</h4>
+    <p>The explosion of costs linked to generative AI adoption is straining company budgets, forcing businesses to contend with complex pricing systems, asymmetric tokens, and unexpected consumption by autonomous agents.</p>
+    <p class="byline"><span class="src">AI4Business</span> · 2026-07-09</p>
   </a>
 </article>
 
@@ -481,7 +264,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
     <span class="t-ranking">#01</span>
     <span class="t-name">addyosmani/agent-skills</span>
-    <span class="t-meta">JavaScript · 74.7k ★ · +1,297 today</span>
+    <span class="t-meta">JavaScript · 74,072 ★ · +1,297 today</span>
   </a>
 </li>
 
@@ -489,7 +272,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/ruvnet/RuView" target="_blank" rel="noopener">
     <span class="t-ranking">#02</span>
     <span class="t-name">ruvnet/RuView</span>
-    <span class="t-meta">Rust · 79.3k ★ · +799 today</span>
+    <span class="t-meta">Rust · 79,144 ★ · +799 today</span>
   </a>
 </li>
 
@@ -497,7 +280,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">
     <span class="t-ranking">#03</span>
     <span class="t-name">TencentCloud/TencentDB-Agent-Memory</span>
-    <span class="t-meta">TypeScript · 7.8k ★ · +318 today</span>
+    <span class="t-meta">TypeScript · 7,644 ★ · +318 today</span>
   </a>
 </li>
 
@@ -505,7 +288,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/prisma/prisma" target="_blank" rel="noopener">
     <span class="t-ranking">#04</span>
     <span class="t-name">prisma/prisma</span>
-    <span class="t-meta">TypeScript · 46.6k ★ · +46 today</span>
+    <span class="t-meta">TypeScript · 46,554 ★ · +46 today</span>
   </a>
 </li>
 
@@ -513,7 +296,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener">
     <span class="t-ranking">#05</span>
     <span class="t-name">mvanhorn/last30days-skill</span>
-    <span class="t-meta">Python · 50.9k ★ · +352 today</span>
+    <span class="t-meta">Python · 50,751 ★ · +352 today</span>
   </a>
 </li>
 
@@ -521,7 +304,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/argoproj/argo-cd" target="_blank" rel="noopener">
     <span class="t-ranking">#06</span>
     <span class="t-name">argoproj/argo-cd</span>
-    <span class="t-meta">Go · 23.5k ★ · +29 today</span>
+    <span class="t-meta">Go · 23,433 ★ · +29 today</span>
   </a>
 </li>
 
@@ -529,7 +312,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/iOfficeAI/OfficeCLI" target="_blank" rel="noopener">
     <span class="t-ranking">#07</span>
     <span class="t-name">iOfficeAI/OfficeCLI</span>
-    <span class="t-meta">C# · 12.4k ★ · +1,717 today</span>
+    <span class="t-meta">C# · 11,824 ★ · +1,717 today</span>
   </a>
 </li>
 
@@ -537,7 +320,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/asgeirtj/system_prompts_leaks" target="_blank" rel="noopener">
     <span class="t-ranking">#08</span>
     <span class="t-name">asgeirtj/system_prompts_leaks</span>
-    <span class="t-meta">JavaScript · 54.5k ★ · +1,218 today</span>
+    <span class="t-meta">JavaScript · 54,192 ★ · +1,218 today</span>
   </a>
 </li>
 
@@ -545,7 +328,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
     <span class="t-ranking">#09</span>
     <span class="t-name">obra/superpowers</span>
-    <span class="t-meta">Shell · 250.1k ★ · +1,116 today</span>
+    <span class="t-meta">Shell · 249,817 ★ · +1,116 today</span>
   </a>
 </li>
 
@@ -553,7 +336,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/alibaba/zvec" target="_blank" rel="noopener">
     <span class="t-ranking">#10</span>
     <span class="t-name">alibaba/zvec</span>
-    <span class="t-meta">C++ · 14.5k ★ · +395 today</span>
+    <span class="t-meta">C++ · 14,407 ★ · +395 today</span>
   </a>
 </li>
 
@@ -561,7 +344,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/Diolinux/PhotoGIMP" target="_blank" rel="noopener">
     <span class="t-ranking">#11</span>
     <span class="t-name">Diolinux/PhotoGIMP</span>
-    <span class="t-meta">CSS · 15.2k ★ · +1,125 today</span>
+    <span class="t-meta">CSS · 15,033 ★ · +1,125 today</span>
   </a>
 </li>
 
@@ -569,7 +352,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener">
     <span class="t-ranking">#12</span>
     <span class="t-name">wonderwhy-er/DesktopCommanderMCP</span>
-    <span class="t-meta">TypeScript · 6.4k ★ · +28 today</span>
+    <span class="t-meta">TypeScript · 6,375 ★ · +28 today</span>
   </a>
 </li>
 
@@ -577,7 +360,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/huxingyi/autoremesher" target="_blank" rel="noopener">
     <span class="t-ranking">#13</span>
     <span class="t-name">huxingyi/autoremesher</span>
-    <span class="t-meta">C++ · 2.1k ★ · +296 today</span>
+    <span class="t-meta">C++ · 2,009 ★ · +296 today</span>
   </a>
 </li>
 
@@ -585,7 +368,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/bradautomates/claude-video" target="_blank" rel="noopener">
     <span class="t-ranking">#14</span>
     <span class="t-name">bradautomates/claude-video</span>
-    <span class="t-meta">Python · 6.2k ★ · +951 today</span>
+    <span class="t-meta">Python · 6,053 ★ · +951 today</span>
   </a>
 </li>
 
@@ -593,7 +376,7 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://github.com/TencentCloud/CubeSandbox" target="_blank" rel="noopener">
     <span class="t-ranking">#15</span>
     <span class="t-name">TencentCloud/CubeSandbox</span>
-    <span class="t-meta">Rust · 9.1k ★ · +564 today</span>
+    <span class="t-meta">Rust · 8,929 ★ · +564 today</span>
   </a>
 </li>
 
@@ -608,18 +391,18 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
     </div>
     <ul class="t-list">
       <li>
-  <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M" target="_blank" rel="noopener">
     <span class="t-ranking">#01</span>
-    <span class="t-name">tencent/Hy3</span>
-    <span class="t-meta">295B MoE (21B active), Apache 2.0 open-source LLM from Tencent</span>
+    <span class="t-name">empero-ai/Qwythos-9B-Claude-Mythos-5-1M</span>
+    <span class="t-meta">9B full-parameter reasoning model, uncensored, built on Qwen3.5-9B with over 500M tokens of Claude Mythos/Fable traces</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener">
     <span class="t-ranking">#02</span>
-    <span class="t-name">empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF</span>
-    <span class="t-meta">Qwen-based GGUF quantized fine-tune</span>
+    <span class="t-name">tencent/Hy3</span>
+    <span class="t-meta">Tencent Hy3 multimodal model, Apache 2.0 licensed</span>
   </a>
 </li>
 
@@ -627,23 +410,23 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener">
     <span class="t-ranking">#03</span>
     <span class="t-name">zai-org/GLM-5.2</span>
-    <span class="t-meta">1M-token context flagship open-source LLM from Zhipu AI</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://huggingface.co/InternScience/Agents-A1" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
-    <span class="t-name">InternScience/Agents-A1</span>
-    <span class="t-meta">35B MoE agentic model, SOTA on long-horizon search and research benchmarks</span>
+    <span class="t-meta">Top-ranked agent model, ranked #3 overall on leaderboard, 3.66k likes</span>
   </a>
 </li>
 
 <li>
   <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
+    <span class="t-ranking">#04</span>
     <span class="t-name">baidu/Unlimited-OCR</span>
-    <span class="t-meta">OCR model from Baidu</span>
+    <span class="t-meta">One-shot long-horizon OCR parsing, 1.87k likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/InternScience/Agents-A1" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">InternScience/Agents-A1</span>
+    <span class="t-meta">35B-A3B agent model, trillion-parameter performance through scaling horizon, 399 likes</span>
   </a>
 </li>
 
@@ -651,39 +434,39 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <a href="https://huggingface.co/google/tabfm-1.0.0-pytorch" target="_blank" rel="noopener">
     <span class="t-ranking">#06</span>
     <span class="t-name">google/tabfm-1.0.0-pytorch</span>
-    <span class="t-meta">Tabular foundation model from Google, PyTorch version</span>
+    <span class="t-meta">Zero-shot tabular foundation model from Google Research, no fine-tuning required</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">deepreinforce-ai/Ornith-1.0-35B-GGUF</span>
+    <span class="t-meta">35B GGUF quantized model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">nvidia/Qwen3.6-27B-NVFP4</span>
+    <span class="t-meta">NVIDIA FP4 quantized Qwen3.6-27B, Apache 2.0, optimized for deployment</span>
   </a>
 </li>
 
 <li>
   <a href="https://huggingface.co/AliesTaha/fable-traces" target="_blank" rel="noopener">
-    <span class="t-ranking">#07</span>
-    <span class="t-name">AliesTaha/fable-traces</span>
-    <span class="t-meta">Fine-tune / Fable dataset traces</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates" target="_blank" rel="noopener">
-    <span class="t-ranking">#08</span>
-    <span class="t-name">froggeric/Qwen-Fixed-Chat-Templates</span>
-    <span class="t-meta">Fixed chat templates for Qwen models</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B" target="_blank" rel="noopener">
     <span class="t-ranking">#09</span>
-    <span class="t-name">bottlecapai/ThinkingCap-Qwen3.6-27B</span>
-    <span class="t-meta">Efficient thinking fine-tune of Qwen3.6-27B, halves tokens, Apache 2.0</span>
+    <span class="t-name">AliesTaha/fable-traces</span>
+    <span class="t-meta">Training traces dataset</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF" target="_blank" rel="noopener">
     <span class="t-ranking">#10</span>
-    <span class="t-name">mistralai/Leanstral-1.5-119B-A6B</span>
-    <span class="t-meta">Open-source code agent for Lean 4 proof assistant, 119B MoE (6B active)</span>
+    <span class="t-name">yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF</span>
+    <span class="t-meta">Gemma-4-12B based agentic GGUF with Fable 5 composer</span>
   </a>
 </li>
 
@@ -696,28 +479,32 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
   <div class="section-head">
     <h2>In Brief</h2>
     <span class="line"></span>
-    <span class="n">10</span>
+    <span class="n">12</span>
   </div>
   <ul class="qh-list">
-    <li><a href="https://www.youtube.com/watch?v=oXi5E3FvZKI" target="_blank" rel="noopener"><span class="qh-title">OpenAI reveals first hardware product: programmable macro pad for Codex, launching July 15</span><span class="qh-src">YouTube — Matt Wolfe</span></a></li>
+    <li><a href="https://x.com/OpenAI/status/2074972179385720836" target="_blank" rel="noopener"><span class="qh-title">OpenAI audits SWE-Bench Pro, finds 30% of tasks broken, retracts recommendation</span><span class="qh-src">OpenAI</span></a></li>
 
-    <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262020147-tsla-musk-optimus-gen3-ai-tradingkey" target="_blank" rel="noopener"><span class="qh-title">Tesla Optimus Gen 3 design finalized, targeting 1,000 units per week by September</span><span class="qh-src">TradingKey</span></a></li>
+    <li><a href="https://x.com/AnthropicAI/status/2075005777522172146" target="_blank" rel="noopener"><span class="qh-title">Anthropic and AE Studio release GRAM: removable dual-use capabilities in AI models</span><span class="qh-src">AnthropicAI</span></a></li>
 
-    <li><a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" target="_blank" rel="noopener"><span class="qh-title">ChatGPT evolves into a super-app platform for ambitious professional work</span><span class="qh-src">OpenAI</span></a></li>
+    <li><a href="https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents" target="_blank" rel="noopener"><span class="qh-title">Prime Intellect raises $130M Series A at $1B valuation for enterprise AI agents</span><span class="qh-src">TechCrunch</span></a></li>
 
-    <li><a href="https://x.com/ylecun/status/2075102766221996136" target="_blank" rel="noopener"><span class="qh-title">LeCun warns of AI power concentration, advocates open-source foundation models</span><span class="qh-src">ylecun</span></a></li>
+    <li><a href="https://huggingface.co/collections/robbyant/lingbot-video" target="_blank" rel="noopener"><span class="qh-title">LingBot-Video: Open-weights 30B MoE video foundation model for embodied intelligence</span><span class="qh-src">@_akhaliq</span></a></li>
 
-    <li><a href="https://github.com/Rodiun/frugon" target="_blank" rel="noopener"><span class="qh-title">Frugon — local LLM cost optimization tool identifies cheaper model alternatives in your codebase</span><span class="qh-src">GitHub (Rodiun)</span></a></li>
+    <li><a href="https://huggingface.co/collections/robbyant/lingbot-world-v2" target="_blank" rel="noopener"><span class="qh-title">LingBot-World 2.0 Infinity: Interactive world model with hour-long zero-drift generation</span><span class="qh-src">@_akhaliq</span></a></li>
 
-    <li><a href="https://github.com/animesh-94/Onboard-CLI" target="_blank" rel="noopener"><span class="qh-title">Onboard-CLI — LLM-powered and AST-based codebase visualization from the command line</span><span class="qh-src">GitHub (animesh-94)</span></a></li>
+    <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/more-than-75-data-center-build-outs-worth-usd130-billion-have-been-successfully-blocked-in-the-first-four-months-of-2026-bipartisan-opposition-mounts-nationwide-over-fears-of-soaring-power-and-water-costs" target="_blank" rel="noopener"><span class="qh-title">More than 75 data center build-outs worth $130 billion blocked in Q1 2026</span><span class="qh-src">Tom's Hardware</span></a></li>
 
-    <li><a href="https://abralo.com/" target="_blank" rel="noopener"><span class="qh-title">Abralo — free web interface to run multiple Claude Code agent sessions in one window</span><span class="qh-src">Abralo</span></a></li>
+    <li><a href="https://www.raisesummit.com/" target="_blank" rel="noopener"><span class="qh-title">RAISE Summit and MACHINA Physical AI Summit draw 9,000 leaders in Paris</span><span class="qh-src">RAISE Summit</span></a></li>
 
-    <li><a href="https://techstackups.com/articles/tldraw-agent-draw/" target="_blank" rel="noopener"><span class="qh-title">Agent Draw — AI agent that draws on TLDraw canvas in real-time while you speak</span><span class="qh-src">TechStackUps</span></a></li>
+    <li><a href="https://mistral.ai/news/robostral-navigate" target="_blank" rel="noopener"><span class="qh-title">Mistral releases Robostral Navigate: 8B model for embodied robot navigation with single RGB camera</span><span class="qh-src">Mistral</span></a></li>
 
-    <li><a href="https://www.producthunt.com/products/scribble-network" target="_blank" rel="noopener"><span class="qh-title">Scribble Network — AI-powered brand recommendation engine for AI-search visibility</span><span class="qh-src">Product Hunt</span></a></li>
+    <li><a href="https://huggingface.co/papers/2607.06291" target="_blank" rel="noopener"><span class="qh-title">AlayaWorld: Long-horizon and playable video world generation</span><span class="qh-src">HuggingFace</span></a></li>
 
-    <li><a href="https://huggingface.co/papers/2607.04434" target="_blank" rel="noopener"><span class="qh-title">RoboDojo — unified sim-and-real benchmark with 42 simulation and 18 real-world robot tasks</span><span class="qh-src">HuggingFace</span></a></li>
+    <li><a href="https://huggingface.co/papers/2607.05147" target="_blank" rel="noopener"><span class="qh-title">DSpark: DeepSeek's confidence-scheduled speculative decoding with semi-autoregressive generation</span><span class="qh-src">HuggingFace</span></a></li>
+
+    <li><a href="https://x.com/_philschmid/status/2074894632396177671" target="_blank" rel="noopener"><span class="qh-title">Google AI Studio now supports GitHub project import and sync</span><span class="qh-src">@_philschmid</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2074876501640593702" target="_blank" rel="noopener"><span class="qh-title">AI practitioners advise startups to focus on structured workflows over raw intelligence</span><span class="qh-src">@omarsar0</span></a></li>
 
   </ul>
 </section>
@@ -729,65 +516,5 @@ Simo wrote on X that her medical leave revealed a longer and more complex recove
     </footer>
 
   </div>
-
-<script>
-(function() {
-  function togglePodcast(btn) {
-    var pill = btn.closest('.podcast-pill');
-    if (!pill) return;
-    var audio = pill.querySelector('.pill-audio');
-    if (!audio) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-
-    if (pill.classList.contains('is-playing')) {
-      audio.pause();
-      pill.classList.remove('is-playing');
-      pill.classList.add('is-paused');
-    } else {
-      // Pause any other playing podcast on the page
-      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
-        if (p !== pill) {
-          p.querySelector('.pill-audio').pause();
-          p.classList.remove('is-playing', 'is-paused');
-        }
-      });
-      audio.play().then(function() {
-        pill.classList.add('is-playing');
-        pill.classList.remove('is-paused');
-      }).catch(function() {
-        // Autoplay blocked — do nothing gracefully
-      });
-    }
-  }
-
-  // Update progress bar during playback
-  document.addEventListener('timeupdate', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-    if (audio.duration) {
-      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
-    }
-  }, true);
-
-  // When audio ends, reset
-  document.addEventListener('ended', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    pill.classList.remove('is-playing', 'is-paused');
-    if (bar) bar.style.width = '0%';
-  }, true);
-
-  window.togglePodcast = togglePodcast;
-})();
-</script>
-<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
-<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</body>
 </html>
