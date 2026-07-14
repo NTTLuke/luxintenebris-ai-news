@@ -1,0 +1,400 @@
+{
+  "issue_no": 17,
+  "date_iso": "2026-07-12",
+  "date_human": "July 12, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "OpenAI's Biggest Drop",
+    "title": "OpenAI releases GPT-5.6 Luna and Sol with 25x cost reduction, outperforming physicians in study",
+    "summary": "OpenAI unveiled its GPT-5.6 model family with three tiers — Sol (maximum power), Terra (balanced), and Luna (speed and credit-optimized). Luna at the lowest reasoning effort outperforms GPT-5.5 at its highest effort while costing 25x less. A blinded physician study found fewer flaws in GPT-5.6 responses than in physician-written ones, marking a major milestone in clinical AI. The company also teased a 'Super App' combining ChatGPT, Codex, and its AI assistant into a unified platform.",
+    "source": "OpenAI",
+    "date": "2026-07-11",
+    "url": "https://x.com/i/status/2075689779937833302"
+  },
+  "top_stories": [
+    {
+      "title": "Humanoid robots successfully perform gallbladder surgery in first preclinical trial",
+      "summary": "UC San Diego researchers used teleoperated humanoid robots to perform gallbladder removal in a study published in Nature. Two humanoids worked side-by-side in a robot-robot team — the first proof-of-concept for humanoid robots in surgery.",
+      "source": "The Robot Report",
+      "date": "2026-07-11",
+      "url": "https://www.therobotreport.com/beyond-da-vinci-why-versatile-humanoid-robots-are-next-frontier-surgery/"
+    },
+    {
+      "title": "AI\u00b2 Robotics raises $735M at $3B valuation for wheeled humanoid robots",
+      "summary": "Shenzhen-based AI\u00b2 Robotics raised roughly $735M from state-backed entities and corporate investors at a $2.8B valuation. Its wheeled humanoid AlphaBot 2, powered by the Alpha Brain VLA model, targets logistics, manufacturing, and biotech.",
+      "source": "The Robot Report",
+      "date": "2026-07-11",
+      "url": "https://www.therobotreport.com/ai%c2%b2-robotics-raises-735m-3b-valuation-wheeled-humanoid-robots/"
+    },
+    {
+      "title": "Sam Altman says AI has been net job-creating so far, contrary to his own expectations",
+      "summary": "Altman stated AI has been net job-creating at current capability levels, pushing back against his earlier expectations of clearer displacement. He noted the trend could continue as the technology matures.",
+      "source": "sama",
+      "date": "2026-07-11",
+      "url": "https://x.com/sama/status/2076036901824532530"
+    },
+    {
+      "title": "Sim tops Product Hunt as open-source workspace for AI agents and workflows",
+      "summary": "Sim is an open-source AI workspace with over 1,000 integrations and support for all major LLMs, used for building, deploying, and managing AI agents. It hit #1 on Product Hunt with 595 upvotes.",
+      "source": "Product Hunt",
+      "date": "2026-07-11",
+      "url": "https://www.producthunt.com/products/sim-studio"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Vidu S1 achieves real-time interactive video generation at 42 FPS on consumer GPUs",
+          "summary": "Vidu S1 uses TurboDiffusion and TurboServe to output 540p video at up to 42 FPS with voice-controlled digital character animation, infinite-length support, and no visual drift.",
+          "source": "HuggingFace",
+          "date": "2026-07-11",
+          "url": "https://huggingface.co/papers/2607.03118"
+        },
+        {
+          "title": "Jet-Long extends LLM context to 128K with zero-shot tuning-free RoPE method",
+          "summary": "A tuning-free approach pairing a local RoPE-faithful window with dynamic long-range rescaling, achieving +4.79pp on RULER at 1.7B scale and best HELMET-RAG accuracy across Qwen3 models up to 128K context.",
+          "source": "HuggingFace",
+          "date": "2026-07-11",
+          "url": "https://huggingface.co/papers/2607.07740"
+        },
+        {
+          "title": "UniClawBench offers first universal benchmark for proactive AI agents on real-world tasks",
+          "summary": "A capability-driven benchmark with 400 bilingual real-world tasks evaluated in live Docker environments using step-by-step checkpoints and a closed-loop multi-agent evaluation setup.",
+          "source": "HuggingFace",
+          "date": "2026-07-11",
+          "url": "https://huggingface.co/papers/2607.08768"
+        },
+        {
+          "title": "Ideas Have Genomes benchmark reveals LLMs hit 27% accuracy on scientific lineage reasoning",
+          "summary": "IdeaGene-Bench introduces 1,961 golden lineage traces across 10 domains. The strongest LLM-based scientist reaches only 27.3% exact accuracy, exposing a compositional bottleneck in AI scientific reasoning.",
+          "source": "HuggingFace",
+          "date": "2026-07-11",
+          "url": "https://huggingface.co/papers/2607.08758"
+        },
+        {
+          "title": "Flash-BoN speeds up diffusion model inference with cheap drafts and multi-stage verification",
+          "summary": "Uses timestep truncation, layer skipping, and activation proxies to generate cheap draft candidates, achieving +8% AUC over baselines under fixed wall-clock budgets at larger model scales.",
+          "source": "HuggingFace",
+          "date": "2026-07-11",
+          "url": "https://huggingface.co/papers/2607.04461"
+        }
+      ]
+    },
+    {
+      "title": "YouTube & Video",
+      "items": [
+        {
+          "title": "OpenAI drops GPT-5.6 flagship, three model variants, and 'Super App' in mega update",
+          "summary": "Matt Wolfe covers the full GPT-5.6 release including Sol, Terra, and Luna variants, cost reductions, and OpenAI's new unified Super App platform combining ChatGPT, Codex, and assistant features.",
+          "source": "YouTube \u2014 Matt Wolfe",
+          "date": "2026-07-11",
+          "url": "https://www.youtube.com/watch?v=Iir8dmNoNTg"
+        },
+        {
+          "title": "Abacus launches personal superintelligence platform routing across GPT-5.6, Fable 5, Claude Opus, and 100+ models",
+          "summary": "Abacus unveiled a system using Custom Routers to split tasks across frontier models. The Abacus Supercomputer gives agents an always-on cloud machine with root access for autonomous code inspection and deployment.",
+          "source": "YouTube \u2014 Beyond AI News",
+          "date": "2026-07-11",
+          "url": "https://www.youtube.com/watch?v=0eMRWYD2eeQ"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "NVIDIA and Hugging Face integrate GR00T VLA model and teleop frameworks into LeRobot",
+          "summary": "NVIDIA's Isaac GR00T 1.7 VLA model, Isaac Teleop framework, and planned Cosmos 3 world model are now available in LeRobot, connecting 3M NVIDIA robotics developers with 16M Hugging Face AI builders.",
+          "source": "The Robot Report",
+          "date": "2026-07-11",
+          "url": "https://www.therobotreport.com/nvidia-hugging-face-bring-new-models-frameworks-lerobot/"
+        },
+        {
+          "title": "Tesollo initiates IPO process while developing sub-1 kg five-fingered robotic hand",
+          "summary": "South Korean robotic hand developer Tesollo began IPO preparations and completed Series B funding. Its DG-5F-S hand weighs under 1 kg at 60% of predecessor cost, targeting humanoid robot commercialization.",
+          "source": "The Robot Report",
+          "date": "2026-07-11",
+          "url": "https://www.therobotreport.com/tesollo-initiates-ipo-process-developing-humanoid-hands/"
+        },
+        {
+          "title": "Robbyant Brain releases LingBot-VA 2.0 video-action foundation model for robot control",
+          "summary": "Ant Group's Sparrow team released LingBot-VA 2.0, a video-action foundation model using visual-action tokenizer and sparse MoE. Achieves 93.6 on RoboTwin 2.0 benchmark and 225 Hz control with foresight reasoning.",
+          "source": "omarsar0",
+          "date": "2026-07-11",
+          "url": "https://x.com/omarsar0/status/2075955181640892823"
+        },
+        {
+          "title": "XTEND secures US patent for autonomous drone navigation without pre-mapped environments",
+          "summary": "XTEND received US Patent No. 12,222,735 for technology enabling drones to navigate toward mission objectives autonomously. Over 10,000 systems deployed across 30 countries for defense and security.",
+          "source": "The Robot Report",
+          "date": "2026-07-11",
+          "url": "https://www.therobotreport.com/xtend-secures-u-s-patent-autonomous-navigation-technology/"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "ChatCut brings AI video editing inside ChatGPT with autonomous footage agent",
+          "summary": "A lightweight professional-grade AI video editor with an autonomous agent that understands footage and intent, offering structural edits, captions, B-roll, voiceover, and built-in generation tools. 613 upvotes on Product Hunt.",
+          "source": "Product Hunt",
+          "date": "2026-07-12",
+          "url": "https://www.producthunt.com/products/chatcut-ai-video-editor"
+        },
+        {
+          "title": "Scarlett embeds an AI co-worker in Slack and iMessage with 3,000+ tool integrations",
+          "summary": "An AI co-worker that lives in Slack and iMessage, connecting to over 3,000 tools to autonomously generate reports, draft documents, write code, build dashboards, and automate workflows. 393 upvotes.",
+          "source": "Product Hunt",
+          "date": "2026-07-11",
+          "url": "https://www.producthunt.com/products/tryscarlett"
+        },
+        {
+          "title": "PlugThis generates Chrome extensions from plain English descriptions",
+          "summary": "Describe a Chrome extension idea in plain English and PlugThis builds it with real Manifest V3 code, a backend, and store-ready assets. No coding required. 515 upvotes on Product Hunt.",
+          "source": "Product Hunt",
+          "date": "2026-07-11",
+          "url": "https://www.producthunt.com/products/plugthis-chrome-extension-generator"
+        },
+        {
+          "title": "ConnectMachine 2.0 turns networking into an AI-managed searchable contact database",
+          "summary": "An AI-powered digital business card that automatically remembers contacts and context from every meeting, turning networking into a managed, searchable record. 383 upvotes.",
+          "source": "Product Hunt",
+          "date": "2026-07-11",
+          "url": "https://www.producthunt.com/products/connectmachine-2"
+        },
+        {
+          "title": "StoryChief Connect lets teams publish Claude-generated content directly to websites and social media",
+          "summary": "Publish content from Anthropic's Claude directly to websites, blogs, and social channels without manual copy-paste. 137 upvotes on Product Hunt.",
+          "source": "Product Hunt",
+          "date": "2026-07-11",
+          "url": "https://www.producthunt.com/products/storychief-io"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-07-12",
+      "items": [
+        {
+          "name": "wonderwhy-er/DesktopCommanderMCP",
+          "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+          "meta": "TypeScript \u00b7 7,549 \u2605 \u00b7 +328 today"
+        },
+        {
+          "name": "oven-sh/bun",
+          "url": "https://github.com/oven-sh/bun",
+          "meta": "Rust \u00b7 94,432 \u2605 \u00b7 +209 today"
+        },
+        {
+          "name": "abseil/abseil-cpp",
+          "url": "https://github.com/abseil/abseil-cpp",
+          "meta": "C++ \u00b7 17,558 \u2605 \u00b7 +89 today"
+        },
+        {
+          "name": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "meta": "JavaScript \u00b7 77,040 \u2605 \u00b7 +1,116 today"
+        },
+        {
+          "name": "jbeder/yaml-cpp",
+          "url": "https://github.com/jbeder/yaml-cpp",
+          "meta": "C++ \u00b7 6,111 \u2605 \u00b7 +69 today"
+        },
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "meta": "Shell \u00b7 165,055 \u2605 \u00b7 +1,712 today"
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "meta": "Shell \u00b7 252,027 \u2605 \u00b7 +1,013 today"
+        },
+        {
+          "name": "microsoft/TypeScript",
+          "url": "https://github.com/microsoft/TypeScript",
+          "meta": "TypeScript \u00b7 109,838 \u2605 \u00b7 +177 today"
+        },
+        {
+          "name": "catchorg/Catch2",
+          "url": "https://github.com/catchorg/Catch2",
+          "meta": "C++ \u00b7 20,647 \u2605 \u00b7 +76 today"
+        },
+        {
+          "name": "chriskohlhoff/asio",
+          "url": "https://github.com/chriskohlhoff/asio",
+          "meta": "C++ \u00b7 6,101 \u2605 \u00b7 +92 today"
+        },
+        {
+          "name": "TencentCloud/TencentDB-Agent-Memory",
+          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+          "meta": "TypeScript \u00b7 8,354 \u2605 \u00b7 +123 today"
+        },
+        {
+          "name": "davila7/claude-code-templates",
+          "url": "https://github.com/davila7/claude-code-templates",
+          "meta": "Python \u00b7 28,836 \u2605 \u00b7 +118 today"
+        },
+        {
+          "name": "zeux/meshoptimizer",
+          "url": "https://github.com/zeux/meshoptimizer",
+          "meta": "C++ \u00b7 8,060 \u2605 \u00b7 +91 today"
+        },
+        {
+          "name": "tailscale/tailscale",
+          "url": "https://github.com/tailscale/tailscale",
+          "meta": "Go \u00b7 33,769 \u2605 \u00b7 +143 today"
+        },
+        {
+          "name": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "meta": "TypeScript \u00b7 6,857 \u2605 \u00b7 +117 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-07-12",
+      "items": [
+        {
+          "name": "tencent/Hy3",
+          "url": "https://huggingface.co/tencent/Hy3",
+          "meta": "Hybrid model from Tencent"
+        },
+        {
+          "name": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "meta": "9B fine-tune, GGUF quantized"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "GLM-5.2 open-weights release"
+        },
+        {
+          "name": "InternScience/Agents-A1",
+          "url": "https://huggingface.co/InternScience/Agents-A1",
+          "meta": "Agent-focused LLM from InternScience"
+        },
+        {
+          "name": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+          "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+          "meta": "27B Qwen3.6 reasoning fine-tune"
+        },
+        {
+          "name": "froggeric/Qwen-Fixed-Chat-Templates",
+          "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
+          "meta": "Qwen chat template fixes"
+        },
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "meta": "OCR model from Baidu"
+        },
+        {
+          "name": "conradlocke/krea2-identity-edit",
+          "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
+          "meta": "Krea2 identity editing model"
+        },
+        {
+          "name": "meituan-longcat/LongCat-2.0",
+          "url": "https://huggingface.co/meituan-longcat/LongCat-2.0",
+          "meta": "Long-context LLM v2.0"
+        },
+        {
+          "name": "meituan-longcat/LongCat-2.0",
+          "url": "https://huggingface.co/meituan-longcat/LongCat-2.0",
+          "meta": "Long-context LLM v2.0"
+        },
+        {
+          "name": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "meta": "35B MoE Qwen3.6, uncensored variant"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Sam Altman: GPT-5.6 Sol is the best model in the world on many benchmarks",
+      "source": "sama",
+      "date": "2026-07-11",
+      "url": "https://x.com/sama/status/2075983427019612242"
+    },
+    {
+      "title": "Sam Altman discusses orbital space datacenters for AI compute using solar and radiative cooling",
+      "source": "sama",
+      "date": "2026-07-11",
+      "url": "https://x.com/sama/status/2075982617976230043"
+    },
+    {
+      "title": "Simon Willison criticizes framing AI as 'employees' as short-sighted and disrespectful",
+      "source": "simonw",
+      "date": "2026-07-11",
+      "url": "https://x.com/simonw/status/2075996740717871125"
+    },
+    {
+      "title": "omarsar0 argues AI's original goal was augmentation, not replacement",
+      "source": "omarsar0",
+      "date": "2026-07-11",
+      "url": "https://x.com/omarsar0/status/2075965349715964080"
+    },
+    {
+      "title": "Video Friday: A World Cup for Robots from IEEE Spectrum weekly roundup",
+      "source": "IEEE Spectrum",
+      "date": "2026-07-12",
+      "url": "https://spectrum.ieee.org/video-friday-robot-world-cup"
+    },
+    {
+      "title": "SAM-MT achieves real-time multi-target video segmentation at 36+ FPS for 10 targets",
+      "source": "HuggingFace",
+      "date": "2026-07-11",
+      "url": "https://huggingface.co/papers/2607.08688"
+    },
+    {
+      "title": "ARDY brings autoregressive diffusion to real-time controllable 3D human motion generation",
+      "source": "HuggingFace",
+      "date": "2026-07-11",
+      "url": "https://huggingface.co/papers/2607.08741"
+    },
+    {
+      "title": "Mispher combines dictation, rewriting, translation, and AI agent in a single Mac app",
+      "source": "Product Hunt",
+      "date": "2026-07-11",
+      "url": "https://www.producthunt.com/products/mispher-agentic-transcription-for-mac"
+    },
+    {
+      "title": "Yasmine Works embeds an AI teammate in Slack for task completion without context switching",
+      "source": "Product Hunt",
+      "date": "2026-07-11",
+      "url": "https://www.producthunt.com/products/yasmine-works"
+    },
+    {
+      "title": "Shotgun is an open-source AI cofounder framework for solo builders from ideation to shipping",
+      "source": "Product Hunt",
+      "date": "2026-07-11",
+      "url": "https://www.producthunt.com/products/shotgun-ai-cofounder-framework"
+    },
+    {
+      "title": "DrugGen 2 enhances drug discovery with disease-aware language model for molecular generation",
+      "source": "HuggingFace",
+      "date": "2026-07-11",
+      "url": "https://huggingface.co/papers/2607.08404"
+    },
+    {
+      "title": "Linear Attention Architectures study compares softmax vs recurrent variants at scale",
+      "source": "HuggingFace",
+      "date": "2026-07-11",
+      "url": "https://huggingface.co/papers/2607.07953"
+    }
+  ]
+}
