@@ -3,111 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LVX IN TENEBRIS — AI dispatches · July 14, 2026</title>
+  <title>LVX IN TENEBRIS — AI dispatches · July 15, 2026</title>
   <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
   <link rel="stylesheet" href="style.css">
-  <style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style><style>
-/* ── Podcast Pill (inline player) ──────────── */
-.podcast-pill {
-  margin: 12px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-}
-.podcast-pill .pill-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 14px 5px 12px;
-  border: 1px solid var(--rule);
-  border-radius: 20px;
-  text-decoration: none;
-  color: var(--type);
-  font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  line-height: 1;
-  cursor: pointer;
-  background: none;
-  transition: border-color .25s ease, color .25s ease;
-}
-.podcast-pill .pill-btn:hover {
-  border-color: var(--lux);
-  color: var(--lux);
-}
-.podcast-pill .pill-btn:focus-visible {
-  outline: 1px solid var(--lux);
-  outline-offset: 2px;
-}
-/* Playing state */
-.podcast-pill.is-playing .pill-btn {
-  border-color: var(--ember);
-  color: var(--ember);
-}
-.podcast-pill .pill-wave {
-  flex-shrink: 0;
-  animation: pill-pulse 2s ease-in-out infinite;
-}
-.podcast-pill.is-playing .pill-wave {
-  animation: none;
-}
-.podcast-pill.is-playing .pill-wave .wave-bar {
-  animation: pill-bar 0.6s ease-in-out infinite alternate;
-  transform-origin: bottom;
-}
-@keyframes pill-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .65; }
-}
-@keyframes pill-bar {
-  0% { transform: scaleY(0.3); }
-  100% { transform: scaleY(1); }
-}
-.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
-.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
-.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
-.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
-.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
-.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
-.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
-.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
-.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
-/* Progress bar */
-.podcast-pill .pill-progress {
-  width: 100%;
-  height: 2px;
-  background: var(--rule);
-  border-radius: 1px;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity .3s ease;
-}
-.podcast-pill.is-playing .pill-progress,
-.podcast-pill.is-paused .pill-progress {
-  opacity: 1;
-}
-.podcast-pill .pill-progress-bar {
-  display: block;
-  height: 100%;
-  width: 0%;
-  background: var(--ember);
-  border-radius: 1px;
-  transition: width .3s linear;
-}
-/* Hide audio element */
-.podcast-pill .pill-audio {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  pointer-events: none;
-}
-/* ── End Podcast Pill ──────────────────────── */
-</style>
-</head>
+  <style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
   <body>
   <div class="container">
 
@@ -120,171 +19,137 @@
     <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
       <hr class="rule-double">
       <div class="dateline">
-        <span>July 14, 2026</span>
+        <span>July 15, 2026</span>
         <span class="dot">◆</span>
         <span class="tag">AI dispatches from the dark</span>
         <span class="dot">◆</span>
-        <span>55 stories</span>
+        <span>61 stories</span>
       </div>
       <hr class="rule-thin">
     </header>
 
     
 
-    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="**Dyson&#x27;s Discount Ecosystem: How to Save on Premium Home Tech**" data-b="According to WIRED, Dyson has built its reputation on powerful vacuum cleaners, but the brand also extends into hair care and air purification. While the company&#x27;s products are known for their durability and long lifespan, the upfront cost can be a significant investment. WIRED has compiled several ways to save.
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="**Wayfair Offers Up to 80% Off Furniture Through Flash Deals and Promo Codes This July**" data-b="WIRED reports that Wayfair, the Boston-based online furniture retailer founded 20 years ago, is currently running promotions of up to 80% off on furniture and home goods through a combination of coupon codes, flash sales, and closeout deals. The retailer offers 24-hour rotating Deals of the Day, each heavily discounted, along with closeout sections on discontinued and overstocked items reaching up to 70% off. First-time buyers can receive 10% off their initial order by signing up for email or text alerts, which also unlock personalized promo codes. Free shipping applies to orders over $35, and during the ongoing Black Friday sale all orders qualify. Wayfair Professional, a program for business owners, offers exclusive pricing up to 15% off plus an additional 10% off specialty brands, according to WIRED. The retailer currently lists 14 million items sourced from more than 11,000 global suppliers, covering everything from mattresses and bedding to cat furniture. WIRED also notes savings of up to 20% are available exclusively through the Wayfair mobile app, which includes augmented reality tools to visualize items in a room.
 
-New customers are not the only ones who can benefit. Registering a Dyson product&#x27;s serial number unlocks a 15% discount on a future order. Alternatively, signing up with a mobile number via Dyson&#x27;s homepage yields a single-use code for 10% off. The company also runs a rotating Dyson Deals Hub with weekly coupons across categories, and an Owner Savings Event offering 20% off selected floorcare and air purifiers.
+*A practical reminder that flash sales and promo codes drive urgency more than genuine scarcity — the same item will likely cycle through another deal next week.*
 
-For deeper discounts, the Dyson Outlet sells refurbished vacuums, hair tools, and air purifiers at up to 30% off. These units are inspected and restored to like-new condition with a warranty, though the coverage period is shorter than new products. WIRED notes that the refurbished Supersonic hair dryer can be found for under $200, and multi-stylers for under $300.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/wayfair-promo-code/"><span class="tih">**Wayfair Offers Up to 80% Off Furniture Through Flash Deals and Promo Codes This July**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Western Digital&#x27;s Recycling Program Offers Discounts on Future Purchases" data-b="According to a report from WIRED, data storage manufacturer Western Digital — which has been in business for more than five decades producing hard drives, SSDs, and flash memory — is running multiple discount programs that reward customers for recycling and loyalty.
 
-Specific deals highlighted include 35% off the Dyson Cool Tower Fan and significant markdowns on the V12 Detect Slim cordless vacuum and the Airwrap Origin multi-styler. The Airwrap, which WIRED rated 9/10, uses an internal motor to create a curling vortex that wraps hair around the barrel without excessive heat damage.
+The company&#x27;s Easy Recycle program allows users to safely dispose of old NAS systems, internal and external hard drives, and SSDs from any manufacturer, not just Western Digital products. Participants who recycle through the program receive a 15% off promo code valid on purchases of $50 or more.
 
-*While Dyson&#x27;s products command a premium price, the company&#x27;s multi-layered discount strategy suggests that patient shoppers rarely need to pay full retail.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">**Dyson&#x27;s Discount Ecosystem: How to Save on Premium Home Tech**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hostinger Offers Deep Discounts on Web Hosting Plans, According to WIRED" data-b="WIRED reports that Hostinger, a web hosting and website-building service with over two decades in the industry, is currently running several promotional discounts across its product tiers. The publication describes the platform as a budget-friendly option tailored for beginners and small-business owners who lack coding experience.
+Additional savings include a 10% discount on first orders for customers who sign up for Western Digital&#x27;s email newsletter. The company also offers free standard shipping on eligible orders of $50 or more for non-members, while members receive free shipping on all eligible orders within the continental U.S.
 
-The most substantial deal highlighted is 80% off the Unlimited hosting plan, which includes unlimited websites, AI tools, and priority support. For small businesses, WIRED recommends the Business plan at 79% off, offering capacity for up to 50 websites, AI e-commerce features, and a WordPress AI agent. A basic Premium plan is available at 75% off, suitable for individuals needing a simple setup with up to three websites. The top-tier Cloud Startup plan, aimed at growing businesses, is discounted by 71% and includes enhanced performance features like dedicated IP addresses and priority support.
+Western Digital provides targeted discounts for specific groups: students and teachers can save up to 15% after verifying their status through Youth Discount, and customers aged 55 and older can access a similar 15% discount through Senior Discount verification. Business users and channel partners can join the Pro Rewards program for tailored solutions and additional savings, subject to eligibility criteria.
 
-Hostinger also promotes its &quot;vibe coding&quot; concept through AI tools such as Hostinger Horizons, which generates visual mockups from user descriptions. The Starter plan for this feature is 30% off on annual subscriptions. A student discount of 25% is also mentioned.
+*While coupon roundups are a standard commerce format, the recycling-as-discount model is a genuinely clever sustainability incentive worth noting.*
 
-*The emphasis on non-coder-friendly tools suggests the hosting market is increasingly competing on accessibility rather than raw performance.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/western-digital-promo-code/"><span class="tih">Western Digital&#x27;s Recycling Program Offers Discounts on Future Purchases</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI Researcher Departs to Build AI Drug Discovery Startup" data-b="Miles Wang, a researcher at OpenAI known for work on using artificial intelligence to accelerate scientific discovery, is leaving the company to start a new venture focused on AI-powered drug discovery, according to multiple sources cited by TechCrunch. Several other OpenAI researchers are expected to follow him to the new company.
 
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/hostinger-coupon-code/"><span class="tih">Hostinger Offers Deep Discounts on Web Hosting Plans, According to WIRED</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Already rich, already restless: why successful tech figures are diving back into the trenches" data-b="A growing pattern among people who have already achieved significant wealth and success has caught the attention of TechCrunch, which reports that these individuals are returning to hands-on work, driven by a fear of missing out on what they see as AI&#x27;s defining moment — and the prospect of making even more money.
+The startup is reportedly in talks to raise approximately $200 million at a $2 billion valuation, with venture firm Lightspeed in discussions to lead the round. Wang disputed the reported funding figures and the description of the company, though he did not provide alternative details. The deal remains ongoing and may not be finalized, sources cautioned.
 
-Tom Blomfield, co-founder of GoCardless and Monzo who spent four and a half years as a Y Combinator Group Partner, recently announced he is taking a leave of absence to join Anthropic&#x27;s compute team as a member of technical staff. He is far from alone. Instagram co-founder Mike Krieger joined Anthropic as Chief Product Officer in 2024, and Andrej Karpathy, a founding OpenAI member who later led AI at Tesla and founded Eureka Labs, joined Anthropic&#x27;s pre-training team in May with a very similar rationale.
+The effort could center on developing AI models that identify new applications for existing drugs or for treatments that previously failed clinical trials — an approach that can shorten the path to revenue since these medicines have already passed safety testing, according to people familiar with the plans.
 
-Others are striking out on their own. Chamath Palihapitiya, the former Facebook executive known as the &quot;SPAC King,&quot; recently took his first full-time operating role in over a decade as CEO of 8090 Labs, his enterprise AI coding startup, backed by a $135 million Series A led by Salesforce Ventures. Meanwhile, Eric Wu, who ran Opendoor for a decade before stepping back in 2023, launched NavigateAI, an AI copilot for construction workers, with $25 million in seed funding.
+Wang joined OpenAI in 2024 after leaving Harvard, where he was working toward a computer science degree. During his time at the lab, he co-authored research exploring how AI models can automate and speed up scientific discovery.
 
-According to TechCrunch, a telling detail is the title itself: &quot;member of technical staff&quot; — the deliberately flat label Anthropic and OpenAI use for nearly everyone on their technical teams — is what both Blomfield and former Workday CTO Peter Bailis accepted, signaling that prestige matters less than being at the table.
+The funding discussions reflect growing investor appetite for AI-driven breakthroughs in the life sciences, following recent large rounds raised by Chai Discovery and DeepMind spinout Isomorphic Labs.
 
-*The article suggests that in AI, even those who have already won feel they cannot afford to sit this one out.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/13/already-rich-already-successful-why-the-last-wave-of-tech-winners-is-grinding-again/"><span class="tih">Already rich, already restless: why successful tech figures are diving back into the trenches</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uber quietly builds toward travel with hotels, data with AV Labs" data-b="Uber is expanding beyond ride-hailing and food delivery into travel services and autonomous vehicle data, according to Chief Product Officer Sachin Kansal in an interview with TechCrunch. The company has introduced hotel bookings through a partnership with Expedia, a &quot;shop for me&quot; concierge feature, and boat rentals in Europe. Kansal described travel as &quot;the third leg of the stool&quot; after rides and delivery, noting that 1.5 billion trips on the platform annually originate outside a user&#x27;s home city.
+*A departure like this is another sign that AI&#x27;s next frontier isn&#x27;t just language — it&#x27;s the molecules that keep us alive.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/"><span class="tih">OpenAI Researcher Departs to Build AI Drug Discovery Startup</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Lorde to tech world: AI glasses are &quot;not sexy" data-b="During a set at Madrid&#x27;s Mad Cool Festival last week, pop star Lorde offered a blunt critique of AI-powered smart glasses, calling them &quot;not sexy&quot; and directing a series of expletives at the devices. According to TechCrunch, the singer told the audience that it&#x27;s becoming increasingly difficult to tell what is real, noting that people can no longer be sure whether someone is wearing ordinary sunglasses or a recording device. Lorde&#x27;s comments came in a festival where Ray-Ban — a sponsor partnered with Meta on AI glasses — was present, and the singer performed just before Jennie, who is a brand ambassador for the product line.
 
-Under the surface, Uber has launched AV Labs, a six-month-old business unit building a fleet of sensor-equipped vehicles to collect driving data. The company frames it as strengthening relationships with autonomous vehicle partners — some of which it holds equity in — but the move also functions as a hedge against competitors like Waymo. Owning the data layer gives Uber leverage and optionality, Kansal suggested.
+Lorde&#x27;s skepticism mirrors broader privacy concerns. TechCrunch notes that smart glasses with built-in cameras and AI features have been linked to harassment and extortion cases. Meta, the dominant player in the category, faces multiple lawsuits over privacy violations, including one alleging that Kenyan contract workers were forced to review graphic footage captured with the glasses. Despite the controversy, the product has seen explosive growth: EssilorLuxottica sold over 7 million units in 2025, more than triple the previous two years combined.
 
-On financial services, Uber offers a debit card for drivers and is experimenting with merchant products in select markets. For consumers, Uber credits tied to the Uber One membership program provide cash back on hotel bookings, redeemable on rides and meals. The company partners with existing buy now, pay later providers rather than building its own, reflecting Kansal&#x27;s stated strategy: &quot;We&#x27;re not trying to be everything to everyone.&quot;
+*If privacy concerns won&#x27;t cool the smart glasses hype, perhaps Lorde&#x27;s verdict — that they are simply not cool — might give people a reason to think twice.*
 
-Uber One now counts 51 million members, representing roughly half of all bookings. Kansal said membership drives cross-use between mobility and delivery, and that Uber Eats has been independently profitable for several quarters.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/14/lorde-says-ai-glasses-are-not-sexy/"><span class="tih">Lorde to tech world: AI glasses are &quot;not sexy</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI&#x27;s screenless speaker aims to be a moving AI companion" data-b="According to a Bloomberg report cited by TechCrunch, OpenAI is developing its first hardware device — a screenless smart speaker designed to move on its own. The device, still under development, is described internally as a &quot;humanlike AI companion that lives in the home,&quot; with integrated ChatGPT capabilities and the ability to manage home AI services.
 
-*Uber&#x27;s AV Labs hedge is the most interesting play here — collecting proprietary driving data while sitting at the table with autonomous vehicle partners is a quiet power move that could pay off regardless of who wins the robotaxi race.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/"><span class="tih">Uber quietly builds toward travel with hotels, data with AV Labs</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="PixVerse raises $439 million, valuation hits $2 billion" data-b="Singapore-based video-generation startup PixVerse has closed a Series C extension raising $439 million, pushing its valuation past $2 billion, according to TechCrunch. The extension follows an initial Series C round in March led by CDH Investments that Bloomberg reported at roughly $300 million.
+Sources told Bloomberg that the speaker has a &quot;personality&quot; and can proactively learn about its owner over time, drawing on their digital life including emails to offer personalized service. The device reportedly includes mechanical elements that allow it to move independently, and is intended to feel like a companion that physically embodies OpenAI&#x27;s ChatGPT.
 
-Investors in the extension round include Alibaba, Lollapalooza Capital, Ivy Capital, and others, joining returning investors iGlobe Partners and OCBC&#x27;s Lion X Ventures. Founded in 2023 by Wang Changhu, a former ByteDance computer vision engineer, and Jaden Xie, previously an executive at Lighthouse Capital, the company now employs 150 people across Singapore, Beijing, and Shanghai.
+The project was developed with help from former Apple engineers who worked on the iPhone and Mac, Bloomberg wrote. However, the effort comes amid legal trouble — Apple recently sued OpenAI, accusing it of stealing trade secrets, calling the allegations just &quot;the tip of the iceberg.&quot; OpenAI has denied wrongdoing and believes its product &quot;veers significantly from anything Apple has on the market today,&quot; making a trade secret violation unlikely.
 
-PixVerse offers several products: a V-Series video model for consumers and API users, a C-Series for professional film and commercial work, and an R-Series of world models for game development released this year. Users can generate videos up to 4K resolution with embedded audio. The startup reports over 150 million registered users and 15 million monthly active users, though it declined to disclose paying customer numbers. Its image-to-video service costs $4.80 per minute of generation.
+*If OpenAI pulls this off, a screenless moving speaker with genuine personality could redefine the smart home category — but it faces a steep uphill battle against both Apple&#x27;s legal team and the gravity of its own ambitions.*
 
-Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data labeling, drawing on expertise from TikTok&#x27;s recommendation systems. Planned expansions include a new V-Series model, a world model update, global enterprise outreach, and hiring in research and go-to-market roles. The startup faces competition from ByteDance&#x27;s Seedance, Video Rebirth, Kling AI, Midjourney, Runway, Luma, and multiple world model startups from both Asia and the West.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/"><span class="tih">OpenAI&#x27;s screenless speaker aims to be a moving AI companion</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="**Wayfair Offers Up to 80% Off Furniture Through Flash Deals and Promo Codes This July**" data-b="WIRED reports that Wayfair, the Boston-based online furniture retailer founded 20 years ago, is currently running promotions of up to 80% off on furniture and home goods through a combination of coupon codes, flash sales, and closeout deals. The retailer offers 24-hour rotating Deals of the Day, each heavily discounted, along with closeout sections on discontinued and overstocked items reaching up to 70% off. First-time buyers can receive 10% off their initial order by signing up for email or text alerts, which also unlock personalized promo codes. Free shipping applies to orders over $35, and during the ongoing Black Friday sale all orders qualify. Wayfair Professional, a program for business owners, offers exclusive pricing up to 15% off plus an additional 10% off specialty brands, according to WIRED. The retailer currently lists 14 million items sourced from more than 11,000 global suppliers, covering everything from mattresses and bedding to cat furniture. WIRED also notes savings of up to 20% are available exclusively through the Wayfair mobile app, which includes augmented reality tools to visualize items in a room.
 
-*A crowded field is already forming around video generation and world models, making differentiation the real test ahead.*
+*A practical reminder that flash sales and promo codes drive urgency more than genuine scarcity — the same item will likely cycle through another deal next week.*
 
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/"><span class="tih">PixVerse raises $439 million, valuation hits $2 billion</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="**Dyson&#x27;s Discount Ecosystem: How to Save on Premium Home Tech**" data-b="According to WIRED, Dyson has built its reputation on powerful vacuum cleaners, but the brand also extends into hair care and air purification. While the company&#x27;s products are known for their durability and long lifespan, the upfront cost can be a significant investment. WIRED has compiled several ways to save.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/wayfair-promo-code/"><span class="tih">**Wayfair Offers Up to 80% Off Furniture Through Flash Deals and Promo Codes This July**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Western Digital&#x27;s Recycling Program Offers Discounts on Future Purchases" data-b="According to a report from WIRED, data storage manufacturer Western Digital — which has been in business for more than five decades producing hard drives, SSDs, and flash memory — is running multiple discount programs that reward customers for recycling and loyalty.
 
-New customers are not the only ones who can benefit. Registering a Dyson product&#x27;s serial number unlocks a 15% discount on a future order. Alternatively, signing up with a mobile number via Dyson&#x27;s homepage yields a single-use code for 10% off. The company also runs a rotating Dyson Deals Hub with weekly coupons across categories, and an Owner Savings Event offering 20% off selected floorcare and air purifiers.
+The company&#x27;s Easy Recycle program allows users to safely dispose of old NAS systems, internal and external hard drives, and SSDs from any manufacturer, not just Western Digital products. Participants who recycle through the program receive a 15% off promo code valid on purchases of $50 or more.
 
-For deeper discounts, the Dyson Outlet sells refurbished vacuums, hair tools, and air purifiers at up to 30% off. These units are inspected and restored to like-new condition with a warranty, though the coverage period is shorter than new products. WIRED notes that the refurbished Supersonic hair dryer can be found for under $200, and multi-stylers for under $300.
+Additional savings include a 10% discount on first orders for customers who sign up for Western Digital&#x27;s email newsletter. The company also offers free standard shipping on eligible orders of $50 or more for non-members, while members receive free shipping on all eligible orders within the continental U.S.
 
-Specific deals highlighted include 35% off the Dyson Cool Tower Fan and significant markdowns on the V12 Detect Slim cordless vacuum and the Airwrap Origin multi-styler. The Airwrap, which WIRED rated 9/10, uses an internal motor to create a curling vortex that wraps hair around the barrel without excessive heat damage.
+Western Digital provides targeted discounts for specific groups: students and teachers can save up to 15% after verifying their status through Youth Discount, and customers aged 55 and older can access a similar 15% discount through Senior Discount verification. Business users and channel partners can join the Pro Rewards program for tailored solutions and additional savings, subject to eligibility criteria.
 
-*While Dyson&#x27;s products command a premium price, the company&#x27;s multi-layered discount strategy suggests that patient shoppers rarely need to pay full retail.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">**Dyson&#x27;s Discount Ecosystem: How to Save on Premium Home Tech**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hostinger Offers Deep Discounts on Web Hosting Plans, According to WIRED" data-b="WIRED reports that Hostinger, a web hosting and website-building service with over two decades in the industry, is currently running several promotional discounts across its product tiers. The publication describes the platform as a budget-friendly option tailored for beginners and small-business owners who lack coding experience.
+*While coupon roundups are a standard commerce format, the recycling-as-discount model is a genuinely clever sustainability incentive worth noting.*
 
-The most substantial deal highlighted is 80% off the Unlimited hosting plan, which includes unlimited websites, AI tools, and priority support. For small businesses, WIRED recommends the Business plan at 79% off, offering capacity for up to 50 websites, AI e-commerce features, and a WordPress AI agent. A basic Premium plan is available at 75% off, suitable for individuals needing a simple setup with up to three websites. The top-tier Cloud Startup plan, aimed at growing businesses, is discounted by 71% and includes enhanced performance features like dedicated IP addresses and priority support.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/western-digital-promo-code/"><span class="tih">Western Digital&#x27;s Recycling Program Offers Discounts on Future Purchases</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI Researcher Departs to Build AI Drug Discovery Startup" data-b="Miles Wang, a researcher at OpenAI known for work on using artificial intelligence to accelerate scientific discovery, is leaving the company to start a new venture focused on AI-powered drug discovery, according to multiple sources cited by TechCrunch. Several other OpenAI researchers are expected to follow him to the new company.
 
-Hostinger also promotes its &quot;vibe coding&quot; concept through AI tools such as Hostinger Horizons, which generates visual mockups from user descriptions. The Starter plan for this feature is 30% off on annual subscriptions. A student discount of 25% is also mentioned.
+The startup is reportedly in talks to raise approximately $200 million at a $2 billion valuation, with venture firm Lightspeed in discussions to lead the round. Wang disputed the reported funding figures and the description of the company, though he did not provide alternative details. The deal remains ongoing and may not be finalized, sources cautioned.
 
-*The emphasis on non-coder-friendly tools suggests the hosting market is increasingly competing on accessibility rather than raw performance.*
+The effort could center on developing AI models that identify new applications for existing drugs or for treatments that previously failed clinical trials — an approach that can shorten the path to revenue since these medicines have already passed safety testing, according to people familiar with the plans.
 
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/hostinger-coupon-code/"><span class="tih">Hostinger Offers Deep Discounts on Web Hosting Plans, According to WIRED</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Already rich, already restless: why successful tech figures are diving back into the trenches" data-b="A growing pattern among people who have already achieved significant wealth and success has caught the attention of TechCrunch, which reports that these individuals are returning to hands-on work, driven by a fear of missing out on what they see as AI&#x27;s defining moment — and the prospect of making even more money.
+Wang joined OpenAI in 2024 after leaving Harvard, where he was working toward a computer science degree. During his time at the lab, he co-authored research exploring how AI models can automate and speed up scientific discovery.
 
-Tom Blomfield, co-founder of GoCardless and Monzo who spent four and a half years as a Y Combinator Group Partner, recently announced he is taking a leave of absence to join Anthropic&#x27;s compute team as a member of technical staff. He is far from alone. Instagram co-founder Mike Krieger joined Anthropic as Chief Product Officer in 2024, and Andrej Karpathy, a founding OpenAI member who later led AI at Tesla and founded Eureka Labs, joined Anthropic&#x27;s pre-training team in May with a very similar rationale.
+The funding discussions reflect growing investor appetite for AI-driven breakthroughs in the life sciences, following recent large rounds raised by Chai Discovery and DeepMind spinout Isomorphic Labs.
 
-Others are striking out on their own. Chamath Palihapitiya, the former Facebook executive known as the &quot;SPAC King,&quot; recently took his first full-time operating role in over a decade as CEO of 8090 Labs, his enterprise AI coding startup, backed by a $135 million Series A led by Salesforce Ventures. Meanwhile, Eric Wu, who ran Opendoor for a decade before stepping back in 2023, launched NavigateAI, an AI copilot for construction workers, with $25 million in seed funding.
+*A departure like this is another sign that AI&#x27;s next frontier isn&#x27;t just language — it&#x27;s the molecules that keep us alive.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/"><span class="tih">OpenAI Researcher Departs to Build AI Drug Discovery Startup</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Lorde to tech world: AI glasses are &quot;not sexy" data-b="During a set at Madrid&#x27;s Mad Cool Festival last week, pop star Lorde offered a blunt critique of AI-powered smart glasses, calling them &quot;not sexy&quot; and directing a series of expletives at the devices. According to TechCrunch, the singer told the audience that it&#x27;s becoming increasingly difficult to tell what is real, noting that people can no longer be sure whether someone is wearing ordinary sunglasses or a recording device. Lorde&#x27;s comments came in a festival where Ray-Ban — a sponsor partnered with Meta on AI glasses — was present, and the singer performed just before Jennie, who is a brand ambassador for the product line.
 
-According to TechCrunch, a telling detail is the title itself: &quot;member of technical staff&quot; — the deliberately flat label Anthropic and OpenAI use for nearly everyone on their technical teams — is what both Blomfield and former Workday CTO Peter Bailis accepted, signaling that prestige matters less than being at the table.
+Lorde&#x27;s skepticism mirrors broader privacy concerns. TechCrunch notes that smart glasses with built-in cameras and AI features have been linked to harassment and extortion cases. Meta, the dominant player in the category, faces multiple lawsuits over privacy violations, including one alleging that Kenyan contract workers were forced to review graphic footage captured with the glasses. Despite the controversy, the product has seen explosive growth: EssilorLuxottica sold over 7 million units in 2025, more than triple the previous two years combined.
 
-*The article suggests that in AI, even those who have already won feel they cannot afford to sit this one out.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/13/already-rich-already-successful-why-the-last-wave-of-tech-winners-is-grinding-again/"><span class="tih">Already rich, already restless: why successful tech figures are diving back into the trenches</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uber quietly builds toward travel with hotels, data with AV Labs" data-b="Uber is expanding beyond ride-hailing and food delivery into travel services and autonomous vehicle data, according to Chief Product Officer Sachin Kansal in an interview with TechCrunch. The company has introduced hotel bookings through a partnership with Expedia, a &quot;shop for me&quot; concierge feature, and boat rentals in Europe. Kansal described travel as &quot;the third leg of the stool&quot; after rides and delivery, noting that 1.5 billion trips on the platform annually originate outside a user&#x27;s home city.
+*If privacy concerns won&#x27;t cool the smart glasses hype, perhaps Lorde&#x27;s verdict — that they are simply not cool — might give people a reason to think twice.*
 
-Under the surface, Uber has launched AV Labs, a six-month-old business unit building a fleet of sensor-equipped vehicles to collect driving data. The company frames it as strengthening relationships with autonomous vehicle partners — some of which it holds equity in — but the move also functions as a hedge against competitors like Waymo. Owning the data layer gives Uber leverage and optionality, Kansal suggested.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/14/lorde-says-ai-glasses-are-not-sexy/"><span class="tih">Lorde to tech world: AI glasses are &quot;not sexy</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI&#x27;s screenless speaker aims to be a moving AI companion" data-b="According to a Bloomberg report cited by TechCrunch, OpenAI is developing its first hardware device — a screenless smart speaker designed to move on its own. The device, still under development, is described internally as a &quot;humanlike AI companion that lives in the home,&quot; with integrated ChatGPT capabilities and the ability to manage home AI services.
 
-On financial services, Uber offers a debit card for drivers and is experimenting with merchant products in select markets. For consumers, Uber credits tied to the Uber One membership program provide cash back on hotel bookings, redeemable on rides and meals. The company partners with existing buy now, pay later providers rather than building its own, reflecting Kansal&#x27;s stated strategy: &quot;We&#x27;re not trying to be everything to everyone.&quot;
+Sources told Bloomberg that the speaker has a &quot;personality&quot; and can proactively learn about its owner over time, drawing on their digital life including emails to offer personalized service. The device reportedly includes mechanical elements that allow it to move independently, and is intended to feel like a companion that physically embodies OpenAI&#x27;s ChatGPT.
 
-Uber One now counts 51 million members, representing roughly half of all bookings. Kansal said membership drives cross-use between mobility and delivery, and that Uber Eats has been independently profitable for several quarters.
+The project was developed with help from former Apple engineers who worked on the iPhone and Mac, Bloomberg wrote. However, the effort comes amid legal trouble — Apple recently sued OpenAI, accusing it of stealing trade secrets, calling the allegations just &quot;the tip of the iceberg.&quot; OpenAI has denied wrongdoing and believes its product &quot;veers significantly from anything Apple has on the market today,&quot; making a trade secret violation unlikely.
 
-*Uber&#x27;s AV Labs hedge is the most interesting play here — collecting proprietary driving data while sitting at the table with autonomous vehicle partners is a quiet power move that could pay off regardless of who wins the robotaxi race.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/"><span class="tih">Uber quietly builds toward travel with hotels, data with AV Labs</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="PixVerse raises $439 million, valuation hits $2 billion" data-b="Singapore-based video-generation startup PixVerse has closed a Series C extension raising $439 million, pushing its valuation past $2 billion, according to TechCrunch. The extension follows an initial Series C round in March led by CDH Investments that Bloomberg reported at roughly $300 million.
+*If OpenAI pulls this off, a screenless moving speaker with genuine personality could redefine the smart home category — but it faces a steep uphill battle against both Apple&#x27;s legal team and the gravity of its own ambitions.*
 
-Investors in the extension round include Alibaba, Lollapalooza Capital, Ivy Capital, and others, joining returning investors iGlobe Partners and OCBC&#x27;s Lion X Ventures. Founded in 2023 by Wang Changhu, a former ByteDance computer vision engineer, and Jaden Xie, previously an executive at Lighthouse Capital, the company now employs 150 people across Singapore, Beijing, and Shanghai.
-
-PixVerse offers several products: a V-Series video model for consumers and API users, a C-Series for professional film and commercial work, and an R-Series of world models for game development released this year. Users can generate videos up to 4K resolution with embedded audio. The startup reports over 150 million registered users and 15 million monthly active users, though it declined to disclose paying customer numbers. Its image-to-video service costs $4.80 per minute of generation.
-
-Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data labeling, drawing on expertise from TikTok&#x27;s recommendation systems. Planned expansions include a new V-Series model, a world model update, global enterprise outreach, and hiring in research and go-to-market roles. The startup faces competition from ByteDance&#x27;s Seedance, Video Rebirth, Kling AI, Midjourney, Runway, Luma, and multiple world model startups from both Asia and the West.
-
-*A crowded field is already forming around video generation and world models, making differentiation the real test ahead.*
-
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/"><span class="tih">PixVerse raises $439 million, valuation hits $2 billion</span> <span class="tis">— techcrunch.com</span></div></div></div>
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/"><span class="tih">OpenAI&#x27;s screenless speaker aims to be a moving AI companion</span> <span class="tis">— techcrunch.com</span></div></div></div>
 <div class="lead-zone">
       <article class="lead">
-  <a href="https://arstechnica.com/ai/2026/07/openai-wants-its-new-tool-to-do-your-work-for-you-and-with-you/" target="_blank" rel="noopener">
+  <a href="https://x.com/sama/status/2077036999303999910" target="_blank" rel="noopener">
     
     <div class="lead-grid">
       <div class="lead-head">
-        <p class="kicker">OpenAI Launches</p>
-        <h1>ChatGPT Work — OpenAI rebrands Codex into long-running autonomous agent</h1>
+        <p class="kicker">OpenAI drops Sol</p>
+        <h1>OpenAI GPT-5.6 Sol delivers half the price, double the token efficiency</h1>
       </div>
       <div class="lead-body">
-        <p class="deck">OpenAI launched ChatGPT Work, rebranding Codex into a tool that can run autonomous workflows for hours, integrating with Slack, Teams, Google Drive, and SharePoint. The launch includes Scheduled Tasks and a credit-based billing system powered by the GPT-5.6 model, while the existing ChatGPT desktop app is being rebranded as 'ChatGPT Classic.'</p>
-        <p class="byline"><span class="src">Ars Technica</span> · <span>2026-07-14</span> · <span class="more">Read the dispatch →</span></p>
+        <p class="deck">Sam Altman announced GPT-5.6 Sol delivers roughly half the price and roughly 2x more token efficiency than Fable for many tasks, positioning it as a major cost-performance breakthrough for production AI workloads. OpenAI's inference team is struggling to keep up with demand.</p>
+        <p class="byline"><span class="src">sama</span> · <span>2026-07-14</span> · <span class="more">Read the dispatch →</span></p>
       </div>
     </div>
   </a>
-
-<div class="podcast-pill">
-  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
-    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
-      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
-      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
-      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
-      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
-    </svg>
-    <span class="pill-label">Podcast Pill</span>
-    <span class="pill-divider">·</span>
-    <span class="pill-show">The Divide</span>
-    <span class="pill-duration">1:09</span>
-  </button>
-  <audio class="pill-audio" preload="none">
-    <source src="podcasts/lead_2026-07-14.ogg" type="audio/ogg">
-  </audio>
-  <div class="pill-progress" aria-hidden="true">
-    <span class="pill-progress-bar"></span>
-  </div>
-</div>
 </article>
 
     </div>
 
     <div class="topstories">
 <article class="story">
-  <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/teslas-ai5-with-2nm-class-node-tapes-out-at-samsung-foundry-production-starts-soon-months-after-tsmc-tape-out" target="_blank" rel="noopener">
-    <h3>Tesla's AI5 with 2nm-class node tapes out at Samsung Foundry — production starts soon, months after TSMC tape out</h3>
-    <p>Tesla's AI5 processor taped out at Samsung Foundry using a 2nm-class process, featuring a 384-bit GDDR6/GDDR7 memory interface for use in cars, robots, and data centers.</p>
-    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-07-13</p>
+  <a href="https://x.com/sama/status/2077033807736459713" target="_blank" rel="noopener">
+    <h3>OpenAI agentic usage explodes 2.5x in one week</h3>
+    <p>OpenAI reported a 2.5x increase in usage of its agentic products (Codex, ChatGPT Work features) over the past week, signaling rapid real-world adoption of AI agents in production workflows.</p>
+    <p class="byline"><span class="src">sama</span> · 2026-07-14</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://techstartups.com/2026/07/13/european-ai-defense-startup-helsing-raises-1-8-billion-at-18-billion-valuation/" target="_blank" rel="noopener">
-    <h3>European AI defense startup Helsing raises $1.8B at $18B valuation</h3>
-    <p>Helsing closed a $1.8 billion Series E led by Dragoneer Investment Group with Lightspeed, General Catalyst, Accel, and Plural, cementing its position in the AI defense sector.</p>
-    <p class="byline"><span class="src">TechStartups</span> · 2026-07-13</p>
+  <a href="https://x.com/swyx/status/2077162040108748830" target="_blank" rel="noopener">
+    <h3>Codex reaches 6M users, described as 'IPO altering' for OpenAI</h3>
+    <p>Codex hit roughly 6 million active users, growing about 1 million in a single day and overtaking Claude's coding usage. Swyx called it 'IPO altering stuff' for OpenAI, linking to Latent Space analysis.</p>
+    <p class="byline"><span class="src">swyx</span> · 2026-07-14</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/" target="_blank" rel="noopener">
-    <h3>Video generation startup PixVerse raises $439M, valuation soars past $2B</h3>
-    <p>PixVerse closed a $439 million Series C extension led by CDH Investments with Alibaba, Lollapalooza Capital, and Ivy Capital, fueling the AI video generation and world models space.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-13</p>
+  <a href="https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/" target="_blank" rel="noopener">
+    <h3>DeepSeek reportedly in talks to raise $1.5B at $71B valuation ahead of IPO</h3>
+    <p>Chinese LLM developer DeepSeek is in discussions to raise $1.5 billion at roughly a $71 billion valuation, with an IPO targeted for 2027 or earlier. Existing investors include Tencent and the Beijing National AI Industry Investment Fund.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-14</p>
   </a>
 </article>
 
@@ -301,42 +166,42 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
   
   <div class="section-grid">
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.09024" target="_blank" rel="noopener">
-    <h4>Video generation models are general-purpose vision learners (GenCeption)</h4>
-    <p>Uses a pre-trained video generative diffusion backbone as a feed-forward perception model. Achieves SOTA on depth, surface normal, camera pose, and 3D keypoint prediction with 7-500x less training data than prior methods.</p>
+  <a href="https://arxiv.org/abs/2607.11696" target="_blank" rel="noopener">
+    <h4>Hourglass reasoning enforces rigorous induction-deduction separation, gains 14 points on ARC-AGI-2</h4>
+    <p>Think Through a Bottleneck enforces strict isolation between induction and deduction stages in frozen LLMs, yielding up to 14-point gains on ARC-AGI-2 and nearly doubling Verilog synthesis accuracy on ChipBench.</p>
     <p class="byline"><span class="src">arXiv</span> · 2026-07-14</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.08964" target="_blank" rel="noopener">
-    <h4>Long-Horizon-Terminal-Bench: Testing limits of agents on long-horizon terminal tasks</h4>
-    <p>Introduces 46 long-horizon terminal tasks with dense reward grading. The strongest frontier model achieves just 15.2% pass@1, with agents consuming avg 9.9M tokens per task.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-13</p>
+  <a href="https://huggingface.co/papers/2607.05394" target="_blank" rel="noopener">
+    <h4>Weak-to-strong generalization via direct on-policy distillation boosts Qwen3-1.7B by 10 points on AIME</h4>
+    <p>Direct-OPD transfers RL policy shifts from weaker to stronger models using implicit reward signals, boosting Qwen3-1.7B from 48.3% to 58.3% on AIME 2024 in 4 hours on 8 A100 GPUs.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-14</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.08894" target="_blank" rel="noopener">
-    <h4>GATS: Graph-augmented tree search with layered world models for agent planning</h4>
-    <p>Combines UCB1-based tree search with a 3-layer world model, achieving 100% success on synthetic planning tasks with zero LLM calls during inference vs 37 for LATS.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-13</p>
+  <a href="https://huggingface.co/papers/2607.10383" target="_blank" rel="noopener">
+    <h4>ABot-N1: A general visual language navigation foundation model with slow-fast architecture</h4>
+    <p>ABot-N1 decouples cognition from control using a slow-fast architecture, achieving SOTA urban-scale navigation with POI arrival boosted from 35% to 77.3% and 95.4%/92.9% SR in complex indoor/outdoor scenes.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-14</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.07964" target="_blank" rel="noopener">
-    <h4>KronQ: LLM quantization via Kronecker-factored Hessian</h4>
-    <p>PTQ framework introducing gradient covariance into quantization. At 2-bit weight-only on LLaMA-3-70B achieves 7.93 perplexity while GPTQ and GPTAQ diverge.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-14</p>
+  <a href="https://huggingface.co/papers/2607.10350" target="_blank" rel="noopener">
+    <h4>ABot-AgentOS: A general robotic agent OS with lifelong multimodal memory and self-evolution</h4>
+    <p>ABot-AgentOS provides a deliberative agent layer with Universal Multi-modal Graph Memory and self-evolution, achieving 88.7 on LoCoMo and 60.4 on OpenEQA EM-EQA with failure-driven improvement.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-14</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2607.09559" target="_blank" rel="noopener">
-    <h4>RIPO: Riemannian isometric policy optimization for LLM reasoning</h4>
-    <p>Reveals PPO-Clip's Euclidean metric flaw and proposes isometric updates on the Riemannian manifold. Achieves up to 60% improvement over GRPO on AIME24 across seven benchmarks.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-14</p>
+  <a href="https://huggingface.co/papers/2607.09125" target="_blank" rel="noopener">
+    <h4>4D human-scene reconstruction from low-overlap captures achieves SOTA with +5 dB PSNR gains</h4>
+    <p>StudioRecon decouples background and humans using video diffusion densification and deformable Gaussians, achieving SOTA novel view synthesis with +1.5 to +5.0 dB PSNR gains over prior methods.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-14</p>
   </a>
 </article>
 
@@ -345,25 +210,92 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
 
 <section class="section">
   <div class="section-head">
-    <h2>YouTube &amp; Video</h2>
+    <h2>Open Source &amp; Models</h2>
     <span class="line"></span>
-    <span class="n">02</span>
+    <span class="n">04</span>
   </div>
   
   <div class="section-grid">
 <article class="item">
-  <a href="https://www.youtube.com/watch?v=t8hfOyF4ehw" target="_blank" rel="noopener">
-    <h4>GPT 5.6 Ultra Mode burns through limits 15x faster with sub-agent spawning</h4>
-    <p>Theo exposes a design issue in GPT 5.6's Ultra mode: what appears as a reasoning level actually spawns max-reasoning sub-agents on repeat, consuming the five-hour usage limit in as little as 20 minutes per run.</p>
-    <p class="byline"><span class="src">YouTube — Theo - t3.gg</span> · 2026-07-14</p>
+  <a href="https://x.com/togethercompute/status/2077097332169191830" target="_blank" rel="noopener">
+    <h4>GLM-5.2: Zhipu AI releases new open-weights model with IndexShare DSA architecture</h4>
+    <p>Zhipu AI released GLM-5.2, a new open-weights model featuring IndexShare in its DSA layers and a stronger Multi-Token Prediction head reusing IndexShare and KVShare techniques. Available on Hugging Face.</p>
+    <p class="byline"><span class="src">@togethercompute</span> · 2026-07-14</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.youtube.com/watch?v=W6BKtht3IFM" target="_blank" rel="noopener">
-    <h4>OpenAI removes standalone Codex app, merges it into ChatGPT</h4>
-    <p>OpenAI discontinued the standalone Codex application, folding its functionality into ChatGPT. The Codex app now redirects to ChatGPT, marking the end of Codex as a separate product for AI-powered coding.</p>
-    <p class="byline"><span class="src">YouTube — Theo - t3.gg</span> · 2026-07-13</p>
+  <a href="https://prismml.com/news/bonsai-27b" target="_blank" rel="noopener">
+    <h4>Bonsai 27B: First 27B-class multimodal model to run on a phone, Apache 2.0 license</h4>
+    <p>PrismML released Bonsai 27B, based on Qwen3.6, using ternary {-1,0,+1} weights with FP16 scaling (1.71 bits/weight, 5.9 GB). Retains roughly 95% of full-precision performance on reasoning, tool-calling, vision, and agentic tasks with 262K context. A 1-bit variant at 3.9 GB fits iPhones.</p>
+    <p class="byline"><span class="src">PrismML</span> · 2026-07-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.lmsys.org/blog/2026-07-13-glm52-optimization" target="_blank" rel="noopener">
+    <h4>Serving GLM-5.2 NVFP4 with SGLang: 500+ TPS on 8x Blackwell B300</h4>
+    <p>LMSYS published optimizations for serving GLM-5.2 on Blackwell hardware, achieving 500+ tokens/s per user at batch size 1. Key wins include 18-34% better single-user interactivity and a new TopK-V2 kernel 2.33x faster at 80K context.</p>
+    <p class="byline"><span class="src">LMSYS</span> · 2026-07-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://developer.nvidia.com/blog/create-a-langchain-deep-agents-harness-profile-for-nvidia-nemotron-3-ultra-to-improve-performance/" target="_blank" rel="noopener">
+    <h4>NVIDIA Nemotron 3 Ultra: Ralph loops for agentic performance with LangChain Deep Agents</h4>
+    <p>NVIDIA published a technical blog on Ralph loops — iterative agentic patterns using filesystem as persistent memory — with LangChain Deep Agents Harness for Nemotron 3 Ultra. Tuning the harness rather than the model improves agent benchmarks without fine-tuning.</p>
+    <p class="byline"><span class="src">NVIDIA Developer Blog</span> · 2026-07-14</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  
+  <div class="section-grid">
+<article class="item">
+  <a href="https://blogs.nvidia.com/blog/performance-per-watt-ai-infrastructure-efficiency/" target="_blank" rel="noopener">
+    <h4>NVIDIA Blackwell NVL72 sets new bar for AI infrastructure performance per watt</h4>
+    <p>NVIDIA published a detailed analysis showing Blackwell NVL72 delivers the highest performance per watt for AI factories, positioning tokens per watt and cost per token as the key metrics for maximizing AI infrastructure revenue and profit margins.</p>
+    <p class="byline"><span class="src">NVIDIA Blog</span> · 2026-07-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more/" target="_blank" rel="noopener">
+    <h4>New York becomes first US state to impose one-year moratorium on hyperscale data centers</h4>
+    <p>New York enacted a one-year statewide moratorium on data centers requiring at least 50 megawatts, citing concerns over electricity prices, water consumption, and pressure on local infrastructure, with more than 12 GW of new loads awaiting grid connection.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-07-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more/" target="_blank" rel="noopener">
+    <h4>Reflection AI signs over $1B compute deal with Nebius for NVIDIA processors</h4>
+    <p>AI startup Reflection AI signed a $1B+ compute agreement with Nebius for access to NVIDIA's newest processors, following a separate $150M/month deal with SpaceX through 2029, highlighting how securing compute capacity has become as critical as model development.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-07-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more/" target="_blank" rel="noopener">
+    <h4>NVIDIA halves approved Asian buyers for AI chips to curb smuggling to China</h4>
+    <p>NVIDIA slashed approved Asian buyers for advanced AI chips by more than half, implementing a stricter whitelist and enhanced compliance reviews including on-site data center visits, targeting entities in Singapore, Malaysia, and Japan suspected of facilitating diversion to China.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-07-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more/" target="_blank" rel="noopener">
+    <h4>xAI installed 59 natural gas turbines for Colossus 2 without federal air permits</h4>
+    <p>Elon Musk's xAI installed 59 natural-gas turbines for its Colossus 2 data center project in Tennessee without obtaining required federal clean-air permits, with predominantly Black communities near the site raising health and environmental justice concerns.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-07-14</p>
   </a>
 </article>
 
@@ -374,39 +306,47 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
   <div class="section-head">
     <h2>Tools &amp; Startups</h2>
     <span class="line"></span>
-    <span class="n">04</span>
+    <span class="n">05</span>
   </div>
   
   <div class="section-grid">
 <article class="item">
-  <a href="https://news.ycombinator.com/item?id=48875342" target="_blank" rel="noopener">
-    <h4>Sqlsure — Deterministic semantic checks for AI-generated SQL</h4>
-    <p>Semantic SQL inspector that checks queries against schema facts before execution. Runs ~0.1 ms per check fully offline, Apache-2.0. Found 45 real bugs in Spider and BIRD with zero false positives.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-14</p>
+  <a href="https://www.producthunt.com/products/pazi" target="_blank" rel="noopener">
+    <h4>Pazi — Vibe code your entire business operations with AI agent teams</h4>
+    <p>AI team platform from the creator of Pythagora (33K GitHub stars) that assembles agent teams around business ideas to handle websites, outreach, content, and operations autonomously while keeping the user in control.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-15</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.producthunt.com/posts/fudge-mcp" target="_blank" rel="noopener">
-    <h4>Fudge MCP — Design reference engine for AI agents</h4>
-    <p>Lets AI agents search nearly 10,000 real websites by fonts, colors, components, and layouts. Runs locally through MCP with a Chrome extension to save design references.</p>
-    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-14</p>
+  <a href="https://github.com/juggler-ai/juggler" target="_blank" rel="noopener">
+    <h4>Juggler — Open-source GUI coding agent from the creator of JUCE</h4>
+    <p>Open-source (AGPLv3) visual workbench for AI coding agents with CRDT-based branching session trees, Miller column navigation, JavaScript plugin system, and multi-client support across desktop, browser, and phone.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-07-15</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.producthunt.com/posts/fetchsandbox" target="_blank" rel="noopener">
-    <h4>FetchSandbox — API integration testing that remembers what breaks</h4>
-    <p>Runs real integration flows for AI agents building API integrations. Over 1,600 MCP installs. Catches duplicate events, stale state, and race conditions before production.</p>
-    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-14</p>
+  <a href="https://www.producthunt.com/products/clawteams" target="_blank" rel="noopener">
+    <h4>ClawTeams — Goal-driven proactive AI team for e-commerce sellers</h4>
+    <p>AI employee platform for e-commerce where users set high-level goals like revenue targets and a coordinated AI team plans, assigns specialist agents, executes, and reports updates via Slack or Discord.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-15</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.producthunt.com/posts/agentkey" target="_blank" rel="noopener">
-    <h4>AgentKey — One-stop live data marketplace for AI agents</h4>
-    <p>Plugin connecting Claude Code, Codex, OpenClaw, and MCP agents to live external data — search, web scraping, social media, finance — through a single account with auto-failover.</p>
-    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-14</p>
+  <a href="https://www.credo.ai/blog/introducing-credo-ai-agent-governor" target="_blank" rel="noopener">
+    <h4>Credo AI Agent Governor — Governance policies as code for AI agent runtime control</h4>
+    <p>Governance tool that installs approved policies as code onto AI agent harnesses for real-time runtime control with allow/block/escalate/advice outcomes and detailed auditing, initially focused on coding agents like Claude Code.</p>
+    <p class="byline"><span class="src">Credo AI</span> · 2026-07-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/jbwinters/jacquard-lang" target="_blank" rel="noopener">
+    <h4>Jacquard — Programming language designed for AI-written, human-reviewed code</h4>
+    <p>Programming language for AI-generated code with visible effects in function signatures, content-addressed definitions, and the Warp testing framework with replay and handler substitution.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-07-15</p>
   </a>
 </article>
 
@@ -422,26 +362,26 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
   
   <div class="section-grid">
 <article class="item">
-  <a href="https://techstartups.com/2026/07/13/venture-capital-startup-funding-roundup-july-13-2026-accel-general-catalyst-sequoia-intel-capital-khosla-ventures-and-nvidia-ventures/" target="_blank" rel="noopener">
-    <h4>Valarian raises $50M to build a sovereign AI sealed cloud</h4>
-    <p>Series A led by NEA with SV Angel and Bain Capital Ventures for a sovereign AI and cloud security platform.</p>
-    <p class="byline"><span class="src">TechStartups</span> · 2026-07-13</p>
+  <a href="https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/" target="_blank" rel="noopener">
+    <h4>OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B</h4>
+    <p>Roughly $200M at a $2B valuation with Lightspeed in discussions to lead. The startup would focus on AI models for drug repurposing and discovery, with multiple OpenAI researchers expected to join.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-14</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/" target="_blank" rel="noopener">
-    <h4>Hermes agent maker Nous Research in talks for new funding at $1.5B valuation</h4>
-    <p>Nous Research is reportedly in talks for at least $75M in Series B funding led by Robot Ventures with USV, targeting a $1.5B valuation for the open-source AI agent company.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-13</p>
+  <a href="https://techstartups.com/2026/07/14/hadrius-raises-27-million-to-build-ai-powered-compliance-infrastructure-for-financial-services/" target="_blank" rel="noopener">
+    <h4>Hadrius raises $27M for AI-powered compliance infrastructure for financial services</h4>
+    <p>AI-native compliance platform automating workflows for 500+ financial institutions raised $27M in a combined seed and Series A round led by CRV with Y Combinator and Pathlight Ventures.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-07-14</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://techstartups.com/2026/07/13/guthrie-ai-raises-4-million-to-automate-construction-bidding-and-help-glass-contractors-bid-70-more-with-virtual-bid-assistants/" target="_blank" rel="noopener">
-    <h4>Guthrie AI raises $4M to automate construction bidding with virtual bid assistants</h4>
-    <p>Seed round led by Chicago Ventures for an AI platform helping glass contractors bid 70% more with virtual bid assistants.</p>
-    <p class="byline"><span class="src">TechStartups</span> · 2026-07-13</p>
+  <a href="https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/" target="_blank" rel="noopener">
+    <h4>Hinge founder raises $18M for AI dating service Overtone</h4>
+    <p>Voice- and audio-forward AI dating service providing curated introductions raised $18M in seed funding backed by Match Group, FirstMark Capital, and Pace Capital.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-14</p>
   </a>
 </article>
 
@@ -459,8 +399,32 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
     </div>
     <ul class="t-list">
       <li>
-  <a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener">
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
     <span class="t-ranking">#01</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 165,055 ★ · +1,712 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">addyosmani/agent-skills</span>
+    <span class="t-meta">JavaScript · 77,040 ★ · +1,116 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">obra/superpowers</span>
+    <span class="t-meta">Shell · 252,027 ★ · +1,013 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
     <span class="t-name">wonderwhy-er/DesktopCommanderMCP</span>
     <span class="t-meta">TypeScript · 7,549 ★ · +328 today</span>
   </a>
@@ -468,79 +432,31 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
 
 <li>
   <a href="https://github.com/oven-sh/bun" target="_blank" rel="noopener">
-    <span class="t-ranking">#02</span>
+    <span class="t-ranking">#05</span>
     <span class="t-name">oven-sh/bun</span>
     <span class="t-meta">Rust · 94,432 ★ · +209 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/abseil/abseil-cpp" target="_blank" rel="noopener">
-    <span class="t-ranking">#03</span>
-    <span class="t-name">abseil/abseil-cpp</span>
-    <span class="t-meta">C++ · 17,558 ★ · +89 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
-    <span class="t-name">addyosmani/agent-skills</span>
-    <span class="t-meta">JavaScript · 77,040 ★ · +1,116 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/jbeder/yaml-cpp" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
-    <span class="t-name">jbeder/yaml-cpp</span>
-    <span class="t-meta">C++ · 6,111 ★ · +69 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#06</span>
-    <span class="t-name">mattpocock/skills</span>
-    <span class="t-meta">Shell · 165,055 ★ · +1,712 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
-    <span class="t-ranking">#07</span>
-    <span class="t-name">obra/superpowers</span>
-    <span class="t-meta">Shell · 252,027 ★ · +1,013 today</span>
-  </a>
-</li>
-
-<li>
   <a href="https://github.com/microsoft/TypeScript" target="_blank" rel="noopener">
-    <span class="t-ranking">#08</span>
+    <span class="t-ranking">#06</span>
     <span class="t-name">microsoft/TypeScript</span>
     <span class="t-meta">TypeScript · 109,838 ★ · +177 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/catchorg/Catch2" target="_blank" rel="noopener">
-    <span class="t-ranking">#09</span>
-    <span class="t-name">catchorg/Catch2</span>
-    <span class="t-meta">C++ · 20,647 ★ · +76 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/chriskohlhoff/asio" target="_blank" rel="noopener">
-    <span class="t-ranking">#10</span>
-    <span class="t-name">chriskohlhoff/asio</span>
-    <span class="t-meta">C++ · 6,101 ★ · +92 today</span>
+  <a href="https://github.com/tailscale/tailscale" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">tailscale/tailscale</span>
+    <span class="t-meta">Go · 33,769 ★ · +143 today</span>
   </a>
 </li>
 
 <li>
   <a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">
-    <span class="t-ranking">#11</span>
+    <span class="t-ranking">#08</span>
     <span class="t-name">TencentCloud/TencentDB-Agent-Memory</span>
     <span class="t-meta">TypeScript · 8,354 ★ · +123 today</span>
   </a>
@@ -548,31 +464,15 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
 
 <li>
   <a href="https://github.com/davila7/claude-code-templates" target="_blank" rel="noopener">
-    <span class="t-ranking">#12</span>
+    <span class="t-ranking">#09</span>
     <span class="t-name">davila7/claude-code-templates</span>
     <span class="t-meta">Python · 28,836 ★ · +118 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/zeux/meshoptimizer" target="_blank" rel="noopener">
-    <span class="t-ranking">#13</span>
-    <span class="t-name">zeux/meshoptimizer</span>
-    <span class="t-meta">C++ · 8,060 ★ · +91 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/tailscale/tailscale" target="_blank" rel="noopener">
-    <span class="t-ranking">#14</span>
-    <span class="t-name">tailscale/tailscale</span>
-    <span class="t-meta">Go · 33,769 ★ · +143 today</span>
-  </a>
-</li>
-
-<li>
   <a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#15</span>
+    <span class="t-ranking">#10</span>
     <span class="t-name">google-labs-code/stitch-skills</span>
     <span class="t-meta">TypeScript · 6,857 ★ · +117 today</span>
   </a>
@@ -589,10 +489,10 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
     </div>
     <ul class="t-list">
       <li>
-  <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener">
     <span class="t-ranking">#01</span>
-    <span class="t-name">tencent/Hy3</span>
-    <span class="t-meta">295B MoE, 21B active, Apache 2.0, reasoning model</span>
+    <span class="t-name">zai-org/GLM-5.2</span>
+    <span class="t-meta">Zhipu AI GLM-5.2 with IndexShare DSA architecture</span>
   </a>
 </li>
 
@@ -600,39 +500,39 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
   <a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF" target="_blank" rel="noopener">
     <span class="t-ranking">#02</span>
     <span class="t-name">empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF</span>
-    <span class="t-meta">9B GGUF quantized, Claude-Mythos fused</span>
+    <span class="t-meta">GGUF quant of Qwythos 9B with Claude Mythos 5, 1M context</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener">
     <span class="t-ranking">#03</span>
-    <span class="t-name">zai-org/GLM-5.2</span>
-    <span class="t-meta">1M context, MIT license, flagship model from Z.ai</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
-    <span class="t-name">bottlecapai/ThinkingCap-Qwen3.6-27B</span>
-    <span class="t-meta">27B reasoning model based on Qwen3.6</span>
+    <span class="t-name">tencent/Hy3</span>
+    <span class="t-meta">Tencent’s latest large language model</span>
   </a>
 </li>
 
 <li>
   <a href="https://huggingface.co/conradlocke/krea2-identity-edit" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
+    <span class="t-ranking">#04</span>
     <span class="t-name">conradlocke/krea2-identity-edit</span>
-    <span class="t-meta">Identity editing model</span>
+    <span class="t-meta">Identity editing model for image generation</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">bottlecapai/ThinkingCap-Qwen3.6-27B</span>
+    <span class="t-meta">Thinking-cap enhanced Qwen3.6 27B reasoning model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF" target="_blank" rel="noopener">
     <span class="t-ranking">#06</span>
-    <span class="t-name">froggeric/Qwen-Fixed-Chat-Templates</span>
-    <span class="t-meta">Corrected Qwen chat templates</span>
+    <span class="t-name">GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF</span>
+    <span class="t-meta">MiniCPM5 1B with Claude Opus Fable5 thinking, GGUF format</span>
   </a>
 </li>
 
@@ -640,15 +540,15 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
   <a href="https://huggingface.co/InternScience/Agents-A1" target="_blank" rel="noopener">
     <span class="t-ranking">#07</span>
     <span class="t-name">InternScience/Agents-A1</span>
-    <span class="t-meta">Agent-focused model</span>
+    <span class="t-meta">Agent-oriented language model, A1 variant</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize" target="_blank" rel="noopener">
     <span class="t-ranking">#08</span>
-    <span class="t-name">GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF</span>
-    <span class="t-meta">1B GGUF quant, MiniCPM5 fused with Claude Opus</span>
+    <span class="t-name">OpenMOSS-Team/MOSS-Transcribe-Diarize</span>
+    <span class="t-meta">Speech transcription and speaker diarization model</span>
   </a>
 </li>
 
@@ -656,15 +556,15 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
   <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener">
     <span class="t-ranking">#09</span>
     <span class="t-name">baidu/Unlimited-OCR</span>
-    <span class="t-meta">OCR model from Baidu</span>
+    <span class="t-meta">Baidu’s unlimited OCR model for text extraction</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates" target="_blank" rel="noopener">
     <span class="t-ranking">#10</span>
-    <span class="t-name">OpenMOSS-Team/MOSS-Transcribe-Diarize</span>
-    <span class="t-meta">Transcription and speaker diarization model</span>
+    <span class="t-name">froggeric/Qwen-Fixed-Chat-Templates</span>
+    <span class="t-meta">Fixed chat templates for Qwen models</span>
   </a>
 </li>
 
@@ -677,32 +577,36 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
   <div class="section-head">
     <h2>In Brief</h2>
     <span class="line"></span>
-    <span class="n">12</span>
+    <span class="n">14</span>
   </div>
   <ul class="qh-list">
-    <li><a href="https://arxiv.org/abs/2607.09474" target="_blank" rel="noopener"><span class="qh-title">ProofCouncil — LLM Agent for solving open mathematical problems</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://x.com/sama/status/2076823209589313910" target="_blank" rel="noopener"><span class="qh-title">OpenAI models cross design capability threshold, says Altman</span><span class="qh-src">sama</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2607.09424" target="_blank" rel="noopener"><span class="qh-title">Soofi S 30B-A3B — Sovereign open-source foundation model for German and English</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://www.anthropic.com/news/canadian-ai-research" target="_blank" rel="noopener"><span class="qh-title">Anthropic commits $10M CAD to Canadian AI research, partnering with top research institutes</span><span class="qh-src">Anthropic</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2607.09153" target="_blank" rel="noopener"><span class="qh-title">KV-PRM — Efficient process reward modeling via KV-cache transfer</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/" target="_blank" rel="noopener"><span class="qh-title">Spotify expands AI push with ChatGPT-like music assistant for Premium subscribers</span><span class="qh-src">TechCrunch</span></a></li>
 
-    <li><a href="https://www.therobotreport.com/ondas-acquires-dzyne-875-8m-expanding-its-defense-capabilities/" target="_blank" rel="noopener"><span class="qh-title">Ondas acquires DZYNE for $875.8M, expanding autonomous defense robotics</span><span class="qh-src">The Robot Report</span></a></li>
+    <li><a href="https://x.com/_philschmid/status/2077064338653782130" target="_blank" rel="noopener"><span class="qh-title">Google DeepMind: Build a financial analyst agent with one Gemini API call using Managed Agents and MCP</span><span class="qh-src">_philschmid</span></a></li>
 
-    <li><a href="https://news.ycombinator.com/item?id=48878682" target="_blank" rel="noopener"><span class="qh-title">Mindwalk — Replay coding-agent sessions on a 3D map of your codebase</span><span class="qh-src">Hacker News</span></a></li>
+    <li><a href="https://x.com/omarsar0/status/2077045732268560738" target="_blank" rel="noopener"><span class="qh-title">Comprehensive survey maps metacognition in LLMs — confidence, self-verification, and knowing when to stop</span><span class="qh-src">omarsar0</span></a></li>
 
-    <li><a href="https://www.producthunt.com/posts/loomal" target="_blank" rel="noopener"><span class="qh-title">Loomal — Monetize any MCP server with zero revenue share</span><span class="qh-src">Product Hunt</span></a></li>
+    <li><a href="https://arxiv.org/abs/2607.11749" target="_blank" rel="noopener"><span class="qh-title">Playful AI in professional email: GPT-5 playful tone boosts emotional positivity and engagement</span><span class="qh-src">arXiv</span></a></li>
 
-    <li><a href="https://news.ycombinator.com/item?id=48881112" target="_blank" rel="noopener"><span class="qh-title">Skillscript — Declarative sandboxed language for tool orchestration</span><span class="qh-src">Hacker News</span></a></li>
+    <li><a href="https://huggingface.co/papers/2607.11862" target="_blank" rel="noopener"><span class="qh-title">Evidence-backed video QA: Fine-tuning on 160K-scale dataset yields +27.2 t-mean and +13.8 J&amp;F gains</span><span class="qh-src">HuggingFace</span></a></li>
 
-    <li><a href="https://news.ycombinator.com/item?id=48886240" target="_blank" rel="noopener"><span class="qh-title">Peek-CLI — Let your coding agent iterate by seeing the browser</span><span class="qh-src">Hacker News</span></a></li>
+    <li><a href="https://github.com/Danau5tin/ai-trains-ai" target="_blank" rel="noopener"><span class="qh-title">RL-trained agent that trains smaller models with RL for roughly $1.3k — proof of concept with nested RL loops</span><span class="qh-src">Hacker News</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2607.09415" target="_blank" rel="noopener"><span class="qh-title">Self-guided test-time training for long-context LLMs</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://arxiv.org/abs/2607.11598" target="_blank" rel="noopener"><span class="qh-title">Interaction scaling: Grounding the third axis of test-time compute for LLM inference</span><span class="qh-src">arXiv</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2607.09599" target="_blank" rel="noopener"><span class="qh-title">FlashTrie — GPU-accelerated constrained beam search for generative retrieval</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://www.producthunt.com/products/agent-card" target="_blank" rel="noopener"><span class="qh-title">Agentcard launches debit cards for AI agents — single-use cards with fixed budgets safe for autonomous payments</span><span class="qh-src">Product Hunt</span></a></li>
 
-    <li><a href="https://www.producthunt.com/posts/ai-media-buyer-by-creatify" target="_blank" rel="noopener"><span class="qh-title">AI Media Buyer By Creatify — AI agent for ad buying campaigns</span><span class="qh-src">Product Hunt</span></a></li>
+    <li><a href="https://www.producthunt.com/products/claude-overlay" target="_blank" rel="noopener"><span class="qh-title">Claude Overlay — Open-source frameless chat window that captures your screen and runs Claude Code</span><span class="qh-src">Product Hunt</span></a></li>
 
-    <li><a href="https://techstartups.com/2026/07/13/guthrie-ai-raises-4-million-to-automate-construction-bidding-and-help-glass-contractors-bid-70-more-with-virtual-bid-assistants/" target="_blank" rel="noopener"><span class="qh-title">Guthrie AI raises $4M to automate construction bidding</span><span class="qh-src">TechStartups</span></a></li>
+    <li><a href="https://www.tomshardware.com/tech-industry/china-claims-chip-exports-nearly-doubled-to-177-billion-in-the-first-half-of-2026" target="_blank" rel="noopener"><span class="qh-title">China chip exports nearly doubled to $177B in H1 2026, driven by global AI demand and memory price surges</span><span class="qh-src">Tom’s Hardware</span></a></li>
+
+    <li><a href="https://www.ai4business.it/storie/gli-algoritmi-di-lexroom-innovano-il-mondo-delleditoria/" target="_blank" rel="noopener"><span class="qh-title">Lexroom’s algorithms bring AI-native infrastructure to traditional legal publishing in Italy</span><span class="qh-src">AI4Business</span></a></li>
+
+    <li><a href="https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/" target="_blank" rel="noopener"><span class="qh-title">Google DeepMind empowers India’s next generation with ATL Saathi AI assistant for educators</span><span class="qh-src">Google DeepMind</span></a></li>
 
   </ul>
 </section>
@@ -710,69 +614,10 @@ Co-founder Xie told TechCrunch the company&#x27;s competitive edge lies in data 
 
     <footer class="colophon">
       <p class="mark">Per aspera ad astra</p>
-      <p class="meta">Compiled by Hermes Agent · 2026-07-14 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Compiled by Hermes Agent · 2026-07-15 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
     </footer>
 
   </div>
 <div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
-<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script>
-<script>
-(function() {
-  function togglePodcast(btn) {
-    var pill = btn.closest('.podcast-pill');
-    if (!pill) return;
-    var audio = pill.querySelector('.pill-audio');
-    if (!audio) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-
-    if (pill.classList.contains('is-playing')) {
-      audio.pause();
-      pill.classList.remove('is-playing');
-      pill.classList.add('is-paused');
-    } else {
-      // Pause any other playing podcast on the page
-      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
-        if (p !== pill) {
-          p.querySelector('.pill-audio').pause();
-          p.classList.remove('is-playing', 'is-paused');
-        }
-      });
-      audio.play().then(function() {
-        pill.classList.add('is-playing');
-        pill.classList.remove('is-paused');
-      }).catch(function() {
-        // Autoplay blocked — do nothing gracefully
-      });
-    }
-  }
-
-  // Update progress bar during playback
-  document.addEventListener('timeupdate', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-    if (audio.duration) {
-      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
-    }
-  }, true);
-
-  // When audio ends, reset
-  document.addEventListener('ended', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    pill.classList.remove('is-playing', 'is-paused');
-    if (bar) bar.style.width = '0%';
-  }, true);
-
-  window.togglePodcast = togglePodcast;
-})();
-</script>
-</body>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
 </html>
