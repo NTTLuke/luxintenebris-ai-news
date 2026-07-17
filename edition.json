@@ -1,91 +1,46 @@
 {
-  "issue_no": 19,
+  "issue_no": 20,
   "date_iso": "2026-07-17",
   "date_human": "July 17, 2026",
-  "notice": "Light news day — most scouts returned empty. Today's edition focuses on AI tools and startups.",
+  "notice": "Light news day — fewer fresh items than usual. Most scouts returned empty across research, official announcements, X/Twitter, tools, funding, hardware, and Italy beats.",
   "lead": {
-    "kicker": "Private inference",
-    "title": "Zro launches private inference for AI coding agents",
-    "summary": "Zro unveiled a private inference service purpose-built for AI coding agents, offering secure model hosting with native integrations for popular development tools. The platform runs on LiteLLM, Z.ai, and NVIDIA infrastructure, targeting teams that need isolated, compliant inference for agentic code workflows.",
-    "source": "Product Hunt",
-    "date": "2026-07-17",
-    "url": "https://www.producthunt.com/products/zro"
+    "kicker": "Anthropic Research",
+    "title": "Anthropic research paper reveals key findings on AI coding assistance",
+    "summary": "Two Minute Papers covers Anthropic's latest research on AI assistance and coding skills, highlighting what Claude reveals about AI's fundamental limitations in software development. The paper offers insights into where models excel and where human developers remain essential.",
+    "source": "YouTube — Two Minute Papers",
+    "date": "2026-07-16",
+    "url": "https://www.youtube.com/watch?v=axOcn--n_lM"
   },
-  "top_stories": [
-    {
-      "title": "Manta AI deploys autonomous agents for web app testing",
-      "summary": "Give Manta AI a URL and it explores your app like a real user — mapping flows, finding bugs, and generating self-healing test cases from plain English. Runs locally for testing behind firewalls.",
-      "source": "Product Hunt",
-      "date": "2026-07-17",
-      "url": "https://www.producthunt.com/products/manta-ai"
-    },
-    {
-      "title": "Bond turns the to-do list into a self-managing AI chief of staff",
-      "summary": "Bond connects to your tools, learns company workflows, and transforms scattered tasks into a self-managing list that can draft follow-ups, create action items, and delegate. Topped Product Hunt with 188 upvotes.",
-      "source": "Product Hunt",
-      "date": "2026-07-16",
-      "url": "https://www.producthunt.com/products/bond-12"
-    },
-    {
-      "title": "Graft AI maps enterprise workflows into agent-callable tools",
-      "summary": "Graft AI learns how work gets done across legacy apps and screen-based workflows, then exposes stable agent-callable APIs with permissions, approvals, and audit trails. Automatically detects and repairs UI drift.",
-      "source": "Product Hunt",
-      "date": "2026-07-17",
-      "url": "https://www.producthunt.com/products/graft-ai"
-    }
-  ],
+  "top_stories": [],
   "sections": [
     {
-      "title": "Tools & Startups",
+      "title": "YouTube & Video",
       "items": [
         {
-          "title": "River deploys voice-AI account executives to close B2B deals",
-          "summary": "River's voice-AI agents join live calls the moment a lead inquires, run product demos, handle objections, and close deals. Backed by founders of Ramp, Kalshi, and Lean.",
-          "source": "Product Hunt",
-          "date": "2026-07-17",
-          "url": "https://www.producthunt.com/products/river-9"
-        },
-        {
-          "title": "Tencent EdgeOne lets developers deploy AI agents at the edge",
-          "summary": "Tencent EdgeOne Makers treats AI agent deployment like shipping a web app, leveraging Tencent's global edge network for low-latency inference. Reached 164 upvotes on Product Hunt.",
-          "source": "Product Hunt",
+          "title": "GPT-5.6 Sol outperforms in Claude Code over Anthropic's own Codex",
+          "summary": "Developer Theo reports that OpenAI's GPT-5.6 Sol model performs significantly better when used inside Claude Code than Anthropic's own Codex, suggesting interesting cross-model optimization dynamics and raising questions about model-IDE compatibility.",
+          "source": "YouTube — Theo - t3.gg",
           "date": "2026-07-16",
-          "url": "https://www.producthunt.com/products/tencent-edgeone-2"
-        },
-        {
-          "title": "Nitrosend builds email infrastructure for AI agents",
-          "summary": "Nitrosend gives AI agents their own email layer: agents can sign up for accounts, send emails, and reply autonomously, enabling fully automated email-based workflows.",
-          "source": "Product Hunt",
-          "date": "2026-07-17",
-          "url": "https://www.producthunt.com/products/nitrosend"
-        },
-        {
-          "title": "Ratel gives agents unlimited tools without context bloat",
-          "summary": "Open-source framework that lets AI agents access unlimited external tools and skills dynamically, without consuming context window tokens. Launched as a Show HN on Hacker News.",
-          "source": "Hacker News",
-          "date": "2026-07-17",
-          "url": "https://github.com/ratel-ai/ratel"
-        },
-        {
-          "title": "Albato connects AI-driven workflows across 1,000+ apps",
-          "summary": "No-code automation platform that connects over 1,000 apps and lets users build complex branching workflows by chatting with an AI Copilot or deploying agents in natural language.",
-          "source": "Product Hunt",
-          "date": "2026-07-17",
-          "url": "https://www.producthunt.com/products/albato"
+          "url": "https://www.youtube.com/watch?v=Noo0NWD0gHU"
         }
       ]
     }
   ],
   "trending": {
-    "github": null,
-    "huggingface": null
-  },
-  "quick_hits": [
-    {
-      "title": "Codema launches two technical committees for continuous AI assessment standards",
-      "source": "AI4Business",
-      "date": "2026-07-16",
-      "url": "https://www.ai4business.it/intelligenza-artificiale/nascono-due-comitati-per-sviluppare-un-modello-di-assessment-continuo-dellai/"
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-07-17",
+      "items": []
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-07-17",
+      "items": []
     }
-  ]
+  },
+  "quick_hits": []
 }
