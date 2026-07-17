@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · July 17, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+.version-selector {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0 0.75rem 0;
+}
+.vs-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1.5;
+}
+.vs-badge-ds {
+  color: var(--lux);
+  border-color: var(--lux-soft);
+  background: transparent;
+}
+.vs-badge-ds:hover {
+  background: rgba(240, 162, 60, 0.08);
+  color: var(--lux);
+}
+.vs-badge-k3 {
+  color: var(--ember);
+  border-color: var(--ember);
+  background: transparent;
+}
+.vs-badge-k3:hover {
+  background: rgba(255, 107, 53, 0.08);
+  color: var(--ember);
+}
+.vs-badge-current {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+.vs-badge-current:hover {
+  background: transparent;
+}
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style><style>
+/* ── K3 White Edition ── */
+
+/* 1. BACKGROUNDS */
+html, body {
+  background: #faf8f5 !important;
+}
+.container {
+  background: #faf8f5 !important;
+  border-left: 3px solid #e0dcd4 !important;
+}
+header.masthead {
+  background: #faf8f5 !important;
+}
+
+/* 2. WIRE NEWS — keep dark (AFTER nuclear override) */
+/* moved to after section 5 below */
+
+/* 3. ALL LINKS BLACK by default */
+a, a:link {
+  color: #000 !important;
+}
+
+/* 4. HEADER exceptions (override general) */
+.masthead .topline {
+  border-color: #d4d0c8 !important;
+}
+.ears .left, .ears .right, .ears a {
+  color: #333 !important;
+}
+.ears a:hover {
+  color: #333 !important;
+}
+.nameplate {
+  color: #000 !important;
+}
+.nameplate .lux {
+  color: #f0a23c !important;
+}
+.dateline, .dateline span, .dateline .tag {
+  color: #333 !important;
+}
+.dateline .dot {
+  color: #999 !important;
+}
+.devocracy-credit, .devocracy-credit a {
+  color: #666 !important;
+}
+.devocracy-credit a:hover {
+  color: #666 !important;
+}
+.masthead .rule-thin {
+  border-color: #d4d0c8 !important;
+}
+.masthead .rule-double {
+  border-color: #ccc !important;
+}
+
+/* 5. ALL ARTICLE TEXT BLACK — nuclear */
+.lead, .lead *, .lead a, .lead a:link, .lead a:visited, .lead h1, .lead a h1,
+.topstories, .topstories *, .top-stories, .top-story,
+.story, .story *, .story p, .story h3,
+.section, .section *, .section .item, .section .items,
+.item, .item *, .item p, .item a, .item a:link, .item h3, .item h3 a,
+.section-content, .section-header, .section-head, .section-head h2,
+.quick-hits, .quick-hits *, .quick-hit, .quick-hit *,
+.qh-item, .qh-item *, .qh-title, .qh-src,
+.byline, .byline *, .byline .src, .meta-text,
+.inbrief, .inbrief *, .inbrief a, .inbrief h2,
+.sections, .sections *, .lead-head, .lead-body, .lead-grid,
+.colophon, .colophon *, .colophon p, .colophon .meta, .colophon a,
+h1, h2, h3, h4, h5, p, a, span, div, article, section {
+  color: #000 !important;
+}
+/* Hover: amber like Lux (AFTER nuclear rule) */
+.lead a:hover h1, .lead a:hover .lead-title,
+.top-story a:hover h3, .top-story a:hover .top-title,
+.item a:hover h3, .item a:hover .item-title,
+.quick-hit a:hover, .qh-item a:hover,
+a:hover, a:focus, a:active {
+  color: #f0a23c !important;
+}
+
+/* Wire news: keep dark (AFTER nuclear, overrides it) */
+.wt, .wt *,
+.wtt, .wtt *,
+.ti, .tih, .tis,
+.wt a, .wtt a, .ti a, .ti a:link,
+[class*="wire"], [class*="ticker"], [class*="breaking"] {
+  background-color: var(--ink) !important;
+  color: var(--type) !important;
+}
+
+/* Wire modal: white bg, black text, amber accent */
+.mo {
+  background: rgba(0,0,0,0.4) !important;
+  backdrop-filter: blur(4px) !important;
+}
+.mb {
+  background: #fff !important;
+  border-color: #d4d0c8 !important;
+}
+.mh {
+  color: #000 !important;
+}
+.mm {
+  color: #666 !important;
+}
+.mm a {
+  color: #000 !important;
+}
+.mm a:hover {
+  color: #f0a23c !important;
+}
+.mbd {
+  color: #000 !important;
+}
+.mbd .en {
+  color: #f0a23c !important;
+  border-left-color: #f0a23c !important;
+}
+.mbd .as {
+  color: #999 !important;
+  border-top-color: #d4d0c8 !important;
+}
+.mbd .as .al {
+  color: #f0a23c !important;
+}
+.mc {
+  color: #999 !important;
+}
+.mc:hover {
+  color: #000 !important;
+}
+.section-header {
+  color: #000 !important;
+  border-bottom-color: #000 !important;
+}
+.byline, .item .byline, .meta-text, .qh-src {
+  color: #000 !important;
+}
+
+/* 6. VERSION BADGES (after general a rule) */
+.vs-badge-ds {
+  color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
+  background: transparent !important;
+}
+.vs-badge-ds:hover {
+  background: rgba(0,0,0,0.05) !important;
+  color: #000 !important;
+}
+.vs-badge-k3 {
+  color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
+  background: transparent !important;
+}
+.vs-badge-k3:hover {
+  background: rgba(0,0,0,0.05) !important;
+  color: #000 !important;
+}
+.vs-badge-current {
+  opacity: 0.4 !important;
+}
+.vs-badge-current:hover {
+  color: #1a1a1a !important;
+}
+
+/* 7. ARTICLE RULES */
+.section .item {
+  border-bottom: 1px solid #d4d0c8 !important;
+  border-left: none !important;
+  padding: 0.75rem 0 !important;
+  margin: 0 !important;
+}
+.section .item:last-child {
+  border-bottom: none !important;
+}
+.item:nth-child(3n+1), .item:nth-child(2n+1) {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+.topstories .story {
+  border-left: none !important;
+  border-top: 1px solid #d4d0c8 !important;
+  padding: 0.75rem 0 !important;
+}
+.topstories .story:first-child {
+  border-top: none !important;
+}
+hr.rule-thin {
+  border-color: #d4d0c8 !important;
+}
+hr.rule-double {
+  border-color: #c8c4bc !important;
+}
+
+/* 8. REMOVE IMAGES */
+.section-hero, .section-hero-img, .lead-image,
+.item img, .top-story img {
+  display: none !important;
+}
+
+/* 9. SECTION HEADERS */
+.section-header {
+  border-bottom: 2px solid #1a1a1a !important;
+  color: #1a1a1a !important;
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.25rem !important;
+}
+.section-header .count {
+  color: #999 !important;
+}
+
+/* 10. QUICK HITS + COLOPHON */
+.quick-hits a {
+  color: #000 !important;
+}
+.colophon {
+  color: #000 !important;
+  border-top-color: #d4d0c8 !important;
+}
+.colophon a {
+  color: #000 !important;
+  border-bottom-color: #d4d0c8 !important;
+}
+</style>
+</head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 19 <a href="/luxintenebris-ai-news/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>July 17, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>15 stories</span>
+      </div>
+<div class="version-selector">
+  <a href="../index.html" class="vs-badge vs-badge-ds">🐋 DeepSeek V4 Flash</a>
+  <span class="vs-badge vs-badge-current vs-badge-k3">🔮 Kimi K3 Edition (The Lens)</span>
+</div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a></div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Valar Atomics in talks to raise new funding at $6B valuation" data-b="Valar Atomics, a startup developing small modular nuclear reactors, is in discussions to raise a new round of capital at a valuation of about $6 billion, according to sources familiar with the company cited by TechCrunch. The Information first reported the funding talks. Sequoia is expected to lead the deal, the sources said.
+
+The El Segundo, California-based company is seeking to raise roughly $1 billion. Some of that capital has already been secured at a lower valuation, with $450 million — including $340 million in equity and $110 million in debt — raised at a $2 billion valuation in March, according to Bloomberg. Deal structures that combine multiple installments at different valuations are becoming more common in the current AI-driven investment climate.
+
+Founded by Isaiah Taylor, a 27-year-old entrepreneur who left high school at 16, Valar is developing helium-cooled, high-temperature gas reactors that it eventually hopes to build in large numbers to power data centers. Earlier this month, the company demonstrated that its reactor supplied electricity to an Nvidia AI chip, and it announced a partnership with Nvidia to explore nuclear energy for future AI facilities. The push comes as data centers face rising electricity demand and limited grid capacity.
+
+Valar’s backers include Palmer Luckey, founder of Anduril, and Shyam Sankar, Palantir’s chief technology officer. The startup also faces competition from Kairos Power, TerraPower, and NuScale Power, and it is suing the Nuclear Regulatory Commission over licensing requirements for small test reactors.
+
+*The nuclear revival is one of the most interesting twists in the AI infrastructure story — but it is still years away from proving it can scale.*
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/17/nuclear-startup-valar-atomics-in-talks-to-raise-new-funding-at-6b-valuation/"><span class="tih">Valar Atomics in talks to raise new funding at $6B valuation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Wildfire Smoke Blankets US Cities as Canadian Fires Rage" data-b="Smoke from wildfires in Minnesota and western Ontario has spread across the Midwest and Northeast United States, turning skies orange and triggering widespread air quality alerts, according to WIRED.
+
+Canada is bearing the brunt of the outbreak, with 119 out-of-control fires burning across the country as of Friday afternoon. The smoke has risen high enough to be carried eastward on the jet stream, causing Chicago and Detroit to record the worst air quality in the world on Friday. New York and Washington, DC, also ranked among the top 10 most polluted cities globally.
+
+Health officials are urging residents to stay indoors as communities search for ways to reduce exposure to harmful particles. Some relief may arrive this weekend, but the fires are not expected to abate soon, raising the possibility of more smoke events later in the summer.
+
+The episode echoes a larger pattern driven by climate change. WIRED notes that the orange skies are reminiscent of 2023, when Canada&#x27;s worst wildfire season on record sent smoke across the East Coast. Similar scenes have unfolded in Europe, Australia, and California in recent years.
+
+A Nature study cited by WIRED projects that wildfire smoke could cause 71,420 excess deaths annually in the United States by mid-century, a 73 percent increase compared to the 2010s. Researchers estimate that up to 1.9 million people in the country may die from smoke-related health issues between now and then.
+
+*The smoke may fade this weekend, but the underlying message is clear: we are not prepared for summers shaped by climate-fueled fires.*
+
+*— Written by AI (kimi-k3)*" data-s="wired.com" data-u="https://www.wired.com/story/cities-from-chicago-to-washington-dc-look-like-wildfire-smoke/"><span class="tih">Wildfire Smoke Blankets US Cities as Canadian Fires Rage</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Florida Man Arrested Over $220,000 Crypto Theft via Malware-Laced Steam Games" data-b="Federal authorities have arrested a 21-year-old Florida man accused of helping steal at least $220,000 in cryptocurrency by distributing malware hidden inside Steam games. According to The Verge, Zyaire Wilkins and co-conspirators allegedly launched eight infected titles between roughly May 2024 and February 2026, compromising about 8,000 devices and accessing 80 crypto wallets.
+
+The games named in the complaint include BlockBlasters, Chemia, Dashverse/DashFPS, Lampy, Lunara, PirateFi, and Tokenova, according to The Verge and local outlet Local10. The FBI had previously asked for victim information in a &quot;Steam malware investigation&quot; covering those same titles. Last year, several outlets reported that Steam removed some of them, with BlockBlasters alone allegedly taking more than $150,000 from victims, including a streamer who was raising money for cancer treatment.
+
+Investigators say the group promoted the games on Discord, Telegram, X, and LinkedIn, urging users to download them. Once installed, the malware reportedly harvested private data and drained crypto wallets.
+
+Agents tied Wilkins to the scheme after finding his crypto wallet address in messages with an alleged accomplice. They traced it to a Bitrefill account used to buy more than 150 gift cards, including Uber Eats cards, which helped lead to his phone number and address, as reported by The Verge.
+
+Wilkins was arrested on July 14 and charged with conspiracy to obtain information by computer for private financial gain.
+
+*The case is a stark reminder that even trusted gaming platforms can become unwitting channels for financially motivated malware.*
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/games/967174/steam-game-malware-cryptostealer-arrest"><span class="tih">Florida Man Arrested Over $220,000 Crypto Theft via Malware-Laced Steam Games</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Polymarket&#x27;s Offshore Corporate Structure Draws Scrutiny After Staff Worked from New York" data-b="according to WIRED
+
+Polymarket’s offshore corporate structure is drawing scrutiny after former employees said workers for a Panama-based entity were actually based in the United States. The prediction market, which has ties to Donald Trump Jr., set up Adventure One QSS in Panama after a 2022 settlement with federal regulators, first reported by Sportico. That agreement fined Blockratize $1.4 million and required Polymarket to wind down markets that violated the Commodity Exchange Act and stop breaching Commodity Futures Trading Commission rules.
+
+According to WIRED, former staffers said Adventure One QSS employees worked from Polymarket’s Manhattan headquarters without reporting to anyone in Panama, traveling there, or interacting with Panama-based colleagues—because no such colleagues existed. The reporting aligns with an NPR investigation that found the company’s Panama City office was empty and no local staff were present.
+
+The offshore move was meant to keep the platform’s international operations separate from Polymarket US, the only service legally allowed to serve American customers. However, former employees described little practical separation between the corporate arms, with some workers handling code and event contracts for the offshore platform while sitting in New York.
+
+Former CFTC officials said the location of Adventure One staff matters to the settlement. Joseph Konizeski, a former CFTC enforcement attorney, told WIRED that proper compliance would have required hiring offshore staff and moving infrastructure abroad. The CFTC and Polymarket both declined to comment, and the agency has not accused Adventure One QSS of wrongdoing.
+
+*For a company already under federal scrutiny, the blurred boundary between its offshore shell and its U.S. workforce looks less like a compliance wall and more like a corporate mirage.*
+
+*— Written by AI (kimi-k3)*" data-s="wired.com" data-u="https://www.wired.com/story/whats-up-with-polymarkets-panama-entity/"><span class="tih">Polymarket&#x27;s Offshore Corporate Structure Draws Scrutiny After Staff Worked from New York</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple’s OpenAI Trade-Secret Suit Could Complicate the Lab’s IPO Push" data-b="Apple has sued OpenAI for trade-secret theft, and the case could carry consequences beyond the courtroom. According to TechCrunch, the lawsuit filed last Friday alleges a sustained pattern of misconduct that reaches OpenAI’s chief hardware officer, and claims that more than 400 former Apple employees have joined the artificial-intelligence lab.
+
+OpenAI’s public response has been cautious, neither strongly denying nor engaging with the specifics. That guarded posture may be especially risky now because OpenAI is reportedly considering an initial public offering as early as later this year. Pending litigation over intellectual property and high-profile employee movement can raise red flags for investors and regulators, potentially complicating the company’s path to going public.
+
+The lawsuit also puts OpenAI’s hardware ambitions under scrutiny. On TechCrunch’s Equity podcast, hosts Kirsten Korosec, Anthony Ha, and Sean O’Kane examined how the dispute could affect OpenAI’s device roadmap and its broader reputation. The discussion also touched on a recurring theme of the moment: whether users should trust AI companies with their personal data.
+
+With hundreds of former Apple staff now inside OpenAI, the case raises questions about how much institutional knowledge from Cupertino may have crossed over — and whether OpenAI can keep its IPO plans on track while fighting that accusation in court.
+
+*A high-stakes IP clash with a trillion-dollar rival is the last thing a would-be public company needs as it opens its books.*
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/"><span class="tih">Apple’s OpenAI Trade-Secret Suit Could Complicate the Lab’s IPO Push</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Valar Atomics in talks to raise new funding at $6B valuation" data-b="Valar Atomics, a startup developing small modular nuclear reactors, is in discussions to raise a new round of capital at a valuation of about $6 billion, according to sources familiar with the company cited by TechCrunch. The Information first reported the funding talks. Sequoia is expected to lead the deal, the sources said.
+
+The El Segundo, California-based company is seeking to raise roughly $1 billion. Some of that capital has already been secured at a lower valuation, with $450 million — including $340 million in equity and $110 million in debt — raised at a $2 billion valuation in March, according to Bloomberg. Deal structures that combine multiple installments at different valuations are becoming more common in the current AI-driven investment climate.
+
+Founded by Isaiah Taylor, a 27-year-old entrepreneur who left high school at 16, Valar is developing helium-cooled, high-temperature gas reactors that it eventually hopes to build in large numbers to power data centers. Earlier this month, the company demonstrated that its reactor supplied electricity to an Nvidia AI chip, and it announced a partnership with Nvidia to explore nuclear energy for future AI facilities. The push comes as data centers face rising electricity demand and limited grid capacity.
+
+Valar’s backers include Palmer Luckey, founder of Anduril, and Shyam Sankar, Palantir’s chief technology officer. The startup also faces competition from Kairos Power, TerraPower, and NuScale Power, and it is suing the Nuclear Regulatory Commission over licensing requirements for small test reactors.
+
+*The nuclear revival is one of the most interesting twists in the AI infrastructure story — but it is still years away from proving it can scale.*
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/17/nuclear-startup-valar-atomics-in-talks-to-raise-new-funding-at-6b-valuation/"><span class="tih">Valar Atomics in talks to raise new funding at $6B valuation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Wildfire Smoke Blankets US Cities as Canadian Fires Rage" data-b="Smoke from wildfires in Minnesota and western Ontario has spread across the Midwest and Northeast United States, turning skies orange and triggering widespread air quality alerts, according to WIRED.
+
+Canada is bearing the brunt of the outbreak, with 119 out-of-control fires burning across the country as of Friday afternoon. The smoke has risen high enough to be carried eastward on the jet stream, causing Chicago and Detroit to record the worst air quality in the world on Friday. New York and Washington, DC, also ranked among the top 10 most polluted cities globally.
+
+Health officials are urging residents to stay indoors as communities search for ways to reduce exposure to harmful particles. Some relief may arrive this weekend, but the fires are not expected to abate soon, raising the possibility of more smoke events later in the summer.
+
+The episode echoes a larger pattern driven by climate change. WIRED notes that the orange skies are reminiscent of 2023, when Canada&#x27;s worst wildfire season on record sent smoke across the East Coast. Similar scenes have unfolded in Europe, Australia, and California in recent years.
+
+A Nature study cited by WIRED projects that wildfire smoke could cause 71,420 excess deaths annually in the United States by mid-century, a 73 percent increase compared to the 2010s. Researchers estimate that up to 1.9 million people in the country may die from smoke-related health issues between now and then.
+
+*The smoke may fade this weekend, but the underlying message is clear: we are not prepared for summers shaped by climate-fueled fires.*
+
+*— Written by AI (kimi-k3)*" data-s="wired.com" data-u="https://www.wired.com/story/cities-from-chicago-to-washington-dc-look-like-wildfire-smoke/"><span class="tih">Wildfire Smoke Blankets US Cities as Canadian Fires Rage</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Florida Man Arrested Over $220,000 Crypto Theft via Malware-Laced Steam Games" data-b="Federal authorities have arrested a 21-year-old Florida man accused of helping steal at least $220,000 in cryptocurrency by distributing malware hidden inside Steam games. According to The Verge, Zyaire Wilkins and co-conspirators allegedly launched eight infected titles between roughly May 2024 and February 2026, compromising about 8,000 devices and accessing 80 crypto wallets.
+
+The games named in the complaint include BlockBlasters, Chemia, Dashverse/DashFPS, Lampy, Lunara, PirateFi, and Tokenova, according to The Verge and local outlet Local10. The FBI had previously asked for victim information in a &quot;Steam malware investigation&quot; covering those same titles. Last year, several outlets reported that Steam removed some of them, with BlockBlasters alone allegedly taking more than $150,000 from victims, including a streamer who was raising money for cancer treatment.
+
+Investigators say the group promoted the games on Discord, Telegram, X, and LinkedIn, urging users to download them. Once installed, the malware reportedly harvested private data and drained crypto wallets.
+
+Agents tied Wilkins to the scheme after finding his crypto wallet address in messages with an alleged accomplice. They traced it to a Bitrefill account used to buy more than 150 gift cards, including Uber Eats cards, which helped lead to his phone number and address, as reported by The Verge.
+
+Wilkins was arrested on July 14 and charged with conspiracy to obtain information by computer for private financial gain.
+
+*The case is a stark reminder that even trusted gaming platforms can become unwitting channels for financially motivated malware.*
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/games/967174/steam-game-malware-cryptostealer-arrest"><span class="tih">Florida Man Arrested Over $220,000 Crypto Theft via Malware-Laced Steam Games</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Polymarket&#x27;s Offshore Corporate Structure Draws Scrutiny After Staff Worked from New York" data-b="according to WIRED
+
+Polymarket’s offshore corporate structure is drawing scrutiny after former employees said workers for a Panama-based entity were actually based in the United States. The prediction market, which has ties to Donald Trump Jr., set up Adventure One QSS in Panama after a 2022 settlement with federal regulators, first reported by Sportico. That agreement fined Blockratize $1.4 million and required Polymarket to wind down markets that violated the Commodity Exchange Act and stop breaching Commodity Futures Trading Commission rules.
+
+According to WIRED, former staffers said Adventure One QSS employees worked from Polymarket’s Manhattan headquarters without reporting to anyone in Panama, traveling there, or interacting with Panama-based colleagues—because no such colleagues existed. The reporting aligns with an NPR investigation that found the company’s Panama City office was empty and no local staff were present.
+
+The offshore move was meant to keep the platform’s international operations separate from Polymarket US, the only service legally allowed to serve American customers. However, former employees described little practical separation between the corporate arms, with some workers handling code and event contracts for the offshore platform while sitting in New York.
+
+Former CFTC officials said the location of Adventure One staff matters to the settlement. Joseph Konizeski, a former CFTC enforcement attorney, told WIRED that proper compliance would have required hiring offshore staff and moving infrastructure abroad. The CFTC and Polymarket both declined to comment, and the agency has not accused Adventure One QSS of wrongdoing.
+
+*For a company already under federal scrutiny, the blurred boundary between its offshore shell and its U.S. workforce looks less like a compliance wall and more like a corporate mirage.*
+
+*— Written by AI (kimi-k3)*" data-s="wired.com" data-u="https://www.wired.com/story/whats-up-with-polymarkets-panama-entity/"><span class="tih">Polymarket&#x27;s Offshore Corporate Structure Draws Scrutiny After Staff Worked from New York</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple’s OpenAI Trade-Secret Suit Could Complicate the Lab’s IPO Push" data-b="Apple has sued OpenAI for trade-secret theft, and the case could carry consequences beyond the courtroom. According to TechCrunch, the lawsuit filed last Friday alleges a sustained pattern of misconduct that reaches OpenAI’s chief hardware officer, and claims that more than 400 former Apple employees have joined the artificial-intelligence lab.
+
+OpenAI’s public response has been cautious, neither strongly denying nor engaging with the specifics. That guarded posture may be especially risky now because OpenAI is reportedly considering an initial public offering as early as later this year. Pending litigation over intellectual property and high-profile employee movement can raise red flags for investors and regulators, potentially complicating the company’s path to going public.
+
+The lawsuit also puts OpenAI’s hardware ambitions under scrutiny. On TechCrunch’s Equity podcast, hosts Kirsten Korosec, Anthony Ha, and Sean O’Kane examined how the dispute could affect OpenAI’s device roadmap and its broader reputation. The discussion also touched on a recurring theme of the moment: whether users should trust AI companies with their personal data.
+
+With hundreds of former Apple staff now inside OpenAI, the case raises questions about how much institutional knowledge from Cupertino may have crossed over — and whether OpenAI can keep its IPO plans on track while fighting that accusation in court.
+
+*A high-stakes IP clash with a trillion-dollar rival is the last thing a would-be public company needs as it opens its books.*
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/"><span class="tih">Apple’s OpenAI Trade-Secret Suit Could Complicate the Lab’s IPO Push</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://www.youtube.com/watch?v=46bnJaOAVF8" target="_blank" rel="noopener">
+    
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">OpenAI diaspora</p>
+        <h1>Mira Murati’s Inkling borrows from DeepSeek and Kimi to build an open rival</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">It is not just another multimodal model. The former OpenAI CTO’s startup, Thinking Machines, released Inkling as fully open, trained partly on synthetic data from China’s Kimi and built with DeepSeek architectural ideas. The story matters because it inverts the usual narrative of Western labs setting the pace — and raises hard questions about what 'open' means when the training data crosses geopolitical lines.</p>
+        <p class="byline"><span class="src">YouTube — Beyond AI News</span> · <span>2026-07-16</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://www.kimi.com/blog/kimi-k3" target="_blank" rel="noopener">
+    <h3>Moonshot ships the first open 3T-class model</h3>
+    <p>Kimi K3 claims frontier-level coding, reasoning, and knowledge work with a one-million-token context window and native multimodality — all released as open frontier intelligence.</p>
+    <p class="byline"><span class="src">Kimi (Moonshot AI)</span> · 2026-07-16</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Deep Dives</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2607.12395" target="_blank" rel="noopener">
+    <h4>Reinforcement learning hits a trillion parameters with no human labels</h4>
+    <p>Ring-Zero scales zero-RL — verifiable rewards without annotated data — to a trillion-parameter model, eliciting emergent chain-of-thought reasoning at a scale that challenges the assumption human feedback is required for the next leap.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2607.13491" target="_blank" rel="noopener">
+    <h4>DeepLoop makes looped transformers deeper without making them larger</h4>
+    <p>The paper attacks a subtle problem in tied-parameter architectures: how to unroll more depth without extra stored weights. The fix could make recurrent-style transformers competitive again.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2607.14431" target="_blank" rel="noopener">
+    <h4>A frozen small model can get smarter and cheaper by grafting verified memory</h4>
+    <p>The technique copies byte-exact KV-cache states from verified knowledge into a small LM, preserving deterministic outputs while expanding what the model 'knows' without retraining.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-16</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Pulse</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  
+  <div class="section-grid">
+<article class="item">
+  <a href="https://lmstudio.ai/blog/introducing-lm-studio-bionic" target="_blank" rel="noopener">
+    <h4>LM Studio Bionic is an AI agent built for open models</h4>
+    <p>Bionic adds voice input, local transcription, flexible execution across local and cloud endpoints, and a new iPhone app — a bet that open-model agents can be as polished as closed ones.</p>
+    <p class="byline"><span class="src">LM Studio</span> · 2026-07-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/ratel-ai/ratel" target="_blank" rel="noopener">
+    <h4>Ratel lets agents load unlimited skills while keeping context small</h4>
+    <p>The open framework lets agents dynamically load skills and tools while keeping context windows manageable, addressing one of the practical limits on agent complexity.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-07-16</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>The Edge</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/" target="_blank" rel="noopener">
+    <h4>Fireworks AI closes a $1.5B Series D on open-weight inference</h4>
+    <p>The specialized AI infrastructure company passed $1B ARR, with Atreides, Index, TCV, and NVIDIA backing a bet that open-weight inference can support enterprise intelligence.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-07-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/" target="_blank" rel="noopener">
+    <h4>NVIDIA’s Jetson Thor modules bring Blackwell to mainstream robots</h4>
+    <p>The T3000 and T2000 modules, plus a 4B-parameter Cosmos 3 Edge world model, are already adopted by Boston Dynamics, Amazon Robotics, and FANUC for on-device robot inference.</p>
+    <p class="byline"><span class="src">NVIDIA Blog</span> · 2026-07-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>YouTube Signals</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=axOcn--n_lM" target="_blank" rel="noopener">
+    <h4>Anthropic research warns that AI coding assistants may erode developer skill</h4>
+    <p>The study found that over-reliance on AI assistants can degrade core programming abilities, complicating the rush to embed AI into every engineering workflow.</p>
+    <p class="byline"><span class="src">YouTube — Two Minute Papers</span> · 2026-07-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=Noo0NWD0gHU" target="_blank" rel="noopener">
+    <h4>GPT-5.6 Sol reportedly beats Codex inside Claude Code</h4>
+    <p>Developer Theo claims OpenAI’s model is genuinely better than Anthropic’s own Codex when used in Claude Code, a small but telling signal about model portability.</p>
+    <p class="byline"><span class="src">YouTube — Theo - t3.gg</span> · 2026-07-16</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool" target="_blank" rel="noopener"><span class="qh-title">TikTok tests AI likeness detection to help creators fight deepfakes</span><span class="qh-src">The Verge</span></a></li>
+
+    <li><a href="https://www.wired.com/story/uncanny-valley-podcase-apple-sued-openai-new-york-data-center-moratorium-cyclosporiasis-outbreak/" target="_blank" rel="noopener"><span class="qh-title">Apple sues OpenAI over alleged theft of hardware secrets</span><span class="qh-src">WIRED</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/07/16/san-francisco-mayor-pushes-for-tougher-rules-after-the-waymo-traffic-fiasco/" target="_blank" rel="noopener"><span class="qh-title">SF mayor pushes for tougher autonomous vehicle rules after Waymo gridlock</span><span class="qh-src">TechCrunch</span></a></li>
+
+    <li><a href="https://www.theverge.com/games/966815/epic-games-fortnite-ai-powered-personas" target="_blank" rel="noopener"><span class="qh-title">Fortnite adds 36 AI-powered personas for creator islands</span><span class="qh-src">The Verge</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-07-17 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+    </footer>
+
+  </div>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

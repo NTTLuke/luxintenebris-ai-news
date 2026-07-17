@@ -1,0 +1,135 @@
+{
+  "issue_no": 19,
+  "date_iso": "2026-07-17",
+  "date_human": "July 17, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "OpenAI diaspora",
+    "title": "Mira Murati’s Inkling borrows from DeepSeek and Kimi to build an open rival",
+    "summary": "It is not just another multimodal model. The former OpenAI CTO’s startup, Thinking Machines, released Inkling as fully open, trained partly on synthetic data from China’s Kimi and built with DeepSeek architectural ideas. The story matters because it inverts the usual narrative of Western labs setting the pace — and raises hard questions about what 'open' means when the training data crosses geopolitical lines.",
+    "source": "YouTube — Beyond AI News",
+    "date": "2026-07-16",
+    "url": "https://www.youtube.com/watch?v=46bnJaOAVF8"
+  },
+  "top_stories": [
+    {
+      "title": "Moonshot ships the first open 3T-class model",
+      "summary": "Kimi K3 claims frontier-level coding, reasoning, and knowledge work with a one-million-token context window and native multimodality — all released as open frontier intelligence.",
+      "source": "Kimi (Moonshot AI)",
+      "date": "2026-07-16",
+      "url": "https://www.kimi.com/blog/kimi-k3"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Deep Dives",
+      "items": [
+        {
+          "title": "Reinforcement learning hits a trillion parameters with no human labels",
+          "summary": "Ring-Zero scales zero-RL — verifiable rewards without annotated data — to a trillion-parameter model, eliciting emergent chain-of-thought reasoning at a scale that challenges the assumption human feedback is required for the next leap.",
+          "source": "arXiv",
+          "date": "2026-07-16",
+          "url": "https://arxiv.org/abs/2607.12395"
+        },
+        {
+          "title": "DeepLoop makes looped transformers deeper without making them larger",
+          "summary": "The paper attacks a subtle problem in tied-parameter architectures: how to unroll more depth without extra stored weights. The fix could make recurrent-style transformers competitive again.",
+          "source": "arXiv",
+          "date": "2026-07-16",
+          "url": "https://arxiv.org/abs/2607.13491"
+        },
+        {
+          "title": "A frozen small model can get smarter and cheaper by grafting verified memory",
+          "summary": "The technique copies byte-exact KV-cache states from verified knowledge into a small LM, preserving deterministic outputs while expanding what the model 'knows' without retraining.",
+          "source": "arXiv",
+          "date": "2026-07-16",
+          "url": "https://arxiv.org/abs/2607.14431"
+        }
+      ]
+    },
+    {
+      "title": "Open Pulse",
+      "items": [
+        {
+          "title": "LM Studio Bionic is an AI agent built for open models",
+          "summary": "Bionic adds voice input, local transcription, flexible execution across local and cloud endpoints, and a new iPhone app — a bet that open-model agents can be as polished as closed ones.",
+          "source": "LM Studio",
+          "date": "2026-07-16",
+          "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic"
+        },
+        {
+          "title": "Ratel lets agents load unlimited skills while keeping context small",
+          "summary": "The open framework lets agents dynamically load skills and tools while keeping context windows manageable, addressing one of the practical limits on agent complexity.",
+          "source": "GitHub",
+          "date": "2026-07-16",
+          "url": "https://github.com/ratel-ai/ratel"
+        }
+      ]
+    },
+    {
+      "title": "The Edge",
+      "items": [
+        {
+          "title": "Fireworks AI closes a $1.5B Series D on open-weight inference",
+          "summary": "The specialized AI infrastructure company passed $1B ARR, with Atreides, Index, TCV, and NVIDIA backing a bet that open-weight inference can support enterprise intelligence.",
+          "source": "TechStartups",
+          "date": "2026-07-16",
+          "url": "https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/"
+        },
+        {
+          "title": "NVIDIA’s Jetson Thor modules bring Blackwell to mainstream robots",
+          "summary": "The T3000 and T2000 modules, plus a 4B-parameter Cosmos 3 Edge world model, are already adopted by Boston Dynamics, Amazon Robotics, and FANUC for on-device robot inference.",
+          "source": "NVIDIA Blog",
+          "date": "2026-07-15",
+          "url": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/"
+        }
+      ]
+    },
+    {
+      "title": "YouTube Signals",
+      "items": [
+        {
+          "title": "Anthropic research warns that AI coding assistants may erode developer skill",
+          "summary": "The study found that over-reliance on AI assistants can degrade core programming abilities, complicating the rush to embed AI into every engineering workflow.",
+          "source": "YouTube — Two Minute Papers",
+          "date": "2026-07-16",
+          "url": "https://www.youtube.com/watch?v=axOcn--n_lM"
+        },
+        {
+          "title": "GPT-5.6 Sol reportedly beats Codex inside Claude Code",
+          "summary": "Developer Theo claims OpenAI’s model is genuinely better than Anthropic’s own Codex when used in Claude Code, a small but telling signal about model portability.",
+          "source": "YouTube — Theo - t3.gg",
+          "date": "2026-07-16",
+          "url": "https://www.youtube.com/watch?v=Noo0NWD0gHU"
+        }
+      ]
+    }
+  ],
+  "trending": null,
+  "quick_hits": [
+    {
+      "title": "TikTok tests AI likeness detection to help creators fight deepfakes",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
+      "context": "Identity verification for creator protection"
+    },
+    {
+      "title": "Apple sues OpenAI over alleged theft of hardware secrets",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/uncanny-valley-podcase-apple-sued-openai-new-york-data-center-moratorium-cyclosporiasis-outbreak/",
+      "context": "Hardware rivalry escalates"
+    },
+    {
+      "title": "SF mayor pushes for tougher autonomous vehicle rules after Waymo gridlock",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/16/san-francisco-mayor-pushes-for-tougher-rules-after-the-waymo-traffic-fiasco/",
+      "context": "July 4 fireworks fiasco"
+    },
+    {
+      "title": "Fortnite adds 36 AI-powered personas for creator islands",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/games/966815/epic-games-fortnite-ai-powered-personas",
+      "context": "Curated voice cast, not open mic"
+    }
+  ]
+}
