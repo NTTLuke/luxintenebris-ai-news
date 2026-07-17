@@ -3,111 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LVX IN TENEBRIS — AI dispatches · July 16, 2026</title>
+  <title>LVX IN TENEBRIS — AI dispatches · July 17, 2026</title>
   <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
   <link rel="stylesheet" href="style.css">
-  <style>
-/* ── Podcast Pill (inline player) ──────────── */
-.podcast-pill {
-  margin: 12px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-}
-.podcast-pill .pill-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 14px 5px 12px;
-  border: 1px solid var(--rule);
-  border-radius: 20px;
-  text-decoration: none;
-  color: var(--type);
-  font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  line-height: 1;
-  cursor: pointer;
-  background: none;
-  transition: border-color .25s ease, color .25s ease;
-}
-.podcast-pill .pill-btn:hover {
-  border-color: var(--lux);
-  color: var(--lux);
-}
-.podcast-pill .pill-btn:focus-visible {
-  outline: 1px solid var(--lux);
-  outline-offset: 2px;
-}
-/* Playing state */
-.podcast-pill.is-playing .pill-btn {
-  border-color: var(--ember);
-  color: var(--ember);
-}
-.podcast-pill .pill-wave {
-  flex-shrink: 0;
-  animation: pill-pulse 2s ease-in-out infinite;
-}
-.podcast-pill.is-playing .pill-wave {
-  animation: none;
-}
-.podcast-pill.is-playing .pill-wave .wave-bar {
-  animation: pill-bar 0.6s ease-in-out infinite alternate;
-  transform-origin: bottom;
-}
-@keyframes pill-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .65; }
-}
-@keyframes pill-bar {
-  0% { transform: scaleY(0.3); }
-  100% { transform: scaleY(1); }
-}
-.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
-.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
-.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
-.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
-.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
-.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
-.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
-.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
-.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
-/* Progress bar */
-.podcast-pill .pill-progress {
-  width: 100%;
-  height: 2px;
-  background: var(--rule);
-  border-radius: 1px;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity .3s ease;
-}
-.podcast-pill.is-playing .pill-progress,
-.podcast-pill.is-paused .pill-progress {
-  opacity: 1;
-}
-.podcast-pill .pill-progress-bar {
-  display: block;
-  height: 100%;
-  width: 0%;
-  background: var(--ember);
-  border-radius: 1px;
-  transition: width .3s linear;
-}
-/* Hide audio element */
-.podcast-pill .pill-audio {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  pointer-events: none;
-}
-/* ── End Podcast Pill ──────────────────────── */
-</style>
-<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
   <body>
   <div class="container">
 
@@ -115,188 +14,140 @@
     <div class="topline"></div>
     <div class="ears">
       <span class="left">Est. MMXXVI</span>
-      <span class="right">No. 18 <a href="/luxintenebris-ai-news/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
+      <span class="right">No. 19 <a href="/luxintenebris-ai-news/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
     </div>
     <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
       <hr class="rule-double">
       <div class="dateline">
-        <span>July 16, 2026</span>
+        <span>July 17, 2026</span>
         <span class="dot">◆</span>
         <span class="tag">AI dispatches from the dark</span>
         <span class="dot">◆</span>
-        <span>56 stories</span>
+        <span>10 stories</span>
       </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a></div>
       <hr class="rule-thin">
     </header>
 
-    
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="**Roombas Keep Evolving with Deep Discounts as iRobot Runs a Summer Promo Blitz**" data-b="Since launching the first Roomba in 2002, iRobot has weathered countless competitors while remaining a dominant name in home robotics, according to a WIRED piece by reviewer Nena Farrell. The latest lineup now combines vacuuming and mopping in single devices, with models like the Roomba Max 705 earning praise for its navigation, suction, and dual anti-tangle brushes.
 
-    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="**HostGator Discounts Up to 76% on Hosting Plans for July 2026**" data-b="Web hosting provider HostGator, which has operated for over two decades and currently powers more than 700,000 sites, is offering tiered discounts across its plans this month, according to a report from WIRED.
+The article highlights several limited-time deals. Flagship bundles see the steepest cuts: the Roomba Max 705 Combo with AutoWash dock drops from $1,300 to $800 — a $500 saving. A separate offer knocks 33% off the stand-alone Max 705. More budget-friendly options include the Roomba Plus 405 Combo at $300 off and the bagless Roomba 205 DustCompactor, which stores debris for up to 60 days inside the unit, nearly $300 cheaper. A Father&#x27;s Day promotion gives up to $400 off across multiple models. Shoppers can also gift a friend 15% off a robot while earning $15 off accessories, or sign up for iRobot emails to receive 10% off a first purchase. Accessory bundles follow a &quot;buy more, save more&quot; structure, with up to 20% off when buying four eligible items.
 
-The company&#x27;s Business Plan sees the deepest cut at 76% off, dropping to $5.25 per month on a 36-month term. This tier includes managed WordPress updates, support for up to 50 websites, 50GB of SSD storage, a free domain for the first year, migration tools, and enhanced security and marketing features. For this discount, the promo code SNAPPY is required.
+*Robot vacuums have become a genuinely useful category in smart home tech, but with so many overlapping promotions, it pays to check which deal actually fits your space — and your floor plan.*
 
-The Baby plan, described as a solid starting point for most users, offers 70% off for the same 36-month commitment. It supports up to 20 websites with 20GB of storage, one-year domain registration, and one-click WordPress installation — also via the SNAPPY code.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/irobot-promo-code/"><span class="tih">**Roombas Keep Evolving with Deep Discounts as iRobot Runs a Summer Promo Blitz**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="San Francisco mayor demands tougher AV rules after Waymo July 4 meltdown" data-b="San Francisco Mayor Daniel Lurie has formally asked California regulators to tighten autonomous vehicle regulations, according to TechCrunch. The request comes nearly two weeks after a fleet of Waymo robotaxis stalled in heavy post-fireworks traffic on July 4, ran out of battery power, and blocked major arteries, creating hours-long gridlock that trapped municipal shuttles and impacted thousands of residents.
 
-At the high end, the Pro plan is reduced by 53% to $14 per month, designed for up to 400,000 monthly visits across 100 sites. Meanwhile, domain registration starts at just $0.99, with the option to have an AI suggest a name if none comes to mind. VPS hosting is also discounted up to 36%, with plans branded as &quot;Snappy&quot; running on AMD EPYC servers with NVMe storage.
+In a letter to the state Department of Transportation, Lurie cited two separate incidents — a widespread December power outage and the July 4 Golden Gate Bridge fireworks display that drew 100,000 spectators — both of which left numerous Waymo vehicles stranded and paralyzed traffic. He argued that California&#x27;s current rules fail to address how autonomous vehicles should behave during large-scale disruptions, whether planned or unexpected.
 
-HostGator additionally offers a free SSL certificate, professional email addresses, 24/7 support, and a 30-day money-back guarantee across all plans.
+Lurie proposed four mandatory capabilities for AV operators: the ability to immediately remove stalled robotaxis from active lanes, real-time route and service area adaptation, sharing live operations data with local authorities, and proving through testing that fleets can handle sudden surges in people and traffic. He noted that Waymo had voluntarily agreed to restrict service near the waterfront on July 4 and stationed a liaison at the city&#x27;s emergency operations center, but those measures proved insufficient given the fleet&#x27;s growing scale.
 
-*A practical roundup for small-business owners, though the real headline here might be how AI is now helping you pick a domain name as easily as it helps you build a site.*
+Waymo, which operates roughly 1,000 robotaxis in the Bay Area and completes over 500,000 paid rides weekly across 11 cities, has not yet responded to requests for comment.
 
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/hostgator-coupon/"><span class="tih">**HostGator Discounts Up to 76% on Hosting Plans for July 2026**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Lululemon backs nylon recycling startup Syntetica in $30M Series A" data-b="Activewear giant Lululemon has invested in the $30 million Series A round of Syntetica, a French startup that has developed a new way to recycle nylon, a material that is durable but difficult to reuse, according to TechCrunch. The company&#x27;s process can handle both Nylon 6 and Nylon 6,6, which are hard to separate from mixed textile waste.
+*Mayor Lurie&#x27;s pivot from cheerleader to regulator signals a maturing — and necessary — phase in the autonomous vehicle story.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/16/san-francisco-mayor-pushes-for-tougher-rules-after-the-waymo-traffic-fiasco/"><span class="tih">San Francisco mayor demands tougher AV rules after Waymo July 4 meltdown</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Two Trump Health Nominees Falter Under Senate Scrutiny" data-b="In a Senate HELP Committee hearing Wednesday, both nominees for top health positions in the Trump administration struggled in strikingly different ways, according to Ars Technica.
 
-Syntetica&#x27;s CEO Marco Bertone told TechCrunch that recent volatility in oil prices has been a wake-up call for brands reliant on petroleum-based synthetics. The startup takes a pragmatic approach, aiming to be cost-competitive without relying on a green premium. Its product is recycled nylon pellets, not finished textiles, which partners like MAS Holdings can turn into yarn.
+Erica Schwartz, nominated to lead the CDC, carries impressive credentials — a medical degree, a master&#x27;s in public health, a law degree, and prior service as Coast Guard Chief Medical Officer and deputy surgeon general. Yet throughout the roughly two-and-a-half-hour hearing, she appeared unable or unwilling to answer questions directly, even simple ones. When Senator Bill Cassidy asked if she would stand up to Health Secretary Robert F. Kennedy Jr.&#x27;s anti-vaccine agenda the way her predecessor Susan Monarez did, Schwartz deflected. Cassidy eventually had to remind her it was a yes-or-no question. She also seemed unaware of basic CDC developments, frequently responding with &quot;I was not aware.&quot;
 
-The company&#x27;s Series A was led by Bpifrance&#x27;s Ecotechnologies 2 fund under the France 2030 plan, with support from the European Innovation Council. Private investors include EQT Ventures and SWEN Capital Partners. Syntetica has also partnered with Michelin&#x27;s Centre for Sustainable Materials to build a demonstration facility in Clermont-Ferrand.
+Sean Kaufman, nominated for Assistant Secretary for Preparedness and Response, faced a different problem. Despite three decades of outbreak preparedness experience, his past anti-vaccine statements — including promoting the debunked vaccine-autism link and opposing COVID-19 vaccines — alarmed senators. Senator Tammy Baldwin warned him he would need to work hard to clarify his views.
 
-The startup was founded by Bertone, with a background in fashion and second-hand e-commerce, and chemistry researcher Louis Monsigny, whom he met through Entrepreneur First&#x27;s accelerator at Station F in Paris. They plan to use the funding to ramp up production to hundreds of tons of pellets per year for the clothing supply chain.
+*The contrast is stark: one nominee couldn&#x27;t answer questions, the other answered them in a way that damaged his credibility.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/health/2026/07/two-trump-health-nominees-crash-and-burn-in-tense-senate-hearing/"><span class="tih">Two Trump Health Nominees Falter Under Senate Scrutiny</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple Sues OpenAI Over Alleged Hardware Secrets Theft" data-b="According to WIRED&#x27;s Uncanny Valley podcast, Apple has filed a lawsuit against OpenAI, accusing the AI company of stealing confidential hardware information. The complaint centers on allegations that OpenAI obtained unreleased iPhone parts, prototypes, and secret project documents, much of which Apple claims was funneled through former employees. OpenAI&#x27;s chief hardware officer, Tang Tan—who spent 24 years at Apple—is named in the lawsuit and accused of encouraging departing Apple staff to bring proprietary materials with them.
 
-*It is refreshing to see chemical recycling funded not as a niche green play but as a cost-competitive industrial solution backed by a major apparel brand that knows its supply chain.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/15/lululemon-backs-nylon-recycling-startup-syntetica-in-30m-series-a/"><span class="tih">Lululemon backs nylon recycling startup Syntetica in $30M Series A</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Orbital Brings Plant-Wide AI to Oil and Gas" data-b="Applied Computing, a London-based startup building a foundation model for the oil, gas, and petrochemical industry, has raised a $20 million Series A round led by engineering giant KBR with participation from Databricks Ventures, according to TechCrunch. Founded in 2023, the company targets industrial facilities where thousands of sensors track temperature, pressure, velocity, and viscosity — yet operators reportedly make decisions using less than 8% of the data available to them.
+The podcast&#x27;s analysts noted this legal move fits a familiar Apple pattern: the company has historically sued former employees over leaked or stolen intellectual property. However, they suggested Apple&#x27;s primary goal may not be financial damages but rather slowing OpenAI&#x27;s hardware ambitions. As Apple positions the iPhone as the central device for the AI era, a competing audio-first hardware platform from OpenAI could threaten that strategy. Reports this week suggest OpenAI&#x27;s device may resemble a speaker with motorized elements.
 
-The startup&#x27;s model, called Orbital, differs from large language models by combining a time series model, a physics-based model, and a language model to predict a facility&#x27;s state. It analyzes sensor readings while accounting for equipment constraints and operator activity, and can run simulations of how a change in one area might ripple through the rest of the plant. CEO and co-founder Callum Adamson told TechCrunch Orbital can flag anomalies, investigate root causes, and model whether a fix could create new problems — all within minutes, compressing investigations that previously took days or weeks.
+The episode also covered additional developments: a group of OpenAI employees launched a super PAC to advocate for stronger AI guardrails, New York enacted the first statewide data center moratorium drawing White House criticism, and a cyclosporiasis outbreak has spread across more than thirty states.
 
-The startup claims to have reached double-digit millions in annual recurring revenue in under 18 months and is used by publicly listed companies in upstream oil and gas, downstream refining, and petrochemicals. Partners include Indian energy firm Wipro, and KBR has integrated Orbital into its INSITE 3.0 platform for ammonia production. Applied Computing plans to use the new funding to expand internationally, hire research and engineering talent, and has opened an office in Houston.
+*The employee-led super PAC targeting their own employer adds an unusual twist to an already messy legal landscape for OpenAI.*
 
-*An AI model that speaks the language of sensors, pipes, and physics — not just words — might be what heavy industry has been waiting for.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/15/applied-computing-wants-to-give-oil-and-gas-operators-an-ai-model-for-the-entire-plant/"><span class="tih">Orbital Brings Plant-Wide AI to Oil and Gas</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Greylock caps new fund at $1.5 billion, choosing restraint over raising more" data-b="Venture firm Greylock Partners has closed its 18th fund at $1.5 billion, a deliberate choice to keep its portfolio manageable despite market demand for more, according to a TechCrunch report by Marina Temkin.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/uncanny-valley-podcase-apple-sued-openai-new-york-data-center-moratorium-cyclosporiasis-outbreak/"><span class="tih">Apple Sues OpenAI Over Alleged Hardware Secrets Theft</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fortnite introduces 36 AI-powered NPC characters for creator experiences" data-b="According to The Verge, Epic Games is rolling out a set of 36 AI-powered characters that Fortnite creators can use in their custom islands starting July 30th. Each character comes with a consistent voice and personality, developed specifically for use in player-made experiences. The roster includes recognizable Fortnite favorites such as Agent Jonesy, Peely, Fishstick, and Cuddle Team Leader.
 
-The 61-year-old Silicon Valley firm could have raised &quot;a multiple&quot; of that figure, partner Saam Motamedi told TechCrunch, but opted for restraint at a time when industry fund sizes are climbing. The new fund is 50% larger than the firm&#x27;s previous $1 billion vehicle from 2023.
+The voices behind these personas were recorded by independent professional actors who agreed to have their performances used to train voice models, which in turn generate spoken responses driven by large language models. Epic tested this approach last year with a Darth Vader NPC voiced by the late James Earl Jones — with his estate&#x27;s approval — though players quickly found ways to make the character swear before Epic patched the behavior.
 
-Greylock&#x27;s 10 partners each make only one or two new investments annually, a pace that will produce roughly 25 portfolio companies from this fund. The firm focuses on incubating companies from the earliest stages and leading seed and Series A rounds, where it built its reputation with startups like Palo Alto Networks and Abnormal.
+Looking ahead, Epic says it hopes to eventually bring voices from well-known actors who have previously worked on Fortnite Battle Royale into the ecosystem, but that will require negotiations with guilds and the actors themselves. Creators have already been experimenting with their own AI characters earlier this year under a set of rules meant to prevent misuse.
 
-However, the firm is not strictly early-stage. About 15% of the new fund will go to later-stage companies it missed early on, Motamedi said. The previous fund included three such bets: Anthropic, Revolut, and Wiz. Greylock&#x27;s first investment in Anthropic came during its Series F at a $183 billion valuation, described as the largest investment in the firm&#x27;s history.
+*It is a curious bet: handing players the keys to AI-powered characters in one of the world&#x27;s largest virtual playgrounds, where the line between creative expression and chaos is notoriously thin.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/games/966815/epic-games-fortnite-ai-powered-personas"><span class="tih">Fortnite introduces 36 AI-powered NPC characters for creator experiences</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="**Roombas Keep Evolving with Deep Discounts as iRobot Runs a Summer Promo Blitz**" data-b="Since launching the first Roomba in 2002, iRobot has weathered countless competitors while remaining a dominant name in home robotics, according to a WIRED piece by reviewer Nena Farrell. The latest lineup now combines vacuuming and mopping in single devices, with models like the Roomba Max 705 earning praise for its navigation, suction, and dual anti-tangle brushes.
 
-Motamedi told TechCrunch that partners review their investment pipeline every Monday, with the agenda consisting primarily of people&#x27;s names rather than company names. &quot;Often the company doesn&#x27;t even exist,&quot; he said.
+The article highlights several limited-time deals. Flagship bundles see the steepest cuts: the Roomba Max 705 Combo with AutoWash dock drops from $1,300 to $800 — a $500 saving. A separate offer knocks 33% off the stand-alone Max 705. More budget-friendly options include the Roomba Plus 405 Combo at $300 off and the bagless Roomba 205 DustCompactor, which stores debris for up to 60 days inside the unit, nearly $300 cheaper. A Father&#x27;s Day promotion gives up to $400 off across multiple models. Shoppers can also gift a friend 15% off a robot while earning $15 off accessories, or sign up for iRobot emails to receive 10% off a first purchase. Accessory bundles follow a &quot;buy more, save more&quot; structure, with up to 20% off when buying four eligible items.
 
-*It is refreshing to see a top-tier firm voluntarily cap its ambitions in an era when bigger is almost always the default answer.*
+*Robot vacuums have become a genuinely useful category in smart home tech, but with so many overlapping promotions, it pays to check which deal actually fits your space — and your floor plan.*
 
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/15/why-greylock-capped-its-new-fund-at-1-5b-when-it-says-it-could-have-raised-more/"><span class="tih">Greylock caps new fund at $1.5 billion, choosing restraint over raising more</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Skullcandy Enlists Bose to Boost Audio Credentials" data-b="Skullcandy has long been known for underwhelming sound quality, and the company is working to change that perception with help from Bose. According to WIRED, the process began in 2025 with a partnership that produced the Skullcandy Method 360 ANC earbuds. Now the company has unveiled the Crusher 1080 ANC, a new pair of over-ear headphones announced at a New York City event.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/irobot-promo-code/"><span class="tih">**Roombas Keep Evolving with Deep Discounts as iRobot Runs a Summer Promo Blitz**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="San Francisco mayor demands tougher AV rules after Waymo July 4 meltdown" data-b="San Francisco Mayor Daniel Lurie has formally asked California regulators to tighten autonomous vehicle regulations, according to TechCrunch. The request comes nearly two weeks after a fleet of Waymo robotaxis stalled in heavy post-fireworks traffic on July 4, ran out of battery power, and blocked major arteries, creating hours-long gridlock that trapped municipal shuttles and impacted thousands of residents.
 
-The Crusher line has been around for over a decade, defined by a physical thumb wheel that lets users crank up bass vibrations against the skull. The problem, Skullcandy CEO Brian Garofalow acknowledged, is that while the company excelled at community building and cultural relevance, it fell short on engineering. The Bose collaboration aims to fix that.
+In a letter to the state Department of Transportation, Lurie cited two separate incidents — a widespread December power outage and the July 4 Golden Gate Bridge fireworks display that drew 100,000 spectators — both of which left numerous Waymo vehicles stranded and paralyzed traffic. He argued that California&#x27;s current rules fail to address how autonomous vehicles should behave during large-scale disruptions, whether planned or unexpected.
 
-Bose&#x27;s contributions include noise cancellation designed to work even at maximum bass settings, spatial audio for a surround-like experience, and a six-microphone array for clearer calls. Skullcandy&#x27;s engineers worked with Bose to isolate the Crusher bass booster from the rest of the audio tuning so the mids and highs stay sharp.
+Lurie proposed four mandatory capabilities for AV operators: the ability to immediately remove stalled robotaxis from active lanes, real-time route and service area adaptation, sharing live operations data with local authorities, and proving through testing that fleets can handle sudden surges in people and traffic. He noted that Waymo had voluntarily agreed to restrict service near the waterfront on July 4 and stationed a liaison at the city&#x27;s emergency operations center, but those measures proved insufficient given the fleet&#x27;s growing scale.
 
-Priced at $280, the headphones undercut premium rivals from Sony, Bose, and Apple. They offer up to 60 hours of battery life without active noise cancellation, rapid charging, auto-pause when removed, customizable EQ, and multipoint Bluetooth 5.3 with Auracast.
+Waymo, which operates roughly 1,000 robotaxis in the Bay Area and completes over 500,000 paid rides weekly across 11 cities, has not yet responded to requests for comment.
 
-Whether the Bose-powered Crusher 1080 ANC will finally lift Skullcandy out of its bargain-bin reputation remains an open question — one the company has tried to answer before.
+*Mayor Lurie&#x27;s pivot from cheerleader to regulator signals a maturing — and necessary — phase in the autonomous vehicle story.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/16/san-francisco-mayor-pushes-for-tougher-rules-after-the-waymo-traffic-fiasco/"><span class="tih">San Francisco mayor demands tougher AV rules after Waymo July 4 meltdown</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Two Trump Health Nominees Falter Under Senate Scrutiny" data-b="In a Senate HELP Committee hearing Wednesday, both nominees for top health positions in the Trump administration struggled in strikingly different ways, according to Ars Technica.
 
-*The challenge is not new, but the Bose partnership makes this attempt Skullcandy&#x27;s most credible yet.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/can-bose-help-skullcandy-shake-its-bargain-bin-reputation/"><span class="tih">Skullcandy Enlists Bose to Boost Audio Credentials</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="**HostGator Discounts Up to 76% on Hosting Plans for July 2026**" data-b="Web hosting provider HostGator, which has operated for over two decades and currently powers more than 700,000 sites, is offering tiered discounts across its plans this month, according to a report from WIRED.
+Erica Schwartz, nominated to lead the CDC, carries impressive credentials — a medical degree, a master&#x27;s in public health, a law degree, and prior service as Coast Guard Chief Medical Officer and deputy surgeon general. Yet throughout the roughly two-and-a-half-hour hearing, she appeared unable or unwilling to answer questions directly, even simple ones. When Senator Bill Cassidy asked if she would stand up to Health Secretary Robert F. Kennedy Jr.&#x27;s anti-vaccine agenda the way her predecessor Susan Monarez did, Schwartz deflected. Cassidy eventually had to remind her it was a yes-or-no question. She also seemed unaware of basic CDC developments, frequently responding with &quot;I was not aware.&quot;
 
-The company&#x27;s Business Plan sees the deepest cut at 76% off, dropping to $5.25 per month on a 36-month term. This tier includes managed WordPress updates, support for up to 50 websites, 50GB of SSD storage, a free domain for the first year, migration tools, and enhanced security and marketing features. For this discount, the promo code SNAPPY is required.
+Sean Kaufman, nominated for Assistant Secretary for Preparedness and Response, faced a different problem. Despite three decades of outbreak preparedness experience, his past anti-vaccine statements — including promoting the debunked vaccine-autism link and opposing COVID-19 vaccines — alarmed senators. Senator Tammy Baldwin warned him he would need to work hard to clarify his views.
 
-The Baby plan, described as a solid starting point for most users, offers 70% off for the same 36-month commitment. It supports up to 20 websites with 20GB of storage, one-year domain registration, and one-click WordPress installation — also via the SNAPPY code.
+*The contrast is stark: one nominee couldn&#x27;t answer questions, the other answered them in a way that damaged his credibility.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/health/2026/07/two-trump-health-nominees-crash-and-burn-in-tense-senate-hearing/"><span class="tih">Two Trump Health Nominees Falter Under Senate Scrutiny</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple Sues OpenAI Over Alleged Hardware Secrets Theft" data-b="According to WIRED&#x27;s Uncanny Valley podcast, Apple has filed a lawsuit against OpenAI, accusing the AI company of stealing confidential hardware information. The complaint centers on allegations that OpenAI obtained unreleased iPhone parts, prototypes, and secret project documents, much of which Apple claims was funneled through former employees. OpenAI&#x27;s chief hardware officer, Tang Tan—who spent 24 years at Apple—is named in the lawsuit and accused of encouraging departing Apple staff to bring proprietary materials with them.
 
-At the high end, the Pro plan is reduced by 53% to $14 per month, designed for up to 400,000 monthly visits across 100 sites. Meanwhile, domain registration starts at just $0.99, with the option to have an AI suggest a name if none comes to mind. VPS hosting is also discounted up to 36%, with plans branded as &quot;Snappy&quot; running on AMD EPYC servers with NVMe storage.
+The podcast&#x27;s analysts noted this legal move fits a familiar Apple pattern: the company has historically sued former employees over leaked or stolen intellectual property. However, they suggested Apple&#x27;s primary goal may not be financial damages but rather slowing OpenAI&#x27;s hardware ambitions. As Apple positions the iPhone as the central device for the AI era, a competing audio-first hardware platform from OpenAI could threaten that strategy. Reports this week suggest OpenAI&#x27;s device may resemble a speaker with motorized elements.
 
-HostGator additionally offers a free SSL certificate, professional email addresses, 24/7 support, and a 30-day money-back guarantee across all plans.
+The episode also covered additional developments: a group of OpenAI employees launched a super PAC to advocate for stronger AI guardrails, New York enacted the first statewide data center moratorium drawing White House criticism, and a cyclosporiasis outbreak has spread across more than thirty states.
 
-*A practical roundup for small-business owners, though the real headline here might be how AI is now helping you pick a domain name as easily as it helps you build a site.*
+*The employee-led super PAC targeting their own employer adds an unusual twist to an already messy legal landscape for OpenAI.*
 
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/hostgator-coupon/"><span class="tih">**HostGator Discounts Up to 76% on Hosting Plans for July 2026**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Lululemon backs nylon recycling startup Syntetica in $30M Series A" data-b="Activewear giant Lululemon has invested in the $30 million Series A round of Syntetica, a French startup that has developed a new way to recycle nylon, a material that is durable but difficult to reuse, according to TechCrunch. The company&#x27;s process can handle both Nylon 6 and Nylon 6,6, which are hard to separate from mixed textile waste.
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/uncanny-valley-podcase-apple-sued-openai-new-york-data-center-moratorium-cyclosporiasis-outbreak/"><span class="tih">Apple Sues OpenAI Over Alleged Hardware Secrets Theft</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fortnite introduces 36 AI-powered NPC characters for creator experiences" data-b="According to The Verge, Epic Games is rolling out a set of 36 AI-powered characters that Fortnite creators can use in their custom islands starting July 30th. Each character comes with a consistent voice and personality, developed specifically for use in player-made experiences. The roster includes recognizable Fortnite favorites such as Agent Jonesy, Peely, Fishstick, and Cuddle Team Leader.
 
-Syntetica&#x27;s CEO Marco Bertone told TechCrunch that recent volatility in oil prices has been a wake-up call for brands reliant on petroleum-based synthetics. The startup takes a pragmatic approach, aiming to be cost-competitive without relying on a green premium. Its product is recycled nylon pellets, not finished textiles, which partners like MAS Holdings can turn into yarn.
+The voices behind these personas were recorded by independent professional actors who agreed to have their performances used to train voice models, which in turn generate spoken responses driven by large language models. Epic tested this approach last year with a Darth Vader NPC voiced by the late James Earl Jones — with his estate&#x27;s approval — though players quickly found ways to make the character swear before Epic patched the behavior.
 
-The company&#x27;s Series A was led by Bpifrance&#x27;s Ecotechnologies 2 fund under the France 2030 plan, with support from the European Innovation Council. Private investors include EQT Ventures and SWEN Capital Partners. Syntetica has also partnered with Michelin&#x27;s Centre for Sustainable Materials to build a demonstration facility in Clermont-Ferrand.
+Looking ahead, Epic says it hopes to eventually bring voices from well-known actors who have previously worked on Fortnite Battle Royale into the ecosystem, but that will require negotiations with guilds and the actors themselves. Creators have already been experimenting with their own AI characters earlier this year under a set of rules meant to prevent misuse.
 
-The startup was founded by Bertone, with a background in fashion and second-hand e-commerce, and chemistry researcher Louis Monsigny, whom he met through Entrepreneur First&#x27;s accelerator at Station F in Paris. They plan to use the funding to ramp up production to hundreds of tons of pellets per year for the clothing supply chain.
+*It is a curious bet: handing players the keys to AI-powered characters in one of the world&#x27;s largest virtual playgrounds, where the line between creative expression and chaos is notoriously thin.*
+*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/games/966815/epic-games-fortnite-ai-powered-personas"><span class="tih">Fortnite introduces 36 AI-powered NPC characters for creator experiences</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="notice"><b>Editor's note —</b> Light news day — most scouts returned empty. Today's edition focuses on AI tools and startups.</div>
 
-*It is refreshing to see chemical recycling funded not as a niche green play but as a cost-competitive industrial solution backed by a major apparel brand that knows its supply chain.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/15/lululemon-backs-nylon-recycling-startup-syntetica-in-30m-series-a/"><span class="tih">Lululemon backs nylon recycling startup Syntetica in $30M Series A</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Orbital Brings Plant-Wide AI to Oil and Gas" data-b="Applied Computing, a London-based startup building a foundation model for the oil, gas, and petrochemical industry, has raised a $20 million Series A round led by engineering giant KBR with participation from Databricks Ventures, according to TechCrunch. Founded in 2023, the company targets industrial facilities where thousands of sensors track temperature, pressure, velocity, and viscosity — yet operators reportedly make decisions using less than 8% of the data available to them.
 
-The startup&#x27;s model, called Orbital, differs from large language models by combining a time series model, a physics-based model, and a language model to predict a facility&#x27;s state. It analyzes sensor readings while accounting for equipment constraints and operator activity, and can run simulations of how a change in one area might ripple through the rest of the plant. CEO and co-founder Callum Adamson told TechCrunch Orbital can flag anomalies, investigate root causes, and model whether a fix could create new problems — all within minutes, compressing investigations that previously took days or weeks.
-
-The startup claims to have reached double-digit millions in annual recurring revenue in under 18 months and is used by publicly listed companies in upstream oil and gas, downstream refining, and petrochemicals. Partners include Indian energy firm Wipro, and KBR has integrated Orbital into its INSITE 3.0 platform for ammonia production. Applied Computing plans to use the new funding to expand internationally, hire research and engineering talent, and has opened an office in Houston.
-
-*An AI model that speaks the language of sensors, pipes, and physics — not just words — might be what heavy industry has been waiting for.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/15/applied-computing-wants-to-give-oil-and-gas-operators-an-ai-model-for-the-entire-plant/"><span class="tih">Orbital Brings Plant-Wide AI to Oil and Gas</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Greylock caps new fund at $1.5 billion, choosing restraint over raising more" data-b="Venture firm Greylock Partners has closed its 18th fund at $1.5 billion, a deliberate choice to keep its portfolio manageable despite market demand for more, according to a TechCrunch report by Marina Temkin.
-
-The 61-year-old Silicon Valley firm could have raised &quot;a multiple&quot; of that figure, partner Saam Motamedi told TechCrunch, but opted for restraint at a time when industry fund sizes are climbing. The new fund is 50% larger than the firm&#x27;s previous $1 billion vehicle from 2023.
-
-Greylock&#x27;s 10 partners each make only one or two new investments annually, a pace that will produce roughly 25 portfolio companies from this fund. The firm focuses on incubating companies from the earliest stages and leading seed and Series A rounds, where it built its reputation with startups like Palo Alto Networks and Abnormal.
-
-However, the firm is not strictly early-stage. About 15% of the new fund will go to later-stage companies it missed early on, Motamedi said. The previous fund included three such bets: Anthropic, Revolut, and Wiz. Greylock&#x27;s first investment in Anthropic came during its Series F at a $183 billion valuation, described as the largest investment in the firm&#x27;s history.
-
-Motamedi told TechCrunch that partners review their investment pipeline every Monday, with the agenda consisting primarily of people&#x27;s names rather than company names. &quot;Often the company doesn&#x27;t even exist,&quot; he said.
-
-*It is refreshing to see a top-tier firm voluntarily cap its ambitions in an era when bigger is almost always the default answer.*
-
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/15/why-greylock-capped-its-new-fund-at-1-5b-when-it-says-it-could-have-raised-more/"><span class="tih">Greylock caps new fund at $1.5 billion, choosing restraint over raising more</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Skullcandy Enlists Bose to Boost Audio Credentials" data-b="Skullcandy has long been known for underwhelming sound quality, and the company is working to change that perception with help from Bose. According to WIRED, the process began in 2025 with a partnership that produced the Skullcandy Method 360 ANC earbuds. Now the company has unveiled the Crusher 1080 ANC, a new pair of over-ear headphones announced at a New York City event.
-
-The Crusher line has been around for over a decade, defined by a physical thumb wheel that lets users crank up bass vibrations against the skull. The problem, Skullcandy CEO Brian Garofalow acknowledged, is that while the company excelled at community building and cultural relevance, it fell short on engineering. The Bose collaboration aims to fix that.
-
-Bose&#x27;s contributions include noise cancellation designed to work even at maximum bass settings, spatial audio for a surround-like experience, and a six-microphone array for clearer calls. Skullcandy&#x27;s engineers worked with Bose to isolate the Crusher bass booster from the rest of the audio tuning so the mids and highs stay sharp.
-
-Priced at $280, the headphones undercut premium rivals from Sony, Bose, and Apple. They offer up to 60 hours of battery life without active noise cancellation, rapid charging, auto-pause when removed, customizable EQ, and multipoint Bluetooth 5.3 with Auracast.
-
-Whether the Bose-powered Crusher 1080 ANC will finally lift Skullcandy out of its bargain-bin reputation remains an open question — one the company has tried to answer before.
-
-*The challenge is not new, but the Bose partnership makes this attempt Skullcandy&#x27;s most credible yet.*
-*— Written by AI (deepseek/deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/can-bose-help-skullcandy-shake-its-bargain-bin-reputation/"><span class="tih">Skullcandy Enlists Bose to Boost Audio Credentials</span> <span class="tis">— wired.com</span></div></div></div>
-<div class="lead-zone">
+    <div class="lead-zone">
       <article class="lead">
-  <a href="https://x.com/lmsysorg/status/2077457150046269779" target="_blank" rel="noopener">
-    <img src="images/lead_2026-07-16.jpg" alt="" class="lead-image">
+  <a href="https://www.producthunt.com/products/zro" target="_blank" rel="noopener">
+    
     <div class="lead-grid">
       <div class="lead-head">
-        <p class="kicker">Open-weights milestone</p>
-        <h1>Thinking Machines releases Inkling, a 975B MoE open-weights model with 1M token context</h1>
+        <p class="kicker">Private inference</p>
+        <h1>Zro launches private inference for AI coding agents</h1>
       </div>
       <div class="lead-body">
-        <p class="deck">Thinking Machines released Inkling, a 975B total / 41B active parameter open-source MoE model with up to 1M token context and native multimodal reasoning over text, images, and audio. The model features ShortConv attention, shared expert sink MoE, and day-one production support via SGLang with CUDA graph prefill, MXFP8 KV cache, and DFlash speculative decoding. Open weights are available immediately.</p>
-        <p class="byline"><span class="src">LMSYS Org / Thinking Machines</span> · <span>2026-07-15</span> · <span class="more">Read the dispatch →</span></p>
+        <p class="deck">Zro unveiled a private inference service purpose-built for AI coding agents, offering secure model hosting with native integrations for popular development tools. The platform runs on LiteLLM, Z.ai, and NVIDIA infrastructure, targeting teams that need isolated, compliant inference for agentic code workflows.</p>
+        <p class="byline"><span class="src">Product Hunt</span> · <span>2026-07-17</span> · <span class="more">Read the dispatch →</span></p>
       </div>
     </div>
   </a>
-
-<div class="podcast-pill">
-  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
-    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
-      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
-      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
-      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
-      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
-    </svg>
-    <span class="pill-label">Podcast Pill</span>
-    <span class="pill-divider">·</span>
-    <span class="pill-show">The Divide</span>
-    <span class="pill-duration">1:09</span>
-  </button>
-  <audio class="pill-audio" preload="none">
-    <source src="podcasts/lead_2026-07-16.ogg" type="audio/ogg">
-  </audio>
-  <div class="pill-progress" aria-hidden="true">
-    <span class="pill-progress-bar"></span>
-  </div>
-</div>
 </article>
 
     </div>
 
     <div class="topstories">
 <article class="story">
-  <a href="https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/" target="_blank" rel="noopener">
-    <h3>NVIDIA introduces Jetson Thor edge AI modules with Blackwell architecture</h3>
-    <p>NVIDIA announced Blackwell-powered T3000 (865 FP4 TFLOPS) and T2000 (400 FP4 TFLOPS) Jetson Thor modules for mass-market robotics and edge AI, alongside Cosmos 3 Edge 4B-parameter model and new agent skills for memory optimization. Available in Q1 2027.</p>
-    <p class="byline"><span class="src">NVIDIA Blog</span> · 2026-07-15</p>
+  <a href="https://www.producthunt.com/products/manta-ai" target="_blank" rel="noopener">
+    <h3>Manta AI deploys autonomous agents for web app testing</h3>
+    <p>Give Manta AI a URL and it explores your app like a real user — mapping flows, finding bugs, and generating self-healing test cases from plain English. Runs locally for testing behind firewalls.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-17</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://x.com/OpenAI/status/2077446718728425686" target="_blank" rel="noopener">
-    <h3>OpenAI launches GPT-Red, an automated red-teaming tool for prompt injections</h3>
-    <p>OpenAI released GPT-Red, an automated red-teamer that finds prompt injection vulnerabilities at scale, with GPT-5.6 Sol showing 6x fewer failures against strong attacks after training against it.</p>
-    <p class="byline"><span class="src">OpenAI</span> · 2026-07-15</p>
+  <a href="https://www.producthunt.com/products/bond-12" target="_blank" rel="noopener">
+    <h3>Bond turns the to-do list into a self-managing AI chief of staff</h3>
+    <p>Bond connects to your tools, learns company workflows, and transforms scattered tasks into a self-managing list that can draft follow-ups, create action items, and delegate. Topped Product Hunt with 188 upvotes.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-16</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://x.com/AnthropicAI/status/2077452646303006927" target="_blank" rel="noopener">
-    <h3>Anthropic publishes research on agentic misalignment in autonomous agents</h3>
-    <p>Anthropic identified four additional ways autonomous AI agents can misbehave in simulations, following up on earlier blackmail experiments and highlighting the growing need for agent safety frameworks.</p>
-    <p class="byline"><span class="src">AnthropicAI</span> · 2026-07-15</p>
+  <a href="https://www.producthunt.com/products/graft-ai" target="_blank" rel="noopener">
+    <h3>Graft AI maps enterprise workflows into agent-callable tools</h3>
+    <p>Graft AI learns how work gets done across legacy apps and screen-based workflows, then exposes stable agent-callable APIs with permissions, approvals, and audit trails. Automatically detects and repairs UI drift.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-17</p>
   </a>
 </article>
 
@@ -306,415 +157,67 @@ Whether the Bose-powered Crusher 1080 ANC will finally lift Skullcandy out of it
     <div class="sections">
       <section class="section">
   <div class="section-head">
-    <h2>Research &amp; Papers</h2>
-    <span class="line"></span>
-    <span class="n">05</span>
-  </div>
-  <a href="https://arxiv.org/abs/2607.13034" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research_2026-07-16.jpg" alt="" class="section-hero-img"><h4 class="hero-title">E3 framework estimates task complexity, cutting AI agent costs by 85%</h4></a>
-  <div class="section-grid">
-<article class="item">
-  <a href="https://arxiv.org/abs/2607.13034" target="_blank" rel="noopener">
-    <h4>E3 framework estimates task complexity, cutting AI agent costs by 85%</h4>
-    <p>The E3 framework estimates task complexity upfront and executes minimal viable paths, matching baselines on MSE-Bench while cutting cost by 85%, tokens by 91%, and inspected files by 92%.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://arxiv.org/abs/2607.13013" target="_blank" rel="noopener">
-    <h4>Audio-native speech recognition with frozen 26B DiffusionGemma language model</h4>
-    <p>An audio-native interface paired with Whisper encoder and lightweight adapters achieves 6.6% WER on LibriSpeech test-clean, supporting multiple languages while training only 0.16% of backbone parameters.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://arxiv.org/abs/2607.12985" target="_blank" rel="noopener">
-    <h4>Resist and Update: CRC clamp makes LLMs incentive-compatible</h4>
-    <p>A low-rank CRC clamp renders LLM outputs invariant to forbidden influences while remaining responsive to licensed evidence, achieving near-perfect resist-and-update performance on Bayesian witness benchmarks with strong cross-model transfer.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://huggingface.co/papers/2607.11886" target="_blank" rel="noopener">
-    <h4>SpectraReward repurposes MLLMs as zero-shot reward models for text-to-image generation</h4>
-    <p>SpectraReward uses pretrained MLLMs as training-free zero-shot reward models for text-to-image RL by measuring prompt recoverability from generated images, consistently improving diffusion model performance.</p>
-    <p class="byline"><span class="src">Hugging Face</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://huggingface.co/papers/2607.12463" target="_blank" rel="noopener">
-    <h4>Function-aware fill-in-the-middle training for coding agent foundation models</h4>
-    <p>Function-aware FIM mid-training on code corpora improves coding agents' handling of tool returns and action-observation loops, yielding gains on SWE-Bench while reducing capability erosion on other benchmarks.</p>
-    <p class="byline"><span class="src">Hugging Face</span> · 2026-07-15</p>
-  </a>
-</article>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <h2>Hardware &amp; Robotics</h2>
-    <span class="line"></span>
-    <span class="n">05</span>
-  </div>
-  <a href="https://www.hpcwire.com/aiwire/2026/07/15/metas-custom-ai-chip-could-redefine-the-economics-of-ai/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_hardware_2026-07-16.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Meta's custom Iris AI chip to begin manufacturing in September 2026</h4></a>
-  <div class="section-grid">
-<article class="item">
-  <a href="https://www.hpcwire.com/aiwire/2026/07/15/metas-custom-ai-chip-could-redefine-the-economics-of-ai/" target="_blank" rel="noopener">
-    <h4>Meta's custom Iris AI chip to begin manufacturing in September 2026</h4>
-    <p>Meta announced its Iris AI accelerator will begin production in September 2026 as part of the MTIA project, targeting 14 GW of computing capacity by 2027 to reduce reliance on external GPU suppliers.</p>
-    <p class="byline"><span class="src">HPCwire</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.limxdynamics.com/en/news/BK000066" target="_blank" rel="noopener">
-    <h4>LimX Dynamics updates COSA 0.5 agentic OS for humanoid robots</h4>
-    <p>LimX Dynamics updated its COSA 0.5 operating system for humanoid robots, advancing autonomous capabilities for full-size models with complex task demonstrations without teleoperation.</p>
-    <p class="byline"><span class="src">LimX Dynamics</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.forbes.com/sites/karlfreund/2026/07/15/cadence-automates-pcb-design-with-ai-super-agents/" target="_blank" rel="noopener">
-    <h4>Cadence launches AuraStack AI Super Agent for PCB and advanced packaging design</h4>
-    <p>Cadence's AuraStack automates PCB and advanced packaging design for AI accelerators, claiming 2x faster time-to-market, 15x productivity boost, and early multiphysics co-optimization.</p>
-    <p class="byline"><span class="src">Forbes</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://macdailynews.com/2026/07/15/apple-reportedly-pursuing-ai-chip-company-acquisitions/" target="_blank" rel="noopener">
-    <h4>Apple reportedly pursuing AI chip company acquisitions for server silicon</h4>
-    <p>Apple is approaching AI chip startups for potential acquisitions to accelerate server silicon, including the delayed Baltra AI ASIC for cloud workloads, as M-series chips prove insufficient for advanced AI models.</p>
-    <p class="byline"><span class="src">MacDailyNews</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://wccftech.com/samsung-reportedly-lands-anthropic-as-foundry-customer-looking-to-reverse-its-chip-deficit-with-2nm-ai-orders/" target="_blank" rel="noopener">
-    <h4>Samsung reportedly lands Anthropic as foundry customer for 2nm AI chips</h4>
-    <p>Samsung has reportedly secured a contract to manufacture Anthropic's custom AI chips using its 2nm Gate-All-Around process with advanced packaging, giving Samsung Foundry a marquee AI customer.</p>
-    <p class="byline"><span class="src">WCCFTech</span> · 2026-07-14</p>
-  </a>
-</article>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
     <h2>Tools &amp; Startups</h2>
     <span class="line"></span>
     <span class="n">05</span>
   </div>
-  <a href="https://news.ycombinator.com/item?id=48811644" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools_2026-07-16.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Ternlight ships a 7MB embedding model running entirely in-browser via WASM</h4></a>
-  <div class="section-grid">
-<article class="item">
-  <a href="https://news.ycombinator.com/item?id=48811644" target="_blank" rel="noopener">
-    <h4>Ternlight ships a 7MB embedding model running entirely in-browser via WASM</h4>
-    <p>An ultra-compact embedding model (7 MB) that runs entirely in-browser via WASM, enabling local semantic search and vector embeddings without any server or API call. 260 points on Hacker News.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-16</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.producthunt.com/products/tiptap/launches/tiptap-ai-toolkit-2" target="_blank" rel="noopener">
-    <h4>Tiptap launches AI Toolkit for rich-text document editing by agents</h4>
-    <p>A production-ready beta empowering AI agents to directly edit rich-text documents in real time within collaborative editors. Launched with 100 free lifetime licenses.</p>
-    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.producthunt.com/products/agently" target="_blank" rel="noopener">
-    <h4>Agently brings AI agent platform with 100+ connectors to market</h4>
-    <p>An autonomous AI platform integrating 100+ connectors across the company stack into one persistent brain for end-to-end work handling. Ranked #4 on Product Hunt.</p>
-    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://news.ycombinator.com/item?id=48923275" target="_blank" rel="noopener">
-    <h4>Lineation offers a unified security control plane for all AI agents</h4>
-    <p>A first-of-its-kind security control plane monitoring and governing all AI agents across an organization from a single dashboard.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-16</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://news.ycombinator.com/item?id=48892859" target="_blank" rel="noopener">
-    <h4>Clawk provides disposable Linux VMs for AI coding agents</h4>
-    <p>Isolated, disposable Linux VMs for AI coding agents instead of running directly on the developer's machine, solving sandboxing and safety concerns.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-16</p>
-  </a>
-</article>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <h2>Money &amp; Markets</h2>
-    <span class="line"></span>
-    <span class="n">04</span>
-  </div>
-  <a href="https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_money_2026-07-16.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Oak raises $60M seed to fix AI-native identity and access management</h4></a>
-  <div class="section-grid">
-<article class="item">
-  <a href="https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/" target="_blank" rel="noopener">
-    <h4>Oak raises $60M seed to fix AI-native identity and access management</h4>
-    <p>Oak steps out of stealth with $60M seed co-led by Accel, CRV, and Greylock, building AI-native unified IAM for both humans and AI agents.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.alleywatch.com/2026/07/the-alleywatch-startup-daily-funding-report-7-15-2026" target="_blank" rel="noopener">
-    <h4>InstaLILY AI raises $60M Series B for autonomous AI engineering</h4>
-    <p>The company deploys autonomous forward-deployed AI engineers. Series B led by Energize Capital, with Insight Partners, Home Depot Ventures, and United Rentals. Total funding ~$100M.</p>
-    <p class="byline"><span class="src">AlleyWatch</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/" target="_blank" rel="noopener">
-    <h4>Rime raises $24M Series A for voice AI on enterprise customer calls</h4>
-    <p>Voice AI models trained on proprietary conversational data for enterprise support and sales calls. Series A led by M13 Ventures, with Twilio Ventures, Corazon Capital, and Unusual Ventures.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-15</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://techcrunch.com/2026/07/15/hinge-founder-raises-18m-for-ai-dating-service-overtone/" target="_blank" rel="noopener">
-    <h4>Overtone raises $18M for AI dating service from Hinge founder</h4>
-    <p>The Hinge founder's new AI dating venture raises $18M to build an AI-powered matchmaking platform.</p>
-    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-15</p>
-  </a>
-</article>
-
-  </div>
-</section>
-
-    </div>
-
-    <div class="trending-wrap">
-  <div class="trending-col">
-    <div class="t-head">
-      <h1 class="t-title">Repos on GitHub</h1>
-      <div class="t-line"></div>
-      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
-    </div>
-    <ul class="t-list">
-      <li>
-  <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#01</span>
-    <span class="t-name">addyosmani/agent-skills</span>
-    <span class="t-meta">JavaScript · 77,040 ★ · +1,116 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#02</span>
-    <span class="t-name">mattpocock/skills</span>
-    <span class="t-meta">Shell · 165,055 ★ · +1,712 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
-    <span class="t-ranking">#03</span>
-    <span class="t-name">obra/superpowers</span>
-    <span class="t-meta">Shell · 252,027 ★ · +1,013 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
-    <span class="t-name">wonderwhy-er/DesktopCommanderMCP</span>
-    <span class="t-meta">TypeScript · 7,549 ★ · +328 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/oven-sh/bun" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
-    <span class="t-name">oven-sh/bun</span>
-    <span class="t-meta">Rust · 94,432 ★ · +209 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/microsoft/TypeScript" target="_blank" rel="noopener">
-    <span class="t-ranking">#06</span>
-    <span class="t-name">microsoft/TypeScript</span>
-    <span class="t-meta">TypeScript · 109,838 ★ · +177 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/tailscale/tailscale" target="_blank" rel="noopener">
-    <span class="t-ranking">#07</span>
-    <span class="t-name">tailscale/tailscale</span>
-    <span class="t-meta">Go · 33,769 ★ · +143 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">
-    <span class="t-ranking">#08</span>
-    <span class="t-name">TencentCloud/TencentDB-Agent-Memory</span>
-    <span class="t-meta">TypeScript · 8,354 ★ · +123 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/davila7/claude-code-templates" target="_blank" rel="noopener">
-    <span class="t-ranking">#09</span>
-    <span class="t-name">davila7/claude-code-templates</span>
-    <span class="t-meta">Python · 28,836 ★ · +118 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#10</span>
-    <span class="t-name">google-labs-code/stitch-skills</span>
-    <span class="t-meta">TypeScript · 6,857 ★ · +117 today</span>
-  </a>
-</li>
-
-    </ul>
-  </div>
   
-  <div class="trending-col">
-    <div class="t-head">
-      <h1 class="t-title">Trending on HF</h1>
-      <div class="t-line"></div>
-      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
-    </div>
-    <ul class="t-list">
-      <li>
-  <a href="https://huggingface.co/thinkingmachines/Inkling" target="_blank" rel="noopener">
-    <span class="t-ranking">#01</span>
-    <span class="t-name">thinkingmachines/Inkling</span>
-    <span class="t-meta">975B MoE, 41B active, multimodal, 1M context</span>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.producthunt.com/products/river-9" target="_blank" rel="noopener">
+    <h4>River deploys voice-AI account executives to close B2B deals</h4>
+    <p>River's voice-AI agents join live calls the moment a lead inquires, run product demos, handle objections, and close deals. Backed by founders of Ramp, Kalshi, and Lean.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-17</p>
   </a>
-</li>
+</article>
 
-<li>
-  <a href="https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf" target="_blank" rel="noopener">
-    <span class="t-ranking">#02</span>
-    <span class="t-name">prism-ml/Ternary-Bonsai-27B-gguf</span>
-    <span class="t-meta">27B ternary-precision GGUF model</span>
+<article class="item">
+  <a href="https://www.producthunt.com/products/tencent-edgeone-2" target="_blank" rel="noopener">
+    <h4>Tencent EdgeOne lets developers deploy AI agents at the edge</h4>
+    <p>Tencent EdgeOne Makers treats AI agent deployment like shipping a web app, leveraging Tencent's global edge network for low-latency inference. Reached 164 upvotes on Product Hunt.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-16</p>
   </a>
-</li>
+</article>
 
-<li>
-  <a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF" target="_blank" rel="noopener">
-    <span class="t-ranking">#03</span>
-    <span class="t-name">empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF</span>
-    <span class="t-meta">9B GGUF with 1M context window</span>
+<article class="item">
+  <a href="https://www.producthunt.com/products/nitrosend" target="_blank" rel="noopener">
+    <h4>Nitrosend builds email infrastructure for AI agents</h4>
+    <p>Nitrosend gives AI agents their own email layer: agents can sign up for accounts, send emails, and reply autonomously, enabling fully automated email-based workflows.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-17</p>
   </a>
-</li>
+</article>
 
-<li>
-  <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
-    <span class="t-name">zai-org/GLM-5.2</span>
-    <span class="t-meta">GLM 5.2 language model</span>
+<article class="item">
+  <a href="https://github.com/ratel-ai/ratel" target="_blank" rel="noopener">
+    <h4>Ratel gives agents unlimited tools without context bloat</h4>
+    <p>Open-source framework that lets AI agents access unlimited external tools and skills dynamically, without consuming context window tokens. Launched as a Show HN on Hacker News.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-07-17</p>
   </a>
-</li>
+</article>
 
-<li>
-  <a href="https://huggingface.co/prism-ml/Bonsai-27B-gguf" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
-    <span class="t-name">prism-ml/Bonsai-27B-gguf</span>
-    <span class="t-meta">27B GGUF quantized model</span>
+<article class="item">
+  <a href="https://www.producthunt.com/products/albato" target="_blank" rel="noopener">
+    <h4>Albato connects AI-driven workflows across 1,000+ apps</h4>
+    <p>No-code automation platform that connects over 1,000 apps and lets users build complex branching workflows by chatting with an AI Copilot or deploying agents in natural language.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-07-17</p>
   </a>
-</li>
+</article>
 
-<li>
-  <a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B" target="_blank" rel="noopener">
-    <span class="t-ranking">#06</span>
-    <span class="t-name">bottlecapai/ThinkingCap-Qwen3.6-27B</span>
-    <span class="t-meta">27B model based on Qwen3.6</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener">
-    <span class="t-ranking">#07</span>
-    <span class="t-name">tencent/Hy3</span>
-    <span class="t-meta">Tencent Hy3 language model</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://huggingface.co/conradlocke/krea2-identity-edit" target="_blank" rel="noopener">
-    <span class="t-ranking">#08</span>
-    <span class="t-name">conradlocke/krea2-identity-edit</span>
-    <span class="t-meta">Identity editing / image manipulation model</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize" target="_blank" rel="noopener">
-    <span class="t-ranking">#09</span>
-    <span class="t-name">OpenMOSS-Team/MOSS-Transcribe-Diarize</span>
-    <span class="t-meta">Speech transcription and diarization model</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF" target="_blank" rel="noopener">
-    <span class="t-ranking">#10</span>
-    <span class="t-name">GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF</span>
-    <span class="t-meta">1B MiniCPM5 GGUF variant</span>
-  </a>
-</li>
-
-    </ul>
   </div>
-</div>
+</section>
 
+    </div>
+
+    
 
     <section class="inbrief">
   <div class="section-head">
     <h2>In Brief</h2>
     <span class="line"></span>
-    <span class="n">12</span>
+    <span class="n">01</span>
   </div>
   <ul class="qh-list">
-    <li><a href="https://www.youtube.com/watch?v=MDy_b9F7oUc" target="_blank" rel="noopener"><span class="qh-title">OpenAI launches ChatGPT 5.6 as a unified platform merging ChatGPT, Codex, Browser, and Work</span><span class="qh-src">YouTube — Matt Wolfe</span></a></li>
-
-    <li><a href="https://x.com/NousResearch/status/2077517417425543632" target="_blank" rel="noopener"><span class="qh-title">Nous Research announces winners of open-model agent safety competition</span><span class="qh-src">@NousResearch</span></a></li>
-
-    <li><a href="https://x.com/omarsar0/status/2077418921536410080" target="_blank" rel="noopener"><span class="qh-title">Microsoft and collaborators introduce OAT, a lightweight attributor for debugging AI agent failures</span><span class="qh-src">omarsar0</span></a></li>
-
-    <li><a href="https://x.com/GoogleDeepMind/status/2077372568143642972" target="_blank" rel="noopener"><span class="qh-title">Google DeepMind publishes on AI agents and the validation bottleneck in scientific discovery</span><span class="qh-src">GoogleDeepMind</span></a></li>
-
-    <li><a href="https://x.com/DeepLearningAI/status/2077415530965676236" target="_blank" rel="noopener"><span class="qh-title">DeepLearning.AI and Cerebras launch short course on fast LLM inference</span><span class="qh-src">DeepLearningAI</span></a></li>
-
-    <li><a href="https://x.com/omarsar0/status/2077413699225088245" target="_blank" rel="noopener"><span class="qh-title">Emergent Platform enables non-technical founders to build operational software with AI, $100K prize pool</span><span class="qh-src">omarsar0</span></a></li>
-
-    <li><a href="https://arxiv.org/abs/2607.12893" target="_blank" rel="noopener"><span class="qh-title">MemOps benchmarks LLM long-term memory via lifecycle operations, finds current systems unreliable</span><span class="qh-src">arXiv</span></a></li>
-
-    <li><a href="https://arxiv.org/abs/2607.12886" target="_blank" rel="noopener"><span class="qh-title">Pythia multi-agent system detects clinical symptoms from notes without fine-tuning</span><span class="qh-src">arXiv</span></a></li>
-
-    <li><a href="https://huggingface.co/papers/2607.10400" target="_blank" rel="noopener"><span class="qh-title">SynthDocBench offers controlled benchmark for long-context visual document understanding</span><span class="qh-src">Hugging Face</span></a></li>
-
-    <li><a href="https://huggingface.co/papers/2607.08168" target="_blank" rel="noopener"><span class="qh-title">MuScriptor: an open model for multi-instrument music transcription from real-world mixes</span><span class="qh-src">Hugging Face</span></a></li>
-
-    <li><a href="https://www.taipeitimes.com/News/biz/archives/2026/07/14/2003860683" target="_blank" rel="noopener"><span class="qh-title">TSMC posts record Q2 revenue of $39.5B, up 36% YoY on AI chip demand</span><span class="qh-src">Taipei Times</span></a></li>
-
-    <li><a href="https://viterbischool.usc.edu/news/2026/07/usc-advances-humanoid-robotics-robot-learning-and-3d-manipulation-at-rss-2026/" target="_blank" rel="noopener"><span class="qh-title">USC advances humanoid robotics and robot learning with three papers at RSS 2026</span><span class="qh-src">USC Viterbi</span></a></li>
+    <li><a href="https://www.ai4business.it/intelligenza-artificiale/nascono-due-comitati-per-sviluppare-un-modello-di-assessment-continuo-dellai/" target="_blank" rel="noopener"><span class="qh-title">Codema launches two technical committees for continuous AI assessment standards</span><span class="qh-src">AI4Business</span></a></li>
 
   </ul>
 </section>
@@ -722,69 +225,10 @@ Whether the Bose-powered Crusher 1080 ANC will finally lift Skullcandy out of it
 
     <footer class="colophon">
       <p class="mark">Per aspera ad astra</p>
-      <p class="meta">Compiled by Hermes Agent · 2026-07-16 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Compiled by Hermes Agent · 2026-07-17 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
     </footer>
 
   </div>
-
-<script>
-(function() {
-  function togglePodcast(btn) {
-    var pill = btn.closest('.podcast-pill');
-    if (!pill) return;
-    var audio = pill.querySelector('.pill-audio');
-    if (!audio) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-
-    if (pill.classList.contains('is-playing')) {
-      audio.pause();
-      pill.classList.remove('is-playing');
-      pill.classList.add('is-paused');
-    } else {
-      // Pause any other playing podcast on the page
-      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
-        if (p !== pill) {
-          p.querySelector('.pill-audio').pause();
-          p.classList.remove('is-playing', 'is-paused');
-        }
-      });
-      audio.play().then(function() {
-        pill.classList.add('is-playing');
-        pill.classList.remove('is-paused');
-      }).catch(function() {
-        // Autoplay blocked — do nothing gracefully
-      });
-    }
-  }
-
-  // Update progress bar during playback
-  document.addEventListener('timeupdate', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-    if (audio.duration) {
-      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
-    }
-  }, true);
-
-  // When audio ends, reset
-  document.addEventListener('ended', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    pill.classList.remove('is-playing', 'is-paused');
-    if (bar) bar.style.width = '0%';
-  }, true);
-
-  window.togglePodcast = togglePodcast;
-})();
-</script>
 <div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
 <script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
 </html>
