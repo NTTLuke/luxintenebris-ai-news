@@ -1,27 +1,164 @@
 {
-  "issue_no": 20,
+  "issue_no": 19,
   "date_iso": "2026-07-17",
   "date_human": "July 17, 2026",
-  "notice": "Light news day — fewer fresh items than usual. Most scouts returned empty across research, official announcements, X/Twitter, tools, funding, hardware, and Italy beats.",
+  "notice": null,
   "lead": {
-    "kicker": "Anthropic Research",
-    "title": "Anthropic research paper reveals key findings on AI coding assistance",
-    "summary": "Two Minute Papers covers Anthropic's latest research on AI assistance and coding skills, highlighting what Claude reveals about AI's fundamental limitations in software development. The paper offers insights into where models excel and where human developers remain essential.",
-    "source": "YouTube — Two Minute Papers",
+    "kicker": "Open Frontier Intelligence",
+    "title": "Moonshot AI Releases Kimi K3: World's First Open 3T-Class Frontier Model",
+    "summary": "Moonshot AI unveiled Kimi K3, the world's first openly available 3-trillion-parameter model, achieving frontier performance across coding, knowledge work, and reasoning with native multimodality and a 1M-token context window. The release marks a watershed moment for open-weight AI, proving that frontier-scale intelligence can be open-sourced without sacrificing capability.",
+    "source": "Kimi (Moonshot AI)",
     "date": "2026-07-16",
-    "url": "https://www.youtube.com/watch?v=axOcn--n_lM"
+    "url": "https://www.kimi.com/blog/kimi-k3"
   },
-  "top_stories": [],
+  "top_stories": [
+    {
+      "title": "Fireworks Raises $1.5B Series D at $17.5B Valuation for Specialized AI Infrastructure",
+      "summary": "Fireworks AI closed a $1.505 billion Series D led by Atreides Management, Index Ventures, and TCV, pushing its valuation to $17.5 billion. The company surpassed $1B ARR running specialized inference on open models, serving customers including major AI labs on NVIDIA Blackwell infrastructure.",
+      "source": "TechStartups",
+      "date": "2026-07-16",
+      "url": "https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/"
+    },
+    {
+      "title": "Elorian AI Raises $55M Seed at $300M Valuation for Visual Frontier Models",
+      "summary": "Former DeepMind researcher Andrew Dai's visual AI startup Elorian raised a $55 million seed round at a $300 million pre-product valuation, led by NVIDIA and Menlo Ventures. The unusual valuation and strategic investor lineup signal intense demand for visual AGI capabilities.",
+      "source": "TechCrunch",
+      "date": "2026-07-16",
+      "url": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/"
+    },
+    {
+      "title": "LM Studio Launches Bionic: An AI Agent Purpose-Built for Open Models",
+      "summary": "LM Studio released Bionic, an AI agent designed specifically for open-weight models with voice input, local voice transcription, flexible execution across local hardware, LM Link, or LM Studio Secure Cloud, and a companion iPhone app.",
+      "source": "LM Studio",
+      "date": "2026-07-16",
+      "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic"
+    },
+    {
+      "title": "NVIDIA and Japan Bring Full-Stack AI and Robotics to Every Industry",
+      "summary": "NVIDIA and its Japanese partners showcased the latest AI ecosystem advancements across manufacturing, robotics, infrastructure, and gaming, with Japanese companies building across the full NVIDIA technology stack.",
+      "source": "NVIDIA Blog",
+      "date": "2026-07-15",
+      "url": "https://blogs.nvidia.com/blog/japan-ecosystem-2026/"
+    }
+  ],
   "sections": [
     {
-      "title": "YouTube & Video",
+      "title": "Research & Papers",
       "items": [
         {
-          "title": "GPT-5.6 Sol outperforms in Claude Code over Anthropic's own Codex",
-          "summary": "Developer Theo reports that OpenAI's GPT-5.6 Sol model performs significantly better when used inside Claude Code than Anthropic's own Codex, suggesting interesting cross-model optimization dynamics and raising questions about model-IDE compatibility.",
-          "source": "YouTube — Theo - t3.gg",
+          "title": "Ring-Zero Scales Zero RL to a Trillion Parameters for Emergent Reasoning",
+          "summary": "Reinforcement learning with verifiable rewards — without human-annotated data — is scaled to a trillion-parameter model, eliciting emergent chain-of-thought reasoning at unprecedented scale.",
+          "source": "arXiv",
           "date": "2026-07-16",
-          "url": "https://www.youtube.com/watch?v=Noo0NWD0gHU"
+          "url": "https://arxiv.org/abs/2607.12395"
+        },
+        {
+          "title": "DeepLoop: Scaling Depth for Looped Transformers Without Adding Parameters",
+          "summary": "A method to scale the unrolled depth of looped transformers without increasing stored parameters, analyzing the residual-scaling problem unique to tied-parameter architectures.",
+          "source": "arXiv",
+          "date": "2026-07-16",
+          "url": "https://arxiv.org/abs/2607.13491"
+        },
+        {
+          "title": "Byte-Exact KV-Cache Grafting Turns a Frozen Small Model Into a Verified-Knowledge Flywheel",
+          "summary": "A frozen small LM is made more capable and cheaper by grafting byte-exact KV-cache states from verified knowledge, preserving bit-exact logit reproduction under deterministic inference.",
+          "source": "arXiv",
+          "date": "2026-07-16",
+          "url": "https://arxiv.org/abs/2607.14431"
+        },
+        {
+          "title": "Discrete Diffusion Models: A Unified Framework from Tokenization to Generation",
+          "summary": "A unified framework for discrete denoising diffusion models offering parallel generation and iterative global refinement as an alternative to autoregressive modeling for discrete data.",
+          "source": "arXiv",
+          "date": "2026-07-16",
+          "url": "https://arxiv.org/abs/2607.13431"
+        },
+        {
+          "title": "Length Penalties Make Chain-of-Thought Less Monitorable",
+          "summary": "Length-penalized RL can shorten CoT reasoning while hiding misleading hints that still steer the model's answer, raising safety concerns about CoT monitoring under efficiency constraints.",
+          "source": "arXiv",
+          "date": "2026-07-16",
+          "url": "https://arxiv.org/abs/2607.09786"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Forall: Spec-Driven AI Coding With Formal Verification",
+          "summary": "An AI coding agent that generates machine-checkable proofs alongside code, combining LLM code generation with formal verification to guarantee correctness.",
+          "source": "GitHub",
+          "date": "2026-07-17",
+          "url": "https://github.com/astrio-labs/forall"
+        },
+        {
+          "title": "ReasonGate: Explainable Gate That Blocks LLM Prompt Injection",
+          "summary": "An open-source explainable inference gate that detects and blocks prompt injection attacks on LLMs, providing a lightweight security layer for AI applications.",
+          "source": "GitHub",
+          "date": "2026-07-16",
+          "url": "https://github.com/cgrtml/reasongate"
+        },
+        {
+          "title": "Libretto Launches Debug Agents That Automatically Fix Failing Playwright Scripts",
+          "summary": "Debug agents that automatically diagnose and fix failing Playwright test scripts in CI/CD pipelines, reducing manual test maintenance for frontend teams.",
+          "source": "Libretto",
+          "date": "2026-07-16",
+          "url": "https://libretto.sh/debug-agents"
+        },
+        {
+          "title": "UIUC Open-Sources AI Teaching Assistant Platform",
+          "summary": "University of Illinois released an AI teaching assistant platform that helps instructors scale personalized feedback and tutoring using LLMs, built for educational contexts.",
+          "source": "GitHub",
+          "date": "2026-07-17",
+          "url": "https://github.com/Center-for-AI-Innovation/ai-teaching-assistant-uiuc"
+        },
+        {
+          "title": "Sentinel: Open-Source QA Agent That Reads Your Code Before It Clicks",
+          "summary": "A QA automation agent that analyzes your application's source code to understand UI structure, then writes and executes end-to-end tests more intelligently.",
+          "source": "SimbaStack",
+          "date": "2026-07-16",
+          "url": "https://blog.simbastack.com/announcing-sentinel/"
+        }
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "Fora Raises $60M Series D at $1B Valuation for AI-Augmented Travel Platform",
+          "summary": "Fora closed a $60 million Series D at a $1B valuation, led by Forerunner and Tactile Ventures. The AI-augmented travel advisor platform now serves 15,000+ active advisors with $3B+ in booked travel.",
+          "source": "TechStartups",
+          "date": "2026-07-16",
+          "url": "https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/"
+        },
+        {
+          "title": "Microagi Raises $55M Seed — Largest German Seed Round — for Industrial Robotics Data Layer",
+          "summary": "Munich-based Microagi raised a $55 million seed round (largest in German startup history) led by Hummingbird, building data infrastructure for physical AI and robot deployment.",
+          "source": "TechStartups",
+          "date": "2026-07-16",
+          "url": "https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/"
+        },
+        {
+          "title": "Sable Raises $45M for AI Employee and Customer-Facing Agent Platform",
+          "summary": "Sable raised $45 million led by Sequoia Capital and 8VC for its agent platform 'Aidan' that combines computer use, vision, and voice for live customer experiences. Customers include Notion and Decagon.",
+          "source": "TechStartups",
+          "date": "2026-07-16",
+          "url": "https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/"
+        },
+        {
+          "title": "Whale Raises $40M Series C3 Extension for Enterprise AI Operating System",
+          "summary": "Singapore-based Whale raised a $40 million Series C3 extension ($100M total Series C), led by CMB International and SMBC Asia Rising Fund, serving 800+ enterprise customers across Asia-Pacific and North America.",
+          "source": "TechStartups",
+          "date": "2026-07-16",
+          "url": "https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/"
+        },
+        {
+          "title": "Bunkerhill Health Raises $25M Series B for AI Agents Inside Hospital Operations",
+          "summary": "Bunkerhill Health raised $25 million Series B led by Khosla Ventures for its Carebricks platform that lets hospitals build AI agents for imaging, registry management, prior authorizations, and triage.",
+          "source": "TechStartups",
+          "date": "2026-07-16",
+          "url": "https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/"
         }
       ]
     }
@@ -32,15 +169,103 @@
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
       "date": "2026-07-17",
-      "items": []
+      "items": [
+        {"name": "apache/ossie", "url": "https://github.com/apache/ossie", "meta": "Python · 1.0k ★ · +60 today"},
+        {"name": "Nutlope/hallmark", "url": "https://github.com/Nutlope/hallmark", "meta": "CSS · 11.3k ★ · +3,372 today"},
+        {"name": "OpenCut-app/OpenCut", "url": "https://github.com/OpenCut-app/OpenCut", "meta": "TypeScript · 74.3k ★ · +3,537 today"},
+        {"name": "PostHog/posthog", "url": "https://github.com/PostHog/posthog", "meta": "Python · 35.9k ★ · +77 today"},
+        {"name": "openinterpreter/openinterpreter", "url": "https://github.com/openinterpreter/openinterpreter", "meta": "Rust · 66.1k ★ · +661 today"},
+        {"name": "PrismML-Eng/Bonsai-demo", "url": "https://github.com/PrismML-Eng/Bonsai-demo", "meta": "Shell · 1.6k ★ · +196 today"},
+        {"name": "hasaneyldrm/exercises-dataset", "url": "https://github.com/hasaneyldrm/exercises-dataset", "meta": "HTML · 15.2k ★ · +710 today"},
+        {"name": "Shubhamsaboo/awesome-llm-apps", "url": "https://github.com/Shubhamsaboo/awesome-llm-apps", "meta": "Python · 123.1k ★ · +923 today"},
+        {"name": "lobehub/lobehub", "url": "https://github.com/lobehub/lobehub", "meta": "TypeScript · 80.3k ★ · +71 today"},
+        {"name": "YimMenu/YimMenuV2", "url": "https://github.com/YimMenu/YimMenuV2", "meta": "C++ · 1.5k ★ · +128 today"},
+        {"name": "HKUDS/DeepTutor", "url": "https://github.com/HKUDS/DeepTutor", "meta": "Python · 27.0k ★ · +656 today"},
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 174.7k ★ · +2,060 today"},
+        {"name": "github/copilot-sdk", "url": "https://github.com/github/copilot-sdk", "meta": "Java · 9.7k ★ · +13 today"},
+        {"name": "ibelick/ui-skills", "url": "https://github.com/ibelick/ui-skills", "meta": "TypeScript · 4.4k ★ · +178 today"},
+        {"name": "Graphify-Labs/graphify", "url": "https://github.com/Graphify-Labs/graphify", "meta": "Python · 89.4k ★ · +1,107 today"}
+      ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
       "date": "2026-07-17",
-      "items": []
+      "items": [
+        {"name": "thinkingmachines/Inkling", "url": "https://huggingface.co/thinkingmachines/Inkling", "meta": "Image-text-to-text multimodal MoE, trending score 831"},
+        {"name": "prism-ml/Ternary-Bonsai-27B-gguf", "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf", "meta": "27B ternary 2-bit hybrid-attention, text-generation, trending score 603"},
+        {"name": "prism-ml/Bonsai-27B-gguf", "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf", "meta": "27B 1-bit quantized hybrid-attention, trending score 347"},
+        {"name": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF", "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF", "meta": "Image-text-to-text, 2M+ downloads, trending score 244"},
+        {"name": "zai-org/GLM-5.2", "url": "https://huggingface.co/zai-org/GLM-5.2", "meta": "Text-generation model, 4k likes, trending score 236"},
+        {"name": "bottlecapai/ThinkingCap-Qwen3.6-27B", "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B", "meta": "Image-text-to-text, 27B model, trending score 193"},
+        {"name": "conradlocke/krea2-identity-edit", "url": "https://huggingface.co/conradlocke/krea2-identity-edit", "meta": "Identity edit model, trending score 181"},
+        {"name": "tencent/Hy3", "url": "https://huggingface.co/tencent/Hy3", "meta": "Text-generation model, 814 likes, trending score 165"},
+        {"name": "OpenMOSS-Team/MOSS-Transcribe-Diarize", "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize", "meta": "Audio-text-to-text transcription/diarization, trending score 159"},
+        {"name": "empero-ai/Qwythos-9B-v2-GGUF", "url": "https://huggingface.co/empero-ai/Qwythos-9B-v2-GGUF", "meta": "Image-text-to-text, v2 GGUF, trending score 145"}
+      ]
     }
   },
-  "quick_hits": []
+  "quick_hits": [
+    {
+      "title": "Seltz Raises $12.5M Seed to Teach AI Agents How to Browse the Web",
+      "source": "StartupItalia",
+      "date": "2026-07-17",
+      "url": "https://startupitalia.eu/startup/la-nuova-sfida-del-manager-che-in-amazon-ha-sviluppato-il-motore-di-ricerca-di-alexa-oggi-insegno-agli-agenti-ai-come-surfare-sul-web/"
+    },
+    {
+      "title": "Nous: Give GTM Agents One Context Graph Across Your Tools",
+      "source": "GitHub",
+      "date": "2026-07-16",
+      "url": "https://github.com/NousC/opennous"
+    },
+    {
+      "title": "Scribe: CLI That Builds AI Agent Memory From Your Repos and Sessions",
+      "source": "Scribe",
+      "date": "2026-07-17",
+      "url": "https://getscribe.dev/"
+    },
+    {
+      "title": "AI Law Tracker: One Audited API for US, EU, and Global AI Regulation",
+      "source": "AI Law Tracker",
+      "date": "2026-07-16",
+      "url": "https://ai-law-tracker.com"
+    },
+    {
+      "title": "HeimWall: Catch Secrets Before You Paste Them Into Claude or Cursor",
+      "source": "HeimWall",
+      "date": "2026-07-16",
+      "url": "https://heimwall.ai/individual"
+    },
+    {
+      "title": "Democr.ai: Self-Hosted Agentic AI Runtime With Audit and RBAC",
+      "source": "GitHub",
+      "date": "2026-07-16",
+      "url": "https://github.com/democr-ai/democrai"
+    },
+    {
+      "title": "Open-Source AI App Builder You Can Embed Into Your Own SaaS",
+      "source": "GitHub",
+      "date": "2026-07-16",
+      "url": "https://github.com/totalumlabs/ai-app-builder-open"
+    },
+    {
+      "title": "Vektorgeist: Platform for AI Operators and Their Agents",
+      "source": "Vektorgeist",
+      "date": "2026-07-16",
+      "url": "https://vektorgeist.com/"
+    },
+    {
+      "title": "Lightport: Maintained Fork of Portkey AI Gateway",
+      "source": "GitHub",
+      "date": "2026-07-17",
+      "url": "https://github.com/glama-ai/lightport"
+    },
+    {
+      "title": "Beacon Security Raises $13M Seed for AI-Powered Agentic Cybersecurity",
+      "source": "TechStartups",
+      "date": "2026-07-16",
+      "url": "https://techstartups.com/2026/07/16/beacon-security-raises-13m-seed-to-build-ai-powered-agentic-cybersecurity-platform/"
+    }
+  ]
 }
