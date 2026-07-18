@@ -1,23 +1,25 @@
 {
-  "issue_no": 19,
-  "date_iso": "2026-07-17",
-  "date_human": "July 17, 2026",
+  "issue_no": 20,
+  "date_iso": "2026-07-18",
+  "date_human": "July 18, 2026",
   "notice": null,
   "lead": {
-    "kicker": "OpenAI diaspora",
-    "title": "Mira Murati’s Inkling borrows from DeepSeek and Kimi to build an open rival",
-    "summary": "It is not just another multimodal model. The former OpenAI CTO’s startup, Thinking Machines, released Inkling as fully open, trained partly on synthetic data from China’s Kimi and built with DeepSeek architectural ideas. The story matters because it inverts the usual narrative of Western labs setting the pace — and raises hard questions about what 'open' means when the training data crosses geopolitical lines.",
-    "source": "YouTube — Beyond AI News",
-    "date": "2026-07-16",
-    "url": "https://www.youtube.com/watch?v=46bnJaOAVF8"
+    "kicker": "Post-training economics",
+    "title": "Why NVIDIA thinks the agentic era is measured in intelligence per dollar",
+    "summary": "NVIDIA's Vera Rubin architecture is being pitched around a metric that sounds boring until you realize it decides which AI systems can actually afford to keep learning. The company is optimizing for post-training workloads \u2014 the continuous updates, feedback loops, and agentic tasks that dominate real-world deployment. It's a bet that raw model size is no longer the story; sustainable cost per useful token is.",
+    "source": "NVIDIA Blog",
+    "date": "2026-07-17",
+    "url": "https://blogs.nvidia.com/blog/nvidia-vera-rubin-post-training-intelligence-per-dollar/",
+    "scout_source": "hardware"
   },
   "top_stories": [
     {
-      "title": "Moonshot ships the first open 3T-class model",
-      "summary": "Kimi K3 claims frontier-level coding, reasoning, and knowledge work with a one-million-token context window and native multimodality — all released as open frontier intelligence.",
-      "source": "Kimi (Moonshot AI)",
-      "date": "2026-07-16",
-      "url": "https://www.kimi.com/blog/kimi-k3"
+      "title": "Databricks' $188B valuation says the AI infrastructure boom still has room to run",
+      "summary": "A roughly $3 billion funding round led by Coatue pushed Databricks to a $188 billion valuation, doubling down on the idea that data and compute platforms are the indispensable layer beneath every enterprise AI deployment.",
+      "source": "TechCrunch",
+      "date": "2026-07-17",
+      "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+      "scout_source": "funding"
     }
   ],
   "sections": [
@@ -25,25 +27,20 @@
       "title": "Deep Dives",
       "items": [
         {
-          "title": "Reinforcement learning hits a trillion parameters with no human labels",
-          "summary": "Ring-Zero scales zero-RL — verifiable rewards without annotated data — to a trillion-parameter model, eliciting emergent chain-of-thought reasoning at a scale that challenges the assumption human feedback is required for the next leap.",
+          "title": "LongStraw stretches reinforcement learning to 2 million tokens without breaking the GPU budget",
+          "summary": "Most RL post-training hits a wall when context grows; LongStraw rethinks the execution stack so it doesn't have to. By decoupling attention from GPU memory through recomputation and ring-based parallelism, it makes million-token RL feasible on fixed hardware.",
           "source": "arXiv",
-          "date": "2026-07-16",
-          "url": "https://arxiv.org/abs/2607.12395"
+          "date": "2026-07-17",
+          "url": "https://arxiv.org/abs/2607.14952",
+          "scout_source": "research"
         },
         {
-          "title": "DeepLoop makes looped transformers deeper without making them larger",
-          "summary": "The paper attacks a subtle problem in tied-parameter architectures: how to unroll more depth without extra stored weights. The fix could make recurrent-style transformers competitive again.",
+          "title": "Branching Policy Optimization turns deterministic sandboxes into a training superpower for language agents",
+          "summary": "PPO and GRPO treat each trajectory as an independent roll of the dice; BPO branches from a single snapshot, making every experiment a controlled variable. The result is 3.6 to 6.1 point gains on WebShop, ALFWorld, and SWE-bench Verified at the same compute.",
           "source": "arXiv",
-          "date": "2026-07-16",
-          "url": "https://arxiv.org/abs/2607.13491"
-        },
-        {
-          "title": "A frozen small model can get smarter and cheaper by grafting verified memory",
-          "summary": "The technique copies byte-exact KV-cache states from verified knowledge into a small LM, preserving deterministic outputs while expanding what the model 'knows' without retraining.",
-          "source": "arXiv",
-          "date": "2026-07-16",
-          "url": "https://arxiv.org/abs/2607.14431"
+          "date": "2026-07-17",
+          "url": "https://arxiv.org/abs/2607.14171",
+          "scout_source": "research"
         }
       ]
     },
@@ -51,18 +48,20 @@
       "title": "Open Pulse",
       "items": [
         {
-          "title": "LM Studio Bionic is an AI agent built for open models",
-          "summary": "Bionic adds voice input, local transcription, flexible execution across local and cloud endpoints, and a new iPhone app — a bet that open-model agents can be as polished as closed ones.",
-          "source": "LM Studio",
-          "date": "2026-07-16",
-          "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic"
+          "title": "Topcoat wants to be Rust's missing full-stack framework",
+          "summary": "The Tokio team released Topcoat, combining server-side rendering, client-side hydration, and integrated tooling. For a language known for systems work but with a fragmented web ecosystem, it's a credible attempt to make Rust a viable full-stack choice.",
+          "source": "GitHub",
+          "date": "2026-07-17",
+          "url": "https://github.com/tokio-rs/topcoat",
+          "scout_source": "tools"
         },
         {
-          "title": "Ratel lets agents load unlimited skills while keeping context small",
-          "summary": "The open framework lets agents dynamically load skills and tools while keeping context windows manageable, addressing one of the practical limits on agent complexity.",
-          "source": "GitHub",
-          "date": "2026-07-16",
-          "url": "https://github.com/ratel-ai/ratel"
+          "title": "Capital One open-sources VulnHunter to let agents hunt their own bugs",
+          "summary": "VulnHunter is an agentic AI system that finds and fixes security vulnerabilities in code. Coming from a heavily regulated financial institution, it's notable both as a security tool and as a signal that enterprise AI agents are being trusted with increasingly critical tasks.",
+          "source": "Capital One",
+          "date": "2026-07-17",
+          "url": "https://www.capitalone.com/tech/open-source/announcing-vulnhunter/",
+          "scout_source": "tools"
         }
       ]
     },
@@ -70,18 +69,20 @@
       "title": "The Edge",
       "items": [
         {
-          "title": "Fireworks AI closes a $1.5B Series D on open-weight inference",
-          "summary": "The specialized AI infrastructure company passed $1B ARR, with Atreides, Index, TCV, and NVIDIA backing a bet that open-weight inference can support enterprise intelligence.",
-          "source": "TechStartups",
-          "date": "2026-07-16",
-          "url": "https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/"
+          "title": "Anthropic and Blackstone's $1.5B venture bets implementation is the next trillion-dollar AI layer",
+          "summary": "Anthropic has joined Blackstone, Hellman & Friedman, and Goldman Sachs to launch Ode, a $1.5 billion company focused on AI implementation. The thesis is that the real value is no longer in building models but in deploying them reliably inside enterprises.",
+          "source": "TechCrunch",
+          "date": "2026-07-15",
+          "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+          "scout_source": "funding"
         },
         {
-          "title": "NVIDIA’s Jetson Thor modules bring Blackwell to mainstream robots",
-          "summary": "The T3000 and T2000 modules, plus a 4B-parameter Cosmos 3 Edge world model, are already adopted by Boston Dynamics, Amazon Robotics, and FANUC for on-device robot inference.",
-          "source": "NVIDIA Blog",
-          "date": "2026-07-15",
-          "url": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/"
+          "title": "General Compute's $400M loan treats inference chips as their own asset class",
+          "summary": "Upper90 provided $400 million in debt financing secured by inference-specific chips, a sign that the infrastructure behind AI serving is becoming bankable collateral. As inference becomes the dominant cost center for AI products, financing models are evolving to match.",
+          "source": "TechCrunch",
+          "date": "2026-07-17",
+          "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
+          "scout_source": "funding"
         }
       ]
     },
@@ -89,18 +90,20 @@
       "title": "YouTube Signals",
       "items": [
         {
-          "title": "Anthropic research warns that AI coding assistants may erode developer skill",
-          "summary": "The study found that over-reliance on AI assistants can degrade core programming abilities, complicating the rush to embed AI into every engineering workflow.",
-          "source": "YouTube — Two Minute Papers",
-          "date": "2026-07-16",
-          "url": "https://www.youtube.com/watch?v=axOcn--n_lM"
+          "title": "YouTube report claims Apple is suing OpenAI over IP theft",
+          "summary": "Fireship reports that Apple has filed a lawsuit accusing OpenAI of stealing intellectual property, marking a sharp escalation between the two companies. Treat this as an unconfirmed YouTube report for now; if verified, it would be one of the most significant legal clashes in AI.",
+          "source": "YouTube \u2014 Fireship",
+          "date": "2026-07-17",
+          "url": "https://www.youtube.com/watch?v=5D4Zqp9GLSc",
+          "scout_source": "youtube"
         },
         {
-          "title": "GPT-5.6 Sol reportedly beats Codex inside Claude Code",
-          "summary": "Developer Theo claims OpenAI’s model is genuinely better than Anthropic’s own Codex when used in Claude Code, a small but telling signal about model portability.",
-          "source": "YouTube — Theo - t3.gg",
-          "date": "2026-07-16",
-          "url": "https://www.youtube.com/watch?v=Noo0NWD0gHU"
+          "title": "YouTube report says OpenAI has unveiled its first hardware product",
+          "summary": "AI Tool Report claims OpenAI has released its first hardware device, expanding beyond software. Details are thin, and the report appears in a broader news roundup; confirmation from OpenAI or mainstream outlets would raise the stakes considerably.",
+          "source": "YouTube \u2014 AI Tool Report",
+          "date": "2026-07-17",
+          "url": "https://www.youtube.com/watch?v=tgoMkQxGOVw",
+          "scout_source": "youtube"
         }
       ]
     }
@@ -108,28 +111,44 @@
   "trending": null,
   "quick_hits": [
     {
-      "title": "TikTok tests AI likeness detection to help creators fight deepfakes",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
-      "context": "Identity verification for creator protection"
+      "title": "Kimi K3 analysis: what the pelican benchmark reveals",
+      "source": "Simon Willison",
+      "date": "2026-07-17",
+      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+      "context": "K3 benchmark deep-dive",
+      "scout_source": "tools"
     },
     {
-      "title": "Apple sues OpenAI over alleged theft of hardware secrets",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/uncanny-valley-podcase-apple-sued-openai-new-york-data-center-moratorium-cyclosporiasis-outbreak/",
-      "context": "Hardware rivalry escalates"
+      "title": "A scorecard for the AI age",
+      "source": "OpenAI",
+      "date": "2026-07-17",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "context": "ROI framework for agents",
+      "scout_source": "official"
     },
     {
-      "title": "SF mayor pushes for tougher autonomous vehicle rules after Waymo gridlock",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/16/san-francisco-mayor-pushes-for-tougher-rules-after-the-waymo-traffic-fiasco/",
-      "context": "July 4 fireworks fiasco"
+      "title": "VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding",
+      "source": "arXiv",
+      "date": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.14935",
+      "context": "Open video understanding",
+      "scout_source": "research"
     },
     {
-      "title": "Fortnite adds 36 AI-powered personas for creator islands",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/games/966815/epic-games-fortnite-ai-powered-personas",
-      "context": "Curated voice cast, not open mic"
+      "title": "Isomorphic Labs Drug Design Engine unlocked beyond AlphaFold",
+      "source": "Isomorphic Labs",
+      "date": "2026-07-17",
+      "url": "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier",
+      "context": "AI drug discovery platform",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Homomorphically encrypted CIFAR-10 inference in 200ms",
+      "source": "Belfort Labs",
+      "date": "2026-07-17",
+      "url": "https://sofar.belfortlabs.cloud/",
+      "context": "Privacy-preserving ML milestone",
+      "scout_source": "tools"
     }
   ]
 }
