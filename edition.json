@@ -1,11 +1,331 @@
 {
   "issue_no": 20,
-  "date_iso": "2026-07-20",
-  "date_human": "July 20, 2026",
-  "notice": "Quiet news day — no fresh AI stories in the last 24 hours. The lamp stays lit.",
-  "lead": null,
-  "top_stories": [],
-  "sections": [],
-  "trending": null,
-  "quick_hits": []
+  "date_iso": "2026-07-19",
+  "date_human": "July 19, 2026",
+  "notice": "Some stories had invalid URLs and were removed.",
+  "lead": {},
+  "top_stories": [
+    {
+      "title": "Toyota and Nvidia expand AI partnership across vehicles, factories and cities",
+      "summary": "Toyota and Nvidia expanded their partnership to develop AI for autonomous vehicles, smart factories, and city infrastructure using NVIDIA's AI computing platforms.",
+      "source": "Robotics & Automation News",
+      "date": "2026-07-18",
+      "url": "https://www.roboticsandautomationnews.com/2026/07/18/toyota-and-nvidia-expand-partnership-to-develop-ai-for-vehicles-factories-and-cities/",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "Etched targets $20 billion valuation with back-to-back rounds as inference chip demand hits $1 billion",
+      "summary": "AI inference chip startup Etched is targeting a $20 billion valuation following consecutive funding rounds, as demand for specialized inference silicon reaches $1 billion.",
+      "source": "MarketScale",
+      "date": "2026-07-18",
+      "url": "https://marketscale.com/industries/technology/etched-targets-20-billion-valuation-as-inference-chip-demand-hits-1-billion/",
+      "scout_source": "hardware"
+    }
+  ],
+  "sections": [
+    {
+      "title": "YouTube & Video",
+      "items": [
+        {
+          "title": "US Startup Tests Humanoid AI Robot Soldiers in Ukraine",
+          "summary": "Foundation Future Industries is preparing Phantom humanoid AI robots for military combat, with machines already tested in Ukraine. Lethal capabilities may follow as both the US and China accelerate humanoid combat robot development.",
+          "source": "YouTube \u2014 Beyond AI News",
+          "date": "2026-07-19",
+          "url": "https://www.youtube.com/watch?v=Qm64Vm-lf80",
+          "scout_source": "youtube"
+        },
+        {
+          "title": "Fable 5 vs GPT-5.6-Sol: Breakdown of Key Architectural Differences",
+          "summary": "Theo breaks down the biggest differences between Fable and GPT-5.6-Sol, currently the two largest and most capable AI models, comparing their architectures and performance characteristics.",
+          "source": "YouTube \u2014 Theo - t3.gg",
+          "date": "2026-07-18",
+          "url": "https://www.youtube.com/watch?v=IfkBQyWuTOE",
+          "scout_source": "youtube"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "Fujitsu partners with Fanuc, Yaskawa and Kawasaki to advance physical AI using Nvidia technology",
+          "summary": "Fujitsu partnered with Fanuc, Yaskawa, and Kawasaki Robotics to advance physical AI for industrial automation, leveraging NVIDIA's robotics and AI platforms.",
+          "source": "Robotics & Automation News",
+          "date": "2026-07-18",
+          "url": "https://www.roboticsandautomationnews.com/2026/07/18/fujitsu-partners-with-fanuc-yaskawa-and-kawasaki-to-advance-physical-ai-using-nvidia-technology/",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "NVIDIA released DeepStream 9.1: bringing agentic AI to vision AI with 13 skills and multi-view 3D tracking",
+          "summary": "NVIDIA released DeepStream 9.1, adding 13 agentic AI skills, Multi-View 3D Tracking, and AutoMagicCalib for natural-language multi-camera vision AI pipelines.",
+          "source": "MarkTechPost",
+          "date": "2026-07-18",
+          "url": "https://www.marktechpost.com/2026/07/18/nvidia-released-deepstream-9-1-bringing-agentic-ai-to-vision-ai-with-13-skills-and-multi-view-3d-tracking/",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Palm Garden AI develops Coherence Guard relational decision layer for human-facing robots",
+          "summary": "Palm Garden AI introduced Coherence Guard, a relational decision layer designed to improve safety and coherence in human-facing robots by enforcing logical constraints during inference.",
+          "source": "The Robot Report",
+          "date": "2026-07-18",
+          "url": "https://www.therobotreport.com/palm-garden-ai-develops-coherence-guard-relational-decision-layer-human-facing-robots/",
+          "scout_source": "hardware"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Transcribe.cpp \u2014 C++ speech recognition tool hits 231 points on HN as a practical offline transcription tool",
+          "summary": "A fast, local speech recognition tool written in C++ that reached 231 points on Hacker News as a practical tool for offline transcription.",
+          "source": "Hacker News",
+          "date": "2026-07-19",
+          "url": "https://news.ycombinator.com/item?id=48963879",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Talon \u2014 self-hosted harness for long-lived AI agents with MCP tool access",
+          "summary": "Multi-platform agentic AI harness running on Telegram, Discord, Teams and Terminal with pluggable backends (Claude, Kilo, OpenCode, Codex, OpenAI Agents) and full MCP tool access.",
+          "source": "Hacker News",
+          "date": "2026-07-18",
+          "url": "https://news.ycombinator.com/item?id=48963914",
+          "scout_source": "tools"
+        },
+        {
+          "title": "PodStack \u2014 GPU slicing without Nvidia MIG, works on AMD too",
+          "summary": "Full-stack GPU cloud platform allowing fractional GPU slicing without Nvidia MIG, with AMD support. Launches, trains, serves, and operates AI models on shared GPU infrastructure.",
+          "source": "Hacker News",
+          "date": "2026-07-18",
+          "url": "https://news.ycombinator.com/item?id=48963854",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Codex Resets \u2014 service monitoring Codex agent reset cycles",
+          "summary": "A tracking service that monitors and displays when Codex (Anthropic's coding agent) resets, providing visibility into agent lifecycle and stability.",
+          "source": "Hacker News",
+          "date": "2026-07-18",
+          "url": "https://news.ycombinator.com/item?id=48963465",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Fosnie \u2014 open-source self-hosted AI workspace for regulated teams",
+          "summary": "Self-hosted private AI platform that runs where your data lives, designed for regulated teams needing data sovereignty. Open-source and deployable on-prem.",
+          "source": "Hacker News",
+          "date": "2026-07-18",
+          "url": "https://news.ycombinator.com/item?id=48964086",
+          "scout_source": "tools"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-07-19",
+      "items": [
+        {
+          "name": "codecrafters-io/build-your-own-x",
+          "url": "https://github.com/codecrafters-io/build-your-own-x",
+          "meta": "Markdown \u00b7 528,377 \u2605 \u00b7 +1,126 today"
+        },
+        {
+          "name": "Robbyant/lingbot-map",
+          "url": "https://github.com/Robbyant/lingbot-map",
+          "meta": "Python \u00b7 13,065 \u2605 \u00b7 +831 today"
+        },
+        {
+          "name": "tirth8205/code-review-graph",
+          "url": "https://github.com/tirth8205/code-review-graph",
+          "meta": "Python \u00b7 20,262 \u2605 \u00b7 +355 today"
+        },
+        {
+          "name": "PostHog/posthog",
+          "url": "https://github.com/PostHog/posthog",
+          "meta": "Python \u00b7 36,643 \u2605 \u00b7 +338 today"
+        },
+        {
+          "name": "KnockOutEZ/wigolo",
+          "url": "https://github.com/KnockOutEZ/wigolo",
+          "meta": "TypeScript \u00b7 1,314 \u2605 \u00b7 +203 today"
+        },
+        {
+          "name": "rohitg00/ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "meta": "Python \u00b7 39,179 \u2605 \u00b7 +191 today"
+        },
+        {
+          "name": "lyogavin/airllm",
+          "url": "https://github.com/lyogavin/airllm",
+          "meta": "Jupyter Notebook \u00b7 23,382 \u2605 \u00b7 +161 today"
+        },
+        {
+          "name": "ibelick/ui-skills",
+          "url": "https://github.com/ibelick/ui-skills",
+          "meta": "TypeScript \u00b7 5,113 \u2605 \u00b7 +123 today"
+        },
+        {
+          "name": "elder-plinius/G0DM0D3",
+          "url": "https://github.com/elder-plinius/G0DM0D3",
+          "meta": "TypeScript \u00b7 9,555 \u2605 \u00b7 +69 today"
+        },
+        {
+          "name": "MoonshotAI/kimi-cli",
+          "url": "https://github.com/MoonshotAI/kimi-cli",
+          "meta": "Python \u00b7 9,544 \u2605 \u00b7 +65 today"
+        },
+        {
+          "name": "apache/ossie",
+          "url": "https://github.com/apache/ossie",
+          "meta": "Python \u00b7 1,307 \u2605 \u00b7 +47 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-07-19",
+      "items": [
+        {
+          "name": "thinkingmachines/Inkling",
+          "url": "https://huggingface.co/thinkingmachines/Inkling",
+          "meta": "952.4B parameter multimodal model, image-text-to-text"
+        },
+        {
+          "name": "prism-ml/Ternary-Bonsai-27B-gguf",
+          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
+          "meta": "3.6B ternary quantized text-generation GGUF, 301k downloads"
+        },
+        {
+          "name": "prism-ml/Bonsai-27B-gguf",
+          "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
+          "meta": "3.6B text-generation GGUF, 1.2M downloads"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "753.3B dense MoE language model, text-generation"
+        },
+        {
+          "name": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "meta": "9B Claude-Mythos fine-tune GGUF, image-text-to-text"
+        },
+        {
+          "name": "openbmb/UltraX-Preview",
+          "url": "https://huggingface.co/openbmb/UltraX-Preview",
+          "meta": "New preview release from OpenBMB"
+        },
+        {
+          "name": "conradlocke/krea2-identity-edit",
+          "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
+          "meta": "Identity-preserving image editing model"
+        },
+        {
+          "name": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+          "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+          "meta": "27.4B Qwen3.6-based thinking model, image-text-to-text"
+        },
+        {
+          "name": "ATH-MaaS/OvisOCR2",
+          "url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
+          "meta": "853M parameter OCR vision model"
+        },
+        {
+          "name": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "meta": "34.7B Qwen3.6-35B-A3B uncensored fine-tune, 2.1M downloads"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "New York school district to deploy humanoid robot in classrooms this fall",
+      "source": "Fox News",
+      "date": "2026-07-18",
+      "url": "https://www.foxnews.com/us/new-york-school-district-deploy-humanoid-robot-classrooms-fall",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "Humanoid Robots in 2026: What Is Actually Deployed",
+      "source": "Technology Org",
+      "date": "2026-07-18",
+      "url": "https://www.technologyorg.com/humanoid-robots-2026-what-is-actually-deployed",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "Jensen Huang told CES 2026 that memory is now the biggest bottleneck in AI \u2014 Micron and Sandisk have outperformed Nvidia ever since",
+      "source": "Yahoo Finance",
+      "date": "2026-07-18",
+      "url": "https://finance.yahoo.com/news/jensen-huang-memory-bottleneck-ai-micron-sandisk/",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "TrAIcer \u2014 Capture your AI coding traces to sell later",
+      "source": "Hacker News",
+      "date": "2026-07-18",
+      "url": "https://news.ycombinator.com/item?id=48963572",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Flightwake \u2014 flight recorder for AI coding agents",
+      "source": "Hacker News",
+      "date": "2026-07-19",
+      "url": "https://news.ycombinator.com/item?id=48964138",
+      "scout_source": "tools"
+    },
+    {
+      "title": "SlopSift \u2014 local graph-backed linter for AI writing",
+      "source": "Hacker News",
+      "date": "2026-07-18",
+      "url": "https://news.ycombinator.com/item?id=48963831",
+      "scout_source": "tools"
+    },
+    {
+      "title": "PixelUp \u2014 offline AI video upscaler for Windows",
+      "source": "Hacker News",
+      "date": "2026-07-18",
+      "url": "https://news.ycombinator.com/item?id=48963504",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Teya \u2014 open-source AI family agent on a wall-mounted Android phone",
+      "source": "Hacker News",
+      "date": "2026-07-18",
+      "url": "https://news.ycombinator.com/item?id=48963848",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Medows \u2014 AI clinical workspace for doctors on ward rounds",
+      "source": "Hacker News",
+      "date": "2026-07-18",
+      "url": "https://news.ycombinator.com/item?id=48963956",
+      "scout_source": "tools"
+    },
+    {
+      "title": "LLM Clich\u00e9 Highlighter \u2014 browser tool to detect LLM writing clich\u00e9s by Simon Willison",
+      "source": "Hacker News",
+      "date": "2026-07-18",
+      "url": "https://news.ycombinator.com/item?id=48963220",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Leenar \u2014 describe your build, get infra deployed automatically",
+      "source": "Hacker News",
+      "date": "2026-07-18",
+      "url": "https://news.ycombinator.com/item?id=48963734",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Pre-Launch Scanner for AI-built apps (self-scores 60/100)",
+      "source": "Hacker News",
+      "date": "2026-07-18",
+      "url": "https://news.ycombinator.com/item?id=48963918",
+      "scout_source": "tools"
+    }
+  ]
 }
