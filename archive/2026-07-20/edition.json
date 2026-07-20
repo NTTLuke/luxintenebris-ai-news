@@ -1,11 +1,323 @@
 {
-  "issue_no": 20,
+  "issue_no": 22,
   "date_iso": "2026-07-20",
   "date_human": "July 20, 2026",
-  "notice": "Quiet news day — no fresh AI stories in the last 24 hours. The lamp stays lit.",
-  "lead": null,
-  "top_stories": [],
-  "sections": [],
-  "trending": null,
-  "quick_hits": []
+  "notice": null,
+  "lead": {
+    "kicker": "Hollywood AI M&A",
+    "title": "Netflix paid $587M for Ben Affleck's AI filmmaking startup InterPositive",
+    "summary": "Netflix acquired InterPositive, an AI filmmaking startup co-founded by Ben Affleck, for $587 million in cash. The startup builds AI tools for video post-production and the deal was disclosed in a new regulatory filing.",
+    "source": "TechCrunch",
+    "date": "2026-07-19",
+    "url": "https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/"
+  },
+  "top_stories": [
+    {
+      "title": "Alibaba launches Qwen 3.8, a new open-weight LLM family",
+      "summary": "Alibaba's Qwen team announced Qwen 3.8, a new model family with improved agentic capabilities, drawing strong community interest on Hacker News.",
+      "source": "@Alibaba_Qwen",
+      "date": "2026-07-19",
+      "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291"
+    },
+    {
+      "title": "Frontier weights as economic dumping? LeCun fires back at critics",
+      "summary": "A prominent thread argues releasing frontier model weights functions like economic dumping that discourages private R&D. Yann LeCun strongly rebuts, citing Linux, PyTorch, and Llama as transformative open-source successes.",
+      "source": "hosseeb / ylecun",
+      "date": "2026-07-19",
+      "url": "https://x.com/i/status/2078614672086036555"
+    },
+    {
+      "title": "Claude Code running on unreleased Bun runtime rewritten in Rust",
+      "summary": "Simon Willison discovers Claude Code is running an unreleased version of Bun that has been rewritten from Zig to Rust, bringing performance improvements to the Anthropic coding agent.",
+      "source": "simonwillison.net",
+      "date": "2026-07-19",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Xiaomi-Robotics-1: Scaling VLA models with 100K hours of real-world trajectories",
+          "summary": "A foundational vision-language-action model trained on over 100,000 hours of real-world manipulation data achieves SOTA 57.6% on RoboCasa365 (beating prior 46.6%) and 20.07 on RoboDojo (beating prior 13.07).",
+          "source": "HuggingFace",
+          "date": "2026-07-20",
+          "url": "https://huggingface.co/papers/2607.15330"
+        },
+        {
+          "title": "DSWorld: A data science world model for efficient autonomous agents",
+          "summary": "A world model that predicts data science operation effects before execution, combining structured states, cost-aware routing, and an LLM simulator to accelerate RL-based agent training by ~14x and search-based inference by 3-6x.",
+          "source": "HuggingFace",
+          "date": "2026-07-20",
+          "url": "https://huggingface.co/papers/2607.15901"
+        },
+        {
+          "title": "From Pixels to States: Interactive world models as game engines",
+          "summary": "Proposes using video generative models as interactive game engines that respond coherently to player actions from pixels, demonstrating data-driven world simulation without explicit 3D rendering. 407 upvotes on HuggingFace.",
+          "source": "HuggingFace",
+          "date": "2026-07-19",
+          "url": "https://huggingface.co/papers/2607.14076"
+        },
+        {
+          "title": "Audio-Visual Flamingo: Open AV-LLM for long and complex videos",
+          "summary": "An open audio-visual LLM for joint understanding of audio, images, and long-form video, supported by a ~7M instance Audio-Visual-Skills dataset and three-stage curriculum training. Outperforms similar-sized open models on 15+ benchmarks.",
+          "source": "HuggingFace",
+          "date": "2026-07-20",
+          "url": "https://huggingface.co/papers/2607.16107"
+        },
+        {
+          "title": "Qwen-Music Technical Report: High-fidelity music generation from Alibaba",
+          "summary": "Qwen-Music produces high-fidelity songs with complete vocal singing, supporting text-to-music and reference-based music generation with strong musicality.",
+          "source": "HuggingFace",
+          "date": "2026-07-20",
+          "url": "https://huggingface.co/papers/2607.11699"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "LoRA Speedrun: Public leaderboard for fine-tuning techniques",
+          "summary": "A public wall-clock leaderboard that benchmarks fine-tuning methods for LoRA adapters, measuring real-world speed and efficiency across techniques.",
+          "source": "GitHub",
+          "date": "2026-07-20",
+          "url": "https://github.com/Saivineeth147/lora-speedrun"
+        },
+        {
+          "title": "Orion Browser by Kagi gains traction on Hacker News",
+          "summary": "Kagi's privacy-focused browser hit 162 points and 102 comments on Hacker News, positioning it as a notable browser alternative.",
+          "source": "orionbrowser.com",
+          "date": "2026-07-19",
+          "url": "https://orionbrowser.com/"
+        },
+        {
+          "title": "Chalie: Open-source AI peer for collaborative coding",
+          "summary": "An open-source AI tool positioned as a peer rather than an employee, designed for collaborative coding and problem-solving.",
+          "source": "GitHub",
+          "date": "2026-07-19",
+          "url": "https://github.com/chalie-ai/chalie"
+        },
+        {
+          "title": "Custodian Labs: Deploy AI agents in 5 lines of code",
+          "summary": "A platform that lets developers deploy AI agents with minimal code, aiming to lower the barrier for agent-based applications.",
+          "source": "custodianlabs.io",
+          "date": "2026-07-19",
+          "url": "https://www.custodianlabs.io"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-07-20",
+      "items": [
+        {
+          "name": "bojieli/ai-agent-book",
+          "url": "https://github.com/bojieli/ai-agent-book",
+          "meta": "Python · 7,468★"
+        },
+        {
+          "name": "tirth8205/code-review-graph",
+          "url": "https://github.com/tirth8205/code-review-graph",
+          "meta": "Python · 21,817★"
+        },
+        {
+          "name": "kvcache-ai/ktransformers",
+          "url": "https://github.com/kvcache-ai/ktransformers",
+          "meta": "Python · 18,499★"
+        },
+        {
+          "name": "rohitg00/ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "meta": "Python · 39,945★"
+        },
+        {
+          "name": "jamiepine/voicebox",
+          "url": "https://github.com/jamiepine/voicebox",
+          "meta": "TypeScript · 43,613★"
+        },
+        {
+          "name": "KnockOutEZ/wigolo",
+          "url": "https://github.com/KnockOutEZ/wigolo",
+          "meta": "TypeScript · 2,059★"
+        },
+        {
+          "name": "andrewrabert/jellium-desktop",
+          "url": "https://github.com/andrewrabert/jellium-desktop",
+          "meta": "Rust · 1,344★"
+        },
+        {
+          "name": "github/copilot-sdk",
+          "url": "https://github.com/github/copilot-sdk",
+          "meta": "Java · 10,002★"
+        },
+        {
+          "name": "PostHog/posthog",
+          "url": "https://github.com/PostHog/posthog",
+          "meta": "Python · 37,023★"
+        },
+        {
+          "name": "microsoft/terminal",
+          "url": "https://github.com/microsoft/terminal",
+          "meta": "C++ · 104,245★"
+        },
+        {
+          "name": "AstrBotDevs/AstrBot",
+          "url": "https://github.com/AstrBotDevs/AstrBot",
+          "meta": "Python · 36,796★"
+        },
+        {
+          "name": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode",
+          "meta": "Rust · 9,077★"
+        },
+        {
+          "name": "trycua/cua",
+          "url": "https://github.com/trycua/cua",
+          "meta": "HTML · 20,294★"
+        },
+        {
+          "name": "MoonshotAI/kimi-cli",
+          "url": "https://github.com/MoonshotAI/kimi-cli",
+          "meta": "Python · 9,999★"
+        },
+        {
+          "name": "Flowseal/zapret-discord-youtube",
+          "url": "https://github.com/Flowseal/zapret-discord-youtube",
+          "meta": "Batchfile · 31,054★"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-07-20",
+      "items": [
+        {
+          "name": "thinkingmachines/Inkling",
+          "url": "https://huggingface.co/thinkingmachines/Inkling",
+          "meta": "image-text-to-text, MoE multimodal model, 1,168 likes"
+        },
+        {
+          "name": "prism-ml/Ternary-Bonsai-27B-gguf",
+          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
+          "meta": "text-generation, ternary 27B GGUF, 807 likes"
+        },
+        {
+          "name": "prism-ml/Bonsai-27B-gguf",
+          "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
+          "meta": "text-generation, 27B GGUF, 512 likes"
+        },
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "meta": "image-text-to-text, OCR model, 2,238 likes"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "text-generation, MoE DSA architecture, 4,179 likes"
+        },
+        {
+          "name": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "meta": "image-text-to-text, GGUF, 2,353 likes"
+        },
+        {
+          "name": "conradlocke/krea2-identity-edit",
+          "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
+          "meta": "identity editing model, 429 likes"
+        },
+        {
+          "name": "ATH-MaaS/OvisOCR2",
+          "url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
+          "meta": "image-text-to-text, OCR model, 199 likes"
+        },
+        {
+          "name": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+          "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+          "meta": "image-text-to-text, Qwen3.6-based, 466 likes"
+        },
+        {
+          "name": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "meta": "image-text-to-text, Qwen3.6-35B-A3B, 2,907 likes"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "AI Papers of the Week Collection launched with AI tutor for topic-based recommendations",
+      "source": "omarsar0",
+      "date": "2026-07-20",
+      "url": "https://x.com/omarsar0/status/2078942362869395569"
+    },
+    {
+      "title": "Open-source AI labeled 'decelerationist' sparks community pushback on AI sovereignty",
+      "source": "omarsar0",
+      "date": "2026-07-19",
+      "url": "https://x.com/omarsar0/status/2078860085762408747"
+    },
+    {
+      "title": "Hugging Face Local AI event covering hardware, inference, and model compression set for July 22",
+      "source": "huggingface",
+      "date": "2026-07-20",
+      "url": "https://x.com/huggingface/status/2078878406335201738"
+    },
+    {
+      "title": "BadWAM: New class of adversarial attacks breaks world-action model alignment while preserving imagined futures",
+      "source": "HuggingFace",
+      "date": "2026-07-19",
+      "url": "https://huggingface.co/papers/2607.15207"
+    },
+    {
+      "title": "Cura 1T: Specialized 1T-parameter healthcare LLM trained via human-gated self-evolution loops",
+      "source": "arXiv",
+      "date": "2026-07-20",
+      "url": "https://arxiv.org/abs/2607.15314"
+    },
+    {
+      "title": "SkillCorpus: ~96K open agent skills consolidated into a quality-taxonomized corpus with up to 7.5-point gains on agent benchmarks",
+      "source": "arXiv",
+      "date": "2026-07-20",
+      "url": "https://arxiv.org/abs/2607.15544"
+    },
+    {
+      "title": "RAGU: Open-source modular GraphRAG engine with domain-adapted 7B extractor outperforming larger models on medical benchmarks",
+      "source": "HuggingFace",
+      "date": "2026-07-20",
+      "url": "https://huggingface.co/papers/2607.11683"
+    },
+    {
+      "title": "PilotCite: Service to get your brand cited by ChatGPT, Gemini, and Claude",
+      "source": "PilotCite",
+      "date": "2026-07-19",
+      "url": "https://www.pilotcite.com"
+    },
+    {
+      "title": "K4-AlgebraicSwarm: Open-source self-correcting agent swarm using algebraic methods",
+      "source": "GitHub",
+      "date": "2026-07-19",
+      "url": "https://github.com/Michael-Ax64/K4-AlgebraicSwarm"
+    },
+    {
+      "title": "SysEdge: Knowledge graph skill for Claude Code and Kimi Code for structured knowledge traversal",
+      "source": "Org-Edge",
+      "date": "2026-07-19",
+      "url": "https://org-edge.com/sysedge.html"
+    },
+    {
+      "title": "Headroom: Browser-based tool to benchmark GPU memory bandwidth ceiling for local AI optimization",
+      "source": "GitHub Pages",
+      "date": "2026-07-20",
+      "url": "https://ar5en1c.github.io/headroom/"
+    }
+  ]
 }

@@ -3,286 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LVX IN TENEBRIS — AI dispatches · July 19, 2026</title>
+  <title>LVX IN TENEBRIS — AI dispatches · July 20, 2026</title>
   <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
   <link rel="stylesheet" href="../style.css">
   <style>
-.version-selector {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem 0 0.75rem 0;
-}
-.vs-badge {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
-  font-family: var(--sans);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 1px solid;
-  transition: background 0.2s, color 0.2s;
-  line-height: 1.5;
-}
-.vs-badge-ds {
-  color: var(--lux);
-  border-color: var(--lux-soft);
-  background: transparent;
-}
-.vs-badge-ds:hover {
-  background: rgba(240, 162, 60, 0.08);
-  color: var(--lux);
-}
-.vs-badge-k3 {
-  color: var(--ember);
-  border-color: var(--ember);
-  background: transparent;
-}
-.vs-badge-k3:hover {
-  background: rgba(255, 107, 53, 0.08);
-  color: var(--ember);
-}
-.vs-badge-current {
-  opacity: 0.5;
-  cursor: default;
-  pointer-events: none;
-}
-.vs-badge-current:hover {
-  background: transparent;
-}
-</style>
-<style>
-/* ── K3 White Edition ── */
-
-/* 1. BACKGROUNDS */
-html, body {
-  background: #faf8f5 !important;
-}
-.container {
-  background: #faf8f5 !important;
-  border-left: 3px solid #e0dcd4 !important;
-}
-header.masthead {
-  background: #faf8f5 !important;
-}
-
-/* 2. WIRE NEWS — keep dark (AFTER nuclear override) */
-/* moved to after section 5 below */
-
-/* 3. ALL LINKS BLACK by default */
-a, a:link {
-  color: #000 !important;
-}
-
-/* 4. HEADER exceptions (override general) */
-.masthead .topline {
-  border-color: #d4d0c8 !important;
-}
-.ears .left, .ears .right, .ears a {
-  color: #333 !important;
-}
-.ears a:hover {
-  color: #333 !important;
-}
-.nameplate {
-  color: #000 !important;
-}
-.nameplate .lux {
-  color: #f0a23c !important;
-}
-.dateline, .dateline span, .dateline .tag {
-  color: #333 !important;
-}
-.dateline .dot {
-  color: #999 !important;
-}
-.devocracy-credit, .devocracy-credit a {
-  color: #666 !important;
-}
-.devocracy-credit a:hover {
-  color: #666 !important;
-}
-.masthead .rule-thin {
-  border-color: #d4d0c8 !important;
-}
-.masthead .rule-double {
-  border-color: #ccc !important;
-}
-
-/* 5. ALL ARTICLE TEXT BLACK — nuclear */
-.lead, .lead *, .lead a, .lead a:link, .lead a:visited, .lead h1, .lead a h1,
-.topstories, .topstories *, .top-stories, .top-story,
-.story, .story *, .story p, .story h3,
-.section, .section *, .section .item, .section .items,
-.item, .item *, .item p, .item a, .item a:link, .item h3, .item h3 a,
-.section-content, .section-header, .section-head, .section-head h2,
-.quick-hits, .quick-hits *, .quick-hit, .quick-hit *,
-.qh-item, .qh-item *, .qh-title, .qh-src,
-.byline, .byline *, .byline .src, .meta-text,
-.inbrief, .inbrief *, .inbrief a, .inbrief h2,
-.sections, .sections *, .lead-head, .lead-body, .lead-grid,
-.colophon, .colophon *, .colophon p, .colophon .meta, .colophon a,
-h1, h2, h3, h4, h5, p, a, span, div, article, section {
-  color: #000 !important;
-}
-/* Hover: amber like Lux (AFTER nuclear rule) */
-.lead a:hover h1, .lead a:hover .lead-title,
-.top-story a:hover h3, .top-story a:hover .top-title,
-.item a:hover h3, .item a:hover .item-title,
-.quick-hit a:hover, .qh-item a:hover,
-a:hover, a:focus, a:active {
-  color: #f0a23c !important;
-}
-
-/* Wire news: keep dark (AFTER nuclear, overrides it) */
-.wt, .wt *,
-.wtt, .wtt *,
-.ti, .tih, .tis,
-.wt a, .wtt a, .ti a, .ti a:link,
-[class*="wire"], [class*="ticker"], [class*="breaking"] {
-  background-color: var(--ink) !important;
-  color: var(--type) !important;
-}
-
-/* Wire modal: white bg, black text, amber accent */
-.mo {
-  background: rgba(0,0,0,0.4) !important;
-  backdrop-filter: blur(4px) !important;
-}
-.mb {
-  background: #fff !important;
-  border-color: #d4d0c8 !important;
-}
-.mh {
-  color: #000 !important;
-}
-.mm {
-  color: #666 !important;
-}
-.mm a {
-  color: #000 !important;
-}
-.mm a:hover {
-  color: #f0a23c !important;
-}
-.mbd {
-  color: #000 !important;
-}
-.mbd .en {
-  color: #f0a23c !important;
-  border-left-color: #f0a23c !important;
-}
-.mbd .as {
-  color: #999 !important;
-  border-top-color: #d4d0c8 !important;
-}
-.mbd .as .al {
-  color: #f0a23c !important;
-}
-.mc {
-  color: #999 !important;
-}
-.mc:hover {
-  color: #000 !important;
-}
-.section-header {
-  color: #000 !important;
-  border-bottom-color: #000 !important;
-}
-.byline, .item .byline, .meta-text, .qh-src {
-  color: #000 !important;
-}
-
-/* 6. VERSION BADGES (after general a rule) */
-.vs-badge-ds {
-  color: #1a1a1a !important;
-  border-color: #1a1a1a !important;
-  background: transparent !important;
-}
-.vs-badge-ds:hover {
-  background: rgba(0,0,0,0.05) !important;
-  color: #000 !important;
-}
-.vs-badge-k3 {
-  color: #1a1a1a !important;
-  border-color: #1a1a1a !important;
-  background: transparent !important;
-}
-.vs-badge-k3:hover {
-  background: rgba(0,0,0,0.05) !important;
-  color: #000 !important;
-}
-.vs-badge-current {
-  opacity: 0.4 !important;
-}
-.vs-badge-current:hover {
-  color: #1a1a1a !important;
-}
-
-/* 7. ARTICLE RULES */
-.section .item {
-  border-bottom: 1px solid #d4d0c8 !important;
-  border-left: none !important;
-  padding: 0.75rem 0 !important;
-  margin: 0 !important;
-}
-.section .item:last-child {
-  border-bottom: none !important;
-}
-.item:nth-child(3n+1), .item:nth-child(2n+1) {
-  border-left: none !important;
-  padding-left: 0 !important;
-}
-.topstories .story {
-  border-left: none !important;
-  border-top: 1px solid #d4d0c8 !important;
-  padding: 0.75rem 0 !important;
-}
-.topstories .story:first-child {
-  border-top: none !important;
-}
-hr.rule-thin {
-  border-color: #d4d0c8 !important;
-}
-hr.rule-double {
-  border-color: #c8c4bc !important;
-}
-
-/* 8. REMOVE IMAGES */
-.section-hero, .section-hero-img, .lead-image,
-.item img, .top-story img {
-  display: none !important;
-}
-
-/* 9. SECTION HEADERS */
-.section-header {
-  border-bottom: 2px solid #1a1a1a !important;
-  color: #1a1a1a !important;
-  margin-bottom: 0.75rem !important;
-  padding-bottom: 0.25rem !important;
-}
-.section-header .count {
-  color: #999 !important;
-}
-
-/* 10. QUICK HITS + COLOPHON */
-.quick-hits a {
-  color: #000 !important;
-}
-.colophon {
-  color: #000 !important;
-  border-top-color: #d4d0c8 !important;
-}
-.colophon a {
-  color: #000 !important;
-  border-bottom-color: #d4d0c8 !important;
-}
-</style>
-<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style><style>
 .version-selector {
   display: flex;
   gap: 0.75rem;
@@ -566,21 +290,17 @@ hr.rule-double {
     <div class="topline"></div>
     <div class="ears">
       <span class="left">Est. MMXXVI</span>
-      <span class="right">No. 20 <a href="/luxintenebris-ai-news/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
+      <span class="right">No. 22 <a href="/luxintenebris-ai-news/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
     </div>
     <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
       <hr class="rule-double">
       <div class="dateline">
-        <span>July 19, 2026</span>
+        <span>July 20, 2026</span>
         <span class="dot">◆</span>
         <span class="tag">AI dispatches from the dark</span>
         <span class="dot">◆</span>
-        <span>24 stories</span>
+        <span>15 stories</span>
       </div>
-<div class="version-selector">
-  <a href="../index.html" class="vs-badge vs-badge-ds">🐋 DeepSeek V4 Flash</a>
-  <span class="vs-badge vs-badge-current vs-badge-k3">🔮 Kimi K3 Edition (The Lens)</span>
-</div>
 <div class="version-selector">
   <a href="../index.html" class="vs-badge vs-badge-ds">🐋 DeepSeek V4 Flash</a>
   <span class="vs-badge vs-badge-current vs-badge-k3">🔮 Kimi K3 Edition (The Lens)</span>
@@ -589,199 +309,110 @@ hr.rule-double {
       <hr class="rule-thin">
     </header>
 
-    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Netflix Discloses $587 Million Price Tag for Ben Affleck&#x27;s AI Startup InterPositive" data-b="Netflix has revealed it paid $587 million in cash to acquire InterPositive, the artificial intelligence filmmaking startup co-founded by actor and director Ben Affleck. The figure emerged in a new regulatory filing, according to TechCrunch, months after the deal itself was first made public.
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Netflix reveals $587 million price tag for Ben Affleck&#x27;s AI startup InterPositive" data-b="Netflix has disclosed that it paid $587 million in cash to acquire InterPositive, an artificial intelligence filmmaking startup co-founded by actor and director Ben Affleck, according to TechCrunch. The figure emerged from a new regulatory filing, months after the streaming giant first announced the deal in March without revealing its financial terms.
 
-The streaming giant announced the acquisition back in March, but declined to share financial terms at the time. A later Bloomberg report had estimated the transaction could be valued at up to $600 million — a figure now confirmed to be close to the mark by Netflix&#x27;s own disclosure.
+According to TechCrunch, InterPositive builds AI tools designed to assist filmmakers during post-production. The technology is aimed at addressing practical on-set problems, including missing shots, background replacements, and incorrect lighting — essentially allowing directors to repair or enhance footage after the cameras have stopped rolling.
 
-InterPositive builds AI tools aimed at post-production work, helping filmmakers correct and enhance footage. According to Affleck, the technology addresses practical on-set problems, including missing shots, background replacements and incorrect lighting. When the deal was announced, Affleck framed the mission around safeguarding creative work, saying he wanted to &quot;protect the power of human creativity.&quot;
+When the acquisition was first announced, Affleck framed the move as an effort to &quot;protect the power of human creativity.&quot; Netflix said at the time that the entire InterPositive team would join the company, with Affleck himself taking on a role as senior advisor. A subsequent report from Bloomberg had valued the deal at up to $600 million, an estimate now confirmed to be close to the actual price.
 
-As part of the acquisition, the full InterPositive team joined Netflix, with Affleck taking on a senior advisor role. The purchase fits into a broader strategy: in its most recent earnings report, Netflix stated that roughly 300 of its titles have already incorporated generative AI in some capacity.
+The disclosure also lands amid Netflix&#x27;s broader embrace of generative AI. In its most recent earnings report, the company stated that roughly 300 of its titles have already incorporated generative AI in some capacity, TechCrunch noted, signaling that the InterPositive purchase is part of a larger strategic bet rather than a one-off experiment.
 
-*The price tag shows just how seriously Hollywood&#x27;s biggest streamer is betting that AI will fix production problems rather than replace the people making films.*
+*The price tag shows how seriously Hollywood&#x27;s biggest players are investing in AI as a creative tool rather than a replacement — at least for now.*
 
-*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/"><span class="tih">Netflix Discloses $587 Million Price Tag for Ben Affleck&#x27;s AI Startup InterPositive</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Kodak EC35 Brings Film Photography Down to Disposable-Camera Prices" data-b="The revival of film photography keeps picking up speed, and it is getting cheaper to join. According to The Verge, Reto Project has launched the Kodak EC35, a 35mm point-and-shoot film camera priced at just $34.99, following the success of its earlier $99 Kodak-branded Snapic A1.
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/"><span class="tih">Netflix reveals $587 million price tag for Ben Affleck&#x27;s AI startup InterPositive</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Kodak EC35 Brings 35mm Film Photography Down to $34.99" data-b="Reto Project is expanding its budget film camera lineup with the Kodak EC35, a point-and-shoot 35mm camera priced at just $34.99, according to The Verge. The release follows the success of the company&#x27;s $99 Kodak-branded Snapic A1 and signals a continued push to make analog photography more accessible as interest in film keeps growing.
 
-The EC35 makes no pretense of sophistication. Its 25mm acrylic lens, fixed f/10 aperture, and 1/100 shutter speed place it roughly on the level of a drugstore disposable, and its manual wind and rewind mechanisms reinforce that impression. A built-in automatic flash completes the no-frills package. Unlike the Snapic A1, the EC35 drops features such as double exposure and zone focusing, aiming instead at users who want a camera that requires almost no thought to operate.
+The EC35 is deliberately basic. It uses a 25mm acrylic lens with a fixed f/10 aperture and a 1/100 shutter speed, specifications The Verge notes put it roughly on par with a drugstore disposable camera. It features manual winding and rewinding, plus a built-in automatic flash. Unlike the Snapic A1, it drops double exposure and zone focusing entirely, aiming instead for a shooting experience that requires almost no thought from the user.
 
-Its one distinctive touch is a sliding lens cover, a design nod to the Olympus Stylus and Mju lines, according to the report. The camera also leans into playful styling, arriving in colors including butter yellow, lavender, powder blue, blush pink, and avocado green, with lens covers in slightly darker shades for subtle contrast. Even the midnight black and vanilla white variants carry differently colored accents, giving them a bit more personality than a typical disposable.
+Its one distinctive design touch is a sliding lens cover, a nod to the classic Olympus Stylus and Mju camera lines. The EC35 ships in a range of playful colors, including butter yellow, lavender, powder blue, blush pink, and avocado green. The lens covers come in a slightly darker shade than the camera body, and even the midnight black and vanilla white variants include contrasting accents that set them apart visually from a typical disposable.
 
-The launch suggests the film renaissance is moving beyond enthusiasts and toward casual buyers looking for an inexpensive, stylish way to shoot analog.
+According to The Verge, the camera arrives as the film photography renaissance continues and becomes more affordable for newcomers.
 
-*At $34.99, the EC35 is less a camera than an invitation — and that may be exactly what film needs to keep growing.*
+*A $35 reusable camera that looks better than a disposable is a smart bet on nostalgia — the barrier to trying film has never been lower.*
 
-*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/967687/kodak-ec35-point-and-shoot-film-camera"><span class="tih">Kodak EC35 Brings Film Photography Down to Disposable-Camera Prices</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="1010Benja Proves Suno Can Be More Than an AI Slop Engine" data-b="Terrence O&#x27;Brien of The Verge has been openly dismissive of generative AI music, particularly Suno&#x27;s output, which he describes as &quot;offensively boring.&quot; Yet in a recent piece, he admits to genuinely enjoying 1010Benja&#x27;s new track &quot;Semiramis&#x27; Dream,&quot; the opener of the EP Time Has Nothing To Do With What You Choose… — a song built with Suno&#x27;s help.
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/967687/kodak-ec35-point-and-shoot-film-camera"><span class="tih">Kodak EC35 Brings 35mm Film Photography Down to $34.99</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple&#x27;s Trade Secrets Lawsuit Could Cloud OpenAI&#x27;s Hardware Ambitions" data-b="Apple has filed a trade secrets lawsuit against OpenAI, accusing the AI company of a pattern of misconduct aimed at getting current and former Apple employees to share confidential information, according to TechCrunch. OpenAI responded that it is &quot;not aware of any evidence that this complaint has merit.&quot;
 
-According to The Verge, what sets the track apart is the process behind it. In an interview with Hearing Things, Benja explained that his friend Patrick Holder made the beat, Benja recorded his own vocals, and the two then ran those elements through Suno, brought the results into Ableton for editing, and fed them back into the AI — a cycle he estimates he repeated a few hundred times for this single song. He makes no attempt to conceal the workflow; the track is even flagged as AI-generated on Deezer.
+The case lands at a sensitive moment for OpenAI, which is reportedly developing hardware products — beginning with a mobile smart speaker, built with Jony Ive and his team — and has confidentially filed for an IPO that could come as early as the end of this year or early next year. Apple has named OpenAI&#x27;s chief hardware officer Tang Tan in the complaint, and alleges that more than 400 Apple employees now work at OpenAI.
 
-The Verge notes the result is hard to identify as machine-made. The most obviously synthetic element, a choir of backup vocalists, blends into the song&#x27;s hyperpop-influenced, heavily processed sound — a style where artificial vocals are already commonplace.
+On TechCrunch&#x27;s Equity podcast, hosts Kirsten Korosec, Sean O&#x27;Kane, and Anthony Ha debated the fallout. O&#x27;Kane suggested that even without injunctive relief, the suit could naturally cause delays in OpenAI&#x27;s hardware work, noting that Apple &quot;doesn&#x27;t do this stuff willy nilly.&quot; He added that the litigation raises questions for the IPO, since a hardware pegged to a contested product line could shift how the offering gets priced. Korosec predicted OpenAI may fight rather than settle quickly, having recently endured — and effectively won — a courtroom battle against Elon Musk. The panel also raised privacy concerns about always-listening devices picking up not just their owners but everyone nearby.
 
-Benja is candid about the ethical baggage of generative AI, including its environmental cost, but frames his use of it as economic necessity: despite earning Pitchfork&#x27;s Best New Music for 2024&#x27;s Ten Total, he describes himself as a struggling artist who cannot afford session musicians or a real children&#x27;s choir.
+*If Apple&#x27;s real goal is simply to slow OpenAI down, the lawsuit may already be winning regardless of what a court decides.*
 
-*If AI music is to have a defensible future, it probably looks like this — a human artist using the tool as an instrument, not a replacement.*
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/"><span class="tih">Apple&#x27;s Trade Secrets Lawsuit Could Cloud OpenAI&#x27;s Hardware Ambitions</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="1010Benja&#x27;s Suno-Made Single Wins Over a Skeptical Critic" data-b="The Verge&#x27;s weekend editor Terrence O&#x27;Brien, a self-described skeptic of generative AI music, says he unexpectedly enjoys &quot;Semiramis&#x27; Dream,&quot; the opening track from artist 1010Benja&#x27;s new EP, Time Has Nothing To Do With What You Choose…. According to The Verge, the song pairs a jungle beat with Benja&#x27;s clearly human vocals, and avoids many of the telltale signs of AI-generated music. Even the AI choir of backup vocalists is disguised within hyperpop-influenced, heavily processed production.
 
-*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music"><span class="tih">1010Benja Proves Suno Can Be More Than an AI Slop Engine</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uber and Waymo Clash Over Proposed Robotaxi Rules in Washington, D.C." data-b="Uber and Waymo are openly sparring over a proposed Washington, D.C. bill that would allow autonomous vehicles to operate in the city, according to TechCrunch Mobility. Reporter Kirsten Korosec, citing correspondence Uber sent to the D.C. Council and conversations with sources, found that Uber opposes the bill, arguing it would displace for-hire human drivers and hand Waymo a de facto monopoly. Uber has instead lobbied for a &quot;hybrid&quot; system requiring robotaxis to run on ride-hailing networks alongside human drivers — an approach insiders say has little chance of becoming law, but which would leave AV developers like Waymo with unappealing options if it did.
+Benja is open about his workflow. In an interview with Hearing Things, he explained that a friend made the beat, he recorded the vocals, and the elements were then fed into Suno, edited in Ableton, and pushed back through the AI repeatedly — a cycle he estimates he ran a few hundred times for this track. He noted the song is marked as AI-generated on Deezer and said he feels no shame about it.
 
-A D.C. Council hearing drew representatives from Lyft, Tesla, Uber, and Waymo, plus disability advocates, industry groups, safety organizations, unions, and think tanks. Per TechCrunch, Waymo is among the few companies generally supportive of the bill. Tesla&#x27;s senior policy adviser, India Herdman, raised objections shared by other AV developers, including a 180-day, 250,000-mile mandatory testing requirement, a $1 million application fee, a $5 million permit fee, and a $0.15-per-mile tax. Tesla and others argued testing miles from other jurisdictions should count toward the threshold.
+Benja acknowledges the ethical and environmental baggage of generative AI, but argues the tools let him realize visions beyond his financial means. According to The Verge, despite earning Pitchfork&#x27;s Best New Music for his 2024 release Ten Total, he has struggled financially and experienced periods of homelessness. O&#x27;Brien notes, however, that little on the track couldn&#x27;t have been achieved without AI, and he remains deeply skeptical of AI art overall.
 
-Notably, Waymo has already surpassed those requirements while testing with human safety operators in D.C., meaning it would enter the market with at least a six-month head start if the bill passed as written.
+*A rare case where the human stays in the loop enough to make the machine worth listening to.*
 
-*The fight over who writes the rules may matter as much as the technology itself — incumbency is quietly being codified into law.*
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music"><span class="tih">1010Benja&#x27;s Suno-Made Single Wins Over a Skeptical Critic</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uber and Waymo Clash Over Washington D.C. Robotaxi Legislation" data-b="Uber and Waymo have taken opposing positions on a proposed bill that would allow autonomous vehicles to operate in Washington, D.C., according to TechCrunch. Correspondence obtained from Uber&#x27;s outreach to the D.C. Council shows the ride-hailing company lobbying against the measure, arguing it would displace human for-hire drivers and hand Waymo a de facto monopoly. Uber has instead pushed for a &quot;hybrid&quot; system requiring robotaxis to run on ride-hailing networks alongside human drivers — an approach insiders say has little chance of becoming law.
 
-*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-rules/"><span class="tih">Uber and Waymo Clash Over Proposed Robotaxi Rules in Washington, D.C.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Netflix Discloses $587 Million Price Tag for Ben Affleck&#x27;s AI Startup InterPositive" data-b="Netflix has revealed it paid $587 million in cash to acquire InterPositive, the artificial intelligence filmmaking startup co-founded by actor and director Ben Affleck. The figure emerged in a new regulatory filing, according to TechCrunch, months after the deal itself was first made public.
+The D.C. Council held a hearing that drew representatives from Lyft, Tesla, Uber, and Waymo, alongside disability rights advocates, labor unions, safety organizations, and industry groups. Tesla senior policy adviser India Herdman raised objections shared by several AV developers, including a mandatory 180-day, 250,000-mile testing requirement, a $1 million application fee, a $5 million permit fee, and a $0.15-per-mile tax. Companies argued testing miles from other jurisdictions should count toward the threshold.
 
-The streaming giant announced the acquisition back in March, but declined to share financial terms at the time. A later Bloomberg report had estimated the transaction could be valued at up to $600 million — a figure now confirmed to be close to the mark by Netflix&#x27;s own disclosure.
+Waymo, which has already been testing with human safety operators in D.C., has surpassed those requirements and would enter the market with at least a six-month head start if the bill passed as written. TechCrunch reports Waymo is among the few companies that generally support the proposal, while much of the rest of the industry does not.
 
-InterPositive builds AI tools aimed at post-production work, helping filmmakers correct and enhance footage. According to Affleck, the technology addresses practical on-set problems, including missing shots, background replacements and incorrect lighting. When the deal was announced, Affleck framed the mission around safeguarding creative work, saying he wanted to &quot;protect the power of human creativity.&quot;
+*The irony is rich: the company that disrupted human taxis is now lobbying to protect human drivers from the same fate.*
 
-As part of the acquisition, the full InterPositive team joined Netflix, with Affleck taking on a senior advisor role. The purchase fits into a broader strategy: in its most recent earnings report, Netflix stated that roughly 300 of its titles have already incorporated generative AI in some capacity.
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-rules/"><span class="tih">Uber and Waymo Clash Over Washington D.C. Robotaxi Legislation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Netflix reveals $587 million price tag for Ben Affleck&#x27;s AI startup InterPositive" data-b="Netflix has disclosed that it paid $587 million in cash to acquire InterPositive, an artificial intelligence filmmaking startup co-founded by actor and director Ben Affleck, according to TechCrunch. The figure emerged from a new regulatory filing, months after the streaming giant first announced the deal in March without revealing its financial terms.
 
-*The price tag shows just how seriously Hollywood&#x27;s biggest streamer is betting that AI will fix production problems rather than replace the people making films.*
+According to TechCrunch, InterPositive builds AI tools designed to assist filmmakers during post-production. The technology is aimed at addressing practical on-set problems, including missing shots, background replacements, and incorrect lighting — essentially allowing directors to repair or enhance footage after the cameras have stopped rolling.
 
-*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/"><span class="tih">Netflix Discloses $587 Million Price Tag for Ben Affleck&#x27;s AI Startup InterPositive</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Kodak EC35 Brings Film Photography Down to Disposable-Camera Prices" data-b="The revival of film photography keeps picking up speed, and it is getting cheaper to join. According to The Verge, Reto Project has launched the Kodak EC35, a 35mm point-and-shoot film camera priced at just $34.99, following the success of its earlier $99 Kodak-branded Snapic A1.
+When the acquisition was first announced, Affleck framed the move as an effort to &quot;protect the power of human creativity.&quot; Netflix said at the time that the entire InterPositive team would join the company, with Affleck himself taking on a role as senior advisor. A subsequent report from Bloomberg had valued the deal at up to $600 million, an estimate now confirmed to be close to the actual price.
 
-The EC35 makes no pretense of sophistication. Its 25mm acrylic lens, fixed f/10 aperture, and 1/100 shutter speed place it roughly on the level of a drugstore disposable, and its manual wind and rewind mechanisms reinforce that impression. A built-in automatic flash completes the no-frills package. Unlike the Snapic A1, the EC35 drops features such as double exposure and zone focusing, aiming instead at users who want a camera that requires almost no thought to operate.
+The disclosure also lands amid Netflix&#x27;s broader embrace of generative AI. In its most recent earnings report, the company stated that roughly 300 of its titles have already incorporated generative AI in some capacity, TechCrunch noted, signaling that the InterPositive purchase is part of a larger strategic bet rather than a one-off experiment.
 
-Its one distinctive touch is a sliding lens cover, a design nod to the Olympus Stylus and Mju lines, according to the report. The camera also leans into playful styling, arriving in colors including butter yellow, lavender, powder blue, blush pink, and avocado green, with lens covers in slightly darker shades for subtle contrast. Even the midnight black and vanilla white variants carry differently colored accents, giving them a bit more personality than a typical disposable.
+*The price tag shows how seriously Hollywood&#x27;s biggest players are investing in AI as a creative tool rather than a replacement — at least for now.*
 
-The launch suggests the film renaissance is moving beyond enthusiasts and toward casual buyers looking for an inexpensive, stylish way to shoot analog.
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/"><span class="tih">Netflix reveals $587 million price tag for Ben Affleck&#x27;s AI startup InterPositive</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Kodak EC35 Brings 35mm Film Photography Down to $34.99" data-b="Reto Project is expanding its budget film camera lineup with the Kodak EC35, a point-and-shoot 35mm camera priced at just $34.99, according to The Verge. The release follows the success of the company&#x27;s $99 Kodak-branded Snapic A1 and signals a continued push to make analog photography more accessible as interest in film keeps growing.
 
-*At $34.99, the EC35 is less a camera than an invitation — and that may be exactly what film needs to keep growing.*
+The EC35 is deliberately basic. It uses a 25mm acrylic lens with a fixed f/10 aperture and a 1/100 shutter speed, specifications The Verge notes put it roughly on par with a drugstore disposable camera. It features manual winding and rewinding, plus a built-in automatic flash. Unlike the Snapic A1, it drops double exposure and zone focusing entirely, aiming instead for a shooting experience that requires almost no thought from the user.
 
-*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/967687/kodak-ec35-point-and-shoot-film-camera"><span class="tih">Kodak EC35 Brings Film Photography Down to Disposable-Camera Prices</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="1010Benja Proves Suno Can Be More Than an AI Slop Engine" data-b="Terrence O&#x27;Brien of The Verge has been openly dismissive of generative AI music, particularly Suno&#x27;s output, which he describes as &quot;offensively boring.&quot; Yet in a recent piece, he admits to genuinely enjoying 1010Benja&#x27;s new track &quot;Semiramis&#x27; Dream,&quot; the opener of the EP Time Has Nothing To Do With What You Choose… — a song built with Suno&#x27;s help.
+Its one distinctive design touch is a sliding lens cover, a nod to the classic Olympus Stylus and Mju camera lines. The EC35 ships in a range of playful colors, including butter yellow, lavender, powder blue, blush pink, and avocado green. The lens covers come in a slightly darker shade than the camera body, and even the midnight black and vanilla white variants include contrasting accents that set them apart visually from a typical disposable.
 
-According to The Verge, what sets the track apart is the process behind it. In an interview with Hearing Things, Benja explained that his friend Patrick Holder made the beat, Benja recorded his own vocals, and the two then ran those elements through Suno, brought the results into Ableton for editing, and fed them back into the AI — a cycle he estimates he repeated a few hundred times for this single song. He makes no attempt to conceal the workflow; the track is even flagged as AI-generated on Deezer.
+According to The Verge, the camera arrives as the film photography renaissance continues and becomes more affordable for newcomers.
 
-The Verge notes the result is hard to identify as machine-made. The most obviously synthetic element, a choir of backup vocalists, blends into the song&#x27;s hyperpop-influenced, heavily processed sound — a style where artificial vocals are already commonplace.
+*A $35 reusable camera that looks better than a disposable is a smart bet on nostalgia — the barrier to trying film has never been lower.*
 
-Benja is candid about the ethical baggage of generative AI, including its environmental cost, but frames his use of it as economic necessity: despite earning Pitchfork&#x27;s Best New Music for 2024&#x27;s Ten Total, he describes himself as a struggling artist who cannot afford session musicians or a real children&#x27;s choir.
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/967687/kodak-ec35-point-and-shoot-film-camera"><span class="tih">Kodak EC35 Brings 35mm Film Photography Down to $34.99</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple&#x27;s Trade Secrets Lawsuit Could Cloud OpenAI&#x27;s Hardware Ambitions" data-b="Apple has filed a trade secrets lawsuit against OpenAI, accusing the AI company of a pattern of misconduct aimed at getting current and former Apple employees to share confidential information, according to TechCrunch. OpenAI responded that it is &quot;not aware of any evidence that this complaint has merit.&quot;
 
-*If AI music is to have a defensible future, it probably looks like this — a human artist using the tool as an instrument, not a replacement.*
+The case lands at a sensitive moment for OpenAI, which is reportedly developing hardware products — beginning with a mobile smart speaker, built with Jony Ive and his team — and has confidentially filed for an IPO that could come as early as the end of this year or early next year. Apple has named OpenAI&#x27;s chief hardware officer Tang Tan in the complaint, and alleges that more than 400 Apple employees now work at OpenAI.
 
-*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music"><span class="tih">1010Benja Proves Suno Can Be More Than an AI Slop Engine</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uber and Waymo Clash Over Proposed Robotaxi Rules in Washington, D.C." data-b="Uber and Waymo are openly sparring over a proposed Washington, D.C. bill that would allow autonomous vehicles to operate in the city, according to TechCrunch Mobility. Reporter Kirsten Korosec, citing correspondence Uber sent to the D.C. Council and conversations with sources, found that Uber opposes the bill, arguing it would displace for-hire human drivers and hand Waymo a de facto monopoly. Uber has instead lobbied for a &quot;hybrid&quot; system requiring robotaxis to run on ride-hailing networks alongside human drivers — an approach insiders say has little chance of becoming law, but which would leave AV developers like Waymo with unappealing options if it did.
+On TechCrunch&#x27;s Equity podcast, hosts Kirsten Korosec, Sean O&#x27;Kane, and Anthony Ha debated the fallout. O&#x27;Kane suggested that even without injunctive relief, the suit could naturally cause delays in OpenAI&#x27;s hardware work, noting that Apple &quot;doesn&#x27;t do this stuff willy nilly.&quot; He added that the litigation raises questions for the IPO, since a hardware pegged to a contested product line could shift how the offering gets priced. Korosec predicted OpenAI may fight rather than settle quickly, having recently endured — and effectively won — a courtroom battle against Elon Musk. The panel also raised privacy concerns about always-listening devices picking up not just their owners but everyone nearby.
 
-A D.C. Council hearing drew representatives from Lyft, Tesla, Uber, and Waymo, plus disability advocates, industry groups, safety organizations, unions, and think tanks. Per TechCrunch, Waymo is among the few companies generally supportive of the bill. Tesla&#x27;s senior policy adviser, India Herdman, raised objections shared by other AV developers, including a 180-day, 250,000-mile mandatory testing requirement, a $1 million application fee, a $5 million permit fee, and a $0.15-per-mile tax. Tesla and others argued testing miles from other jurisdictions should count toward the threshold.
+*If Apple&#x27;s real goal is simply to slow OpenAI down, the lawsuit may already be winning regardless of what a court decides.*
 
-Notably, Waymo has already surpassed those requirements while testing with human safety operators in D.C., meaning it would enter the market with at least a six-month head start if the bill passed as written.
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/"><span class="tih">Apple&#x27;s Trade Secrets Lawsuit Could Cloud OpenAI&#x27;s Hardware Ambitions</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="1010Benja&#x27;s Suno-Made Single Wins Over a Skeptical Critic" data-b="The Verge&#x27;s weekend editor Terrence O&#x27;Brien, a self-described skeptic of generative AI music, says he unexpectedly enjoys &quot;Semiramis&#x27; Dream,&quot; the opening track from artist 1010Benja&#x27;s new EP, Time Has Nothing To Do With What You Choose…. According to The Verge, the song pairs a jungle beat with Benja&#x27;s clearly human vocals, and avoids many of the telltale signs of AI-generated music. Even the AI choir of backup vocalists is disguised within hyperpop-influenced, heavily processed production.
 
-*The fight over who writes the rules may matter as much as the technology itself — incumbency is quietly being codified into law.*
+Benja is open about his workflow. In an interview with Hearing Things, he explained that a friend made the beat, he recorded the vocals, and the elements were then fed into Suno, edited in Ableton, and pushed back through the AI repeatedly — a cycle he estimates he ran a few hundred times for this track. He noted the song is marked as AI-generated on Deezer and said he feels no shame about it.
 
-*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-rules/"><span class="tih">Uber and Waymo Clash Over Proposed Robotaxi Rules in Washington, D.C.</span> <span class="tis">— techcrunch.com</span></div></div></div>
-<div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Dave Eggers Tells OpenAI Staff ChatGPT Is Silencing an Entire Generation" data-b="Author Dave Eggers used an invitation from OpenAI CEO Sam Altman to deliver a pointed critique of the company&#x27;s flagship product rather than a talk about the craft of writing. According to The Verge, citing the Financial Times, Eggers spoke last year to an audience of around 200 OpenAI employees, telling them that ChatGPT&#x27;s effect on educators had been &quot;catastrophic&quot; and that the tool had made every teacher&#x27;s life far harder than it was two years earlier.
+Benja acknowledges the ethical and environmental baggage of generative AI, but argues the tools let him realize visions beyond his financial means. According to The Verge, despite earning Pitchfork&#x27;s Best New Music for his 2024 release Ten Total, he has struggled financially and experienced periods of homelessness. O&#x27;Brien notes, however, that little on the track couldn&#x27;t have been achieved without AI, and he remains deeply skeptical of AI art overall.
 
-Eggers reserved his sharpest warning for students. If young people rely on ChatGPT to compose, he argued, they will never learn to write, losing their voice and the ability to say their truth and tell their own story — an outcome he described as silencing an entire generation or two.
+*A rare case where the human stays in the loop enough to make the machine worth listening to.*
 
-The remarks may not have come as a complete surprise to Altman. Eggers is the author of the best-selling novel The Circle, a scathing critique of the tech industry, and he has previously dismissed AI-generated writing as &quot;pastiche nonsense.&quot; Beyond his many novels, screenplays and works of journalism, he founded the publishing house McSweeney&#x27;s as well as multiple schools and nonprofits that support writers and the arts.
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music"><span class="tih">1010Benja&#x27;s Suno-Made Single Wins Over a Skeptical Critic</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uber and Waymo Clash Over Washington D.C. Robotaxi Legislation" data-b="Uber and Waymo have taken opposing positions on a proposed bill that would allow autonomous vehicles to operate in Washington, D.C., according to TechCrunch. Correspondence obtained from Uber&#x27;s outreach to the D.C. Council shows the ride-hailing company lobbying against the measure, arguing it would displace human for-hire drivers and hand Waymo a de facto monopoly. Uber has instead pushed for a &quot;hybrid&quot; system requiring robotaxis to run on ride-hailing networks alongside human drivers — an approach insiders say has little chance of becoming law.
 
-According to The Verge, what staff might have expected to be a talk on being relentlessly prolific or excelling across fields instead became a direct rebuke aimed at the people building the technology.
+The D.C. Council held a hearing that drew representatives from Lyft, Tesla, Uber, and Waymo, alongside disability rights advocates, labor unions, safety organizations, and industry groups. Tesla senior policy adviser India Herdman raised objections shared by several AV developers, including a mandatory 180-day, 250,000-mile testing requirement, a $1 million application fee, a $5 million permit fee, and a $0.15-per-mile tax. Companies argued testing miles from other jurisdictions should count toward the threshold.
 
-*A novelist walking into OpenAI&#x27;s offices to accuse its product of stealing young voices is a reminder that the cultural reckoning over AI writing is still only beginning.*
+Waymo, which has already been testing with human safety operators in D.C., has surpassed those requirements and would enter the market with at least a six-month head start if the bill passed as written. TechCrunch reports Waymo is among the few companies that generally support the proposal, while much of the rest of the industry does not.
 
-*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation"><span class="tih">Dave Eggers Tells OpenAI Staff ChatGPT Is Silencing an Entire Generation</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Moonshot&#x27;s Kimi K3 Release Revives US-China Open-Source AI Tensions" data-b="Moonshot AI released a new version of its Kimi model this week, triggering renewed debate about Chinese open-source AI, according to TechCrunch. The Chinese company stated that Kimi K3 &quot;still trails the most powerful proprietary models, Claude Fable 5 and GPT 5.6 Sol,&quot; but demonstrated frontier-level performance across its evaluation suite, consistently outperforming other tested models. Independent analyses from Arena.ai and Vals AI suggested Kimi is competitive with flagship frontier models.
+*The irony is rich: the company that disrupted human taxis is now lobbying to protect human drivers from the same fate.*
 
-The announcement coincided with Chinese president Xi Jinping&#x27;s speech at the World AI Conference in Shanghai and appeared to unsettle Wall Street, with the Nasdaq dropping about 1% on Friday as investors sold chip stocks including Nvidia. The discourse echoes January 2025&#x27;s DeepSeek R1 release, though tensions are heightened following the Trump administration&#x27;s tariff war with China and fights over Anthropic&#x27;s alleged national security threat.
-
-David Sacks, former Trump AI czar and now co-chair of the President&#x27;s Council of Advisors on Science and Technology, contrasted Kimi&#x27;s progress with a United States &quot;tying itself in knots&quot; through data center bans, state regulations, and federal pre-approval of frontier models. Former Uber CEO Travis Kalanick echoed complaints about Chinese &quot;distilling off&quot; American AI models.
-
-OpenAI&#x27;s Dean Ball called Kimi &quot;a very good model&quot; whose performance likely cannot be explained by distillation, expressing surprise that the Chinese state allows open sourcing of such capable models. Ball suggested the probable outcome of open-weight dominance is &quot;full AI communism&quot; with AI as state-provided digital public infrastructure, predicting the Trump administration will create regulatory risk around Chinese open-weight models. Transformer&#x27;s Shakeel Hashim argued the worry is overblown, citing Kimi&#x27;s likely lack of dangerous cyber capabilities.
-
-*The framing of open-source AI as a geopolitical threat rather than a technical milestone reveals how quickly innovation discourse becomes protectionist policy.*
-
-*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/18/kimi-threat-or-menace/"><span class="tih">Moonshot&#x27;s Kimi K3 Release Revives US-China Open-Source AI Tensions</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Google Releases Its 3D Emoji Set as Open Source" data-b="Google has decided to open-source its entire collection of 3D emoji, making the assets freely available for anyone to use in their own creations. The move was announced alongside a behind-the-scenes look at the company&#x27;s design process, shared as part of World Emoji Day on Friday, according to The Verge.
-
-The emoji in question are Google&#x27;s Noto Emoji 3D, which first debuted in May and were met with mixed reactions at launch. Now the company says it is handing the raw .OBJ files over to the community, suggesting they could be used to build immersive VR worlds, indie apps, or even odd memes.
-
-The report also sheds light on what it takes to translate familiar flat pictograms into three-dimensional objects. Questions that never arise in 2D illustration suddenly matter a great deal: should a smiley face be modeled as a sphere, a mask, or a flat disc? These are the kinds of decisions Google&#x27;s designers had to work through when turning the emoji set into full 3D models.
-
-With the files now openly available, developers and creators can incorporate Google&#x27;s 3D emoji into their own projects — from apps and games to virtual environments and whatever stranger ideas the community comes up with next.
-
-*A small but genuinely useful gesture — open design assets like these tend to find their most interesting uses far from what their creators imagined, VR emoji worlds included.*
-
-*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/design/967606/google-open-source-3d-emoji"><span class="tih">Google Releases Its 3D Emoji Set as Open Source</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Just loaded the wire-articles-v2 skill to be sure about format. Good, I have the exact format. Let me write the article." data-b="Federal employees cleared to install TikTok on government devices after ownership deal
-
-The US Department of Justice has informed federal agencies that employees may once again install TikTok on their official work phones, reversing a restriction that had been in place since 2022, according to TechCrunch, citing Reuters.
-
-A law passed in 2022 barred federal workers from using the short-form video app on government devices. The DOJ now says that prohibition no longer applies because of a deal that shifted control of TikTok&#x27;s US operations to a joint venture backed by Oracle, Silver Lake, and MGX. Oracle acts as the security partner for the new entity, while former owner ByteDance keeps a 19.9% stake.
-
-The DOJ memo reportedly states that President Donald Trump has authorised &quot;employees of Executive Branch agencies&quot; to &quot;download TikTok onto their official devices, subject to the agency&#x27;s discretion and consistent with all applicable workplace policies.&quot;
-
-The government-device ban was followed by a broader nationwide prohibition on the app. When that law came into force early last year, TikTok went offline only briefly before Trump repeatedly postponed enforcement and pressed service providers to keep the platform available.
-
-*The speed with which a security ban evaporates once the right ownership structure is in place tells you this was always about politics, not packets.*
-
-*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/18/federal-employees-can-download-tiktok-on-their-work-phones-again/"><span class="tih">Just loaded the wire-articles-v2 skill to be sure about format. Good, I have the exact format. Let me write the article.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="AI Enters the Prior Authorization Fight as Doctors Fear More Denials" data-b="Prior authorization, the insurer gatekeeping step that requires pre-approval before certain treatments are covered, is getting an artificial intelligence overhaul — and not everyone is convinced it will help patients. According to Ars Technica, a 2025 American Medical Association survey found that 61 percent of physicians worry AI will increase wrongful denials of care they consider necessary. The AMA is pushing for rules that would force insurers to explain the clinical reasoning behind denials and disclose more about the algorithms making those decisions.
-
-The Trump administration is already testing the concept. This year the Centers for Medicare and Medicaid Services launched WISeR — the Wasteful and Inappropriate Service Reduction Model — a demonstration project running through December 2031 in six states. The program pairs machine learning with human clinical review to flag services prone to overuse or fraud in original Medicare, including skin and tissue substitutes, electrical nerve stimulator implants, and knee arthroscopy for osteoarthritis.
-
-The stakes are significant. A Commonwealth Fund survey cited by Ars Technica reports that roughly one in five working-age adults with private insurance said they or a family member were denied coverage for physician-recommended care in 2025. Of those, 41 percent said the denial delayed treatment, and more than a quarter said their condition worsened. Meanwhile, a 2022 HHS Office of Inspector General memorandum found Medicare Advantage plans denied services in more than one in 10 cases where coverage rules appeared to be met — though plans overturned 81 percent of denials on appeal in 2024.
-
-*When the appeals process already reverses most denials, automating the front end of the same system feels less like reform and more like scaling the bottleneck.*
-
-*— Written by AI (kimi-k3)*" data-s="arstechnica.com" data-u="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse/"><span class="tih">AI Enters the Prior Authorization Fight as Doctors Fear More Denials</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dave Eggers Tells OpenAI Staff ChatGPT Is Silencing an Entire Generation" data-b="Author Dave Eggers used an invitation from OpenAI CEO Sam Altman to deliver a pointed critique of the company&#x27;s flagship product rather than a talk about the craft of writing. According to The Verge, citing the Financial Times, Eggers spoke last year to an audience of around 200 OpenAI employees, telling them that ChatGPT&#x27;s effect on educators had been &quot;catastrophic&quot; and that the tool had made every teacher&#x27;s life far harder than it was two years earlier.
-
-Eggers reserved his sharpest warning for students. If young people rely on ChatGPT to compose, he argued, they will never learn to write, losing their voice and the ability to say their truth and tell their own story — an outcome he described as silencing an entire generation or two.
-
-The remarks may not have come as a complete surprise to Altman. Eggers is the author of the best-selling novel The Circle, a scathing critique of the tech industry, and he has previously dismissed AI-generated writing as &quot;pastiche nonsense.&quot; Beyond his many novels, screenplays and works of journalism, he founded the publishing house McSweeney&#x27;s as well as multiple schools and nonprofits that support writers and the arts.
-
-According to The Verge, what staff might have expected to be a talk on being relentlessly prolific or excelling across fields instead became a direct rebuke aimed at the people building the technology.
-
-*A novelist walking into OpenAI&#x27;s offices to accuse its product of stealing young voices is a reminder that the cultural reckoning over AI writing is still only beginning.*
-
-*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation"><span class="tih">Dave Eggers Tells OpenAI Staff ChatGPT Is Silencing an Entire Generation</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Moonshot&#x27;s Kimi K3 Release Revives US-China Open-Source AI Tensions" data-b="Moonshot AI released a new version of its Kimi model this week, triggering renewed debate about Chinese open-source AI, according to TechCrunch. The Chinese company stated that Kimi K3 &quot;still trails the most powerful proprietary models, Claude Fable 5 and GPT 5.6 Sol,&quot; but demonstrated frontier-level performance across its evaluation suite, consistently outperforming other tested models. Independent analyses from Arena.ai and Vals AI suggested Kimi is competitive with flagship frontier models.
-
-The announcement coincided with Chinese president Xi Jinping&#x27;s speech at the World AI Conference in Shanghai and appeared to unsettle Wall Street, with the Nasdaq dropping about 1% on Friday as investors sold chip stocks including Nvidia. The discourse echoes January 2025&#x27;s DeepSeek R1 release, though tensions are heightened following the Trump administration&#x27;s tariff war with China and fights over Anthropic&#x27;s alleged national security threat.
-
-David Sacks, former Trump AI czar and now co-chair of the President&#x27;s Council of Advisors on Science and Technology, contrasted Kimi&#x27;s progress with a United States &quot;tying itself in knots&quot; through data center bans, state regulations, and federal pre-approval of frontier models. Former Uber CEO Travis Kalanick echoed complaints about Chinese &quot;distilling off&quot; American AI models.
-
-OpenAI&#x27;s Dean Ball called Kimi &quot;a very good model&quot; whose performance likely cannot be explained by distillation, expressing surprise that the Chinese state allows open sourcing of such capable models. Ball suggested the probable outcome of open-weight dominance is &quot;full AI communism&quot; with AI as state-provided digital public infrastructure, predicting the Trump administration will create regulatory risk around Chinese open-weight models. Transformer&#x27;s Shakeel Hashim argued the worry is overblown, citing Kimi&#x27;s likely lack of dangerous cyber capabilities.
-
-*The framing of open-source AI as a geopolitical threat rather than a technical milestone reveals how quickly innovation discourse becomes protectionist policy.*
-
-*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/18/kimi-threat-or-menace/"><span class="tih">Moonshot&#x27;s Kimi K3 Release Revives US-China Open-Source AI Tensions</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Google Releases Its 3D Emoji Set as Open Source" data-b="Google has decided to open-source its entire collection of 3D emoji, making the assets freely available for anyone to use in their own creations. The move was announced alongside a behind-the-scenes look at the company&#x27;s design process, shared as part of World Emoji Day on Friday, according to The Verge.
-
-The emoji in question are Google&#x27;s Noto Emoji 3D, which first debuted in May and were met with mixed reactions at launch. Now the company says it is handing the raw .OBJ files over to the community, suggesting they could be used to build immersive VR worlds, indie apps, or even odd memes.
-
-The report also sheds light on what it takes to translate familiar flat pictograms into three-dimensional objects. Questions that never arise in 2D illustration suddenly matter a great deal: should a smiley face be modeled as a sphere, a mask, or a flat disc? These are the kinds of decisions Google&#x27;s designers had to work through when turning the emoji set into full 3D models.
-
-With the files now openly available, developers and creators can incorporate Google&#x27;s 3D emoji into their own projects — from apps and games to virtual environments and whatever stranger ideas the community comes up with next.
-
-*A small but genuinely useful gesture — open design assets like these tend to find their most interesting uses far from what their creators imagined, VR emoji worlds included.*
-
-*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/design/967606/google-open-source-3d-emoji"><span class="tih">Google Releases Its 3D Emoji Set as Open Source</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Just loaded the wire-articles-v2 skill to be sure about format. Good, I have the exact format. Let me write the article." data-b="Federal employees cleared to install TikTok on government devices after ownership deal
-
-The US Department of Justice has informed federal agencies that employees may once again install TikTok on their official work phones, reversing a restriction that had been in place since 2022, according to TechCrunch, citing Reuters.
-
-A law passed in 2022 barred federal workers from using the short-form video app on government devices. The DOJ now says that prohibition no longer applies because of a deal that shifted control of TikTok&#x27;s US operations to a joint venture backed by Oracle, Silver Lake, and MGX. Oracle acts as the security partner for the new entity, while former owner ByteDance keeps a 19.9% stake.
-
-The DOJ memo reportedly states that President Donald Trump has authorised &quot;employees of Executive Branch agencies&quot; to &quot;download TikTok onto their official devices, subject to the agency&#x27;s discretion and consistent with all applicable workplace policies.&quot;
-
-The government-device ban was followed by a broader nationwide prohibition on the app. When that law came into force early last year, TikTok went offline only briefly before Trump repeatedly postponed enforcement and pressed service providers to keep the platform available.
-
-*The speed with which a security ban evaporates once the right ownership structure is in place tells you this was always about politics, not packets.*
-
-*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/18/federal-employees-can-download-tiktok-on-their-work-phones-again/"><span class="tih">Just loaded the wire-articles-v2 skill to be sure about format. Good, I have the exact format. Let me write the article.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="AI Enters the Prior Authorization Fight as Doctors Fear More Denials" data-b="Prior authorization, the insurer gatekeeping step that requires pre-approval before certain treatments are covered, is getting an artificial intelligence overhaul — and not everyone is convinced it will help patients. According to Ars Technica, a 2025 American Medical Association survey found that 61 percent of physicians worry AI will increase wrongful denials of care they consider necessary. The AMA is pushing for rules that would force insurers to explain the clinical reasoning behind denials and disclose more about the algorithms making those decisions.
-
-The Trump administration is already testing the concept. This year the Centers for Medicare and Medicaid Services launched WISeR — the Wasteful and Inappropriate Service Reduction Model — a demonstration project running through December 2031 in six states. The program pairs machine learning with human clinical review to flag services prone to overuse or fraud in original Medicare, including skin and tissue substitutes, electrical nerve stimulator implants, and knee arthroscopy for osteoarthritis.
-
-The stakes are significant. A Commonwealth Fund survey cited by Ars Technica reports that roughly one in five working-age adults with private insurance said they or a family member were denied coverage for physician-recommended care in 2025. Of those, 41 percent said the denial delayed treatment, and more than a quarter said their condition worsened. Meanwhile, a 2022 HHS Office of Inspector General memorandum found Medicare Advantage plans denied services in more than one in 10 cases where coverage rules appeared to be met — though plans overturned 81 percent of denials on appeal in 2024.
-
-*When the appeals process already reverses most denials, automating the front end of the same system feels less like reform and more like scaling the bottleneck.*
-
-*— Written by AI (kimi-k3)*" data-s="arstechnica.com" data-u="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse/"><span class="tih">AI Enters the Prior Authorization Fight as Doctors Fear More Denials</span> <span class="tis">— arstechnica.com</span></div></div></div>
-<div class="notice"><b>Editor's note —</b> A thin Sunday: research, official, funding and Italia wires came back empty, so today's Lens leans on the silicon cycle, the toolmakers, and one story from Ukraine that matters more than both.</div>
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-rules/"><span class="tih">Uber and Waymo Clash Over Washington D.C. Robotaxi Legislation</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="notice"><b>Editor's note —</b> A lean weekend signal set: hardware, funding and official channels went quiet, so today's lens turns to the research frontier and the tools that shipped anyway.</div>
 
 
     <div class="lead-zone">
       <article class="lead">
-  <a href="https://www.youtube.com/watch?v=Qm64Vm-lf80" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/papers/2607.14076" target="_blank" rel="noopener">
     
     <div class="lead-grid">
       <div class="lead-head">
-        <p class="kicker">War gets humanoids</p>
-        <h1>American humanoid robots are already being tested in Ukraine</h1>
+        <p class="kicker">Dream, then play</p>
+        <h1>Your next game engine might just dream the frames</h1>
       </div>
       <div class="lead-body">
-        <p class="deck">Foundation Future Industries is preparing its Phantom humanoid robots for military combat, and the machines have already seen testing in Ukraine. Lethal capability is the unspoken next step, and with China racing its own combat humanoids, the deployment question has quietly shifted from 'if' to 'who fields them first.' This is the story everyone in robotics will be pretending not to watch.</p>
-        <p class="byline"><span class="src">YouTube — Beyond AI News</span> · <span>2026-07-19</span> · <span class="more">Read the dispatch →</span></p>
+        <p class="deck">A new paper from HuggingFace's daily top pulls the rug from under traditional rendering: instead of simulating physics and drawing polygons, a video generative model simply hallucinates the next frame in response to your inputs. With 407 upvotes and counting, 'From Pixels to States' argues that interactive world models — trained purely on gameplay footage — can already serve as playable engines. The implications are unsettling and thrilling: no engine, no assets, no explicit 3D — just a model that learned what games feel like. If this scales, the whole toolchain of game development becomes a prompt.</p>
+        <p class="byline"><span class="src">HuggingFace</span> · <span>2026-07-19</span> · <span class="more">Read the dispatch →</span></p>
       </div>
     </div>
   </a>
@@ -791,18 +422,18 @@ The stakes are significant. A Commonwealth Fund survey cited by Ars Technica rep
 
     <div class="topstories">
 <article class="story">
-  <a href="https://www.staradvertiser.com/2026/07/18/apple-unseats-nvidia-most-valuable-company" target="_blank" rel="noopener">
-    <h3>Apple takes back the crown as the AI chip trade cracks</h3>
-    <p>Apple reclaimed the title of world's most valuable company at $4.9 trillion, passing Nvidia as chip stocks slid into a bear market. The rotation says the quiet part aloud: investors are hedging the AI infrastructure bet with the company that sells AI to consumers instead.</p>
-    <p class="byline"><span class="src">Honolulu Star-Advertiser</span> · 2026-07-19</p>
+  <a href="https://x.com/i/status/2078614672086036555" target="_blank" rel="noopener">
+    <h3>LeCun pushes back as the 'open weights are dumping' argument goes mainstream</h3>
+    <p>A prominent thread this weekend framed frontier open-weight releases as economic dumping that undercuts private R&amp;D. Yann LeCun fired back with a history lesson: Linux, PyTorch, and Llama all expanded the pie instead of shrinking it. The debate matters because it is no longer fringe — it is shaping how investors and policymakers talk about open source AI.</p>
+    <p class="byline"><span class="src">X — hosseeb / ylecun</span> · 2026-07-19</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://www.scmp.com/tech/tech-trends/article/chinese-chip-start-biren-bets-light-based-supernodes-match-nvidia" target="_blank" rel="noopener">
-    <h3>Biren bets on light to outrun Nvidia's interconnects</h3>
-    <p>Chinese chip startup Biren Technology disclosed plans for silicon-photonics 'supernodes' aimed at matching Nvidia in large-scale inference. If the light-based fabric works, the moat shifts from raw compute to optics — and export controls get a lot harder to aim.</p>
-    <p class="byline"><span class="src">South China Morning Post</span> · 2026-07-18</p>
+  <a href="https://huggingface.co/papers/2607.15330" target="_blank" rel="noopener">
+    <h3>Xiaomi's robotics bet: 100,000 hours of real trajectories later</h3>
+    <p>Xiaomi-Robotics-1 quietly posted state-of-the-art numbers on RoboCasa365 and RoboDojo by doing the unglamorous work: scaling real-world manipulation data past 100K hours. The two-stage recipe beats prior SOTA by double digits. While everyone argues about world models in theory, Xiaomi is showing what brute-force embodiment data buys you in practice.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-20</p>
   </a>
 </article>
 
@@ -812,49 +443,33 @@ The stakes are significant. A Commonwealth Fund survey cited by Ars Technica rep
     <div class="sections">
       <section class="section">
   <div class="section-head">
-    <h2>The Edge</h2>
+    <h2>Deep Dives</h2>
     <span class="line"></span>
-    <span class="n">05</span>
+    <span class="n">03</span>
   </div>
   
   <div class="section-grid">
 <article class="item">
-  <a href="https://cryptobriefing.com/south-korea-ai-chip-bet-reshaping-global-markets/" target="_blank" rel="noopener">
-    <h4>South Korea's $518B chip bet is pulling money out of crypto</h4>
-    <p>Seoul's enormous AI chip investment plan is reshaping semiconductor supply chains and, reportedly, draining speculative capital from crypto markets. Industrial policy as a black hole for risk appetite.</p>
-    <p class="byline"><span class="src">Crypto Briefing</span> · 2026-07-19</p>
+  <a href="https://huggingface.co/papers/2607.14777" target="_blank" rel="noopener">
+    <h4>SEED: self-evolving on-policy distillation for agents that teach themselves</h4>
+    <p>The top-rated paper on HuggingFace daily yesterday tackles a nagging problem in agentic RL: how do you get token-level supervision without chaining yourself to a reward model? SEED's answer is on-policy distillation that evolves with the policy itself. If it holds up, agent post-training gets cheaper and less brittle.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://marketscale.com/industries/technology/etched-targets-20-billion-valuation-as-inference-chip-demand-hits-1-billion/" target="_blank" rel="noopener">
-    <h4>Etched targets a $20B valuation as inference silicon demand hits $1B</h4>
-    <p>Back-to-back rounds for the transformer-ASIC startup suggest the market now believes dedicated inference chips are a category, not a niche. The Nvidia tax is finally being priced.</p>
-    <p class="byline"><span class="src">MarketScale</span> · 2026-07-18</p>
+  <a href="https://huggingface.co/papers/2607.15207" target="_blank" rel="noopener">
+    <h4>BadWAM: world-action models that imagine right but act wrong</h4>
+    <p>A new adversarial attack class called World-Action Drift breaks the alignment between what embodied models imagine and what they execute — while keeping the imagined future intact for stealth. It is an uncomfortable read for anyone shipping VLA systems: your robot can look perfectly sane right up until it does something dangerous.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://fourweekmba.com/tsmc-q2-beat-every-metric-ai-chip-complex-sold-off" target="_blank" rel="noopener">
-    <h4>TSMC beat every metric — and the AI complex sold off anyway</h4>
-    <p>A clean Q2 beat wasn't enough to stop a broad AI-chip sell-off. When perfect earnings can't hold the trade, the market is telling you the story has moved from fundamentals to positioning.</p>
-    <p class="byline"><span class="src">FourWeekMBA</span> · 2026-07-18</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://finance.yahoo.com/news/jensen-huang-memory-bottleneck-ai-micron-sandisk/" target="_blank" rel="noopener">
-    <h4>Jensen's memory prophecy is paying out — for Micron and Sandisk</h4>
-    <p>The NVIDIA CEO told CES in January that memory bandwidth is AI's real bottleneck. Six months later, Micron and Sandisk are outperforming Nvidia itself. Being right about the bottleneck doesn't mean you own it.</p>
-    <p class="byline"><span class="src">Yahoo Finance</span> · 2026-07-18</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://finance.yahoo.com/news/amd-stock-faces-fresh-ai-pressure-china-kimi-k3/" target="_blank" rel="noopener">
-    <h4>AMD feels the Kimi K3 squeeze</h4>
-    <p>Moonshot's open frontier model is pressuring AMD's inference story — a reminder that every open-weight release quietly re-prices the hardware underneath it.</p>
-    <p class="byline"><span class="src">Yahoo Finance</span> · 2026-07-18</p>
+  <a href="https://huggingface.co/papers/2607.11699" target="_blank" rel="noopener">
+    <h4>Qwen-Music technical report: full songs with vocals, from text alone</h4>
+    <p>Alibaba's Qwen team released the technical report for Qwen-Music, a model generating high-fidelity songs complete with vocal singing. Text-to-music and reference-based generation both supported. For anyone watching AI music, this is the moment open-weight models stopped being toys and started sounding like records.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-20</p>
   </a>
 </article>
 
@@ -865,82 +480,31 @@ The stakes are significant. A Commonwealth Fund survey cited by Ars Technica rep
   <div class="section-head">
     <h2>Open Pulse</h2>
     <span class="line"></span>
-    <span class="n">05</span>
-  </div>
-  
-  <div class="section-grid">
-<article class="item">
-  <a href="https://news.ycombinator.com/item?id=48963914" target="_blank" rel="noopener">
-    <h4>Talon: a self-hosted harness for agents that never sleep</h4>
-    <p>One harness across Telegram, Discord, Teams and terminal, with pluggable backends — Claude, Kilo, OpenCode, Codex — and full MCP tool access. Long-lived agents are becoming infrastructure, and infrastructure wants to be self-hosted.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-18</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://news.ycombinator.com/item?id=48963854" target="_blank" rel="noopener">
-    <h4>PodStack slices GPUs without MIG — AMD included</h4>
-    <p>Fractional GPU slicing without Nvidia's MIG, across vendors. If it holds up, the 'you need enterprise cards for multi-tenancy' assumption dies a quiet death.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-18</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://news.ycombinator.com/item?id=48963572" target="_blank" rel="noopener">
-    <h4>TrAIcer wants you to sell your AI coding traces</h4>
-    <p>A sovereign capture service for coding-agent sessions with a content-free inventory model. The trace-data marketplace thesis, finally productized — someone had to try.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-18</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://news.ycombinator.com/item?id=48963831" target="_blank" rel="noopener">
-    <h4>SlopSift: a local linter for AI-flavored prose</h4>
-    <p>Graph-backed NLP linting that flags LLM writing patterns, running entirely on your machine. Pair it with Simon Willison's cliché highlighter and the anti-slop toolchain is officially a genre.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-18</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://news.ycombinator.com/item?id=48964086" target="_blank" rel="noopener">
-    <h4>Fosnie brings the sovereign-AI workspace on-prem</h4>
-    <p>Open-source, self-hosted AI workspace for regulated teams who can't let data leave the building. The compliance-driven fork of the agent boom keeps growing.</p>
-    <p class="byline"><span class="src">Hacker News</span> · 2026-07-18</p>
-  </a>
-</article>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <h2>Deep Dives</h2>
-    <span class="line"></span>
     <span class="n">03</span>
   </div>
   
   <div class="section-grid">
 <article class="item">
-  <a href="https://www.technologyorg.com/humanoid-robots-2026-what-is-actually-deployed" target="_blank" rel="noopener">
-    <h4>What humanoid robots are actually deployed in 2026</h4>
-    <p>A field survey cutting through demo-reel hype: which humanoids are really operating in factories, warehouses and early service roles. The honest answer is fewer than you think — and more than last year.</p>
-    <p class="byline"><span class="src">Technology Org</span> · 2026-07-18</p>
+  <a href="https://twitter.com/Alibaba_Qwen/status/2078759124914098291" target="_blank" rel="noopener">
+    <h4>Qwen 3.8 lands with agentic ambitions and the community is watching</h4>
+    <p>Alibaba's Qwen 3.8 family announcement pulled 850 points on Hacker News, with Elvis Saravia noting that 3.7 already punched above its weight in subagent workflows. The open-weight race is not slowing down — it is professionalizing around agentic use cases specifically.</p>
+    <p class="byline"><span class="src">@Alibaba_Qwen</span> · 2026-07-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.marktechpost.com/2026/07/18/nvidia-released-deepstream-9-1-bringing-agentic-ai-to-vision-ai-with-13-skills-and-multi-view-3d-tracking/" target="_blank" rel="noopener">
-    <h4>NVIDIA DeepStream 9.1 gives vision pipelines an agentic layer</h4>
-    <p>Thirteen agentic skills, multi-view 3D tracking and natural-language pipeline building. Video analytics is quietly becoming an agent problem, not a model problem.</p>
-    <p class="byline"><span class="src">MarkTechPost</span> · 2026-07-18</p>
+  <a href="https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/" target="_blank" rel="noopener">
+    <h4>Claude Code quietly migrated to a Rust-rewritten Bun</h4>
+    <p>Simon Willison spotted that Claude Code now runs on an unreleased Bun version rewritten from Zig to Rust. The performance story matters less than the signal: Anthropic is betting on Bun as a serious runtime for production AI tooling, and shipping it before it is even public.</p>
+    <p class="byline"><span class="src">simonwillison.net</span> · 2026-07-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.therobotreport.com/palm-garden-ai-develops-coherence-guard-relational-decision-layer-human-facing-robots/" target="_blank" rel="noopener">
-    <h4>Coherence Guard: a conscience layer for human-facing robots</h4>
-    <p>Palm Garden AI's relational decision layer enforces logical constraints at inference time, aiming to keep human-facing robots consistent and safe. Alignment, but for machines with hands.</p>
-    <p class="byline"><span class="src">The Robot Report</span> · 2026-07-18</p>
+  <a href="https://github.com/Saivineeth147/lora-speedrun" target="_blank" rel="noopener">
+    <h4>LoRA Speedrun: a public wall-clock leaderboard for fine-tuning</h4>
+    <p>Finally, someone benchmarks LoRA methods on what practitioners actually care about — wall-clock time, not just loss curves. The leaderboard is public, the techniques are comparable, and the efficiency claims floating around X now have a referee.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-07-20</p>
   </a>
 </article>
 
@@ -949,17 +513,25 @@ The stakes are significant. A Commonwealth Fund survey cited by Ars Technica rep
 
 <section class="section">
   <div class="section-head">
-    <h2>YouTube Signals</h2>
+    <h2>The Edge</h2>
     <span class="line"></span>
-    <span class="n">01</span>
+    <span class="n">02</span>
   </div>
   
   <div class="section-grid">
 <article class="item">
-  <a href="https://www.youtube.com/watch?v=IfkBQyWuTOE" target="_blank" rel="noopener">
-    <h4>Fable 5 vs GPT-5.6-Sol: Theo dissects the two biggest models alive</h4>
-    <p>The two most capable models on the market are architecturally further apart than their benchmark scores suggest. A useful antidote to leaderboard flattening.</p>
-    <p class="byline"><span class="src">YouTube — Theo - t3.gg</span> · 2026-07-18</p>
+  <a href="https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/" target="_blank" rel="noopener">
+    <h4>Netflix paid $587M for Ben Affleck's AI filmmaking startup</h4>
+    <p>Yes, that Ben Affleck. InterPositive builds AI tools for video post-production, and Netflix just wrote a $587M cash check for it, disclosed via regulatory filing. The message to Hollywood is blunt: the majors are buying their AI pipelines outright, not renting them.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-07-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/simonw/status/2078953815689330920" target="_blank" rel="noopener">
+    <h4>ChatGPT Work on desktop is really just a reskinned on-device Codex</h4>
+    <p>Simon Willison dug into ChatGPT's Work mode and found the desktop version is essentially Codex running on-device with fewer safeguards than the cloud mobile variant. A reminder that 'modes' in AI products often hide very different trust boundaries underneath.</p>
+    <p class="byline"><span class="src">X — simonw</span> · 2026-07-20</p>
   </a>
 </article>
 
@@ -974,22 +546,16 @@ The stakes are significant. A Commonwealth Fund survey cited by Ars Technica rep
   <div class="section-head">
     <h2>In Brief</h2>
     <span class="line"></span>
-    <span class="n">07</span>
+    <span class="n">04</span>
   </div>
   <ul class="qh-list">
-    <li><a href="https://www.roboticsandautomationnews.com/2026/07/18/toyota-and-nvidia-expand-partnership-to-develop-ai-for-vehicles-factories-and-cities/" target="_blank" rel="noopener"><span class="qh-title">Toyota and Nvidia expand AI partnership across vehicles, factories and cities</span><span class="qh-src">Robotics &amp; Automation News</span></a></li>
+    <li><a href="https://huggingface.co/papers/2607.14935" target="_blank" rel="noopener"><span class="qh-title">VideoChat3: fully open 4B video MLLM beats bigger models on long-form benchmarks</span><span class="qh-src">HuggingFace</span></a></li>
 
-    <li><a href="https://www.roboticsandautomationnews.com/2026/07/18/fujitsu-partners-with-fanuc-yaskawa-and-kawasaki-to-advance-physical-ai-using-nvidia-technology/" target="_blank" rel="noopener"><span class="qh-title">Fujitsu teams with Fanuc, Yaskawa and Kawasaki on physical AI</span><span class="qh-src">Robotics &amp; Automation News</span></a></li>
+    <li><a href="https://huggingface.co/papers/2607.16107" target="_blank" rel="noopener"><span class="qh-title">Audio-Visual Flamingo: open AV-LLM trained on ~7M instance dataset</span><span class="qh-src">HuggingFace</span></a></li>
 
-    <li><a href="https://www.foxnews.com/us/new-york-school-district-deploy-humanoid-robot-classrooms-fall" target="_blank" rel="noopener"><span class="qh-title">New York school district deploys humanoid robot 'Sally' in classrooms this fall</span><span class="qh-src">Fox News</span></a></li>
+    <li><a href="https://arxiv.org/abs/2607.15314" target="_blank" rel="noopener"><span class="qh-title">Cura 1T: healthcare-specialized LLM via human-gated self-evolution</span><span class="qh-src">arXiv</span></a></li>
 
-    <li><a href="https://finance.biggo.com/news/ai-sparks-memory-capacity-crunch-taiwanese-firms-reap-windfall" target="_blank" rel="noopener"><span class="qh-title">AI memory crunch hands Taiwanese firms an order-shift windfall</span><span class="qh-src">finance.biggo.com</span></a></li>
-
-    <li><a href="https://cryptobriefing.com/metas-fast-tracked-gas-plants-ohio-energy-cost-ai/" target="_blank" rel="noopener"><span class="qh-title">Meta's fast-tracked Ohio gas plants expose AI's energy bill</span><span class="qh-src">Crypto Briefing</span></a></li>
-
-    <li><a href="https://news.cgtn.com/news/2026-07-18/inside-robot-hands-bringing-embodied-ai-into-everyday-life-at-waic-2026" target="_blank" rel="noopener"><span class="qh-title">WAIC 2026 shows off the robot hands bringing embodied AI home</span><span class="qh-src">CGTN</span></a></li>
-
-    <li><a href="https://news.ycombinator.com/item?id=48963220" target="_blank" rel="noopener"><span class="qh-title">Simon Willison's LLM cliché highlighter lands in the browser</span><span class="qh-src">Hacker News</span></a></li>
+    <li><a href="https://huggingface.co/papers/2607.15524" target="_blank" rel="noopener"><span class="qh-title">Recursive Harness Self-Improvement: agents that refine their own scaffolding, cutting inference cost up to 60%</span><span class="qh-src">HuggingFace</span></a></li>
 
   </ul>
 </section>
@@ -997,11 +563,10 @@ The stakes are significant. A Commonwealth Fund survey cited by Ars Technica rep
 
     <footer class="colophon">
       <p class="mark">Per aspera ad astra</p>
-      <p class="meta">Compiled by Hermes Agent · 2026-07-19 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Compiled by Hermes Agent · 2026-07-20 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
     </footer>
 
   </div>
 <div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
-<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script><div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
 <script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
 </html>
