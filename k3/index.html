@@ -282,6 +282,282 @@ hr.rule-double {
   border-bottom-color: #d4d0c8 !important;
 }
 </style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style><style>
+.version-selector {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0 0.75rem 0;
+}
+.vs-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1.5;
+}
+.vs-badge-ds {
+  color: var(--lux);
+  border-color: var(--lux-soft);
+  background: transparent;
+}
+.vs-badge-ds:hover {
+  background: rgba(240, 162, 60, 0.08);
+  color: var(--lux);
+}
+.vs-badge-k3 {
+  color: var(--ember);
+  border-color: var(--ember);
+  background: transparent;
+}
+.vs-badge-k3:hover {
+  background: rgba(255, 107, 53, 0.08);
+  color: var(--ember);
+}
+.vs-badge-current {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+.vs-badge-current:hover {
+  background: transparent;
+}
+</style>
+<style>
+/* ── K3 White Edition ── */
+
+/* 1. BACKGROUNDS */
+html, body {
+  background: #faf8f5 !important;
+}
+.container {
+  background: #faf8f5 !important;
+  border-left: 3px solid #e0dcd4 !important;
+}
+header.masthead {
+  background: #faf8f5 !important;
+}
+
+/* 2. WIRE NEWS — keep dark (AFTER nuclear override) */
+/* moved to after section 5 below */
+
+/* 3. ALL LINKS BLACK by default */
+a, a:link {
+  color: #000 !important;
+}
+
+/* 4. HEADER exceptions (override general) */
+.masthead .topline {
+  border-color: #d4d0c8 !important;
+}
+.ears .left, .ears .right, .ears a {
+  color: #333 !important;
+}
+.ears a:hover {
+  color: #333 !important;
+}
+.nameplate {
+  color: #000 !important;
+}
+.nameplate .lux {
+  color: #f0a23c !important;
+}
+.dateline, .dateline span, .dateline .tag {
+  color: #333 !important;
+}
+.dateline .dot {
+  color: #999 !important;
+}
+.devocracy-credit, .devocracy-credit a {
+  color: #666 !important;
+}
+.devocracy-credit a:hover {
+  color: #666 !important;
+}
+.masthead .rule-thin {
+  border-color: #d4d0c8 !important;
+}
+.masthead .rule-double {
+  border-color: #ccc !important;
+}
+
+/* 5. ALL ARTICLE TEXT BLACK — nuclear */
+.lead, .lead *, .lead a, .lead a:link, .lead a:visited, .lead h1, .lead a h1,
+.topstories, .topstories *, .top-stories, .top-story,
+.story, .story *, .story p, .story h3,
+.section, .section *, .section .item, .section .items,
+.item, .item *, .item p, .item a, .item a:link, .item h3, .item h3 a,
+.section-content, .section-header, .section-head, .section-head h2,
+.quick-hits, .quick-hits *, .quick-hit, .quick-hit *,
+.qh-item, .qh-item *, .qh-title, .qh-src,
+.byline, .byline *, .byline .src, .meta-text,
+.inbrief, .inbrief *, .inbrief a, .inbrief h2,
+.sections, .sections *, .lead-head, .lead-body, .lead-grid,
+.colophon, .colophon *, .colophon p, .colophon .meta, .colophon a,
+h1, h2, h3, h4, h5, p, a, span, div, article, section {
+  color: #000 !important;
+}
+/* Hover: amber like Lux (AFTER nuclear rule) */
+.lead a:hover h1, .lead a:hover .lead-title,
+.top-story a:hover h3, .top-story a:hover .top-title,
+.item a:hover h3, .item a:hover .item-title,
+.quick-hit a:hover, .qh-item a:hover,
+a:hover, a:focus, a:active {
+  color: #f0a23c !important;
+}
+
+/* Wire news: keep dark (AFTER nuclear, overrides it) */
+.wt, .wt *,
+.wtt, .wtt *,
+.ti, .tih, .tis,
+.wt a, .wtt a, .ti a, .ti a:link,
+[class*="wire"], [class*="ticker"], [class*="breaking"] {
+  background-color: var(--ink) !important;
+  color: var(--type) !important;
+}
+
+/* Wire modal: white bg, black text, amber accent */
+.mo {
+  background: rgba(0,0,0,0.4) !important;
+  backdrop-filter: blur(4px) !important;
+}
+.mb {
+  background: #fff !important;
+  border-color: #d4d0c8 !important;
+}
+.mh {
+  color: #000 !important;
+}
+.mm {
+  color: #666 !important;
+}
+.mm a {
+  color: #000 !important;
+}
+.mm a:hover {
+  color: #f0a23c !important;
+}
+.mbd {
+  color: #000 !important;
+}
+.mbd .en {
+  color: #f0a23c !important;
+  border-left-color: #f0a23c !important;
+}
+.mbd .as {
+  color: #999 !important;
+  border-top-color: #d4d0c8 !important;
+}
+.mbd .as .al {
+  color: #f0a23c !important;
+}
+.mc {
+  color: #999 !important;
+}
+.mc:hover {
+  color: #000 !important;
+}
+.section-header {
+  color: #000 !important;
+  border-bottom-color: #000 !important;
+}
+.byline, .item .byline, .meta-text, .qh-src {
+  color: #000 !important;
+}
+
+/* 6. VERSION BADGES (after general a rule) */
+.vs-badge-ds {
+  color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
+  background: transparent !important;
+}
+.vs-badge-ds:hover {
+  background: rgba(0,0,0,0.05) !important;
+  color: #000 !important;
+}
+.vs-badge-k3 {
+  color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
+  background: transparent !important;
+}
+.vs-badge-k3:hover {
+  background: rgba(0,0,0,0.05) !important;
+  color: #000 !important;
+}
+.vs-badge-current {
+  opacity: 0.4 !important;
+}
+.vs-badge-current:hover {
+  color: #1a1a1a !important;
+}
+
+/* 7. ARTICLE RULES */
+.section .item {
+  border-bottom: 1px solid #d4d0c8 !important;
+  border-left: none !important;
+  padding: 0.75rem 0 !important;
+  margin: 0 !important;
+}
+.section .item:last-child {
+  border-bottom: none !important;
+}
+.item:nth-child(3n+1), .item:nth-child(2n+1) {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+.topstories .story {
+  border-left: none !important;
+  border-top: 1px solid #d4d0c8 !important;
+  padding: 0.75rem 0 !important;
+}
+.topstories .story:first-child {
+  border-top: none !important;
+}
+hr.rule-thin {
+  border-color: #d4d0c8 !important;
+}
+hr.rule-double {
+  border-color: #c8c4bc !important;
+}
+
+/* 8. REMOVE IMAGES */
+.section-hero, .section-hero-img, .lead-image,
+.item img, .top-story img {
+  display: none !important;
+}
+
+/* 9. SECTION HEADERS */
+.section-header {
+  border-bottom: 2px solid #1a1a1a !important;
+  color: #1a1a1a !important;
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.25rem !important;
+}
+.section-header .count {
+  color: #999 !important;
+}
+
+/* 10. QUICK HITS + COLOPHON */
+.quick-hits a {
+  color: #000 !important;
+}
+.colophon {
+  color: #000 !important;
+  border-top-color: #d4d0c8 !important;
+}
+.colophon a {
+  color: #000 !important;
+  border-bottom-color: #d4d0c8 !important;
+}
+</style>
 <style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
   <body>
   <div class="container">
@@ -305,11 +581,92 @@ hr.rule-double {
   <a href="../index.html" class="vs-badge vs-badge-ds">🐋 DeepSeek V4 Flash</a>
   <span class="vs-badge vs-badge-current vs-badge-k3">🔮 Kimi K3 Edition (The Lens)</span>
 </div>
+<div class="version-selector">
+  <a href="../index.html" class="vs-badge vs-badge-ds">🐋 DeepSeek V4 Flash</a>
+  <span class="vs-badge vs-badge-current vs-badge-k3">🔮 Kimi K3 Edition (The Lens)</span>
+</div>
       <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a></div>
       <hr class="rule-thin">
     </header>
 
-    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Dave Eggers Tells OpenAI Staff ChatGPT Is Silencing an Entire Generation" data-b="Author Dave Eggers used an invitation from OpenAI CEO Sam Altman to deliver a pointed critique of the company&#x27;s flagship product rather than a talk about the craft of writing. According to The Verge, citing the Financial Times, Eggers spoke last year to an audience of around 200 OpenAI employees, telling them that ChatGPT&#x27;s effect on educators had been &quot;catastrophic&quot; and that the tool had made every teacher&#x27;s life far harder than it was two years earlier.
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Netflix Discloses $587 Million Price Tag for Ben Affleck&#x27;s AI Startup InterPositive" data-b="Netflix has revealed it paid $587 million in cash to acquire InterPositive, the artificial intelligence filmmaking startup co-founded by actor and director Ben Affleck. The figure emerged in a new regulatory filing, according to TechCrunch, months after the deal itself was first made public.
+
+The streaming giant announced the acquisition back in March, but declined to share financial terms at the time. A later Bloomberg report had estimated the transaction could be valued at up to $600 million — a figure now confirmed to be close to the mark by Netflix&#x27;s own disclosure.
+
+InterPositive builds AI tools aimed at post-production work, helping filmmakers correct and enhance footage. According to Affleck, the technology addresses practical on-set problems, including missing shots, background replacements and incorrect lighting. When the deal was announced, Affleck framed the mission around safeguarding creative work, saying he wanted to &quot;protect the power of human creativity.&quot;
+
+As part of the acquisition, the full InterPositive team joined Netflix, with Affleck taking on a senior advisor role. The purchase fits into a broader strategy: in its most recent earnings report, Netflix stated that roughly 300 of its titles have already incorporated generative AI in some capacity.
+
+*The price tag shows just how seriously Hollywood&#x27;s biggest streamer is betting that AI will fix production problems rather than replace the people making films.*
+
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/"><span class="tih">Netflix Discloses $587 Million Price Tag for Ben Affleck&#x27;s AI Startup InterPositive</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Kodak EC35 Brings Film Photography Down to Disposable-Camera Prices" data-b="The revival of film photography keeps picking up speed, and it is getting cheaper to join. According to The Verge, Reto Project has launched the Kodak EC35, a 35mm point-and-shoot film camera priced at just $34.99, following the success of its earlier $99 Kodak-branded Snapic A1.
+
+The EC35 makes no pretense of sophistication. Its 25mm acrylic lens, fixed f/10 aperture, and 1/100 shutter speed place it roughly on the level of a drugstore disposable, and its manual wind and rewind mechanisms reinforce that impression. A built-in automatic flash completes the no-frills package. Unlike the Snapic A1, the EC35 drops features such as double exposure and zone focusing, aiming instead at users who want a camera that requires almost no thought to operate.
+
+Its one distinctive touch is a sliding lens cover, a design nod to the Olympus Stylus and Mju lines, according to the report. The camera also leans into playful styling, arriving in colors including butter yellow, lavender, powder blue, blush pink, and avocado green, with lens covers in slightly darker shades for subtle contrast. Even the midnight black and vanilla white variants carry differently colored accents, giving them a bit more personality than a typical disposable.
+
+The launch suggests the film renaissance is moving beyond enthusiasts and toward casual buyers looking for an inexpensive, stylish way to shoot analog.
+
+*At $34.99, the EC35 is less a camera than an invitation — and that may be exactly what film needs to keep growing.*
+
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/967687/kodak-ec35-point-and-shoot-film-camera"><span class="tih">Kodak EC35 Brings Film Photography Down to Disposable-Camera Prices</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="1010Benja Proves Suno Can Be More Than an AI Slop Engine" data-b="Terrence O&#x27;Brien of The Verge has been openly dismissive of generative AI music, particularly Suno&#x27;s output, which he describes as &quot;offensively boring.&quot; Yet in a recent piece, he admits to genuinely enjoying 1010Benja&#x27;s new track &quot;Semiramis&#x27; Dream,&quot; the opener of the EP Time Has Nothing To Do With What You Choose… — a song built with Suno&#x27;s help.
+
+According to The Verge, what sets the track apart is the process behind it. In an interview with Hearing Things, Benja explained that his friend Patrick Holder made the beat, Benja recorded his own vocals, and the two then ran those elements through Suno, brought the results into Ableton for editing, and fed them back into the AI — a cycle he estimates he repeated a few hundred times for this single song. He makes no attempt to conceal the workflow; the track is even flagged as AI-generated on Deezer.
+
+The Verge notes the result is hard to identify as machine-made. The most obviously synthetic element, a choir of backup vocalists, blends into the song&#x27;s hyperpop-influenced, heavily processed sound — a style where artificial vocals are already commonplace.
+
+Benja is candid about the ethical baggage of generative AI, including its environmental cost, but frames his use of it as economic necessity: despite earning Pitchfork&#x27;s Best New Music for 2024&#x27;s Ten Total, he describes himself as a struggling artist who cannot afford session musicians or a real children&#x27;s choir.
+
+*If AI music is to have a defensible future, it probably looks like this — a human artist using the tool as an instrument, not a replacement.*
+
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music"><span class="tih">1010Benja Proves Suno Can Be More Than an AI Slop Engine</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uber and Waymo Clash Over Proposed Robotaxi Rules in Washington, D.C." data-b="Uber and Waymo are openly sparring over a proposed Washington, D.C. bill that would allow autonomous vehicles to operate in the city, according to TechCrunch Mobility. Reporter Kirsten Korosec, citing correspondence Uber sent to the D.C. Council and conversations with sources, found that Uber opposes the bill, arguing it would displace for-hire human drivers and hand Waymo a de facto monopoly. Uber has instead lobbied for a &quot;hybrid&quot; system requiring robotaxis to run on ride-hailing networks alongside human drivers — an approach insiders say has little chance of becoming law, but which would leave AV developers like Waymo with unappealing options if it did.
+
+A D.C. Council hearing drew representatives from Lyft, Tesla, Uber, and Waymo, plus disability advocates, industry groups, safety organizations, unions, and think tanks. Per TechCrunch, Waymo is among the few companies generally supportive of the bill. Tesla&#x27;s senior policy adviser, India Herdman, raised objections shared by other AV developers, including a 180-day, 250,000-mile mandatory testing requirement, a $1 million application fee, a $5 million permit fee, and a $0.15-per-mile tax. Tesla and others argued testing miles from other jurisdictions should count toward the threshold.
+
+Notably, Waymo has already surpassed those requirements while testing with human safety operators in D.C., meaning it would enter the market with at least a six-month head start if the bill passed as written.
+
+*The fight over who writes the rules may matter as much as the technology itself — incumbency is quietly being codified into law.*
+
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-rules/"><span class="tih">Uber and Waymo Clash Over Proposed Robotaxi Rules in Washington, D.C.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Netflix Discloses $587 Million Price Tag for Ben Affleck&#x27;s AI Startup InterPositive" data-b="Netflix has revealed it paid $587 million in cash to acquire InterPositive, the artificial intelligence filmmaking startup co-founded by actor and director Ben Affleck. The figure emerged in a new regulatory filing, according to TechCrunch, months after the deal itself was first made public.
+
+The streaming giant announced the acquisition back in March, but declined to share financial terms at the time. A later Bloomberg report had estimated the transaction could be valued at up to $600 million — a figure now confirmed to be close to the mark by Netflix&#x27;s own disclosure.
+
+InterPositive builds AI tools aimed at post-production work, helping filmmakers correct and enhance footage. According to Affleck, the technology addresses practical on-set problems, including missing shots, background replacements and incorrect lighting. When the deal was announced, Affleck framed the mission around safeguarding creative work, saying he wanted to &quot;protect the power of human creativity.&quot;
+
+As part of the acquisition, the full InterPositive team joined Netflix, with Affleck taking on a senior advisor role. The purchase fits into a broader strategy: in its most recent earnings report, Netflix stated that roughly 300 of its titles have already incorporated generative AI in some capacity.
+
+*The price tag shows just how seriously Hollywood&#x27;s biggest streamer is betting that AI will fix production problems rather than replace the people making films.*
+
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/"><span class="tih">Netflix Discloses $587 Million Price Tag for Ben Affleck&#x27;s AI Startup InterPositive</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Kodak EC35 Brings Film Photography Down to Disposable-Camera Prices" data-b="The revival of film photography keeps picking up speed, and it is getting cheaper to join. According to The Verge, Reto Project has launched the Kodak EC35, a 35mm point-and-shoot film camera priced at just $34.99, following the success of its earlier $99 Kodak-branded Snapic A1.
+
+The EC35 makes no pretense of sophistication. Its 25mm acrylic lens, fixed f/10 aperture, and 1/100 shutter speed place it roughly on the level of a drugstore disposable, and its manual wind and rewind mechanisms reinforce that impression. A built-in automatic flash completes the no-frills package. Unlike the Snapic A1, the EC35 drops features such as double exposure and zone focusing, aiming instead at users who want a camera that requires almost no thought to operate.
+
+Its one distinctive touch is a sliding lens cover, a design nod to the Olympus Stylus and Mju lines, according to the report. The camera also leans into playful styling, arriving in colors including butter yellow, lavender, powder blue, blush pink, and avocado green, with lens covers in slightly darker shades for subtle contrast. Even the midnight black and vanilla white variants carry differently colored accents, giving them a bit more personality than a typical disposable.
+
+The launch suggests the film renaissance is moving beyond enthusiasts and toward casual buyers looking for an inexpensive, stylish way to shoot analog.
+
+*At $34.99, the EC35 is less a camera than an invitation — and that may be exactly what film needs to keep growing.*
+
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/967687/kodak-ec35-point-and-shoot-film-camera"><span class="tih">Kodak EC35 Brings Film Photography Down to Disposable-Camera Prices</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="1010Benja Proves Suno Can Be More Than an AI Slop Engine" data-b="Terrence O&#x27;Brien of The Verge has been openly dismissive of generative AI music, particularly Suno&#x27;s output, which he describes as &quot;offensively boring.&quot; Yet in a recent piece, he admits to genuinely enjoying 1010Benja&#x27;s new track &quot;Semiramis&#x27; Dream,&quot; the opener of the EP Time Has Nothing To Do With What You Choose… — a song built with Suno&#x27;s help.
+
+According to The Verge, what sets the track apart is the process behind it. In an interview with Hearing Things, Benja explained that his friend Patrick Holder made the beat, Benja recorded his own vocals, and the two then ran those elements through Suno, brought the results into Ableton for editing, and fed them back into the AI — a cycle he estimates he repeated a few hundred times for this single song. He makes no attempt to conceal the workflow; the track is even flagged as AI-generated on Deezer.
+
+The Verge notes the result is hard to identify as machine-made. The most obviously synthetic element, a choir of backup vocalists, blends into the song&#x27;s hyperpop-influenced, heavily processed sound — a style where artificial vocals are already commonplace.
+
+Benja is candid about the ethical baggage of generative AI, including its environmental cost, but frames his use of it as economic necessity: despite earning Pitchfork&#x27;s Best New Music for 2024&#x27;s Ten Total, he describes himself as a struggling artist who cannot afford session musicians or a real children&#x27;s choir.
+
+*If AI music is to have a defensible future, it probably looks like this — a human artist using the tool as an instrument, not a replacement.*
+
+*— Written by AI (kimi-k3)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music"><span class="tih">1010Benja Proves Suno Can Be More Than an AI Slop Engine</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uber and Waymo Clash Over Proposed Robotaxi Rules in Washington, D.C." data-b="Uber and Waymo are openly sparring over a proposed Washington, D.C. bill that would allow autonomous vehicles to operate in the city, according to TechCrunch Mobility. Reporter Kirsten Korosec, citing correspondence Uber sent to the D.C. Council and conversations with sources, found that Uber opposes the bill, arguing it would displace for-hire human drivers and hand Waymo a de facto monopoly. Uber has instead lobbied for a &quot;hybrid&quot; system requiring robotaxis to run on ride-hailing networks alongside human drivers — an approach insiders say has little chance of becoming law, but which would leave AV developers like Waymo with unappealing options if it did.
+
+A D.C. Council hearing drew representatives from Lyft, Tesla, Uber, and Waymo, plus disability advocates, industry groups, safety organizations, unions, and think tanks. Per TechCrunch, Waymo is among the few companies generally supportive of the bill. Tesla&#x27;s senior policy adviser, India Herdman, raised objections shared by other AV developers, including a 180-day, 250,000-mile mandatory testing requirement, a $1 million application fee, a $5 million permit fee, and a $0.15-per-mile tax. Tesla and others argued testing miles from other jurisdictions should count toward the threshold.
+
+Notably, Waymo has already surpassed those requirements while testing with human safety operators in D.C., meaning it would enter the market with at least a six-month head start if the bill passed as written.
+
+*The fight over who writes the rules may matter as much as the technology itself — incumbency is quietly being codified into law.*
+
+*— Written by AI (kimi-k3)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-rules/"><span class="tih">Uber and Waymo Clash Over Proposed Robotaxi Rules in Washington, D.C.</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Dave Eggers Tells OpenAI Staff ChatGPT Is Silencing an Entire Generation" data-b="Author Dave Eggers used an invitation from OpenAI CEO Sam Altman to deliver a pointed critique of the company&#x27;s flagship product rather than a talk about the craft of writing. According to The Verge, citing the Financial Times, Eggers spoke last year to an audience of around 200 OpenAI employees, telling them that ChatGPT&#x27;s effect on educators had been &quot;catastrophic&quot; and that the tool had made every teacher&#x27;s life far harder than it was two years earlier.
 
 Eggers reserved his sharpest warning for students. If young people rely on ChatGPT to compose, he argued, they will never learn to write, losing their voice and the ability to say their truth and tell their own story — an outcome he described as silencing an entire generation or two.
 
@@ -645,5 +1002,6 @@ The stakes are significant. A Commonwealth Fund survey cited by Ars Technica rep
 
   </div>
 <div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script><div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
 <script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
 </html>
