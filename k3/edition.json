@@ -1,32 +1,23 @@
 {
-  "issue_no": 22,
-  "date_iso": "2026-07-20",
-  "date_human": "July 20, 2026",
-  "notice": "A lean weekend signal set: hardware, funding and official channels went quiet, so today's lens turns to the research frontier and the tools that shipped anyway.",
+  "issue_no": 20,
+  "date_iso": "2026-07-21",
+  "date_human": "July 21, 2026",
+  "notice": null,
   "lead": {
-    "kicker": "Dream, then play",
-    "title": "Your next game engine might just dream the frames",
-    "summary": "A new paper from HuggingFace's daily top pulls the rug from under traditional rendering: instead of simulating physics and drawing polygons, a video generative model simply hallucinates the next frame in response to your inputs. With 407 upvotes and counting, 'From Pixels to States' argues that interactive world models \u2014 trained purely on gameplay footage \u2014 can already serve as playable engines. The implications are unsettling and thrilling: no engine, no assets, no explicit 3D \u2014 just a model that learned what games feel like. If this scales, the whole toolchain of game development becomes a prompt.",
-    "source": "HuggingFace",
-    "date": "2026-07-19",
-    "url": "https://huggingface.co/papers/2607.14076"
+    "kicker": "Rival teachers",
+    "title": "The best teacher is a competitor: cross-model rivalry doubles RL gains",
+    "summary": "Agon pits two models against each other, each grading the other's reasoning traces with no human process labels \u2014 and the competition itself becomes the training signal. On DeepMath's hard split with Qwen3 it doubles GRPO's pass@1, and the result replicates on Qwen3.5 and Gemma 4 in competitive programming. The provocative implication: you may not need a better judge to train a better reasoner, just a worthy opponent.",
+    "source": "arXiv",
+    "date": "2026-07-20",
+    "url": "https://arxiv.org/abs/2607.07690"
   },
   "top_stories": [
     {
-      "kicker": "Dumping debate",
-      "title": "LeCun pushes back as the 'open weights are dumping' argument goes mainstream",
-      "summary": "A prominent thread this weekend framed frontier open-weight releases as economic dumping that undercuts private R&D. Yann LeCun fired back with a history lesson: Linux, PyTorch, and Llama all expanded the pie instead of shrinking it. The debate matters because it is no longer fringe \u2014 it is shaping how investors and policymakers talk about open source AI.",
-      "source": "X \u2014 hosseeb / ylecun",
-      "date": "2026-07-19",
-      "url": "https://x.com/i/status/2078614672086036555"
-    },
-    {
-      "kicker": "Robots that learn",
-      "title": "Xiaomi's robotics bet: 100,000 hours of real trajectories later",
-      "summary": "Xiaomi-Robotics-1 quietly posted state-of-the-art numbers on RoboCasa365 and RoboDojo by doing the unglamorous work: scaling real-world manipulation data past 100K hours. The two-stage recipe beats prior SOTA by double digits. While everyone argues about world models in theory, Xiaomi is showing what brute-force embodiment data buys you in practice.",
-      "source": "HuggingFace",
+      "title": "CuspAI lands $450M at a $2.6B valuation to industrialize AI materials discovery",
+      "summary": "Kleiner Perkins and NEA lead, with Bezos Expeditions, the UK government and AMD Ventures in the round \u2014 plus Nvidia and Samsung signing on as partners. Materials science is becoming the next frontier where AI budgets look like semiconductor budgets.",
+      "source": "SiliconANGLE",
       "date": "2026-07-20",
-      "url": "https://huggingface.co/papers/2607.15330"
+      "url": "https://siliconangle.com/2026/07/20/ai-materials-science-startup-cuspai-raises-450m-funding/"
     }
   ],
   "sections": [
@@ -34,25 +25,25 @@
       "title": "Deep Dives",
       "items": [
         {
-          "title": "SEED: self-evolving on-policy distillation for agents that teach themselves",
-          "summary": "The top-rated paper on HuggingFace daily yesterday tackles a nagging problem in agentic RL: how do you get token-level supervision without chaining yourself to a reward model? SEED's answer is on-policy distillation that evolves with the policy itself. If it holds up, agent post-training gets cheaper and less brittle.",
-          "source": "HuggingFace",
-          "date": "2026-07-19",
-          "url": "https://huggingface.co/papers/2607.14777"
-        },
-        {
-          "title": "BadWAM: world-action models that imagine right but act wrong",
-          "summary": "A new adversarial attack class called World-Action Drift breaks the alignment between what embodied models imagine and what they execute \u2014 while keeping the imagined future intact for stealth. It is an uncomfortable read for anyone shipping VLA systems: your robot can look perfectly sane right up until it does something dangerous.",
-          "source": "HuggingFace",
-          "date": "2026-07-19",
-          "url": "https://huggingface.co/papers/2607.15207"
-        },
-        {
-          "title": "Qwen-Music technical report: full songs with vocals, from text alone",
-          "summary": "Alibaba's Qwen team released the technical report for Qwen-Music, a model generating high-fidelity songs complete with vocal singing. Text-to-music and reference-based generation both supported. For anyone watching AI music, this is the moment open-weight models stopped being toys and started sounding like records.",
-          "source": "HuggingFace",
+          "title": "RESOURCE2SKILL turns tutorials and repos into executable agent skills",
+          "summary": "Microsoft Research distills the material humans learn from \u2014 videos, articles, codebases \u2014 into a hierarchical multimodal Skill Wiki that agents can actually execute. The +11.9 point average gain over skill-less agents suggests the bottleneck was never the model, but the missing apprenticeship.",
+          "source": "arXiv",
           "date": "2026-07-20",
-          "url": "https://huggingface.co/papers/2607.11699"
+          "url": "https://arxiv.org/abs/2606.29538"
+        },
+        {
+          "title": "Sycophancy isn't born, it's installed \u2014 and it can be steered out",
+          "summary": "Across five model families and seven bias types, this study shows cue-induced bias comes from alignment tuning, not pretraining. Each bias forms a single coherent direction in hidden states that can be decoded and steered \u2014 meaning the flaws we train in are, at least partially, editable.",
+          "source": "arXiv",
+          "date": "2026-07-20",
+          "url": "https://arxiv.org/abs/2607.18114"
+        },
+        {
+          "title": "Your stacked verifiers are less safe than the math says",
+          "summary": "A formal theory of correlated verifier cascades shows failure decays polynomially, not exponentially, and blind spots cap reliability outright. Assuming independence underestimates failure by 20x at five gates and roughly 3000x at ten \u2014 uncomfortable reading for anyone shipping multi-gate LLM harnesses.",
+          "source": "arXiv",
+          "date": "2026-07-20",
+          "url": "https://arxiv.org/abs/2607.13918"
         }
       ]
     },
@@ -60,25 +51,25 @@
       "title": "Open Pulse",
       "items": [
         {
-          "title": "Qwen 3.8 lands with agentic ambitions and the community is watching",
-          "summary": "Alibaba's Qwen 3.8 family announcement pulled 850 points on Hacker News, with Elvis Saravia noting that 3.7 already punched above its weight in subagent workflows. The open-weight race is not slowing down \u2014 it is professionalizing around agentic use cases specifically.",
-          "source": "@Alibaba_Qwen",
-          "date": "2026-07-19",
-          "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291"
+          "title": "Kimi Work brings 300 specialized agents to the desktop",
+          "summary": "Moonshot AI's new desktop agent automates knowledge-worker workflows across files and the web, with specialized agents for financial research, analysis, and office tasks. The agentic desktop race is no longer a two-lab story.",
+          "source": "Kimi",
+          "date": "2026-07-20",
+          "url": "https://www.kimi.com/products/kimi-work"
         },
         {
-          "title": "Claude Code quietly migrated to a Rust-rewritten Bun",
-          "summary": "Simon Willison spotted that Claude Code now runs on an unreleased Bun version rewritten from Zig to Rust. The performance story matters less than the signal: Anthropic is betting on Bun as a serious runtime for production AI tooling, and shipping it before it is even public.",
-          "source": "simonwillison.net",
-          "date": "2026-07-19",
-          "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/"
-        },
-        {
-          "title": "LoRA Speedrun: a public wall-clock leaderboard for fine-tuning",
-          "summary": "Finally, someone benchmarks LoRA methods on what practitioners actually care about \u2014 wall-clock time, not just loss curves. The leaderboard is public, the techniques are comparable, and the efficiency claims floating around X now have a referee.",
+          "title": "Nativ runs frontier open models entirely on your Mac",
+          "summary": "Language, vision, video, code and embedding models locally on Apple Silicon \u2014 free, open source, no accounts, no cloud. The local-first stack keeps quietly eating use cases that used to require an API key.",
           "source": "GitHub",
           "date": "2026-07-20",
-          "url": "https://github.com/Saivineeth147/lora-speedrun"
+          "url": "https://blaizzy.github.io/nativ/"
+        },
+        {
+          "title": "Relay: a self-hosted LLM gateway that routes on evals, not vibes",
+          "summary": "A single static binary speaking OpenAI and Anthropic dialects against any backend, with zero telemetry and eval-gated routing policies. Model routing is growing up from config file to control plane.",
+          "source": "GitHub",
+          "date": "2026-07-21",
+          "url": "https://github.com/llmrelay/relay"
         }
       ]
     },
@@ -86,18 +77,18 @@
       "title": "The Edge",
       "items": [
         {
-          "title": "Netflix paid $587M for Ben Affleck's AI filmmaking startup",
-          "summary": "Yes, that Ben Affleck. InterPositive builds AI tools for video post-production, and Netflix just wrote a $587M cash check for it, disclosed via regulatory filing. The message to Hollywood is blunt: the majors are buying their AI pipelines outright, not renting them.",
-          "source": "TechCrunch",
-          "date": "2026-07-19",
-          "url": "https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/"
+          "title": "Sereact closes $116M with Zalando as strategic investor for warehouse robotics",
+          "summary": "Over 200 systems live across Europe and more than a billion production picks completed. Physical AI is past the demo phase \u2014 the money now follows throughput numbers, not promises.",
+          "source": "Tech.eu",
+          "date": "2026-07-20",
+          "url": "https://tech.eu/2026/07/20/zalando-joins-sereacts-116m-series-b-to-accelerate-ai-powered-warehouse-automation/"
         },
         {
-          "title": "ChatGPT Work on desktop is really just a reskinned on-device Codex",
-          "summary": "Simon Willison dug into ChatGPT's Work mode and found the desktop version is essentially Codex running on-device with fewer safeguards than the cloud mobile variant. A reminder that 'modes' in AI products often hide very different trust boundaries underneath.",
-          "source": "X \u2014 simonw",
+          "title": "Infinity raises $15M to run any model on any chip",
+          "summary": "A universal inference library taking direct aim at CUDA's gravitational pull, backed by Touring Capital and researchers from OpenAI and Anthropic. Small round, big thesis: hardware neutrality as a wedge against the Nvidia tax.",
+          "source": "TechCrunch",
           "date": "2026-07-20",
-          "url": "https://x.com/simonw/status/2078953815689330920"
+          "url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/"
         }
       ]
     }
@@ -105,28 +96,39 @@
   "trending": null,
   "quick_hits": [
     {
-      "title": "VideoChat3: fully open 4B video MLLM beats bigger models on long-form benchmarks",
-      "source": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.14935",
-      "context": "Open video AI"
+      "title": "Natural raises $30M Series A to build payment rails for AI agents",
+      "source": "TechCrunch",
+      "date": "2026-07-20",
+      "url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
+      "context": "agent economy plumbing"
     },
     {
-      "title": "Audio-Visual Flamingo: open AV-LLM trained on ~7M instance dataset",
-      "source": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.16107",
-      "context": "Multimodal audio"
+      "title": "Anthropic opens AI for Science grants for rare disease research",
+      "source": "Anthropic",
+      "date": "2026-07-20",
+      "url": "https://www.anthropic.com/news/rare-disease-research-grants",
+      "context": "up to $50K in Claude credits"
     },
     {
-      "title": "Cura 1T: healthcare-specialized LLM via human-gated self-evolution",
+      "title": "SHACKLE enforces deterministic runtime governance for autonomous agents",
+      "source": "GitHub",
+      "date": "2026-07-21",
+      "url": "https://github.com/Fame510/SHACKLE",
+      "context": "policy decisions, audited"
+    },
+    {
+      "title": "SWE-Pruner Pro cuts coding-agent context 39% using the model's own representations",
       "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.15314",
-      "context": "Clinical agents"
+      "date": "2026-07-21",
+      "url": "https://arxiv.org/abs/2607.18213",
+      "context": "+3.8% on SWE-Bench"
     },
     {
-      "title": "Recursive Harness Self-Improvement: agents that refine their own scaffolding, cutting inference cost up to 60%",
-      "source": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.15524",
-      "context": "Agent tooling"
+      "title": "TRIM names and shames CodeSlop, cutting it up to 33% across agent scaffolds",
+      "source": "arXiv",
+      "date": "2026-07-20",
+      "url": "https://arxiv.org/abs/2607.18161",
+      "context": "less slop, same results"
     }
   ]
 }
