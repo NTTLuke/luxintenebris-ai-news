@@ -1,23 +1,30 @@
 {
   "issue_no": 20,
-  "date_iso": "2026-07-21",
-  "date_human": "July 21, 2026",
+  "date_iso": "2026-07-22",
+  "date_human": "July 22, 2026",
   "notice": null,
   "lead": {
-    "kicker": "Rival teachers",
-    "title": "The best teacher is a competitor: cross-model rivalry doubles RL gains",
-    "summary": "Agon pits two models against each other, each grading the other's reasoning traces with no human process labels \u2014 and the competition itself becomes the training signal. On DeepMath's hard split with Qwen3 it doubles GRPO's pass@1, and the result replicates on Qwen3.5 and Gemma 4 in competitive programming. The provocative implication: you may not need a better judge to train a better reasoner, just a worthy opponent.",
+    "kicker": "Diffusion, dethroned?",
+    "title": "A single step is all you need: ROMS-IMLE hits FID 2.56 on ImageNet without iterative denoising",
+    "summary": "For years the field assumed competitive generative modeling required many denoising steps. ROMS-IMLE politely disagrees: pair IMLE training with a modest convolutional network and you get FID 2.56 on ImageNet 256 in one shot, with precision and recall intact. If this holds up, the sampling-cost advantage of diffusion stops being a law of nature and becomes an engineering choice \u2014 with big implications for latency-bound image and video systems.",
     "source": "arXiv",
-    "date": "2026-07-20",
-    "url": "https://arxiv.org/abs/2607.07690"
+    "date": "2026-07-21",
+    "url": "https://arxiv.org/abs/2607.19332"
   },
   "top_stories": [
     {
-      "title": "CuspAI lands $450M at a $2.6B valuation to industrialize AI materials discovery",
-      "summary": "Kleiner Perkins and NEA lead, with Bezos Expeditions, the UK government and AMD Ventures in the round \u2014 plus Nvidia and Samsung signing on as partners. Materials science is becoming the next frontier where AI budgets look like semiconductor budgets.",
-      "source": "SiliconANGLE",
-      "date": "2026-07-20",
-      "url": "https://siliconangle.com/2026/07/20/ai-materials-science-startup-cuspai-raises-450m-funding/"
+      "title": "Nvidia's Rubin chips are shipping \u2014 the next hardware cycle has officially begun",
+      "summary": "Rubin enters full production and reaches customers, reasserting Nvidia's cadence just as AMD and Broadcom press in. The quiet question underneath: does more efficient modeling eventually shrink demand for all this silicon?",
+      "source": "Bloomberg Technology",
+      "date": "2026-07-21",
+      "url": "https://www.youtube.com/watch?v=M3O23nPqLns"
+    },
+    {
+      "title": "Moonshot AI chases a $50B valuation ahead of IPO",
+      "summary": "The Kimi K3 developer is reportedly in pre-IPO talks at a ~$50B mark \u2014 a signal that China's open-weight frontier is being priced as a first-class geopolitical asset, not a fast follower.",
+      "source": "Quartz",
+      "date": "2026-07-21",
+      "url": "https://qz.com/chinas-moonshot-ai-seeking-50-billion-valuation-pre-ipo-1851764534"
     }
   ],
   "sections": [
@@ -25,25 +32,39 @@
       "title": "Deep Dives",
       "items": [
         {
-          "title": "RESOURCE2SKILL turns tutorials and repos into executable agent skills",
-          "summary": "Microsoft Research distills the material humans learn from \u2014 videos, articles, codebases \u2014 into a hierarchical multimodal Skill Wiki that agents can actually execute. The +11.9 point average gain over skill-less agents suggests the bottleneck was never the model, but the missing apprenticeship.",
+          "title": "Mage-Flow: 1024px images in 0.59 seconds on a single A100",
+          "summary": "A 4B-parameter stack \u2014 lightweight Mage-VAE tokenizer plus a native-resolution rectified-flow DiT \u2014 generates full-res images in under a second and edits in just over one. Efficiency work like this is where diffusion research actually pays rent.",
           "source": "arXiv",
-          "date": "2026-07-20",
-          "url": "https://arxiv.org/abs/2606.29538"
+          "date": "2026-07-21",
+          "url": "https://arxiv.org/abs/2607.19064"
         },
         {
-          "title": "Sycophancy isn't born, it's installed \u2014 and it can be steered out",
-          "summary": "Across five model families and seven bias types, this study shows cue-induced bias comes from alignment tuning, not pretraining. Each bias forms a single coherent direction in hidden states that can be decoded and steered \u2014 meaning the flaws we train in are, at least partially, editable.",
+          "title": "GEAR: reward the evidence, penalize the distractors",
+          "summary": "A simple RL reward-shaping idea \u2014 grounding rewards for key evidence, penalties for irrelevant context \u2014 buys +4.6 average points on long-context reasoning, with the largest gains at the longest contexts. Cheap, general, and immediately usable.",
           "source": "arXiv",
-          "date": "2026-07-20",
-          "url": "https://arxiv.org/abs/2607.18114"
+          "date": "2026-07-21",
+          "url": "https://arxiv.org/abs/2607.19345"
         },
         {
-          "title": "Your stacked verifiers are less safe than the math says",
-          "summary": "A formal theory of correlated verifier cascades shows failure decays polynomially, not exponentially, and blind spots cap reliability outright. Assuming independence underestimates failure by 20x at five gates and roughly 3000x at ten \u2014 uncomfortable reading for anyone shipping multi-gate LLM harnesses.",
+          "title": "CodeRescue: knowing when to escalate is a routing problem",
+          "summary": "Post-failure recovery for coding agents, formalized: a supervised router plus Conformal Risk Control beats always-escalate solve rates while spending only 35% of its recovery budget. Agent reliability is quietly becoming an engineering discipline.",
           "source": "arXiv",
-          "date": "2026-07-20",
-          "url": "https://arxiv.org/abs/2607.13918"
+          "date": "2026-07-21",
+          "url": "https://arxiv.org/abs/2607.19338"
+        },
+        {
+          "title": "GAMUT: frontier models top out at 58.7% on factual completeness",
+          "summary": "Meta's two-level meta-rubric benchmark, spanning 1,813 questions across 10 domains, shows even Gemini 3.1 Pro leaves nearly half the facts on the table. A useful antidote to benchmark saturation narratives.",
+          "source": "arXiv",
+          "date": "2026-07-21",
+          "url": "https://arxiv.org/abs/2607.19322"
+        },
+        {
+          "title": "AdaFlash: adaptive diffusion drafters lift speculative decoding throughput by 66%",
+          "summary": "On-policy distillation plus an adaptive length head tames the variance in diffusion drafters, delivering up to 66% higher throughput under high concurrency \u2014 the regime that actually matters in production serving.",
+          "source": "arXiv",
+          "date": "2026-07-21",
+          "url": "https://arxiv.org/abs/2607.19223"
         }
       ]
     },
@@ -51,25 +72,32 @@
       "title": "Open Pulse",
       "items": [
         {
-          "title": "Kimi Work brings 300 specialized agents to the desktop",
-          "summary": "Moonshot AI's new desktop agent automates knowledge-worker workflows across files and the web, with specialized agents for financial research, analysis, and office tasks. The agentic desktop race is no longer a two-lab story.",
-          "source": "Kimi",
-          "date": "2026-07-20",
-          "url": "https://www.kimi.com/products/kimi-work"
-        },
-        {
-          "title": "Nativ runs frontier open models entirely on your Mac",
-          "summary": "Language, vision, video, code and embedding models locally on Apple Silicon \u2014 free, open source, no accounts, no cloud. The local-first stack keeps quietly eating use cases that used to require an API key.",
-          "source": "GitHub",
-          "date": "2026-07-20",
-          "url": "https://blaizzy.github.io/nativ/"
-        },
-        {
-          "title": "Relay: a self-hosted LLM gateway that routes on evals, not vibes",
-          "summary": "A single static binary speaking OpenAI and Anthropic dialects against any backend, with zero telemetry and eval-gated routing policies. Model routing is growing up from config file to control plane.",
-          "source": "GitHub",
+          "title": "Google ships a Gemini trio: 3.6 Flash, 3.5 Flash-Lite, and a security-hardened Flash Cyber",
+          "summary": "Three models, three tradeoffs \u2014 speed, cost, and enterprise security. Notably, Gemini's lineup now reads like a pricing page, which tells you exactly where the competitive frontier has moved.",
+          "source": "Google DeepMind",
           "date": "2026-07-21",
-          "url": "https://github.com/llmrelay/relay"
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"
+        },
+        {
+          "title": "Poolside's Laguna S 2.1: a 118B MoE coding model with only 8B active parameters",
+          "summary": "Frontier-class agentic coding with 1M context, plus a 33B XS variant aimed at on-device use. Sparse activation keeps making 'big model quality, small model bill' a real product category.",
+          "source": "Poolside",
+          "date": "2026-07-22",
+          "url": "https://poolside.ai/"
+        },
+        {
+          "title": "Jack Dorsey's Buzz wants to be Slack, Notion, and GitHub at once",
+          "summary": "Team chat, built-in AI agents, and Git hosting in one workspace. Ambitious \u2014 and the AI-agent layer is the interesting bet, not the chat.",
+          "source": "RuntimeWire",
+          "date": "2026-07-22",
+          "url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git"
+        },
+        {
+          "title": "Computable turns GPU time into a weekly commodity market",
+          "summary": "Buy, sell, and redeem compute by the calendar week with instant liquidity. If compute is the new oil, someone was always going to build the futures exchange.",
+          "source": "Computable",
+          "date": "2026-07-22",
+          "url": "https://getcomputable.com/"
         }
       ]
     },
@@ -77,18 +105,44 @@
       "title": "The Edge",
       "items": [
         {
-          "title": "Sereact closes $116M with Zalando as strategic investor for warehouse robotics",
-          "summary": "Over 200 systems live across Europe and more than a billion production picks completed. Physical AI is past the demo phase \u2014 the money now follows throughput numbers, not promises.",
-          "source": "Tech.eu",
-          "date": "2026-07-20",
-          "url": "https://tech.eu/2026/07/20/zalando-joins-sereacts-116m-series-b-to-accelerate-ai-powered-warehouse-automation/"
+          "title": "Humanoid raises $152M Series A at a $1.35B valuation",
+          "summary": "Another nine-figure round for humanoid robotics \u2014 capital keeps arriving ahead of deployments. Watch whether the next twelve months produce revenue or just better demos.",
+          "source": "Reuters",
+          "date": "2026-07-21",
+          "url": "https://www.reuters.com/technology/robotics-startup-humanoid-raises-152-million-series-round-2026-07-21/"
         },
         {
-          "title": "Infinity raises $15M to run any model on any chip",
-          "summary": "A universal inference library taking direct aim at CUDA's gravitational pull, backed by Touring Capital and researchers from OpenAI and Anthropic. Small round, big thesis: hardware neutrality as a wedge against the Nvidia tax.",
-          "source": "TechCrunch",
-          "date": "2026-07-20",
-          "url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/"
+          "title": "SkyPilot raises $20M to be the Switzerland of AI compute",
+          "summary": "A Databricks cofounder's orchestration layer that lets teams shop across clouds. Neutrality is a strong pitch \u2014 until the clouds decide they'd rather not be shopped.",
+          "source": "Fortune",
+          "date": "2026-07-21",
+          "url": "https://fortune.com/2026/07/21/skypilot-databricks-cofounder-ai-compute-20-million/"
+        },
+        {
+          "title": "Uniti AI raises $12M to put agents in charge of real estate workflows",
+          "summary": "Sales, leasing, and operations agents for property managers, backed by Pathlight Ventures and MetaProp. Vertical agent plays keep getting funded where the workflows are painfully manual.",
+          "source": "AlleyWatch",
+          "date": "2026-07-21",
+          "url": "https://www.alleywatch.com/2026/07/the-alleywatch-startup-daily-funding-report-7-21-2026/"
+        }
+      ]
+    },
+    {
+      "title": "YouTube Signals",
+      "items": [
+        {
+          "title": "Bloomberg: Rubin's arrival reframes the AI hardware race",
+          "summary": "Bloomberg Technology on what full-production Rubin means for Nvidia's moat \u2014 and why efficiency gains in models are the bear case hanging over the whole chip cycle.",
+          "source": "Bloomberg Technology",
+          "date": "2026-07-21",
+          "url": "https://www.youtube.com/watch?v=M3O23nPqLns"
+        },
+        {
+          "title": "Bessemer's Dholakia: Kimi K3 is forcing the US-China AI conversation to grow up",
+          "summary": "On Bloomberg Tech, the case that Chinese open-weight models are genuinely closing on OpenAI and Anthropic \u2014 and that the investment cycle is still early, not late.",
+          "source": "Bloomberg Technology",
+          "date": "2026-07-21",
+          "url": "https://www.youtube.com/watch?v=NjcXd7YTRko"
         }
       ]
     }
@@ -96,39 +150,40 @@
   "trending": null,
   "quick_hits": [
     {
-      "title": "Natural raises $30M Series A to build payment rails for AI agents",
-      "source": "TechCrunch",
-      "date": "2026-07-20",
-      "url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
-      "context": "agent economy plumbing"
-    },
-    {
-      "title": "Anthropic opens AI for Science grants for rare disease research",
-      "source": "Anthropic",
-      "date": "2026-07-20",
-      "url": "https://www.anthropic.com/news/rare-disease-research-grants",
-      "context": "up to $50K in Claude credits"
-    },
-    {
-      "title": "SHACKLE enforces deterministic runtime governance for autonomous agents",
-      "source": "GitHub",
-      "date": "2026-07-21",
-      "url": "https://github.com/Fame510/SHACKLE",
-      "context": "policy decisions, audited"
-    },
-    {
-      "title": "SWE-Pruner Pro cuts coding-agent context 39% using the model's own representations",
+      "title": "ISO: RLVR reuses base-model weight spectra rather than rewriting them",
       "source": "arXiv",
-      "date": "2026-07-21",
-      "url": "https://arxiv.org/abs/2607.18213",
-      "context": "+3.8% on SWE-Bench"
+      "url": "https://arxiv.org/abs/2607.19331",
+      "context": "optimization theory"
     },
     {
-      "title": "TRIM names and shames CodeSlop, cutting it up to 33% across agent scaffolds",
+      "title": "Appearance Pointers: localized multimodal control of DiTs without retraining",
       "source": "arXiv",
-      "date": "2026-07-20",
-      "url": "https://arxiv.org/abs/2607.18161",
-      "context": "less slop, same results"
+      "url": "https://arxiv.org/abs/2607.19344",
+      "context": "diffusion control"
+    },
+    {
+      "title": "ABot-World-0: interactive 720P world rollouts at 16 FPS on one RTX 5090",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19191",
+      "context": "world models"
+    },
+    {
+      "title": "TryAI: one pay-as-you-go interface across 30+ frontier models",
+      "source": "TryAI",
+      "url": "https://www.tryai.dev/",
+      "context": "model aggregation"
+    },
+    {
+      "title": "Vikk AI raises $4.2M for legal-tech referral and ad platform",
+      "source": "Law.com",
+      "url": "https://www.law.com/2026/07/21/attorney-referral-legal-platform-vikk-ai-announces-4-2m-in-funding/",
+      "context": "legal tech"
+    },
+    {
+      "title": "SciForma-9B beats GPT-Image-1.5 on scientific diagram fidelity",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18091",
+      "context": "diagram generation"
     }
   ]
 }
