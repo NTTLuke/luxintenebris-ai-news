@@ -1,12 +1,12 @@
 {
-  "issue_no": 28,
+  "issue_no": 20,
   "date_iso": "2026-07-24",
   "date_human": "July 24, 2026",
   "notice": null,
   "lead": {
     "kicker": "AMD's Big AI Bet",
     "title": "AMD Launches Helios Rack-Scale AI System With MI455X GPU and 6th Gen EPYC Venice, Signs OpenAI and Anthropic as Customers",
-    "summary": "At Advancing AI 2026, AMD unveiled Helios — a rack-scale AI solution packing 72 MI455X GPUs (2nm, 432GB HBM4 each) and 18 EPYC Venice CPUs rated at 2.9 exaflops FP4 inference. OpenAI, Anthropic, Meta, Microsoft, and Oracle are confirmed customers. AMD separately announced a strategic partnership with Anthropic to deploy up to 2GW of MI450-series GPUs and a $5B equity investment.",
+    "summary": "At Advancing AI 2026, AMD unveiled Helios \u2014 a rack-scale AI solution packing 72 MI455X GPUs (2nm, 432GB HBM4 each) and 18 EPYC Venice CPUs rated at 2.9 exaflops FP4 inference. OpenAI, Anthropic, Meta, Microsoft, and Oracle are confirmed customers. AMD separately announced a strategic partnership with Anthropic to deploy up to 2GW of MI450-series GPUs and a $5B equity investment.",
     "source": "AMD",
     "date": "2026-07-23",
     "url": "https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era"
@@ -20,7 +20,7 @@
       "url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/"
     },
     {
-      "title": "xAI Launches Workflows in Grok Build — Parallel Agent Orchestration at Scale",
+      "title": "xAI Launches Workflows in Grok Build \u2014 Parallel Agent Orchestration at Scale",
       "summary": "Grok Build can now fan out tasks across up to 1,024 parallel agents, verify results, and report back in one background run using plain-language workflows saved as slash commands.",
       "source": "x.ai",
       "date": "2026-07-23",
@@ -39,23 +39,23 @@
       "title": "YouTube & Video",
       "items": [
         {
-          "title": "Google achieves quantum self-correction breakthrough — computers that retune themselves mid-computation",
+          "title": "Google achieves quantum self-correction breakthrough \u2014 computers that retune themselves mid-computation",
           "summary": "Google's quantum system learns from its own errors and retunes itself mid-computation, beating expert calibration and reaching record error rates without human intervention.",
-          "source": "YouTube — Beyond AI News",
+          "source": "YouTube \u2014 Beyond AI News",
           "date": "2026-07-23",
           "url": "https://www.youtube.com/watch?v=oPS8Ms9KkP4"
         },
         {
           "title": "Chinese labs face sanctions allegations over industrial-scale Kimi K-3 model distillation",
           "summary": "Analysis covers investor fears about cheaper models undercutting OpenAI and Anthropic, circular financing risks, runaway CapEx, and inference bottlenecks.",
-          "source": "YouTube — The AI Daily Brief",
+          "source": "YouTube \u2014 The AI Daily Brief",
           "date": "2026-07-24",
           "url": "https://www.youtube.com/watch?v=rGd91f4ohZk"
         },
         {
           "title": "Apple preparing full Mac lineup overhaul to meet surging AI demand",
           "summary": "Apple plans new versions of every Mac across fall 2026 and 2027, targeting demand for powerful AI-capable laptops and desktops across iMac, MacBook Pro, and MacBook Air lines.",
-          "source": "YouTube — Bloomberg Technology",
+          "source": "YouTube \u2014 Bloomberg Technology",
           "date": "2026-07-23",
           "url": "https://www.youtube.com/watch?v=2ckOjFrGz5c"
         }
@@ -91,7 +91,7 @@
       "title": "Tools & Startups",
       "items": [
         {
-          "title": "Runway Launches Media Router — AI model selector by cost, speed, or quality",
+          "title": "Runway Launches Media Router \u2014 AI model selector by cost, speed, or quality",
           "summary": "Runway's new tool automatically selects the best image, video, or audio generation model based on developer priorities, routing across the crowded generative media landscape.",
           "source": "TechCrunch",
           "date": "2026-07-23",
@@ -105,21 +105,21 @@
           "url": "https://news.ycombinator.com/item?id=49026810"
         },
         {
-          "title": "PromptQL — multiplayer AI workspace from the Hasura team aims to replace Slack",
+          "title": "PromptQL \u2014 multiplayer AI workspace from the Hasura team aims to replace Slack",
           "summary": "An AI-native team workspace where shared threads replace channels, capturing tribal knowledge across databases, SaaS apps, and coding agents into a self-building business wiki.",
           "source": "Product Hunt",
           "date": "2026-07-24",
           "url": "https://www.producthunt.com/products/promptql"
         },
         {
-          "title": "OpenCode Superapp — Codex with local self-hosted models and voice interaction",
+          "title": "OpenCode Superapp \u2014 Codex with local self-hosted models and voice interaction",
           "summary": "Unified coding assistant combining OpenAI Codex with local models for online and offline use with model flexibility.",
           "source": "Product Hunt",
           "date": "2026-07-24",
           "url": "https://www.producthunt.com/products/opencode-superapp"
         },
         {
-          "title": "OneCLI — open-source credential gateway keeping secrets out of AI agents",
+          "title": "OneCLI \u2014 open-source credential gateway keeping secrets out of AI agents",
           "summary": "Intercepts API keys before they reach AI agents, providing secure access to services without exposing credentials in context or logs.",
           "source": "Hacker News",
           "date": "2026-07-23",
@@ -169,36 +169,175 @@
     }
   ],
   "trending": {
-    "github": null,
-    "huggingface": null
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-07-24",
+      "items": [
+        {
+          "name": "block/buzz",
+          "url": "https://github.com/block/buzz",
+          "meta": "Rust \u00b7 7,573 \u2605"
+        },
+        {
+          "name": "koala73/worldmonitor",
+          "url": "https://github.com/koala73/worldmonitor",
+          "meta": "TypeScript \u00b7 72,077 \u2605"
+        },
+        {
+          "name": "shiyu-coder/Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "meta": "Python \u00b7 33,202 \u2605"
+        },
+        {
+          "name": "Pumpkin-MC/Pumpkin",
+          "url": "https://github.com/Pumpkin-MC/Pumpkin",
+          "meta": "Rust \u00b7 9,032 \u2605"
+        },
+        {
+          "name": "citrolabs/ego-lite",
+          "url": "https://github.com/citrolabs/ego-lite",
+          "meta": "JavaScript \u00b7 1,889 \u2605"
+        },
+        {
+          "name": "chrislgarry/Apollo-11",
+          "url": "https://github.com/chrislgarry/Apollo-11",
+          "meta": "Assembly \u00b7 71,186 \u2605"
+        },
+        {
+          "name": "diegosouzapw/OmniRoute",
+          "url": "https://github.com/diegosouzapw/OmniRoute",
+          "meta": "TypeScript \u00b7 27,615 \u2605"
+        },
+        {
+          "name": "ComposioHQ/awesome-claude-skills",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+          "meta": "Python \u00b7 69,581 \u2605"
+        },
+        {
+          "name": "earthtojake/text-to-cad",
+          "url": "https://github.com/earthtojake/text-to-cad",
+          "meta": "JavaScript \u00b7 10,142 \u2605"
+        },
+        {
+          "name": "agegr/pi-web",
+          "url": "https://github.com/agegr/pi-web",
+          "meta": "TypeScript \u00b7 2,467 \u2605"
+        },
+        {
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "meta": "Go \u00b7 11,822 \u2605"
+        },
+        {
+          "name": "ruvnet/RuView",
+          "url": "https://github.com/ruvnet/RuView",
+          "meta": "Rust \u00b7 85,389 \u2605"
+        },
+        {
+          "name": "likec4/likec4",
+          "url": "https://github.com/likec4/likec4",
+          "meta": "TypeScript \u00b7 4,785 \u2605"
+        },
+        {
+          "name": "Automattic/harper",
+          "url": "https://github.com/Automattic/harper",
+          "meta": "Rust \u00b7 12,502 \u2605"
+        },
+        {
+          "name": "jellyfin/jellyfin",
+          "url": "https://github.com/jellyfin/jellyfin",
+          "meta": "C# \u00b7 54,812 \u2605"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-07-24",
+      "items": [
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "meta": "baidu/Unlimited-OCRImage-Text-to-Text\u20223B\u2022Updatedabout 21 hours ago\u20222.41M\u20222.92k"
+        },
+        {
+          "name": "thinkingmachines/Inkling",
+          "url": "https://huggingface.co/thinkingmachines/Inkling",
+          "meta": "thinkingmachines/InklingImage-Text-to-Text\u2022952B\u2022Updatedabout 13 hours ago\u202224.7k\u2022\u20221.52k"
+        },
+        {
+          "name": "poolside/Laguna-S-2.1",
+          "url": "https://huggingface.co/poolside/Laguna-S-2.1",
+          "meta": "poolside/Laguna-S-2.1Text Generation\u2022118B\u2022Updated1 day ago\u202213.3k\u2022534"
+        },
+        {
+          "name": "upstage/Solar-Open2-250B",
+          "url": "https://huggingface.co/upstage/Solar-Open2-250B",
+          "meta": "upstage/Solar-Open2-250BText Generation\u2022250B\u2022Updated13 minutes ago\u2022362\u2022483"
+        },
+        {
+          "name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "meta": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUFImage-Text-to-Text\u202227B\u2022Updated4 days ago\u2022"
+        },
+        {
+          "name": "prism-ml/Ternary-Bonsai-27B-gguf",
+          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
+          "meta": "prism-ml/Ternary-Bonsai-27B-ggufText Generation\u20224B\u2022Updated6 days ago\u2022576k\u2022\u2022991"
+        },
+        {
+          "name": "Nanbeige/Nanbeige4.2-3B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+          "meta": "Nanbeige/Nanbeige4.2-3BText Generation\u20224B\u2022Updatedabout 21 hours ago\u20224.53k\u2022334"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "zai-org/GLM-5.2Text Generation\u2022753B\u2022Updated22 days ago\u2022596k\u2022\u20224.39k"
+        },
+        {
+          "name": "prism-ml/Bonsai-27B-gguf",
+          "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
+          "meta": "prism-ml/Bonsai-27B-ggufText Generation\u20224B\u2022Updated7 days ago\u20221.91M\u2022622"
+        },
+        {
+          "name": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "meta": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-AggressiveImage-Text-to-Text\u202235B\u2022UpdatedApr 17\u20222.03M\u20223.05k"
+        }
+      ]
+    }
   },
   "quick_hits": [
     {
       "title": "Palm Beach County rejects AI data center hub near Mar-a-Lago",
-      "source": "YouTube — Bloomberg Technology",
+      "source": "YouTube \u2014 Bloomberg Technology",
       "date": "2026-07-23",
       "url": "https://www.youtube.com/watch?v=IDLUJK8mLlI"
     },
     {
       "title": "Tesla misses profit estimates, doubles down on AI, autonomy, and robotics",
-      "source": "YouTube — Bloomberg Technology",
+      "source": "YouTube \u2014 Bloomberg Technology",
       "date": "2026-07-23",
       "url": "https://www.youtube.com/watch?v=wMN7fI57ldo"
     },
     {
       "title": "OpenAI's Greg Brockman on competing with Anthropic in the AI arms race",
-      "source": "YouTube — Bloomberg Technology",
+      "source": "YouTube \u2014 Bloomberg Technology",
       "date": "2026-07-23",
       "url": "https://www.youtube.com/watch?v=T1qha9jyy5s"
     },
     {
       "title": "IBM CEO: AI reshaping enterprise tech spend, quantum computing next growth engine",
-      "source": "YouTube — Bloomberg Technology",
+      "source": "YouTube \u2014 Bloomberg Technology",
       "date": "2026-07-23",
       "url": "https://www.youtube.com/watch?v=LfOg0q3AHMU"
     },
     {
-      "title": "Goldfish — Mac AI assistant that knows your context and replies like you",
+      "title": "Goldfish \u2014 Mac AI assistant that knows your context and replies like you",
       "source": "Product Hunt",
       "date": "2026-07-24",
       "url": "https://www.producthunt.com/products/goldfish-early-access"
@@ -216,7 +355,7 @@
       "url": "https://www.key4biz.it/torna-a-milano-ai-festival-business-e-formazione-avanzata-al-centro-della-nuova-edizione/582305/"
     },
     {
-      "title": "Runway Launches Media Router — AI model selector by cost, speed, or quality",
+      "title": "Runway Launches Media Router \u2014 AI model selector by cost, speed, or quality",
       "source": "TechCrunch",
       "date": "2026-07-23",
       "url": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/"
