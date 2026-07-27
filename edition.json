@@ -1,294 +1,123 @@
 {
-  "issue_no": 29,
-  "date_iso": "2026-07-25",
-  "date_human": "July 25, 2026",
-  "notice": "Light Saturday edition — fewer fresh items than usual, but quality picks across research, tools, and funding.",
+  "issue_no": 32,
+  "date_iso": "2026-07-27",
+  "date_human": "July 27, 2026",
+  "notice": "Light news day — fewer fresh items than usual. Weekend slowdown.",
   "lead": {
-    "title": "Introducing Claude Opus 5",
-    "summary": "Anthropic launched Claude Opus 5, a step-change improvement for the Opus tier powering long-running agents with improvements in coding and professional work.",
-    "source": "Anthropic",
-    "date": "2026-07-24",
-    "url": "https://www.anthropic.com/news/claude-opus-5",
-    "kicker": "Frontier Model War"
+    "kicker": "Agentic milestone",
+    "title": "ChatGPT executes complex multi-step agentic workflow from a single phone prompt",
+    "summary": "Sam Altman demonstrated ChatGPT completing an end-to-end agentic task from a single phone prompt: trip ideation for eight friends using full chat history, building a full-stack coordination site with voting and consensus mechanics, making real reservations, and drafting a Gmail email. Altman said calling it 'remarkable work' undersells the achievement.",
+    "source": "@sama",
+    "date": "2026-07-26",
+    "url": "https://x.com/sama/status/2081396796174282900",
+    "image": "images/lead_2026-07-27.jpg"
   },
   "top_stories": [
     {
-      "title": "Anduril reportedly in talks to raise funding at $100B valuation",
-      "summary": "$40B+ raise at ~$100B valuation (3x last year's mark), defense tech/AI drones, talks ongoing per Reuters",
-      "source": "TechCrunch",
-      "date": "2026-07-24",
-      "url": "https://techcrunch.com/2026/07/24/anduril-reportedly-in-talks-to-raise-funding-at-100b-valuation-more-than-3x-last-years-mark/"
+      "title": "LeCun: AGI emergence will not be a singular event, Anthropic unlikely to cross threshold first",
+      "summary": "Yann LeCun argued that AGI emergence will not be a singular breakthrough owned by one company. He stated that even if a threshold is agreed upon, Anthropic is unlikely to cross it first, and if one company does, five others will follow within six months. He emphasized that any breakthrough will rely on open research and open-source foundations that do not yet fully exist.",
+      "source": "@ylecun",
+      "date": "2026-07-26",
+      "url": "https://x.com/ylecun/status/2081464734700777775",
+      "image": "images/section_top-stories_2026-07-27.jpg"
     },
     {
-      "title": "\"Open Weights and American AI Leadership\" — 25 US Companies Sign Policy Letter",
-      "summary": "A major policy letter titled 'Open Weights and American AI Leadership' was released July 24, 2026, co-signed by 25 US companies including NVIDIA (Jensen Huang's first ever X post), Meta, Microsoft, IBM, Mistral AI, Hugging Face, and Mozilla, arguing open-weight AI models expand American AI leadershi",
-      "source": "@heyshrutimishra",
-      "date": "2026-07-24",
-      "url": "https://x.com/heyshrutimishra/status/2080687164430471178"
+      "title": "AI infrastructure boom fuels nuclear renaissance across Asia",
+      "summary": "Soaring electricity demand from AI data centers is driving governments and companies across Asia to pursue nuclear power, including fusion startups Helical Fusion and OpenStar. Former IEA executive director Nobuo Tanaka discusses why Asia leads this trend.",
+      "source": "YouTube — Bloomberg Technology",
+      "date": "2026-07-26",
+      "url": "https://www.youtube.com/watch?v=fniOkNQT2pM"
     },
     {
-      "title": "Jensen Huang Posts on X for the First Time — Shares NVIDIA's Open Weights Letter",
-      "summary": "NVIDIA CEO Jensen Huang made his first-ever X post on July 24, 2026, sharing the 'Open Weights and American AI Leadership' letter signed by 25 US companies including NVIDIA, defending open-weight AI models as critical to US AI leadership.",
-      "source": "@marcb_xyz",
-      "date": "2026-07-24",
-      "url": "https://x.com/marcb_xyz/status/2080687367623417863"
-    },
-    {
-      "title": "OpenAI Presence — Enterprise AI Agent Platform Generates Discussion Throughout July 24-25",
-      "summary": "OpenAI's enterprise product 'Presence' for deploying trusted voice and chat AI agents remained a hot topic on X through July 24-25, with analysts noting its significance for enterprise AI agent deployment with guardrails and Forward Deployed Engineers.",
-      "source": "@v_shakthi",
-      "date": "2026-07-24",
-      "url": "https://x.com/v_shakthi/status/2080490658482290706"
+      "title": "Karpathy denies quitting Anthropic, calls rumors 'weird misinformation'",
+      "summary": "Andrej Karpathy directly refuted rumors circulating on Twitter that he had left Anthropic, calling them 'weird misinformation' and noting he was simply cleaning up his bio. He remains at Anthropic working on large neural nets.",
+      "source": "@karpathy",
+      "date": "2026-07-26",
+      "url": "https://x.com/karpathy/status/2081193667529003247"
     }
   ],
-  "sections": [
-    {
-      "title": "Research & Papers",
-      "items": [
-        {
-          "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
-          "summary": "BAAI presenta AREX, una famiglia di agenti deep research con auto-miglioramento ricorsivo. Alterna ricerca interna e un loop esterno di self-improvement che verifica le risposte vincolo per vincolo. Un modello 122B-A10B MoE supera baseline comparabili su BrowseComp, WideSearch e Humanity's Last Exam",
-          "source": "HuggingFace",
-          "date": "2026-07-24",
-          "url": "https://arxiv.org/abs/2607.21461"
-        },
-        {
-          "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-          "summary": "Microsoft presenta un framework open-source per addestrare agenti harness-based (Claude Code, Codex, OpenClaw) end-to-end via RL. Usando solo centinaia/migliaia di task, OpenForgeClaw raggiunge 31.7 pass^3 su ClawEval e OpenForgeGUI 72.3 su WebVoyager, superando baseline aperte di dimensioni simili ",
-          "source": "HuggingFace",
-          "date": "2026-07-24",
-          "url": "https://arxiv.org/abs/2607.21557"
-        },
-        {
-          "title": "Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context",
-          "summary": "Propone una sliding window + attention sink per il draft head di MTP/NEXTN, riducendo del ~99% il KV cache del draft a 1M di contesto. Su Qwen GDN-MoE 35B/122B e Mamba2-hybrid 120B, taglia il costo per step del 28-44% senza perdita di qualità, essendo il full-attention target a decidere i token acce",
-          "source": "arXiv",
-          "date": "2026-07-24",
-          "url": "https://arxiv.org/abs/2607.21535"
-        },
-        {
-          "title": "JAXBench: Benchmarking Autonomous TPU Kernel Optimization",
-          "summary": "Google presenta JAXBench, benchmark TPU-native con 50 workload JAX. Con Gemini 3 Flash, la documentazione curata alza la correttezza per-sample dal 5.8% al 37.3%, risolvendo 48/50 benchmark con speedup 1.28x. Autocomp raggiunge 1.36x geomean su XLA e 1.60x sui kernel ottimizzati a mano.",
-          "source": "arXiv",
-          "date": "2026-07-24",
-          "url": "https://arxiv.org/abs/2607.20466"
-        },
-        {
-          "title": "DC-Leap: Training-Free Acceleration of dLLMs via Draft-Guided Contiguous Leaping Decoding",
-          "summary": "Framework training-free che accelera i Diffusion LLM del 53.19x su MBPP per sequenze lunghe, e fino a 105.02x combinato con KV-Cache. Introduce Dynamic Contiguous Verification che neutralizza il Joint Probability Dependence Error (JPDE), consentendo decoding parallelo anche in regime di confidenza m",
-          "source": "arXiv",
-          "date": "2026-07-24",
-          "url": "https://arxiv.org/abs/2607.20467"
-        },
-        {
-          "title": "Test-Time Scaling via Error Localization (TTEL)",
-          "summary": "Algoritmo inference-time che con feedback identifica il token esatto dove avviene l'errore, tronca la traiettoria e rigenera riusando il prefisso valido. Con Qwen3-8B su LiveCodeBench raggiunge pass@64 del 71.0% generando la metà dei token rispetto a independent sampling (360.4k vs 735.0k).",
-          "source": "arXiv",
-          "date": "2026-07-24",
-          "url": "https://arxiv.org/abs/2607.21453"
-        }
-      ]
-    },
-    {
-      "title": "Tools & Startups",
-      "items": [
-        {
-          "title": "OpenAI AI Keypad — hardware peripheral for coders",
-          "summary": "OpenAI launched a physical AI keypad peripheral designed for coders, offering quick access to AI completions and code generation directly from a dedicated hardware input device. Reviewed by TechCrunch as fun for some coders and mystifying to others.",
-          "source": "TechCrunch",
-          "date": "2026-07-24",
-          "url": "https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/"
-        },
-        {
-          "title": "GitHub Copilot Cloud Agent for Linear — generally available",
-          "summary": "GitHub made its Copilot cloud agent integration for Linear generally available, allowing teams to assign Linear issues to an asynchronous coding agent that produces draft pull requests for review.",
-          "source": "GitHub",
-          "date": "2026-07-24",
-          "url": "https://github.com/features/copilot"
-        },
-        {
-          "title": "Health in ChatGPT — connect health records for AI health conversations",
-          "summary": "OpenAI launched a U.S. rollout letting eligible ChatGPT users connect health records and supported wellness data for more contextual health conversations, powered by GPT-5.6 Sol on paid plans.",
-          "source": "OpenAI",
-          "date": "2026-07-24",
-          "url": "https://openai.com/index/health-in-chatgpt/"
-        },
-        {
-          "title": "Bluesky Attie — AI assistant expands into open social research tool",
-          "summary": "Bluesky's AI assistant Attie expanded to let users ask questions about news, trends, and conversations across Bluesky and other AT Protocol apps, acting as an open social research tool.",
-          "source": "TechCrunch",
-          "date": "2026-07-24",
-          "url": "https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool/"
-        },
-        {
-          "title": "Pushary — native mobile apps for approving AI agent requests from lock screen",
-          "summary": "Pushary launched native iPhone and Android apps that put AI agent approval requests on your lock screen. One command connects Claude Code, Codex, Cursor, Gemini CLI, Hermes, and Claude Cowork to your phone.",
-          "source": "Product Hunt",
-          "date": "2026-07-24",
-          "url": "https://www.producthunt.com/products/pushary"
-        },
-        {
-          "title": "Fluree AI — enterprise context layer for AI agents",
-          "summary": "Fluree AI gives every app and AI agent the same trusted context from company data, providing cited verifiable answers from a live data layer with permissions checked on every request, connecting to MCP-ready agents.",
-          "source": "Product Hunt",
-          "date": "2026-07-24",
-          "url": "https://www.producthunt.com/products/fluree"
-        }
-      ]
-    },
-    {
-      "title": "Hardware & Robotics",
-      "items": [
-        {
-          "title": "NVIDIA AI Summit: South Korea Unveils Multitrillion-Dollar AI Semiconductor Push with Jensen Huang, Sam Altman, and Tech Titans",
-          "summary": "South Korean President Lee Jae Myung issued the 'San Francisco AI Declaration' at the NVIDIA AI Summit, joined by Jensen Huang, Sam Altman, Hock Tan, and Dario Amodei. Korea outlined a multitrillion-dollar push into AI semiconductors, hyperscale data centers, and physical AI. NVIDIA and KAIST announ",
-          "source": "NVIDIA Blog",
-          "date": "2026-07-24",
-          "url": "https://blogs.nvidia.com/blog/ai-summit-korea-partners-and-nvidia/"
-        },
-        {
-          "title": "Intel Plans Fresh Layoffs in Data Center Group Amid Restructuring",
-          "summary": "Intel is planning layoffs in its Data Center Group (DCG) as part of CEO Lip-Bu Tan's broader effort to create a 'more focused and efficient' company. The layoffs target the division focused on server CPUs, AI chips, and data center architecture. Intel declined to disclose the number of affected empl",
-          "source": "Business Insider",
-          "date": "2026-07-21",
-          "url": "https://www.businessinsider.com/intel-layoffs-data-center-group-2026-7"
-        },
-        {
-          "title": "The Next Platform Analyzes AMD's Rackscale AI System Roadmaps and Total Addressable Market",
-          "summary": "Deep-dive analysis of AMD's Helios rack-scale strategy following Advancing AI 2026, examining the financial opportunity AMD is chasing with its integrated rack-scale approach, the competitive dynamics against NVIDIA Vera Rubin NVL72, and AMD's roadmap through Helios 500 and Helios 600 systems extend",
-          "source": "The Next Platform",
-          "date": "2026-07-24",
-          "url": "https://www.nextplatform.com/compute/2026/07/24/the-money-amd-is-chasing-with-its-rackscale-ai-system-roadmaps/5278510"
-        }
-      ]
-    },
-    {
-      "title": "Italia AI Spotlight",
-      "items": [
-        {
-          "title": "Il Sole 24 Ore Highlights AI4I's SUK Platform for AI Technology Transfer to Italian SMEs",
-          "summary": "AI4I, the Italian Institute for Artificial Intelligence for Industry, saw its SUK (System for User Knowledge) technology transfer platform featured in a full-page article on Il Sole 24 Ore. The platform connects 140 qualified AI providers, 59 innovative startups, and 70 SMEs through a structured mat",
-          "source": "AI4I",
-          "date": "2026-07-24",
-          "url": "https://ai4i.it/2026/07/24/il-sole-24-ore-highlights-suk-ai4is-technology-transfer-platform-for-italian-smes/"
-        },
-        {
-          "title": "Italy's National AI Committee Chair Calls for Overcoming Sensationalist Narratives Around Artificial Intelligence",
-          "summary": "Gianluigi Greco, president of Italy's National Committee for AI, told AI4Business that public debate on AI is polarized between unjustified alarmism and unrealistic expectations, urging strategic decisions anchored in scientific rigor rather than hype.",
-          "source": "AI4Business",
-          "date": "2026-07-24",
-          "url": "https://www.ai4business.it/intelligenza-artificiale/greco-comitato-nazionale-per-lai-e-fondamentale-superare-la-narrazione-sensazionalistica-sullintelligenza-artificiale/"
-        },
-        {
-          "title": "Emilia-Romagna's Food Valley Leverages AI to Expand into Global Markets",
-          "summary": "The Food Valley industrial district in Emilia-Romagna is adopting artificial intelligence not only to innovate food production but increasingly to conquer new international markets, positioning the region as a global laboratory for AI-driven agrifood competitiveness.",
-          "source": "AI4Business",
-          "date": "2026-07-24",
-          "url": "https://www.ai4business.it/storie/la-food-valley-coltiva-e-fa-crescere-lai-anche-per-conquistare-nuovi-mercati/"
-        }
-      ]
-    },
-    {
-      "title": "Money & Markets",
-      "items": [
-        {
-          "title": "Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M",
-          "summary": "$100M at $1B valuation, computer-use AI agents, seed stage, co-founded by Reid Hoffman and Mark Pincus, $50M in signed contracts, sector: AI agents/enterprise automation",
-          "source": "TechCrunch",
-          "date": "2026-07-24",
-          "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/"
-        },
-        {
-          "title": "Sam Altman's biometric startup World raises $52.5M via crypto sale",
-          "summary": "$52.5M via WLD token sale with 12-month lockup, lead investor: Pantera Capital, joined by Bain Capital Crypto, Susquehanna Crypto, Selini Capital, sector: biometric AI/identity verification",
-          "source": "TechCrunch",
-          "date": "2026-07-24",
-          "url": "https://techcrunch.com/2026/07/24/sam-altmans-biometric-startup-world-raises-52-5-million-via-crypto-sale/"
-        }
-      ]
-    }
-  ],
+  "sections": [],
   "trending": {
     "github": {
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-07-25",
+      "date": "2026-07-27",
       "items": [
         {
-          "name": "block/buzz",
-          "url": "https://github.com/block/buzz",
-          "meta": "Rust · 10,231 ★ · +3,270 today"
-        },
-        {
-          "name": "koala73/worldmonitor",
-          "url": "https://github.com/koala73/worldmonitor",
-          "meta": "TypeScript · 73,450 ★ · +2,184 today"
-        },
-        {
-          "name": "ComposioHQ/awesome-claude-skills",
-          "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-          "meta": "Python · 70,148 ★ · +663 today"
-        },
-        {
-          "name": "Pumpkin-MC/Pumpkin",
-          "url": "https://github.com/Pumpkin-MC/Pumpkin",
-          "meta": "Rust · 9,390 ★ · +473 today"
-        },
-        {
-          "name": "shiyu-coder/Kronos",
-          "url": "https://github.com/shiyu-coder/Kronos",
-          "meta": "Python · 33,539 ★ · +499 today"
-        },
-        {
-          "name": "Automattic/harper",
-          "url": "https://github.com/Automattic/harper",
-          "meta": "Rust · 13,087 ★ · +876 today"
-        },
-        {
-          "name": "likec4/likec4",
-          "url": "https://github.com/likec4/likec4",
-          "meta": "TypeScript · 5,063 ★ · +337 today"
+          "name": "permissionlesstech/bitchat",
+          "url": "https://github.com/permissionlesstech/bitchat",
+          "meta": "Swift · 30,715 ★"
         },
         {
           "name": "citrolabs/ego-lite",
           "url": "https://github.com/citrolabs/ego-lite",
-          "meta": "JavaScript · 2,734 ★ · +880 today"
+          "meta": "JavaScript · 4,854 ★"
         },
         {
-          "name": "yorukot/superfile",
-          "url": "https://github.com/yorukot/superfile",
-          "meta": "Go · 19,661 ★ · +338 today"
+          "name": "block/buzz",
+          "url": "https://github.com/block/buzz",
+          "meta": "Rust · 13,562 ★"
         },
         {
-          "name": "ruvnet/RuView",
-          "url": "https://github.com/ruvnet/RuView",
-          "meta": "Rust · 86,013 ★ · +1,022 today"
+          "name": "pingdotgg/t3code",
+          "url": "https://github.com/pingdotgg/t3code",
+          "meta": "TypeScript · 15,111 ★"
         },
         {
           "name": "CoreBunch/Instatic",
           "url": "https://github.com/CoreBunch/Instatic",
-          "meta": "TypeScript · 4,344 ★ · +201 today"
+          "meta": "TypeScript · 5,794 ★"
         },
         {
-          "name": "chrislgarry/Apollo-11",
-          "url": "https://github.com/chrislgarry/Apollo-11",
-          "meta": "Assembly · 71,430 ★ · +409 today"
+          "name": "yorukot/superfile",
+          "url": "https://github.com/yorukot/superfile",
+          "meta": "Go · 20,354 ★"
         },
         {
-          "name": "mattpocock/skills",
-          "url": "https://github.com/mattpocock/skills",
-          "meta": "Shell · 187,012 ★ · +2,251 today"
+          "name": "nodejs/node",
+          "url": "https://github.com/nodejs/node",
+          "meta": "JavaScript · 118,511 ★"
         },
         {
-          "name": "Lordog/dive-into-llms",
-          "url": "https://github.com/Lordog/dive-into-llms",
-          "meta": "Jupyter Notebook · 45,066 ★ · +328 today"
+          "name": "OtterMind/Chat2DB",
+          "url": "https://github.com/OtterMind/Chat2DB",
+          "meta": "Java · 27,232 ★"
         },
         {
-          "name": "diegosouzapw/OmniRoute",
-          "url": "https://github.com/diegosouzapw/OmniRoute",
-          "meta": "TypeScript · 29,024 ★ · +1,841 today"
+          "name": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "meta": "JavaScript · 50,831 ★"
+        },
+        {
+          "name": "shiyu-coder/Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "meta": "Python · 34,239 ★"
+        },
+        {
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "meta": "Go · 14,039 ★"
+        },
+        {
+          "name": "andrewyng/aisuite",
+          "url": "https://github.com/andrewyng/aisuite",
+          "meta": "Python · 15,443 ★"
+        },
+        {
+          "name": "anthropics/claude-cookbooks",
+          "url": "https://github.com/anthropics/claude-cookbooks",
+          "meta": "Jupyter Notebook · 50,316 ★"
+        },
+        {
+          "name": "Pumpkin-MC/Pumpkin",
+          "url": "https://github.com/Pumpkin-MC/Pumpkin",
+          "meta": "Rust · 10,070 ★"
+        },
+        {
+          "name": "permissionlesstech/bitchat-android",
+          "url": "https://github.com/permissionlesstech/bitchat-android",
+          "meta": "Kotlin · 6,788 ★"
         }
       ]
     },
@@ -296,133 +125,73 @@
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-07-25",
+      "date": "2026-07-27",
       "items": [
         {
           "name": "baidu/Unlimited-OCR",
           "url": "https://huggingface.co/baidu/Unlimited-OCR",
-          "meta": "Image-Text-to-Text, 3B, universal OCR model"
+          "meta": "baidu/Unlimited-OCRImage-Text-to-Text·3B·Updated4 days ago·2.59M·3.23k"
         },
         {
           "name": "poolside/Laguna-S-2.1",
           "url": "https://huggingface.co/poolside/Laguna-S-2.1",
-          "meta": "Text Generation, 118B, code-focused LLM"
-        },
-        {
-          "name": "thinkingmachines/Inkling",
-          "url": "https://huggingface.co/thinkingmachines/Inkling",
-          "meta": "Image-Text-to-Text, 952B, large multimodal model"
+          "meta": "poolside/Laguna-S-2.1Text Generation·118B·Updated3 days ago·56.4k··704"
         },
         {
           "name": "upstage/Solar-Open2-250B",
           "url": "https://huggingface.co/upstage/Solar-Open2-250B",
-          "meta": "Text Generation, 250B, LLM"
+          "meta": "upstage/Solar-Open2-250BText Generation·250B·Updated3 days ago·3.31k·602"
         },
         {
           "name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
           "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-          "meta": "Image-Text-to-Text, 27B, GGUF quantized model"
+          "meta": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUFImage-Text-to-Text·27B·Updated5 minutes a"
         },
         {
           "name": "Nanbeige/Nanbeige4.2-3B",
           "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
-          "meta": "Text Generation, 4B, LLM"
+          "meta": "Nanbeige/Nanbeige4.2-3BText Generation·4B·Updatedabout 17 hours ago·14k·450"
         },
         {
-          "name": "prism-ml/Ternary-Bonsai-27B-gguf",
-          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-          "meta": "Text Generation, ternary quantized 27B, GGUF"
-        },
-        {
-          "name": "zai-org/GLM-5.2",
-          "url": "https://huggingface.co/zai-org/GLM-5.2",
-          "meta": "Text Generation, 753B, large language model"
+          "name": "thinkingmachines/Inkling",
+          "url": "https://huggingface.co/thinkingmachines/Inkling",
+          "meta": "thinkingmachines/InklingImage-Text-to-Text·952B·Updated3 days ago·34.5k··1.58k"
         },
         {
           "name": "microsoft/Mage-Flow",
           "url": "https://huggingface.co/microsoft/Mage-Flow",
-          "meta": "Text-to-Image, 4B, image generation model"
+          "meta": "microsoft/Mage-FlowText-to-Image·4B·Updated4 days ago·1.38k·342"
         },
         {
-          "name": "prism-ml/Bonsai-27B-gguf",
-          "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
-          "meta": "Text Generation, GGUF quantized 27B model"
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "zai-org/GLM-5.2Text Generation·753B·Updated25 days ago·827k··4.49k"
+        },
+        {
+          "name": "prism-ml/Ternary-Bonsai-27B-gguf",
+          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
+          "meta": "prism-ml/Ternary-Bonsai-27B-ggufText Generation·4B·Updated9 days ago·632k··1.05k"
+        },
+        {
+          "name": "unsloth/Laguna-S-2.1-GGUF",
+          "url": "https://huggingface.co/unsloth/Laguna-S-2.1-GGUF",
+          "meta": "unsloth/Laguna-S-2.1-GGUFText Generation·118B·Updatedabout 5 hours ago·103k·203"
         }
       ]
     }
   },
   "quick_hits": [
     {
-      "title": "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents",
-      "source": "arXiv",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.21273"
+      "title": "AI infrastructure boom fuels nuclear renaissance across Asia",
+      "source": "YouTube — Bloomberg Technology",
+      "date": "2026-07-26",
+      "url": "https://www.youtube.com/watch?v=fniOkNQT2pM"
     },
     {
-      "title": "NVIDIA-labs OO Agents: Native Python Object-Oriented Agents",
-      "source": "HuggingFace",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.20709"
-    },
-    {
-      "title": "SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation",
-      "source": "HuggingFace",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.21553"
-    },
-    {
-      "title": "Mean-to-Score Discrete Diffusion: Posterior-Mean Denoisers for Score Entropy",
-      "source": "arXiv",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.21372"
-    },
-    {
-      "title": "Sample-Efficient Learning from Agent Experience (Experience Distillation)",
-      "source": "HuggingFace",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.21051"
-    },
-    {
-      "title": "Multi-Turn On-Policy Distillation with Prefix Replay (ReOPD)",
-      "source": "HuggingFace",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.04763"
-    },
-    {
-      "title": "Predictive Divergence Masks for LLM RL",
-      "source": "HuggingFace",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.10848"
-    },
-    {
-      "title": "KroQuant: Kronecker-Structured Block Transforms for Efficient Post-Training Quantization of Diffusion Transformers",
-      "source": "arXiv",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.21446"
-    },
-    {
-      "title": "Context-weighted Discrete Flow Matching",
-      "source": "arXiv",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.21427"
-    },
-    {
-      "title": "ConfidenceBench: Evaluating Confidence Calibration in Large Language Models",
-      "source": "arXiv",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.20526"
-    },
-    {
-      "title": "Dataset Distillation by Influence Matching (Inf-Match)",
-      "source": "HuggingFace",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.16859"
-    },
-    {
-      "title": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
-      "source": "arXiv",
-      "date": "2026-07-24",
-      "url": "https://arxiv.org/abs/2607.20468"
+      "title": "LeCun compares self-supervised learning methods: MAE, I-JEPA, SimCLR, DINO, SwAV",
+      "source": "@ylecun",
+      "date": "2026-07-26",
+      "url": "https://x.com/ylecun/status/2081280166546841639"
     }
   ]
 }
