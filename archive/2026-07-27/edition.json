@@ -1,0 +1,197 @@
+{
+  "issue_no": 32,
+  "date_iso": "2026-07-27",
+  "date_human": "July 27, 2026",
+  "notice": "Light news day — fewer fresh items than usual. Weekend slowdown.",
+  "lead": {
+    "kicker": "Agentic milestone",
+    "title": "ChatGPT executes complex multi-step agentic workflow from a single phone prompt",
+    "summary": "Sam Altman demonstrated ChatGPT completing an end-to-end agentic task from a single phone prompt: trip ideation for eight friends using full chat history, building a full-stack coordination site with voting and consensus mechanics, making real reservations, and drafting a Gmail email. Altman said calling it 'remarkable work' undersells the achievement.",
+    "source": "@sama",
+    "date": "2026-07-26",
+    "url": "https://x.com/sama/status/2081396796174282900",
+    "image": "images/lead_2026-07-27.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "LeCun: AGI emergence will not be a singular event, Anthropic unlikely to cross threshold first",
+      "summary": "Yann LeCun argued that AGI emergence will not be a singular breakthrough owned by one company. He stated that even if a threshold is agreed upon, Anthropic is unlikely to cross it first, and if one company does, five others will follow within six months. He emphasized that any breakthrough will rely on open research and open-source foundations that do not yet fully exist.",
+      "source": "@ylecun",
+      "date": "2026-07-26",
+      "url": "https://x.com/ylecun/status/2081464734700777775",
+      "image": "images/section_top-stories_2026-07-27.jpg"
+    },
+    {
+      "title": "AI infrastructure boom fuels nuclear renaissance across Asia",
+      "summary": "Soaring electricity demand from AI data centers is driving governments and companies across Asia to pursue nuclear power, including fusion startups Helical Fusion and OpenStar. Former IEA executive director Nobuo Tanaka discusses why Asia leads this trend.",
+      "source": "YouTube — Bloomberg Technology",
+      "date": "2026-07-26",
+      "url": "https://www.youtube.com/watch?v=fniOkNQT2pM"
+    },
+    {
+      "title": "Karpathy denies quitting Anthropic, calls rumors 'weird misinformation'",
+      "summary": "Andrej Karpathy directly refuted rumors circulating on Twitter that he had left Anthropic, calling them 'weird misinformation' and noting he was simply cleaning up his bio. He remains at Anthropic working on large neural nets.",
+      "source": "@karpathy",
+      "date": "2026-07-26",
+      "url": "https://x.com/karpathy/status/2081193667529003247"
+    }
+  ],
+  "sections": [],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-07-27",
+      "items": [
+        {
+          "name": "permissionlesstech/bitchat",
+          "url": "https://github.com/permissionlesstech/bitchat",
+          "meta": "Swift · 30,715 ★"
+        },
+        {
+          "name": "citrolabs/ego-lite",
+          "url": "https://github.com/citrolabs/ego-lite",
+          "meta": "JavaScript · 4,854 ★"
+        },
+        {
+          "name": "block/buzz",
+          "url": "https://github.com/block/buzz",
+          "meta": "Rust · 13,562 ★"
+        },
+        {
+          "name": "pingdotgg/t3code",
+          "url": "https://github.com/pingdotgg/t3code",
+          "meta": "TypeScript · 15,111 ★"
+        },
+        {
+          "name": "CoreBunch/Instatic",
+          "url": "https://github.com/CoreBunch/Instatic",
+          "meta": "TypeScript · 5,794 ★"
+        },
+        {
+          "name": "yorukot/superfile",
+          "url": "https://github.com/yorukot/superfile",
+          "meta": "Go · 20,354 ★"
+        },
+        {
+          "name": "nodejs/node",
+          "url": "https://github.com/nodejs/node",
+          "meta": "JavaScript · 118,511 ★"
+        },
+        {
+          "name": "OtterMind/Chat2DB",
+          "url": "https://github.com/OtterMind/Chat2DB",
+          "meta": "Java · 27,232 ★"
+        },
+        {
+          "name": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "meta": "JavaScript · 50,831 ★"
+        },
+        {
+          "name": "shiyu-coder/Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "meta": "Python · 34,239 ★"
+        },
+        {
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "meta": "Go · 14,039 ★"
+        },
+        {
+          "name": "andrewyng/aisuite",
+          "url": "https://github.com/andrewyng/aisuite",
+          "meta": "Python · 15,443 ★"
+        },
+        {
+          "name": "anthropics/claude-cookbooks",
+          "url": "https://github.com/anthropics/claude-cookbooks",
+          "meta": "Jupyter Notebook · 50,316 ★"
+        },
+        {
+          "name": "Pumpkin-MC/Pumpkin",
+          "url": "https://github.com/Pumpkin-MC/Pumpkin",
+          "meta": "Rust · 10,070 ★"
+        },
+        {
+          "name": "permissionlesstech/bitchat-android",
+          "url": "https://github.com/permissionlesstech/bitchat-android",
+          "meta": "Kotlin · 6,788 ★"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-07-27",
+      "items": [
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "meta": "baidu/Unlimited-OCRImage-Text-to-Text·3B·Updated4 days ago·2.59M·3.23k"
+        },
+        {
+          "name": "poolside/Laguna-S-2.1",
+          "url": "https://huggingface.co/poolside/Laguna-S-2.1",
+          "meta": "poolside/Laguna-S-2.1Text Generation·118B·Updated3 days ago·56.4k··704"
+        },
+        {
+          "name": "upstage/Solar-Open2-250B",
+          "url": "https://huggingface.co/upstage/Solar-Open2-250B",
+          "meta": "upstage/Solar-Open2-250BText Generation·250B·Updated3 days ago·3.31k·602"
+        },
+        {
+          "name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "meta": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUFImage-Text-to-Text·27B·Updated5 minutes a"
+        },
+        {
+          "name": "Nanbeige/Nanbeige4.2-3B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+          "meta": "Nanbeige/Nanbeige4.2-3BText Generation·4B·Updatedabout 17 hours ago·14k·450"
+        },
+        {
+          "name": "thinkingmachines/Inkling",
+          "url": "https://huggingface.co/thinkingmachines/Inkling",
+          "meta": "thinkingmachines/InklingImage-Text-to-Text·952B·Updated3 days ago·34.5k··1.58k"
+        },
+        {
+          "name": "microsoft/Mage-Flow",
+          "url": "https://huggingface.co/microsoft/Mage-Flow",
+          "meta": "microsoft/Mage-FlowText-to-Image·4B·Updated4 days ago·1.38k·342"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "zai-org/GLM-5.2Text Generation·753B·Updated25 days ago·827k··4.49k"
+        },
+        {
+          "name": "prism-ml/Ternary-Bonsai-27B-gguf",
+          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
+          "meta": "prism-ml/Ternary-Bonsai-27B-ggufText Generation·4B·Updated9 days ago·632k··1.05k"
+        },
+        {
+          "name": "unsloth/Laguna-S-2.1-GGUF",
+          "url": "https://huggingface.co/unsloth/Laguna-S-2.1-GGUF",
+          "meta": "unsloth/Laguna-S-2.1-GGUFText Generation·118B·Updatedabout 5 hours ago·103k·203"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "AI infrastructure boom fuels nuclear renaissance across Asia",
+      "source": "YouTube — Bloomberg Technology",
+      "date": "2026-07-26",
+      "url": "https://www.youtube.com/watch?v=fniOkNQT2pM"
+    },
+    {
+      "title": "LeCun compares self-supervised learning methods: MAE, I-JEPA, SimCLR, DINO, SwAV",
+      "source": "@ylecun",
+      "date": "2026-07-26",
+      "url": "https://x.com/ylecun/status/2081280166546841639"
+    }
+  ]
+}

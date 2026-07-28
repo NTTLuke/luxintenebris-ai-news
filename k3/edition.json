@@ -1,0 +1,141 @@
+{
+  "issue_no": 33,
+  "date_iso": "2026-07-28",
+  "date_human": "Tuesday, July 28, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "The open gauntlet",
+    "title": "Kimi K3 drops 2.8 trillion parameters on the table — and the open-weights debate will never be the same",
+    "summary": "Moonshot AI didn't just release a model yesterday; it released an argument. Kimi K3 — 896 experts, a 1M-token context window, native vision, and weights sitting on Hugging Face right now — lands the same week Washington is arguing over whether models like it should exist at all. With SGLang serving it at 423 tokens/sec on day zero, the 'open means unsafe' crowd suddenly has a much harder case to make.",
+    "source": "@Kimi_Moonshot",
+    "date": "2026-07-27",
+    "url": "https://x.com/Kimi_Moonshot/status/2081771462676123810"
+  },
+  "top_stories": [
+    {
+      "title": "Amodei picks a side: Anthropic was never against open weights — it's against an unguarded frontier",
+      "summary": "The Anthropic CEO finally says the quiet part clearly: no ban on open-weight models, but chip controls and anti-distillation crackdowns aimed squarely at Beijing.",
+      "source": "techcrunch.com",
+      "date": "2026-07-28",
+      "url": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/"
+    },
+    {
+      "title": "Hugging Face has a deepfake problem it doesn't want to own",
+      "summary": "An AI Forensics investigation found seven of nine popular image Spaces would undress a woman with a six-word prompt — and the platform's answer so far is that safety is someone else's job.",
+      "source": "wired.com",
+      "date": "2026-07-28",
+      "url": "https://www.wired.com/story/hugging-face-has-a-nonconsensual-deepfakes-problem/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Deep Dives",
+      "items": [
+        {
+          "title": "How do agents learn to plan? A new paper traces it from pre-training to post-training",
+          "summary": "A systematic study of multi-turn long-horizon planning shows the ability isn't magic — it can be distilled on-policy from single or multiple teachers, with big gains at every stage of training.",
+          "source": "arXiv",
+          "date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2607.24720"
+        },
+        {
+          "title": "LOCKS wants to kill the KV-cache read — and long-context inference gets cheaper if it works",
+          "summary": "Page-local compact key summaries replace full cache reads during decoding. If the quality holds, the economics of million-token contexts (hello, Kimi K3) shift meaningfully.",
+          "source": "arXiv",
+          "date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2607.24555"
+        },
+        {
+          "title": "The tokenizer tax is real, and Indian languages are paying it",
+          "summary": "English-centric subword tokenizers systematically overcharge non-English languages in tokens, latency, and cost. This paper finally puts hard numbers on a problem the industry prefers to wave away.",
+          "source": "arXiv",
+          "date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2607.24276"
+        }
+      ]
+    },
+    {
+      "title": "Open Pulse",
+      "items": [
+        {
+          "title": "Nvidia, Hugging Face, Nous Research and LMSYS form an Open Secure AI Alliance",
+          "summary": "The pitch: AI security gets better through open models and shared vulnerability research, not behind closed doors. Notably timed — it's the industry's collective rebuttal to the lock-it-down camp.",
+          "source": "@huggingface",
+          "date": "2026-07-27",
+          "url": "https://x.com/huggingface/status/2081718698608402818"
+        },
+        {
+          "title": "Kdeps: a CLI coding agent that runs entirely on open-weight models",
+          "summary": "An open alternative to Claude Code and Codex that keeps your stack proprietary-free. Early, but pointing at where the open ecosystem wants to go.",
+          "source": "Hacker News",
+          "date": "2026-07-28",
+          "url": "https://news.ycombinator.com/item?id=49080030"
+        }
+      ]
+    },
+    {
+      "title": "The Edge",
+      "items": [
+        {
+          "title": "Taiwan detains an Nvidia employee as the China chip-smuggling probe reaches the chipmaker itself",
+          "summary": "First time the investigation touches Nvidia directly, alongside a $2.5B diversion scheme that already snared Super Micro executives. The export-control era just got personal.",
+          "source": "Startup Fortune",
+          "date": "2026-07-28",
+          "url": "https://startupfortune.com/taiwan-detains-an-nvidia-employee-as-its-china-chip-smuggling-probe-reaches-the-chipmaker-itself/"
+        },
+        {
+          "title": "Enigma raises $71M to make controlling a robot as easy as adjusting the volume",
+          "summary": "Index Ventures and Ribbit Capital co-lead a bet that the missing layer in robotics isn't hardware — it's an intelligence interface anyone can use.",
+          "source": "TechCrunch",
+          "date": "2026-07-27",
+          "url": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/"
+        },
+        {
+          "title": "GENE.01: an Italian humanoid with smart skin and peer-reviewed ergonomics",
+          "summary": "Generative Bionics, born from automotive manufacturing DNA and backed by Nature-published research, unveils a biomimetic platform aimed at labs and industry alike.",
+          "source": "Humanoids Daily",
+          "date": "2026-07-27",
+          "url": "https://www.humanoidsdaily.com/news/generative-bionics-unveils-gene-01-a-smart-skin-humanoid-built-on-peer-reviewed-ergonomics"
+        }
+      ]
+    }
+  ],
+  "trending": null,
+  "quick_hits": [
+    {
+      "title": "Microsoft ships MAI-Cyber-1-Flash, its first cybersecurity model, plus an agentic defense platform",
+      "source": "TechCrunch",
+      "date": "2026-07-27",
+      "url": "https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/",
+      "context": "agents at half cost"
+    },
+    {
+      "title": "Roblox Build brings text-to-game creation to mobile, alpha live in New Zealand",
+      "source": "BloxBot",
+      "date": "2026-07-28",
+      "url": "https://www.bloxbot.ai/guide/roblox-build-mobile-ai-creation-2026",
+      "context": "no code needed"
+    },
+    {
+      "title": "Italian Founders Fund closes at €100M with 32 startups, AI-heavy portfolio",
+      "source": "Economyup",
+      "date": "2026-07-27",
+      "url": "https://www.economyup.it/innovazione/italian-founders-fund-oltre-le-aspettative-closing-a-100-milioni-32-startup-in-portafoglio/",
+      "context": "€40M deployed"
+    },
+    {
+      "title": "LeCun pushes back on AGI hype: no Level 5 cars, no dexterous home robots",
+      "source": "@ylecun",
+      "date": "2026-07-27",
+      "url": "https://x.com/ylecun/status/2081805347304477024",
+      "context": "reality check"
+    },
+    {
+      "title": "Cognizant becomes Anthropic Global Premier Partner, training 30,000+ associates on Claude",
+      "source": "Anthropic",
+      "date": "2026-07-27",
+      "url": "https://www.anthropic.com/news/cognizant-anthropic",
+      "context": "enterprise push"
+    }
+  ]
+}
