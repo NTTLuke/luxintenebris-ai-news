@@ -1,0 +1,366 @@
+{
+  "issue_no": 33,
+  "date_iso": "2026-07-28",
+  "date_human": "July 28, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "AI governance",
+    "title": "Anthropic publishes wide-ranging position paper on open-weights models",
+    "summary": "CEO Dario Amodei clarified that Anthropic has never advocated for a ban on open-weights models, instead supporting chip export controls, anti-distillation measures, and mandatory safety testing for all sufficiently capable models regardless of origin. The paper has sparked widespread debate across the AI community.",
+    "source": "Anthropic",
+    "date": "2026-07-27",
+    "url": "https://www.anthropic.com/news/position-open-weights-models",
+    "image": "images/lead_2026-07-28.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Taiwan detains Nvidia employee in widening AI chip smuggling probe to China",
+      "summary": "Taiwanese prosecutors detained an Nvidia employee and raided the company's Taiwan offices as part of a probe into the alleged smuggling of AI accelerators to China — the first time the investigation has reached the chipmaker itself. The probe has also ensnared Super Micro executives in a $2.5 billion diversion scheme.",
+      "source": "Startup Fortune",
+      "date": "2026-07-28",
+      "url": "https://startupfortune.com/taiwan-detains-an-nvidia-employee-as-its-china-chip-smuggling-probe-reaches-the-chipmaker-itself/"
+    },
+    {
+      "title": "Microsoft launches MAI-Cyber-1-Flash, its first cybersecurity AI model, and Project Perception",
+      "summary": "Microsoft unveiled its first cybersecurity-specialized AI model alongside Project Perception, an agentic platform that deploys teams of AI agents for continuous monitoring, patching, attack simulation, investigation, and remediation at roughly half the cost of larger general-purpose models.",
+      "source": "TechCrunch",
+      "date": "2026-07-27",
+      "url": "https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/"
+    },
+    {
+      "title": "NVIDIA launches Open Secure AI Alliance with Hugging Face, Nous Research, and LMSYS",
+      "summary": "NVIDIA introduced the Open Secure AI Alliance, bringing together Hugging Face, Nous Research, LMSYS, and other industry leaders to advance AI security through open models, shared vulnerability research, and collaborative defense tooling.",
+      "source": "Hugging Face / Nous Research",
+      "date": "2026-07-27",
+      "url": "https://x.com/huggingface/status/2081718698608402818"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "DecoupleMix: principled VLM pretraining via decoupled ratio search and convex allocation",
+          "summary": "Proposes a method for constructing VLM pretraining mixtures that decouples ratio search from convex allocation, enabling attribution of model performance to specific data sources at scale.",
+          "source": "arXiv",
+          "date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2607.24516",
+          "image": "images/section_research-papers_2026-07-28.jpg"
+        },
+        {
+          "title": "The physics of multi-turn long-horizon planning: from pre-training to post-training via agentic distillation",
+          "summary": "Systematic study of how long-horizon planning ability is acquired in foundation model agents, proposing single- and multi-teacher on-policy agentic distillation that significantly improves planning across the full training pipeline.",
+          "source": "arXiv",
+          "date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2607.24720"
+        },
+        {
+          "title": "LOCKS: page-local compact key summaries for efficient long-context decoding",
+          "summary": "Introduces page-local compact key summaries that replace full KV-cache reads during LLM decoding, achieving significant speedups for long-context inference while maintaining output quality.",
+          "source": "arXiv",
+          "date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2607.24555"
+        },
+        {
+          "title": "DraftExpert: expansion-aware self-speculative decoding for end-device MoE inference",
+          "summary": "Enables efficient MoE inference on consumer devices by staging routed experts on demand, dramatically reducing latency for single-user settings without sacrificing quality.",
+          "source": "arXiv",
+          "date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2607.24434"
+        },
+        {
+          "title": "SpecBox: speculative sandbox scheduling for efficient LLM agent serving with MCP",
+          "summary": "Introduces speculative sandbox scheduling for LLM agents using the Model Context Protocol, reducing memory overhead while maintaining low tail latency for sandboxed tool execution.",
+          "source": "arXiv",
+          "date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2607.23933"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "Nvidia accelerates chip engineering with AI agents for next-gen Rosa CPU and Feynman platform",
+          "summary": "Nvidia is using AI agents to automate chip design for its next-generation Rosa CPU and Feynman datacenter platform, integrating EDA tools from Cadence and Synopsys to handle verification, physical implementation, and signoff tasks.",
+          "source": "The Next Platform",
+          "date": "2026-07-27",
+          "url": "https://www.nextplatform.com/hpc/2026/07/27/nvidia-accelerates-chip-engineering-with-ai-agents/5279125",
+          "image": "images/section_hardware-robotics_2026-07-28.jpg"
+        },
+        {
+          "title": "Generative Bionics unveils GENE.01: a smart-skin humanoid built on peer-reviewed ergonomics",
+          "summary": "Italian deep-tech startup Generative Bionics revealed the fully functional GENE.01 humanoid platform with smart-skin technology, backed by research published in Nature and built by a team with automotive manufacturing expertise.",
+          "source": "Humanoids Daily",
+          "date": "2026-07-27",
+          "url": "https://www.humanoidsdaily.com/news/generative-bionics-unveils-gene-01-a-smart-skin-humanoid-built-on-peer-reviewed-ergonomics"
+        },
+        {
+          "title": "DAC 2026: AI chip design agents hit production as Nobel laureate joins the debate",
+          "summary": "At the Design Automation Conference in Long Beach, AI-native EDA startups presented verified production metrics including a 70% first-pass debug rate, marking a milestone where AI agents are now used in production-grade semiconductor design.",
+          "source": "Tech Times",
+          "date": "2026-07-27",
+          "url": "https://www.techtimes.com/articles/321690/20260727/dac-2026-live-ai-chip-design-agents-hit-production-nobel-laureate-joins-debate.htm"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Roblox launches Build: AI-powered game creation on mobile from text prompts",
+          "summary": "Roblox launched Build, an AI-powered feature in its mobile app that lets users generate playable games from text prompts with zero programming skills required. Public alpha testing started July 28 in New Zealand.",
+          "source": "BloxBot",
+          "date": "2026-07-28",
+          "url": "https://www.bloxbot.ai/guide/roblox-build-mobile-ai-creation-2026",
+          "image": "images/section_tools-startups_2026-07-28.jpg"
+        },
+        {
+          "title": "Comms: deploy live AI agents inside any iMessage thread in 30 seconds",
+          "summary": "Comms lets users deploy AI agents on a real iMessage line by describing the agent in plain English. Handles support, bookings, onboarding, and payments inside the messaging thread with a free tier of 3,000 messages per month.",
+          "source": "Product Hunt",
+          "date": "2026-07-28",
+          "url": "https://www.producthunt.com/products/comms-ai-agents-inside-imessage"
+        },
+        {
+          "title": "Webhound: long-running AI research agents with a configurable depth dial",
+          "summary": "Webhound builds AI research agents that scale quality with time and budget, generating structured datasets or fully cited research reports. Y Combinator S23 startup, placed #3 on Product Hunt.",
+          "source": "Product Hunt",
+          "date": "2026-07-28",
+          "url": "https://www.producthunt.com/products/webhound"
+        },
+        {
+          "title": "Robynn AI launches self-improving websites with continuous AI audit and rewrite",
+          "summary": "Robynn AI's Website Studio uses AI agents that continuously audit, rewrite, and measure websites for SEO, AI search visibility, and conversion — connecting to live sites without rebuild or migration.",
+          "source": "Product Hunt",
+          "date": "2026-07-28",
+          "url": "https://www.producthunt.com/products/robynn-ai-self-improving-websites"
+        },
+        {
+          "title": "Kdeps: open-source CLI coding agent that runs on open-weight models",
+          "summary": "Kdeps is a new CLI coding agent built to run on open-weight models, offering an open alternative to proprietary coding agents like Claude Code or Codex.",
+          "source": "Hacker News",
+          "date": "2026-07-28",
+          "url": "https://news.ycombinator.com/item?id=49080030"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-07-28",
+      "items": [
+        {
+          "name": "permissionlesstech/bitchat",
+          "url": "https://github.com/permissionlesstech/bitchat",
+          "meta": "Swift · 32,571 ★ · +2,346 today"
+        },
+        {
+          "name": "amnezia-vpn/amnezia-client",
+          "url": "https://github.com/amnezia-vpn/amnezia-client",
+          "meta": "C++ · 13,974 ★ · +515 today"
+        },
+        {
+          "name": "moeru-ai/airi",
+          "url": "https://github.com/moeru-ai/airi",
+          "meta": "TypeScript · 44,251 ★ · +572 today"
+        },
+        {
+          "name": "opengeos/GeoLibre",
+          "url": "https://github.com/opengeos/GeoLibre",
+          "meta": "TypeScript · 2,885 ★ · +420 today"
+        },
+        {
+          "name": "yorukot/superfile",
+          "url": "https://github.com/yorukot/superfile",
+          "meta": "Go · 21,050 ★ · +600 today"
+        },
+        {
+          "name": "NanmiCoder/MediaCrawler",
+          "url": "https://github.com/NanmiCoder/MediaCrawler",
+          "meta": "Python · 58,501 ★ · +362 today"
+        },
+        {
+          "name": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "meta": "JavaScript · 51,785 ★ · +847 today"
+        },
+        {
+          "name": "shiyu-coder/Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "meta": "Python · 34,655 ★ · +441 today"
+        },
+        {
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "meta": "Go · 15,106 ★ · +979 today"
+        },
+        {
+          "name": "jenkinsci/jenkins",
+          "url": "https://github.com/jenkinsci/jenkins",
+          "meta": "Java · 25,927 ★ · +180 today"
+        },
+        {
+          "name": "bradautomates/claude-video",
+          "url": "https://github.com/bradautomates/claude-video",
+          "meta": "Python · 11,350 ★ · +434 today"
+        },
+        {
+          "name": "vudovn/ag-kit",
+          "url": "https://github.com/vudovn/ag-kit",
+          "meta": "TypeScript · 8,019 ★ · +14 today"
+        },
+        {
+          "name": "apache/cassandra",
+          "url": "https://github.com/apache/cassandra",
+          "meta": "Java · 10,003 ★ · +11 today"
+        },
+        {
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "meta": "Python · 54,326 ★ · +240 today"
+        },
+        {
+          "name": "ocornut/imgui",
+          "url": "https://github.com/ocornut/imgui",
+          "meta": "C++ · 75,256 ★ · +51 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-07-28",
+      "items": [
+        {
+          "name": "moonshotai/Kimi-K3",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3",
+          "meta": "2.8T MoE, vision-language model, 1M context window"
+        },
+        {
+          "name": "poolside/Laguna-S-2.1",
+          "url": "https://huggingface.co/poolside/Laguna-S-2.1",
+          "meta": "LLM, text-generation model"
+        },
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "meta": "Vision-language model, OCR"
+        },
+        {
+          "name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "meta": "Vision-language model, community fine-tune"
+        },
+        {
+          "name": "upstage/Solar-Open2-250B",
+          "url": "https://huggingface.co/upstage/Solar-Open2-250B",
+          "meta": "250B LLM, text-generation model"
+        },
+        {
+          "name": "Nanbeige/Nanbeige4.2-3B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+          "meta": "3B LLM, text-generation model"
+        },
+        {
+          "name": "microsoft/Mage-Flow",
+          "url": "https://huggingface.co/microsoft/Mage-Flow",
+          "meta": "Text-to-image generation model"
+        },
+        {
+          "name": "thinkingmachines/Inkling",
+          "url": "https://huggingface.co/thinkingmachines/Inkling",
+          "meta": "Vision-language model"
+        },
+        {
+          "name": "HuggingFaceCode/stack-v3-train",
+          "url": "https://huggingface.co/HuggingFaceCode/stack-v3-train",
+          "meta": "Foundation model, code dataset"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "LLM, text-generation model"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "OpenAI expands GPT-Live voice model to Edu, Business, and Enterprise plans globally",
+      "source": "OpenAI",
+      "date": "2026-07-27",
+      "url": "https://x.com/OpenAI/status/2081794871795589485"
+    },
+    {
+      "title": "OpenAI research shows AI as a generalist tool that helps small teams solve problems across job functions",
+      "source": "OpenAI",
+      "date": "2026-07-27",
+      "url": "https://x.com/OpenAI/status/2081833350323720219"
+    },
+    {
+      "title": "LeCun pushes back on AGI claims, citing lack of level 5 autonomy and real-world dexterity",
+      "source": "ylecun",
+      "date": "2026-07-27",
+      "url": "https://x.com/ylecun/status/2081805347304477024"
+    },
+    {
+      "title": "Simon Willison suggests native image segmentation for future Gemma models",
+      "source": "simonw",
+      "date": "2026-07-27",
+      "url": "https://x.com/simonw/status/2081546026792673767"
+    },
+    {
+      "title": "Cognizant and Anthropic expand partnership, training 30,000+ associates on Claude",
+      "source": "Anthropic",
+      "date": "2026-07-27",
+      "url": "https://www.anthropic.com/news/cognizant-anthropic"
+    },
+    {
+      "title": "Meta's SAM and DINO models power assistive robotics research at University of Pittsburgh",
+      "source": "Meta",
+      "date": "2026-07-27",
+      "url": "https://ai.meta.com/blog/assistive-robotics-university-of-pittsburgh-sam-dino/"
+    },
+    {
+      "title": "Enigma raises $71M seed round to make controlling robots as easy as adjusting the volume",
+      "source": "TechCrunch",
+      "date": "2026-07-27",
+      "url": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/"
+    },
+    {
+      "title": "AMD calls its shot on engineering velocity as Helios and Venice enter production",
+      "source": "SiliconANGLE",
+      "date": "2026-07-27",
+      "url": "https://siliconangle.com/2026/07/27/amd-calls-shot-real-race-engineering-velocity/"
+    },
+    {
+      "title": "LMSYS signs Open Weights letter, reaffirming commitment to open AI models",
+      "source": "@lmsysorg",
+      "date": "2026-07-27",
+      "url": "https://x.com/lmsysorg/status/2081619175093551565"
+    },
+    {
+      "title": "Italian Founders Fund exceeds expectations, closes at €100M with 32 startups in portfolio",
+      "source": "Economyup",
+      "date": "2026-07-27",
+      "url": "https://www.economyup.it/innovazione/italian-founders-fund-oltre-le-aspettative-closing-a-100-milioni-32-startup-in-portafoglio/"
+    },
+    {
+      "title": "Nielsen launches Ad Intel AI: AI-powered advertising intelligence platform with conversational interface",
+      "source": "Nielsen",
+      "date": "2026-07-27",
+      "url": "https://www.nielsen.com/news-center/2026/nielsen-launches-ad-intel-ai-the-only-product-of-its-kind-that-transforms-fragmented-ad-data-into-actionable-intelligence/"
+    },
+    {
+      "title": "SeaTicket: AI agent that autonomously resolves GitHub and Discord support issues",
+      "source": "Hacker News",
+      "date": "2026-07-28",
+      "url": "https://news.ycombinator.com/item?id=49078625"
+    }
+  ]
+}
