@@ -90,20 +90,27 @@ a{ color:inherit; text-decoration:none; }
 }
 .masthead .dateline .tag{ font-family:var(--serif); font-style:italic; font-weight:400; letter-spacing:.02em; text-transform:none; font-size:15px; color:var(--lux-soft); }
 .masthead .dateline .dot{ color:var(--rule-strong); }
-/* "How this issue made itself" — sits in the dateline as a sibling of the
-   story count, because it is metadata about this issue, not navigation.
-   Bordered like the Devocracy credit below it: in this masthead a border is
-   already the established signal for "this is clickable". */
-.masthead .dateline .mk-link{
-  color:var(--lux-soft); text-decoration:none; font-weight:500;
-  padding:2px 9px; border:1px solid var(--rule); border-radius:3px;
-  transition:color .18s ease, border-color .18s ease;
+/* Making-of pointer — rides along with the story count rather than standing
+   alone, because it describes this issue. Set smaller than the surrounding
+   dateline and in sentence case (the dateline is uppercase) so it reads as a
+   parenthetical aside, and underlined in amber so it is unmistakably a link. */
+.masthead .dateline .mk-note{
+  font-size:9.5px; letter-spacing:.03em; text-transform:none;
+  color:var(--muted); white-space:nowrap;
 }
-.masthead .dateline .mk-link:hover{ color:var(--lux); border-color:var(--lux-soft); }
 .masthead .dateline .mk-beta{
-  font-size:8px; letter-spacing:.12em; color:var(--muted);
-  border:1px solid var(--rule-strong); border-radius:2px;
-  padding:0 4px; margin-left:5px; vertical-align:1px;
+  font-size:8.5px; font-weight:600; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--lux-soft);
+}
+.masthead .dateline .mk-link{
+  color:var(--lux); font-weight:500;
+  text-decoration:underline; text-decoration-thickness:1px;
+  text-underline-offset:2px; text-decoration-color:var(--lux-soft);
+  transition:color .18s ease, text-decoration-color .18s ease;
+}
+.masthead .dateline .mk-link:hover{ color:var(--type); text-decoration-color:var(--type); }
+@media (max-width:560px){
+  .masthead .dateline .mk-note{ white-space:normal; }
 }
 .devocracy-credit{
   text-align:center;
