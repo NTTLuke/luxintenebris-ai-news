@@ -102,10 +102,16 @@ a{ color:inherit; text-decoration:none; }
   font-size:8.5px; font-weight:600; letter-spacing:.12em;
   text-transform:uppercase; color:var(--lux-soft);
 }
+/* Serif italic, not sans: the dateline already uses that treatment for its
+   tagline one slot to the left, so a phrase in the same voice reads as part of
+   the masthead rather than bolted onto it. text-transform is reset explicitly
+   here as well as on .mk-note — the dateline's uppercase must not reach it. */
 .masthead .dateline .mk-link{
-  color:var(--lux); font-weight:500;
+  font-family:var(--serif); font-style:italic; font-weight:400;
+  font-size:12px; letter-spacing:.01em; text-transform:none;
+  color:var(--lux);
   text-decoration:underline; text-decoration-thickness:1px;
-  text-underline-offset:2px; text-decoration-color:var(--lux-soft);
+  text-underline-offset:2px; text-decoration-color:rgba(240,162,60,.45);
   transition:color .18s ease, text-decoration-color .18s ease;
 }
 .masthead .dateline .mk-link:hover{ color:var(--type); text-decoration-color:var(--type); }
