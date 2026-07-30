@@ -1,0 +1,403 @@
+{
+  "issue_no": 34,
+  "date_iso": "2026-07-29",
+  "date_human": "July 29, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "National Security & Robotics",
+    "title": "US FCC bans Chinese humanoid and quadruped robots, citing backdoors in Unitree hardware",
+    "summary": "The U.S. Federal Communications Commission added Chinese humanoid and quadruped robots to its national security Covered List, barring imports of new units. The ban extends to connected power inverters and targets vulnerabilities already identified in Unitree hardware deployed at MIT, Princeton, and Carnegie Mellon universities.",
+    "source": "The Guardian",
+    "date": "2026-07-28",
+    "url": "https://www.theguardian.com/us-news/2026/jul/28/fcc-ban-humanoid-robots-china",
+    "image": "images/lead_2026-07-29_v2.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Anthropic's Claude autonomously discovers cryptographic weaknesses in HAWK and AES",
+      "summary": "Claude Mythos Preview found a new attack on HAWK (quantum-resistant signature scheme) halving its key strength in ~60 hours, and a 200-800x speedup on reduced-round AES attack in a week, at ~$100k compute cost per result. Anthropic released technical papers and the CryptanalysisBench benchmark.",
+      "source": "AnthropicAI",
+      "date": "2026-07-28",
+      "url": "https://x.com/AnthropicAI/status/2082153297670992134"
+    },
+    {
+      "title": "xAI launches Build Mode and Grok 4.5 in GitHub Copilot",
+      "summary": "xAI introduced Build Mode, letting users build and customize AI agents directly within the Grok platform, and integrated Grok 4.5 into GitHub Copilot for AI-powered code completions in the IDE.",
+      "source": "xAI",
+      "date": "2026-07-28",
+      "url": "https://x.ai/news/grok-build-mode"
+    },
+    {
+      "title": "Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents",
+      "summary": "Cyera, which raised $600M at a $12B valuation, acquired Oasis Security for $1B to expand AI security capabilities as agent deployments surge across enterprises.",
+      "source": "TechCrunch",
+      "date": "2026-07-28",
+      "url": "https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/"
+    },
+    {
+      "title": "Perplexity launches Personal Computer for Windows — an AI desktop agent",
+      "summary": "Perplexity turned local Windows PCs into AI-powered digital workers that read files, automate apps, and route tasks across 20+ frontier models, competing directly with agentic desktop tools.",
+      "source": "Perplexity",
+      "date": "2026-07-28",
+      "url": "https://www.perplexity.ai/hub/blog/personal-computer-on-windows"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "IMACS: Decoupling organization, coordination, and collaboration in multi-agent LLM systems",
+          "summary": "Multi-agent frameworks routinely entangle three logically distinct concerns: who is on the team, how members align, and which algorithm fuses their work. IMACS introduces a decoupled taxonomy evaluated across 10 benchmark environments.",
+          "source": "arXiv",
+          "date": "2026-07-28",
+          "url": "https://arxiv.org/abs/2607.25446"
+        },
+        {
+          "title": "Retraction-free optimization over the Stiefel manifold for LoRA fine-tuning",
+          "summary": "A retraction-free optimizer avoids costly orthonormalization during LoRA fine-tuning, achieving 2-3x speedup over standard methods while maintaining convergence quality on LLM tasks.",
+          "source": "arXiv",
+          "date": "2026-07-28",
+          "url": "https://arxiv.org/abs/2607.25299"
+        },
+        {
+          "title": "CLBench-V: Evaluating multimodal context learning from grounding to knowledge acquisition",
+          "summary": "A multimodal benchmark reveals that even top MLLMs fail at basic grounding tasks (color, shape, counting) while excelling at knowledge transfer — exposing a gap in atomic visual perception.",
+          "source": "arXiv",
+          "date": "2026-07-28",
+          "url": "https://arxiv.org/abs/2607.25294"
+        },
+        {
+          "title": "Shieldstral: A 3B-parameter multimodal safety classifier matching models 7x its size",
+          "summary": "A policy-adaptive multimodal safety classifier that matches or outperforms models nearly 7x its size on text safety benchmarks and sets a new SOTA on multimodal safety classification.",
+          "source": "HuggingFace",
+          "date": "2026-07-28",
+          "url": "https://huggingface.co/papers/2607.25857"
+        },
+        {
+          "title": "Raven: High-recall sequence modeling with sparse memory routing at 32K tokens",
+          "summary": "A linear-time sequence model with sparse memory routing that achieves near-perfect recall on long-range dependency tasks up to 32K tokens, outperforming SSMs and linear Transformers on the Long Range Arena.",
+          "source": "arXiv",
+          "date": "2026-07-28",
+          "url": "https://arxiv.org/abs/2607.25357"
+        }
+      ],
+      "image": "images/section_research-papers_2026-07-29_v2.jpg"
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "Kimi K3 draws attention for agentic and long-running capabilities; Moonshot AI architect to present July 30",
+          "summary": "Kimi K3 is getting significant attention for its agentic and long-running capabilities. Together AI published a comprehensive usage guide and is hosting an event on July 30 with Moonshot's Feihu Tang for a deep dive on architecture and production inference.",
+          "source": "Together Compute / X",
+          "date": "2026-07-29",
+          "url": "https://x.com/togethercompute/status/2082144534394273811"
+        },
+        {
+          "title": "Papers explore distilling proprietary models to open-source via multi-agent protocol distillation",
+          "summary": "Recent papers discuss distilling from proprietary to open-source models via multi-agent protocol distillation for agentic search, and stateful approaches for long-horizon computer-use agents.",
+          "source": "AK / X (@_akhaliq)",
+          "date": "2026-07-29",
+          "url": "https://x.com/_akhaliq/status/2082205656837226973"
+        },
+        {
+          "title": "Together AI announces production inference improvements for open-weights deployments",
+          "summary": "Together AI posted about production inference improvements including capacity-aware routing, rollouts, and autoscaling on dedicated endpoints that benefit open-weights deployments.",
+          "source": "Together Compute / X",
+          "date": "2026-07-29",
+          "url": "https://x.com/togethercompute/status/2082205133124083940"
+        }
+      ],
+      "image": "images/section_opensource-models_2026-07-29_v2.jpg"
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "US FCC bans Chinese humanoid and quadruped robots, citing national security risks",
+          "summary": "The FCC added Chinese humanoid and quadruped robots to its Covered List, barring imports of new units. The ban extends to connected power inverters and targets vulnerabilities in Unitree hardware deployed at MIT, Princeton, and Carnegie Mellon.",
+          "source": "The Guardian",
+          "date": "2026-07-28",
+          "url": "https://www.theguardian.com/us-news/2026/jul/28/fcc-ban-humanoid-robots-china"
+        },
+        {
+          "title": "AMD secures up to 2.5 GW of AI data center capacity from Core Scientific",
+          "summary": "AMD signed a deal with Core Scientific to secure up to 2.5 GW of data center capacity across five sites, optimized for AMD Instinct GPUs, EPYC CPUs, and ROCm software.",
+          "source": "TechTimes",
+          "date": "2026-07-28",
+          "url": "https://www.techtimes.com/articles/321817/20260728/amd-secures-ai-data-center-capacity-core-scientific-14b-power-play.htm"
+        },
+        {
+          "title": "Tesla Optimus humanoid and robotaxi business disappoints investors amid production delays",
+          "summary": "Tesla's recent earnings revealed major disappointments in its humanoid Optimus business and robotaxi program, with production timelines slipping and investor confidence wavering.",
+          "source": "The Motley Fool",
+          "date": "2026-07-28",
+          "url": "https://www.fool.com/investing/2026/07/28/think-teslas-robotaxis-and-humanoid-robots-are-com/"
+        }
+      ],
+      "image": "images/section_hardware-robotics_2026-07-29_v2.jpg"
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Prefactor — real-time AI agent evaluation and enforcement platform launches as #1 Product Hunt",
+          "summary": "Prefactor offers real-time evaluation of AI agents in production, scoring every run for quality, drift, and risk, then enforcing policies automatically or with human approval.",
+          "source": "Product Hunt",
+          "date": "2026-07-28",
+          "url": "https://www.producthunt.com/products/prefactor"
+        },
+        {
+          "title": "Cekura — automated QA for voice AI and chat AI agents",
+          "summary": "Cekura provides a testing, observability, and self-improvement platform for production voice and chat AI agents, simulating thousands of scenarios to catch regressions before users do.",
+          "source": "Product Hunt",
+          "date": "2026-07-28",
+          "url": "https://www.producthunt.com/products/vocera"
+        },
+        {
+          "title": "Leaping AI — AI voice agents for calls and text campaigns",
+          "summary": "Leaping AI, a YC-backed startup, deploys human-like AI voice agents for customer service, lead qualification, and appointment scheduling across calls and SMS.",
+          "source": "Product Hunt",
+          "date": "2026-07-28",
+          "url": "https://www.producthunt.com/products/leaping-ai"
+        },
+        {
+          "title": "BrowserAct: open-source browser automation CLI built for AI agents",
+          "summary": "BrowserAct enables AI agents to browse websites, click buttons, fill forms, solve CAPTCHAs, and extract data via a simple CLI.",
+          "source": "Hacker News",
+          "date": "2026-07-28",
+          "url": "https://news.ycombinator.com/item?id=49081241"
+        }
+      ],
+      "image": "images/section_tools-startups_2026-07-29_v2.jpg"
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises",
+          "summary": "Fish Audio raised a $52M seed round led by Coreline Ventures and Capital Today for AI voice models targeting creators and enterprise use cases.",
+          "source": "TechCrunch",
+          "date": "2026-07-28",
+          "url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/"
+        },
+        {
+          "title": "AI startup Dwelly raises $170M for real estate rollup",
+          "summary": "Dwelly raised a $170M Series B ($95M equity) led by EQT Growth and General Catalyst for AI-powered real estate and proptech operations.",
+          "source": "Bloomberg",
+          "date": "2026-07-28",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-28/ai-startup-dwelly-raises-170-million-for-real-estate-rollup"
+        },
+        {
+          "title": "Hush Security raises $30M to close the AI agent governance gap",
+          "summary": "Hush Security raised a $30M Series A for AI agent governance and security, with Akamai Technologies joining as a strategic investor.",
+          "source": "PRNewswire",
+          "date": "2026-07-28",
+          "url": "https://www.prnewswire.com/news-releases/hush-security-raises-30m-to-close-the-ai-agent-governance-gap-with-akamai-joining-as-strategic-investor-302836307.html"
+        }
+      ],
+      "image": "images/section_money-markets_2026-07-29_v2.jpg"
+    },
+    {
+      "title": "YouTube & Video",
+      "items": [
+        {
+          "title": "Codeberg members vote to ban projects consisting mostly of AI-written code",
+          "summary": "Codeberg's members voted 358 to 144 to amend their Terms of Use, prohibiting projects that consist primarily of AI-generated code, weeks after prominent developer Theo (t3.gg) urged the community to move to the platform.",
+          "source": "YouTube — Theo - t3.gg",
+          "date": "2026-07-28",
+          "url": "https://www.youtube.com/watch?v=Y8cY1DEURtE"
+        },
+        {
+          "title": "Higgsfield offers 24-hour free unlimited access to Seedance 2.0 AI video models",
+          "summary": "Higgsfield is running a promotion giving new users 24 hours of free unlimited access to its top image, video, and audio models including Seedance 2.0, running July 28-31.",
+          "source": "YouTube — AI Tool Report",
+          "date": "2026-07-28",
+          "url": "https://www.youtube.com/watch?v=2o7-3aTS8LA"
+        }
+      ],
+      "image": "images/section_youtube-video_2026-07-29_v2.jpg"
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-07-29",
+      "items": [
+        {
+          "name": "andrewyng/openworker",
+          "url": "https://github.com/andrewyng/openworker",
+          "meta": "Python · 10.2k ★ · Created recently"
+        },
+        {
+          "name": "MoonshotAI/Kimi-K3",
+          "url": "https://github.com/MoonshotAI/Kimi-K3",
+          "meta": "Unknown · 3.6k ★ · Open Frontier Intelligence"
+        },
+        {
+          "name": "nyblnet/bento",
+          "url": "https://github.com/nyblnet/bento",
+          "meta": "TypeScript · 2.9k ★ · Office suite that fits in a file"
+        },
+        {
+          "name": "Vincentwei1021/video-shotcraft",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft",
+          "meta": "TypeScript · 2.6k ★ · AI video skill for Claude Code & Codex"
+        },
+        {
+          "name": "DavidHDev/canvas-ui",
+          "url": "https://github.com/DavidHDev/canvas-ui",
+          "meta": "TypeScript · 2.5k ★ · Creative canvas components library"
+        },
+        {
+          "name": "lopopolo/harness-engineering",
+          "url": "https://github.com/lopopolo/harness-engineering",
+          "meta": "Python · 2.4k ★ · Agent context bundle for harness engineering"
+        },
+        {
+          "name": "vercel-labs/scriptc",
+          "url": "https://github.com/vercel-labs/scriptc",
+          "meta": "TypeScript · 2.2k ★ · TypeScript-to-Native Compiler"
+        },
+        {
+          "name": "slvDev/esp32-ai",
+          "url": "https://github.com/slvDev/esp32-ai",
+          "meta": "Python · 2.1k ★ · AI on ESP32"
+        },
+        {
+          "name": "mshumer/Claude-of-Duty",
+          "url": "https://github.com/mshumer/Claude-of-Duty",
+          "meta": "JavaScript · 1.9k ★ · Call of Duty-quality FPS in Three.js from single prompt"
+        },
+        {
+          "name": "MIgHTy-alIeN/MEV-Arbitrage-Bot",
+          "url": "https://github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot",
+          "meta": "Solidity · 1.6k ★ · Smart contract arbitrage bot"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-07-29",
+      "items": [
+        {
+          "name": "moonshotai/Kimi-K3",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3",
+          "meta": "Image-Text-to-Text, 2.8T params, 99.2k downloads, 8.16k likes"
+        },
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "meta": "Image-Text-to-Text, 3B params, 2.69M downloads, 3.43k likes"
+        },
+        {
+          "name": "upstage/Solar-Open2-250B",
+          "url": "https://huggingface.co/upstage/Solar-Open2-250B",
+          "meta": "Text Generation, 250B params, 4.8k downloads, 650 likes"
+        },
+        {
+          "name": "poolside/Laguna-S-2.1",
+          "url": "https://huggingface.co/poolside/Laguna-S-2.1",
+          "meta": "Text Generation, 118B params, 67.3k downloads, 804 likes"
+        },
+        {
+          "name": "Nanbeige/Nanbeige4.2-3B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+          "meta": "Text Generation, 4B params, 18.9k downloads, 532 likes"
+        },
+        {
+          "name": "microsoft/Mage-Flow",
+          "url": "https://huggingface.co/microsoft/Mage-Flow",
+          "meta": "Text-to-Image, 4B params, 2.01k downloads, 422 likes"
+        },
+        {
+          "name": "Kwaipilot/KAT-Coder-V2.5-Dev",
+          "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+          "meta": "Text Generation, 35B params, 6.28k downloads, 292 likes"
+        },
+        {
+          "name": "owensong/Inflect-Micro-v2",
+          "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
+          "meta": "Text-to-Speech, 645 downloads, 271 likes"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "Text Generation, 753B params, 1.27M downloads, 4.61k likes"
+        },
+        {
+          "name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "meta": "Image-Text-to-Text, 27B params, 737k downloads, 861 likes"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Talentware raises €3.3M seed to expand AI-powered skill intelligence platform",
+      "source": "BeBeez",
+      "date": "2026-07-28",
+      "url": "https://bebeez.it/venture-capital/la-milanese-talentware-piattaforma-ai-per-la-skill-intelligence-chiude-un-round-seed-da-33-mln-euro-guidato-da-cdp-venture-capital-sgr-con-360-capital-che-aveva-sottoscritto-il-precedente-aumento/"
+    },
+    {
+      "title": "Ctrlb-decompose: strip log noise before sending to LLMs",
+      "source": "Hacker News",
+      "date": "2026-07-28",
+      "url": "https://news.ycombinator.com/item?id=49083336"
+    },
+    {
+      "title": "Segue: cross-platform context transfer between AI chats",
+      "source": "Hacker News",
+      "date": "2026-07-28",
+      "url": "https://news.ycombinator.com/item?id=49082779"
+    },
+    {
+      "title": "Minute: offline meeting notes on macOS with Whisper and llama.cpp",
+      "source": "Hacker News",
+      "date": "2026-07-28",
+      "url": "https://news.ycombinator.com/item?id=49088771"
+    },
+    {
+      "title": "XY: GPU-accelerated interactive plotting library via WebGPU",
+      "source": "Hacker News",
+      "date": "2026-07-28",
+      "url": "https://news.ycombinator.com/item?id=49085798"
+    },
+    {
+      "title": "Vivari: open-source WebContainer for Node, Bun, and Python in the browser",
+      "source": "Hacker News",
+      "date": "2026-07-28",
+      "url": "https://news.ycombinator.com/item?id=49082562"
+    },
+    {
+      "title": "Manim in the browser via WebGPU — 3Blue1Brown animation engine",
+      "source": "Hacker News",
+      "date": "2026-07-29",
+      "url": "https://news.ycombinator.com/item?id=49091703"
+    },
+    {
+      "title": "Lean4 Datalog DSL for AI projects based on Google Zanzibar",
+      "source": "Hacker News",
+      "date": "2026-07-29",
+      "url": "https://news.ycombinator.com/item?id=49092730"
+    },
+    {
+      "title": "5U AI raises $3.2M for AI-powered freight forwarding",
+      "source": "WORLDEF",
+      "date": "2026-07-28",
+      "url": "https://worldef.com/2026/07/28/munich-based-5u-ai-raises-3-2m/"
+    },
+    {
+      "title": "Anthropic and OpenAI back pacing mechanisms for frontier AI development",
+      "source": "X",
+      "date": "2026-07-28",
+      "url": "https://x.com/AnthropicAI/status/2082228994653696371"
+    }
+  ]
+}
