@@ -1,0 +1,19 @@
+# Lux in Tenebris
+
+> Lux in Tenebris is a daily AI-generated broadsheet that recaps the most disruptive AI news of the last 24 hours — model releases, policy shifts, lab drama, and industry moves — rendered as a static newspaper-style site. A new edition is published every day; roughly 30 editions are archived, each with its own page and machine-readable edition.json.
+
+## Current edition
+
+- [Latest edition](https://luxintenebris.news/): the current daily broadsheet
+- [edition.json](https://luxintenebris.news/edition.json): structured data for the current edition (issue number, lead story, top stories, sections with sources and URLs)
+
+## Archive
+
+- [Archive index](https://luxintenebris.news/archive/): all past editions
+- Each edition lives at `https://luxintenebris.news/archive/YYYY-MM-DD/`. Editions from 2026-07-07 onward expose structured data at `/archive/YYYY-MM-DD/edition.json` (older editions are HTML-only).
+
+## Machine-readable
+
+- [RSS feed](https://luxintenebris.news/feed.xml): RSS 2.0 feed of recent editions
+- [Sitemap](https://luxintenebris.news/sitemap.xml): all indexable pages
+- [Current edition.json](https://luxintenebris.news/edition.json): the current edition as JSON

@@ -23,6 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Generate AI-consumable artifacts
+        run: |
+          if ! (python3 scripts/augment.py && python3 scripts/augment_html.py); then
+            echo "::warning::augment failed, restoring committed artifacts"
+            git checkout -- sitemap.xml feed.xml
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
