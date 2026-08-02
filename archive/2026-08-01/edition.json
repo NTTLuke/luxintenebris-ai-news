@@ -1,0 +1,179 @@
+{
+  "issue_no": 37,
+  "date_iso": "2026-08-01",
+  "date_human": "August 01, 2026",
+  "notice": "Light news day — several of yesterday's biggest stories already ran in issue 36, so this edition leans on fresh tools, open-source and Italy coverage.",
+  "lead": {
+    "kicker": "xAI Video 1.5",
+    "image": "images/lead_2026-08-01.jpg",
+    "title": "xAI's Imagine Video 1.5 adds references and native 1080p output",
+    "summary": "xAI's best video model now accepts text, image and voice references, can generate a clip from a prompt alone, and produces native 1080p output. The update widens Imagine Video's reach from single-prompt generation toward reference-driven, controllable video production.",
+    "source": "x.ai",
+    "date": "2026-07-31",
+    "url": "https://x.ai/news/grok-imagine-video-1-5-references"
+  },
+  "top_stories": [
+    {
+      "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+      "summary": "A $13M Series A led by Seligman Ventures with Sierra Ventures and 3one4 Capital pushes the low-latency real-time voice intelligence startup past $21M total funding.",
+      "source": "TechCrunch",
+      "date": "2026-07-31",
+      "url": "https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/"
+    },
+    {
+      "title": "Repeat founder Ryan Williams raises $10M seed for AI for private credit managers",
+      "summary": "Ellis AI emerges from stealth with a $10M seed backed by First Round, 645 Ventures, Khosla, Thrive and others to apply AI to private credit management.",
+      "source": "TechCrunch",
+      "date": "2026-07-31",
+      "url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Open Source & Models",
+      "image": "images/section_open-source-models_2026-08-01.jpg",
+      "items": [
+        {
+          "title": "LMSYS ships cleaner quantization stack in SGLang for Qwen3-30B-A3B",
+          "summary": "A new quantization-stack blog compresses Qwen3-30B-A3B from 61GB to 21.6GB using W4A4_W8A8 with a minimal GSM8K drop (91.1% → 89.4%) plus latency gains, expanding support to AWQ, GPTQ and more backends.",
+          "source": "LMSYS",
+          "date": "2026-07-31",
+          "url": "https://x.com/lmsysorg/status/2083234145006960865"
+        },
+        {
+          "title": "Qwen-UI-Agent technical report: next-gen GUI agents",
+          "summary": "A new Qwen-UI-Agent technical report focuses on next-generation GUI agents for real-world tasks, with agentic tooling built on Qwen for UI understanding and control.",
+          "source": "@_akhaliq",
+          "date": "2026-07-31",
+          "url": "https://x.com/_akhaliq/status/2083258008004354343"
+        },
+        {
+          "title": "Explorative Modeling: a third pretraining axis and end-to-end generation",
+          "summary": "A new paper, 'Explorative Modeling', proposes unlocking a third pretraining axis and end-to-end generation — a fresh research direction surfacing in the open-source timeline.",
+          "source": "@_akhaliq",
+          "date": "2026-07-31",
+          "url": "https://x.com/_akhaliq/status/2083256759532019878"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "image": "images/section_tools-startups_2026-08-01.jpg",
+      "items": [
+        {
+          "title": "GAI – a Go runtime for typed, tool-using LLM agents",
+          "summary": "An open-source Go runtime designed for building typed, tool-using LLM agents, launched as a Show HN on Hacker News.",
+          "source": "GitHub",
+          "date": "2026-07-31",
+          "url": "https://github.com/lace-ai/gai"
+        },
+        {
+          "title": "Sanitizer – strip sensitive data from documents locally before an LLM",
+          "summary": "A local-first tool that strips sensitive data from documents before they reach an LLM, keeping PII off external systems.",
+          "source": "Provexar",
+          "date": "2026-08-01",
+          "url": "https://provexar.ai/sanitizer"
+        },
+        {
+          "title": "Shellphone – MCP extension to link Claude Chat and Claude Code",
+          "summary": "An MCP extension that bridges Claude Chat and Claude Code, letting agents talk to each other, published to npm as a Show HN.",
+          "source": "npm",
+          "date": "2026-07-31",
+          "url": "https://www.npmjs.com/package/shellphone"
+        },
+        {
+          "title": "Vinv – IDE plug-in that finds and fixes bugs, dead code and perf issues",
+          "summary": "An IDE plug-in that automatically locates and fixes bugs, dead code and performance issues in your codebase.",
+          "source": "GitHub",
+          "date": "2026-07-31",
+          "url": "https://github.com/VinvAI/VinvAI"
+        }
+      ]
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "image": "images/section_italia-ai-spotlight_2026-08-01.jpg",
+      "items": [
+        {
+          "title": "Revismart closes first €500K pre-seed to bring generative AI to legal review",
+          "summary": "The Reggio Emilia startup, spun out of the University of Modena and Reggio Emilia, closed the first tranche of a €500K pre-seed to build its generative AI platform for legal and accounting review, half of it from 40Jemz Ventures.",
+          "source": "StartupItalia",
+          "date": "2026-07-31",
+          "url": "https://startupitalia.eu/startup/revismart-primo-closing-round-500mila-euro/"
+        },
+        {
+          "title": "Italian startups raised €102.97M in July 2026, led by AI and deep-tech rounds",
+          "summary": "Italian startups raised €102.97M across 18 capital increases in July, bringing the seven-month total to €719.66M, per a Repubblica tally — topped by MDOTM's €27M, Young Group's €22.5M and Circular Materials' €11.8M.",
+          "source": "La Repubblica",
+          "date": "2026-07-31",
+          "url": "https://www.repubblica.it/tecnologia/2026/07/31/news/a_luglio_le_startup_italiane_hanno_raccolto_10297_milioni_di_investimenti-425505091/"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-08-01",
+      "items": [
+        {"name": "zhaoxuya520/reverse-skill", "url": "https://github.com/zhaoxuya520/reverse-skill", "meta": "PowerShell · 10.9k ★ · +335 today"},
+        {"name": "different-ai/openwork", "url": "https://github.com/different-ai/openwork", "meta": "TypeScript · 19.6k ★ · +806 today"},
+        {"name": "mvanhorn/last30days-skill", "url": "https://github.com/mvanhorn/last30days-skill", "meta": "Python · 56.3k ★ · +658 today"},
+        {"name": "paperswithbacktest/awesome-systematic-trading", "url": "https://github.com/paperswithbacktest/awesome-systematic-trading", "meta": "Python · 11.9k ★ · +763 today"},
+        {"name": "microsoft/AI-For-Beginners", "url": "https://github.com/microsoft/AI-For-Beginners", "meta": "Jupyter Notebook · 55.5k ★ · +1,592 today"},
+        {"name": "github/copilot-sdk", "url": "https://github.com/github/copilot-sdk", "meta": "Java · 10.2k ★ · +7 today"},
+        {"name": "chatwoot/chatwoot", "url": "https://github.com/chatwoot/chatwoot", "meta": "Ruby · 35.2k ★ · +35 today"},
+        {"name": "agavra/tuicr", "url": "https://github.com/agavra/tuicr", "meta": "Rust · 2.2k ★ · +335 today"},
+        {"name": "usekaneo/kaneo", "url": "https://github.com/usekaneo/kaneo", "meta": "TypeScript · 5.2k ★ · +194 today"},
+        {"name": "geo-tp/ESP32-Bit-Pirate", "url": "https://github.com/geo-tp/ESP32-Bit-Pirate", "meta": "C++ · 5.1k ★ · +83 today"},
+        {"name": "deepfakes/faceswap", "url": "https://github.com/deepfakes/faceswap", "meta": "Python · 57.1k ★ · +93 today"},
+        {"name": "1jehuang/jcode", "url": "https://github.com/1jehuang/jcode", "meta": "Rust · 14.7k ★ · +527 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-08-01",
+      "items": [
+        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "Image-Text-to-Text · 2.8T"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "Text Generation · 304B"},
+        {"name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "meta": "Image-Text-to-Text · 27B"},
+        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "Image-Text-to-Text · 3B"},
+        {"name": "owensong/Inflect-Micro-v2", "url": "https://huggingface.co/owensong/Inflect-Micro-v2", "meta": "Text-to-Speech"},
+        {"name": "Kwaipilot/KAT-Coder-V2.5-Dev", "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev", "meta": "Text Generation · 35B"},
+        {"name": "zai-org/GLM-5.2", "url": "https://huggingface.co/zai-org/GLM-5.2", "meta": "Text Generation · 753B"},
+        {"name": "poolside/Laguna-S-2.1", "url": "https://huggingface.co/poolside/Laguna-S-2.1", "meta": "Text Generation · 118B"},
+        {"name": "unsloth/Kimi-K3-GGUF", "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF", "meta": "Image-Text-to-Text · 2.8T"},
+        {"name": "Nanbeige/Nanbeige4.2-3B", "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B", "meta": "Text Generation · 4B"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Open source React Native debugging studio",
+      "source": "NativeScope",
+      "url": "https://www.nativescope.dev"
+    },
+    {
+      "title": "WhisperKeys – offline macOS dictation, key-by-key",
+      "source": "GitHub",
+      "url": "https://github.com/j-sofia/WhisperKeys"
+    },
+    {
+      "title": "Penca – branchable, versioned OLTP+OLAP on one open copy of your data",
+      "source": "GitHub",
+      "url": "https://github.com/penca-io/penca"
+    },
+    {
+      "title": "An LSP for agent skills – rename, references, completion, diagnostics",
+      "source": "GitHub",
+      "url": "https://github.com/CyrusNuevoDia/skill-language-server"
+    }
+  ],
+  "spiked": {
+    "already ran": 5
+  }
+}
