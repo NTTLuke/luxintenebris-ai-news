@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · August 02, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 38 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>August 02, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>49 stories <span class="mk-note">(<span class="mk-beta">Beta</span> : <a href="making-of.html" class="mk-link" title="Replay how this issue assembled itself">See how this issue made itself</a>)</span></span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DS4 Flash Abliterated!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Pixel 11 leaks point to higher prices and cut RAM" data-b="According to The Verge, Android Headlines has shared what it claims are the specs and prices for Google&#x27;s entire Pixel 11 lineup, details that largely match other reports ahead of the August 12th event.
+
+The base Pixel 11 is expected to see a $100 price increase, starting at $899, though it would come with 256GB of storage instead of the previous 128GB. The new Tensor G6 and Titan M3 chips are expected across the range. However, the Pixel 11 Pro and Pixel 11 Pro XL are both rumored to have their RAM trimmed to 12GB, paired with price rises to $1,099 and $1,299 respectively.
+
+The standard Pixel 11 is said to drop the telephoto lens for a dual rear camera setup, while the pro models appear likely to keep the same cameras as the Pixel 10 series. Displays seem largely unchanged from the prior generation. The Pixel 11 Pro Fold is reportedly not spared from the RAM cut either, starting with 12GB of RAM at a new price of $1,899.
+
+*The pattern of raising prices while trimming memory feels like a step backward, even if the storage bump softens the blow.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/974238/pixel-11-specs-and-price-leak"><span class="tih">Pixel 11 leaks point to higher prices and cut RAM</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Judge denies xAI&#x27;s bid to halt Minnesota &#x27;nudify&#x27; app ban" data-b="A Minnesota law barring apps that let users create sexualized images of real people is set to take effect, after a federal judge turned down xAI&#x27;s request to pause it, according to TechCrunch.
+
+U.S. District Judge Donovan Frank&#x27;s decision weighed the timing of xAI&#x27;s legal challenge as heavily as the merits of the law. The company filed for a temporary restraining order on July 29, 2026 — nearly three months after the measure was signed and just days before its August 1 effective date. Such a delay, the judge wrote, suggests the alleged harm is not urgent.
+
+The ruling does not end the lawsuit; it only allows the ban to go into force while the case proceeds. In its suit, xAI contends the law — described as the first of its kind in the U.S. — is &quot;overinclusive,&quot; arguing there are far less restrictive ways to achieve the same goals.
+
+The case follows an episode earlier this year in which users on Elon Musk&#x27;s platform X reportedly used xAI&#x27;s Grok chatbot to flood the service with non-consensual sexualized images, prompting investigations and bans. X and xAI are both now part of SpaceX.
+
+*A filing made at the last minute is a weak foundation for an urgent-harm claim, and judges are right to be skeptical.*
+
+— Written by AI (deepseek-v4-flash)" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/"><span class="tih">Judge denies xAI&#x27;s bid to halt Minnesota &#x27;nudify&#x27; app ban</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hank Green admits his AI chatbot reliance is &#x27;not healthy&#x27;" data-b="According to TechCrunch, YouTuber Hank Green, who has 3.2 million subscribers, recently apologized to his audience over his growing dependence on AI chatbots.
+
+The episode began when Green used the phrase &quot;I appreciate the pushback&quot; during a video on the educational channel Complexly. Viewers speculated he had written the script with a chatbot and accidentally included its response to one of his prompts. In a since-deleted post on X, Green acknowledged producing the video &quot;under a ton of pressure&quot; and using ChatGPT &quot;for research on this script,&quot; while maintaining the &quot;pushback&quot; line was actually directed at the episode&#x27;s guest. He later offered a deeper apology on Reddit, saying he was &quot;mortified&quot; and planned to reduce his video output.
+
+Green insisted he has only used ChatGPT to &quot;locate papers and other resources,&quot; and that the words and &quot;takes&quot; remain his own, while accepting criticism for &quot;diluting&quot; himself. He said he is &quot;not a pure AI-hater,&quot; but listed concerns including climate change and the speed at which companies are consolidating economic power. He acknowledged struggling to manage his impulses and wanting his words to be clearly his own going forward. He plans to pause or post less frequently, favoring more meditative, unscripted work. Green described the dopamine from interacting with LLMs as &quot;not healthy for me or good for the world.&quot;
+
+*An honest admission that even a prominent creator can lose sight of his own process amid the pull of AI tools.*
+— Written by AI (deepseek-v4-flash)" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/"><span class="tih">Hank Green admits his AI chatbot reliance is &#x27;not healthy&#x27;</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Is Fenix Flexin&#x27;s Hot 100 Hit &quot;Rubberz&quot; Actually AI Slop?" data-b="The Verge reports on the controversy surrounding &quot;Rubberz,&quot; the track by Fenix Flexin that has reached number 58 on the Billboard Hot 100. The rapper, known as a member of Los Angeles rap duo Shoreline Mafia, has denied claims that the song was largely AI-generated but has done little to dispel them, according to The Verge.
+
+Suspicion stems partly from the track&#x27;s sharp departure from his usual trap-influenced West Coast rap. &quot;Rubberz&quot; leans on &#x27;80s UK synth pop, with a vocal melody influenced by Morrissey and even a fake British accent. The Verge notes the recording itself shows telltale signs of AI output, including brittle hi-hats, chorus vocals that sound like low-bitrate MP3s, and reverb tails that cut off abruptly.
+
+Songwriter Charlie Harding told The Verge that ghostly backing vocals duck in and out unexpectedly, and that the drum reverb carries unnatural digital artifacting reminiscent of a degraded Napster-era MP3. While five different AI music detectors only flagged a 20 to 30 percent chance the track was AI, the supporting materials were more damning. The cover art and a celebratory post were flagged as AI-generated with over 97 percent certainty, and multiple tools agreed the lyrics appeared machine-written.
+
+The Verge also points to awkward, meaningless lyrics and unusual syncopation in the delivery. Live performances have reportedly featured lip-syncing and an inability to recreate the recording&#x27;s vocal range.
+
+*Whether or not the track is fully AI-made, the real story is how hard it&#x27;s becoming to tell the difference anymore.*
+— Written by AI (deepseek-v4-flash)" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop"><span class="tih">Is Fenix Flexin&#x27;s Hot 100 Hit &quot;Rubberz&quot; Actually AI Slop?</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Pixel 11 leaks point to higher prices and cut RAM" data-b="According to The Verge, Android Headlines has shared what it claims are the specs and prices for Google&#x27;s entire Pixel 11 lineup, details that largely match other reports ahead of the August 12th event.
+
+The base Pixel 11 is expected to see a $100 price increase, starting at $899, though it would come with 256GB of storage instead of the previous 128GB. The new Tensor G6 and Titan M3 chips are expected across the range. However, the Pixel 11 Pro and Pixel 11 Pro XL are both rumored to have their RAM trimmed to 12GB, paired with price rises to $1,099 and $1,299 respectively.
+
+The standard Pixel 11 is said to drop the telephoto lens for a dual rear camera setup, while the pro models appear likely to keep the same cameras as the Pixel 10 series. Displays seem largely unchanged from the prior generation. The Pixel 11 Pro Fold is reportedly not spared from the RAM cut either, starting with 12GB of RAM at a new price of $1,899.
+
+*The pattern of raising prices while trimming memory feels like a step backward, even if the storage bump softens the blow.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/974238/pixel-11-specs-and-price-leak"><span class="tih">Pixel 11 leaks point to higher prices and cut RAM</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Judge denies xAI&#x27;s bid to halt Minnesota &#x27;nudify&#x27; app ban" data-b="A Minnesota law barring apps that let users create sexualized images of real people is set to take effect, after a federal judge turned down xAI&#x27;s request to pause it, according to TechCrunch.
+
+U.S. District Judge Donovan Frank&#x27;s decision weighed the timing of xAI&#x27;s legal challenge as heavily as the merits of the law. The company filed for a temporary restraining order on July 29, 2026 — nearly three months after the measure was signed and just days before its August 1 effective date. Such a delay, the judge wrote, suggests the alleged harm is not urgent.
+
+The ruling does not end the lawsuit; it only allows the ban to go into force while the case proceeds. In its suit, xAI contends the law — described as the first of its kind in the U.S. — is &quot;overinclusive,&quot; arguing there are far less restrictive ways to achieve the same goals.
+
+The case follows an episode earlier this year in which users on Elon Musk&#x27;s platform X reportedly used xAI&#x27;s Grok chatbot to flood the service with non-consensual sexualized images, prompting investigations and bans. X and xAI are both now part of SpaceX.
+
+*A filing made at the last minute is a weak foundation for an urgent-harm claim, and judges are right to be skeptical.*
+
+— Written by AI (deepseek-v4-flash)" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/"><span class="tih">Judge denies xAI&#x27;s bid to halt Minnesota &#x27;nudify&#x27; app ban</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hank Green admits his AI chatbot reliance is &#x27;not healthy&#x27;" data-b="According to TechCrunch, YouTuber Hank Green, who has 3.2 million subscribers, recently apologized to his audience over his growing dependence on AI chatbots.
+
+The episode began when Green used the phrase &quot;I appreciate the pushback&quot; during a video on the educational channel Complexly. Viewers speculated he had written the script with a chatbot and accidentally included its response to one of his prompts. In a since-deleted post on X, Green acknowledged producing the video &quot;under a ton of pressure&quot; and using ChatGPT &quot;for research on this script,&quot; while maintaining the &quot;pushback&quot; line was actually directed at the episode&#x27;s guest. He later offered a deeper apology on Reddit, saying he was &quot;mortified&quot; and planned to reduce his video output.
+
+Green insisted he has only used ChatGPT to &quot;locate papers and other resources,&quot; and that the words and &quot;takes&quot; remain his own, while accepting criticism for &quot;diluting&quot; himself. He said he is &quot;not a pure AI-hater,&quot; but listed concerns including climate change and the speed at which companies are consolidating economic power. He acknowledged struggling to manage his impulses and wanting his words to be clearly his own going forward. He plans to pause or post less frequently, favoring more meditative, unscripted work. Green described the dopamine from interacting with LLMs as &quot;not healthy for me or good for the world.&quot;
+
+*An honest admission that even a prominent creator can lose sight of his own process amid the pull of AI tools.*
+— Written by AI (deepseek-v4-flash)" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/"><span class="tih">Hank Green admits his AI chatbot reliance is &#x27;not healthy&#x27;</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Is Fenix Flexin&#x27;s Hot 100 Hit &quot;Rubberz&quot; Actually AI Slop?" data-b="The Verge reports on the controversy surrounding &quot;Rubberz,&quot; the track by Fenix Flexin that has reached number 58 on the Billboard Hot 100. The rapper, known as a member of Los Angeles rap duo Shoreline Mafia, has denied claims that the song was largely AI-generated but has done little to dispel them, according to The Verge.
+
+Suspicion stems partly from the track&#x27;s sharp departure from his usual trap-influenced West Coast rap. &quot;Rubberz&quot; leans on &#x27;80s UK synth pop, with a vocal melody influenced by Morrissey and even a fake British accent. The Verge notes the recording itself shows telltale signs of AI output, including brittle hi-hats, chorus vocals that sound like low-bitrate MP3s, and reverb tails that cut off abruptly.
+
+Songwriter Charlie Harding told The Verge that ghostly backing vocals duck in and out unexpectedly, and that the drum reverb carries unnatural digital artifacting reminiscent of a degraded Napster-era MP3. While five different AI music detectors only flagged a 20 to 30 percent chance the track was AI, the supporting materials were more damning. The cover art and a celebratory post were flagged as AI-generated with over 97 percent certainty, and multiple tools agreed the lyrics appeared machine-written.
+
+The Verge also points to awkward, meaningless lyrics and unusual syncopation in the delivery. Live performances have reportedly featured lip-syncing and an inability to recreate the recording&#x27;s vocal range.
+
+*Whether or not the track is fully AI-made, the real story is how hard it&#x27;s becoming to tell the difference anymore.*
+— Written by AI (deepseek-v4-flash)" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop"><span class="tih">Is Fenix Flexin&#x27;s Hot 100 Hit &quot;Rubberz&quot; Actually AI Slop?</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://openai.com/index/ten-advances-in-mathematics/" target="_blank" rel="noopener">
+    <img src="images/lead_2026-08-02.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Astra solves the unsolved</p>
+        <h1>OpenAI says upcoming Astra model solved ten open problems in mathematics</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">OpenAI reports an internal version of its upcoming Astra model solved ten open problems in mathematics and theoretical computer science, spanning geometry, cryptography and complexity, for roughly $2,000 in compute. The results come with a paper, LLM-generated proof reconstructions and Lean 4 formalizations.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-08-01</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:13</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-08-02.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/simonw/status/2083343395704160359" target="_blank" rel="noopener">
+    <h3>DeepSeek-V4-Flash-0731 lands on the price/performance frontier</h3>
+    <p>Simon Willison tests the cost-efficient LLM, which lands on the Artificial Analysis Pareto frontier at a fraction of comparable costs (~0.44 cents default inference) with a 98% cache-hit discount seen as transformative for agent loops.</p>
+    <p class="byline"><span class="src">Simon Willison</span> · 2026-08-01</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.youtube.com/watch?v=yz0SZIng2Po" target="_blank" rel="noopener">
+    <h3>Over 1,000 AI lab employees sign 'Pacing the Frontier' urging the US to slow automated AI</h3>
+    <p>More than 1,000 employees from OpenAI, Anthropic and other labs signed the statement asking the US government to build tools deliberately designed to slow down automated AI development.</p>
+    <p class="byline"><span class="src">YouTube — Theo - t3.gg</span> · 2026-08-01</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://theoutpost.ai/news-story/byd-to-debut-humanoid-robots-in-august-challenging-tesla-in-embodied-ai-race-29261/" target="_blank" rel="noopener">
+    <h3>BYD to debut its first humanoid robots in early August at Di Space venues</h3>
+    <p>The automaker will unveil its first humanoid robots at its Di Space experience venues, positioning BYD against Tesla in the embodied AI race.</p>
+    <p class="byline"><span class="src">The Outpost AI</span> · 2026-07-31</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://arxiv.org/abs/2607.28576" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-08-02.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Repeated sampling beats self-refine and reflexion at equal token cost</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2607.28576" target="_blank" rel="noopener">
+    <h4>Repeated sampling beats self-refine and reflexion at equal token cost</h4>
+    <p>A controlled study from 1.5B to 7B models shows reflection methods that generate extra text are beaten by simple repeated sampling at equal token budgets, isolating the accuracy gain of reflection to generating more tokens.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-30</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2607.28074" target="_blank" rel="noopener">
+    <h4>Echoverse generates deep, evolving environments to train computer-use agents</h4>
+    <p>The pipeline generates reset-able synthetic environments for computer-use agent training, targeting stateful login-gated applications and scaling beyond prior bulk pipelines.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-30</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2607.27919" target="_blank" rel="noopener">
+    <h4>Memory Decoder at Scale: a pretrained, parametric long-term memory for LMs</h4>
+    <p>Scales a parametric long-term memory module to much larger capacities, decoupling memory from reasoning parameters for independently scalable long-term memory.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-07-30</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2607.28418" target="_blank" rel="noopener">
+    <h4>WIDE boosts adaptive LLM inference via token-level dynamic width pruning</h4>
+    <p>Token-level dynamic width pruning allocates compute per token to reduce accuracy loss under aggressive sparsity versus static structured pruning.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-30</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2607.28627" target="_blank" rel="noopener">
+    <h4>ReToken adds a retrieval token to improve vision-language models on visual retrieval</h4>
+    <p>A single learnable embedding as an explicit retrieval token lets VLMs handle long visual context with many distractors while staying within GPU memory.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-07-30</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://news.ycombinator.com/item?id=49140772" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-08-02.jpg" alt="" class="section-hero-img"><h4 class="hero-title">CleanSlate — open-source coding agent for IDE, CLI and SDK</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49140772" target="_blank" rel="noopener">
+    <h4>CleanSlate — open-source coding agent for IDE, CLI and SDK</h4>
+    <p>An open-source AI coding agent that works across the IDE, command line and SDK, positioning itself as a cleaner alternative to Claude Code left-behinds.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-02</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49137410" target="_blank" rel="noopener">
+    <h4>Cockpit for Claude Code agents — a Rust-based control panel</h4>
+    <p>A Rust-built cockpit dashboard giving users visibility and control over their Claude Code agents in one place.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-01</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49139058" target="_blank" rel="noopener">
+    <h4>Pronto — a real-time wire for AI agents with 70k+ feeds connected</h4>
+    <p>A real-time data feed/wire service for AI agents, claiming 70,000+ connected sources for live agent inputs.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-01</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49140340" target="_blank" rel="noopener">
+    <h4>CostPerPrompt — live AI API pricing and real-workload cost calculators</h4>
+    <p>Tracks live per-prompt pricing across AI APIs and offers real-workload cost calculators to compare model expenses.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-02</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49138808" target="_blank" rel="noopener">
+    <h4>Evidence-to-Skill — a gate between untrusted sources and agent skills</h4>
+    <p>A gate mechanism that filters untrusted external sources before they can influence or become agent skills, adding a safety layer to agent tooling.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-01</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <a href="https://startupitalia.eu/economy/bending-spoons-1-mese-ipo-perso-13per100/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_italia-ai-spotlight_2026-08-02.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Bending Spoons one month after IPO: shares down 13%, new M&amp;A in sight</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://startupitalia.eu/economy/bending-spoons-1-mese-ipo-perso-13per100/" target="_blank" rel="noopener">
+    <h4>Bending Spoons one month after IPO: shares down 13%, new M&amp;A in sight</h4>
+    <p>The Milan-based software house has lost over 13% from its $40 peak since its July 1 Nasdaq debut, and announced €500M in new medium-long term financing from HSBC, Intesa Sanpaolo and BPER backed by SACE, bringing funding lines to €1.49B as it pursues further acquisitions.</p>
+    <p class="byline"><span class="src">StartupItalia</span> · 2026-08-01</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://startupitalia.eu/economy/metriks-ai-ha-sottoscritto-la-prima-tranche-dellaumento-di-capitale-di-edibeez-editore-di-bebeez/" target="_blank" rel="noopener">
+    <h4>Metriks AI subscribes first tranche of capital increase in BeBeez publisher EdiBeez</h4>
+    <p>The B2B AI company listed on Euronext Growth Milan paid the first €75,000 tranche of a €150,000 capital increase in EdiBeez, taking a roughly 3.5% minority stake.</p>
+    <p class="byline"><span class="src">StartupItalia</span> · 2026-08-01</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/microsoft/AI-For-Beginners" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">microsoft/AI-For-Beginners</span>
+    <span class="t-meta">Jupyter Notebook · 57,651 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/paperswithbacktest/awesome-systematic-trading" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">paperswithbacktest/awesome-systematic-trading</span>
+    <span class="t-meta">Python · 12,342 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/usekaneo/kaneo" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">usekaneo/kaneo</span>
+    <span class="t-meta">TypeScript · 5,761 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/zhaoxuya520/reverse-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">zhaoxuya520/reverse-skill</span>
+    <span class="t-meta">PowerShell · 12,065 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/microsoft/generative-ai-for-beginners" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">microsoft/generative-ai-for-beginners</span>
+    <span class="t-meta">Jupyter Notebook · 114,320 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/github/copilot-sdk" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">github/copilot-sdk</span>
+    <span class="t-meta">Java · 10,299 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/github/gh-stack" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">github/gh-stack</span>
+    <span class="t-meta">Go · 851 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/huggingface/speech-to-speech" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">huggingface/speech-to-speech</span>
+    <span class="t-meta">Python · 10,268 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/abus-aikorea/voice-pro" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">abus-aikorea/voice-pro</span>
+    <span class="t-meta">Python · 11,832 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/iv-org/invidious" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">iv-org/invidious</span>
+    <span class="t-meta">Crystal · 21,663 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/ansible/ansible" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">ansible/ansible</span>
+    <span class="t-meta">Python · 70,132 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/microsoft/TRELLIS.2" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">microsoft/TRELLIS.2</span>
+    <span class="t-meta">Python · 9,981 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">TencentCloud/TencentDB-Agent-Memory</span>
+    <span class="t-meta">TypeScript · 10,387 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/NomaDamas/k-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">NomaDamas/k-skill</span>
+    <span class="t-meta">JavaScript · 6,773 ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/bytedance/deer-flow" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">bytedance/deer-flow</span>
+    <span class="t-meta">Python · 78,795 ★</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3</span>
+    <span class="t-meta">moonshotai/Kimi-K3 · Image-Text-to-Text · 2.8T · Updated 6 days ago · 560k · 9.51k</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4-Flash-0731</span>
+    <span class="t-meta">deepseek-ai/DeepSeek-V4-Flash-0731 · Text Generation · 304B · Updated 1 day ago · 15.4k · 1.47k</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF</span>
+    <span class="t-meta">DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF · Image-Text-to-Text · 27B · Updated 2 days ago</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">baidu/Unlimited-OCR</span>
+    <span class="t-meta">baidu/Unlimited-OCR · Image-Text-to-Text · 3B · Updated 4 days ago · 2.46M · 3.72k</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">unsloth/DeepSeek-V4-Flash-0731-GGUF</span>
+    <span class="t-meta">unsloth/DeepSeek-V4-Flash-0731-GGUF · 284B · Updated about 23 hours ago · 4.05k · 297</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/owensong/Inflect-Micro-v2" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">owensong/Inflect-Micro-v2</span>
+    <span class="t-meta">owensong/Inflect-Micro-v2 · Text-to-Speech · Updated 2 days ago · 1.57k · 365</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">zai-org/GLM-5.2</span>
+    <span class="t-meta">zai-org/GLM-5.2 · Text Generation · 753B · Updated about 1 month ago · 1.68M · 4.74k</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Kimi-K3-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">unsloth/Kimi-K3-GGUF</span>
+    <span class="t-meta">unsloth/Kimi-K3-GGUF · Image-Text-to-Text · 2.8T · Updated 3 days ago · 41.3k · 243</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Kwaipilot/KAT-Coder-V2.5-Dev</span>
+    <span class="t-meta">Kwaipilot/KAT-Coder-V2.5-Dev · Text Generation · 35B · Updated 5 days ago · 10.8k · 391</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/thinkingmachines/Inkling-Small" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">thinkingmachines/Inkling-Small</span>
+    <span class="t-meta">thinkingmachines/Inkling-Small · Image-Text-to-Text · 266B · Updated 2 days ago · 4k · 213</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">08</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/swyx/status/2083695562004771063" target="_blank" rel="noopener"><span class="qh-title">smol.ai: every repository gets its own agent</span><span class="qh-src">swyx</span></a></li>
+
+    <li><a href="https://x.com/swyx/status/2083664187969196152" target="_blank" rel="noopener"><span class="qh-title">Agent 'metaharness' bake-off: Flue vs Eve vs Omnigent</span><span class="qh-src">swyx</span></a></li>
+
+    <li><a href="https://x.com/swyx/status/2083610493793845429" target="_blank" rel="noopener"><span class="qh-title">Google was 'too nervous' to release its pre-ChatGPT chatbot, ex-team member recalls</span><span class="qh-src">swyx</span></a></li>
+
+    <li><a href="https://x.com/simonw/status/2083683950686511425" target="_blank" rel="noopener"><span class="qh-title">Simon Willison recalls OpenAI's internal debate before launching ChatGPT</span><span class="qh-src">Simon Willison</span></a></li>
+
+    <li><a href="https://x.com/swyx/status/2083439562437673053" target="_blank" rel="noopener"><span class="qh-title">swyx argues AI teams abandoned /loop and /goal agent patterns too early</span><span class="qh-src">swyx</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49138012" target="_blank" rel="noopener"><span class="qh-title">Voris — privacy-first analytics for the AI-influenced web</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49139505" target="_blank" rel="noopener"><span class="qh-title">PhaseProbe — find simulation transitions and turn them into tests</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49139461" target="_blank" rel="noopener"><span class="qh-title">Symbio — a self fine-tuning AI loop</span><span class="qh-src">Hacker News</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-08-02 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

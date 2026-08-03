@@ -1,38 +1,45 @@
 {
-  "issue_no": 38,
-  "date_iso": "2026-08-02",
-  "date_human": "August 02, 2026",
-  "notice": null,
+  "issue_no": 39,
+  "date_iso": "2026-08-03",
+  "date_human": "August 03, 2026",
+  "notice": "Light news day — fewer fresh items than usual.",
   "lead": {
-    "kicker": "Astra solves the unsolved",
-    "title": "OpenAI says upcoming Astra model solved ten open problems in mathematics",
-    "summary": "OpenAI reports an internal version of its upcoming Astra model solved ten open problems in mathematics and theoretical computer science, spanning geometry, cryptography and complexity, for roughly $2,000 in compute. The results come with a paper, LLM-generated proof reconstructions and Lean 4 formalizations.",
-    "source": "OpenAI",
-    "date": "2026-08-01",
-    "url": "https://openai.com/index/ten-advances-in-mathematics/",
-    "image": "images/lead_2026-08-02.jpg"
+    "kicker": "Agentic Coding Demo",
+    "title": "Karpathy turns a Lord of the Rings paragraph into a playable Three.js world with Opus 5",
+    "summary": "Karpathy handed Opus 5 a ~1M-token / ~$10 budget with the opening of The Lord of the Rings, and the model spent roughly two hours writing 5,500+ lines of Three.js to procedurally render and animate the story, self-correcting via screenshots. A playable browser version was published, spotlighting long-horizon agentic creative coding.",
+    "source": "karpathy (X)",
+    "date": "2026-08-02",
+    "url": "https://x.com/karpathy/status/2083749667410727319",
+    "image": "images/lead_2026-08-03.jpg"
   },
   "top_stories": [
     {
-      "title": "DeepSeek-V4-Flash-0731 lands on the price/performance frontier",
-      "summary": "Simon Willison tests the cost-efficient LLM, which lands on the Artificial Analysis Pareto frontier at a fraction of comparable costs (~0.44 cents default inference) with a 98% cache-hit discount seen as transformative for agent loops.",
-      "source": "Simon Willison",
-      "date": "2026-08-01",
-      "url": "https://x.com/simonw/status/2083343395704160359"
+      "title": "Nous Research: Hermes Agent gains traction as a high-performing open-source agent",
+      "summary": "Nous Research highlights growing buzz around Hermes Agent, with observers calling it 'insanely good' and betting the team can build a large company if execution holds.",
+      "source": "NousResearch (X)",
+      "date": "2026-08-02",
+      "url": "https://x.com/NousResearch/status/2083830133870166295"
     },
     {
-      "title": "Over 1,000 AI lab employees sign 'Pacing the Frontier' urging the US to slow automated AI",
-      "summary": "More than 1,000 employees from OpenAI, Anthropic and other labs signed the statement asking the US government to build tools deliberately designed to slow down automated AI development.",
-      "source": "YouTube — Theo - t3.gg",
-      "date": "2026-08-01",
-      "url": "https://www.youtube.com/watch?v=yz0SZIng2Po"
+      "title": "Simon Willison surfaces under-discovered ChatGPT Work features: built-in browser and Cloudflare Workers deploy",
+      "summary": "Willison notes ChatGPT Work (mobile/web mode) ships an integrated browser with screenshots and can deploy web apps straight to Cloudflare Workers ('ChatGPT Sites'), with discoverability the main remaining gap.",
+      "source": "simonw (X)",
+      "date": "2026-08-02",
+      "url": "https://x.com/simonw/status/2083704964233462075"
     },
     {
-      "title": "BYD to debut its first humanoid robots in early August at Di Space venues",
-      "summary": "The automaker will unveil its first humanoid robots at its Di Space experience venues, positioning BYD against Tesla in the embodied AI race.",
-      "source": "The Outpost AI",
-      "date": "2026-07-31",
-      "url": "https://theoutpost.ai/news-story/byd-to-debut-humanoid-robots-in-august-challenging-tesla-in-embodied-ai-race-29261/"
+      "title": "Nous Portal offers DeepSeek V4 Flash at 90% off for 7 days",
+      "summary": "Nous Research promotes DeepSeek V4 Flash at 90% off via novita_labs, claiming it outperforms a top model on Terminal-Bench 2.1 while being over 1,000x cheaper, with other models 20-50% off — a fresh salvo in inference pricing.",
+      "source": "NousResearch (X)",
+      "date": "2026-08-02",
+      "url": "https://x.com/NousResearch/status/2083953441571742191"
+    },
+    {
+      "title": "Karpathy expands on agentic long-context coding limits",
+      "summary": "Following the LoTR demo, Karpathy notes LLMs shine at ambitious long-horizon coding tasks humans avoid but still struggle to self-audit visual and gameplay output without slow screenshot loops, linking to Simon Willison's 'pelican on a bicycle' testing idea.",
+      "source": "karpathy (X)",
+      "date": "2026-08-02",
+      "url": "https://x.com/karpathy/status/2083948654377996480"
     }
   ],
   "sections": [
@@ -40,40 +47,40 @@
       "title": "Research & Papers",
       "items": [
         {
-          "title": "Repeated sampling beats self-refine and reflexion at equal token cost",
-          "summary": "A controlled study from 1.5B to 7B models shows reflection methods that generate extra text are beaten by simple repeated sampling at equal token budgets, isolating the accuracy gain of reflection to generating more tokens.",
+          "title": "WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning",
+          "summary": "Adds a future-state value estimator on top of VLA backbones to improve RL post-training for robotic manipulation, beating single-frame value-based baselines.",
           "source": "arXiv",
-          "date": "2026-07-30",
-          "url": "https://arxiv.org/abs/2607.28576",
-          "image": "images/section_research-papers_2026-08-02.jpg"
+          "date": "2026-07-31",
+          "url": "https://arxiv.org/abs/2607.29613",
+          "image": "images/section_research-papers_2026-08-03.jpg"
         },
         {
-          "title": "Echoverse generates deep, evolving environments to train computer-use agents",
-          "summary": "The pipeline generates reset-able synthetic environments for computer-use agent training, targeting stateful login-gated applications and scaling beyond prior bulk pipelines.",
+          "title": "The Parts Are Greater Than the Sum: automated task sequencing for multi-policy LLMs",
+          "summary": "Sequences heterogeneous tasks to reduce interference and catastrophic forgetting in shared low-rank adapter fine-tuning, improving transfer and retention over naive shared-LoRA.",
           "source": "arXiv",
-          "date": "2026-07-30",
-          "url": "https://arxiv.org/abs/2607.28074"
+          "date": "2026-07-31",
+          "url": "https://arxiv.org/abs/2607.29601"
         },
         {
-          "title": "Memory Decoder at Scale: a pretrained, parametric long-term memory for LMs",
-          "summary": "Scales a parametric long-term memory module to much larger capacities, decoupling memory from reasoning parameters for independently scalable long-term memory.",
-          "source": "HuggingFace",
-          "date": "2026-07-30",
-          "url": "https://arxiv.org/abs/2607.27919"
+          "title": "ExtractBench: a benchmark for schema-guided enterprise document extraction",
+          "summary": "Evaluates agents on following a user-defined schema with source evidence grounding for enterprise document workflows.",
+          "source": "arXiv",
+          "date": "2026-07-31",
+          "url": "https://arxiv.org/abs/2607.29677"
         },
         {
-          "title": "WIDE boosts adaptive LLM inference via token-level dynamic width pruning",
-          "summary": "Token-level dynamic width pruning allocates compute per token to reduce accuracy loss under aggressive sparsity versus static structured pruning.",
+          "title": "DungeonBench: rules-rich tactical reasoning in D&D combat",
+          "summary": "A benchmark where geometry, timing, resources and rule interactions all matter, turning decisions into measurable outcomes to stress-test models beyond typical game benchmarks.",
           "source": "arXiv",
-          "date": "2026-07-30",
-          "url": "https://arxiv.org/abs/2607.28418"
+          "date": "2026-07-31",
+          "url": "https://arxiv.org/abs/2607.29577"
         },
         {
-          "title": "ReToken adds a retrieval token to improve vision-language models on visual retrieval",
-          "summary": "A single learnable embedding as an explicit retrieval token lets VLMs handle long visual context with many distractors while staying within GPU memory.",
+          "title": "AMTFV: agentic mathematical tool-flow verification for LLM self-correction",
+          "summary": "Verifies candidate answers via tool-flow rather than natural-language reflection only, improving answer verification and self-correction over reflection-only baselines.",
           "source": "arXiv",
-          "date": "2026-07-30",
-          "url": "https://arxiv.org/abs/2607.28627"
+          "date": "2026-07-31",
+          "url": "https://arxiv.org/abs/2607.29549"
         }
       ]
     },
@@ -81,60 +88,40 @@
       "title": "Tools & Startups",
       "items": [
         {
-          "title": "CleanSlate — open-source coding agent for IDE, CLI and SDK",
-          "summary": "An open-source AI coding agent that works across the IDE, command line and SDK, positioning itself as a cleaner alternative to Claude Code left-behinds.",
+          "title": "mlxsh — serve multiple local LLMs on Apple Silicon",
+          "summary": "A lightweight CLI that serves several local LLMs on Apple hardware via the MLX stack.",
           "source": "Hacker News",
-          "date": "2026-08-02",
-          "url": "https://news.ycombinator.com/item?id=49140772",
-          "image": "images/section_tools-startups_2026-08-02.jpg"
+          "date": "2026-08-03",
+          "url": "https://news.ycombinator.com/item?id=49149682",
+          "image": "images/section_tools-startups_2026-08-03.jpg"
         },
         {
-          "title": "Cockpit for Claude Code agents — a Rust-based control panel",
-          "summary": "A Rust-built cockpit dashboard giving users visibility and control over their Claude Code agents in one place.",
+          "title": "OpenTalking — privately deployable real-time AI avatar",
+          "summary": "A self-hostable real-time avatar for on-premises talking-face and avatar apps without cloud dependencies.",
           "source": "Hacker News",
-          "date": "2026-08-01",
-          "url": "https://news.ycombinator.com/item?id=49137410"
+          "date": "2026-08-03",
+          "url": "https://news.ycombinator.com/item?id=49150333"
         },
         {
-          "title": "Pronto — a real-time wire for AI agents with 70k+ feeds connected",
-          "summary": "A real-time data feed/wire service for AI agents, claiming 70,000+ connected sources for live agent inputs.",
+          "title": "gnt — a company brain AI agents check before acting",
+          "summary": "An open-source system giving agents a shared company-wide knowledge base to consult before acting.",
           "source": "Hacker News",
-          "date": "2026-08-01",
-          "url": "https://news.ycombinator.com/item?id=49139058"
+          "date": "2026-08-03",
+          "url": "https://news.ycombinator.com/item?id=49150247"
         },
         {
-          "title": "CostPerPrompt — live AI API pricing and real-workload cost calculators",
-          "summary": "Tracks live per-prompt pricing across AI APIs and offers real-workload cost calculators to compare model expenses.",
+          "title": "Zizq — fast single-binary job queue",
+          "summary": "A lightweight, single-binary job queue designed to drop into any stack with minimal setup.",
           "source": "Hacker News",
-          "date": "2026-08-02",
-          "url": "https://news.ycombinator.com/item?id=49140340"
+          "date": "2026-08-03",
+          "url": "https://news.ycombinator.com/item?id=49150896"
         },
         {
-          "title": "Evidence-to-Skill — a gate between untrusted sources and agent skills",
-          "summary": "A gate mechanism that filters untrusted external sources before they can influence or become agent skills, adding a safety layer to agent tooling.",
+          "title": "AI Visibility — check if ChatGPT, Claude or Gemini recommend your brand",
+          "summary": "A web tool that checks whether major AI assistants recommend your brand in their responses, for marketers and founders tracking AI referral visibility.",
           "source": "Hacker News",
-          "date": "2026-08-01",
-          "url": "https://news.ycombinator.com/item?id=49138808"
-        }
-      ]
-    },
-    {
-      "title": "Italia AI Spotlight",
-      "items": [
-        {
-          "title": "Bending Spoons one month after IPO: shares down 13%, new M&A in sight",
-          "summary": "The Milan-based software house has lost over 13% from its $40 peak since its July 1 Nasdaq debut, and announced €500M in new medium-long term financing from HSBC, Intesa Sanpaolo and BPER backed by SACE, bringing funding lines to €1.49B as it pursues further acquisitions.",
-          "source": "StartupItalia",
-          "date": "2026-08-01",
-          "url": "https://startupitalia.eu/economy/bending-spoons-1-mese-ipo-perso-13per100/",
-          "image": "images/section_italia-ai-spotlight_2026-08-02.jpg"
-        },
-        {
-          "title": "Metriks AI subscribes first tranche of capital increase in BeBeez publisher EdiBeez",
-          "summary": "The B2B AI company listed on Euronext Growth Milan paid the first €75,000 tranche of a €150,000 capital increase in EdiBeez, taking a roughly 3.5% minority stake.",
-          "source": "StartupItalia",
-          "date": "2026-08-01",
-          "url": "https://startupitalia.eu/economy/metriks-ai-ha-sottoscritto-la-prima-tranche-dellaumento-di-capitale-di-edibeez-editore-di-bebeez/"
+          "date": "2026-08-03",
+          "url": "https://news.ycombinator.com/item?id=49150752"
         }
       ]
     }
@@ -144,187 +131,88 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-02",
+      "date": "2026-08-03",
       "items": [
-        {
-          "name": "microsoft/AI-For-Beginners",
-          "url": "https://github.com/microsoft/AI-For-Beginners",
-          "meta": "Jupyter Notebook · 57,651 ★"
-        },
-        {
-          "name": "paperswithbacktest/awesome-systematic-trading",
-          "url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
-          "meta": "Python · 12,342 ★"
-        },
-        {
-          "name": "usekaneo/kaneo",
-          "url": "https://github.com/usekaneo/kaneo",
-          "meta": "TypeScript · 5,761 ★"
-        },
-        {
-          "name": "zhaoxuya520/reverse-skill",
-          "url": "https://github.com/zhaoxuya520/reverse-skill",
-          "meta": "PowerShell · 12,065 ★"
-        },
-        {
-          "name": "microsoft/generative-ai-for-beginners",
-          "url": "https://github.com/microsoft/generative-ai-for-beginners",
-          "meta": "Jupyter Notebook · 114,320 ★"
-        },
-        {
-          "name": "github/copilot-sdk",
-          "url": "https://github.com/github/copilot-sdk",
-          "meta": "Java · 10,299 ★"
-        },
-        {
-          "name": "github/gh-stack",
-          "url": "https://github.com/github/gh-stack",
-          "meta": "Go · 851 ★"
-        },
-        {
-          "name": "huggingface/speech-to-speech",
-          "url": "https://github.com/huggingface/speech-to-speech",
-          "meta": "Python · 10,268 ★"
-        },
-        {
-          "name": "abus-aikorea/voice-pro",
-          "url": "https://github.com/abus-aikorea/voice-pro",
-          "meta": "Python · 11,832 ★"
-        },
-        {
-          "name": "iv-org/invidious",
-          "url": "https://github.com/iv-org/invidious",
-          "meta": "Crystal · 21,663 ★"
-        },
-        {
-          "name": "ansible/ansible",
-          "url": "https://github.com/ansible/ansible",
-          "meta": "Python · 70,132 ★"
-        },
-        {
-          "name": "microsoft/TRELLIS.2",
-          "url": "https://github.com/microsoft/TRELLIS.2",
-          "meta": "Python · 9,981 ★"
-        },
-        {
-          "name": "TencentCloud/TencentDB-Agent-Memory",
-          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-          "meta": "TypeScript · 10,387 ★"
-        },
-        {
-          "name": "NomaDamas/k-skill",
-          "url": "https://github.com/NomaDamas/k-skill",
-          "meta": "JavaScript · 6,773 ★"
-        },
-        {
-          "name": "bytedance/deer-flow",
-          "url": "https://github.com/bytedance/deer-flow",
-          "meta": "Python · 78,795 ★"
-        }
+        {"name": "microsoft/AI-For-Beginners", "url": "https://github.com/microsoft/AI-For-Beginners", "meta": "Jupyter Notebook · 59,548 ★"},
+        {"name": "usekaneo/kaneo", "url": "https://github.com/usekaneo/kaneo", "meta": "TypeScript · 6,316 ★"},
+        {"name": "lyogavin/airllm", "url": "https://github.com/lyogavin/airllm", "meta": "Jupyter Notebook · 25,885 ★"},
+        {"name": "iv-org/invidious", "url": "https://github.com/iv-org/invidious", "meta": "Crystal · 22,049 ★"},
+        {"name": "codecrafters-io/build-your-own-x", "url": "https://github.com/codecrafters-io/build-your-own-x", "meta": "Markdown · 535,109 ★"},
+        {"name": "zhaoxuya520/reverse-skill", "url": "https://github.com/zhaoxuya520/reverse-skill", "meta": "PowerShell · 14,073 ★"},
+        {"name": "different-ai/openwork", "url": "https://github.com/different-ai/openwork", "meta": "TypeScript · 20,454 ★"},
+        {"name": "microsoft/generative-ai-for-beginners", "url": "https://github.com/microsoft/generative-ai-for-beginners", "meta": "Jupyter Notebook · 114,962 ★"},
+        {"name": "Panniantong/Agent-Reach", "url": "https://github.com/Panniantong/Agent-Reach", "meta": "Python · 64,952 ★"},
+        {"name": "TencentCloud/TencentDB-Agent-Memory", "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory", "meta": "TypeScript · 11,328 ★"},
+        {"name": "mvanhorn/last30days-skill", "url": "https://github.com/mvanhorn/last30days-skill", "meta": "Python · 56,965 ★"},
+        {"name": "NomaDamas/k-skill", "url": "https://github.com/NomaDamas/k-skill", "meta": "JavaScript · 6,926 ★"},
+        {"name": "HarbourMasters/Lighthouse", "url": "https://github.com/HarbourMasters/Lighthouse", "meta": "C · 248 ★"},
+        {"name": "antirez/ds4", "url": "https://github.com/antirez/ds4", "meta": "C · 20,086 ★"},
+        {"name": "esengine/DeepSeek-Reasonix", "url": "https://github.com/esengine/DeepSeek-Reasonix", "meta": "Go · 29,280 ★"}
       ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-02",
+      "date": "2026-08-03",
       "items": [
-        {
-          "name": "moonshotai/Kimi-K3",
-          "url": "https://huggingface.co/moonshotai/Kimi-K3",
-          "meta": "moonshotai/Kimi-K3 · Image-Text-to-Text · 2.8T · Updated 6 days ago · 560k · 9.51k"
-        },
-        {
-          "name": "deepseek-ai/DeepSeek-V4-Flash-0731",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-          "meta": "deepseek-ai/DeepSeek-V4-Flash-0731 · Text Generation · 304B · Updated 1 day ago · 15.4k · 1.47k"
-        },
-        {
-          "name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-          "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-          "meta": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF · Image-Text-to-Text · 27B · Updated 2 days ago"
-        },
-        {
-          "name": "baidu/Unlimited-OCR",
-          "url": "https://huggingface.co/baidu/Unlimited-OCR",
-          "meta": "baidu/Unlimited-OCR · Image-Text-to-Text · 3B · Updated 4 days ago · 2.46M · 3.72k"
-        },
-        {
-          "name": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
-          "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
-          "meta": "unsloth/DeepSeek-V4-Flash-0731-GGUF · 284B · Updated about 23 hours ago · 4.05k · 297"
-        },
-        {
-          "name": "owensong/Inflect-Micro-v2",
-          "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
-          "meta": "owensong/Inflect-Micro-v2 · Text-to-Speech · Updated 2 days ago · 1.57k · 365"
-        },
-        {
-          "name": "zai-org/GLM-5.2",
-          "url": "https://huggingface.co/zai-org/GLM-5.2",
-          "meta": "zai-org/GLM-5.2 · Text Generation · 753B · Updated about 1 month ago · 1.68M · 4.74k"
-        },
-        {
-          "name": "unsloth/Kimi-K3-GGUF",
-          "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
-          "meta": "unsloth/Kimi-K3-GGUF · Image-Text-to-Text · 2.8T · Updated 3 days ago · 41.3k · 243"
-        },
-        {
-          "name": "Kwaipilot/KAT-Coder-V2.5-Dev",
-          "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
-          "meta": "Kwaipilot/KAT-Coder-V2.5-Dev · Text Generation · 35B · Updated 5 days ago · 10.8k · 391"
-        },
-        {
-          "name": "thinkingmachines/Inkling-Small",
-          "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
-          "meta": "thinkingmachines/Inkling-Small · Image-Text-to-Text · 266B · Updated 2 days ago · 4k · 213"
-        }
+        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "moonshotai/Kimi-K3 · Image-Text-to-Text · 2.8T · Updated 7 days ago · 837k · 9.69k"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "deepseek-ai/DeepSeek-V4-Flash-0731 · Text Generation · 304B · Updated 2 days ago · 156k · 1.82k"},
+        {"name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "meta": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF · Image-Text-to-Text · 27B · Updated 3 days ago"},
+        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "MiniMaxAI/MiniMax-H3 · Image-Text-to-Video · 33B · Updated 23 minutes ago · 470"},
+        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "baidu/Unlimited-OCR · Image-Text-to-Text · 3B · Updated 5 days ago · 2.54M · 3.8k"},
+        {"name": "unsloth/DeepSeek-V4-Flash-0731-GGUF", "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF", "meta": "unsloth/DeepSeek-V4-Flash-0731-GGUF · 284B · Updated 2 days ago · 48.7k · 360"},
+        {"name": "unsloth/Kimi-K3-GGUF", "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF", "meta": "unsloth/Kimi-K3-GGUF · Image-Text-to-Text · 2.8T · Updated 4 days ago · 88.5k · 265"},
+        {"name": "thinkingmachines/Inkling-Small", "url": "https://huggingface.co/thinkingmachines/Inkling-Small", "meta": "thinkingmachines/Inkling-Small · Image-Text-to-Text · 266B · Updated 3 days ago · 6.84k · 246"},
+        {"name": "zai-org/GLM-5.2", "url": "https://huggingface.co/zai-org/GLM-5.2", "meta": "zai-org/GLM-5.2 · Text Generation · 753B · Updated Jul 2 · 2.05M · 4.77k"},
+        {"name": "Kwaipilot/KAT-Coder-V2.5-Dev", "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev", "meta": "Kwaipilot/KAT-Coder-V2.5-Dev · Text Generation · 35B · Updated 6 days ago · 13.2k · 416"}
       ]
     }
   },
   "quick_hits": [
     {
-      "title": "smol.ai: every repository gets its own agent",
-      "source": "swyx",
-      "url": "https://x.com/swyx/status/2083695562004771063"
+      "title": "NVIDIA Research: why simply copying human demonstrations isn't enough for AI",
+      "source": "YouTube — Two Minute Papers",
+      "url": "https://www.youtube.com/watch?v=8B05cy3UuSE"
     },
     {
-      "title": "Agent 'metaharness' bake-off: Flue vs Eve vs Omnigent",
-      "source": "swyx",
-      "url": "https://x.com/swyx/status/2083664187969196152"
-    },
-    {
-      "title": "Google was 'too nervous' to release its pre-ChatGPT chatbot, ex-team member recalls",
-      "source": "swyx",
-      "url": "https://x.com/swyx/status/2083610493793845429"
-    },
-    {
-      "title": "Simon Willison recalls OpenAI's internal debate before launching ChatGPT",
-      "source": "Simon Willison",
-      "url": "https://x.com/simonw/status/2083683950686511425"
-    },
-    {
-      "title": "swyx argues AI teams abandoned /loop and /goal agent patterns too early",
-      "source": "swyx",
-      "url": "https://x.com/swyx/status/2083439562437673053"
-    },
-    {
-      "title": "Voris — privacy-first analytics for the AI-influenced web",
+      "title": "Sixwhyo — a six-year-old agent reviewing your code",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49138012"
+      "url": "https://news.ycombinator.com/item?id=49149626"
     },
     {
-      "title": "PhaseProbe — find simulation transitions and turn them into tests",
+      "title": "swsql — a PostgreSQL client for the terminal, written in Swift",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49139505"
+      "url": "https://news.ycombinator.com/item?id=49150987"
     },
     {
-      "title": "Symbio — a self fine-tuning AI loop",
+      "title": "An AI-powered widget for collecting user feedback",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49139461"
+      "url": "https://news.ycombinator.com/item?id=49151121"
+    },
+    {
+      "title": "Willison: prompting models to use credible sources visibly improves reasoning",
+      "source": "simonw (X)",
+      "url": "https://x.com/simonw/status/2083928958077440299"
+    },
+    {
+      "title": "MoPET: parameter-efficient mixture-of-experts for medical image classification",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29462"
+    },
+    {
+      "title": "TokTier: exact stateful tokenization for agentic LLM serving",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29678"
+    },
+    {
+      "title": "LEMUR: multi-objective RL from preference feedback",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29559"
     }
   ],
   "spiked": {
-    "already ran": 9
+    "already ran": 3,
+    "low signal": 1
   }
 }
