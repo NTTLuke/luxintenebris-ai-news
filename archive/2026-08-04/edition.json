@@ -1,0 +1,254 @@
+{
+  "issue_no": 40,
+  "date_iso": "2026-08-04",
+  "date_human": "August 04, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Voice goes full-duplex",
+    "title": "OpenAI ships GPT-Live full-duplex voice for ChatGPT, rebuilt in six months",
+    "summary": "OpenAI rolled out true full-duplex voice to ChatGPT Voice, letting the assistant listen and speak at the same time via a turnless speech model with a dedicated audio fast path and async reasoning. The overhaul cuts voice-session startup from six network round-trips to one, and the team detailed how they shipped it in just six months.",
+    "source": "OpenAI",
+    "date": "2026-08-03",
+    "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live/",
+    "image": "images/lead_2026-08-04.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Horizon3 hits $2B valuation with $250M Series E as AI threats escalate",
+      "summary": "The AI-powered continuous security validation startup closed a $250M Series E at a $2B valuation, riding rising demand as AI-driven cyber threats grow.",
+      "source": "TechCrunch",
+      "date": "2026-08-03",
+      "url": "https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-series-e-as-ai-threats-escalate/"
+    },
+    {
+      "title": "Alibaba's Qwen3.8-Max flagship coding model hits general availability",
+      "summary": "Qwen3.8-Max reached GA targeting long-horizon autonomous work and coding, with a 1,000,000-token context window (131K max output) priced at $2/$6 per million input/output tokens on OpenRouter.",
+      "source": "OpenRouter",
+      "date": "2026-08-04",
+      "url": "https://openrouter.ai/qwen/qwen3.8-max"
+    },
+    {
+      "title": "Benioff-backed June raises $20M pre-seed to solve AI deployment",
+      "summary": "A Marc Benioff-backed startup backed by Michael Dell, Aaron Levie and George Kurtz raised $20M pre-seed to help enterprises deploy AI across legacy systems.",
+      "source": "TechCrunch",
+      "date": "2026-08-03",
+      "url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "WorldExam: a benchmark for world models from appearance to reactivity",
+          "summary": "A hierarchical diagnostic benchmark spanning visual quality, control adherence, spatial consistency and world reactivity across 1,474 cases and eight tasks, unifying evaluation of camera-, action- and language-driven world-model paradigms.",
+          "source": "HuggingFace",
+          "date": "2026-08-03",
+          "url": "https://arxiv.org/abs/2608.02603",
+          "image": "images/section_research_2026-08-04.jpg"
+        },
+        {
+          "title": "Structured memory for edge LMs: O(1) SSM state injection kills KV-cache growth",
+          "summary": "State-space models can eliminate both Transformer KV-cache growth and RAG prefill cost by injecting corpus state in O(1), enabling persistent context for edge deployment.",
+          "source": "arXiv",
+          "date": "2026-08-03",
+          "url": "https://arxiv.org/abs/2608.02560"
+        },
+        {
+          "title": "Self-improving LLMs via progressive experience evolution",
+          "summary": "A mechanism that turns transient interaction experience into persistent model capabilities, addressing fragmentation across test-time and self-improvement methods.",
+          "source": "arXiv",
+          "date": "2026-08-03",
+          "url": "https://arxiv.org/abs/2608.02139"
+        },
+        {
+          "title": "Cooperative coevolution for memory-efficient agentic LLM post-training",
+          "summary": "An evolution-strategies approach that does full-parameter post-training of tool-using agents without backpropagation, matching gradient-based performance at lower memory cost.",
+          "source": "arXiv",
+          "date": "2026-08-03",
+          "url": "https://arxiv.org/abs/2608.02391"
+        },
+        {
+          "title": "LEAP: critic-free code RL for GPU kernel generation",
+          "summary": "An adaptive environment-feedback pruning method built on GRPO that bypasses critic-network memory overhead for reinforcement-learning-driven GPU kernel generation.",
+          "source": "arXiv",
+          "date": "2026-08-03",
+          "url": "https://arxiv.org/abs/2608.01804"
+        }
+      ]
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "MiniMax-H3 open weights top the Video Arena: multimodal input, 2K/24fps output",
+          "summary": "MiniMax released open weights for MiniMax-H3 (Hailuo 3.0), now the #1 open model in the Video Arena. It takes text, image, video and audio in one context and generates 5-15s clips at native 2K and 24fps with stereo audio, with day-0 local inference in SGLang Diffusion and vLLM-Omni.",
+          "source": "@MiniMax_AI",
+          "date": "2026-08-04",
+          "url": "https://x.com/i/status/2084110114022396018",
+          "image": "images/section_open-source_2026-08-04.jpg"
+        },
+        {
+          "title": "Nous Research ships Hermes Agent v0.20.0 'The Herald Release'",
+          "summary": "A major open-source agent framework update with a full changelog, demo video and easy `hermes update` path, drawing strong community engagement.",
+          "source": "@NousResearch",
+          "date": "2026-08-04",
+          "url": "https://x.com/NousResearch/status/2084325600643445095"
+        },
+        {
+          "title": "New paper extends RLVR to RLSVR for open-ended self-improvement",
+          "summary": "A proposal to turn task transformation into self-verifiable reward signals, pushing reinforcement learning toward more open-ended, self-improving LLM training.",
+          "source": "@_akhaliq",
+          "date": "2026-08-04",
+          "url": "https://x.com/_akhaliq/status/2084310082762719418"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "Reimagine Robotics exits stealth with robots that 'learn on the job'",
+          "summary": "The embodied AI startup unveiled a robotics approach focused on systems that learn on the job rather than relying on pre-programmed task libraries.",
+          "source": "The Robot Report",
+          "date": "2026-08-03",
+          "url": "https://www.therobotreport.com/reimagine-robotics-emerges-stealth-with-robotslearn-on-the-job/",
+          "image": "images/section_hardware_2026-08-04.jpg"
+        },
+        {
+          "title": "ASUS UGen300: a $300 USB AI accelerator with 40 TOPS Hailo-10H",
+          "summary": "ASUS launched the UGen300, a $299.99 USB AI accelerator built on the Hailo-10H chip (40 TOPS, 8GB LPDDR4) for on-device inference on laptops and edge systems.",
+          "source": "CNX Software",
+          "date": "2026-08-03",
+          "url": "https://www.cnx-software.com/2026/08/03/299-99-asus-ugen300-usb-ai-accelerator-hailo-10h-8gb-lpddr4/"
+        },
+        {
+          "title": "HEBI Robotics wins NASA SBIR grant for miniaturized actuators",
+          "summary": "A NASA SBIR Phase I award will accelerate HEBI's miniaturized actuator work, exploring packaging and high-performance motion for space and robotics through December 2026.",
+          "source": "The Robot Report",
+          "date": "2026-08-03",
+          "url": "https://www.therobotreport.com/hebi-robotics-earns-nasa-sbir-grant-fast-track-miniaturized-actuators/"
+        },
+        {
+          "title": "igus launches energy chain with 600° rotation for industrial robots",
+          "summary": "The twisterchain energy chain delivers cable management with over 600° of rotation for palletizing and small industrial-robot applications on Axis 1.",
+          "source": "The Robot Report",
+          "date": "2026-08-03",
+          "url": "https://www.therobotreport.com/igus-launches-energy-chain-600-degree-rotation-industrial-robots/"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Velokey: one Task API for Kling, Veo, Seedance and Sora",
+          "summary": "A single API gateway unifying access to leading AI video models, letting developers switch models without rewriting integrations.",
+          "source": "Hacker News",
+          "date": "2026-08-04",
+          "url": "https://news.ycombinator.com/item?id=49163659",
+          "image": "images/section_tools_2026-08-04.jpg"
+        },
+        {
+          "title": "mpai turns Codex and Claude Code sessions into multiplayer",
+          "summary": "An open-source terminal tool that turns existing Codex and Claude Code sessions into live multiplayer sessions with shared context over Tailscale.",
+          "source": "GitHub",
+          "date": "2026-08-03",
+          "url": "https://github.com/godfaddaai/multiplayer-ai"
+        },
+        {
+          "title": "Inventory: search every AI agent and IDE conversation locally",
+          "summary": "A private, on-device index that searches across Cursor, Claude Code, Zed, Codex and Kiro conversations in one timeline, with no signup required.",
+          "source": "Product Hunt",
+          "date": "2026-08-04",
+          "url": "https://www.producthunt.com/products/inventory"
+        },
+        {
+          "title": "Peek-CLI lets front-end agents see the browser",
+          "summary": "A command-line tool giving front-end coding agents live visibility into rendered browser output while they work.",
+          "source": "Hacker News",
+          "date": "2026-08-03",
+          "url": "https://news.ycombinator.com/item?id=49161590"
+        }
+      ]
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "Aflabox raises €1.35M seed for AI-powered food safety detection",
+          "summary": "The Italian agritech startup closed a €1.35M seed led by CDP Venture Capital for portable AI-based aflatoxin detection, with expansion planned in Kenya, Nigeria and Italy.",
+          "source": "Forbes Italia",
+          "date": "2026-08-03",
+          "url": "https://forbes.it/2026/08/03/questa-startup-agritech-ha-raccolto-135-milioni-di-euro-per-controllare-qualita-e-sicurezza-dei-cereali-con-lia",
+          "image": "images/section_italia_2026-08-04.jpg"
+        },
+        {
+          "title": "DigithON 2026 picks 100 startup finalists from a record ~500 applications",
+          "summary": "Italy's largest digital startup marathon selected 100 finalists from a record ~500 applications to pitch before investors, corporates and institutions.",
+          "source": "Padova News",
+          "date": "2026-08-03",
+          "url": "https://www.padovanews.it/2026/08/03/digithon-2026-ecco-100-startup-finaliste-tra-quasi-500-candidature/"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-08-04",
+      "items": [
+        {"name": "lyogavin/airllm", "url": "https://github.com/lyogavin/airllm", "meta": "Jupyter Notebook · 27.4k ★ · +1,085 today"},
+        {"name": "zhaoxuya520/reverse-skill", "url": "https://github.com/zhaoxuya520/reverse-skill", "meta": "PowerShell · 16.2k ★ · +2,446 today"},
+        {"name": "firecrawl/pdf-inspector", "url": "https://github.com/firecrawl/pdf-inspector", "meta": "Rust · 8.6k ★ · +1,699 today"},
+        {"name": "esengine/DeepSeek-Reasonix", "url": "https://github.com/esengine/DeepSeek-Reasonix", "meta": "Go · 30.1k ★ · +883 today"},
+        {"name": "TencentCloud/TencentDB-Agent-Memory", "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory", "meta": "TypeScript · 12.4k ★ · +1,090 today"},
+        {"name": "microsoft/AI-For-Beginners", "url": "https://github.com/microsoft/AI-For-Beginners", "meta": "Jupyter Notebook · 61.0k ★ · +1,902 today"},
+        {"name": "microsoft/generative-ai-for-beginners", "url": "https://github.com/microsoft/generative-ai-for-beginners", "meta": "Jupyter Notebook · 115.7k ★ · +775 today"},
+        {"name": "donnemartin/system-design-primer", "url": "https://github.com/donnemartin/system-design-primer", "meta": "Python · 360.7k ★ · +237 today"},
+        {"name": "antirez/ds4", "url": "https://github.com/antirez/ds4", "meta": "C · 20.4k ★ · +384 today"},
+        {"name": "shiyu-coder/Kronos", "url": "https://github.com/shiyu-coder/Kronos", "meta": "Python · 35.9k ★ · +200 today"},
+        {"name": "Panniantong/Agent-Reach", "url": "https://github.com/Panniantong/Agent-Reach", "meta": "Python · 65.9k ★ · +1,057 today"},
+        {"name": "Alishahryar1/free-claude-code", "url": "https://github.com/Alishahryar1/free-claude-code", "meta": "Python · 44.1k ★ · +278 today"},
+        {"name": "iv-org/invidious", "url": "https://github.com/iv-org/invidious", "meta": "Crystal · 22.3k ★ · +402 today"},
+        {"name": "livekit/agents", "url": "https://github.com/livekit/agents", "meta": "Python · 12.1k ★ · +148 today"},
+        {"name": "usekaneo/kaneo", "url": "https://github.com/usekaneo/kaneo", "meta": "TypeScript · 6.9k ★ · +665 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-08-04",
+      "items": [
+        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "image-text-to-text multimodal LLM"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "text-generation LLM"},
+        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "open-weight text/image/video/audio generation"},
+        {"name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "meta": "Qwen 3.6 finetune, GGUF"},
+        {"name": "Comfy-Org/MiniMax-H3", "url": "https://huggingface.co/Comfy-Org/MiniMax-H3", "meta": "ComfyUI port of MiniMax-H3"},
+        {"name": "unsloth/DeepSeek-V4-Flash-0731-GGUF", "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF", "meta": "GGUF quant of DeepSeek-V4-Flash"},
+        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "image-text-to-text OCR model"},
+        {"name": "thinkingmachines/Inkling-Small", "url": "https://huggingface.co/thinkingmachines/Inkling-Small", "meta": "small multimodal model"},
+        {"name": "unsloth/Kimi-K3-GGUF", "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF", "meta": "GGUF quant of Kimi-K3"},
+        {"name": "zai-org/GLM-5.2", "url": "https://huggingface.co/zai-org/GLM-5.2", "meta": "text-generation LLM"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {"title": "Design Arena creators raise $7.9M to bring taste to AI models", "source": "TechCrunch", "date": "2026-08-03", "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/"},
+    {"title": "GPU prices keep surging as RTX 50 and RX 90 cards stay scarce", "source": "Tom's Hardware", "date": "2026-08-03", "url": "https://www.tomshardware.com/pc-components/gpus/gpu-prices-for-current-gen-nvidia-and-amd-price-increases-why-have-the-prices-not-dropped-and-can-you-still-buy-a-cheap-gpu"},
+    {"title": "Reference: local semantic code search that saves agent tokens", "source": "Hacker News", "date": "2026-08-04", "url": "https://news.ycombinator.com/item?id=49164316"},
+    {"title": "Paloma: intelligent autocomplete for Mac", "source": "Hacker News", "date": "2026-08-04", "url": "https://news.ycombinator.com/item?id=49164259"},
+    {"title": "Benzi: AI coding assistant grounded in a live code map", "source": "Hacker News", "date": "2026-08-04", "url": "https://news.ycombinator.com/item?id=49164100"},
+    {"title": "Manhwa AI: create webtoons with consistent AI characters", "source": "Hacker News", "date": "2026-08-04", "url": "https://news.ycombinator.com/item?id=49163839"},
+    {"title": "Circles powers telco personalization with OpenAI technology", "source": "OpenAI", "date": "2026-08-03", "url": "https://openai.com/index/circles"},
+    {"title": "LeCun frames inference-time optimization as core to EBM and Objective-Driven AI", "source": "Yann LeCun", "date": "2026-08-03", "url": "https://x.com/ylecun/status/2084182167836410264"}
+  ],
+  "spiked": {
+    "already ran": 2,
+    "same story": 2,
+    "duplicate url": 1
+  }
+}

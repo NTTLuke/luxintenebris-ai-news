@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · August 04, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 40 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>August 04, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>55 stories <span class="mk-note">(<span class="mk-beta">Beta</span> : <a href="making-of.html" class="mk-link" title="Replay how this issue assembled itself">See how this issue made itself</a>)</span></span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DS4 Flash Abliterated!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Wayfair Promotes Up to 80% Off Furniture Deals in August" data-b="Online furniture retailer Wayfair is highlighting a range of savings this August, according to WIRED. Shoppers can use promo codes and coupons for discounts of up to 80% off on items such as furniture, with the site also running 24-hour flash sales and daily Deals of the Day. First-time customers can receive 10% off their initial order by signing up for email or text alerts, and Wayfair will send personalized promo codes directly to subscribers. Orders over $35 qualify for free shipping, with many items eligible for two-day delivery.
+
+The Boston-based company, which marks 20 years since its founding, currently lists around 14 million items from more than 11,000 global suppliers, spanning pillows, mattresses, bedding, couches, office chairs, and even furniture for cats. Additional savings come from closeout deals on discontinued and overstocked items, reaching up to 70% off. Wayfair also touts a Verified stamp, earned by only 1% of its items after inspection by its own product specialists using a 10-point quality system. The mobile app offers up to 20% off, while a separate professional program for businesses provides up to 15% exclusive discounts, with an extra 10% on specialty brands.
+
+*Even for a furniture deal roundup, the 80% headline figure is more hook than everyday reality, so it&#x27;s worth comparing against the fine print before clicking.*
+
+— Written by AI (deepseek-v4-flash)" data-s="wired.com" data-u="https://www.wired.com/story/wayfair-promo-code/"><span class="tih">Wayfair Promotes Up to 80% Off Furniture Deals in August</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Bartesian Coupons Offer Up to 35% Off the Keurig of Cocktails" data-b="Bartesian, a capsule-style cocktail machine often compared to a Keurig but for drinks, is currently the subject of discount codes worth up to 35% off, according to WIRED. The device works by filling glass bottles with liquor, adding water to a reservoir, inserting a cocktail capsule, and selecting a drink strength before pressing &quot;mix.&quot;
+
+Standard capsule packs cost $20 to $25 for eight pods, but WIRED notes that a cocktail subscription always costs $20 and can unlock savings through tiered discounts based on volume and frequency, potentially reaching 35% off regular prices. The piece also flags bundle deals that pair the machine with glassware and variety packs for roughly the price of the standalone device, with one bundle costing less than the Pro model while including eight margarita capsules and two glasses.
+
+Bartesian&#x27;s free loyalty program awards points on purchases, with 1,000 points redeemable for a $10 discount and tiers that grow with spending. A friend-referral scheme gives the referred buyer $25 off and grants the referrer 2,500 points. WIRED is candid that an automatic cocktail maker is hardly a necessity, describing the drinks as fun, sweet, and strong rather than sophisticated—more of a party trick than a serious home bar.
+
+*An honest take on a gadget that is less about mixology and more about the simple pleasure of a summer party trick.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/bartesian-discount-code/"><span class="tih">Bartesian Coupons Offer Up to 35% Off the Keurig of Cocktails</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uplift Desk Deals: Coupon Code Knocks $570 Off Standing Desks" data-b="Uplift&#x27;s line of customizable standing desks is currently running a promotional sale, according to WIRED. The retailer is offering savings of up to $575 on a standing desk through its &quot;Sunny Setup Sale,&quot; which pairs a discount code with a bundle of free accessories.
+
+The company describes the desks as highly customizable, with a wide catalog of over 400 add-on options ranging from practical items like cable management kits and organizers to more playful extras such as a desk-mounted cup holder and an under-desk hammock. Buyers can claim up to five free accessories with a desk purchase.
+
+A promo code adds further discounts depending on order size: $300 off purchases of $2,000 or more, with smaller savings for lower spending tiers. Signing up for Uplift&#x27;s email newsletter unlocks $20 off orders over $199, along with early sale access and exclusive deals. Free shipping is currently available on all orders, with same-business-day shipping for most orders placed before 3 pm CST.
+
+WIRED also notes that the desks may be eligible for HSA or FSA reimbursement through a partner health-survey program, potentially letting shoppers use pre-tax dollars. Gift cards are sold in increments from $50 to $5,000 and remain valid for five years. Business buyers can access office furniture, free 3D space planning, and white-glove delivery with installation.
+
+*It is worth remembering that a heavy discount is often a nudge toward spending more than you planned, so a desk is best bought because it suits how you work, not because the coupon is tempting.*
+
+— Written by AI (deepseek-v4-flash)" data-s="wired.com" data-u="https://www.wired.com/story/uplift-desk-coupon-code/"><span class="tih">Uplift Desk Deals: Coupon Code Knocks $570 Off Standing Desks</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="WIRED Highlights Litter-Robot Discounts Across Its Newest Models" data-b="A writer for the WIRED reviews team has called the automatic litter box from Litter-Robot the best product she has tested on the job, and encourages cat owners to consider an automatic box if they can afford one. According to WIRED, Litter-Robot is considered the original automatic litter box brand and also makes an automatic pet feeder. Since the devices are an investment, the outlet has compiled current promo codes, coupons, and deals.
+
+The piece notes that buying in a bundle can save shoppers $75 without needing a promo code, with discounts available on Litter-Robot 4 models as well as the newly released Litter-Robot 5 and EVO models. The Litter-Robot 5 Pro Insights Bundle, which includes a built-in camera plus a tracking mat and drawer liners, is listed at $999, roughly $152 off. The simpler, compact EVO Starter Bundle is listed at $782, about $50 off. WIRED also mentions that choosing autoship saves 35% on cat essentials such as litter, drawer liners, odor traps, and filters. The writer adds that a 90-day in-home trial, one-year warranty, and free shipping to the lower 48 states accompany purchases.
+
+*Practical pet tech deals like these are genuinely useful for owners, though the savings are tied to specific bundles and models rather than being universal.*
+
+— Written by AI (deepseek-v4-flash)" data-s="wired.com" data-u="https://www.wired.com/story/litter-robot-promo-code/"><span class="tih">WIRED Highlights Litter-Robot Discounts Across Its Newest Models</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Palantir CEO Alex Karp Warns AI Industry Has &#x27;Marxist&#x27; Overtones After Record Quarter" data-b="Palantir CEO Alex Karp has again argued that frontier AI labs are too untrustworthy for enterprise clients, according to a TechCrunch report. In the company&#x27;s quarterly shareholder letter, Karp — who holds a PhD in social theory — suggested the AI industry resembles the kind of capitalist dynamics that historically gave rise to Marxist socialism.
+
+Karp wrote that many builders of large language models intend, knowingly or not, to &quot;capture the means of production&quot; of their partners. He warned companies may be &quot;paying for the right&quot; for AI firms to migrate their intellectual property, know-how, and expertise into proprietary models, effectively colonizing their businesses.
+
+Notably, the criticism comes despite a stellar quarter. Palantir reported $1.9 billion in second-quarter revenue, up 93% year over year, and $1.1 billion in profit — more profit in a single quarter than total revenue in the same period a year earlier. The company sells model-agnostic AI and data-analysis software that lets organizations retain control over their own data and prompts.
+
+On an analyst call, Karp leaned on a &quot;tech bro patriot&quot; tone, asking whether firms should &quot;buy into a future&quot; where a small elite claims the country&#x27;s means of production. The report notes his underlying argument echoes points made by figures like Microsoft CEO Satya Nadella, pointing to companies that paid for or partnered with Anthropic and OpenAI.
+
+*Whatever the rhetoric, the soaring AI market appears large enough to accommodate both the labs and their critics.*
+
+— Written by AI (deepseek-v4-flash)" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/"><span class="tih">Palantir CEO Alex Karp Warns AI Industry Has &#x27;Marxist&#x27; Overtones After Record Quarter</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Wayfair Promotes Up to 80% Off Furniture Deals in August" data-b="Online furniture retailer Wayfair is highlighting a range of savings this August, according to WIRED. Shoppers can use promo codes and coupons for discounts of up to 80% off on items such as furniture, with the site also running 24-hour flash sales and daily Deals of the Day. First-time customers can receive 10% off their initial order by signing up for email or text alerts, and Wayfair will send personalized promo codes directly to subscribers. Orders over $35 qualify for free shipping, with many items eligible for two-day delivery.
+
+The Boston-based company, which marks 20 years since its founding, currently lists around 14 million items from more than 11,000 global suppliers, spanning pillows, mattresses, bedding, couches, office chairs, and even furniture for cats. Additional savings come from closeout deals on discontinued and overstocked items, reaching up to 70% off. Wayfair also touts a Verified stamp, earned by only 1% of its items after inspection by its own product specialists using a 10-point quality system. The mobile app offers up to 20% off, while a separate professional program for businesses provides up to 15% exclusive discounts, with an extra 10% on specialty brands.
+
+*Even for a furniture deal roundup, the 80% headline figure is more hook than everyday reality, so it&#x27;s worth comparing against the fine print before clicking.*
+
+— Written by AI (deepseek-v4-flash)" data-s="wired.com" data-u="https://www.wired.com/story/wayfair-promo-code/"><span class="tih">Wayfair Promotes Up to 80% Off Furniture Deals in August</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Bartesian Coupons Offer Up to 35% Off the Keurig of Cocktails" data-b="Bartesian, a capsule-style cocktail machine often compared to a Keurig but for drinks, is currently the subject of discount codes worth up to 35% off, according to WIRED. The device works by filling glass bottles with liquor, adding water to a reservoir, inserting a cocktail capsule, and selecting a drink strength before pressing &quot;mix.&quot;
+
+Standard capsule packs cost $20 to $25 for eight pods, but WIRED notes that a cocktail subscription always costs $20 and can unlock savings through tiered discounts based on volume and frequency, potentially reaching 35% off regular prices. The piece also flags bundle deals that pair the machine with glassware and variety packs for roughly the price of the standalone device, with one bundle costing less than the Pro model while including eight margarita capsules and two glasses.
+
+Bartesian&#x27;s free loyalty program awards points on purchases, with 1,000 points redeemable for a $10 discount and tiers that grow with spending. A friend-referral scheme gives the referred buyer $25 off and grants the referrer 2,500 points. WIRED is candid that an automatic cocktail maker is hardly a necessity, describing the drinks as fun, sweet, and strong rather than sophisticated—more of a party trick than a serious home bar.
+
+*An honest take on a gadget that is less about mixology and more about the simple pleasure of a summer party trick.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/bartesian-discount-code/"><span class="tih">Bartesian Coupons Offer Up to 35% Off the Keurig of Cocktails</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Uplift Desk Deals: Coupon Code Knocks $570 Off Standing Desks" data-b="Uplift&#x27;s line of customizable standing desks is currently running a promotional sale, according to WIRED. The retailer is offering savings of up to $575 on a standing desk through its &quot;Sunny Setup Sale,&quot; which pairs a discount code with a bundle of free accessories.
+
+The company describes the desks as highly customizable, with a wide catalog of over 400 add-on options ranging from practical items like cable management kits and organizers to more playful extras such as a desk-mounted cup holder and an under-desk hammock. Buyers can claim up to five free accessories with a desk purchase.
+
+A promo code adds further discounts depending on order size: $300 off purchases of $2,000 or more, with smaller savings for lower spending tiers. Signing up for Uplift&#x27;s email newsletter unlocks $20 off orders over $199, along with early sale access and exclusive deals. Free shipping is currently available on all orders, with same-business-day shipping for most orders placed before 3 pm CST.
+
+WIRED also notes that the desks may be eligible for HSA or FSA reimbursement through a partner health-survey program, potentially letting shoppers use pre-tax dollars. Gift cards are sold in increments from $50 to $5,000 and remain valid for five years. Business buyers can access office furniture, free 3D space planning, and white-glove delivery with installation.
+
+*It is worth remembering that a heavy discount is often a nudge toward spending more than you planned, so a desk is best bought because it suits how you work, not because the coupon is tempting.*
+
+— Written by AI (deepseek-v4-flash)" data-s="wired.com" data-u="https://www.wired.com/story/uplift-desk-coupon-code/"><span class="tih">Uplift Desk Deals: Coupon Code Knocks $570 Off Standing Desks</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="WIRED Highlights Litter-Robot Discounts Across Its Newest Models" data-b="A writer for the WIRED reviews team has called the automatic litter box from Litter-Robot the best product she has tested on the job, and encourages cat owners to consider an automatic box if they can afford one. According to WIRED, Litter-Robot is considered the original automatic litter box brand and also makes an automatic pet feeder. Since the devices are an investment, the outlet has compiled current promo codes, coupons, and deals.
+
+The piece notes that buying in a bundle can save shoppers $75 without needing a promo code, with discounts available on Litter-Robot 4 models as well as the newly released Litter-Robot 5 and EVO models. The Litter-Robot 5 Pro Insights Bundle, which includes a built-in camera plus a tracking mat and drawer liners, is listed at $999, roughly $152 off. The simpler, compact EVO Starter Bundle is listed at $782, about $50 off. WIRED also mentions that choosing autoship saves 35% on cat essentials such as litter, drawer liners, odor traps, and filters. The writer adds that a 90-day in-home trial, one-year warranty, and free shipping to the lower 48 states accompany purchases.
+
+*Practical pet tech deals like these are genuinely useful for owners, though the savings are tied to specific bundles and models rather than being universal.*
+
+— Written by AI (deepseek-v4-flash)" data-s="wired.com" data-u="https://www.wired.com/story/litter-robot-promo-code/"><span class="tih">WIRED Highlights Litter-Robot Discounts Across Its Newest Models</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Palantir CEO Alex Karp Warns AI Industry Has &#x27;Marxist&#x27; Overtones After Record Quarter" data-b="Palantir CEO Alex Karp has again argued that frontier AI labs are too untrustworthy for enterprise clients, according to a TechCrunch report. In the company&#x27;s quarterly shareholder letter, Karp — who holds a PhD in social theory — suggested the AI industry resembles the kind of capitalist dynamics that historically gave rise to Marxist socialism.
+
+Karp wrote that many builders of large language models intend, knowingly or not, to &quot;capture the means of production&quot; of their partners. He warned companies may be &quot;paying for the right&quot; for AI firms to migrate their intellectual property, know-how, and expertise into proprietary models, effectively colonizing their businesses.
+
+Notably, the criticism comes despite a stellar quarter. Palantir reported $1.9 billion in second-quarter revenue, up 93% year over year, and $1.1 billion in profit — more profit in a single quarter than total revenue in the same period a year earlier. The company sells model-agnostic AI and data-analysis software that lets organizations retain control over their own data and prompts.
+
+On an analyst call, Karp leaned on a &quot;tech bro patriot&quot; tone, asking whether firms should &quot;buy into a future&quot; where a small elite claims the country&#x27;s means of production. The report notes his underlying argument echoes points made by figures like Microsoft CEO Satya Nadella, pointing to companies that paid for or partnered with Anthropic and OpenAI.
+
+*Whatever the rhetoric, the soaring AI market appears large enough to accommodate both the labs and their critics.*
+
+— Written by AI (deepseek-v4-flash)" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/"><span class="tih">Palantir CEO Alex Karp Warns AI Industry Has &#x27;Marxist&#x27; Overtones After Record Quarter</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://openai.com/index/continuous-voice-interaction-with-gpt-live/" target="_blank" rel="noopener">
+    <img src="images/lead_2026-08-04.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Voice goes full-duplex</p>
+        <h1>OpenAI ships GPT-Live full-duplex voice for ChatGPT, rebuilt in six months</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">OpenAI rolled out true full-duplex voice to ChatGPT Voice, letting the assistant listen and speak at the same time via a turnless speech model with a dedicated audio fast path and async reasoning. The overhaul cuts voice-session startup from six network round-trips to one, and the team detailed how they shipped it in just six months.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-08-03</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:01</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-08-04.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-series-e-as-ai-threats-escalate/" target="_blank" rel="noopener">
+    <h3>Horizon3 hits $2B valuation with $250M Series E as AI threats escalate</h3>
+    <p>The AI-powered continuous security validation startup closed a $250M Series E at a $2B valuation, riding rising demand as AI-driven cyber threats grow.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://openrouter.ai/qwen/qwen3.8-max" target="_blank" rel="noopener">
+    <h3>Alibaba's Qwen3.8-Max flagship coding model hits general availability</h3>
+    <p>Qwen3.8-Max reached GA targeting long-horizon autonomous work and coding, with a 1,000,000-token context window (131K max output) priced at $2/$6 per million input/output tokens on OpenRouter.</p>
+    <p class="byline"><span class="src">OpenRouter</span> · 2026-08-04</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/" target="_blank" rel="noopener">
+    <h3>Benioff-backed June raises $20M pre-seed to solve AI deployment</h3>
+    <p>A Marc Benioff-backed startup backed by Michael Dell, Aaron Levie and George Kurtz raised $20M pre-seed to help enterprises deploy AI across legacy systems.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-08-03</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://arxiv.org/abs/2608.02603" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research_2026-08-04.jpg" alt="" class="section-hero-img"><h4 class="hero-title">WorldExam: a benchmark for world models from appearance to reactivity</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.02603" target="_blank" rel="noopener">
+    <h4>WorldExam: a benchmark for world models from appearance to reactivity</h4>
+    <p>A hierarchical diagnostic benchmark spanning visual quality, control adherence, spatial consistency and world reactivity across 1,474 cases and eight tasks, unifying evaluation of camera-, action- and language-driven world-model paradigms.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.02560" target="_blank" rel="noopener">
+    <h4>Structured memory for edge LMs: O(1) SSM state injection kills KV-cache growth</h4>
+    <p>State-space models can eliminate both Transformer KV-cache growth and RAG prefill cost by injecting corpus state in O(1), enabling persistent context for edge deployment.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.02139" target="_blank" rel="noopener">
+    <h4>Self-improving LLMs via progressive experience evolution</h4>
+    <p>A mechanism that turns transient interaction experience into persistent model capabilities, addressing fragmentation across test-time and self-improvement methods.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.02391" target="_blank" rel="noopener">
+    <h4>Cooperative coevolution for memory-efficient agentic LLM post-training</h4>
+    <p>An evolution-strategies approach that does full-parameter post-training of tool-using agents without backpropagation, matching gradient-based performance at lower memory cost.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.01804" target="_blank" rel="noopener">
+    <h4>LEAP: critic-free code RL for GPU kernel generation</h4>
+    <p>An adaptive environment-feedback pruning method built on GRPO that bypasses critic-network memory overhead for reinforcement-learning-driven GPU kernel generation.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <a href="https://x.com/i/status/2084110114022396018" target="_blank" rel="noopener" class="section-hero"><img src="images/section_open-source_2026-08-04.jpg" alt="" class="section-hero-img"><h4 class="hero-title">MiniMax-H3 open weights top the Video Arena: multimodal input, 2K/24fps output</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/i/status/2084110114022396018" target="_blank" rel="noopener">
+    <h4>MiniMax-H3 open weights top the Video Arena: multimodal input, 2K/24fps output</h4>
+    <p>MiniMax released open weights for MiniMax-H3 (Hailuo 3.0), now the #1 open model in the Video Arena. It takes text, image, video and audio in one context and generates 5-15s clips at native 2K and 24fps with stereo audio, with day-0 local inference in SGLang Diffusion and vLLM-Omni.</p>
+    <p class="byline"><span class="src">@MiniMax_AI</span> · 2026-08-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/NousResearch/status/2084325600643445095" target="_blank" rel="noopener">
+    <h4>Nous Research ships Hermes Agent v0.20.0 'The Herald Release'</h4>
+    <p>A major open-source agent framework update with a full changelog, demo video and easy `hermes update` path, drawing strong community engagement.</p>
+    <p class="byline"><span class="src">@NousResearch</span> · 2026-08-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/_akhaliq/status/2084310082762719418" target="_blank" rel="noopener">
+    <h4>New paper extends RLVR to RLSVR for open-ended self-improvement</h4>
+    <p>A proposal to turn task transformation into self-verifiable reward signals, pushing reinforcement learning toward more open-ended, self-improving LLM training.</p>
+    <p class="byline"><span class="src">@_akhaliq</span> · 2026-08-04</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <a href="https://www.therobotreport.com/reimagine-robotics-emerges-stealth-with-robotslearn-on-the-job/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_hardware_2026-08-04.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Reimagine Robotics exits stealth with robots that 'learn on the job'</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.therobotreport.com/reimagine-robotics-emerges-stealth-with-robotslearn-on-the-job/" target="_blank" rel="noopener">
+    <h4>Reimagine Robotics exits stealth with robots that 'learn on the job'</h4>
+    <p>The embodied AI startup unveiled a robotics approach focused on systems that learn on the job rather than relying on pre-programmed task libraries.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.cnx-software.com/2026/08/03/299-99-asus-ugen300-usb-ai-accelerator-hailo-10h-8gb-lpddr4/" target="_blank" rel="noopener">
+    <h4>ASUS UGen300: a $300 USB AI accelerator with 40 TOPS Hailo-10H</h4>
+    <p>ASUS launched the UGen300, a $299.99 USB AI accelerator built on the Hailo-10H chip (40 TOPS, 8GB LPDDR4) for on-device inference on laptops and edge systems.</p>
+    <p class="byline"><span class="src">CNX Software</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/hebi-robotics-earns-nasa-sbir-grant-fast-track-miniaturized-actuators/" target="_blank" rel="noopener">
+    <h4>HEBI Robotics wins NASA SBIR grant for miniaturized actuators</h4>
+    <p>A NASA SBIR Phase I award will accelerate HEBI's miniaturized actuator work, exploring packaging and high-performance motion for space and robotics through December 2026.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/igus-launches-energy-chain-600-degree-rotation-industrial-robots/" target="_blank" rel="noopener">
+    <h4>igus launches energy chain with 600° rotation for industrial robots</h4>
+    <p>The twisterchain energy chain delivers cable management with over 600° of rotation for palletizing and small industrial-robot applications on Axis 1.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-08-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <a href="https://news.ycombinator.com/item?id=49163659" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools_2026-08-04.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Velokey: one Task API for Kling, Veo, Seedance and Sora</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49163659" target="_blank" rel="noopener">
+    <h4>Velokey: one Task API for Kling, Veo, Seedance and Sora</h4>
+    <p>A single API gateway unifying access to leading AI video models, letting developers switch models without rewriting integrations.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/godfaddaai/multiplayer-ai" target="_blank" rel="noopener">
+    <h4>mpai turns Codex and Claude Code sessions into multiplayer</h4>
+    <p>An open-source terminal tool that turns existing Codex and Claude Code sessions into live multiplayer sessions with shared context over Tailscale.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/inventory" target="_blank" rel="noopener">
+    <h4>Inventory: search every AI agent and IDE conversation locally</h4>
+    <p>A private, on-device index that searches across Cursor, Claude Code, Zed, Codex and Kiro conversations in one timeline, with no signup required.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49161590" target="_blank" rel="noopener">
+    <h4>Peek-CLI lets front-end agents see the browser</h4>
+    <p>A command-line tool giving front-end coding agents live visibility into rendered browser output while they work.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <a href="https://forbes.it/2026/08/03/questa-startup-agritech-ha-raccolto-135-milioni-di-euro-per-controllare-qualita-e-sicurezza-dei-cereali-con-lia" target="_blank" rel="noopener" class="section-hero"><img src="images/section_italia_2026-08-04.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Aflabox raises €1.35M seed for AI-powered food safety detection</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://forbes.it/2026/08/03/questa-startup-agritech-ha-raccolto-135-milioni-di-euro-per-controllare-qualita-e-sicurezza-dei-cereali-con-lia" target="_blank" rel="noopener">
+    <h4>Aflabox raises €1.35M seed for AI-powered food safety detection</h4>
+    <p>The Italian agritech startup closed a €1.35M seed led by CDP Venture Capital for portable AI-based aflatoxin detection, with expansion planned in Kenya, Nigeria and Italy.</p>
+    <p class="byline"><span class="src">Forbes Italia</span> · 2026-08-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.padovanews.it/2026/08/03/digithon-2026-ecco-100-startup-finaliste-tra-quasi-500-candidature/" target="_blank" rel="noopener">
+    <h4>DigithON 2026 picks 100 startup finalists from a record ~500 applications</h4>
+    <p>Italy's largest digital startup marathon selected 100 finalists from a record ~500 applications to pitch before investors, corporates and institutions.</p>
+    <p class="byline"><span class="src">Padova News</span> · 2026-08-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/lyogavin/airllm" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">lyogavin/airllm</span>
+    <span class="t-meta">Jupyter Notebook · 27.4k ★ · +1,085 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/zhaoxuya520/reverse-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">zhaoxuya520/reverse-skill</span>
+    <span class="t-meta">PowerShell · 16.2k ★ · +2,446 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/firecrawl/pdf-inspector" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">firecrawl/pdf-inspector</span>
+    <span class="t-meta">Rust · 8.6k ★ · +1,699 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">esengine/DeepSeek-Reasonix</span>
+    <span class="t-meta">Go · 30.1k ★ · +883 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">TencentCloud/TencentDB-Agent-Memory</span>
+    <span class="t-meta">TypeScript · 12.4k ★ · +1,090 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/microsoft/AI-For-Beginners" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">microsoft/AI-For-Beginners</span>
+    <span class="t-meta">Jupyter Notebook · 61.0k ★ · +1,902 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/microsoft/generative-ai-for-beginners" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">microsoft/generative-ai-for-beginners</span>
+    <span class="t-meta">Jupyter Notebook · 115.7k ★ · +775 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">donnemartin/system-design-primer</span>
+    <span class="t-meta">Python · 360.7k ★ · +237 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/antirez/ds4" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">antirez/ds4</span>
+    <span class="t-meta">C · 20.4k ★ · +384 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/shiyu-coder/Kronos" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">shiyu-coder/Kronos</span>
+    <span class="t-meta">Python · 35.9k ★ · +200 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Panniantong/Agent-Reach" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Panniantong/Agent-Reach</span>
+    <span class="t-meta">Python · 65.9k ★ · +1,057 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Alishahryar1/free-claude-code" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Alishahryar1/free-claude-code</span>
+    <span class="t-meta">Python · 44.1k ★ · +278 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/iv-org/invidious" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">iv-org/invidious</span>
+    <span class="t-meta">Crystal · 22.3k ★ · +402 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/livekit/agents" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">livekit/agents</span>
+    <span class="t-meta">Python · 12.1k ★ · +148 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/usekaneo/kaneo" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">usekaneo/kaneo</span>
+    <span class="t-meta">TypeScript · 6.9k ★ · +665 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3</span>
+    <span class="t-meta">image-text-to-text multimodal LLM</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4-Flash-0731</span>
+    <span class="t-meta">text-generation LLM</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">MiniMaxAI/MiniMax-H3</span>
+    <span class="t-meta">open-weight text/image/video/audio generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF</span>
+    <span class="t-meta">Qwen 3.6 finetune, GGUF</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Comfy-Org/MiniMax-H3" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Comfy-Org/MiniMax-H3</span>
+    <span class="t-meta">ComfyUI port of MiniMax-H3</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">unsloth/DeepSeek-V4-Flash-0731-GGUF</span>
+    <span class="t-meta">GGUF quant of DeepSeek-V4-Flash</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">baidu/Unlimited-OCR</span>
+    <span class="t-meta">image-text-to-text OCR model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/thinkingmachines/Inkling-Small" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">thinkingmachines/Inkling-Small</span>
+    <span class="t-meta">small multimodal model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Kimi-K3-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">unsloth/Kimi-K3-GGUF</span>
+    <span class="t-meta">GGUF quant of Kimi-K3</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">zai-org/GLM-5.2</span>
+    <span class="t-meta">text-generation LLM</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">08</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/" target="_blank" rel="noopener"><span class="qh-title">Design Arena creators raise $7.9M to bring taste to AI models</span><span class="qh-src">TechCrunch</span></a></li>
+
+    <li><a href="https://www.tomshardware.com/pc-components/gpus/gpu-prices-for-current-gen-nvidia-and-amd-price-increases-why-have-the-prices-not-dropped-and-can-you-still-buy-a-cheap-gpu" target="_blank" rel="noopener"><span class="qh-title">GPU prices keep surging as RTX 50 and RX 90 cards stay scarce</span><span class="qh-src">Tom's Hardware</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49164316" target="_blank" rel="noopener"><span class="qh-title">Reference: local semantic code search that saves agent tokens</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49164259" target="_blank" rel="noopener"><span class="qh-title">Paloma: intelligent autocomplete for Mac</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49164100" target="_blank" rel="noopener"><span class="qh-title">Benzi: AI coding assistant grounded in a live code map</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49163839" target="_blank" rel="noopener"><span class="qh-title">Manhwa AI: create webtoons with consistent AI characters</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://openai.com/index/circles" target="_blank" rel="noopener"><span class="qh-title">Circles powers telco personalization with OpenAI technology</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://x.com/ylecun/status/2084182167836410264" target="_blank" rel="noopener"><span class="qh-title">LeCun frames inference-time optimization as core to EBM and Objective-Driven AI</span><span class="qh-src">Yann LeCun</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-08-04 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
