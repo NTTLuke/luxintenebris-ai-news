@@ -1,0 +1,283 @@
+{
+  "issue_no": 44,
+  "date_iso": "2026-08-08",
+  "date_human": "August 08, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Critical cyber threshold",
+    "title": "OpenAI designates Astra as first critical model under Preparedness Framework",
+    "summary": "OpenAI announced that its upcoming Astra model reached the critical cybersecurity threshold in evaluations, meaning it could independently identify and carry out cyberattacks against real-world systems. Development has been slowed to implement additional security measures before broad release, with Sam Altman emphasizing the need to equip defenders broadly rather than restricting access to a chosen few.",
+    "source": "OpenAI",
+    "date": "2026-08-07",
+    "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+    "image": "images/lead_2026-08-08.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "SpaceX goes exclusive with Nvidia, putting Rubin GPUs in orbit",
+      "summary": "SpaceX announced Starmind AI1, the first satellite in a planned orbital AI constellation carrying Nvidia Rubin GPUs and Vera CPUs. Elon Musk also outlined plans for Terafab, a $20-25 billion chip fab to address AI component scarcity and 10GW of AI capacity by late 2027.",
+      "source": "Forbes",
+      "date": "2026-08-07",
+      "url": "https://www.forbes.com/sites/jonmarkman/2026/08/07/spacex-goes-exclusive-with-nvidia-putting-rubin-gpus-in-orbit/"
+    },
+    {
+      "title": "Simon Willison details 'The Hugging Face Incident' from Black Hat",
+      "summary": "Simon Willison published a timeline of OpenAI's Black Hat presentation on the Hugging Face security incident, revealing OpenAI discovered their credential was used in the attack only when Hugging Face revoked it — a significant embarrassment for the lab's security posture.",
+      "source": "simonw",
+      "date": "2026-08-07",
+      "url": "https://x.com/simonw/status/2085877951925801274"
+    },
+    {
+      "title": "xAI launches Imagine Image 2.0, topping text-to-image and image edit leaderboards",
+      "summary": "xAI launched Imagine Image 2.0, a precise image generation and editing tool built for real creative work, now available on Grok. It achieves top scores on Arena Text-to-Image and Image Edit leaderboards.",
+      "source": "xAI",
+      "date": "2026-08-07",
+      "url": "https://x.ai/news/grok-imagine-image-2"
+    },
+    {
+      "title": "Rippling launches AI Spend Console for enterprise token cost management",
+      "summary": "Rippling launched AI Spend Console to help companies track and control AI token expenditure with dashboards, model routing, and per-employee ROI analysis, after its own AI spend grew 80% month-over-month.",
+      "source": "TechCrunch",
+      "date": "2026-08-07",
+      "url": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Learning when to trust via selective context preference optimization",
+          "summary": "SCOPE trains models to selectively trust external context via preference optimization, achieving robust accuracy improvements on context-dependent QA benchmarks without ignoring useful signals.",
+          "source": "arXiv",
+          "date": "2026-08-06",
+          "url": "https://arxiv.org/abs/2608.06377",
+          "image": "images/section_research_2026-08-08.jpg"
+        },
+        {
+          "title": "AgentOPSD: recursive self-distillation for agentic reinforcement learning",
+          "summary": "Addresses credit assignment in long-horizon multi-turn agentic tasks via recursive self-distillation of privileged trajectory-level advantage estimates, outperforming GRPO on agentic benchmarks.",
+          "source": "arXiv",
+          "date": "2026-08-06",
+          "url": "https://arxiv.org/abs/2608.05987"
+        },
+        {
+          "title": "GROM: gradient-free rapid one-shot machine unlearning for LLMs",
+          "summary": "One-shot machine unlearning method for LLMs that operates without gradient computation, enabling rapid removal of specific knowledge at a fraction of the computational cost of fine-tuning approaches.",
+          "source": "arXiv",
+          "date": "2026-08-06",
+          "url": "https://arxiv.org/abs/2608.05783"
+        },
+        {
+          "title": "EcoAgent-Bench: evaluating economic decision-making in budget-constrained LLM agents",
+          "summary": "Benchmark where agents must choose between resources of varying cost — local lookup, search, composite tools, model upgrades — testing economic reasoning under realistic budget constraints.",
+          "source": "arXiv",
+          "date": "2026-08-06",
+          "url": "https://arxiv.org/abs/2608.05519"
+        },
+        {
+          "title": "APQF: agentic profiling-guided structured pruning and mixed-precision quantization",
+          "summary": "Automated compression framework combining structured pruning and mixed-precision quantization guided by agentic profiling, removing manual expert choices across diverse architectures.",
+          "source": "arXiv",
+          "date": "2026-08-06",
+          "url": "https://arxiv.org/abs/2608.05499"
+        }
+      ]
+    },
+    {
+      "title": "YouTube & Video",
+      "items": [
+        {
+          "title": "China unveils 10 trillion parameter AI model",
+          "summary": "Beyond AI News reports that China has shocked the AI community with a 10 trillion parameter AI model — dwarfing prior state-of-the-art architectures and signaling a major escalation in the AI arms race.",
+          "source": "YouTube — Beyond AI News",
+          "date": "2026-08-08",
+          "url": "https://www.youtube.com/watch?v=MEw7TrAUEPQ",
+          "image": "images/section_youtube_2026-08-08.jpg"
+        },
+        {
+          "title": "DeepMind unveils breakthrough in computer vision — a new way for AI to perceive",
+          "summary": "Two Minute Papers covers a new DeepMind research result that fundamentally changes how AI models process and understand visual information, representing a significant advancement in machine perception.",
+          "source": "YouTube — Two Minute Papers",
+          "date": "2026-08-07",
+          "url": "https://www.youtube.com/watch?v=vO6SWG-jxvE"
+        },
+        {
+          "title": "ChatGPT expands free tier, new low-cost models launch, Google releases new AI app",
+          "summary": "AI Tool Report covers ChatGPT becoming more accessible with an expanded free tier, the release of new cheaper AI models, and a new Google AI app hitting the market.",
+          "source": "YouTube — AI Tool Report",
+          "date": "2026-08-07",
+          "url": "https://www.youtube.com/watch?v=xRMwrGqQ9QQ"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "NVIDIA AI storage goes open at FMS 2026, open-sourcing KV cache infrastructure",
+          "summary": "NVIDIA open-sourced its AI storage stack at the Future Memory and Storage conference, releasing open APIs and forming the Storage-Next coalition. The move targets the KV cache bottleneck in AI inference, reshaping datacenter storage competition around GPU infrastructure.",
+          "source": "Futurum Group",
+          "date": "2026-08-07",
+          "url": "https://futurumgroup.com/insights/nvidia-ai-storage-goes-open-at-fms-2026-is-open-source-the-new-moat/",
+          "image": "images/section_hardware_2026-08-08.jpg"
+        },
+        {
+          "title": "Avatar Robotics raises $6.5M seed to address industrial labor constraints",
+          "summary": "MIT-spun out Avatar Robotics raised $6.5 million to scale humanoid robots and remote teleoperation across industrial supply chains, targeting manufacturing and logistics labor shortages.",
+          "source": "The Robot Report",
+          "date": "2026-08-07",
+          "url": "https://www.therobotreport.com/avatar-robotics-raises-6-5-m-seed-round-address-industrial-labor-constraints/"
+        },
+        {
+          "title": "Virginia requires AI data center firms to pay for electrical infrastructure after 76% price hikes",
+          "summary": "Virginia regulators now require AI data center operators to fully fund dedicated upstream electrical infrastructure after residential electricity prices surged 76%, driven by AI datacenter demand. The governor says the move will save civilians hundreds of millions of dollars.",
+          "source": "Tom's Hardware",
+          "date": "2026-08-06",
+          "url": "https://www.tomshardware.com/tech-industry/data-centers/after-severe-76-percent-electricity-price-hikes-due-to-ai-data-centers-virginia-requires-firms-to-pay-for-all-dedicated-upstream-electrical-infrastructure-state-regulators-crack-down-governor-says-move-will-save-civilians-hundreds-of-millions-of-dollars"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Agent_acid brings ACID-style rollbacks to AI agents for safer real-world actions",
+          "summary": "Open-source Python library adding ACID-style rollback and session-aware guardrails to AI agents that take real-world actions like charging cards or writing to databases, preventing partial task execution from causing damage.",
+          "source": "GitHub",
+          "date": "2026-08-08",
+          "url": "https://github.com/muhammadwaqasai/agent_acid",
+          "image": "images/section_tools_2026-08-08.jpg"
+        },
+        {
+          "title": "Agent Tunnels lets coding agents collaborate across organizational boundaries",
+          "summary": "Lets agents from different companies work together securely with isolated repo access and human-in-the-loop oversight, addressing a growing pain point in multi-vendor agent deployments.",
+          "source": "Agent Tunnels",
+          "date": "2026-08-07",
+          "url": "https://agenttunnels.com/"
+        },
+        {
+          "title": "Salestrics CRM workspace now available as an MCP server for AI agents",
+          "summary": "A hosted Model Context Protocol server integrated with a full CRM workspace, enabling AI agents running in Cursor, Claude, and other tools to query pipeline data and execute revenue workflows.",
+          "source": "Salestrics",
+          "date": "2026-08-08",
+          "url": "https://www.salestrics.com/"
+        },
+        {
+          "title": "Buddy is an iOS browser with an embedded AI agent for multi-step web tasks",
+          "summary": "An iOS browser with an embedded AI agent that performs flight search, form filling, and price comparison using text or voice, with real-time agent visualization and user take-control capability.",
+          "source": "Buddy",
+          "date": "2026-08-08",
+          "url": "https://apps.apple.com/us/app/buddy-the-ai-mobile-browser/id6788047483"
+        },
+        {
+          "title": "Aveiro launches AI-native publishing platform with MCP integration for agents",
+          "summary": "AI-native publishing platform that lets creators build and manage branded websites, email newsletters, and social posts from a single workspace, with MCP integration allowing AI agents to draft and publish content.",
+          "source": "Aveiro",
+          "date": "2026-08-07",
+          "url": "https://www.aveiro.app/"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-08-08",
+      "items": [
+        {"name": "PrimeIntellect-ai/prime-agent", "url": "https://github.com/PrimeIntellect-ai/prime-agent", "meta": "TypeScript · 6,960 ★ · +2,293 today"},
+        {"name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "meta": "JavaScript · 84,023 ★ · +1,131 today"},
+        {"name": "cloudflare/computer", "url": "https://github.com/cloudflare/computer", "meta": "TypeScript · 5,947 ★ · +872 today"},
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 209,067 ★ · +2,152 today"},
+        {"name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "meta": "Shell · 268,851 ★ · +782 today"},
+        {"name": "goauthentik/authentik", "url": "https://github.com/goauthentik/authentik", "meta": "Python · 23,679 ★ · +530 today"},
+        {"name": "semantica-agi/semantica", "url": "https://github.com/semantica-agi/semantica", "meta": "Python · 2,402 ★ · +122 today"},
+        {"name": "666ghj/MiroFish", "url": "https://github.com/666ghj/MiroFish", "meta": "Python · 70,596 ★ · +141 today"},
+        {"name": "chenyme/grok2api", "url": "https://github.com/chenyme/grok2api", "meta": "Go · 7,162 ★ · +55 today"},
+        {"name": "jdx/mise", "url": "https://github.com/jdx/mise", "meta": "Rust · 32,102 ★ · +135 today"},
+        {"name": "Significant-Gravitas/AutoGPT", "url": "https://github.com/Significant-Gravitas/AutoGPT", "meta": "Python · 186,368 ★ · +355 today"},
+        {"name": "google/guava", "url": "https://github.com/google/guava", "meta": "Java · 51,777 ★ · +152 today"},
+        {"name": "unclebob/swarm-forge", "url": "https://github.com/unclebob/swarm-forge", "meta": "Clojure · 1,876 ★ · +81 today"},
+        {"name": "denoland/celld", "url": "https://github.com/denoland/celld", "meta": "Rust · 2,275 ★ · +516 today"},
+        {"name": "K2SOsint/Legendary_OSINT", "url": "https://github.com/K2SOsint/Legendary_OSINT", "meta": "Unknown · 1,526 ★ · +109 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-08-08",
+      "items": [
+        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "Image-Text-to-Video, 33B — trending video generation model"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "Text Generation, 304B MoE — cost-performance frontier"},
+        {"name": "Comfy-Org/MiniMax-H3", "url": "https://huggingface.co/Comfy-Org/MiniMax-H3", "meta": "ComfyUI integration, 3.14M downloads"},
+        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "Image-Text-to-Text, 2.8T — Moonshot AI multimodal"},
+        {"name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "meta": "Qwen3.6 community finetune (GGUF)"},
+        {"name": "larryvrh/MiniMax-H3-Turbo-Lora", "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora", "meta": "LoRA adapter for MiniMax-H3 Turbo"},
+        {"name": "LiquidAI/LFM2.5-2.6B", "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B", "meta": "Liquid Foundation Model 2.5, 3B — non-transformer SLM"},
+        {"name": "unsloth/DeepSeek-V4-Flash-0731-GGUF", "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF", "meta": "284B GGUF quantized — Unsloth optimized"},
+        {"name": "deepgrove/maple-preview", "url": "https://huggingface.co/deepgrove/maple-preview", "meta": "Text Generation, 20B — new preview from DeepGrove"},
+        {"name": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "meta": "Nvidia voice chat model (Nemotron Labs)"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "DeepSeek-V4 Flash-0731 delivers 80% of GPT-5.6 Luna performance at 1/6 the inference cost",
+      "source": "@togethercompute",
+      "url": "https://x.com/togethercompute/status/2085570328135118977"
+    },
+    {
+      "title": "Tencent Hunyuan open-sources HPC-Ops kernels — Attention, Router GEMM, MoE merged into SGLang",
+      "source": "LMSYS Org",
+      "url": "https://x.com/lmsysorg/status/2085775235765449135"
+    },
+    {
+      "title": "Hugging Face showcases AI agents reproducing ICML 2026 papers autonomously",
+      "source": "huggingface",
+      "url": "https://x.com/huggingface/status/2085758063471120848"
+    },
+    {
+      "title": "GPT-5.6 Sol Ultra spotted in practical coding and agent workflows",
+      "source": "simonw",
+      "url": "https://x.com/simonw/status/2085810289099133180"
+    },
+    {
+      "title": "Enterprise AI token spending under scrutiny as costs mount across organizations",
+      "source": "simonw",
+      "url": "https://x.com/simonw/status/2085763908871319748"
+    },
+    {
+      "title": "BaKron: efficient LLM quantization with Kronecker-factored Hessians",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06291"
+    },
+    {
+      "title": "LC-GRPO: bridging train-inference gap for flow-based GRPO with Langevin correction",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05600"
+    },
+    {
+      "title": "HarnessOpt-Bench: evaluating LLMs at harness optimization as a distinct capability",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06301"
+    },
+    {
+      "title": "Hardware keystores for AI agent signing workflows: a zero-trust MCP enforcement architecture",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06130"
+    },
+    {
+      "title": "ContextMaster: interactive multi-shot video creation via fixed-budget sparse context routing",
+      "source": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.04956"
+    }
+  ],
+  "spiked": {
+    "low signal": 6,
+    "out of window": 8,
+    "already ran": 4
+  }
+}

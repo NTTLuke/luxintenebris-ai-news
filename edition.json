@@ -1,181 +1,126 @@
 {
-  "issue_no": 44,
-  "date_iso": "2026-08-08",
-  "date_human": "August 08, 2026",
+  "issue_no": 45,
+  "date_iso": "2026-08-09",
+  "date_human": "August 09, 2026",
   "notice": null,
   "lead": {
-    "kicker": "Critical cyber threshold",
-    "title": "OpenAI designates Astra as first critical model under Preparedness Framework",
-    "summary": "OpenAI announced that its upcoming Astra model reached the critical cybersecurity threshold in evaluations, meaning it could independently identify and carry out cyberattacks against real-world systems. Development has been slowed to implement additional security measures before broad release, with Sam Altman emphasizing the need to equip defenders broadly rather than restricting access to a chosen few.",
-    "source": "OpenAI",
-    "date": "2026-08-07",
-    "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
-    "image": "images/lead_2026-08-08.jpg"
+    "kicker": "Founding Exodus",
+    "title": "Jeff Dean leaves Google after 27 years to found DiscoLoopAI",
+    "summary": "Jeff Dean, along with Sanjay Ghemawat, Quoc Le, and Oriol Vinyals, departed Google to launch Discovery Loop (DiscoLoopAI), a startup focused on automating scientific discovery. Backed by Radical Ventures, Khosla Ventures, and Alphabet/Google itself.",
+    "source": "yoopya",
+    "date": "2026-08-08",
+    "url": "https://x.com/yoopya/status/2086046818689835164",
+    "image": "images/lead_2026-08-09.jpg"
   },
   "top_stories": [
     {
-      "title": "SpaceX goes exclusive with Nvidia, putting Rubin GPUs in orbit",
-      "summary": "SpaceX announced Starmind AI1, the first satellite in a planned orbital AI constellation carrying Nvidia Rubin GPUs and Vera CPUs. Elon Musk also outlined plans for Terafab, a $20-25 billion chip fab to address AI component scarcity and 10GW of AI capacity by late 2027.",
-      "source": "Forbes",
-      "date": "2026-08-07",
-      "url": "https://www.forbes.com/sites/jonmarkman/2026/08/07/spacex-goes-exclusive-with-nvidia-putting-rubin-gpus-in-orbit/"
+      "title": "Prime Agent — open-source self-improving coding agent released under MIT license",
+      "summary": "Prime Intellect released Prime Agent, a fully open-source MIT-licensed coding agent with persistent autonomous workflows, subagent spawning, and a /refine mechanism. Works with any provider or 100% locally via Ollama.",
+      "source": "@JulianGoldieSEO",
+      "date": "2026-08-09",
+      "url": "https://x.com/JulianGoldieSEO/status/2086229819411632507"
     },
     {
-      "title": "Simon Willison details 'The Hugging Face Incident' from Black Hat",
-      "summary": "Simon Willison published a timeline of OpenAI's Black Hat presentation on the Hugging Face security incident, revealing OpenAI discovered their credential was used in the attack only when Hugging Face revoked it — a significant embarrassment for the lab's security posture.",
-      "source": "simonw",
-      "date": "2026-08-07",
-      "url": "https://x.com/simonw/status/2085877951925801274"
+      "title": "Coldtea.ai tops Product Hunt with self-driving software delivery platform",
+      "summary": "Coldtea uses AI agents for QA, production monitoring, bug detection, and automated fixes across the software lifecycle. Topped Product Hunt on August 8 with 459 upvotes.",
+      "source": "Product Hunt",
+      "date": "2026-08-08",
+      "url": "https://www.producthunt.com/products/coldtea"
     },
     {
-      "title": "xAI launches Imagine Image 2.0, topping text-to-image and image edit leaderboards",
-      "summary": "xAI launched Imagine Image 2.0, a precise image generation and editing tool built for real creative work, now available on Grok. It achieves top scores on Arena Text-to-Image and Image Edit leaderboards.",
-      "source": "xAI",
-      "date": "2026-08-07",
-      "url": "https://x.ai/news/grok-imagine-image-2"
-    },
-    {
-      "title": "Rippling launches AI Spend Console for enterprise token cost management",
-      "summary": "Rippling launched AI Spend Console to help companies track and control AI token expenditure with dashboards, model routing, and per-employee ROI analysis, after its own AI spend grew 80% month-over-month.",
-      "source": "TechCrunch",
-      "date": "2026-08-07",
-      "url": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/"
+      "title": "Yann LeCun: AGI requires additional conceptual breakthroughs beyond LLM scaling",
+      "summary": "LeCun argued that AGI needs more than pure LLM scaling — world models and new architectures are required. Compared his own 2018 move away from management at Meta to Demis Hassabis's recent role change at DeepMind.",
+      "source": "@ylecun",
+      "date": "2026-08-08",
+      "url": "https://x.com/ylecun/status/2086042924316242287"
     }
   ],
   "sections": [
     {
-      "title": "Research & Papers",
-      "items": [
-        {
-          "title": "Learning when to trust via selective context preference optimization",
-          "summary": "SCOPE trains models to selectively trust external context via preference optimization, achieving robust accuracy improvements on context-dependent QA benchmarks without ignoring useful signals.",
-          "source": "arXiv",
-          "date": "2026-08-06",
-          "url": "https://arxiv.org/abs/2608.06377",
-          "image": "images/section_research_2026-08-08.jpg"
-        },
-        {
-          "title": "AgentOPSD: recursive self-distillation for agentic reinforcement learning",
-          "summary": "Addresses credit assignment in long-horizon multi-turn agentic tasks via recursive self-distillation of privileged trajectory-level advantage estimates, outperforming GRPO on agentic benchmarks.",
-          "source": "arXiv",
-          "date": "2026-08-06",
-          "url": "https://arxiv.org/abs/2608.05987"
-        },
-        {
-          "title": "GROM: gradient-free rapid one-shot machine unlearning for LLMs",
-          "summary": "One-shot machine unlearning method for LLMs that operates without gradient computation, enabling rapid removal of specific knowledge at a fraction of the computational cost of fine-tuning approaches.",
-          "source": "arXiv",
-          "date": "2026-08-06",
-          "url": "https://arxiv.org/abs/2608.05783"
-        },
-        {
-          "title": "EcoAgent-Bench: evaluating economic decision-making in budget-constrained LLM agents",
-          "summary": "Benchmark where agents must choose between resources of varying cost — local lookup, search, composite tools, model upgrades — testing economic reasoning under realistic budget constraints.",
-          "source": "arXiv",
-          "date": "2026-08-06",
-          "url": "https://arxiv.org/abs/2608.05519"
-        },
-        {
-          "title": "APQF: agentic profiling-guided structured pruning and mixed-precision quantization",
-          "summary": "Automated compression framework combining structured pruning and mixed-precision quantization guided by agentic profiling, removing manual expert choices across diverse architectures.",
-          "source": "arXiv",
-          "date": "2026-08-06",
-          "url": "https://arxiv.org/abs/2608.05499"
-        }
-      ]
-    },
-    {
       "title": "YouTube & Video",
+      "image": "images/section_youtube-video_2026-08-09.jpg",
       "items": [
         {
-          "title": "China unveils 10 trillion parameter AI model",
-          "summary": "Beyond AI News reports that China has shocked the AI community with a 10 trillion parameter AI model — dwarfing prior state-of-the-art architectures and signaling a major escalation in the AI arms race.",
-          "source": "YouTube — Beyond AI News",
+          "title": "OpenAI's 'Donut' AI hardware device leaked — wearable form factor revealed",
+          "summary": "A donut-shaped wearable AI device from OpenAI leaked online, pointing to a consumer hardware play that could compete with AI pins and pendants from Humane and others.",
+          "source": "Beyond AI News",
           "date": "2026-08-08",
-          "url": "https://www.youtube.com/watch?v=MEw7TrAUEPQ",
-          "image": "images/section_youtube_2026-08-08.jpg"
+          "url": "https://www.youtube.com/watch?v=hFkcEPK5V8k"
         },
         {
-          "title": "DeepMind unveils breakthrough in computer vision — a new way for AI to perceive",
-          "summary": "Two Minute Papers covers a new DeepMind research result that fundamentally changes how AI models process and understand visual information, representing a significant advancement in machine perception.",
-          "source": "YouTube — Two Minute Papers",
-          "date": "2026-08-07",
-          "url": "https://www.youtube.com/watch?v=vO6SWG-jxvE"
+          "title": "Did Anthropic finally fix MCP? Major update to Model Context Protocol",
+          "summary": "Theo from t3.gg examines whether Anthropic's latest MCP update addresses long-standing issues with tool calling reliability, streaming, and developer experience.",
+          "source": "Theo - t3.gg",
+          "date": "2026-08-08",
+          "url": "https://www.youtube.com/watch?v=gVfEtktkvnE"
         },
         {
-          "title": "ChatGPT expands free tier, new low-cost models launch, Google releases new AI app",
-          "summary": "AI Tool Report covers ChatGPT becoming more accessible with an expanded free tier, the release of new cheaper AI models, and a new Google AI app hitting the market.",
-          "source": "YouTube — AI Tool Report",
-          "date": "2026-08-07",
-          "url": "https://www.youtube.com/watch?v=xRMwrGqQ9QQ"
+          "title": "Google AI leaders exodus — why departures could benefit open model development",
+          "summary": "Key AI leadership departures from Google may accelerate diversity in AI development as talent and research spread across startups and open-weight initiatives.",
+          "source": "The AI Daily Brief",
+          "date": "2026-08-08",
+          "url": "https://www.youtube.com/watch?v=K9mM2kWljm8"
         }
       ]
     },
     {
       "title": "Hardware & Robotics",
+      "image": "images/section_hardware-robotics_2026-08-09.jpg",
       "items": [
         {
-          "title": "NVIDIA AI storage goes open at FMS 2026, open-sourcing KV cache infrastructure",
-          "summary": "NVIDIA open-sourced its AI storage stack at the Future Memory and Storage conference, releasing open APIs and forming the Storage-Next coalition. The move targets the KV cache bottleneck in AI inference, reshaping datacenter storage competition around GPU infrastructure.",
-          "source": "Futurum Group",
-          "date": "2026-08-07",
-          "url": "https://futurumgroup.com/insights/nvidia-ai-storage-goes-open-at-fms-2026-is-open-source-the-new-moat/",
-          "image": "images/section_hardware_2026-08-08.jpg"
+          "title": "Trump's foreign-robot ban sweeps up Canadian firms, blocking US sales",
+          "summary": "The FCC's foreign-robot ban is catching Canadian robotics companies who rely on the US as their primary export market. The rule turns on production location rather than company nationality, sweeping in allied countries.",
+          "source": "Hashtag Investing",
+          "date": "2026-08-08",
+          "url": "https://www.hashtaginvesting.com/blog/trumps-foreign-robot-ban-sweeps-up-canadian-firms-blocking-u-s-sales"
         },
         {
-          "title": "Avatar Robotics raises $6.5M seed to address industrial labor constraints",
-          "summary": "MIT-spun out Avatar Robotics raised $6.5 million to scale humanoid robots and remote teleoperation across industrial supply chains, targeting manufacturing and logistics labor shortages.",
-          "source": "The Robot Report",
-          "date": "2026-08-07",
-          "url": "https://www.therobotreport.com/avatar-robotics-raises-6-5-m-seed-round-address-industrial-labor-constraints/"
+          "title": "Wall Street sees multi-trillion-dollar humanoid robot market opportunity",
+          "summary": "Investment analysts project a multi-trillion-dollar humanoid robot market, pointing to industrial component suppliers rather than robot manufacturers as the key beneficiaries.",
+          "source": "Motley Fool",
+          "date": "2026-08-08",
+          "url": "https://www.fool.com/investing/2026/08/08/wall-street-sees-a-multi-trillion-dollar-humanoid/"
         },
         {
-          "title": "Virginia requires AI data center firms to pay for electrical infrastructure after 76% price hikes",
-          "summary": "Virginia regulators now require AI data center operators to fully fund dedicated upstream electrical infrastructure after residential electricity prices surged 76%, driven by AI datacenter demand. The governor says the move will save civilians hundreds of millions of dollars.",
-          "source": "Tom's Hardware",
-          "date": "2026-08-06",
-          "url": "https://www.tomshardware.com/tech-industry/data-centers/after-severe-76-percent-electricity-price-hikes-due-to-ai-data-centers-virginia-requires-firms-to-pay-for-all-dedicated-upstream-electrical-infrastructure-state-regulators-crack-down-governor-says-move-will-save-civilians-hundreds-of-millions-of-dollars"
+          "title": "BYD enters humanoid robotics as automakers converge on physical AI",
+          "summary": "Chinese automaker BYD revealed a humanoid robot, joining Tesla and others investing in physical AI for factory automation. Automate 2026 analysis suggests assembly lines are not yet ready for humanoid deployment at scale.",
+          "source": "DEV Community",
+          "date": "2026-08-08",
+          "url": "https://dev.to/xberry-tech/byd-has-a-humanoid-robot-automate-2026-says-the-assembly-line-is-not-ready-for-it-yet-kl5"
         }
       ]
     },
     {
       "title": "Tools & Startups",
+      "image": "images/section_tools-startups_2026-08-09.jpg",
       "items": [
         {
-          "title": "Agent_acid brings ACID-style rollbacks to AI agents for safer real-world actions",
-          "summary": "Open-source Python library adding ACID-style rollback and session-aware guardrails to AI agents that take real-world actions like charging cards or writing to databases, preventing partial task execution from causing damage.",
-          "source": "GitHub",
+          "title": "Soloop — Approval-first Agent OS for solo founders",
+          "summary": "Agentic company-building system with AI CEO, CTO, and CMO agents that solo founders delegate to while retaining approval control. 429 upvotes on Product Hunt.",
+          "source": "Product Hunt",
           "date": "2026-08-08",
-          "url": "https://github.com/muhammadwaqasai/agent_acid",
-          "image": "images/section_tools_2026-08-08.jpg"
+          "url": "https://www.producthunt.com/products/soloop"
         },
         {
-          "title": "Agent Tunnels lets coding agents collaborate across organizational boundaries",
-          "summary": "Lets agents from different companies work together securely with isolated repo access and human-in-the-loop oversight, addressing a growing pain point in multi-vendor agent deployments.",
-          "source": "Agent Tunnels",
-          "date": "2026-08-07",
-          "url": "https://agenttunnels.com/"
-        },
-        {
-          "title": "Salestrics CRM workspace now available as an MCP server for AI agents",
-          "summary": "A hosted Model Context Protocol server integrated with a full CRM workspace, enabling AI agents running in Cursor, Claude, and other tools to query pipeline data and execute revenue workflows.",
-          "source": "Salestrics",
+          "title": "BrowserOS neo — Open-source agentic browser for Claude and Codex",
+          "summary": "Privacy-first open-source browser designed for AI agents to run locally using logged-in accounts. 192 upvotes on Product Hunt.",
+          "source": "Product Hunt",
           "date": "2026-08-08",
-          "url": "https://www.salestrics.com/"
+          "url": "https://www.producthunt.com/products/browseros_ai"
         },
         {
-          "title": "Buddy is an iOS browser with an embedded AI agent for multi-step web tasks",
-          "summary": "An iOS browser with an embedded AI agent that performs flight search, form filling, and price comparison using text or voice, with real-time agent visualization and user take-control capability.",
-          "source": "Buddy",
+          "title": "Rindler — automates web-based manual work",
+          "summary": "Automation platform that handles repetitive web-based tasks teams currently perform by hand. 232 upvotes on Product Hunt.",
+          "source": "Product Hunt",
           "date": "2026-08-08",
-          "url": "https://apps.apple.com/us/app/buddy-the-ai-mobile-browser/id6788047483"
+          "url": "https://www.producthunt.com/products/rindler"
         },
         {
-          "title": "Aveiro launches AI-native publishing platform with MCP integration for agents",
-          "summary": "AI-native publishing platform that lets creators build and manage branded websites, email newsletters, and social posts from a single workspace, with MCP integration allowing AI agents to draft and publish content.",
-          "source": "Aveiro",
-          "date": "2026-08-07",
-          "url": "https://www.aveiro.app/"
+          "title": "Progress AI Observability — agent tracing and evaluation SaaS",
+          "summary": "SaaS platform for tracing, evaluating, and improving AI agents running in production environments. 160 upvotes on Product Hunt.",
+          "source": "Product Hunt",
+          "date": "2026-08-08",
+          "url": "https://www.producthunt.com/products/progress-ai-observability"
         }
       ]
     }
@@ -185,99 +130,199 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-08",
+      "date": "2026-08-09",
       "items": [
-        {"name": "PrimeIntellect-ai/prime-agent", "url": "https://github.com/PrimeIntellect-ai/prime-agent", "meta": "TypeScript · 6,960 ★ · +2,293 today"},
-        {"name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "meta": "JavaScript · 84,023 ★ · +1,131 today"},
-        {"name": "cloudflare/computer", "url": "https://github.com/cloudflare/computer", "meta": "TypeScript · 5,947 ★ · +872 today"},
-        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 209,067 ★ · +2,152 today"},
-        {"name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "meta": "Shell · 268,851 ★ · +782 today"},
-        {"name": "goauthentik/authentik", "url": "https://github.com/goauthentik/authentik", "meta": "Python · 23,679 ★ · +530 today"},
-        {"name": "semantica-agi/semantica", "url": "https://github.com/semantica-agi/semantica", "meta": "Python · 2,402 ★ · +122 today"},
-        {"name": "666ghj/MiroFish", "url": "https://github.com/666ghj/MiroFish", "meta": "Python · 70,596 ★ · +141 today"},
-        {"name": "chenyme/grok2api", "url": "https://github.com/chenyme/grok2api", "meta": "Go · 7,162 ★ · +55 today"},
-        {"name": "jdx/mise", "url": "https://github.com/jdx/mise", "meta": "Rust · 32,102 ★ · +135 today"},
-        {"name": "Significant-Gravitas/AutoGPT", "url": "https://github.com/Significant-Gravitas/AutoGPT", "meta": "Python · 186,368 ★ · +355 today"},
-        {"name": "google/guava", "url": "https://github.com/google/guava", "meta": "Java · 51,777 ★ · +152 today"},
-        {"name": "unclebob/swarm-forge", "url": "https://github.com/unclebob/swarm-forge", "meta": "Clojure · 1,876 ★ · +81 today"},
-        {"name": "denoland/celld", "url": "https://github.com/denoland/celld", "meta": "Rust · 2,275 ★ · +516 today"},
-        {"name": "K2SOsint/Legendary_OSINT", "url": "https://github.com/K2SOsint/Legendary_OSINT", "meta": "Unknown · 1,526 ★ · +109 today"}
+        {
+          "name": "TauricResearch/TradingAgents",
+          "url": "https://github.com/TauricResearch/TradingAgents",
+          "meta": "Python · 96.6k ★"
+        },
+        {
+          "name": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "meta": "JavaScript · 84.7k ★"
+        },
+        {
+          "name": "TapXWorld/ChinaTextbook",
+          "url": "https://github.com/TapXWorld/ChinaTextbook",
+          "meta": "Roff · 78.0k ★"
+        },
+        {
+          "name": "LadybirdBrowser/ladybird",
+          "url": "https://github.com/LadybirdBrowser/ladybird",
+          "meta": "C++ · 65.0k ★"
+        },
+        {
+          "name": "google/guava",
+          "url": "https://github.com/google/guava",
+          "meta": "Java · 51.9k ★"
+        },
+        {
+          "name": "bannedbook/fanqiang",
+          "url": "https://github.com/bannedbook/fanqiang",
+          "meta": "Kotlin · 50.0k ★"
+        },
+        {
+          "name": "goauthentik/authentik",
+          "url": "https://github.com/goauthentik/authentik",
+          "meta": "Python · 24.0k ★"
+        },
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "meta": "Shell · 210.2k ★"
+        },
+        {
+          "name": "google/skills",
+          "url": "https://github.com/google/skills",
+          "meta": "Python · 16.8k ★"
+        },
+        {
+          "name": "PrimeIntellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+          "meta": "TypeScript · 9.2k ★"
+        },
+        {
+          "name": "denoland/celld",
+          "url": "https://github.com/denoland/celld",
+          "meta": "Rust · 2.6k ★"
+        },
+        {
+          "name": "litu54/DevOps-Interview-Guide",
+          "url": "https://github.com/litu54/DevOps-Interview-Guide",
+          "meta": "Unknown · 738 ★"
+        }
       ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-08",
+      "date": "2026-08-09",
       "items": [
-        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "Image-Text-to-Video, 33B — trending video generation model"},
-        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "Text Generation, 304B MoE — cost-performance frontier"},
-        {"name": "Comfy-Org/MiniMax-H3", "url": "https://huggingface.co/Comfy-Org/MiniMax-H3", "meta": "ComfyUI integration, 3.14M downloads"},
-        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "Image-Text-to-Text, 2.8T — Moonshot AI multimodal"},
-        {"name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "meta": "Qwen3.6 community finetune (GGUF)"},
-        {"name": "larryvrh/MiniMax-H3-Turbo-Lora", "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora", "meta": "LoRA adapter for MiniMax-H3 Turbo"},
-        {"name": "LiquidAI/LFM2.5-2.6B", "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B", "meta": "Liquid Foundation Model 2.5, 3B — non-transformer SLM"},
-        {"name": "unsloth/DeepSeek-V4-Flash-0731-GGUF", "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF", "meta": "284B GGUF quantized — Unsloth optimized"},
-        {"name": "deepgrove/maple-preview", "url": "https://huggingface.co/deepgrove/maple-preview", "meta": "Text Generation, 20B — new preview from DeepGrove"},
-        {"name": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "meta": "Nvidia voice chat model (Nemotron Labs)"}
+        {
+          "name": "MiniMaxAI/MiniMax-H3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+          "meta": "MoE language model from MiniMax, trending for open-weights inference"
+        },
+        {
+          "name": "deepseek-ai/DeepSeek-V4-Flash-0731",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+          "meta": "DeepSeek V4 Flash — efficient LLM, latest weights release"
+        },
+        {
+          "name": "moonshotai/Kimi-K3",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3",
+          "meta": "Kimi K3, Moonshot AI's open-weights LLM"
+        },
+        {
+          "name": "LiquidAI/LFM2.5-2.6B",
+          "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+          "meta": "2.6B parameter language model from Liquid AI"
+        },
+        {
+          "name": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+          "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+          "meta": "11B voice chat model from NVIDIA"
+        },
+        {
+          "name": "inclusionAI/Ling-3.0-flash",
+          "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+          "meta": "Ling 3.0 Flash, efficient language model"
+        },
+        {
+          "name": "mistralai/Shieldstral-1.0-3B",
+          "url": "https://huggingface.co/mistralai/Shieldstral-1.0-3B",
+          "meta": "3B safety guardrail model from Mistral AI"
+        },
+        {
+          "name": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "meta": "GLM-5.2, Zhipu AI's latest open-weights model"
+        },
+        {
+          "name": "microsoft/Mage-VL",
+          "url": "https://huggingface.co/microsoft/Mage-VL",
+          "meta": "Vision-language model from Microsoft"
+        },
+        {
+          "name": "thinkingmachines/Inkling-Small",
+          "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
+          "meta": "Small language model from Thinking Machines"
+        }
       ]
     }
   },
   "quick_hits": [
     {
-      "title": "DeepSeek-V4 Flash-0731 delivers 80% of GPT-5.6 Luna performance at 1/6 the inference cost",
+      "title": "Debate on forcing companies to release open-weight AI models via regulation",
+      "source": "WeLivetoServe",
+      "date": "2026-08-09",
+      "url": "https://x.com/WeLivetoServe/status/2086234485968757124"
+    },
+    {
+      "title": "Portugal replaces national Amalia AI model with stronger open-source alternatives",
+      "source": "wbetiago",
+      "date": "2026-08-09",
+      "url": "https://x.com/wbetiago/status/2086235245351727516"
+    },
+    {
+      "title": "Kimi K3 tops or ties #1 on 3 of 4 benchmarks via Together AI hosting",
       "source": "@togethercompute",
-      "url": "https://x.com/togethercompute/status/2085570328135118977"
+      "date": "2026-08-09",
+      "url": "https://x.com/togethercompute/status/2086222170355638521"
     },
     {
-      "title": "Tencent Hunyuan open-sources HPC-Ops kernels — Attention, Router GEMM, MoE merged into SGLang",
-      "source": "LMSYS Org",
-      "url": "https://x.com/lmsysorg/status/2085775235765449135"
+      "title": "Seedance 2.5 generates 30-second cinematic trailer from single text prompt",
+      "source": "@togethercompute",
+      "date": "2026-08-09",
+      "url": "https://x.com/togethercompute/status/2086142646373044570"
     },
     {
-      "title": "Hugging Face showcases AI agents reproducing ICML 2026 papers autonomously",
-      "source": "huggingface",
-      "url": "https://x.com/huggingface/status/2085758063471120848"
+      "title": "Tura — Agent using 80% fewer tokens with better results",
+      "source": "Hacker News",
+      "date": "2026-08-09",
+      "url": "https://news.ycombinator.com/item?id=49227119"
     },
     {
-      "title": "GPT-5.6 Sol Ultra spotted in practical coding and agent workflows",
-      "source": "simonw",
-      "url": "https://x.com/simonw/status/2085810289099133180"
+      "title": "ExpertCache — Run 120B GPT-OSS model on 16GB M1 Pro",
+      "source": "Hacker News",
+      "date": "2026-08-08",
+      "url": "https://news.ycombinator.com/item?id=49226502"
     },
     {
-      "title": "Enterprise AI token spending under scrutiny as costs mount across organizations",
-      "source": "simonw",
-      "url": "https://x.com/simonw/status/2085763908871319748"
+      "title": "Benzi — Coding harness beating Claude Code on Sonnet",
+      "source": "Hacker News",
+      "date": "2026-08-08",
+      "url": "https://news.ycombinator.com/item?id=49226627"
     },
     {
-      "title": "BaKron: efficient LLM quantization with Kronecker-factored Hessians",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.06291"
+      "title": "Qwen3.8-Max — Use Qwen Studio and MCP to code locally for free",
+      "source": "Hacker News",
+      "date": "2026-08-09",
+      "url": "https://news.ycombinator.com/item?id=49228173"
     },
     {
-      "title": "LC-GRPO: bridging train-inference gap for flow-based GRPO with Langevin correction",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.05600"
+      "title": "agent-hop — Resume AI agent sessions across tools",
+      "source": "Hacker News",
+      "date": "2026-08-08",
+      "url": "https://news.ycombinator.com/item?id=49224884"
     },
     {
-      "title": "HarnessOpt-Bench: evaluating LLMs at harness optimization as a distinct capability",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.06301"
+      "title": "HAR — Open-source harness for multi-agent coding workflows",
+      "source": "Product Hunt",
+      "date": "2026-08-08",
+      "url": "https://www.producthunt.com/products/har"
     },
     {
-      "title": "Hardware keystores for AI agent signing workflows: a zero-trust MCP enforcement architecture",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.06130"
-    },
-    {
-      "title": "ContextMaster: interactive multi-shot video creation via fixed-budget sparse context routing",
-      "source": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.04956"
+      "title": "OpenAI acquires presentation startup NextSlide",
+      "source": "TechCrunch",
+      "date": "2026-08-08",
+      "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
     }
   ],
   "spiked": {
-    "low signal": 6,
-    "out of window": 8,
-    "already ran": 4
+    "duplicate url": 1,
+    "already ran": 2
   }
 }
