@@ -1,126 +1,106 @@
 {
-  "issue_no": 45,
-  "date_iso": "2026-08-09",
-  "date_human": "August 09, 2026",
+  "issue_no": 46,
+  "date_iso": "2026-08-10",
+  "date_human": "August 10, 2026",
   "notice": null,
   "lead": {
-    "kicker": "Founding Exodus",
-    "title": "Jeff Dean leaves Google after 27 years to found DiscoLoopAI",
-    "summary": "Jeff Dean, along with Sanjay Ghemawat, Quoc Le, and Oriol Vinyals, departed Google to launch Discovery Loop (DiscoLoopAI), a startup focused on automating scientific discovery. Backed by Radical Ventures, Khosla Ventures, and Alphabet/Google itself.",
-    "source": "yoopya",
-    "date": "2026-08-08",
-    "url": "https://x.com/yoopya/status/2086046818689835164",
-    "image": "images/lead_2026-08-09.jpg"
+    "kicker": "Agentic Security",
+    "title": "OpenAI agent chains two zero-days in JFrog Artifactory to escape sandbox",
+    "summary": "In a red-team exercise, OpenAI's models identified and chained two separate zero-days in JFrog's Artifactory to break out of a sandbox — going beyond simple misconfiguration and acting as an automated, high-speed vulnerability research pipeline.",
+    "source": "Simon Willison",
+    "date": "2026-08-10",
+    "url": "https://x.com/simonw/status/2086561757833925056",
+    "image": "images/lead_2026-08-10.jpg"
   },
   "top_stories": [
     {
-      "title": "Prime Agent — open-source self-improving coding agent released under MIT license",
-      "summary": "Prime Intellect released Prime Agent, a fully open-source MIT-licensed coding agent with persistent autonomous workflows, subagent spawning, and a /refine mechanism. Works with any provider or 100% locally via Ollama.",
-      "source": "@JulianGoldieSEO",
+      "title": "Situational Awareness invests $400M in chip startup Source Foundry",
+      "summary": "Leopold Aschenbrenner's AI-focused hedge fund lifts its total stake in Stanford-founded Source Foundry to $500M, backing faster and cheaper AI chip manufacturing.",
+      "source": "TechCrunch",
       "date": "2026-08-09",
-      "url": "https://x.com/JulianGoldieSEO/status/2086229819411632507"
+      "url": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/"
     },
     {
-      "title": "Coldtea.ai tops Product Hunt with self-driving software delivery platform",
-      "summary": "Coldtea uses AI agents for QA, production monitoring, bug detection, and automated fixes across the software lifecycle. Topped Product Hunt on August 8 with 459 upvotes.",
-      "source": "Product Hunt",
-      "date": "2026-08-08",
-      "url": "https://www.producthunt.com/products/coldtea"
-    },
-    {
-      "title": "Yann LeCun: AGI requires additional conceptual breakthroughs beyond LLM scaling",
-      "summary": "LeCun argued that AGI needs more than pure LLM scaling — world models and new architectures are required. Compared his own 2018 move away from management at Meta to Demis Hassabis's recent role change at DeepMind.",
-      "source": "@ylecun",
-      "date": "2026-08-08",
-      "url": "https://x.com/ylecun/status/2086042924316242287"
+      "title": "China GPU maker Moore Threads plans Hong Kong listing after H1 revenue jumps 147%",
+      "summary": "First-half revenue rose 147% to 1.74 billion yuan while the net loss narrowed 96%; shares have climbed more than 420% since the company's Shanghai debut last year.",
+      "source": "AI in Asia",
+      "date": "2026-08-09",
+      "url": "https://aiinasia.com/greater-china/moore-threads-hong-kong-listing-h1-revenue-china-gpu-2026"
     }
   ],
   "sections": [
     {
-      "title": "YouTube & Video",
-      "image": "images/section_youtube-video_2026-08-09.jpg",
+      "title": "Research & Papers",
+      "image": "images/section_research-papers_2026-08-10.jpg",
       "items": [
         {
-          "title": "OpenAI's 'Donut' AI hardware device leaked — wearable form factor revealed",
-          "summary": "A donut-shaped wearable AI device from OpenAI leaked online, pointing to a consumer hardware play that could compete with AI pins and pendants from Humane and others.",
-          "source": "Beyond AI News",
-          "date": "2026-08-08",
-          "url": "https://www.youtube.com/watch?v=hFkcEPK5V8k"
+          "title": "Diffusion LLMs as targets and adversaries: mechanistic safety exploits",
+          "summary": "Safety alignment in diffusion LLMs is sparse and transferable from autoregressive predecessors; self-pruning lifts attack success from 2.6% to 73.8% (LLaDA) and 1.9% to 86.6% (Dream), while the offline SN-Guided Diffusion jailbreak hits up to 77.1% transfer ASR on Llama-3-8B.",
+          "source": "arXiv",
+          "date": "2026-08-07",
+          "url": "https://arxiv.org/abs/2608.07430"
         },
         {
-          "title": "Did Anthropic finally fix MCP? Major update to Model Context Protocol",
-          "summary": "Theo from t3.gg examines whether Anthropic's latest MCP update addresses long-standing issues with tool calling reliability, streaming, and developer experience.",
-          "source": "Theo - t3.gg",
-          "date": "2026-08-08",
-          "url": "https://www.youtube.com/watch?v=gVfEtktkvnE"
+          "title": "Transformers struggle to use their emergent world models: revisiting Tower of Hanoi",
+          "summary": "Small transformers develop a linearly-decodable Sierpinski-triangle world model, yet frontier models encode it near-perfectly at prompt end only to fail past three rings — a decay in representation maintenance, recoverable by re-injecting the prompt-time representation.",
+          "source": "arXiv",
+          "date": "2026-08-07",
+          "url": "https://arxiv.org/abs/2608.07077"
         },
         {
-          "title": "Google AI leaders exodus — why departures could benefit open model development",
-          "summary": "Key AI leadership departures from Google may accelerate diversity in AI development as talent and research spread across startups and open-weight initiatives.",
-          "source": "The AI Daily Brief",
-          "date": "2026-08-08",
-          "url": "https://www.youtube.com/watch?v=K9mM2kWljm8"
-        }
-      ]
-    },
-    {
-      "title": "Hardware & Robotics",
-      "image": "images/section_hardware-robotics_2026-08-09.jpg",
-      "items": [
-        {
-          "title": "Trump's foreign-robot ban sweeps up Canadian firms, blocking US sales",
-          "summary": "The FCC's foreign-robot ban is catching Canadian robotics companies who rely on the US as their primary export market. The rule turns on production location rather than company nationality, sweeping in allied countries.",
-          "source": "Hashtag Investing",
-          "date": "2026-08-08",
-          "url": "https://www.hashtaginvesting.com/blog/trumps-foreign-robot-ban-sweeps-up-canadian-firms-blocking-u-s-sales"
+          "title": "Agent Memory Distillation: empowering small LLM agents with hierarchical teacher memory",
+          "summary": "A training-free framework transfers workflow, subtask and function memory from a large teacher to 4-8B student agents, gaining up to 27.2, 11.2 and 3.4 points on AppWorld, BFCL V3 and ToolSandbox with GPT-5-mini as teacher.",
+          "source": "arXiv",
+          "date": "2026-08-07",
+          "url": "https://arxiv.org/abs/2608.07169"
         },
         {
-          "title": "Wall Street sees multi-trillion-dollar humanoid robot market opportunity",
-          "summary": "Investment analysts project a multi-trillion-dollar humanoid robot market, pointing to industrial component suppliers rather than robot manufacturers as the key beneficiaries.",
-          "source": "Motley Fool",
-          "date": "2026-08-08",
-          "url": "https://www.fool.com/investing/2026/08/08/wall-street-sees-a-multi-trillion-dollar-humanoid/"
+          "title": "SimWAM: a simple world action model for end-to-end autonomous driving",
+          "summary": "Uses video generation purely as a training signal via joint flow matching, discarding the video branch at inference to leave a self-contained action planner that reaches 91.5 PDMS on NAVSIM and transfers zero-shot to nuScenes.",
+          "source": "arXiv",
+          "date": "2026-08-07",
+          "url": "https://arxiv.org/abs/2608.07468"
         },
         {
-          "title": "BYD enters humanoid robotics as automakers converge on physical AI",
-          "summary": "Chinese automaker BYD revealed a humanoid robot, joining Tesla and others investing in physical AI for factory automation. Automate 2026 analysis suggests assembly lines are not yet ready for humanoid deployment at scale.",
-          "source": "DEV Community",
-          "date": "2026-08-08",
-          "url": "https://dev.to/xberry-tech/byd-has-a-humanoid-robot-automate-2026-says-the-assembly-line-is-not-ready-for-it-yet-kl5"
+          "title": "The Optimizer Is the Agent: reasoning-driven search across prompts, programs and ML workflows",
+          "summary": "ReASearch internalizes an optimization search policy in a single tool-using agent, beating specialized optimizers by 2% to 40% across 14 tasks and sometimes surpassing prior human best-known results.",
+          "source": "arXiv",
+          "date": "2026-08-07",
+          "url": "https://arxiv.org/abs/2608.06714"
         }
       ]
     },
     {
       "title": "Tools & Startups",
-      "image": "images/section_tools-startups_2026-08-09.jpg",
+      "image": "images/section_tools-startups_2026-08-10.jpg",
       "items": [
         {
-          "title": "Soloop — Approval-first Agent OS for solo founders",
-          "summary": "Agentic company-building system with AI CEO, CTO, and CMO agents that solo founders delegate to while retaining approval control. 429 upvotes on Product Hunt.",
-          "source": "Product Hunt",
-          "date": "2026-08-08",
-          "url": "https://www.producthunt.com/products/soloop"
+          "title": "Gotcha: an on-device AI copilot for Android",
+          "summary": "Gotcha claims to be the first on-device AI copilot for Android, running locally without any cloud dependency.",
+          "source": "Hacker News",
+          "date": "2026-08-10",
+          "url": "https://samosa-ai.com/gotcha/"
         },
         {
-          "title": "BrowserOS neo — Open-source agentic browser for Claude and Codex",
-          "summary": "Privacy-first open-source browser designed for AI agents to run locally using logged-in accounts. 192 upvotes on Product Hunt.",
-          "source": "Product Hunt",
-          "date": "2026-08-08",
-          "url": "https://www.producthunt.com/products/browseros_ai"
+          "title": "Preloop: run GitHub Actions locally in isolated microVMs",
+          "summary": "Preloop runs GitHub Actions workflows locally or self-hosted inside isolated microVMs for faster, more private CI.",
+          "source": "Hacker News",
+          "date": "2026-08-09",
+          "url": "https://preloop.dev"
         },
         {
-          "title": "Rindler — automates web-based manual work",
-          "summary": "Automation platform that handles repetitive web-based tasks teams currently perform by hand. 232 upvotes on Product Hunt.",
-          "source": "Product Hunt",
-          "date": "2026-08-08",
-          "url": "https://www.producthunt.com/products/rindler"
+          "title": "CtxRay: see and lock what Codex loads before a task",
+          "summary": "An open-source tool that inspects and controls exactly which context a coding agent loads before a task, adding a guardrail layer.",
+          "source": "Hacker News",
+          "date": "2026-08-10",
+          "url": "https://github.com/FramY2/ctxray"
         },
         {
-          "title": "Progress AI Observability — agent tracing and evaluation SaaS",
-          "summary": "SaaS platform for tracing, evaluating, and improving AI agents running in production environments. 160 upvotes on Product Hunt.",
-          "source": "Product Hunt",
-          "date": "2026-08-08",
-          "url": "https://www.producthunt.com/products/progress-ai-observability"
+          "title": "SynapsCLI: lightweight agent runtime in Rust",
+          "summary": "A lightweight Rust agent runtime that spins up and controls a swarm of AI agents from the command line.",
+          "source": "Hacker News",
+          "date": "2026-08-10",
+          "url": "https://github.com/HaseebKhalid1507/SynapsCLI"
         }
       ]
     }
@@ -130,199 +110,53 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "items": [
-        {
-          "name": "TauricResearch/TradingAgents",
-          "url": "https://github.com/TauricResearch/TradingAgents",
-          "meta": "Python · 96.6k ★"
-        },
-        {
-          "name": "addyosmani/agent-skills",
-          "url": "https://github.com/addyosmani/agent-skills",
-          "meta": "JavaScript · 84.7k ★"
-        },
-        {
-          "name": "TapXWorld/ChinaTextbook",
-          "url": "https://github.com/TapXWorld/ChinaTextbook",
-          "meta": "Roff · 78.0k ★"
-        },
-        {
-          "name": "LadybirdBrowser/ladybird",
-          "url": "https://github.com/LadybirdBrowser/ladybird",
-          "meta": "C++ · 65.0k ★"
-        },
-        {
-          "name": "google/guava",
-          "url": "https://github.com/google/guava",
-          "meta": "Java · 51.9k ★"
-        },
-        {
-          "name": "bannedbook/fanqiang",
-          "url": "https://github.com/bannedbook/fanqiang",
-          "meta": "Kotlin · 50.0k ★"
-        },
-        {
-          "name": "goauthentik/authentik",
-          "url": "https://github.com/goauthentik/authentik",
-          "meta": "Python · 24.0k ★"
-        },
-        {
-          "name": "mattpocock/skills",
-          "url": "https://github.com/mattpocock/skills",
-          "meta": "Shell · 210.2k ★"
-        },
-        {
-          "name": "google/skills",
-          "url": "https://github.com/google/skills",
-          "meta": "Python · 16.8k ★"
-        },
-        {
-          "name": "PrimeIntellect-ai/prime-agent",
-          "url": "https://github.com/PrimeIntellect-ai/prime-agent",
-          "meta": "TypeScript · 9.2k ★"
-        },
-        {
-          "name": "denoland/celld",
-          "url": "https://github.com/denoland/celld",
-          "meta": "Rust · 2.6k ★"
-        },
-        {
-          "name": "litu54/DevOps-Interview-Guide",
-          "url": "https://github.com/litu54/DevOps-Interview-Guide",
-          "meta": "Unknown · 738 ★"
-        }
+        {"name": "PrimeIntellect-ai/prime-agent", "url": "https://github.com/PrimeIntellect-ai/prime-agent", "meta": "TypeScript · 11,646 ★ · +2,356 today"},
+        {"name": "msitarzewski/agency-agents", "url": "https://github.com/msitarzewski/agency-agents", "meta": "Shell · 141,022 ★ · +858 today"},
+        {"name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "meta": "JavaScript · 85,272 ★ · +680 today"},
+        {"name": "google/skills", "url": "https://github.com/google/skills", "meta": "Python · 17,333 ★ · +528 today"},
+        {"name": "Comfy-Org/ComfyUI", "url": "https://github.com/Comfy-Org/ComfyUI", "meta": "Python · 125,696 ★ · +365 today"},
+        {"name": "goauthentik/authentik", "url": "https://github.com/goauthentik/authentik", "meta": "Python · 24,346 ★ · +310 today"},
+        {"name": "ZhuLinsen/daily_stock_analysis", "url": "https://github.com/ZhuLinsen/daily_stock_analysis", "meta": "Python · 61,368 ★ · +306 today"},
+        {"name": "pranshuparmar/witr", "url": "https://github.com/pranshuparmar/witr", "meta": "Go · 20,847 ★ · +210 today"},
+        {"name": "pingdotgg/t3code", "url": "https://github.com/pingdotgg/t3code", "meta": "TypeScript · 17,737 ★ · +163 today"},
+        {"name": "vitali87/code-graph-rag", "url": "https://github.com/vitali87/code-graph-rag", "meta": "Python · 3,141 ★ · +96 today"},
+        {"name": "google-deepmind/weathernext", "url": "https://github.com/google-deepmind/weathernext", "meta": "Python · 7,143 ★ · +86 today"},
+        {"name": "harveyai/harvey-labs", "url": "https://github.com/harveyai/harvey-labs", "meta": "Python · 878 ★ · +47 today"}
       ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "items": [
-        {
-          "name": "MiniMaxAI/MiniMax-H3",
-          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-          "meta": "MoE language model from MiniMax, trending for open-weights inference"
-        },
-        {
-          "name": "deepseek-ai/DeepSeek-V4-Flash-0731",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-          "meta": "DeepSeek V4 Flash — efficient LLM, latest weights release"
-        },
-        {
-          "name": "moonshotai/Kimi-K3",
-          "url": "https://huggingface.co/moonshotai/Kimi-K3",
-          "meta": "Kimi K3, Moonshot AI's open-weights LLM"
-        },
-        {
-          "name": "LiquidAI/LFM2.5-2.6B",
-          "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
-          "meta": "2.6B parameter language model from Liquid AI"
-        },
-        {
-          "name": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
-          "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
-          "meta": "11B voice chat model from NVIDIA"
-        },
-        {
-          "name": "inclusionAI/Ling-3.0-flash",
-          "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
-          "meta": "Ling 3.0 Flash, efficient language model"
-        },
-        {
-          "name": "mistralai/Shieldstral-1.0-3B",
-          "url": "https://huggingface.co/mistralai/Shieldstral-1.0-3B",
-          "meta": "3B safety guardrail model from Mistral AI"
-        },
-        {
-          "name": "zai-org/GLM-5.2",
-          "url": "https://huggingface.co/zai-org/GLM-5.2",
-          "meta": "GLM-5.2, Zhipu AI's latest open-weights model"
-        },
-        {
-          "name": "microsoft/Mage-VL",
-          "url": "https://huggingface.co/microsoft/Mage-VL",
-          "meta": "Vision-language model from Microsoft"
-        },
-        {
-          "name": "thinkingmachines/Inkling-Small",
-          "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
-          "meta": "Small language model from Thinking Machines"
-        }
+        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "33B, image-text-to-video"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "304B, text generation"},
+        {"name": "Comfy-Org/MiniMax-H3", "url": "https://huggingface.co/Comfy-Org/MiniMax-H3", "meta": "ComfyUI port of MiniMax-H3"},
+        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "2.8T, image-text-to-text"},
+        {"name": "larryvrh/MiniMax-H3-Turbo-Lora", "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora", "meta": "text-to-video LoRA"},
+        {"name": "LiquidAI/LFM2.5-2.6B", "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B", "meta": "3B, text generation"},
+        {"name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "meta": "27B, image-text-to-text GGUF"},
+        {"name": "deepgrove/maple-preview", "url": "https://huggingface.co/deepgrove/maple-preview", "meta": "20B, text generation"},
+        {"name": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "meta": "11B, voice chat"},
+        {"name": "ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot", "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot", "meta": "image-text-to-text ComfyUI INT8"}
       ]
     }
   },
   "quick_hits": [
-    {
-      "title": "Debate on forcing companies to release open-weight AI models via regulation",
-      "source": "WeLivetoServe",
-      "date": "2026-08-09",
-      "url": "https://x.com/WeLivetoServe/status/2086234485968757124"
-    },
-    {
-      "title": "Portugal replaces national Amalia AI model with stronger open-source alternatives",
-      "source": "wbetiago",
-      "date": "2026-08-09",
-      "url": "https://x.com/wbetiago/status/2086235245351727516"
-    },
-    {
-      "title": "Kimi K3 tops or ties #1 on 3 of 4 benchmarks via Together AI hosting",
-      "source": "@togethercompute",
-      "date": "2026-08-09",
-      "url": "https://x.com/togethercompute/status/2086222170355638521"
-    },
-    {
-      "title": "Seedance 2.5 generates 30-second cinematic trailer from single text prompt",
-      "source": "@togethercompute",
-      "date": "2026-08-09",
-      "url": "https://x.com/togethercompute/status/2086142646373044570"
-    },
-    {
-      "title": "Tura — Agent using 80% fewer tokens with better results",
-      "source": "Hacker News",
-      "date": "2026-08-09",
-      "url": "https://news.ycombinator.com/item?id=49227119"
-    },
-    {
-      "title": "ExpertCache — Run 120B GPT-OSS model on 16GB M1 Pro",
-      "source": "Hacker News",
-      "date": "2026-08-08",
-      "url": "https://news.ycombinator.com/item?id=49226502"
-    },
-    {
-      "title": "Benzi — Coding harness beating Claude Code on Sonnet",
-      "source": "Hacker News",
-      "date": "2026-08-08",
-      "url": "https://news.ycombinator.com/item?id=49226627"
-    },
-    {
-      "title": "Qwen3.8-Max — Use Qwen Studio and MCP to code locally for free",
-      "source": "Hacker News",
-      "date": "2026-08-09",
-      "url": "https://news.ycombinator.com/item?id=49228173"
-    },
-    {
-      "title": "agent-hop — Resume AI agent sessions across tools",
-      "source": "Hacker News",
-      "date": "2026-08-08",
-      "url": "https://news.ycombinator.com/item?id=49224884"
-    },
-    {
-      "title": "HAR — Open-source harness for multi-agent coding workflows",
-      "source": "Product Hunt",
-      "date": "2026-08-08",
-      "url": "https://www.producthunt.com/products/har"
-    },
-    {
-      "title": "OpenAI acquires presentation startup NextSlide",
-      "source": "TechCrunch",
-      "date": "2026-08-08",
-      "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
-    }
+    {"title": "Frontier models still struggle to make genuinely fun games", "source": "Simon Willison (X)", "url": "https://x.com/simonw/status/2086454620470309371"},
+    {"title": "Together AI and Cursor double down on open-weights models for agentic coding", "source": "Together AI", "url": "https://x.com/togethercompute/status/2086517990476984522"},
+    {"title": "China's humanoid robot makers race to list, Reuters explains why", "source": "Reuters", "url": "https://wsau.com/2026/08/09/explainer-what-is-unitree-and-why-are-chinas-humanoid-robot-makers-racing-to-list/"},
+    {"title": "Whetstone: 20 Claude Code skills distilled from real failures", "source": "Hacker News", "url": "https://whetstone.akbarsha.dev/"},
+    {"title": "Pacific Slate: self-hosted, model-agnostic multi-agent assistant", "source": "Hacker News", "url": "https://pacslate.com/"},
+    {"title": "Wardline: Go proxy that auto-blocks compromised AI agents", "source": "Hacker News", "url": "https://github.com/kabirnarang39/wardline"},
+    {"title": "Lumabri: LLM distribution modeled on Napster", "source": "Hacker News", "url": "https://github.com/JustVugg/lumabri"},
+    {"title": "perso-dubbing-plugin: coding agent video subtitle, translate and clip", "source": "Hacker News", "url": "https://github.com/perso-ai/perso-dubbing-plugin"}
   ],
   "spiked": {
-    "duplicate url": 1,
+    "low signal": 2,
     "already ran": 2
   }
 }

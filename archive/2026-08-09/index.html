@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · August 09, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 45 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>August 09, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>47 stories <span class="mk-note">(<span class="mk-beta">Beta</span> : <a href="making-of.html" class="mk-link" title="Replay how this issue assembled itself">See how this issue made itself</a>)</span></span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DS4 Flash Abliterated!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="OpenAI Acquires Presentation Startup NextSlide" data-b="OpenAI has acquired NextSlide, a startup focused on AI-powered presentation software, according to a TechCrunch report. The NextSlide team has joined the company and is now contributing to ChatGPT.
+
+A note on the startup&#x27;s website from founder Ahmed Beshry described the product as one that could convert prompts, notes, documents, or research into editable presentations. Beshry said the company&#x27;s mission was to make visual communication more accessible and help people express ideas clearly — a goal the team will continue pursuing within OpenAI by building AI products for creation and communication.
+
+The financial terms of the deal were not disclosed. On LinkedIn, Beshry noted that the announcement comes &quot;a few months late,&quot; as the acquisition actually closed earlier this year.
+
+Beshry was previously a co-founder at Caper AI, a smart cart and cashier-less checkout startup that Instacart acquired in 2021.
+
+*Another sign that OpenAI is assembling product-building talent rather than just research talent — presentations are a notoriously sticky office workflow, and owning the tool means owning the format.*
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"><span class="tih">OpenAI Acquires Presentation Startup NextSlide</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Google Overhauls Hacking Group Naming System for Clarity" data-b="Google has introduced a revamped system for naming hacking groups, replacing the alphanumeric APT-style labels inherited from Mandiant with a more intuitive two-word format. The new convention uses a memorable random first name paired with a second word whose initial denotes the group&#x27;s country of origin — Castle for China, Ion for Iran, Neptune for North Korea, and Relic for Russia.
+
+According to Shane Huntley, chief technology officer of Google Threat Intelligence Group, the shift was driven by sheer scale. When companies first began publishing cyberattack reports in the early 2010s, few anticipated how many threat groups would emerge. Google now tracks over 5,000 &quot;activity clusters&quot; across multiple countries, and Huntley noted that very few developed nations lack their own government-backed hacking teams.
+
+Huntley explained that codenames serve a practical purpose beyond classification. Consistent naming gives defenders a baseline for understanding who is attacking, how they operate, and what their past behavior looks like — information that becomes critical during an active incident. Knowing a group like Lazarus&#x27;s typical targets and methods gives security teams a head start.
+
+When asked why companies don&#x27;t simply adopt a single shared naming system, Huntley acknowledged that perfect alignment is impossible. Each organization sees threat groups through the lens of its own data and telemetry. &quot;No one has perfect visibility,&quot; he said. By unifying Google&#x27;s internal schemes, at least there is one fewer list to remember.
+
+*A sensible move — less jargon, more clarity — but the industry-wide naming mess it tries to solve won&#x27;t disappear anytime soon.*
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/08/googles-top-hacker-hunter-explains-why-hacking-groups-get-codenames/"><span class="tih">Google Overhauls Hacking Group Naming System for Clarity</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Census Proposal Would Drop Count of Undocumented Immigrants and Demographic Data on Race and Sexuality" data-b="The US Department of Commerce is circulating a proposal that would stop collecting demographic data on racial minorities and LGBTQ+ individuals, and exclude undocumented immigrants from the 2030 census count, according to documents reviewed by WIRED.
+
+If enacted, the change would reshape federal funding allocations, especially in states with large minority and immigrant populations. The proposal argues for removing questions on race and sexual orientation to avoid &quot;distortions&quot; and claims that undocumented immigrants should not be counted because they are not &quot;true inhabitants&quot; of the United States. To enforce the exclusion, the government would likely need to reintroduce a citizenship question — something the Supreme Court blocked in 2019 after finding the administration&#x27;s justification was &quot;contrived,&quot; though the Court did not rule citizenship questions inherently unconstitutional.
+
+Experts warn the move threatens the Voting Rights Act by making it impossible to assess whether districts are majority-minority. Anonymized employees from HHS and Commerce told WIRED the changes would cut federal funding to localities with high immigrant populations, harm tribal communities, and create widespread fear among undocumented residents, suppressing participation and erasing political power.
+
+*A policy that deletes record of people rather than addressing their needs is not statistical reform — it is an exercise in selective visibility.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/census-proposal-would-stop-counting-undocumented-immigrants-and-ignore-race-and-sexual-orientation/"><span class="tih">Census Proposal Would Drop Count of Undocumented Immigrants and Demographic Data on Race and Sexuality</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="**HP OmniBook 5 Gets a Rare Discount, Bringing OLED and Long Battery Life Below $800**" data-b="According to a WIRED review by Luke Larsen, the HP OmniBook 5 is currently 42 percent off its $1,300 retail price, bringing it down to $750. The configuration on sale includes a 14-inch OLED screen, 16 GB of RAM, and 512 GB of storage.
+
+The model comes with a Qualcomm Snapdragon X Plus chip, which the reviewer says delivers battery life comparable to a MacBook. The OLED display offers vibrant color reproduction that outperforms typical IPS panels at this price point, though it has a glossy finish that can be reflective and its 1920 x 1200 resolution is not as sharp as a MacBook Neo display.
+
+Portability is another highlight: the 14-inch version measures half an inch thick with thin screen bezels and includes a USB-A port without adding bulk. A 16-inch model is also on sale at $650, though it lacks a touchscreen and appears slightly less sharp due to the same resolution stretched across a larger panel.
+
+The reviewer&#x27;s main criticism is the touchpad, described as frustrating to use, particularly for click-and-drag actions. For those seeking an even lower price, the article mentions the HP OmniBook 3 with a slightly less powerful Snapdragon X chip, which offers better battery life and an OLED display for under $600.
+
+*A generous discount on a laptop that nails the essentials — but a bad touchpad remains a hard compromise at any price.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/hp-omnibook-5-50-percent-off/"><span class="tih">**HP OmniBook 5 Gets a Rare Discount, Bringing OLED and Long Battery Life Below $800**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="DeepMind AI Predicts Hurricane Path With Surprising Accuracy" data-b="In October 2025, a storm over the Caribbean Sea tested an artificial intelligence model developed by Google&#x27;s DeepMind and Google Research, according to a paper published in Nature. The system, called WeatherNext, predicted with 80 percent confidence that the developing storm would reach Jamaica as a Category 5 hurricane five days before landfall. That forecast proved accurate, and Hurricane Melissa went on to cause severe flooding and landslides across the island.
+
+Researchers found that WeatherNext offers forecasters roughly an extra day of lead time compared to existing models. Predictions made three days out are as reliable as what older models could deliver in two days. The model stands out because it produces accurate intensity forecasts using lower-resolution atmospheric data than traditional approaches require — an outcome that surprised both meteorologists and the DeepMind team, who acknowledge they do not fully understand how the model extracts so much signal from coarse inputs.
+
+Unlike conventional models, WeatherNext generates hundreds of potential storm scenarios — currently 1,000 per storm, up from 50 last year — capturing how small variations could lead to dramatically different outcomes. The National Hurricane Center used it during Hurricane Melissa to issue warnings earlier, marking the first time a Category 5 storm was predicted when it was still at Category 1 strength. DeepMind is open-sourcing the model.
+
+*The most striking takeaway is not just that an AI outperforms physics-based models, but that it found a pattern in coarser data that researchers had overlooked for years.*
+*— Written by AI (deepseek-v4-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/"><span class="tih">DeepMind AI Predicts Hurricane Path With Surprising Accuracy</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI Acquires Presentation Startup NextSlide" data-b="OpenAI has acquired NextSlide, a startup focused on AI-powered presentation software, according to a TechCrunch report. The NextSlide team has joined the company and is now contributing to ChatGPT.
+
+A note on the startup&#x27;s website from founder Ahmed Beshry described the product as one that could convert prompts, notes, documents, or research into editable presentations. Beshry said the company&#x27;s mission was to make visual communication more accessible and help people express ideas clearly — a goal the team will continue pursuing within OpenAI by building AI products for creation and communication.
+
+The financial terms of the deal were not disclosed. On LinkedIn, Beshry noted that the announcement comes &quot;a few months late,&quot; as the acquisition actually closed earlier this year.
+
+Beshry was previously a co-founder at Caper AI, a smart cart and cashier-less checkout startup that Instacart acquired in 2021.
+
+*Another sign that OpenAI is assembling product-building talent rather than just research talent — presentations are a notoriously sticky office workflow, and owning the tool means owning the format.*
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"><span class="tih">OpenAI Acquires Presentation Startup NextSlide</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Google Overhauls Hacking Group Naming System for Clarity" data-b="Google has introduced a revamped system for naming hacking groups, replacing the alphanumeric APT-style labels inherited from Mandiant with a more intuitive two-word format. The new convention uses a memorable random first name paired with a second word whose initial denotes the group&#x27;s country of origin — Castle for China, Ion for Iran, Neptune for North Korea, and Relic for Russia.
+
+According to Shane Huntley, chief technology officer of Google Threat Intelligence Group, the shift was driven by sheer scale. When companies first began publishing cyberattack reports in the early 2010s, few anticipated how many threat groups would emerge. Google now tracks over 5,000 &quot;activity clusters&quot; across multiple countries, and Huntley noted that very few developed nations lack their own government-backed hacking teams.
+
+Huntley explained that codenames serve a practical purpose beyond classification. Consistent naming gives defenders a baseline for understanding who is attacking, how they operate, and what their past behavior looks like — information that becomes critical during an active incident. Knowing a group like Lazarus&#x27;s typical targets and methods gives security teams a head start.
+
+When asked why companies don&#x27;t simply adopt a single shared naming system, Huntley acknowledged that perfect alignment is impossible. Each organization sees threat groups through the lens of its own data and telemetry. &quot;No one has perfect visibility,&quot; he said. By unifying Google&#x27;s internal schemes, at least there is one fewer list to remember.
+
+*A sensible move — less jargon, more clarity — but the industry-wide naming mess it tries to solve won&#x27;t disappear anytime soon.*
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/08/googles-top-hacker-hunter-explains-why-hacking-groups-get-codenames/"><span class="tih">Google Overhauls Hacking Group Naming System for Clarity</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Census Proposal Would Drop Count of Undocumented Immigrants and Demographic Data on Race and Sexuality" data-b="The US Department of Commerce is circulating a proposal that would stop collecting demographic data on racial minorities and LGBTQ+ individuals, and exclude undocumented immigrants from the 2030 census count, according to documents reviewed by WIRED.
+
+If enacted, the change would reshape federal funding allocations, especially in states with large minority and immigrant populations. The proposal argues for removing questions on race and sexual orientation to avoid &quot;distortions&quot; and claims that undocumented immigrants should not be counted because they are not &quot;true inhabitants&quot; of the United States. To enforce the exclusion, the government would likely need to reintroduce a citizenship question — something the Supreme Court blocked in 2019 after finding the administration&#x27;s justification was &quot;contrived,&quot; though the Court did not rule citizenship questions inherently unconstitutional.
+
+Experts warn the move threatens the Voting Rights Act by making it impossible to assess whether districts are majority-minority. Anonymized employees from HHS and Commerce told WIRED the changes would cut federal funding to localities with high immigrant populations, harm tribal communities, and create widespread fear among undocumented residents, suppressing participation and erasing political power.
+
+*A policy that deletes record of people rather than addressing their needs is not statistical reform — it is an exercise in selective visibility.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/census-proposal-would-stop-counting-undocumented-immigrants-and-ignore-race-and-sexual-orientation/"><span class="tih">Census Proposal Would Drop Count of Undocumented Immigrants and Demographic Data on Race and Sexuality</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="**HP OmniBook 5 Gets a Rare Discount, Bringing OLED and Long Battery Life Below $800**" data-b="According to a WIRED review by Luke Larsen, the HP OmniBook 5 is currently 42 percent off its $1,300 retail price, bringing it down to $750. The configuration on sale includes a 14-inch OLED screen, 16 GB of RAM, and 512 GB of storage.
+
+The model comes with a Qualcomm Snapdragon X Plus chip, which the reviewer says delivers battery life comparable to a MacBook. The OLED display offers vibrant color reproduction that outperforms typical IPS panels at this price point, though it has a glossy finish that can be reflective and its 1920 x 1200 resolution is not as sharp as a MacBook Neo display.
+
+Portability is another highlight: the 14-inch version measures half an inch thick with thin screen bezels and includes a USB-A port without adding bulk. A 16-inch model is also on sale at $650, though it lacks a touchscreen and appears slightly less sharp due to the same resolution stretched across a larger panel.
+
+The reviewer&#x27;s main criticism is the touchpad, described as frustrating to use, particularly for click-and-drag actions. For those seeking an even lower price, the article mentions the HP OmniBook 3 with a slightly less powerful Snapdragon X chip, which offers better battery life and an OLED display for under $600.
+
+*A generous discount on a laptop that nails the essentials — but a bad touchpad remains a hard compromise at any price.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/hp-omnibook-5-50-percent-off/"><span class="tih">**HP OmniBook 5 Gets a Rare Discount, Bringing OLED and Long Battery Life Below $800**</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="DeepMind AI Predicts Hurricane Path With Surprising Accuracy" data-b="In October 2025, a storm over the Caribbean Sea tested an artificial intelligence model developed by Google&#x27;s DeepMind and Google Research, according to a paper published in Nature. The system, called WeatherNext, predicted with 80 percent confidence that the developing storm would reach Jamaica as a Category 5 hurricane five days before landfall. That forecast proved accurate, and Hurricane Melissa went on to cause severe flooding and landslides across the island.
+
+Researchers found that WeatherNext offers forecasters roughly an extra day of lead time compared to existing models. Predictions made three days out are as reliable as what older models could deliver in two days. The model stands out because it produces accurate intensity forecasts using lower-resolution atmospheric data than traditional approaches require — an outcome that surprised both meteorologists and the DeepMind team, who acknowledge they do not fully understand how the model extracts so much signal from coarse inputs.
+
+Unlike conventional models, WeatherNext generates hundreds of potential storm scenarios — currently 1,000 per storm, up from 50 last year — capturing how small variations could lead to dramatically different outcomes. The National Hurricane Center used it during Hurricane Melissa to issue warnings earlier, marking the first time a Category 5 storm was predicted when it was still at Category 1 strength. DeepMind is open-sourcing the model.
+
+*The most striking takeaway is not just that an AI outperforms physics-based models, but that it found a pattern in coarser data that researchers had overlooked for years.*
+*— Written by AI (deepseek-v4-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/"><span class="tih">DeepMind AI Predicts Hurricane Path With Surprising Accuracy</span> <span class="tis">— arstechnica.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/yoopya/status/2086046818689835164" target="_blank" rel="noopener">
+    <img src="images/lead_2026-08-09.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Founding Exodus</p>
+        <h1>Jeff Dean leaves Google after 27 years to found DiscoLoopAI</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Jeff Dean, along with Sanjay Ghemawat, Quoc Le, and Oriol Vinyals, departed Google to launch Discovery Loop (DiscoLoopAI), a startup focused on automating scientific discovery. Backed by Radical Ventures, Khosla Ventures, and Alphabet/Google itself.</p>
+        <p class="byline"><span class="src">yoopya</span> · <span>2026-08-08</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">0:53</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-08-09.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/JulianGoldieSEO/status/2086229819411632507" target="_blank" rel="noopener">
+    <h3>Prime Agent — open-source self-improving coding agent released under MIT license</h3>
+    <p>Prime Intellect released Prime Agent, a fully open-source MIT-licensed coding agent with persistent autonomous workflows, subagent spawning, and a /refine mechanism. Works with any provider or 100% locally via Ollama.</p>
+    <p class="byline"><span class="src">@JulianGoldieSEO</span> · 2026-08-09</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.producthunt.com/products/coldtea" target="_blank" rel="noopener">
+    <h3>Coldtea.ai tops Product Hunt with self-driving software delivery platform</h3>
+    <p>Coldtea uses AI agents for QA, production monitoring, bug detection, and automated fixes across the software lifecycle. Topped Product Hunt on August 8 with 459 upvotes.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-08</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/ylecun/status/2086042924316242287" target="_blank" rel="noopener">
+    <h3>Yann LeCun: AGI requires additional conceptual breakthroughs beyond LLM scaling</h3>
+    <p>LeCun argued that AGI needs more than pure LLM scaling — world models and new architectures are required. Compared his own 2018 move away from management at Meta to Demis Hassabis's recent role change at DeepMind.</p>
+    <p class="byline"><span class="src">@ylecun</span> · 2026-08-08</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>YouTube &amp; Video</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_youtube-video_2026-08-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=hFkcEPK5V8k" target="_blank" rel="noopener">
+    <h4>OpenAI's 'Donut' AI hardware device leaked — wearable form factor revealed</h4>
+    <p>A donut-shaped wearable AI device from OpenAI leaked online, pointing to a consumer hardware play that could compete with AI pins and pendants from Humane and others.</p>
+    <p class="byline"><span class="src">Beyond AI News</span> · 2026-08-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=gVfEtktkvnE" target="_blank" rel="noopener">
+    <h4>Did Anthropic finally fix MCP? Major update to Model Context Protocol</h4>
+    <p>Theo from t3.gg examines whether Anthropic's latest MCP update addresses long-standing issues with tool calling reliability, streaming, and developer experience.</p>
+    <p class="byline"><span class="src">Theo - t3.gg</span> · 2026-08-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=K9mM2kWljm8" target="_blank" rel="noopener">
+    <h4>Google AI leaders exodus — why departures could benefit open model development</h4>
+    <p>Key AI leadership departures from Google may accelerate diversity in AI development as talent and research spread across startups and open-weight initiatives.</p>
+    <p class="byline"><span class="src">The AI Daily Brief</span> · 2026-08-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-08-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.hashtaginvesting.com/blog/trumps-foreign-robot-ban-sweeps-up-canadian-firms-blocking-u-s-sales" target="_blank" rel="noopener">
+    <h4>Trump's foreign-robot ban sweeps up Canadian firms, blocking US sales</h4>
+    <p>The FCC's foreign-robot ban is catching Canadian robotics companies who rely on the US as their primary export market. The rule turns on production location rather than company nationality, sweeping in allied countries.</p>
+    <p class="byline"><span class="src">Hashtag Investing</span> · 2026-08-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.fool.com/investing/2026/08/08/wall-street-sees-a-multi-trillion-dollar-humanoid/" target="_blank" rel="noopener">
+    <h4>Wall Street sees multi-trillion-dollar humanoid robot market opportunity</h4>
+    <p>Investment analysts project a multi-trillion-dollar humanoid robot market, pointing to industrial component suppliers rather than robot manufacturers as the key beneficiaries.</p>
+    <p class="byline"><span class="src">Motley Fool</span> · 2026-08-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://dev.to/xberry-tech/byd-has-a-humanoid-robot-automate-2026-says-the-assembly-line-is-not-ready-for-it-yet-kl5" target="_blank" rel="noopener">
+    <h4>BYD enters humanoid robotics as automakers converge on physical AI</h4>
+    <p>Chinese automaker BYD revealed a humanoid robot, joining Tesla and others investing in physical AI for factory automation. Automate 2026 analysis suggests assembly lines are not yet ready for humanoid deployment at scale.</p>
+    <p class="byline"><span class="src">DEV Community</span> · 2026-08-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-08-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.producthunt.com/products/soloop" target="_blank" rel="noopener">
+    <h4>Soloop — Approval-first Agent OS for solo founders</h4>
+    <p>Agentic company-building system with AI CEO, CTO, and CMO agents that solo founders delegate to while retaining approval control. 429 upvotes on Product Hunt.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/browseros_ai" target="_blank" rel="noopener">
+    <h4>BrowserOS neo — Open-source agentic browser for Claude and Codex</h4>
+    <p>Privacy-first open-source browser designed for AI agents to run locally using logged-in accounts. 192 upvotes on Product Hunt.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/rindler" target="_blank" rel="noopener">
+    <h4>Rindler — automates web-based manual work</h4>
+    <p>Automation platform that handles repetitive web-based tasks teams currently perform by hand. 232 upvotes on Product Hunt.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/progress-ai-observability" target="_blank" rel="noopener">
+    <h4>Progress AI Observability — agent tracing and evaluation SaaS</h4>
+    <p>SaaS platform for tracing, evaluating, and improving AI agents running in production environments. 160 upvotes on Product Hunt.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/TauricResearch/TradingAgents" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">TauricResearch/TradingAgents</span>
+    <span class="t-meta">Python · 96.6k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">addyosmani/agent-skills</span>
+    <span class="t-meta">JavaScript · 84.7k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/TapXWorld/ChinaTextbook" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">TapXWorld/ChinaTextbook</span>
+    <span class="t-meta">Roff · 78.0k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/LadybirdBrowser/ladybird" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">LadybirdBrowser/ladybird</span>
+    <span class="t-meta">C++ · 65.0k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/google/guava" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">google/guava</span>
+    <span class="t-meta">Java · 51.9k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/bannedbook/fanqiang" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">bannedbook/fanqiang</span>
+    <span class="t-meta">Kotlin · 50.0k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/goauthentik/authentik" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">goauthentik/authentik</span>
+    <span class="t-meta">Python · 24.0k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 210.2k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/google/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">google/skills</span>
+    <span class="t-meta">Python · 16.8k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/PrimeIntellect-ai/prime-agent" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">PrimeIntellect-ai/prime-agent</span>
+    <span class="t-meta">TypeScript · 9.2k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/denoland/celld" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">denoland/celld</span>
+    <span class="t-meta">Rust · 2.6k ★</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/litu54/DevOps-Interview-Guide" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">litu54/DevOps-Interview-Guide</span>
+    <span class="t-meta">Unknown · 738 ★</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">MiniMaxAI/MiniMax-H3</span>
+    <span class="t-meta">MoE language model from MiniMax, trending for open-weights inference</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4-Flash-0731</span>
+    <span class="t-meta">DeepSeek V4 Flash — efficient LLM, latest weights release</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">moonshotai/Kimi-K3</span>
+    <span class="t-meta">Kimi K3, Moonshot AI's open-weights LLM</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/LiquidAI/LFM2.5-2.6B" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">LiquidAI/LFM2.5-2.6B</span>
+    <span class="t-meta">2.6B parameter language model from Liquid AI</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">nvidia/NVIDIA-NemotronLabs-VoiceChat-11B</span>
+    <span class="t-meta">11B voice chat model from NVIDIA</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI/Ling-3.0-flash</span>
+    <span class="t-meta">Ling 3.0 Flash, efficient language model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/mistralai/Shieldstral-1.0-3B" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">mistralai/Shieldstral-1.0-3B</span>
+    <span class="t-meta">3B safety guardrail model from Mistral AI</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">zai-org/GLM-5.2</span>
+    <span class="t-meta">GLM-5.2, Zhipu AI's latest open-weights model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/microsoft/Mage-VL" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">microsoft/Mage-VL</span>
+    <span class="t-meta">Vision-language model from Microsoft</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/thinkingmachines/Inkling-Small" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">thinkingmachines/Inkling-Small</span>
+    <span class="t-meta">Small language model from Thinking Machines</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">11</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/WeLivetoServe/status/2086234485968757124" target="_blank" rel="noopener"><span class="qh-title">Debate on forcing companies to release open-weight AI models via regulation</span><span class="qh-src">WeLivetoServe</span></a></li>
+
+    <li><a href="https://x.com/wbetiago/status/2086235245351727516" target="_blank" rel="noopener"><span class="qh-title">Portugal replaces national Amalia AI model with stronger open-source alternatives</span><span class="qh-src">wbetiago</span></a></li>
+
+    <li><a href="https://x.com/togethercompute/status/2086222170355638521" target="_blank" rel="noopener"><span class="qh-title">Kimi K3 tops or ties #1 on 3 of 4 benchmarks via Together AI hosting</span><span class="qh-src">@togethercompute</span></a></li>
+
+    <li><a href="https://x.com/togethercompute/status/2086142646373044570" target="_blank" rel="noopener"><span class="qh-title">Seedance 2.5 generates 30-second cinematic trailer from single text prompt</span><span class="qh-src">@togethercompute</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49227119" target="_blank" rel="noopener"><span class="qh-title">Tura — Agent using 80% fewer tokens with better results</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49226502" target="_blank" rel="noopener"><span class="qh-title">ExpertCache — Run 120B GPT-OSS model on 16GB M1 Pro</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49226627" target="_blank" rel="noopener"><span class="qh-title">Benzi — Coding harness beating Claude Code on Sonnet</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49228173" target="_blank" rel="noopener"><span class="qh-title">Qwen3.8-Max — Use Qwen Studio and MCP to code locally for free</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49224884" target="_blank" rel="noopener"><span class="qh-title">agent-hop — Resume AI agent sessions across tools</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/har" target="_blank" rel="noopener"><span class="qh-title">HAR — Open-source harness for multi-agent coding workflows</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/" target="_blank" rel="noopener"><span class="qh-title">OpenAI acquires presentation startup NextSlide</span><span class="qh-src">TechCrunch</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-08-09 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
