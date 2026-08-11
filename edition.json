@@ -1,106 +1,174 @@
 {
-  "issue_no": 46,
-  "date_iso": "2026-08-10",
-  "date_human": "August 10, 2026",
+  "issue_no": 47,
+  "date_iso": "2026-08-11",
+  "date_human": "August 11, 2026",
   "notice": null,
   "lead": {
-    "kicker": "Agentic Security",
-    "title": "OpenAI agent chains two zero-days in JFrog Artifactory to escape sandbox",
-    "summary": "In a red-team exercise, OpenAI's models identified and chained two separate zero-days in JFrog's Artifactory to break out of a sandbox — going beyond simple misconfiguration and acting as an automated, high-speed vulnerability research pipeline.",
-    "source": "Simon Willison",
+    "kicker": "Frontier cyber defense",
+    "title": "OpenAI launches GPT-5.6-Cyber as it expands Daybreak into two security tiers",
+    "summary": "OpenAI unveiled GPT-5.6-Cyber, a frontier cyber model built on GPT-5.6 Sol and reserved for the new Daybreak Red tier serving trusted partners like Accenture, IBM, CrowdStrike and Cloudflare. The expanded Daybreak program now splits into Blue for basic defense work and Red for security testing and vulnerability research, with OpenAI reporting the model surfaced previously unknown flaws including in Chrome's V8 engine.",
+    "source": "TechCrunch",
     "date": "2026-08-10",
-    "url": "https://x.com/simonw/status/2086561757833925056",
-    "image": "images/lead_2026-08-10.jpg"
+    "url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/",
+    "image": "images/lead_2026-08-11.jpg"
   },
   "top_stories": [
     {
-      "title": "Situational Awareness invests $400M in chip startup Source Foundry",
-      "summary": "Leopold Aschenbrenner's AI-focused hedge fund lifts its total stake in Stanford-founded Source Foundry to $500M, backing faster and cheaper AI chip manufacturing.",
-      "source": "TechCrunch",
-      "date": "2026-08-09",
-      "url": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/"
+      "title": "Hyperscalers commit nearly $2 trillion to lock down AI hardware and memory",
+      "summary": "Combined purchasing commitments from Amazon, Alphabet, Meta and Microsoft reached nearly $2 trillion by Q2 2026, with Alphabet and Microsoft accounting for the overwhelming majority, as the big clouds secure accelerator and memory supply well ahead of demand.",
+      "source": "Tom's Hardware",
+      "date": "2026-08-10",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/hyperscalers-commit-nearly-usd2-trillion-to-secure-ai-hardware-and-memory-google-leads-usd811-billion-spending-surge-while-apple-trails-at-usd57-billion"
     },
     {
-      "title": "China GPU maker Moore Threads plans Hong Kong listing after H1 revenue jumps 147%",
-      "summary": "First-half revenue rose 147% to 1.74 billion yuan while the net loss narrowed 96%; shares have climbed more than 420% since the company's Shanghai debut last year.",
-      "source": "AI in Asia",
-      "date": "2026-08-09",
-      "url": "https://aiinasia.com/greater-china/moore-threads-hong-kong-listing-h1-revenue-china-gpu-2026"
+      "title": "Microsoft plans big production boost for its Maia 300 AI chips",
+      "summary": "Microsoft is ramping next-generation AI chip output, reportedly ordering 300,000+ Maia 300 accelerators from TSMC amid a tightening HBM and AI hardware supply crunch, The Information reported.",
+      "source": "Yahoo Finance",
+      "date": "2026-08-10",
+      "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-plans-production-boost-ai-135551218.html"
+    },
+    {
+      "title": "Meta releases Muse Glimmer 30B, an open agentic model for local hardware",
+      "summary": "Meta open-sourced Muse Glimmer, a 30B dense Apache-2.0 model distilled for autonomous agentic tasks on consumer hardware, reaching roughly 230 tokens/s on a single RTX 5090 with day-0 SGLang support and immediate availability on Together AI.",
+      "source": "Meta / @lmsysorg",
+      "date": "2026-08-10",
+      "url": "https://x.com/lmsysorg/status/2086758948288487856"
+    },
+    {
+      "title": "Aureka Biotechnologies raises $100M Series B for a biological world model",
+      "summary": "Aureka closed a $100M Series B led by Granite Asia and a strategic investor, with HighLight Capital and existing backers MPCi and NRL Capital, to build AI-native biological foundation models for drug discovery.",
+      "source": "PR Newswire",
+      "date": "2026-08-10",
+      "url": "https://www.prnewswire.com/news-releases/aureka-biotechnologies-raises-us100-million-series-b-to-build-a-biological-world-model-for-drug-discovery-302847165.html"
     }
   ],
   "sections": [
     {
       "title": "Research & Papers",
-      "image": "images/section_research-papers_2026-08-10.jpg",
+      "image": "images/section_research_2026-08-11.jpg",
       "items": [
         {
-          "title": "Diffusion LLMs as targets and adversaries: mechanistic safety exploits",
-          "summary": "Safety alignment in diffusion LLMs is sparse and transferable from autoregressive predecessors; self-pruning lifts attack success from 2.6% to 73.8% (LLaDA) and 1.9% to 86.6% (Dream), while the offline SN-Guided Diffusion jailbreak hits up to 77.1% transfer ASR on Llama-3-8B.",
-          "source": "arXiv",
-          "date": "2026-08-07",
-          "url": "https://arxiv.org/abs/2608.07430"
+          "title": "Anthropic research Claude pushes Riemann hypothesis lower bound to 67.2%",
+          "summary": "An unreleased research version of Claude raised the proven lower bound on the fraction of Riemann zeta zeros satisfying the hypothesis from 41.6% to 67.2% — real progress on a long-standing open problem, without solving it.",
+          "source": "Anthropic",
+          "date": "2026-08-10",
+          "url": "https://x.com/AnthropicAI/status/2086867246073401655"
         },
         {
-          "title": "Transformers struggle to use their emergent world models: revisiting Tower of Hanoi",
-          "summary": "Small transformers develop a linearly-decodable Sierpinski-triangle world model, yet frontier models encode it near-perfectly at prompt end only to fail past three rings — a decay in representation maintenance, recoverable by re-injecting the prompt-time representation.",
+          "title": "Stealing reasoning traces from proprietary LLM APIs",
+          "summary": "A new work demonstrates a practical attack that recovers hidden chain-of-thought from encrypted client-side blocks, exposing an information-leakage vector against encrypted CoT schemes.",
           "source": "arXiv",
-          "date": "2026-08-07",
-          "url": "https://arxiv.org/abs/2608.07077"
+          "date": "2026-08-10",
+          "url": "https://arxiv.org/abs/2608.09867"
         },
         {
-          "title": "Agent Memory Distillation: empowering small LLM agents with hierarchical teacher memory",
-          "summary": "A training-free framework transfers workflow, subtask and function memory from a large teacher to 4-8B student agents, gaining up to 27.2, 11.2 and 3.4 points on AppWorld, BFCL V3 and ToolSandbox with GPT-5-mini as teacher.",
+          "title": "Model diffing for feature discovery and control in multimodal LLMs",
+          "summary": "A model-diffing approach decomposes MLLM hidden states into interpretable feature directions, enabling feature discovery, auditing, and post-hoc control of visual-language behavior.",
           "source": "arXiv",
-          "date": "2026-08-07",
-          "url": "https://arxiv.org/abs/2608.07169"
+          "date": "2026-08-10",
+          "url": "https://arxiv.org/abs/2608.09928"
         },
         {
-          "title": "SimWAM: a simple world action model for end-to-end autonomous driving",
-          "summary": "Uses video generation purely as a training signal via joint flow matching, discarding the video branch at inference to leave a self-contained action planner that reaches 91.5 PDMS on NAVSIM and transfers zero-shot to nuScenes.",
+          "title": "SKALD distills skills into weights, not prompts",
+          "summary": "An on-policy self-distillation framework distills abstract skills into model weights for cases where verifiable-reward RL yields no group-relative signal — 63-68% of groups in their experiments.",
           "source": "arXiv",
-          "date": "2026-08-07",
-          "url": "https://arxiv.org/abs/2608.07468"
+          "date": "2026-08-10",
+          "url": "https://arxiv.org/abs/2608.09826"
         },
         {
-          "title": "The Optimizer Is the Agent: reasoning-driven search across prompts, programs and ML workflows",
-          "summary": "ReASearch internalizes an optimization search policy in a single tool-using agent, beating specialized optimizers by 2% to 40% across 14 tasks and sometimes surpassing prior human best-known results.",
+          "title": "MixFormer: a linear transformer with mixture of memory experts",
+          "summary": "A linear-transformer variant adds input adaptivity and larger memory capacity via a mixture-of-memory-experts design, targeting information loss in SSM-style long-context modeling.",
           "source": "arXiv",
-          "date": "2026-08-07",
-          "url": "https://arxiv.org/abs/2608.06714"
+          "date": "2026-08-10",
+          "url": "https://arxiv.org/abs/2608.09468"
+        }
+      ]
+    },
+    {
+      "title": "YouTube & Video",
+      "image": "images/section_youtube_2026-08-11.jpg",
+      "items": [
+        {
+          "title": "Meta brings its AI assistant to the personal computer",
+          "summary": "Bloomberg reports Meta is expanding its AI assistant from mobile and web into the desktop computing experience.",
+          "source": "Bloomberg Technology",
+          "date": "2026-08-10",
+          "url": "https://www.youtube.com/watch?v=gyqgy6IAgQE"
+        },
+        {
+          "title": "Microsoft pushes AI agents from coding to finance",
+          "summary": "Bloomberg covers Microsoft's expansion of its AI agent push beyond software development into finance and other verticals, signaling a broader enterprise agent strategy.",
+          "source": "Bloomberg Technology",
+          "date": "2026-08-10",
+          "url": "https://www.youtube.com/watch?v=tfsEfbWV9dY"
         }
       ]
     },
     {
       "title": "Tools & Startups",
-      "image": "images/section_tools-startups_2026-08-10.jpg",
+      "image": "images/section_tools_2026-08-11.jpg",
       "items": [
         {
-          "title": "Gotcha: an on-device AI copilot for Android",
-          "summary": "Gotcha claims to be the first on-device AI copilot for Android, running locally without any cloud dependency.",
-          "source": "Hacker News",
+          "title": "Nous Research ships Hermes Browser Use mode, cutting token usage up to 66%",
+          "summary": "A new Browser Use mode replaces multiple specialized browser tools with a single tool backed by browser_use CLI 3.0, cutting token usage 48-66% with no drop in accuracy.",
+          "source": "Nous Research",
           "date": "2026-08-10",
-          "url": "https://samosa-ai.com/gotcha/"
+          "url": "https://x.com/NousResearch/status/2086881660658663469"
         },
         {
-          "title": "Preloop: run GitHub Actions locally in isolated microVMs",
-          "summary": "Preloop runs GitHub Actions workflows locally or self-hosted inside isolated microVMs for faster, more private CI.",
+          "title": "Airship: a Figma-like visual editor for Claude Code, Codex and OpenCode",
+          "summary": "An open-source GUI lets developers build and manage coding-agent projects through a visual canvas instead of the command line.",
           "source": "Hacker News",
-          "date": "2026-08-09",
-          "url": "https://preloop.dev"
+          "date": "2026-08-11",
+          "url": "https://github.com/0xnyn/airship"
         },
         {
-          "title": "CtxRay: see and lock what Codex loads before a task",
-          "summary": "An open-source tool that inspects and controls exactly which context a coding agent loads before a task, adding a guardrail layer.",
+          "title": "Linejudge: an independent verification harness for coding agents",
+          "summary": "An open-source harness that adds a test/check layer to confirm that AI coding agents' output actually works.",
           "source": "Hacker News",
-          "date": "2026-08-10",
-          "url": "https://github.com/FramY2/ctxray"
+          "date": "2026-08-11",
+          "url": "https://github.com/phillipmex/linejudge"
         },
         {
-          "title": "SynapsCLI: lightweight agent runtime in Rust",
-          "summary": "A lightweight Rust agent runtime that spins up and controls a swarm of AI agents from the command line.",
+          "title": "Opencodex: a free open-source coding agent for VSCode",
+          "summary": "A free, open-source AI coding agent that runs inside VSCode for agentic code editing without a paid subscription.",
           "source": "Hacker News",
           "date": "2026-08-10",
-          "url": "https://github.com/HaseebKhalid1507/SynapsCLI"
+          "url": "https://github.com/matonhp5108/Opencodex"
+        },
+        {
+          "title": "NuphosAI debuts an AI-native collaborative DevOps workspace",
+          "summary": "An AI-native workspace focused on agent quality, review, and observability aims to improve agent reliability and monitoring in development workflows.",
+          "source": "omarsar0",
+          "date": "2026-08-10",
+          "url": "https://x.com/omarsar0/status/2086929829773873571"
+        }
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "image": "images/section_money_2026-08-11.jpg",
+      "items": [
+        {
+          "title": "Discovered Materials closes $9M seed to hunt cooler chip materials with AI agents",
+          "summary": "Lightspeed India led the round with Peak XV and angels including Paul Graham, backing a YC startup that uses swarms of AI agents for semiconductor materials discovery.",
+          "source": "TechCrunch",
+          "date": "2026-08-10",
+          "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/"
+        },
+        {
+          "title": "NAVER D2SF backs NdotLight with ~$11M follow-on for physical AI data",
+          "summary": "A KRW 15B round led by Korea Development Bank supports NdotLight's simulation-ready 3D data infrastructure for physical and robotics AI training.",
+          "source": "Manila Times",
+          "date": "2026-08-11",
+          "url": "https://www.manilatimes.net/2026/08/11/tmt-newswire/pr-newswire/naver-d2sf-makes-follow-on-investment-in-ndotlight-a-physical-ai-data-startup/2402524"
+        },
+        {
+          "title": "Lucrative AI exits stealth with $500K pre-seed for MCP-native revenue ops",
+          "summary": "An MCP-native automation play for enterprise revenue operations, using AI agents that interact with data warehouses.",
+          "source": "AI Journal",
+          "date": "2026-08-11",
+          "url": "https://aijourn.com/lucrative-ai-launches-out-of-stealth-with-500k-in-pre-seed-funding-to-bring-mcp-native-automation-to-enterprise-revenue-operations/"
         }
       ]
     }
@@ -110,53 +178,109 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "items": [
-        {"name": "PrimeIntellect-ai/prime-agent", "url": "https://github.com/PrimeIntellect-ai/prime-agent", "meta": "TypeScript · 11,646 ★ · +2,356 today"},
-        {"name": "msitarzewski/agency-agents", "url": "https://github.com/msitarzewski/agency-agents", "meta": "Shell · 141,022 ★ · +858 today"},
-        {"name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "meta": "JavaScript · 85,272 ★ · +680 today"},
-        {"name": "google/skills", "url": "https://github.com/google/skills", "meta": "Python · 17,333 ★ · +528 today"},
-        {"name": "Comfy-Org/ComfyUI", "url": "https://github.com/Comfy-Org/ComfyUI", "meta": "Python · 125,696 ★ · +365 today"},
-        {"name": "goauthentik/authentik", "url": "https://github.com/goauthentik/authentik", "meta": "Python · 24,346 ★ · +310 today"},
-        {"name": "ZhuLinsen/daily_stock_analysis", "url": "https://github.com/ZhuLinsen/daily_stock_analysis", "meta": "Python · 61,368 ★ · +306 today"},
-        {"name": "pranshuparmar/witr", "url": "https://github.com/pranshuparmar/witr", "meta": "Go · 20,847 ★ · +210 today"},
-        {"name": "pingdotgg/t3code", "url": "https://github.com/pingdotgg/t3code", "meta": "TypeScript · 17,737 ★ · +163 today"},
-        {"name": "vitali87/code-graph-rag", "url": "https://github.com/vitali87/code-graph-rag", "meta": "Python · 3,141 ★ · +96 today"},
-        {"name": "google-deepmind/weathernext", "url": "https://github.com/google-deepmind/weathernext", "meta": "Python · 7,143 ★ · +86 today"},
-        {"name": "harveyai/harvey-labs", "url": "https://github.com/harveyai/harvey-labs", "meta": "Python · 878 ★ · +47 today"}
+        {"name": "microsoft/AI-For-Beginners", "url": "https://github.com/microsoft/AI-For-Beginners", "meta": "Jupyter Notebook · 58,565 ★ · +2,617 today"},
+        {"name": "usekaneo/kaneo", "url": "https://github.com/usekaneo/kaneo", "meta": "TypeScript · 5,943 ★ · +491 today"},
+        {"name": "lyogavin/airllm", "url": "https://github.com/lyogavin/airllm", "meta": "Jupyter Notebook · 25,306 ★ · +242 today"},
+        {"name": "iv-org/invidious", "url": "https://github.com/iv-org/invidious", "meta": "Crystal · 21,843 ★ · +307 today"},
+        {"name": "codecrafters-io/build-your-own-x", "url": "https://github.com/codecrafters-io/build-your-own-x", "meta": "Markdown · 534,523 ★ · +710 today"},
+        {"name": "zhaoxuya520/reverse-skill", "url": "https://github.com/zhaoxuya520/reverse-skill", "meta": "PowerShell · 12,677 ★ · +1,145 today"},
+        {"name": "different-ai/openwork", "url": "https://github.com/different-ai/openwork", "meta": "TypeScript · 20,116 ★ · +585 today"},
+        {"name": "microsoft/generative-ai-for-beginners", "url": "https://github.com/microsoft/generative-ai-for-beginners", "meta": "Jupyter Notebook · 114,523 ★ · +588 today"},
+        {"name": "Panniantong/Agent-Reach", "url": "https://github.com/Panniantong/Agent-Reach", "meta": "Python · 64,373 ★ · +645 today"},
+        {"name": "TencentCloud/TencentDB-Agent-Memory", "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory", "meta": "TypeScript · 10,647 ★ · +604 today"},
+        {"name": "mvanhorn/last30days-skill", "url": "https://github.com/mvanhorn/last30days-skill", "meta": "Python · 56,724 ★ · +600 today"},
+        {"name": "NomaDamas/k-skill", "url": "https://github.com/NomaDamas/k-skill", "meta": "JavaScript · 6,838 ★ · +179 today"},
+        {"name": "HarbourMasters/Lighthouse", "url": "https://github.com/HarbourMasters/Lighthouse", "meta": "C · 180 ★ · +62 today"},
+        {"name": "antirez/ds4", "url": "https://github.com/antirez/ds4", "meta": "C · 19,864 ★ · +150 today"},
+        {"name": "esengine/DeepSeek-Reasonix", "url": "https://github.com/esengine/DeepSeek-Reasonix", "meta": "Go · 28,806 ★ · +274 today"}
       ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "items": [
-        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "33B, image-text-to-video"},
-        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "304B, text generation"},
-        {"name": "Comfy-Org/MiniMax-H3", "url": "https://huggingface.co/Comfy-Org/MiniMax-H3", "meta": "ComfyUI port of MiniMax-H3"},
-        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "2.8T, image-text-to-text"},
-        {"name": "larryvrh/MiniMax-H3-Turbo-Lora", "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora", "meta": "text-to-video LoRA"},
-        {"name": "LiquidAI/LFM2.5-2.6B", "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B", "meta": "3B, text generation"},
-        {"name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "meta": "27B, image-text-to-text GGUF"},
-        {"name": "deepgrove/maple-preview", "url": "https://huggingface.co/deepgrove/maple-preview", "meta": "20B, text generation"},
-        {"name": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "meta": "11B, voice chat"},
-        {"name": "ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot", "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot", "meta": "image-text-to-text ComfyUI INT8"}
+        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "33B omni-modal generative system, video with native stereo audio up to 2K/15s"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "Official DeepSeek-V4-Flash release with enhanced agentic capabilities, MIT"},
+        {"name": "meta-models/Muse-Glimmer-30B", "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B", "meta": "30B open agentic model for consumer hardware, Apache 2.0"},
+        {"name": "Comfy-Org/MiniMax-H3", "url": "https://huggingface.co/Comfy-Org/MiniMax-H3", "meta": "ComfyUI integration of MiniMax H3"},
+        {"name": "larryvrh/MiniMax-H3-Turbo-Lora", "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora", "meta": "Community LoRA for MiniMax H3"},
+        {"name": "LiquidAI/LFM2.5-2.6B", "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B", "meta": "2.6B hybrid on-device agent model, 128K context"},
+        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "2.8T MoE (104B active), open 3T-class native multimodal agent, 1M context"},
+        {"name": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF", "meta": "Community GGUF merge of Qwen3.6"},
+        {"name": "ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot", "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot", "meta": "Community Qwen3-VL INT8 quant for ComfyUI"},
+        {"name": "deepgrove/maple-preview", "url": "https://huggingface.co/deepgrove/maple-preview", "meta": "20B-A1B ternary-weight reasoning LLM, MIT, 200+ tok/s on Mac mini M4"}
       ]
     }
   },
   "quick_hits": [
-    {"title": "Frontier models still struggle to make genuinely fun games", "source": "Simon Willison (X)", "url": "https://x.com/simonw/status/2086454620470309371"},
-    {"title": "Together AI and Cursor double down on open-weights models for agentic coding", "source": "Together AI", "url": "https://x.com/togethercompute/status/2086517990476984522"},
-    {"title": "China's humanoid robot makers race to list, Reuters explains why", "source": "Reuters", "url": "https://wsau.com/2026/08/09/explainer-what-is-unitree-and-why-are-chinas-humanoid-robot-makers-racing-to-list/"},
-    {"title": "Whetstone: 20 Claude Code skills distilled from real failures", "source": "Hacker News", "url": "https://whetstone.akbarsha.dev/"},
-    {"title": "Pacific Slate: self-hosted, model-agnostic multi-agent assistant", "source": "Hacker News", "url": "https://pacslate.com/"},
-    {"title": "Wardline: Go proxy that auto-blocks compromised AI agents", "source": "Hacker News", "url": "https://github.com/kabirnarang39/wardline"},
-    {"title": "Lumabri: LLM distribution modeled on Napster", "source": "Hacker News", "url": "https://github.com/JustVugg/lumabri"},
-    {"title": "perso-dubbing-plugin: coding agent video subtitle, translate and clip", "source": "Hacker News", "url": "https://github.com/perso-ai/perso-dubbing-plugin"}
+    {
+      "title": "AntLingAGI open-sources Ling-3.0-tiny, a 7.9B MoE for local agents",
+      "source": "@lmsysorg",
+      "url": "https://x.com/lmsysorg/status/2086873951435944326"
+    },
+    {
+      "title": "AgiBot overtakes Unitree as the world's top humanoid robot vendor",
+      "source": "RobotToday",
+      "url": "https://robottoday.com/industry-briefing/agibot-becomes-leading-global-humanoid-robot-vendor-surpassing-unitree-in-2026/10438"
+    },
+    {
+      "title": "LeCun clarifies he left Meta voluntarily, not fired",
+      "source": "Yann LeCun",
+      "url": "https://x.com/ylecun/status/2086900236430307776"
+    },
+    {
+      "title": "Simon Willison: GPT-5.6-Luna now outperforms Claude Haiku on some tasks",
+      "source": "simonw",
+      "url": "https://x.com/simonw/status/2086931955539742985"
+    },
+    {
+      "title": "MatrAIx paper simulates the world with 8.3 billion persona agents",
+      "source": "_akhaliq",
+      "url": "https://x.com/_akhaliq/status/2086894806932865475"
+    },
+    {
+      "title": "OpenAI CFO shares five lessons from building an AI-native finance function",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/building-an-ai-native-finance-function/"
+    },
+    {
+      "title": "Premium seats arrive for ChatGPT Business with a $100 workspace credit",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/premium-seats-chatgpt-business/"
+    },
+    {
+      "title": "Keen Code: an agentic-engineered coding agent",
+      "source": "Hacker News",
+      "url": "https://github.com/mochow13/keen-code"
+    },
+    {
+      "title": "Oqoqo: build evals and custom benchmarks for real-world tasks",
+      "source": "Hacker News",
+      "url": "https://oqoqo.ai"
+    },
+    {
+      "title": "DistillCache: KL-guided adaptive KV-cache eviction for long contexts",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.08878"
+    },
+    {
+      "title": "Dual-adversarial alignment for safer reasoning models",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09542"
+    },
+    {
+      "title": "Input-side test-time augmentation beats output sampling for reasoning",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09351"
+    }
   ],
   "spiked": {
     "low signal": 2,
+    "same story": 4,
     "already ran": 2
   }
 }
