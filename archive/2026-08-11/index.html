@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · August 11, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 47 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>August 11, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>57 stories <span class="mk-note">(<span class="mk-beta">Beta</span> : <a href="making-of.html" class="mk-link" title="Replay how this issue assembled itself">See how this issue made itself</a>)</span></span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DwarfStar · DeepSeek V4 Flash 0731 (M3 Ultra)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Valvoline&#x27;s August Coupons Target DIYers and Shop Customers Alike" data-b="A new WIRED roundup gathers the latest Valvoline coupons and promo codes for August 2026, written by the publication&#x27;s commerce editor, Kat Merck. According to WIRED, the piece is grounded in the author&#x27;s personal experience switching from do-it-yourself oil changes to using Valvoline Instant Oil Change after buying a new hybrid SUV roughly eight years ago.
+
+WIRED notes that Valvoline operates around 2,100 US locations of its Instant Oil Change garages. The article claims these locations perform oil changes at up to 50 percent less than most car dealerships, usually taking about half an hour. It also explains that hybrid vehicles require fully synthetic oil, which costs roughly twice as much per quart as conventional oil.
+
+The featured offers include a $10 discount on a full-service conventional oil change, which covers up to five quarts of Valvoline oil, a filter, lube and maintenance check, and tax. A separate coupon offers $15 off synthetic or synthetic-blend oil changes, which WIRED says is better suited to hybrids, luxury vehicles, and trucks used for towing. Additional deals include up to 25 percent off when buying multiple containers of oil or transmission fluid in bulk, and a $5 rebate on five quarts purchased at farm stores, limited to three per customer.
+
+*Coupon roundups like this are useful shopping reference, though it is worth noting the article is written by a commerce editor whose coverage is tied to product recommendations.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline&#x27;s August Coupons Target DIYers and Shop Customers Alike</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta Quest Promo Codes and Coupons for August 2026" data-b="WIRED has rounded up the current Meta discounts for its Quest virtual reality headsets and Ray-Ban smart glasses this August. The outlet frames Meta as a leading name in both VR hardware and the newer wave of face-worn computers — stylish sunglasses fitted with speakers, microphones, cameras and AI assistants, which have also stirred fresh debates around privacy.
+
+According to WIRED, the Quest lineup spans two models: the Quest 3 and the more budget-friendly Quest 3S, which is marked down by up to $50, bringing it as low as $250. Buyers can pair a new headset with $30 in Quest Cash for store purchases, games and DLC. A Quest+ subscription offers at least two free games monthly, and certain bundles add three months of Quest+ plus a copy of Batman: Arkham Shadow.
+
+Shoppers can also find refurbished options. A like-new Quest 3 runs about $380 — a $50 saving over new — with a one-year warranty, Touch Plus controllers and a charging cable. Certified refurbished Ray-Ban Meta glasses start at $239 with free shipping and a 30-day return window.
+
+Game discounts include 10% off titles like Arkham Shadow, Metro Awakening and Beat Saber, plus 50% off first add-on purchases in Gorilla Tag and VAIL. Students and teachers can verify via the Education Purchase Program to unlock 10% off.
+
+*Smart glasses and VR keep getting cheaper, but the privacy questions WIRED flags are worth weighing before you buy.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/meta-quest-promo-code/"><span class="tih">Meta Quest Promo Codes and Coupons for August 2026</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Petlibro Kicks Off August With Discounts Across Its Connected Pet Gear" data-b="A writer for the WIRED Reviews team who focuses on pet technology reports that Petlibro stands out among the brands she has personally bought and recommended. In her assessment, the company leads the field in automatic feeders and water fountains, largely thanks to companion apps that handle scheduled feedings, activity tracking, reminders, and real-time monitoring.
+
+According to WIRED, August is being treated as pet hydration month by Petlibro, bringing discounts of more than 30 percent across products such as bundles, automatic litter boxes, and food and water gear, with many items qualifying for FSA or HSA accounts. Among the deals highlighted are savings on the RFID Smart Dining Bundle, which combines two RFID feeders and an RFID fountain, and a bundle pairing the Polar Wet Food Feeder with the Granary Camera Feeder.
+
+The outlet also flags a referral scheme in which a customer can pass on a 15 percent discount to a friend and receive 30 percent off when that friend buys, plus a $50 gift card after referring three friends. Separate promotions include 20 percent off the AI-enabled Scout Smart Camera, which offers 1080p video, color night vision, two-way audio, and pet-identification learning, using the code PETCAM at checkout. The writer notes that while Petlibro products are not the cheapest, she still views them as strong value for their design and reliability.
+
+*A sensible reminder that a sale is only a deal if the product genuinely fits your pet&#x27;s needs—worth checking a full review before the cart.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/petlibro-discount-code/"><span class="tih">Petlibro Kicks Off August With Discounts Across Its Connected Pet Gear</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Bose bets on licensing its sound as headphones go AI" data-b="According to The Verge&#x27;s Decoder podcast, Bose CEO Lila Snyder sat down with Nilay Patel to explain how the 60-year-old audio giant is reinventing itself as the industry shifts toward AI-powered wearables. Bose built its name selling speakers, then became a leader in car audio and noise-canceling headphones through heavy investment in research and development.
+
+Snyder described what she calls the &quot;second chapter&quot; of Bose&#x27;s transformation since joining the company. Under her leadership, Bose has sold off its Bose Professional division and acquired two high-end audio brands: McIntosh Labs, a 75-year-old audiophile name, and Sonus faber, an Italian craftsmanship brand with more than four decades of history. Those purchases pushed Bose from a single-brand company into a multi-brand player in luxury audio.
+
+Just as significant, Bose now licenses its core audio technology to other firms. The company is effectively becoming a B2B business alongside its consumer line, with its sound tech appearing in products such as Skullcandy headphones and Epson projectors. Snyder calls this the Audio Tech division. Bose is also taking on the challenges of becoming a software company.
+
+Patel pressed Snyder on whether this is a reaction to the potential rise of AI wearables — devices that could resemble headphones and require heavy audio processing for voice input — or a plan formed after phone makers like Apple and Samsung disrupted the market with their own earbuds.
+
+*The real test is whether a licensing strategy lets Bose own great sound in an era when the hardware itself is no longer the product.*
+— Written by AI (deepseek-v4-flash)" data-s="theverge.com" data-u="https://www.theverge.com/podcast/975732/bose-ceo-lila-snyder-ai-wearables-licensing-headphones-audio"><span class="tih">Bose bets on licensing its sound as headphones go AI</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI completes $7 billion employee share buyback" data-b="OpenAI has reportedly bought back roughly $7 billion in shares from its employees, a move aimed at giving its workforce access to liquidity at the privately held frontier AI lab. Bloomberg first reported the deal, according to TechCrunch, which also said the transaction valued OpenAI at $852 billion — unchanged from its March fundraising round that added $122 billion to the company&#x27;s reserves.
+
+The company also filed confidentially with the Securities and Exchange Commission in June, a preliminary step toward a possible initial public offering later this year. But the tender offer may signal that an IPO is not imminent. With many tech firms choosing to stay private longer than earlier generations of startups, private buybacks have become a practical way for companies to let employees cash in on stock compensation without the complications of going public. OpenAI did not respond to a request for comment before publication.
+
+Last month, CEO Sam Altman acknowledged the company&#x27;s recent performance, writing that it had not enjoyed its best 12 months and that much of that was his responsibility, while adding that it was poised for a stronger year ahead. Public companies typically need strong financials to attract investors, and the Wall Street Journal reported in April that OpenAI missed internal financial targets. With rival Anthropic reportedly turning profitable earlier this year, the buyback could be another sign that OpenAI will wait for its strategy of streamlining its focus and building out its enterprise business before making its much-anticipated debut.
+
+*Tendering shares to employees before an IPO is a telling tell, but it still leaves the biggest question — when OpenAI actually lists — unanswered.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/"><span class="tih">OpenAI completes $7 billion employee share buyback</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Valvoline&#x27;s August Coupons Target DIYers and Shop Customers Alike" data-b="A new WIRED roundup gathers the latest Valvoline coupons and promo codes for August 2026, written by the publication&#x27;s commerce editor, Kat Merck. According to WIRED, the piece is grounded in the author&#x27;s personal experience switching from do-it-yourself oil changes to using Valvoline Instant Oil Change after buying a new hybrid SUV roughly eight years ago.
+
+WIRED notes that Valvoline operates around 2,100 US locations of its Instant Oil Change garages. The article claims these locations perform oil changes at up to 50 percent less than most car dealerships, usually taking about half an hour. It also explains that hybrid vehicles require fully synthetic oil, which costs roughly twice as much per quart as conventional oil.
+
+The featured offers include a $10 discount on a full-service conventional oil change, which covers up to five quarts of Valvoline oil, a filter, lube and maintenance check, and tax. A separate coupon offers $15 off synthetic or synthetic-blend oil changes, which WIRED says is better suited to hybrids, luxury vehicles, and trucks used for towing. Additional deals include up to 25 percent off when buying multiple containers of oil or transmission fluid in bulk, and a $5 rebate on five quarts purchased at farm stores, limited to three per customer.
+
+*Coupon roundups like this are useful shopping reference, though it is worth noting the article is written by a commerce editor whose coverage is tied to product recommendations.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline&#x27;s August Coupons Target DIYers and Shop Customers Alike</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta Quest Promo Codes and Coupons for August 2026" data-b="WIRED has rounded up the current Meta discounts for its Quest virtual reality headsets and Ray-Ban smart glasses this August. The outlet frames Meta as a leading name in both VR hardware and the newer wave of face-worn computers — stylish sunglasses fitted with speakers, microphones, cameras and AI assistants, which have also stirred fresh debates around privacy.
+
+According to WIRED, the Quest lineup spans two models: the Quest 3 and the more budget-friendly Quest 3S, which is marked down by up to $50, bringing it as low as $250. Buyers can pair a new headset with $30 in Quest Cash for store purchases, games and DLC. A Quest+ subscription offers at least two free games monthly, and certain bundles add three months of Quest+ plus a copy of Batman: Arkham Shadow.
+
+Shoppers can also find refurbished options. A like-new Quest 3 runs about $380 — a $50 saving over new — with a one-year warranty, Touch Plus controllers and a charging cable. Certified refurbished Ray-Ban Meta glasses start at $239 with free shipping and a 30-day return window.
+
+Game discounts include 10% off titles like Arkham Shadow, Metro Awakening and Beat Saber, plus 50% off first add-on purchases in Gorilla Tag and VAIL. Students and teachers can verify via the Education Purchase Program to unlock 10% off.
+
+*Smart glasses and VR keep getting cheaper, but the privacy questions WIRED flags are worth weighing before you buy.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/meta-quest-promo-code/"><span class="tih">Meta Quest Promo Codes and Coupons for August 2026</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Petlibro Kicks Off August With Discounts Across Its Connected Pet Gear" data-b="A writer for the WIRED Reviews team who focuses on pet technology reports that Petlibro stands out among the brands she has personally bought and recommended. In her assessment, the company leads the field in automatic feeders and water fountains, largely thanks to companion apps that handle scheduled feedings, activity tracking, reminders, and real-time monitoring.
+
+According to WIRED, August is being treated as pet hydration month by Petlibro, bringing discounts of more than 30 percent across products such as bundles, automatic litter boxes, and food and water gear, with many items qualifying for FSA or HSA accounts. Among the deals highlighted are savings on the RFID Smart Dining Bundle, which combines two RFID feeders and an RFID fountain, and a bundle pairing the Polar Wet Food Feeder with the Granary Camera Feeder.
+
+The outlet also flags a referral scheme in which a customer can pass on a 15 percent discount to a friend and receive 30 percent off when that friend buys, plus a $50 gift card after referring three friends. Separate promotions include 20 percent off the AI-enabled Scout Smart Camera, which offers 1080p video, color night vision, two-way audio, and pet-identification learning, using the code PETCAM at checkout. The writer notes that while Petlibro products are not the cheapest, she still views them as strong value for their design and reliability.
+
+*A sensible reminder that a sale is only a deal if the product genuinely fits your pet&#x27;s needs—worth checking a full review before the cart.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/petlibro-discount-code/"><span class="tih">Petlibro Kicks Off August With Discounts Across Its Connected Pet Gear</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Bose bets on licensing its sound as headphones go AI" data-b="According to The Verge&#x27;s Decoder podcast, Bose CEO Lila Snyder sat down with Nilay Patel to explain how the 60-year-old audio giant is reinventing itself as the industry shifts toward AI-powered wearables. Bose built its name selling speakers, then became a leader in car audio and noise-canceling headphones through heavy investment in research and development.
+
+Snyder described what she calls the &quot;second chapter&quot; of Bose&#x27;s transformation since joining the company. Under her leadership, Bose has sold off its Bose Professional division and acquired two high-end audio brands: McIntosh Labs, a 75-year-old audiophile name, and Sonus faber, an Italian craftsmanship brand with more than four decades of history. Those purchases pushed Bose from a single-brand company into a multi-brand player in luxury audio.
+
+Just as significant, Bose now licenses its core audio technology to other firms. The company is effectively becoming a B2B business alongside its consumer line, with its sound tech appearing in products such as Skullcandy headphones and Epson projectors. Snyder calls this the Audio Tech division. Bose is also taking on the challenges of becoming a software company.
+
+Patel pressed Snyder on whether this is a reaction to the potential rise of AI wearables — devices that could resemble headphones and require heavy audio processing for voice input — or a plan formed after phone makers like Apple and Samsung disrupted the market with their own earbuds.
+
+*The real test is whether a licensing strategy lets Bose own great sound in an era when the hardware itself is no longer the product.*
+— Written by AI (deepseek-v4-flash)" data-s="theverge.com" data-u="https://www.theverge.com/podcast/975732/bose-ceo-lila-snyder-ai-wearables-licensing-headphones-audio"><span class="tih">Bose bets on licensing its sound as headphones go AI</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI completes $7 billion employee share buyback" data-b="OpenAI has reportedly bought back roughly $7 billion in shares from its employees, a move aimed at giving its workforce access to liquidity at the privately held frontier AI lab. Bloomberg first reported the deal, according to TechCrunch, which also said the transaction valued OpenAI at $852 billion — unchanged from its March fundraising round that added $122 billion to the company&#x27;s reserves.
+
+The company also filed confidentially with the Securities and Exchange Commission in June, a preliminary step toward a possible initial public offering later this year. But the tender offer may signal that an IPO is not imminent. With many tech firms choosing to stay private longer than earlier generations of startups, private buybacks have become a practical way for companies to let employees cash in on stock compensation without the complications of going public. OpenAI did not respond to a request for comment before publication.
+
+Last month, CEO Sam Altman acknowledged the company&#x27;s recent performance, writing that it had not enjoyed its best 12 months and that much of that was his responsibility, while adding that it was poised for a stronger year ahead. Public companies typically need strong financials to attract investors, and the Wall Street Journal reported in April that OpenAI missed internal financial targets. With rival Anthropic reportedly turning profitable earlier this year, the buyback could be another sign that OpenAI will wait for its strategy of streamlining its focus and building out its enterprise business before making its much-anticipated debut.
+
+*Tendering shares to employees before an IPO is a telling tell, but it still leaves the biggest question — when OpenAI actually lists — unanswered.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/"><span class="tih">OpenAI completes $7 billion employee share buyback</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/" target="_blank" rel="noopener">
+    <img src="images/lead_2026-08-11.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Frontier cyber defense</p>
+        <h1>OpenAI launches GPT-5.6-Cyber as it expands Daybreak into two security tiers</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">OpenAI unveiled GPT-5.6-Cyber, a frontier cyber model built on GPT-5.6 Sol and reserved for the new Daybreak Red tier serving trusted partners like Accenture, IBM, CrowdStrike and Cloudflare. The expanded Daybreak program now splits into Blue for basic defense work and Red for security testing and vulnerability research, with OpenAI reporting the model surfaced previously unknown flaws including in Chrome's V8 engine.</p>
+        <p class="byline"><span class="src">TechCrunch</span> · <span>2026-08-10</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:02</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-08-11.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://www.tomshardware.com/tech-industry/semiconductors/hyperscalers-commit-nearly-usd2-trillion-to-secure-ai-hardware-and-memory-google-leads-usd811-billion-spending-surge-while-apple-trails-at-usd57-billion" target="_blank" rel="noopener">
+    <h3>Hyperscalers commit nearly $2 trillion to lock down AI hardware and memory</h3>
+    <p>Combined purchasing commitments from Amazon, Alphabet, Meta and Microsoft reached nearly $2 trillion by Q2 2026, with Alphabet and Microsoft accounting for the overwhelming majority, as the big clouds secure accelerator and memory supply well ahead of demand.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://finance.yahoo.com/technology/ai/articles/microsoft-plans-production-boost-ai-135551218.html" target="_blank" rel="noopener">
+    <h3>Microsoft plans big production boost for its Maia 300 AI chips</h3>
+    <p>Microsoft is ramping next-generation AI chip output, reportedly ordering 300,000+ Maia 300 accelerators from TSMC amid a tightening HBM and AI hardware supply crunch, The Information reported.</p>
+    <p class="byline"><span class="src">Yahoo Finance</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/lmsysorg/status/2086758948288487856" target="_blank" rel="noopener">
+    <h3>Meta releases Muse Glimmer 30B, an open agentic model for local hardware</h3>
+    <p>Meta open-sourced Muse Glimmer, a 30B dense Apache-2.0 model distilled for autonomous agentic tasks on consumer hardware, reaching roughly 230 tokens/s on a single RTX 5090 with day-0 SGLang support and immediate availability on Together AI.</p>
+    <p class="byline"><span class="src">Meta / @lmsysorg</span> · 2026-08-10</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research_2026-08-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/AnthropicAI/status/2086867246073401655" target="_blank" rel="noopener">
+    <h4>Anthropic research Claude pushes Riemann hypothesis lower bound to 67.2%</h4>
+    <p>An unreleased research version of Claude raised the proven lower bound on the fraction of Riemann zeta zeros satisfying the hypothesis from 41.6% to 67.2% — real progress on a long-standing open problem, without solving it.</p>
+    <p class="byline"><span class="src">Anthropic</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.09867" target="_blank" rel="noopener">
+    <h4>Stealing reasoning traces from proprietary LLM APIs</h4>
+    <p>A new work demonstrates a practical attack that recovers hidden chain-of-thought from encrypted client-side blocks, exposing an information-leakage vector against encrypted CoT schemes.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.09928" target="_blank" rel="noopener">
+    <h4>Model diffing for feature discovery and control in multimodal LLMs</h4>
+    <p>A model-diffing approach decomposes MLLM hidden states into interpretable feature directions, enabling feature discovery, auditing, and post-hoc control of visual-language behavior.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.09826" target="_blank" rel="noopener">
+    <h4>SKALD distills skills into weights, not prompts</h4>
+    <p>An on-policy self-distillation framework distills abstract skills into model weights for cases where verifiable-reward RL yields no group-relative signal — 63-68% of groups in their experiments.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.09468" target="_blank" rel="noopener">
+    <h4>MixFormer: a linear transformer with mixture of memory experts</h4>
+    <p>A linear-transformer variant adds input adaptivity and larger memory capacity via a mixture-of-memory-experts design, targeting information loss in SSM-style long-context modeling.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>YouTube &amp; Video</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <div class="section-hero"><img src="images/section_youtube_2026-08-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=gyqgy6IAgQE" target="_blank" rel="noopener">
+    <h4>Meta brings its AI assistant to the personal computer</h4>
+    <p>Bloomberg reports Meta is expanding its AI assistant from mobile and web into the desktop computing experience.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=tfsEfbWV9dY" target="_blank" rel="noopener">
+    <h4>Microsoft pushes AI agents from coding to finance</h4>
+    <p>Bloomberg covers Microsoft's expansion of its AI agent push beyond software development into finance and other verticals, signaling a broader enterprise agent strategy.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-08-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools_2026-08-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/NousResearch/status/2086881660658663469" target="_blank" rel="noopener">
+    <h4>Nous Research ships Hermes Browser Use mode, cutting token usage up to 66%</h4>
+    <p>A new Browser Use mode replaces multiple specialized browser tools with a single tool backed by browser_use CLI 3.0, cutting token usage 48-66% with no drop in accuracy.</p>
+    <p class="byline"><span class="src">Nous Research</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/0xnyn/airship" target="_blank" rel="noopener">
+    <h4>Airship: a Figma-like visual editor for Claude Code, Codex and OpenCode</h4>
+    <p>An open-source GUI lets developers build and manage coding-agent projects through a visual canvas instead of the command line.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/phillipmex/linejudge" target="_blank" rel="noopener">
+    <h4>Linejudge: an independent verification harness for coding agents</h4>
+    <p>An open-source harness that adds a test/check layer to confirm that AI coding agents' output actually works.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/matonhp5108/Opencodex" target="_blank" rel="noopener">
+    <h4>Opencodex: a free open-source coding agent for VSCode</h4>
+    <p>A free, open-source AI coding agent that runs inside VSCode for agentic code editing without a paid subscription.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2086929829773873571" target="_blank" rel="noopener">
+    <h4>NuphosAI debuts an AI-native collaborative DevOps workspace</h4>
+    <p>An AI-native workspace focused on agent quality, review, and observability aims to improve agent reliability and monitoring in development workflows.</p>
+    <p class="byline"><span class="src">omarsar0</span> · 2026-08-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money_2026-08-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/" target="_blank" rel="noopener">
+    <h4>Discovered Materials closes $9M seed to hunt cooler chip materials with AI agents</h4>
+    <p>Lightspeed India led the round with Peak XV and angels including Paul Graham, backing a YC startup that uses swarms of AI agents for semiconductor materials discovery.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-08-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.manilatimes.net/2026/08/11/tmt-newswire/pr-newswire/naver-d2sf-makes-follow-on-investment-in-ndotlight-a-physical-ai-data-startup/2402524" target="_blank" rel="noopener">
+    <h4>NAVER D2SF backs NdotLight with ~$11M follow-on for physical AI data</h4>
+    <p>A KRW 15B round led by Korea Development Bank supports NdotLight's simulation-ready 3D data infrastructure for physical and robotics AI training.</p>
+    <p class="byline"><span class="src">Manila Times</span> · 2026-08-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://aijourn.com/lucrative-ai-launches-out-of-stealth-with-500k-in-pre-seed-funding-to-bring-mcp-native-automation-to-enterprise-revenue-operations/" target="_blank" rel="noopener">
+    <h4>Lucrative AI exits stealth with $500K pre-seed for MCP-native revenue ops</h4>
+    <p>An MCP-native automation play for enterprise revenue operations, using AI agents that interact with data warehouses.</p>
+    <p class="byline"><span class="src">AI Journal</span> · 2026-08-11</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/microsoft/AI-For-Beginners" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">microsoft/AI-For-Beginners</span>
+    <span class="t-meta">Jupyter Notebook · 58,565 ★ · +2,617 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/usekaneo/kaneo" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">usekaneo/kaneo</span>
+    <span class="t-meta">TypeScript · 5,943 ★ · +491 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/lyogavin/airllm" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">lyogavin/airllm</span>
+    <span class="t-meta">Jupyter Notebook · 25,306 ★ · +242 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/iv-org/invidious" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">iv-org/invidious</span>
+    <span class="t-meta">Crystal · 21,843 ★ · +307 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">codecrafters-io/build-your-own-x</span>
+    <span class="t-meta">Markdown · 534,523 ★ · +710 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/zhaoxuya520/reverse-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">zhaoxuya520/reverse-skill</span>
+    <span class="t-meta">PowerShell · 12,677 ★ · +1,145 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/different-ai/openwork" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">different-ai/openwork</span>
+    <span class="t-meta">TypeScript · 20,116 ★ · +585 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/microsoft/generative-ai-for-beginners" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">microsoft/generative-ai-for-beginners</span>
+    <span class="t-meta">Jupyter Notebook · 114,523 ★ · +588 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Panniantong/Agent-Reach" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Panniantong/Agent-Reach</span>
+    <span class="t-meta">Python · 64,373 ★ · +645 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">TencentCloud/TencentDB-Agent-Memory</span>
+    <span class="t-meta">TypeScript · 10,647 ★ · +604 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">mvanhorn/last30days-skill</span>
+    <span class="t-meta">Python · 56,724 ★ · +600 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/NomaDamas/k-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NomaDamas/k-skill</span>
+    <span class="t-meta">JavaScript · 6,838 ★ · +179 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/HarbourMasters/Lighthouse" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">HarbourMasters/Lighthouse</span>
+    <span class="t-meta">C · 180 ★ · +62 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/antirez/ds4" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">antirez/ds4</span>
+    <span class="t-meta">C · 19,864 ★ · +150 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">esengine/DeepSeek-Reasonix</span>
+    <span class="t-meta">Go · 28,806 ★ · +274 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">MiniMaxAI/MiniMax-H3</span>
+    <span class="t-meta">33B omni-modal generative system, video with native stereo audio up to 2K/15s</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4-Flash-0731</span>
+    <span class="t-meta">Official DeepSeek-V4-Flash release with enhanced agentic capabilities, MIT</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">meta-models/Muse-Glimmer-30B</span>
+    <span class="t-meta">30B open agentic model for consumer hardware, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Comfy-Org/MiniMax-H3" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Comfy-Org/MiniMax-H3</span>
+    <span class="t-meta">ComfyUI integration of MiniMax H3</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">larryvrh/MiniMax-H3-Turbo-Lora</span>
+    <span class="t-meta">Community LoRA for MiniMax H3</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/LiquidAI/LFM2.5-2.6B" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI/LFM2.5-2.6B</span>
+    <span class="t-meta">2.6B hybrid on-device agent model, 128K context</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">moonshotai/Kimi-K3</span>
+    <span class="t-meta">2.8T MoE (104B active), open 3T-class native multimodal agent, 1M context</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF</span>
+    <span class="t-meta">Community GGUF merge of Qwen3.6</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot</span>
+    <span class="t-meta">Community Qwen3-VL INT8 quant for ComfyUI</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepgrove/maple-preview" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">deepgrove/maple-preview</span>
+    <span class="t-meta">20B-A1B ternary-weight reasoning LLM, MIT, 200+ tok/s on Mac mini M4</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/lmsysorg/status/2086873951435944326" target="_blank" rel="noopener"><span class="qh-title">AntLingAGI open-sources Ling-3.0-tiny, a 7.9B MoE for local agents</span><span class="qh-src">@lmsysorg</span></a></li>
+
+    <li><a href="https://robottoday.com/industry-briefing/agibot-becomes-leading-global-humanoid-robot-vendor-surpassing-unitree-in-2026/10438" target="_blank" rel="noopener"><span class="qh-title">AgiBot overtakes Unitree as the world's top humanoid robot vendor</span><span class="qh-src">RobotToday</span></a></li>
+
+    <li><a href="https://x.com/ylecun/status/2086900236430307776" target="_blank" rel="noopener"><span class="qh-title">LeCun clarifies he left Meta voluntarily, not fired</span><span class="qh-src">Yann LeCun</span></a></li>
+
+    <li><a href="https://x.com/simonw/status/2086931955539742985" target="_blank" rel="noopener"><span class="qh-title">Simon Willison: GPT-5.6-Luna now outperforms Claude Haiku on some tasks</span><span class="qh-src">simonw</span></a></li>
+
+    <li><a href="https://x.com/_akhaliq/status/2086894806932865475" target="_blank" rel="noopener"><span class="qh-title">MatrAIx paper simulates the world with 8.3 billion persona agents</span><span class="qh-src">_akhaliq</span></a></li>
+
+    <li><a href="https://openai.com/index/building-an-ai-native-finance-function/" target="_blank" rel="noopener"><span class="qh-title">OpenAI CFO shares five lessons from building an AI-native finance function</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://openai.com/index/premium-seats-chatgpt-business/" target="_blank" rel="noopener"><span class="qh-title">Premium seats arrive for ChatGPT Business with a $100 workspace credit</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://github.com/mochow13/keen-code" target="_blank" rel="noopener"><span class="qh-title">Keen Code: an agentic-engineered coding agent</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://oqoqo.ai" target="_blank" rel="noopener"><span class="qh-title">Oqoqo: build evals and custom benchmarks for real-world tasks</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.08878" target="_blank" rel="noopener"><span class="qh-title">DistillCache: KL-guided adaptive KV-cache eviction for long contexts</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.09542" target="_blank" rel="noopener"><span class="qh-title">Dual-adversarial alignment for safer reasoning models</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.09351" target="_blank" rel="noopener"><span class="qh-title">Input-side test-time augmentation beats output sampling for reasoning</span><span class="qh-src">arXiv</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-08-11 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
