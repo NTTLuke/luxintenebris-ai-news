@@ -1,0 +1,243 @@
+{
+  "issue_no": 48,
+  "date_iso": "2026-08-12",
+  "date_human": "August 12, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Wall Street backs buildout",
+    "title": "Nvidia and six Wall Street giants mobilize $500B for AI data-center buildout",
+    "summary": "Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to raise more than $500 billion in third-party capital to finance AI infrastructure. The deals lean heavily on GPU-backed securitizations that treat chips as a new, bankable asset class.",
+    "source": "The Guardian",
+    "date": "2026-08-11",
+    "url": "https://www.theguardian.com/technology/2026/aug/11/nvidia-wall-street-finance-ai-infrastructure",
+    "image": "images/lead_2026-08-12.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "General Catalyst leads $1.1B round into 2-month-old River AI",
+      "summary": "Founded by xAI co-founder Igor Babuschkin, River AI raised $1.1B across seed and Series A led by General Catalyst and AMP PBC, with Nvidia, AMD Ventures, Y Combinator and Temasek participating, to build an open full-stack AI platform for personally-owned agents.",
+      "source": "TechCrunch",
+      "date": "2026-08-11",
+      "url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/"
+    },
+    {
+      "title": "Chinese makers hold 97% of global humanoid robot shipments in H1 2026",
+      "summary": "Smart Analytics Global reports Chinese manufacturers accounted for over 97% of worldwide humanoid shipments in the first half, with AgiBot at 44% and Unitree at 31% of a 1.91-million-unit market up 274% year on year.",
+      "source": "China Daily Global",
+      "date": "2026-08-11",
+      "url": "https://chinadailyglobal.com/a/202608/11/WS6a7a8b3aa310986e2b46a1a5.html"
+    },
+    {
+      "title": "OpenAI COO Brad Lightcap departs to start a new venture",
+      "summary": "Lightcap, who spent nearly eight years at OpenAI, announced he is leaving to start something new, calling the decision bittersweet and planning to stay involved for a few weeks. Sam Altman responded warmly, saying they will work together on what's next.",
+      "source": "sama",
+      "date": "2026-08-12",
+      "url": "https://x.com/sama/status/2087243765765509185"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "image": "images/section_research-papers_2026-08-12.jpg",
+      "items": [
+        {
+          "title": "Why does CLAUDE.md keep growing? 'Catastrophic remembering' in agentic coding",
+          "summary": "Across 247,694 instruction lifetimes in 1,867 repos, agentic prompts grow +226% over their lifetime, with older instructions increasingly unlikely to be deleted. Comments that encode latent reasoning remove 99.3% of excess instructions and improve real-world instruction-following by up to 23.1%.",
+          "source": "arXiv",
+          "date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.11095"
+        },
+        {
+          "title": "DSAgentBench: agents still struggle to automate end-to-end data science",
+          "summary": "The first benchmark evaluating agents across full data-science workflows in real computer environments finds the strongest agent (Claude-4.6-Sonnet) reaches only 56.70% task success, while all open-source agents stay below 1%.",
+          "source": "arXiv",
+          "date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.10366"
+        },
+        {
+          "title": "V-FiLLM: a verified benchmark for financial LLM reasoning",
+          "summary": "Generates financial reasoning benchmarks from executable computation trees grounded in real tables, with answers correct by construction. Accuracy falls up to 51% with reasoning depth, and lightweight LoRA fine-tuning lifts it from 81.1% to 85.6%.",
+          "source": "arXiv",
+          "date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.11047"
+        },
+        {
+          "title": "Latent Critic detects hallucinations in a single forward pass",
+          "summary": "A lightweight LoRA running alongside a frozen LLM restructures the residual stream to localize hallucinations in one pass, reaching 0.966 AUROC and >80% localization accuracy for tool-calling, acting as a negligible-latency guardrail in ReAct loops.",
+          "source": "arXiv",
+          "date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.10430"
+        },
+        {
+          "title": "VibeLifeBench: life agents fall short in a living world",
+          "summary": "A 200-task benchmark across ten everyday-life domains, each a scripted multi-week timeline with silent changes requiring proactive re-inspection, finds all seven frontier models score low — current agents are far from real-life assistance.",
+          "source": "arXiv",
+          "date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.10875"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "image": "images/section_tools-startups_2026-08-12.jpg",
+      "items": [
+        {
+          "title": "Xirp: Spotify's vendor-neutral agentic development environment opens to public beta",
+          "summary": "An agentic dev environment with institutional memory that connects to your services, ownership, docs and architectural decisions, and can run Claude Code, Codex and other agents in one place.",
+          "source": "Product Hunt",
+          "date": "2026-08-12",
+          "url": "https://www.producthunt.com/products/spotify"
+        },
+        {
+          "title": "OpenAI ships ChatGPT desktop app for Linux in preview",
+          "summary": "Supports ChatGPT, ChatGPT Work and Codex with project and browser workflow integration, shipping as .deb or .rpm for x64 and ARM64 across Ubuntu 24.04/26.04 LTS, Debian 13 and Fedora 43/44.",
+          "source": "OpenAI",
+          "date": "2026-08-12",
+          "url": "https://x.com/OpenAI/status/2087231350134980830"
+        },
+        {
+          "title": "Bullet: a coding agent claiming to be 30-60% faster than Claude Code and Codex",
+          "summary": "A new coding agent launched on Product Hunt, claiming significant speedups over Claude Code and Codex on everyday tasks.",
+          "source": "Product Hunt",
+          "date": "2026-08-12",
+          "url": "https://www.producthunt.com/products/bullet-6"
+        },
+        {
+          "title": "Framer ships AI Agents, branching and a new Community",
+          "summary": "AI Agents now work on the canvas to design, write, analyze and organize sites, with the option to connect your own AI like Claude Code or Codex, plus branching for safer idea testing.",
+          "source": "Product Hunt",
+          "date": "2026-08-12",
+          "url": "https://www.producthunt.com/products/framer"
+        },
+        {
+          "title": "Tines 3B: a secure environment for agents, apps and automations",
+          "summary": "The automation platform launched 3B, a secure environment for running AI agents, apps and automations.",
+          "source": "Product Hunt",
+          "date": "2026-08-12",
+          "url": "https://www.producthunt.com/products/tines"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-08-12",
+      "items": [
+        {"name": "microsoft/AI-For-Beginners", "url": "https://github.com/microsoft/AI-For-Beginners", "meta": "Jupyter Notebook · 58.6k ★ · +2,617 today"},
+        {"name": "usekaneo/kaneo", "url": "https://github.com/usekaneo/kaneo", "meta": "TypeScript · 5.9k ★ · +491 today"},
+        {"name": "lyogavin/airllm", "url": "https://github.com/lyogavin/airllm", "meta": "Jupyter Notebook · 25.3k ★ · +242 today"},
+        {"name": "iv-org/invidious", "url": "https://github.com/iv-org/invidious", "meta": "Crystal · 21.8k ★ · +307 today"},
+        {"name": "codecrafters-io/build-your-own-x", "url": "https://github.com/codecrafters-io/build-your-own-x", "meta": "Markdown · 534.5k ★ · +710 today"},
+        {"name": "zhaoxuya520/reverse-skill", "url": "https://github.com/zhaoxuya520/reverse-skill", "meta": "PowerShell · 12.7k ★ · +1,145 today"},
+        {"name": "different-ai/openwork", "url": "https://github.com/different-ai/openwork", "meta": "TypeScript · 20.1k ★ · +585 today"},
+        {"name": "microsoft/generative-ai-for-beginners", "url": "https://github.com/microsoft/generative-ai-for-beginners", "meta": "Jupyter Notebook · 114.5k ★ · +588 today"},
+        {"name": "Panniantong/Agent-Reach", "url": "https://github.com/Panniantong/Agent-Reach", "meta": "Python · 64.4k ★ · +645 today"},
+        {"name": "TencentCloud/TencentDB-Agent-Memory", "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory", "meta": "TypeScript · 10.6k ★ · +604 today"},
+        {"name": "mvanhorn/last30days-skill", "url": "https://github.com/mvanhorn/last30days-skill", "meta": "Python · 56.7k ★ · +600 today"},
+        {"name": "NomaDamas/k-skill", "url": "https://github.com/NomaDamas/k-skill", "meta": "JavaScript · 6.8k ★ · +179 today"},
+        {"name": "HarbourMasters/Lighthouse", "url": "https://github.com/HarbourMasters/Lighthouse", "meta": "C · 180 ★ · +62 today"},
+        {"name": "antirez/ds4", "url": "https://github.com/antirez/ds4", "meta": "C · 19.9k ★ · +150 today"},
+        {"name": "esengine/DeepSeek-Reasonix", "url": "https://github.com/esengine/DeepSeek-Reasonix", "meta": "Go · 28.8k ★ · +274 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-08-12",
+      "items": [
+        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "New MiniMax H3 generation model"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "DeepSeek V4 Flash 0731 release"},
+        {"name": "meta-models/Muse-Glimmer-30B", "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B", "meta": "Meta Muse-Glimmer 30B model"},
+        {"name": "LiquidAI/LFM2.5-2.6B", "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B", "meta": "Liquid AI LFM 2.5, 2.6B model"},
+        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "Moonshot AI Kimi-K3 model"},
+        {"name": "deepgrove/maple-preview", "url": "https://huggingface.co/deepgrove/maple-preview", "meta": "DeepGrove maple preview model"},
+        {"name": "inclusionAI/Ling-3.0-flash", "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash", "meta": "inclusionAI Ling 3.0 flash model"},
+        {"name": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "meta": "NVIDIA Nemotron Labs voice chat, 11B"},
+        {"name": "mistralai/Shieldstral-1.0-3B", "url": "https://huggingface.co/mistralai/Shieldstral-1.0-3B", "meta": "Mistral Shieldstral 1.0, 3B safety model"},
+        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "Baidu unlimited OCR model"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "NVIDIA Nemotron 3.5 Lightning goes live on Together AI — fastest open model in its class for agents",
+      "source": "@togethercompute",
+      "date": "2026-08-11",
+      "url": "https://x.com/togethercompute/status/2087163477404041345"
+    },
+    {
+      "title": "Upstage launches Solar Pro 4, an agentic LLM for production multi-step work, free on the Nous Portal",
+      "source": "NousResearch",
+      "date": "2026-08-12",
+      "url": "https://x.com/NousResearch/status/2087197502415974634"
+    },
+    {
+      "title": "Schaeffler's humanoid-robot order book reportedly reaches €350 million",
+      "source": "EvolvePlace",
+      "date": "2026-08-11",
+      "url": "https://evolveplace.com/schaefflers-humanoid-robot-order-book-reportedly-reach-e350-millione/"
+    },
+    {
+      "title": "Defense drone developer Cambridge Aerospace raises $300M at $3.4B valuation",
+      "source": "Smashing Robotics",
+      "date": "2026-08-11",
+      "url": "https://www.smashingrobotics.com/defense-drone-developer-cambridge-aerospace-raises-300m/"
+    },
+    {
+      "title": "Gitar: AI code review that fixes what it finds",
+      "source": "Product Hunt",
+      "date": "2026-08-12",
+      "url": "https://www.producthunt.com/products/gitar"
+    },
+    {
+      "title": "Octomind Cloud and Hub: cloud agents with 27 models, one login",
+      "source": "Product Hunt",
+      "date": "2026-08-12",
+      "url": "https://www.producthunt.com/products/octomind-plug-n-play-ai-agents"
+    },
+    {
+      "title": "LlamaIndex releases ExtractBench, an open-source schema-extraction benchmark",
+      "source": "Hacker News",
+      "date": "2026-08-11",
+      "url": "https://github.com/run-llama/ExtractBench"
+    },
+    {
+      "title": "Dev-loop: parallel coding agents, supervised not just spawned",
+      "source": "Hacker News",
+      "date": "2026-08-12",
+      "url": "https://github.com/choiyounggi/dev-loop"
+    },
+    {
+      "title": "BetterClaw: deploy an AI agent in 60 seconds, $0 forever",
+      "source": "Product Hunt",
+      "date": "2026-08-12",
+      "url": "https://www.producthunt.com/products/betterclaw"
+    },
+    {
+      "title": "VoiceGecko: open-source, local voice-to-text for developers",
+      "source": "Product Hunt",
+      "date": "2026-08-12",
+      "url": "https://www.producthunt.com/products/voice-gecko"
+    },
+    {
+      "title": "OutageDeck MCP server checks 172 cloud and SaaS status feeds",
+      "source": "Hacker News",
+      "date": "2026-08-11",
+      "url": "https://outagedeck.com/developers/mcp"
+    },
+    {
+      "title": "Longscribe offers free transcription for long videos and podcasts",
+      "source": "Hacker News",
+      "date": "2026-08-11",
+      "url": "https://longscribe.com/"
+    }
+  ],
+  "spiked": {
+    "low signal": 6,
+    "already ran": 3
+  }
+}

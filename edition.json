@@ -1,120 +1,113 @@
 {
-  "issue_no": 48,
-  "date_iso": "2026-08-12",
-  "date_human": "August 12, 2026",
-  "notice": null,
+  "issue_no": 49,
+  "date_iso": "2026-08-13",
+  "date_human": "August 13, 2026",
+  "notice": "Light news day — a strong lead and a few fresh stories, but fewer items than usual.",
   "lead": {
-    "kicker": "Wall Street backs buildout",
-    "title": "Nvidia and six Wall Street giants mobilize $500B for AI data-center buildout",
-    "summary": "Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to raise more than $500 billion in third-party capital to finance AI infrastructure. The deals lean heavily on GPU-backed securitizations that treat chips as a new, bankable asset class.",
-    "source": "The Guardian",
-    "date": "2026-08-11",
-    "url": "https://www.theguardian.com/technology/2026/aug/11/nvidia-wall-street-finance-ai-infrastructure",
-    "image": "images/lead_2026-08-12.jpg"
+    "kicker": "Sign language AI",
+    "title": "Google DeepMind ships SL2T, bringing sign-to-text AI to Pixel 11",
+    "image": "images/lead_2026-08-13.jpg",
+    "summary": "Google DeepMind unveiled SL2T, a multilingual sign-language-to-text model trained on over 100,000 hours across 50+ sign languages, powering sign-to-text dictation in Gboard and Live Transcribe on Pixel 11 starting with ASL-to-English. Pose tracking runs on-device for privacy, marking the first consumer deployment of sign language AI.",
+    "source": "Google DeepMind",
+    "date": "2026-08-12",
+    "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/"
   },
   "top_stories": [
     {
-      "title": "General Catalyst leads $1.1B round into 2-month-old River AI",
-      "summary": "Founded by xAI co-founder Igor Babuschkin, River AI raised $1.1B across seed and Series A led by General Catalyst and AMP PBC, with Nvidia, AMD Ventures, Y Combinator and Temasek participating, to build an open full-stack AI platform for personally-owned agents.",
+      "title": "Alibaba open-sources Qwen3.8-Max, a 2.4T-parameter MoE flagship for agents",
+      "summary": "Qwen3.8-2.4T-A95B is live day-zero on Together AI serverless inference and Hugging Face, built for coding and long-horizon agent workflows with a 256K context window, with SGLang and vLLM shipping optimizations on launch.",
+      "source": "@togethercompute",
+      "date": "2026-08-13",
+      "url": "https://x.com/togethercompute/status/2087649685129318585"
+    },
+    {
+      "title": "Lovable confirms $13.3B valuation, raises another $400M",
+      "summary": "The AI app-building startup closed a $400M Series C led by Menlo Ventures and Scaleup Europe Fund, reaching roughly $500M ARR with 60M projects hosted.",
       "source": "TechCrunch",
-      "date": "2026-08-11",
-      "url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/"
-    },
-    {
-      "title": "Chinese makers hold 97% of global humanoid robot shipments in H1 2026",
-      "summary": "Smart Analytics Global reports Chinese manufacturers accounted for over 97% of worldwide humanoid shipments in the first half, with AgiBot at 44% and Unitree at 31% of a 1.91-million-unit market up 274% year on year.",
-      "source": "China Daily Global",
-      "date": "2026-08-11",
-      "url": "https://chinadailyglobal.com/a/202608/11/WS6a7a8b3aa310986e2b46a1a5.html"
-    },
-    {
-      "title": "OpenAI COO Brad Lightcap departs to start a new venture",
-      "summary": "Lightcap, who spent nearly eight years at OpenAI, announced he is leaving to start something new, calling the decision bittersweet and planning to stay involved for a few weeks. Sam Altman responded warmly, saying they will work together on what's next.",
-      "source": "sama",
       "date": "2026-08-12",
-      "url": "https://x.com/sama/status/2087243765765509185"
+      "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/"
+    },
+    {
+      "title": "Cognition reportedly in talks to raise at a ~$40B valuation",
+      "summary": "The Devin maker is said to be in talks to raise at around $40B per Bloomberg sources, up from $26B in May, though nothing is confirmed or closed yet.",
+      "source": "TechCrunch",
+      "date": "2026-08-12",
+      "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/"
+    },
+    {
+      "title": "Anthropic shows self-propagating 'mind viruses' can spread across AI agents",
+      "summary": "Researchers evolved self-propagating ideas that survive context resets by hiding in shared artifacts across a multi-agent coding project, and found a short system-prompt warning confers near-total immunity.",
+      "source": "omarsar0",
+      "date": "2026-08-12",
+      "url": "https://x.com/omarsar0/status/2087574841893474556"
     }
   ],
   "sections": [
     {
-      "title": "Research & Papers",
-      "image": "images/section_research-papers_2026-08-12.jpg",
+      "title": "Hardware & Robotics",
       "items": [
         {
-          "title": "Why does CLAUDE.md keep growing? 'Catastrophic remembering' in agentic coding",
-          "summary": "Across 247,694 instruction lifetimes in 1,867 repos, agentic prompts grow +226% over their lifetime, with older instructions increasingly unlikely to be deleted. Comments that encode latent reasoning remove 99.3% of excess instructions and improve real-world instruction-following by up to 23.1%.",
-          "source": "arXiv",
-          "date": "2026-08-11",
-          "url": "https://arxiv.org/abs/2608.11095"
+          "title": "HONOR launches world's first Robot Phone with 4-DoF gimbal and embodied AI",
+          "image": "images/section_hardware-robotics_2026-08-13.jpg",
+          "summary": "HONOR's robotic smartphone integrates a fully 4-DoF mechanical gimbal, a 200MP camera with ARRI cinema color science, and AI-powered motion control, marking its entry into embodied AI devices.",
+          "source": "HONOR",
+          "date": "2026-08-12",
+          "url": "https://www.honor.com/global/news/honor-robot-phone-launch/"
         },
         {
-          "title": "DSAgentBench: agents still struggle to automate end-to-end data science",
-          "summary": "The first benchmark evaluating agents across full data-science workflows in real computer environments finds the strongest agent (Claude-4.6-Sonnet) reaches only 56.70% task success, while all open-source agents stay below 1%.",
-          "source": "arXiv",
-          "date": "2026-08-11",
-          "url": "https://arxiv.org/abs/2608.10366"
+          "title": "Reudyn launches wearable robotics brand with hip-assist exoskeleton",
+          "summary": "Shenzhen-based Reudyn unveiled the Reudyn Hip X26, a hip-assist exoskeleton for everyday walking and extended mobility, planned for commercial availability in September 2026.",
+          "source": "PR Newswire",
+          "date": "2026-08-12",
+          "url": "https://www.prnewswire.com/news-releases/reudyn-launches-wearable-robotics-brand-focused-on-human-centered-mobility-302849680.html"
         },
         {
-          "title": "V-FiLLM: a verified benchmark for financial LLM reasoning",
-          "summary": "Generates financial reasoning benchmarks from executable computation trees grounded in real tables, with answers correct by construction. Accuracy falls up to 51% with reasoning depth, and lightweight LoRA fine-tuning lifts it from 81.1% to 85.6%.",
-          "source": "arXiv",
-          "date": "2026-08-11",
-          "url": "https://arxiv.org/abs/2608.11047"
+          "title": "Northrop Grumman's robot space mechanic keeps satellites working longer",
+          "summary": "A new-generation Mission Extension Vehicle, an on-orbit robot designed to extend the life of existing satellites, is replacing its predecessor in orbit.",
+          "source": "TechCrunch",
+          "date": "2026-08-12",
+          "url": "https://techcrunch.com/2026/08/12/northrops-robot-space-mechanic-is-a-new-way-to-keep-satellites-at-work-longer/"
         },
         {
-          "title": "Latent Critic detects hallucinations in a single forward pass",
-          "summary": "A lightweight LoRA running alongside a frozen LLM restructures the residual stream to localize hallucinations in one pass, reaching 0.966 AUROC and >80% localization accuracy for tool-calling, acting as a negligible-latency guardrail in ReAct loops.",
-          "source": "arXiv",
-          "date": "2026-08-11",
-          "url": "https://arxiv.org/abs/2608.10430"
-        },
-        {
-          "title": "VibeLifeBench: life agents fall short in a living world",
-          "summary": "A 200-task benchmark across ten everyday-life domains, each a scripted multi-week timeline with silent changes requiring proactive re-inspection, finds all seven frontier models score low — current agents are far from real-life assistance.",
-          "source": "arXiv",
-          "date": "2026-08-11",
-          "url": "https://arxiv.org/abs/2608.10875"
+          "title": "CoreWeave and NVIDIA detail operating the production AI factory on Vera Rubin",
+          "summary": "The second installment of their AI factory series covers day-two operations and goodput economics, including Vera Rubin NVL72's six-chip platform with a second-generation RAS engine and cable-free trays that make assembly 90x faster than Blackwell.",
+          "source": "CoreWeave",
+          "date": "2026-08-12",
+          "url": "https://www.coreweave.com/blog/what-comes-next-operating-and-evolving-the-production-ai-factory"
         }
       ]
     },
     {
       "title": "Tools & Startups",
-      "image": "images/section_tools-startups_2026-08-12.jpg",
       "items": [
         {
-          "title": "Xirp: Spotify's vendor-neutral agentic development environment opens to public beta",
-          "summary": "An agentic dev environment with institutional memory that connects to your services, ownership, docs and architectural decisions, and can run Claude Code, Codex and other agents in one place.",
-          "source": "Product Hunt",
-          "date": "2026-08-12",
-          "url": "https://www.producthunt.com/products/spotify"
+          "title": "Ballet — workflow automation that writes integrations against any API",
+          "image": "images/section_tools-startups_2026-08-13.jpg",
+          "summary": "Describe a multi-system outcome in plain English and Ballet writes the integration against any API, producing reviewable, version-controlled code that is deterministic where accuracy matters and agentic where judgment helps.",
+          "source": "Ballet",
+          "date": "2026-08-13",
+          "url": "https://www.ballet.dev/"
         },
         {
-          "title": "OpenAI ships ChatGPT desktop app for Linux in preview",
-          "summary": "Supports ChatGPT, ChatGPT Work and Codex with project and browser workflow integration, shipping as .deb or .rpm for x64 and ARM64 across Ubuntu 24.04/26.04 LTS, Debian 13 and Fedora 43/44.",
-          "source": "OpenAI",
+          "title": "GreenTree — test the tree, not every commit",
+          "summary": "An open-source Rust tool that content-addresses your dirty working tree, caches test verdicts by tree hash, and refuses to publish any tree that hasn't passed checks. Built for coding agents with a drop-in Claude Code skill.",
+          "source": "GreenTree",
           "date": "2026-08-12",
-          "url": "https://x.com/OpenAI/status/2087231350134980830"
+          "url": "https://github.com/Reachpad/greentree"
         },
         {
-          "title": "Bullet: a coding agent claiming to be 30-60% faster than Claude Code and Codex",
-          "summary": "A new coding agent launched on Product Hunt, claiming significant speedups over Claude Code and Codex on everyday tasks.",
-          "source": "Product Hunt",
-          "date": "2026-08-12",
-          "url": "https://www.producthunt.com/products/bullet-6"
+          "title": "Agent Memory Leaderboard — first public benchmark for agent memory systems",
+          "summary": "A new open benchmark for comparing textual and coding-agent memory systems under a consistent Add/Search evaluation flow, with separate academic and commercial tracks; first-cycle results due mid-August.",
+          "source": "Agent Memory Leaderboard",
+          "date": "2026-08-13",
+          "url": "https://agentmemoryleaderboard.ai/"
         },
         {
-          "title": "Framer ships AI Agents, branching and a new Community",
-          "summary": "AI Agents now work on the canvas to design, write, analyze and organize sites, with the option to connect your own AI like Claude Code or Codex, plus branching for safer idea testing.",
-          "source": "Product Hunt",
+          "title": "Decant — local-first analysis of Claude Code and Codex sessions",
+          "summary": "A local-first CLI/web tool that turns Claude Code and Codex session logs into token spend, context windows, files touched, and cost insights, with full-text search across transcripts and no outbound network calls at runtime.",
+          "source": "Decant",
           "date": "2026-08-12",
-          "url": "https://www.producthunt.com/products/framer"
-        },
-        {
-          "title": "Tines 3B: a secure environment for agents, apps and automations",
-          "summary": "The automation platform launched 3B, a secure environment for running AI agents, apps and automations.",
-          "source": "Product Hunt",
-          "date": "2026-08-12",
-          "url": "https://www.producthunt.com/products/tines"
+          "url": "https://github.com/dosu-ai/decant"
         }
       ]
     }
@@ -124,7 +117,7 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "items": [
         {"name": "microsoft/AI-For-Beginners", "url": "https://github.com/microsoft/AI-For-Beginners", "meta": "Jupyter Notebook · 58.6k ★ · +2,617 today"},
         {"name": "usekaneo/kaneo", "url": "https://github.com/usekaneo/kaneo", "meta": "TypeScript · 5.9k ★ · +491 today"},
@@ -147,97 +140,80 @@
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "items": [
-        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "New MiniMax H3 generation model"},
-        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "DeepSeek V4 Flash 0731 release"},
-        {"name": "meta-models/Muse-Glimmer-30B", "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B", "meta": "Meta Muse-Glimmer 30B model"},
-        {"name": "LiquidAI/LFM2.5-2.6B", "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B", "meta": "Liquid AI LFM 2.5, 2.6B model"},
-        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "Moonshot AI Kimi-K3 model"},
-        {"name": "deepgrove/maple-preview", "url": "https://huggingface.co/deepgrove/maple-preview", "meta": "DeepGrove maple preview model"},
-        {"name": "inclusionAI/Ling-3.0-flash", "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash", "meta": "inclusionAI Ling 3.0 flash model"},
-        {"name": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B", "meta": "NVIDIA Nemotron Labs voice chat, 11B"},
-        {"name": "mistralai/Shieldstral-1.0-3B", "url": "https://huggingface.co/mistralai/Shieldstral-1.0-3B", "meta": "Mistral Shieldstral 1.0, 3B safety model"},
-        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "Baidu unlimited OCR model"}
+        {"name": "meta-models/Muse-Glimmer-30B", "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B", "meta": "30B open-weights LLM"},
+        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "Video generation model"},
+        {"name": "larryvrh/MiniMax-H3-Turbo-Lora", "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora", "meta": "LoRA of MiniMax-H3-Turbo"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "DeepSeek V4 Flash open-weights LLM"},
+        {"name": "Qwen/Qwen3.8-2.4T-A95B", "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B", "meta": "2.4T MoE, coding & long-horizon agent flagship"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Text-to-video model"},
+        {"name": "Comfy-Org/MiniMax-H3", "url": "https://huggingface.co/Comfy-Org/MiniMax-H3", "meta": "ComfyUI integration of MiniMax-H3"},
+        {"name": "lightx2v/Minimax-h3-Turbo", "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo", "meta": "MiniMax-H3-Turbo variant"},
+        {"name": "unsloth/Muse-Glimmer-30B-GGUF", "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF", "meta": "GGUF quant of Muse-Glimmer-30B"},
+        {"name": "moonshotai/Kimi-K3", "url": "https://huggingface.co/moonshotai/Kimi-K3", "meta": "Moonshot open-weights LLM (Kimi K3)"}
       ]
     }
   },
   "quick_hits": [
     {
-      "title": "NVIDIA Nemotron 3.5 Lightning goes live on Together AI — fastest open model in its class for agents",
-      "source": "@togethercompute",
-      "date": "2026-08-11",
-      "url": "https://x.com/togethercompute/status/2087163477404041345"
+      "title": "OpenAI: enterprises shift from AI assistants to agents",
+      "source": "OpenAI",
+      "date": "2026-08-12",
+      "url": "https://openai.com/index/how-enterprises-put-ai-to-work/"
     },
     {
-      "title": "Upstage launches Solar Pro 4, an agentic LLM for production multi-step work, free on the Nous Portal",
+      "title": "SGLang ships day-zero inference optimizations for Qwen3.8 class models",
+      "source": "@lmsysorg",
+      "date": "2026-08-13",
+      "url": "https://x.com/lmsysorg/status/2087562100030001387"
+    },
+    {
+      "title": "AI code-testing startup Blacksmith's valuation jumps to $550M",
+      "source": "TechCrunch",
+      "date": "2026-08-12",
+      "url": "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation/"
+    },
+    {
+      "title": "ClearJet raises $25M to build the 'Uber of Cargo'",
+      "source": "Crunchbase News",
+      "date": "2026-08-12",
+      "url": "https://news.crunchbase.com/transportation/clearjet-raises-25m-logistics-ai-seriesb/"
+    },
+    {
+      "title": "Higgsfield video plugin goes live in the ChatGPT app",
+      "source": "omarsar0",
+      "date": "2026-08-12",
+      "url": "https://x.com/omarsar0/status/2087598187951317316"
+    },
+    {
+      "title": "Nous Research: Hermes agent profiles now portable and shareable",
       "source": "NousResearch",
       "date": "2026-08-12",
-      "url": "https://x.com/NousResearch/status/2087197502415974634"
+      "url": "https://x.com/NousResearch/status/2087592096769147377"
     },
     {
-      "title": "Schaeffler's humanoid-robot order book reportedly reaches €350 million",
-      "source": "EvolvePlace",
-      "date": "2026-08-11",
-      "url": "https://evolveplace.com/schaefflers-humanoid-robot-order-book-reportedly-reach-e350-millione/"
-    },
-    {
-      "title": "Defense drone developer Cambridge Aerospace raises $300M at $3.4B valuation",
-      "source": "Smashing Robotics",
-      "date": "2026-08-11",
-      "url": "https://www.smashingrobotics.com/defense-drone-developer-cambridge-aerospace-raises-300m/"
-    },
-    {
-      "title": "Gitar: AI code review that fixes what it finds",
-      "source": "Product Hunt",
+      "title": "DeepLearning.AI launches free course on AI coding workflows, from cloud to local",
+      "source": "DeepLearningAI",
       "date": "2026-08-12",
-      "url": "https://www.producthunt.com/products/gitar"
+      "url": "https://x.com/DeepLearningAI/status/2087562287431229731"
     },
     {
-      "title": "Octomind Cloud and Hub: cloud agents with 27 models, one login",
-      "source": "Product Hunt",
+      "title": "A3: North American robot orders up 4.3% in units, 21.3% in revenue in Q2",
+      "source": "The Robot Report",
       "date": "2026-08-12",
-      "url": "https://www.producthunt.com/products/octomind-plug-n-play-ai-agents"
+      "url": "https://www.therobotreport.com/q2-2026-robotics-demand-increased-across-industries-reports-a3/"
     },
     {
-      "title": "LlamaIndex releases ExtractBench, an open-source schema-extraction benchmark",
-      "source": "Hacker News",
-      "date": "2026-08-11",
-      "url": "https://github.com/run-llama/ExtractBench"
-    },
-    {
-      "title": "Dev-loop: parallel coding agents, supervised not just spawned",
-      "source": "Hacker News",
-      "date": "2026-08-12",
-      "url": "https://github.com/choiyounggi/dev-loop"
-    },
-    {
-      "title": "BetterClaw: deploy an AI agent in 60 seconds, $0 forever",
-      "source": "Product Hunt",
-      "date": "2026-08-12",
-      "url": "https://www.producthunt.com/products/betterclaw"
-    },
-    {
-      "title": "VoiceGecko: open-source, local voice-to-text for developers",
-      "source": "Product Hunt",
-      "date": "2026-08-12",
-      "url": "https://www.producthunt.com/products/voice-gecko"
-    },
-    {
-      "title": "OutageDeck MCP server checks 172 cloud and SaaS status feeds",
-      "source": "Hacker News",
-      "date": "2026-08-11",
-      "url": "https://outagedeck.com/developers/mcp"
-    },
-    {
-      "title": "Longscribe offers free transcription for long videos and podcasts",
-      "source": "Hacker News",
-      "date": "2026-08-11",
-      "url": "https://longscribe.com/"
+      "title": "Chatlens — search and browse ChatGPT/Claude exports fully offline",
+      "source": "Chatlens",
+      "date": "2026-08-13",
+      "url": "https://github.com/david-g-3654/chatlens"
     }
   ],
   "spiked": {
-    "low signal": 6,
-    "already ran": 3
+    "out of window": 10,
+    "already ran": 3,
+    "same story": 1
   }
 }
