@@ -1,210 +1,144 @@
 {
-  "issue_no": 50,
-  "date_iso": "2026-08-14",
-  "date_human": "August 14, 2026",
+  "issue_no": 51,
+  "date_iso": "2026-08-15",
+  "date_human": "August 15, 2026",
   "notice": null,
   "lead": {
-    "kicker": "Inference at Warp Speed",
-    "title": "OpenAI previews GPT-5.6 Sol 'Ultrafast' mode at up to 750 tok/s via Cerebras",
-    "summary": "OpenAI announced Ultrafast, a new API service tier running GPT-5.6 Sol up to 14x faster than standard inference, reaching 750 output tokens per second on Cerebras hardware. The limited preview targets latency-sensitive enterprise use cases including real-time voice, financial analysis, and customer support.",
-    "source": "OpenAI",
+    "kicker": "EU AI Act compliance",
+    "title": "Anthropic implements text watermarking for Claude to comply with EU AI Act",
+    "summary": "Anthropic rolled out text watermarking for Claude outputs, embedding statistical patterns via key-based randomness at generation time to detect AI involvement without affecting quality, hiding no characters, and providing no per-user traceability. Other major developers who signed the EU AI Act Code of Practice will implement similar measures.",
+    "source": "Anthropic",
     "date": "2026-08-14",
-    "url": "https://x.com/OpenAI/status/2087947721936359705",
-    "image": "images/lead_2026-08-14.jpg"
+    "url": "https://www.anthropic.com/news/claude-text-watermark",
+    "image": "images/lead_2026-08-15.jpg"
   },
   "top_stories": [
     {
-      "title": "Gemini 3.7 Flash is generally available with major agentic coding gains",
-      "summary": "Google DeepMind shipped Gemini 3.7 Flash with strong jumps on agentic benchmarks — DeepSWE 65.3% (up from 49%), FrontierCode 43.6%, AutomationBench 30.4% — and a 50% price discount until end of year.",
-      "source": "GoogleDeepMind",
+      "title": "Unitree Robotics prices $900M IPO at $9B - first humanoid robot maker to list on Shanghai STAR market",
+      "summary": "Unitree priced its IPO at 150.8 yuan per share, with retail demand oversubscribed 5,000 times. DeepSeek participated as a strategic investor. The G1 humanoid sells for $16,000, though skeptics question commercial viability.",
+      "source": "CNBC",
       "date": "2026-08-14",
-      "url": "https://x.com/GoogleDeepMind/status/2087948368957894859"
+      "url": "https://www.cnbc.com/2026/08/14/china-humanoid-robots-unitree-ipo-tesla-optimus.html"
     },
     {
-      "title": "Databricks raises $5B at $190B valuation to scale AI data platform",
-      "summary": "Coatue-led $5B strategic growth round at $190B post-money valuation, with Blackstone, MGX, T. Rowe Price, and Sixth Street Growth. The AI data lakehouse company reports $7B ARR growing 80% YoY.",
-      "source": "TechCrunch",
-      "date": "2026-08-13",
-      "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/"
-    },
-    {
-      "title": "Arize AI agrees to be acquired by Dynatrace",
-      "summary": "Arize AI, the AI observability pioneer, entered a definitive agreement to be acquired by Dynatrace, creating a ~$14B observability powerhouse as AI monitoring converges with traditional software observability for agents.",
-      "source": "swyx",
+      "title": "Nvidia mobilizes $500B in AI infrastructure funds with Apollo, BlackRock, and KKR",
+      "summary": "Nvidia signed MoUs with six major financial institutions to establish financing platforms that could mobilize over $500B in third-party capital for AI data center infrastructure, exclusively for Nvidia-based AI data centers.",
+      "source": "Tom's Hardware",
       "date": "2026-08-14",
-      "url": "https://x.com/swyx/status/2088049159509344265"
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-teams-up-with-financial-giants-to-create-usd500-billion-ai-infrastructure-funds-six-investment-firms-to-enable-access-to-long-term-funding-at-attractive-rates"
     },
     {
-      "title": "DeepSeek V4 Pro 0813 reaches general availability with agentic improvements",
-      "summary": "DeepSeek released the GA version of V4 Pro (0813 build), a 1.6T-parameter MoE with 1M-token context and 384K output tokens. It ranks #2 on SWE-bench Verified at 1/36th the cost of frontier models.",
-      "source": "DeepSeek",
-      "date": "2026-08-13",
-      "url": "https://api-docs.deepseek.com/news/news260813/"
+      "title": "Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out research paper replication",
+      "summary": "A 27B-parameter agent called Faraday outperformed frontier models on paper replication using an auto-generated rubric judge and coding agents as tools, showing long-horizon scientific capabilities can be trained into smaller weights.",
+      "source": "omarsar0",
+      "date": "2026-08-15",
+      "url": "https://x.com/omarsar0/status/2088309745740591429"
+    },
+    {
+      "title": "xAI plans to scale data center capacity 7x to 10 GW by late 2027, targeting up to $500B revenue",
+      "summary": "Elon Musk told SpaceX employees xAI will increase power capacity 7-fold to 10 GW by late 2027, with projected revenue of $300B-$500B per year by end of 2027, far outpacing all existing AI clusters.",
+      "source": "Tom's Hardware",
+      "date": "2026-08-14",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-xai-will-increase-data-center-capacity-7x-by-2027-targeting-10-gigawatts-of-compute-up-to-usd500-billion-in-revenue-by-the-end-of-next-year"
     }
   ],
   "sections": [
     {
-      "title": "Research & Papers",
+      "title": "Open Source & Models",
       "items": [
         {
-          "title": "Reduced Matrix Multiplication: training-free LLM inference speedup",
-          "summary": "RMM selectively reduces Transformer matrix products by identifying and skipping redundant computations, offering a training-free path to faster inference without quality loss.",
-          "source": "arXiv",
-          "date": "2026-08-13",
-          "url": "https://arxiv.org/abs/2608.13426",
-          "image": "images/section_research_2026-08-14.jpg"
+          "title": "Qwen3.8-2.4T-A95B MoE - Alibaba's 2.4 trillion parameter open-weight flagship released",
+          "summary": "Alibaba's Qwen team released Qwen3.8-2.4T-A95B, a massive open-weight Mixture-of-Experts model with 95B active parameters and a 1M token context window.",
+          "source": "@togethercompute",
+          "date": "2026-08-14",
+          "url": "https://x.com/togethercompute/status/2088075829586923583"
         },
         {
-          "title": "Step-level self-distilled policy optimization for deep search agents",
-          "summary": "OPSD addresses sparse reward in multi-step search trajectories by using the model's own logits for step-level credit assignment, enabling more efficient RL for deep search agents.",
-          "source": "arXiv",
-          "date": "2026-08-13",
-          "url": "https://arxiv.org/abs/2608.12764"
+          "title": "Z.ai GLM-5.3 - Frontier coding model with emergent cyber capabilities at 743B parameters",
+          "summary": "Z.ai launched GLM-5.3, a 743B-parameter model post-trained for advanced software engineering and cybersecurity, achieving SOTA on Terminal Bench 3.0 and Agents' Last Exam.",
+          "source": "Z.ai",
+          "date": "2026-08-14",
+          "url": "https://z.ai/blog/glm-5.3"
         },
         {
-          "title": "How do VLMs behave when blind or misled?",
-          "summary": "A behavioral evaluation of vision-language models under uncertainty, finding that models can internally distinguish when abstention is required but often fail to express it.",
-          "source": "arXiv",
-          "date": "2026-08-13",
-          "url": "https://arxiv.org/abs/2608.13267"
+          "title": "Qwen3.8-27B gets Day-0 SGLang support delivering 200+ tokens/s on a single RTX 5090",
+          "summary": "LMSYS announced Day-0 SGLang support for Qwen3.8-27B, enabling near-instant TTFT and over 200 tokens/s decode on consumer GPUs.",
+          "source": "@lmsysorg",
+          "date": "2026-08-14",
+          "url": "https://x.com/lmsysorg/status/2088293978248794355"
         },
         {
-          "title": "Spatial Memory Agent: experience-grounded memory for spatial intelligence",
-          "summary": "A framework that gives VLM agents procedural memory for spatial reasoning, improving performance on embodied tasks, robotic planning, and multimodal assistants.",
-          "source": "HuggingFace",
-          "date": "2026-08-13",
-          "url": "https://huggingface.co/papers/2608.12743"
-        },
-        {
-          "title": "Training AI scientists to replicate research",
-          "summary": "A paper exploring how to train AI systems to independently replicate scientific results, illuminating underspecified details and strengthening the reproducibility pipeline.",
-          "source": "arXiv",
-          "date": "2026-08-13",
-          "url": "https://arxiv.org/abs/2608.13331"
+          "title": "Hugging Face publishes State of Open Models Summer 2026 - Qwen leads local inference, agents on the rise",
+          "summary": "HF report finds frontier models scaling but small models dominate real-world usage. Qwen leads local inference followed by Gemma. AI agents are emerging as a major model category on the Hub.",
+          "source": "@huggingface",
+          "date": "2026-08-14",
+          "url": "https://x.com/huggingface/status/2088301795890044975"
         }
-      ]
+      ],
+      "image": "images/section_open-source_2026-08-15.jpg"
     },
     {
       "title": "YouTube & Video",
       "items": [
         {
-          "title": "xAI launches Grok 4.6, expanding the AI model landscape",
-          "summary": "xAI released Grok 4.6, the latest version of its flagship LLM, further broadening the competitive model options available to developers and enterprises.",
-          "source": "YouTube — The AI Daily Brief",
-          "date": "2026-08-13",
-          "url": "https://www.youtube.com/watch?v=8exG3NcsKxw",
-          "image": "images/section_youtube_2026-08-14.jpg"
+          "title": "Elon Musk teases Grok 4.7 ahead of release",
+          "summary": "Elon Musk has already started teasing Grok 4.7, the next iteration of xAI's LLM, hinting at what appears to be a significant capability jump following Grok 4.",
+          "source": "Theo - t3.gg",
+          "date": "2026-08-14",
+          "url": "https://www.youtube.com/watch?v=iWh6Khkv_Es",
+          "video_id": "iWh6Khkv_Es"
         },
         {
-          "title": "Grok Bot simplifies AI agent development for mainstream users",
-          "summary": "xAI's new Grok Bot lowers the barrier for building and deploying AI agents, making agentic workflows accessible through natural language configuration.",
-          "source": "YouTube — The AI Daily Brief",
-          "date": "2026-08-13",
-          "url": "https://www.youtube.com/watch?v=qQcmP9rg1EE"
+          "title": "OpenAI revenue on track to double ahead of planned IPO",
+          "summary": "OpenAI is reportedly on track to double its revenue as it prepares for an initial public offering, marking a major milestone for the AI industry's highest-profile company.",
+          "source": "Bloomberg Technology",
+          "date": "2026-08-14",
+          "url": "https://www.youtube.com/watch?v=1oP51W5SzLQ",
+          "video_id": "1oP51W5SzLQ"
         }
-      ]
-    },
-    {
-      "title": "Hardware & Robotics",
-      "items": [
-        {
-          "title": "LG moves ahead on next-generation walking humanoid robot with Nvidia tech",
-          "summary": "LG announced a bipedal humanoid robot built on NVIDIA Isaac GR00T, with a public unveiling planned for Q1 2027. The companies signed an MOU covering robotics, AI factories, and autonomous vehicles.",
-          "source": "GamesBeat",
-          "date": "2026-08-13",
-          "url": "https://gamesbeat.com/lg-moves-ahead-on-next-generation-walking-humanoid-robot-with-nvidia-tech/",
-          "image": "images/section_hardware_2026-08-14.jpg"
-        },
-        {
-          "title": "Cerebras shares plunge nearly 20% after missing earnings expectations",
-          "summary": "Cerebras stock dropped nearly 20% after Q2 earnings miss as hardware sales declined, though AI cloud revenue surged 281% YoY. Stock-based compensation jumped from $13.3M to $377M post-IPO.",
-          "source": "Tom's Hardware",
-          "date": "2026-08-13",
-          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/cerebras-shares-plunge-nearly-20-percent-after-missing-earnings-expectations-hardware-sales-drop-but-ai-cloud-revenue-climbs-281-percent"
-        },
-        {
-          "title": "Qualcomm details Snapdragon C specs for $300 laptops",
-          "summary": "Qualcomm disclosed specifications for its entry-level Snapdragon C Arm SoC, claiming 67% faster performance on battery than Intel's N250. AC performance figures remain undisclosed.",
-          "source": "Tom's Hardware",
-          "date": "2026-08-13",
-          "url": "https://www.tomshardware.com/pc-components/cpus/qualcomm-details-snapdragon-c-specs-for-usd300-laptops-for-the-first-time-claims-67-percent-faster-performance-on-battery-than-intel-n250-ac-performance-remains-a-mystery"
-        },
-        {
-          "title": "Report catalogs over 200 humanoid robot providers worldwide",
-          "summary": "The Robot Report published a free report on mobile manipulators and humanoids, cataloging 200+ verified humanoid providers and analyzing challenges in power management, perception, and world model training.",
-          "source": "The Robot Report",
-          "date": "2026-08-13",
-          "url": "https://www.therobotreport.com/mobile-manipulators-and-humanoids/"
-        },
-        {
-          "title": "UBS expects AMD to strike a foundry deal with Intel",
-          "summary": "UBS analysts predict AMD, Google, Apple, and SpaceX will tap Intel's EMIB-T packaging technology through foundry deals, driven by TSMC capacity constraints. Goldman Sachs expects NVIDIA to ship 10x more racks than AMD in 2026.",
-          "source": "WCCFTech",
-          "date": "2026-08-13",
-          "url": "https://wccftech.com/ubs-expects-amd-to-strike-a-foundry-deal-with-intel-as-it-faces-perennial-underdog-status-on-data-center-racks/"
-        }
-      ]
+      ],
+      "image": "images/section_youtube-video_2026-08-15.jpg"
     },
     {
       "title": "Tools & Startups",
       "items": [
         {
-          "title": "X open-sources its ranking algorithm with shadowban transparency tool",
-          "summary": "X released its 'For You' timeline algorithm and core ranking engine under Apache v2 on GitHub. A new 'Under the Hood' tool lets users download their ranking-impact stats as JSON for AI-assisted analysis.",
-          "source": "TechCrunch",
-          "date": "2026-08-13",
-          "url": "https://techcrunch.com/2026/08/13/x-open-sources-its-ranking-algorithm-letting-users-see-if-theyve-been-shadowbanned/",
-          "image": "images/section_tools_2026-08-14.jpg"
-        },
-        {
-          "title": "IBM partners with OpenAI to embed GPT-5.6 into enterprise security and consulting",
-          "summary": "IBM and OpenAI announced a strategic partnership making OpenAI an Elite partner, integrating GPT-5.6 models into IBM's Autonomous Security platform and enterprise consulting for Fortune 500 deployment.",
-          "source": "TechCrunch",
-          "date": "2026-08-13",
-          "url": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/"
-        },
-        {
-          "title": "Cliclaw — Telegram bridge for Claude Code, Codex, Pi, and Gemini CLI",
-          "summary": "An open-source Telegram bot that lets developers control Claude Code, OpenAI Codex, Pi, and Gemini CLI from their phone. Supports per-chat sessions, confirm gate, streaming output, and image attachments.",
-          "source": "Hacker News",
+          "title": "Cloudflare Kitesurf - Agent-first web browser running in V8 isolates on Cloudflare Workers",
+          "summary": "Cloudflare launched Kitesurf, a stateless web browser built specifically for AI agents rather than humans, running on Workers in V8 isolates via a Rust/Wasm engine instead of Chromium, with 3-7x less memory and CPU per session. Free while in beta.",
+          "source": "The Daily Star",
           "date": "2026-08-14",
-          "url": "https://news.ycombinator.com/item?id=49294922"
+          "url": "https://www.thedailystar.net/news/tech-startup/news/cloudflare-unveils-kitesurf-browser-designed-ai-agents-4243601"
         },
         {
-          "title": "Harness Training — auto-train model-agnostic benchmark harnesses for LLMs",
-          "summary": "An open-source framework that trains a 'harness' to improve model-agnostic capabilities using PyTorch-like APIs, enabling cross-model gains without fine-tuning the underlying LLM.",
-          "source": "Hacker News",
+          "title": "Viktor AI agent in production: runs marketing campaigns in Slack with 3,000 tools",
+          "summary": "A production AI agent called Viktor lives in Slack, connects to roughly 3,000 tools via scoped OAuth and SOC 2, maintains a persistent standing brief, and operates with human approval loops.",
+          "source": "omarsar0",
           "date": "2026-08-14",
-          "url": "https://news.ycombinator.com/item?id=49293267"
-        }
-      ]
-    },
-    {
-      "title": "Money & Markets",
-      "items": [
-        {
-          "title": "Yuno raises $45M Series B for AI-native global payments infrastructure",
-          "summary": "Series B led by Global PayTech Ventures with a16z, Tiger Global, and Gulf sovereign funds. Yuno's AI-native payments OS connects 1,000+ payment methods across markets.",
-          "source": "Tech Startups",
-          "date": "2026-08-13",
-          "url": "https://techstartups.com/2026/08/13/venture-capital-startup-funding-roundup-august-13-2026-blackstone-coatue-founders-fund-sequoia-capital-thiel-capital-more/",
-          "image": "images/section_money_2026-08-14.jpg"
+          "url": "https://x.com/omarsar0/status/2088286997492146627"
         },
         {
-          "title": "Mindgard raises $30M Series A to guard AI systems against attacks",
-          "summary": "Series A led by Album VC with Karma Ventures and .406 Ventures. Mindgard's platform provides AI red-teaming and adversarial security for generative AI deployments.",
-          "source": "Tech Startups",
-          "date": "2026-08-13",
-          "url": "https://techstartups.com/2026/08/13/venture-capital-startup-funding-roundup-august-13-2026-blackstone-coatue-founders-fund-sequoia-capital-thiel-capital-more/"
+          "title": "Adobe Workfront AI Collaborators - AI agents as teammates in enterprise workflows",
+          "summary": "Adobe made AI Collaborators generally available in Workfront, allowing teams to assign tasks to AI agents just like human teammates, with human approval gates, audit trails, and governed access.",
+          "source": "Adobe",
+          "date": "2026-08-14",
+          "url": "https://business.adobe.com/blog/workfront-ai-collaborators-announcement"
         },
         {
-          "title": "Pathway AI raises $30M seed at $500M valuation for post-Transformer models",
-          "summary": "Seed round from Id4 Ventures, TQ Ventures, and Red Bridge Ventures. OpenAI-alum founders are building a post-Transformer 'Dragon Hatchling' model architecture.",
-          "source": "Tech Startups",
-          "date": "2026-08-13",
-          "url": "https://techstartups.com/2026/08/13/venture-capital-startup-funding-roundup-august-13-2026-blackstone-coatue-founders-fund-sequoia-capital-thiel-capital-more/"
+          "title": "Qwen3.8-27B open-weight model released on HuggingFace with 1M context window",
+          "summary": "Qwen released Qwen3.8-27B on HuggingFace, a 27B-parameter open-weight model. AMD announced Day 0 support for Ryzen AI Max and Radeon GPUs.",
+          "source": "HuggingFace",
+          "date": "2026-08-14",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
+        },
+        {
+          "title": "Nous Research launches Hermes Cloud persistent agents and /loop command",
+          "summary": "Nous Research announced Hermes Cloud agents that persist after closing the laptop and remain reachable remotely, plus a new /loop slash command for scheduled prompt re-runs. Cloud pricing starts at roughly $0.29 per day for small instances.",
+          "source": "NousResearch",
+          "date": "2026-08-15",
+          "url": "https://x.com/NousResearch/status/2088395070059770061"
         }
-      ]
+      ],
+      "image": "images/section_tools-startups_2026-08-15.jpg"
     }
   ],
   "trending": {
@@ -212,119 +146,181 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-14",
+      "date": "2026-08-15",
       "items": [
-        {"name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "meta": "HTML · 15,363 ★ · +4,475 today"},
-        {"name": "semantica-agi/semantica", "url": "https://github.com/semantica-agi/semantica", "meta": "Python · 6,944 ★ · +713 today"},
-        {"name": "anthropics/skills", "url": "https://github.com/anthropics/skills", "meta": "Python · 169,180 ★ · +312 today"},
-        {"name": "cactus-compute/needle", "url": "https://github.com/cactus-compute/needle", "meta": "Python · 5,096 ★ · +769 today"},
-        {"name": "altic-dev/FluidVoice", "url": "https://github.com/altic-dev/FluidVoice", "meta": "Swift · 9,947 ★ · +76 today"},
-        {"name": "unslothai/unsloth", "url": "https://github.com/unslothai/unsloth", "meta": "Python · 71,170 ★ · +328 today"},
-        {"name": "macro-inc/macro", "url": "https://github.com/macro-inc/macro", "meta": "Rust · 2,711 ★ · +1,239 today"},
-        {"name": "megadose/holehe", "url": "https://github.com/megadose/holehe", "meta": "Python · 12,503 ★ · +195 today"},
-        {"name": "smicallef/spiderfoot", "url": "https://github.com/smicallef/spiderfoot", "meta": "Python · 20,717 ★ · +283 today"},
-        {"name": "NVIDIA-NeMo/Switchyard", "url": "https://github.com/NVIDIA-NeMo/Switchyard", "meta": "Rust · 1,301 ★ · +408 today"},
-        {"name": "holaboss-ai/holaOS", "url": "https://github.com/holaboss-ai/holaOS", "meta": "TypeScript · 6,769 ★ · +241 today"},
-        {"name": "kepano/obsidian-skills", "url": "https://github.com/kepano/obsidian-skills", "meta": "Markdown · 45,965 ★ · +292 today"},
-        {"name": "3b1b/manim", "url": "https://github.com/3b1b/manim", "meta": "Python · 90,968 ★ · +176 today"},
-        {"name": "msitarzewski/agency-agents", "url": "https://github.com/msitarzewski/agency-agents", "meta": "Shell · 145,291 ★ · +778 today"},
-        {"name": "Lightricks/LTX-2", "url": "https://github.com/Lightricks/LTX-2", "meta": "Python · 8,963 ★ · +205 today"}
+        {
+          "name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "meta": "HTML - 17.4k stars - +3,646 today"
+        },
+        {
+          "name": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle",
+          "meta": "Python - 5.7k stars - +662 today"
+        },
+        {
+          "name": "megadose/holehe",
+          "url": "https://github.com/megadose/holehe",
+          "meta": "Python - 12.9k stars - +427 today"
+        },
+        {
+          "name": "macro-inc/macro",
+          "url": "https://github.com/macro-inc/macro",
+          "meta": "Rust - 3.1k stars - +436 today"
+        },
+        {
+          "name": "smicallef/spiderfoot",
+          "url": "https://github.com/smicallef/spiderfoot",
+          "meta": "Python - 21.0k stars - +293 today"
+        },
+        {
+          "name": "citrolabs/ego-lite",
+          "url": "https://github.com/citrolabs/ego-lite",
+          "meta": "JavaScript - 10.4k stars - +165 today"
+        },
+        {
+          "name": "holaboss-ai/holaOS",
+          "url": "https://github.com/holaboss-ai/holaOS",
+          "meta": "TypeScript - 7.3k stars - +769 today"
+        },
+        {
+          "name": "github/spec-kit",
+          "url": "https://github.com/github/spec-kit",
+          "meta": "Python - 128.6k stars - +1,160 today"
+        },
+        {
+          "name": "lightningpixel/modly",
+          "url": "https://github.com/lightningpixel/modly",
+          "meta": "TypeScript - 6.0k stars - +579 today"
+        },
+        {
+          "name": "infiniflow/ragflow",
+          "url": "https://github.com/infiniflow/ragflow",
+          "meta": "Go - 88.4k stars - +473 today"
+        },
+        {
+          "name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "meta": "TypeScript - 2.8k stars - +41 today"
+        },
+        {
+          "name": "deepseek-ai/awesome-deepseek-agent",
+          "url": "https://github.com/deepseek-ai/awesome-deepseek-agent",
+          "meta": "5.7k stars - +222 today"
+        },
+        {
+          "name": "semantica-agi/semantica",
+          "url": "https://github.com/semantica-agi/semantica",
+          "meta": "Python - 7.6k stars - +1,181 today"
+        },
+        {
+          "name": "rustdesk/rustdesk",
+          "url": "https://github.com/rustdesk/rustdesk",
+          "meta": "Rust - 120.7k stars - +143 today"
+        },
+        {
+          "name": "OpenCut-app/OpenCut",
+          "url": "https://github.com/OpenCut-app/OpenCut",
+          "meta": "TypeScript - 83.2k stars - +255 today"
+        }
       ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-14",
+      "date": "2026-08-15",
       "items": [
-        {"name": "meta-models/Muse-Glimmer-30B", "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B", "meta": "30B dense model under Apache 2.0, designed for always-on local agents"},
-        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "Audio-video generation model, text/image/audio to synchronized video"},
-        {"name": "Qwen/Qwen3.8-2.4T-A95B", "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B", "meta": "2.4T MoE, 95B active parameters, 1M context, latest Qwen generation"},
-        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Video, audio & world simulation model for self-hosted deployment"},
-        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "Flash variant of DeepSeek V4, text generation, 8-bit precision"},
-        {"name": "lightx2v/Minimax-h3-Turbo", "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo", "meta": "Turbo variant of MiniMax H3, optimized for faster inference"},
-        {"name": "unsloth/Muse-Glimmer-30B-GGUF", "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF", "meta": "GGUF quantized version of Meta's Muse-Glimmer-30B"},
-        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "Music generation model, 5-minute songs with vocals, 8B LLM + 0.6B local"},
-        {"name": "larryvrh/MiniMax-H3-Turbo-Lora", "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora", "meta": "LoRA adapter for MiniMax-H3-Turbo"},
-        {"name": "Comfy-Org/MiniMax-H3", "url": "https://huggingface.co/Comfy-Org/MiniMax-H3", "meta": "ComfyUI port of MiniMax H3 for node-based workflows"}
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "27B dense language model, strong local inference"
+        },
+        {
+          "name": "meta-models/Muse-Glimmer-30B",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "meta": "30B language model from Meta"
+        },
+        {
+          "name": "Qwen/Qwen3.8-2.4T-A95B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+          "meta": "2.4T MoE, 95B active, 1M context window"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-H3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+          "meta": "H3 architecture video generation model"
+        },
+        {
+          "name": "unsloth/Qwen3.8-27B-GGUF",
+          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+          "meta": "GGUF quantized Qwen3.8-27B for local inference"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "Video generation model"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-Music3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+          "meta": "Music generation model"
+        },
+        {
+          "name": "deepseek-ai/DeepSeek-V4-Flash-0731",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+          "meta": "DeepSeek V4 Flash language model"
+        },
+        {
+          "name": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "meta": "DeepSeek V4 Pro language model"
+        },
+        {
+          "name": "unsloth/Muse-Glimmer-30B-GGUF",
+          "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF",
+          "meta": "GGUF quantized Muse-Glimmer-30B"
+        }
       ]
     }
   },
   "quick_hits": [
     {
-      "title": "DreamX-Phi 1.0: action-conditioned video world model for robotic manipulation",
-      "source": "HuggingFace",
-      "date": "2026-08-13",
-      "url": "https://huggingface.co/papers/2608.13489"
-    },
-    {
-      "title": "LycheeMemory V2: efficient long-term memory for LLM agents via semantic segment-level consolidation",
-      "source": "HuggingFace",
-      "date": "2026-08-13",
-      "url": "https://huggingface.co/papers/2608.12990"
-    },
-    {
-      "title": "Vero: can AI agents build formally verified software repositories?",
-      "source": "arXiv",
-      "date": "2026-08-13",
-      "url": "https://arxiv.org/abs/2608.13522"
-    },
-    {
-      "title": "Synthetic Persona Pretraining: alignment from token zero",
-      "source": "arXiv",
-      "date": "2026-08-13",
-      "url": "https://arxiv.org/abs/2608.13482"
-    },
-    {
-      "title": "Alaya-EVOKE: from linear-scaling supervision to endless world",
-      "source": "HuggingFace",
-      "date": "2026-08-13",
-      "url": "https://huggingface.co/papers/2608.13546"
-    },
-    {
-      "title": "Harness-IF: measuring the real causal impact of AGENTS.md rules on agent performance",
+      "title": "Meta's Wiggle Framework reveals LLM judges flip verdicts 25-91% under adversarial pressure",
       "source": "omarsar0",
       "date": "2026-08-14",
-      "url": "https://x.com/omarsar0/status/2087962456572498142"
+      "url": "https://x.com/omarsar0/status/2088292067994951928"
     },
     {
-      "title": "Microsoft study: loaded skill libraries cause agent failures and regressions",
-      "source": "omarsar0",
+      "title": "Anthropic publishes second Risk Report under Responsible Scaling Policy",
+      "source": "AnthropicAI",
+      "date": "2026-08-15",
+      "url": "https://x.com/AnthropicAI/status/2088324824863236248"
+    },
+    {
+      "title": "Microsoft prepares Maia 300 AI accelerator to deepen custom chip push",
+      "source": "Envoxe",
       "date": "2026-08-14",
-      "url": "https://x.com/omarsar0/status/2087926158432309306"
+      "url": "https://envoxe.wordpress.com/2026/08/14/microsoft-pushes-deeper-into-ai-chip-race/"
     },
     {
-      "title": "ChatGPT desktop adds Computer History across apps and sites",
-      "source": "OpenAI",
+      "title": "Vals AI raises $40M Series A at $400M valuation led by a16z for model eval platform",
+      "source": "Tech Funding News",
       "date": "2026-08-14",
-      "url": "https://x.com/OpenAI/status/2087996496088297746"
+      "url": "https://techfundingnews.com/a16z-leads-40m-vals-ai-round-at-400m-valuation-to-test-ai-on-real-world-tasks/"
     },
     {
-      "title": "SCoPE: sightline-coordinate positional encoding for video diffusion",
-      "source": "@_akhaliq",
-      "date": "2026-08-13",
-      "url": "https://x.com/_akhaliq/status/2087941343175750088"
-    },
-    {
-      "title": "Seedance 2.5 goes live on Together AI inference platform",
-      "source": "Together AI",
-      "date": "2026-08-13",
-      "url": "https://x.com/togethercompute/status/2088007207128387665"
-    },
-    {
-      "title": "Experts to discuss the state of humanoid robots at RoboBusiness 2026",
-      "source": "The Robot Report",
-      "date": "2026-08-13",
-      "url": "https://www.therobotreport.com/experts-discuss-state-humanoid-robots-robobusiness-2026/"
+      "title": "Human-AI interaction gets speculative decoding-style batching for design feedback loops",
+      "source": "swyx",
+      "date": "2026-08-14",
+      "url": "https://x.com/swyx/status/2088073777779515615"
     }
   ],
   "spiked": {
-    "low signal": 9,
-    "out of window": 18,
-    "duplicate url": 1,
+    "low signal": 5,
+    "out of window": 5,
+    "duplicate url": 2,
     "same story": 3,
-    "already ran": 1,
-    "thin section": 2,
-    "no link": 0
+    "already ran": 6
   }
 }
