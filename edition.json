@@ -4,141 +4,207 @@
   "date_human": "August 15, 2026",
   "notice": null,
   "lead": {
-    "kicker": "EU AI Act compliance",
-    "title": "Anthropic implements text watermarking for Claude to comply with EU AI Act",
-    "summary": "Anthropic rolled out text watermarking for Claude outputs, embedding statistical patterns via key-based randomness at generation time to detect AI involvement without affecting quality, hiding no characters, and providing no per-user traceability. Other major developers who signed the EU AI Act Code of Practice will implement similar measures.",
+    "kicker": "Claude watermark",
+    "title": "Anthropic rolls out text watermarking for Claude under the EU AI Act",
+    "summary": "Anthropic detailed its SynthID-based invisible watermark, now applied to all Claude text outputs for EU AI Act compliance, saying it has no measurable impact on cost, quality, or privacy and that a public watermark detection API is planned. Other Code of Practice signatories are implementing similar measures.",
     "source": "Anthropic",
-    "date": "2026-08-14",
+    "date": "2026-08-15",
     "url": "https://www.anthropic.com/news/claude-text-watermark",
     "image": "images/lead_2026-08-15.jpg"
   },
   "top_stories": [
     {
-      "title": "Unitree Robotics prices $900M IPO at $9B - first humanoid robot maker to list on Shanghai STAR market",
-      "summary": "Unitree priced its IPO at 150.8 yuan per share, with retail demand oversubscribed 5,000 times. DeepSeek participated as a strategic investor. The G1 humanoid sells for $16,000, though skeptics question commercial viability.",
-      "source": "CNBC",
-      "date": "2026-08-14",
-      "url": "https://www.cnbc.com/2026/08/14/china-humanoid-robots-unitree-ipo-tesla-optimus.html"
-    },
-    {
-      "title": "Nvidia mobilizes $500B in AI infrastructure funds with Apollo, BlackRock, and KKR",
-      "summary": "Nvidia signed MoUs with six major financial institutions to establish financing platforms that could mobilize over $500B in third-party capital for AI data center infrastructure, exclusively for Nvidia-based AI data centers.",
-      "source": "Tom's Hardware",
-      "date": "2026-08-14",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-teams-up-with-financial-giants-to-create-usd500-billion-ai-infrastructure-funds-six-investment-firms-to-enable-access-to-long-term-funding-at-attractive-rates"
-    },
-    {
-      "title": "Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out research paper replication",
-      "summary": "A 27B-parameter agent called Faraday outperformed frontier models on paper replication using an auto-generated rubric judge and coding agents as tools, showing long-horizon scientific capabilities can be trained into smaller weights.",
+      "title": "Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out paper replication",
+      "summary": "Researchers trained a 27B-parameter agent on a scalable RL environment built from paper replication; it outperforms far larger frontier models on held-out replication tasks, arguing long-horizon scientific capability lives in the weights.",
       "source": "omarsar0",
       "date": "2026-08-15",
       "url": "https://x.com/omarsar0/status/2088309745740591429"
     },
     {
-      "title": "xAI plans to scale data center capacity 7x to 10 GW by late 2027, targeting up to $500B revenue",
-      "summary": "Elon Musk told SpaceX employees xAI will increase power capacity 7-fold to 10 GW by late 2027, with projected revenue of $300B-$500B per year by end of 2027, far outpacing all existing AI clusters.",
-      "source": "Tom's Hardware",
+      "title": "Unitree IPO oversubscribed more than 5,000 times as investors pile into humanoid robotics",
+      "summary": "Retail and institutional investors scrambled for shares in one of China's best-known humanoid robot makers, underscoring runaway demand for humanoid hardware exposure.",
+      "source": "Robotics & Automation News",
       "date": "2026-08-14",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-xai-will-increase-data-center-capacity-7x-by-2027-targeting-10-gigawatts-of-compute-up-to-usd500-billion-in-revenue-by-the-end-of-next-year"
+      "url": "https://roboticsandautomationnews.com/2026/08/14/unitree-ipo-oversubscribed-more-than-5000-times-as-investors-pile-into-humanoid-robotics/104171/"
+    },
+    {
+      "title": "Nvidia scales back $250B OpenAI data center guarantee in Ohio",
+      "summary": "Per WSJ, Nvidia revised its planned financial backing for OpenAI's giant Ohio data center, cutting its guarantee from roughly $250 billion to under $120 billion to address investor concerns about risk.",
+      "source": "Yahoo Finance",
+      "date": "2026-08-15",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-scales-back-250-billion-234356524.html"
+    },
+    {
+      "title": "Anthropic publishes second Risk Report under Responsible Scaling Policy",
+      "summary": "Anthropic released its second Risk Report for August 2026, detailing system risks and preparedness under its Responsible Scaling Policy as a redacted PDF.",
+      "source": "AnthropicAI",
+      "date": "2026-08-14",
+      "url": "https://x.com/AnthropicAI/status/2088324824863236248"
     }
   ],
   "sections": [
     {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Meta's Wiggle framework stress-tests LLM judges — verdicts flip up to 91%",
+          "summary": "Meta pushed frontier LLM judges across 14 tasks: verdicts flip 25-71% under static pushback and 62-91% under an adversarial persuader, casting doubt on AI-as-judge pipelines without robustness checks.",
+          "source": "omarsar0",
+          "date": "2026-08-14",
+          "url": "https://x.com/omarsar0/status/2088292067994951928",
+          "image": "images/section_research_2026-08-15.jpg"
+        },
+        {
+          "title": "DFM Mimir v1: an open 1B-parameter HRM built only on permissible data",
+          "summary": "Trained from scratch on 161 datasets using only permissible post-training data, the 1B model outperforms HRM-Text 1B and competes with larger frontier models, setting a new state of the art for Danish.",
+          "source": "arXiv",
+          "date": "2026-08-13",
+          "url": "https://arxiv.org/abs/2608.13517"
+        },
+        {
+          "title": "Intern-S2-Preview: a scientific agentic foundation model",
+          "summary": "A series of scientific agentic foundation models supporting multimodal understanding, reasoning, generation and long-horizon tasks, trained over rendered documents, interleaved image-text data and diverse scientific corpora.",
+          "source": "arXiv",
+          "date": "2026-08-13",
+          "url": "https://arxiv.org/abs/2608.13505"
+        },
+        {
+          "title": "HumanTracker: a human-aligned motion tracking benchmark",
+          "summary": "A humanoid motion tracking benchmark whose evaluation aligns with human perception, targeting contact-rich long-horizon behaviors — foot skating, mistimed touch-downs — that kinematic per-frame errors miss, at larger scale than existing suites.",
+          "source": "arXiv",
+          "date": "2026-08-13",
+          "url": "https://arxiv.org/abs/2608.13555"
+        },
+        {
+          "title": "PlayWorld benchmarks world models with agent players over long horizons",
+          "summary": "A benchmark that evaluates interactive video world models through long-horizon agent-player objectives, checking whether simulated environments stay consistent (360-degree turns, water ripples) instead of relying on short human clips.",
+          "source": "arXiv",
+          "date": "2026-08-13",
+          "url": "https://arxiv.org/abs/2608.13552"
+        },
+        {
+          "title": "QuoteBench: how matched scores can hide command-path failures",
+          "summary": "A benchmark with 56 one-shot tasks from 14 incident-derived families that isolates command-generation errors from execution-transport failures in LLM coding agents, showing matched execution scores hide parser-induced failures.",
+          "source": "arXiv",
+          "date": "2026-08-13",
+          "url": "https://arxiv.org/abs/2608.13547"
+        }
+      ]
+    },
+    {
       "title": "Open Source & Models",
       "items": [
         {
-          "title": "Qwen3.8-2.4T-A95B MoE - Alibaba's 2.4 trillion parameter open-weight flagship released",
-          "summary": "Alibaba's Qwen team released Qwen3.8-2.4T-A95B, a massive open-weight Mixture-of-Experts model with 95B active parameters and a 1M token context window.",
+          "title": "Qwen open-releases Qwen3.8-2.4T-A95B, its first Qwen3.8-Max-class model",
+          "summary": "Qwen released Qwen3.8-2.4T-A95B, the first open-weights MoE at 2.4T total parameters (95B active) with a 1M-token context window and strong coding/agentic performance — now available on Together AI as the open base for Qwen3.8-Max.",
           "source": "@togethercompute",
-          "date": "2026-08-14",
-          "url": "https://x.com/togethercompute/status/2088075829586923583"
+          "date": "2026-08-15",
+          "url": "https://x.com/togethercompute/status/2088075829586923583",
+          "image": "images/section_open_source_2026-08-15.jpg"
         },
         {
-          "title": "Z.ai GLM-5.3 - Frontier coding model with emergent cyber capabilities at 743B parameters",
-          "summary": "Z.ai launched GLM-5.3, a 743B-parameter model post-trained for advanced software engineering and cybersecurity, achieving SOTA on Terminal Bench 3.0 and Agents' Last Exam.",
-          "source": "Z.ai",
-          "date": "2026-08-14",
-          "url": "https://z.ai/blog/glm-5.3"
-        },
-        {
-          "title": "Qwen3.8-27B gets Day-0 SGLang support delivering 200+ tokens/s on a single RTX 5090",
-          "summary": "LMSYS announced Day-0 SGLang support for Qwen3.8-27B, enabling near-instant TTFT and over 200 tokens/s decode on consumer GPUs.",
+          "title": "Qwen3.8-27B gets day-0 SGLang support with fast local inference",
+          "summary": "LMSYS added day-0 SGLang support for the compact Qwen3.8-27B dense vision-language model, claiming near-instant TTFT and >200 tokens/s decode on RTX 5090-class GPUs and easing local agent deployment.",
           "source": "@lmsysorg",
-          "date": "2026-08-14",
+          "date": "2026-08-15",
           "url": "https://x.com/lmsysorg/status/2088293978248794355"
         },
         {
-          "title": "Hugging Face publishes State of Open Models Summer 2026 - Qwen leads local inference, agents on the rise",
-          "summary": "HF report finds frontier models scaling but small models dominate real-world usage. Qwen leads local inference followed by Gemma. AI agents are emerging as a major model category on the Hub.",
+          "title": "Hugging Face publishes State of Open Models, Summer 2026",
+          "summary": "Frontier models keep growing while small models still dominate real-world usage and local inference; Qwen leads local inference ahead of Gemma, and AI agents are becoming a major presence on the Hub.",
           "source": "@huggingface",
-          "date": "2026-08-14",
+          "date": "2026-08-15",
           "url": "https://x.com/huggingface/status/2088301795890044975"
-        }
-      ],
-      "image": "images/section_open-source_2026-08-15.jpg"
-    },
-    {
-      "title": "YouTube & Video",
-      "items": [
-        {
-          "title": "Elon Musk teases Grok 4.7 ahead of release",
-          "summary": "Elon Musk has already started teasing Grok 4.7, the next iteration of xAI's LLM, hinting at what appears to be a significant capability jump following Grok 4.",
-          "source": "Theo - t3.gg",
-          "date": "2026-08-14",
-          "url": "https://www.youtube.com/watch?v=iWh6Khkv_Es",
-          "video_id": "iWh6Khkv_Es"
         },
         {
-          "title": "OpenAI revenue on track to double ahead of planned IPO",
-          "summary": "OpenAI is reportedly on track to double its revenue as it prepares for an initial public offering, marking a major milestone for the AI industry's highest-profile company.",
-          "source": "Bloomberg Technology",
-          "date": "2026-08-14",
-          "url": "https://www.youtube.com/watch?v=1oP51W5SzLQ",
-          "video_id": "1oP51W5SzLQ"
+          "title": "Nous Research ships /loop command and Cloud agent integration for Hermes",
+          "summary": "The new /loop 5m <prompt> command re-runs a prompt on a schedule with intelligent back-off, while Hermes Desktop can now link to a persistent Hermes Cloud agent that keeps running after the laptop closes.",
+          "source": "@NousResearch",
+          "date": "2026-08-15",
+          "url": "https://x.com/NousResearch/status/2088367838977237029"
         }
-      ],
-      "image": "images/section_youtube-video_2026-08-15.jpg"
+      ]
     },
     {
       "title": "Tools & Startups",
       "items": [
         {
-          "title": "Cloudflare Kitesurf - Agent-first web browser running in V8 isolates on Cloudflare Workers",
-          "summary": "Cloudflare launched Kitesurf, a stateless web browser built specifically for AI agents rather than humans, running on Workers in V8 isolates via a Rust/Wasm engine instead of Chromium, with 3-7x less memory and CPU per session. Free while in beta.",
-          "source": "The Daily Star",
-          "date": "2026-08-14",
-          "url": "https://www.thedailystar.net/news/tech-startup/news/cloudflare-unveils-kitesurf-browser-designed-ai-agents-4243601"
-        },
-        {
-          "title": "Viktor AI agent in production: runs marketing campaigns in Slack with 3,000 tools",
-          "summary": "A production AI agent called Viktor lives in Slack, connects to roughly 3,000 tools via scoped OAuth and SOC 2, maintains a persistent standing brief, and operates with human approval loops.",
-          "source": "omarsar0",
-          "date": "2026-08-14",
-          "url": "https://x.com/omarsar0/status/2088286997492146627"
-        },
-        {
-          "title": "Adobe Workfront AI Collaborators - AI agents as teammates in enterprise workflows",
-          "summary": "Adobe made AI Collaborators generally available in Workfront, allowing teams to assign tasks to AI agents just like human teammates, with human approval gates, audit trails, and governed access.",
-          "source": "Adobe",
-          "date": "2026-08-14",
-          "url": "https://business.adobe.com/blog/workfront-ai-collaborators-announcement"
-        },
-        {
-          "title": "Qwen3.8-27B open-weight model released on HuggingFace with 1M context window",
-          "summary": "Qwen released Qwen3.8-27B on HuggingFace, a 27B-parameter open-weight model. AMD announced Day 0 support for Ryzen AI Max and Radeon GPUs.",
-          "source": "HuggingFace",
-          "date": "2026-08-14",
-          "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
-        },
-        {
-          "title": "Nous Research launches Hermes Cloud persistent agents and /loop command",
-          "summary": "Nous Research announced Hermes Cloud agents that persist after closing the laptop and remain reachable remotely, plus a new /loop slash command for scheduled prompt re-runs. Cloud pricing starts at roughly $0.29 per day for small instances.",
-          "source": "NousResearch",
+          "title": "Suno Studio 2.0 turns generative music into a browser-based DAW",
+          "summary": "Suno's platform becomes a generative DAW that runs entirely in the browser, letting users compose and produce music without leaving the tab.",
+          "source": "Product Hunt",
           "date": "2026-08-15",
-          "url": "https://x.com/NousResearch/status/2088395070059770061"
+          "url": "https://www.producthunt.com/products/suno",
+          "image": "images/section_tools_2026-08-15.jpg"
+        },
+        {
+          "title": "Z.ai launches GLM-5.3, a 743B-parameter post-trained model topping cyber benchmarks",
+          "summary": "The post-trained model leads CyberGym and AutomationBench, with open weights staged rather than immediate.",
+          "source": "ExplainX",
+          "date": "2026-08-14",
+          "url": "https://explainx.ai/blog/glm-5-3-launch-cyber-defense-benchmarks-august-2026"
+        },
+        {
+          "title": "DeepSeek Harness: a composable open-source agent harness where every component is a plugin",
+          "summary": "The harness treats every component as a plugin for flexible, composable agent setups.",
+          "source": "Product Hunt",
+          "date": "2026-08-15",
+          "url": "https://www.producthunt.com/products/deepseek"
+        },
+        {
+          "title": "Freebuff offers free coding agents as an alternative to Claude, Cursor, Replit and Devin",
+          "summary": "Free coding agents positioned directly against the paid incumbents.",
+          "source": "Product Hunt",
+          "date": "2026-08-15",
+          "url": "https://www.producthunt.com/products/freebuff-2"
         }
-      ],
-      "image": "images/section_tools-startups_2026-08-15.jpg"
+      ]
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "Italian tech investments up 29% in a year as AI sector nears $8.2B in value",
+          "summary": "Italian startups attracted $652M in VC in H1 2026 as the tech sector reached €140B; Italian AI companies raised $204M, growing enterprise value to $8.2B — nearly triple 2022 levels — and supporting about 25,000 jobs, with rounds from Lexroom, MDOTM, Smartness and others.",
+          "source": "Corriere della Sera",
+          "date": "2026-08-15",
+          "url": "https://www.corriere.it/economia/innovazione/26_agosto_15/startup-investimenti-su-del-29-in-un-anno-il-tech-italiano-ora-vale-140-miliardi-0c2974ef-694b-4361-ace8-e7de966cfxlk.shtml",
+          "image": "images/section_italia_2026-08-15.jpg"
+        },
+        {
+          "title": "Lombardy leads Italian startup boom with €393M invested in six months",
+          "summary": "€393M went into regional startups during H1 2026 as Italian startup investments grew 82% year-over-year, with AI cited as the main driver.",
+          "source": "BitMat",
+          "date": "2026-08-14",
+          "url": "https://www.bitmat.it/vertical/startup/lombardia-protagonista-del-boom-startup-393-milioni-di-investimenti-in-sei-mesi/"
+        }
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "CodeRabbit raises $143M Series C for AI code review",
+          "summary": "AI code review used by 150K open-source projects and 17K customers; round led by Atomico and Smash Capital.",
+          "source": "Crunchbase News",
+          "date": "2026-08-14",
+          "url": "https://news.crunchbase.com/ai/biggest-funding-rounds-databricks-river-ai-data-energy/",
+          "image": "images/section_money_2026-08-15.jpg"
+        },
+        {
+          "title": "Aureka Biotechnologies raises $100M Series B for AI drug discovery",
+          "summary": "Granite Asia led the round for the AI-native drug discovery platform based in Shanghai and California; funds train the model via lab-in-the-loop feedback.",
+          "source": "Crunchbase News",
+          "date": "2026-08-14",
+          "url": "https://news.crunchbase.com/ai/biggest-funding-rounds-databricks-river-ai-data-energy/"
+        },
+        {
+          "title": "Vals AI raises $40M Series A at $400M valuation led by a16z",
+          "summary": "Andreessen Horowitz leads the round for the independent model evaluation platform; existing backers 8VC, Pear VC and Bloomberg Beta joined by HRT Ventures and Next Ladder Ventures.",
+          "source": "Tech Funding News",
+          "date": "2026-08-14",
+          "url": "https://techfundingnews.com/a16z-leads-40m-vals-ai-round-at-400m-valuation-to-test-ai-on-real-world-tasks/"
+        }
+      ]
     }
   ],
   "trending": {
@@ -148,81 +214,21 @@
       "link_label": "github.com/trending",
       "date": "2026-08-15",
       "items": [
-        {
-          "name": "cathrynlavery/diagram-design",
-          "url": "https://github.com/cathrynlavery/diagram-design",
-          "meta": "HTML - 17.4k stars - +3,646 today"
-        },
-        {
-          "name": "cactus-compute/needle",
-          "url": "https://github.com/cactus-compute/needle",
-          "meta": "Python - 5.7k stars - +662 today"
-        },
-        {
-          "name": "megadose/holehe",
-          "url": "https://github.com/megadose/holehe",
-          "meta": "Python - 12.9k stars - +427 today"
-        },
-        {
-          "name": "macro-inc/macro",
-          "url": "https://github.com/macro-inc/macro",
-          "meta": "Rust - 3.1k stars - +436 today"
-        },
-        {
-          "name": "smicallef/spiderfoot",
-          "url": "https://github.com/smicallef/spiderfoot",
-          "meta": "Python - 21.0k stars - +293 today"
-        },
-        {
-          "name": "citrolabs/ego-lite",
-          "url": "https://github.com/citrolabs/ego-lite",
-          "meta": "JavaScript - 10.4k stars - +165 today"
-        },
-        {
-          "name": "holaboss-ai/holaOS",
-          "url": "https://github.com/holaboss-ai/holaOS",
-          "meta": "TypeScript - 7.3k stars - +769 today"
-        },
-        {
-          "name": "github/spec-kit",
-          "url": "https://github.com/github/spec-kit",
-          "meta": "Python - 128.6k stars - +1,160 today"
-        },
-        {
-          "name": "lightningpixel/modly",
-          "url": "https://github.com/lightningpixel/modly",
-          "meta": "TypeScript - 6.0k stars - +579 today"
-        },
-        {
-          "name": "infiniflow/ragflow",
-          "url": "https://github.com/infiniflow/ragflow",
-          "meta": "Go - 88.4k stars - +473 today"
-        },
-        {
-          "name": "cursor/plugins",
-          "url": "https://github.com/cursor/plugins",
-          "meta": "TypeScript - 2.8k stars - +41 today"
-        },
-        {
-          "name": "deepseek-ai/awesome-deepseek-agent",
-          "url": "https://github.com/deepseek-ai/awesome-deepseek-agent",
-          "meta": "5.7k stars - +222 today"
-        },
-        {
-          "name": "semantica-agi/semantica",
-          "url": "https://github.com/semantica-agi/semantica",
-          "meta": "Python - 7.6k stars - +1,181 today"
-        },
-        {
-          "name": "rustdesk/rustdesk",
-          "url": "https://github.com/rustdesk/rustdesk",
-          "meta": "Rust - 120.7k stars - +143 today"
-        },
-        {
-          "name": "OpenCut-app/OpenCut",
-          "url": "https://github.com/OpenCut-app/OpenCut",
-          "meta": "TypeScript - 83.2k stars - +255 today"
-        }
+        {"name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "meta": "HTML · 17.5k ★ · +3,646 today"},
+        {"name": "cactus-compute/needle", "url": "https://github.com/cactus-compute/needle", "meta": "Python · 5.7k ★ · +662 today"},
+        {"name": "megadose/holehe", "url": "https://github.com/megadose/holehe", "meta": "Python · 12.9k ★ · +427 today"},
+        {"name": "macro-inc/macro", "url": "https://github.com/macro-inc/macro", "meta": "Rust · 3.1k ★ · +436 today"},
+        {"name": "smicallef/spiderfoot", "url": "https://github.com/smicallef/spiderfoot", "meta": "Python · 21.0k ★ · +293 today"},
+        {"name": "citrolabs/ego-lite", "url": "https://github.com/citrolabs/ego-lite", "meta": "JavaScript · 10.5k ★ · +165 today"},
+        {"name": "holaboss-ai/holaOS", "url": "https://github.com/holaboss-ai/holaOS", "meta": "TypeScript · 7.4k ★ · +769 today"},
+        {"name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "meta": "Python · 128.6k ★ · +1,160 today"},
+        {"name": "lightningpixel/modly", "url": "https://github.com/lightningpixel/modly", "meta": "TypeScript · 6.0k ★ · +579 today"},
+        {"name": "infiniflow/ragflow", "url": "https://github.com/infiniflow/ragflow", "meta": "Go · 88.4k ★ · +473 today"},
+        {"name": "cursor/plugins", "url": "https://github.com/cursor/plugins", "meta": "TypeScript · 2.8k ★ · +41 today"},
+        {"name": "deepseek-ai/awesome-deepseek-agent", "url": "https://github.com/deepseek-ai/awesome-deepseek-agent", "meta": "5.8k ★ · +222 today"},
+        {"name": "semantica-agi/semantica", "url": "https://github.com/semantica-agi/semantica", "meta": "Python · 7.6k ★ · +1,181 today"},
+        {"name": "rustdesk/rustdesk", "url": "https://github.com/rustdesk/rustdesk", "meta": "Rust · 120.7k ★ · +143 today"},
+        {"name": "OpenCut-app/OpenCut", "url": "https://github.com/OpenCut-app/OpenCut", "meta": "TypeScript · 83.3k ★ · +255 today"}
       ]
     },
     "huggingface": {
@@ -231,96 +237,38 @@
       "link_label": "huggingface.co/models",
       "date": "2026-08-15",
       "items": [
-        {
-          "name": "Qwen/Qwen3.8-27B",
-          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-          "meta": "27B dense language model, strong local inference"
-        },
-        {
-          "name": "meta-models/Muse-Glimmer-30B",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "meta": "30B language model from Meta"
-        },
-        {
-          "name": "Qwen/Qwen3.8-2.4T-A95B",
-          "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-          "meta": "2.4T MoE, 95B active, 1M context window"
-        },
-        {
-          "name": "MiniMaxAI/MiniMax-H3",
-          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-          "meta": "H3 architecture video generation model"
-        },
-        {
-          "name": "unsloth/Qwen3.8-27B-GGUF",
-          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-          "meta": "GGUF quantized Qwen3.8-27B for local inference"
-        },
-        {
-          "name": "Lightricks/LTX-2.5",
-          "url": "https://huggingface.co/Lightricks/LTX-2.5",
-          "meta": "Video generation model"
-        },
-        {
-          "name": "MiniMaxAI/MiniMax-Music3",
-          "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-          "meta": "Music generation model"
-        },
-        {
-          "name": "deepseek-ai/DeepSeek-V4-Flash-0731",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-          "meta": "DeepSeek V4 Flash language model"
-        },
-        {
-          "name": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
-          "meta": "DeepSeek V4 Pro language model"
-        },
-        {
-          "name": "unsloth/Muse-Glimmer-30B-GGUF",
-          "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF",
-          "meta": "GGUF quantized Muse-Glimmer-30B"
-        }
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B dense vision-language model, 262K native context up to 1M, agentic"},
+        {"name": "meta-models/Muse-Glimmer-30B", "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B", "meta": "Meta's 30B local agentic model, distilled from Muse Spark, Apache 2.0"},
+        {"name": "Qwen/Qwen3.8-2.4T-A95B", "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B", "meta": "First open Qwen-Max-class release, 2.4T total / 95B active MoE"},
+        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "Omni-modal 33B DiT, generates video + native stereo audio up to 2K, 15s"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "Community quants of Qwen3.8-27B for llama.cpp / Ollama / LM Studio"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Open world model, video + audio + world sim, 22B DiT, self-hostable"},
+        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "Full songs up to 5 min from lyrics + description, hybrid-LM, 32kHz stereo"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "Official Flash release with big agentic gains, DSpark speculative decoding, MIT"},
+        {"name": "deepseek-ai/DeepSeek-V4-Pro-0813", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813", "meta": "Official Pro release superseding preview, enhanced agentics, DSpark, MIT"},
+        {"name": "unsloth/Muse-Glimmer-30B-GGUF", "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF", "meta": "Community quants of Meta's Muse Glimmer-30B"}
       ]
     }
   },
   "quick_hits": [
-    {
-      "title": "Meta's Wiggle Framework reveals LLM judges flip verdicts 25-91% under adversarial pressure",
-      "source": "omarsar0",
-      "date": "2026-08-14",
-      "url": "https://x.com/omarsar0/status/2088292067994951928"
-    },
-    {
-      "title": "Anthropic publishes second Risk Report under Responsible Scaling Policy",
-      "source": "AnthropicAI",
-      "date": "2026-08-15",
-      "url": "https://x.com/AnthropicAI/status/2088324824863236248"
-    },
-    {
-      "title": "Microsoft prepares Maia 300 AI accelerator to deepen custom chip push",
-      "source": "Envoxe",
-      "date": "2026-08-14",
-      "url": "https://envoxe.wordpress.com/2026/08/14/microsoft-pushes-deeper-into-ai-chip-race/"
-    },
-    {
-      "title": "Vals AI raises $40M Series A at $400M valuation led by a16z for model eval platform",
-      "source": "Tech Funding News",
-      "date": "2026-08-14",
-      "url": "https://techfundingnews.com/a16z-leads-40m-vals-ai-round-at-400m-valuation-to-test-ai-on-real-world-tasks/"
-    },
-    {
-      "title": "Human-AI interaction gets speculative decoding-style batching for design feedback loops",
-      "source": "swyx",
-      "date": "2026-08-14",
-      "url": "https://x.com/swyx/status/2088073777779515615"
-    }
+    {"title": "QuoteBench: matched scores can hide command-path failures", "source": "arXiv", "url": "https://arxiv.org/abs/2608.13547", "date": "2026-08-13"},
+    {"title": "SAEVerbalizer explains sparse autoencoder features in plain language", "source": "arXiv", "url": "https://arxiv.org/abs/2608.13538", "date": "2026-08-13"},
+    {"title": "DARTree: speculative diffusion decoding with autoregressive draft trees", "source": "arXiv", "url": "https://arxiv.org/abs/2608.13524", "date": "2026-08-13"},
+    {"title": "Decoding task progress from VLA representations", "source": "arXiv", "url": "https://arxiv.org/abs/2608.13474", "date": "2026-08-13"},
+    {"title": "BrowserAct Cloud scrapes any site from a natural-language prompt", "source": "Product Hunt", "url": "https://www.producthunt.com/products/browseract", "date": "2026-08-15"},
+    {"title": "Port22 brings Claude Code, Codex and other coding agents to the phone", "source": "Product Hunt", "url": "https://www.producthunt.com/products/port22", "date": "2026-08-15"},
+    {"title": "Kane CLI writes natural-language browser and mobile app tests from the terminal", "source": "LambdaTest", "url": "https://www.producthunt.com/products/lambdatest", "date": "2026-08-14"},
+    {"title": "Scrimba Explain answers any question with an instant video", "source": "Scrimba", "url": "https://www.producthunt.com/products/scrimba", "date": "2026-08-14"},
+    {"title": "WMTrace visualizes how LLM text watermarking works in practice", "source": "GitHub", "url": "https://github.com/gtesei/llm-watermark", "date": "2026-08-15"},
+    {"title": "Viktor: production AI employee with ~3,000-tool OAuth scaling campaigns across 29 markets", "source": "omarsar0", "url": "https://x.com/omarsar0/status/2088286997492146627", "date": "2026-08-14"},
+    {"title": "Nvidia Jetson-class chip found in Russian cruise missile, Ukraine claims", "source": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-jetson-chip-found-in-russian-cruise-missile-ukraine-claims-presence-in-s-71-monochrome-weapon-may-indicate-use-of-ai-tech", "date": "2026-08-14"},
+    {"title": "Cargo thieves ram security escorts to hijack AI hardware shipments in California", "source": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/cargo-thieves-rammed-security-escorts-to-hijack-ai-hardware-shipments-in-california", "date": "2026-08-14"}
   ],
   "spiked": {
-    "low signal": 5,
-    "out of window": 5,
+    "already ran": 11,
     "duplicate url": 2,
     "same story": 3,
-    "already ran": 6
+    "out of window": 2,
+    "low signal": 4
   }
 }

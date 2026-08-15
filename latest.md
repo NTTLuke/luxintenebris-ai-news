@@ -3,54 +3,68 @@
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
 > Issue No. 51 · https://luxintenebris.news/
 
-## Lead EU AI Act compliance: Anthropic implements text watermarking for Claude to comply with EU AI Act
+## Lead Claude watermark: Anthropic rolls out text watermarking for Claude under the EU AI Act
 
-Anthropic rolled out text watermarking for Claude outputs, embedding statistical patterns via key-based randomness at generation time to detect AI involvement without affecting quality, hiding no characters, and providing no per-user traceability. Other major developers who signed the EU AI Act Code of Practice will implement similar measures.
+Anthropic detailed its SynthID-based invisible watermark, now applied to all Claude text outputs for EU AI Act compliance, saying it has no measurable impact on cost, quality, or privacy and that a public watermark detection API is planned. Other Code of Practice signatories are implementing similar measures.
 
 Source: [Anthropic](https://www.anthropic.com/news/claude-text-watermark)
 
 ## Top stories
 
-### Unitree Robotics prices $900M IPO at $9B - first humanoid robot maker to list on Shanghai STAR market
+### Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out paper replication
 
-Unitree priced its IPO at 150.8 yuan per share, with retail demand oversubscribed 5,000 times. DeepSeek participated as a strategic investor. The G1 humanoid sells for $16,000, though skeptics question commercial viability.
-
-Source: [CNBC](https://www.cnbc.com/2026/08/14/china-humanoid-robots-unitree-ipo-tesla-optimus.html)
-
-### Nvidia mobilizes $500B in AI infrastructure funds with Apollo, BlackRock, and KKR
-
-Nvidia signed MoUs with six major financial institutions to establish financing platforms that could mobilize over $500B in third-party capital for AI data center infrastructure, exclusively for Nvidia-based AI data centers.
-
-Source: [Tom's Hardware](https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-teams-up-with-financial-giants-to-create-usd500-billion-ai-infrastructure-funds-six-investment-firms-to-enable-access-to-long-term-funding-at-attractive-rates)
-
-### Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out research paper replication
-
-A 27B-parameter agent called Faraday outperformed frontier models on paper replication using an auto-generated rubric judge and coding agents as tools, showing long-horizon scientific capabilities can be trained into smaller weights.
+Researchers trained a 27B-parameter agent on a scalable RL environment built from paper replication; it outperforms far larger frontier models on held-out replication tasks, arguing long-horizon scientific capability lives in the weights.
 
 Source: [omarsar0](https://x.com/omarsar0/status/2088309745740591429)
 
-### xAI plans to scale data center capacity 7x to 10 GW by late 2027, targeting up to $500B revenue
+### Unitree IPO oversubscribed more than 5,000 times as investors pile into humanoid robotics
 
-Elon Musk told SpaceX employees xAI will increase power capacity 7-fold to 10 GW by late 2027, with projected revenue of $300B-$500B per year by end of 2027, far outpacing all existing AI clusters.
+Retail and institutional investors scrambled for shares in one of China's best-known humanoid robot makers, underscoring runaway demand for humanoid hardware exposure.
 
-Source: [Tom's Hardware](https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-xai-will-increase-data-center-capacity-7x-by-2027-targeting-10-gigawatts-of-compute-up-to-usd500-billion-in-revenue-by-the-end-of-next-year)
+Source: [Robotics & Automation News](https://roboticsandautomationnews.com/2026/08/14/unitree-ipo-oversubscribed-more-than-5000-times-as-investors-pile-into-humanoid-robotics/104171/)
+
+### Nvidia scales back $250B OpenAI data center guarantee in Ohio
+
+Per WSJ, Nvidia revised its planned financial backing for OpenAI's giant Ohio data center, cutting its guarantee from roughly $250 billion to under $120 billion to address investor concerns about risk.
+
+Source: [Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/nvidia-scales-back-250-billion-234356524.html)
+
+### Anthropic publishes second Risk Report under Responsible Scaling Policy
+
+Anthropic released its second Risk Report for August 2026, detailing system risks and preparedness under its Responsible Scaling Policy as a redacted PDF.
+
+Source: [AnthropicAI](https://x.com/AnthropicAI/status/2088324824863236248)
+
+## Research & Papers
+
+- **[Meta's Wiggle framework stress-tests LLM judges — verdicts flip up to 91%](https://x.com/omarsar0/status/2088292067994951928)** — Meta pushed frontier LLM judges across 14 tasks: verdicts flip 25-71% under static pushback and 62-91% under an adversarial persuader, casting doubt on AI-as-judge pipelines without robustness checks. *(omarsar0)*
+- **[DFM Mimir v1: an open 1B-parameter HRM built only on permissible data](https://arxiv.org/abs/2608.13517)** — Trained from scratch on 161 datasets using only permissible post-training data, the 1B model outperforms HRM-Text 1B and competes with larger frontier models, setting a new state of the art for Danish. *(arXiv)*
+- **[Intern-S2-Preview: a scientific agentic foundation model](https://arxiv.org/abs/2608.13505)** — A series of scientific agentic foundation models supporting multimodal understanding, reasoning, generation and long-horizon tasks, trained over rendered documents, interleaved image-text data and diverse scientific corpora. *(arXiv)*
+- **[HumanTracker: a human-aligned motion tracking benchmark](https://arxiv.org/abs/2608.13555)** — A humanoid motion tracking benchmark whose evaluation aligns with human perception, targeting contact-rich long-horizon behaviors — foot skating, mistimed touch-downs — that kinematic per-frame errors miss, at larger scale than existing suites. *(arXiv)*
+- **[PlayWorld benchmarks world models with agent players over long horizons](https://arxiv.org/abs/2608.13552)** — A benchmark that evaluates interactive video world models through long-horizon agent-player objectives, checking whether simulated environments stay consistent (360-degree turns, water ripples) instead of relying on short human clips. *(arXiv)*
+- **[QuoteBench: how matched scores can hide command-path failures](https://arxiv.org/abs/2608.13547)** — A benchmark with 56 one-shot tasks from 14 incident-derived families that isolates command-generation errors from execution-transport failures in LLM coding agents, showing matched execution scores hide parser-induced failures. *(arXiv)*
 
 ## Open Source & Models
 
-- **[Qwen3.8-2.4T-A95B MoE - Alibaba's 2.4 trillion parameter open-weight flagship released](https://x.com/togethercompute/status/2088075829586923583)** — Alibaba's Qwen team released Qwen3.8-2.4T-A95B, a massive open-weight Mixture-of-Experts model with 95B active parameters and a 1M token context window. *(@togethercompute)*
-- **[Z.ai GLM-5.3 - Frontier coding model with emergent cyber capabilities at 743B parameters](https://z.ai/blog/glm-5.3)** — Z.ai launched GLM-5.3, a 743B-parameter model post-trained for advanced software engineering and cybersecurity, achieving SOTA on Terminal Bench 3.0 and Agents' Last Exam. *(Z.ai)*
-- **[Qwen3.8-27B gets Day-0 SGLang support delivering 200+ tokens/s on a single RTX 5090](https://x.com/lmsysorg/status/2088293978248794355)** — LMSYS announced Day-0 SGLang support for Qwen3.8-27B, enabling near-instant TTFT and over 200 tokens/s decode on consumer GPUs. *(@lmsysorg)*
-- **[Hugging Face publishes State of Open Models Summer 2026 - Qwen leads local inference, agents on the rise](https://x.com/huggingface/status/2088301795890044975)** — HF report finds frontier models scaling but small models dominate real-world usage. Qwen leads local inference followed by Gemma. AI agents are emerging as a major model category on the Hub. *(@huggingface)*
-
-## YouTube & Video
-
-- **[Elon Musk teases Grok 4.7 ahead of release](https://www.youtube.com/watch?v=iWh6Khkv_Es)** — Elon Musk has already started teasing Grok 4.7, the next iteration of xAI's LLM, hinting at what appears to be a significant capability jump following Grok 4. *(Theo - t3.gg)*
-- **[OpenAI revenue on track to double ahead of planned IPO](https://www.youtube.com/watch?v=1oP51W5SzLQ)** — OpenAI is reportedly on track to double its revenue as it prepares for an initial public offering, marking a major milestone for the AI industry's highest-profile company. *(Bloomberg Technology)*
+- **[Qwen open-releases Qwen3.8-2.4T-A95B, its first Qwen3.8-Max-class model](https://x.com/togethercompute/status/2088075829586923583)** — Qwen released Qwen3.8-2.4T-A95B, the first open-weights MoE at 2.4T total parameters (95B active) with a 1M-token context window and strong coding/agentic performance — now available on Together AI as the open base for Qwen3.8-Max. *(@togethercompute)*
+- **[Qwen3.8-27B gets day-0 SGLang support with fast local inference](https://x.com/lmsysorg/status/2088293978248794355)** — LMSYS added day-0 SGLang support for the compact Qwen3.8-27B dense vision-language model, claiming near-instant TTFT and >200 tokens/s decode on RTX 5090-class GPUs and easing local agent deployment. *(@lmsysorg)*
+- **[Hugging Face publishes State of Open Models, Summer 2026](https://x.com/huggingface/status/2088301795890044975)** — Frontier models keep growing while small models still dominate real-world usage and local inference; Qwen leads local inference ahead of Gemma, and AI agents are becoming a major presence on the Hub. *(@huggingface)*
+- **[Nous Research ships /loop command and Cloud agent integration for Hermes](https://x.com/NousResearch/status/2088367838977237029)** — The new /loop 5m <prompt> command re-runs a prompt on a schedule with intelligent back-off, while Hermes Desktop can now link to a persistent Hermes Cloud agent that keeps running after the laptop closes. *(@NousResearch)*
 
 ## Tools & Startups
 
-- **[Cloudflare Kitesurf - Agent-first web browser running in V8 isolates on Cloudflare Workers](https://www.thedailystar.net/news/tech-startup/news/cloudflare-unveils-kitesurf-browser-designed-ai-agents-4243601)** — Cloudflare launched Kitesurf, a stateless web browser built specifically for AI agents rather than humans, running on Workers in V8 isolates via a Rust/Wasm engine instead of Chromium, with 3-7x less memory and CPU per session. Free while in beta. *(The Daily Star)*
-- **[Viktor AI agent in production: runs marketing campaigns in Slack with 3,000 tools](https://x.com/omarsar0/status/2088286997492146627)** — A production AI agent called Viktor lives in Slack, connects to roughly 3,000 tools via scoped OAuth and SOC 2, maintains a persistent standing brief, and operates with human approval loops. *(omarsar0)*
-- **[Adobe Workfront AI Collaborators - AI agents as teammates in enterprise workflows](https://business.adobe.com/blog/workfront-ai-collaborators-announcement)** — Adobe made AI Collaborators generally available in Workfront, allowing teams to assign tasks to AI agents just like human teammates, with human approval gates, audit trails, and governed access. *(Adobe)*
-- **[Qwen3.8-27B open-weight model released on HuggingFace with 1M context window](https://huggingface.co/Qwen/Qwen3.8-27B)** — Qwen released Qwen3.8-27B on HuggingFace, a 27B-parameter open-weight model. AMD announced Day 0 support for Ryzen AI Max and Radeon GPUs. *(HuggingFace)*
-- **[Nous Research launches Hermes Cloud persistent agents and /loop command](https://x.com/NousResearch/status/2088395070059770061)** — Nous Research announced Hermes Cloud agents that persist after closing the laptop and remain reachable remotely, plus a new /loop slash command for scheduled prompt re-runs. Cloud pricing starts at roughly $0.29 per day for small instances. *(NousResearch)*
+- **[Suno Studio 2.0 turns generative music into a browser-based DAW](https://www.producthunt.com/products/suno)** — Suno's platform becomes a generative DAW that runs entirely in the browser, letting users compose and produce music without leaving the tab. *(Product Hunt)*
+- **[Z.ai launches GLM-5.3, a 743B-parameter post-trained model topping cyber benchmarks](https://explainx.ai/blog/glm-5-3-launch-cyber-defense-benchmarks-august-2026)** — The post-trained model leads CyberGym and AutomationBench, with open weights staged rather than immediate. *(ExplainX)*
+- **[DeepSeek Harness: a composable open-source agent harness where every component is a plugin](https://www.producthunt.com/products/deepseek)** — The harness treats every component as a plugin for flexible, composable agent setups. *(Product Hunt)*
+- **[Freebuff offers free coding agents as an alternative to Claude, Cursor, Replit and Devin](https://www.producthunt.com/products/freebuff-2)** — Free coding agents positioned directly against the paid incumbents. *(Product Hunt)*
+
+## Italia AI Spotlight
+
+- **[Italian tech investments up 29% in a year as AI sector nears $8.2B in value](https://www.corriere.it/economia/innovazione/26_agosto_15/startup-investimenti-su-del-29-in-un-anno-il-tech-italiano-ora-vale-140-miliardi-0c2974ef-694b-4361-ace8-e7de966cfxlk.shtml)** — Italian startups attracted $652M in VC in H1 2026 as the tech sector reached €140B; Italian AI companies raised $204M, growing enterprise value to $8.2B — nearly triple 2022 levels — and supporting about 25,000 jobs, with rounds from Lexroom, MDOTM, Smartness and others. *(Corriere della Sera)*
+- **[Lombardy leads Italian startup boom with €393M invested in six months](https://www.bitmat.it/vertical/startup/lombardia-protagonista-del-boom-startup-393-milioni-di-investimenti-in-sei-mesi/)** — €393M went into regional startups during H1 2026 as Italian startup investments grew 82% year-over-year, with AI cited as the main driver. *(BitMat)*
+
+## Money & Markets
+
+- **[CodeRabbit raises $143M Series C for AI code review](https://news.crunchbase.com/ai/biggest-funding-rounds-databricks-river-ai-data-energy/)** — AI code review used by 150K open-source projects and 17K customers; round led by Atomico and Smash Capital. *(Crunchbase News)*
+- **[Aureka Biotechnologies raises $100M Series B for AI drug discovery](https://news.crunchbase.com/ai/biggest-funding-rounds-databricks-river-ai-data-energy/)** — Granite Asia led the round for the AI-native drug discovery platform based in Shanghai and California; funds train the model via lab-in-the-loop feedback. *(Crunchbase News)*
+- **[Vals AI raises $40M Series A at $400M valuation led by a16z](https://techfundingnews.com/a16z-leads-40m-vals-ai-round-at-400m-valuation-to-test-ai-on-real-world-tasks/)** — Andreessen Horowitz leads the round for the independent model evaluation platform; existing backers 8VC, Pear VC and Bloomberg Beta joined by HRT Ventures and Next Ladder Ventures. *(Tech Funding News)*
