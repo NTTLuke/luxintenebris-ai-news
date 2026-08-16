@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · August 15, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 51 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>August 15, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>61 stories <span class="mk-note">(<span class="mk-beta">Beta</span> : <a href="making-of.html" class="mk-link" title="Replay how this issue assembled itself">See how this issue made itself</a>)</span></span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DwarfStar · DeepSeek V4 Flash 0731 (M3 Ultra)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="The Humanoid Influencer Boom: A 4-Foot Robot From China Takes the Streets" data-b="According to WIRED, the four-foot-tall humanoid now wandering Poland&#x27;s city streets is called Edward Warchocki — a name its creators, software developer Bartosz Idzik and his friend Radosław Grzelaczyk, crafted from the Polish word for growling and a dog named Eddie. The pair bought the machine from China six months ago in humanoid form; initially speechless, it frightened people. After Idzik linked it to a large language model, it began holding live conversations in Polish, and the reaction flipped.
+
+WIRED reports Edward has since visited the Polish parliament, hiked mountains, been jokingly arrested by police, and chased wild boars through Warsaw in a viral April video — accumulating over 1 million followers and 4 billion views across social media.
+
+The magazine flags a twist: these viral robots are all the same model, the Unitree G1, made by a Chinese company with commercial momentum. WIRED notes the firm is set to go public in China in about two weeks, with more than half of 2025 revenue coming from actual humanoid deliveries — 5,511 units at an average price under $25,000, with 43 percent of sales outside China and its first profitable year.
+
+Yet according to WIRED, doubts persist about whether the clout-chasing machines can hold down traditional jobs like assembly-line work or house cleaning.
+
+*The robots have mastered going viral—going to work is another question entirely.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/"><span class="tih">The Humanoid Influencer Boom: A 4-Foot Robot From China Takes the Streets</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="California opens its highways to self-driving truck testing" data-b="According to TechCrunch, self-driving trucks are now officially testing on California highways. Two developers of autonomous trucks, Aurora Innovation and Kodiak AI, received permits from the California Department of Motor Vehicles to run their technology on public roads, and Kodiak said it has already begun, starting with a small fleet of test trucks near its Mountain View office.
+
+Both companies applied this spring under updated state rules approved in late April. Those regulations lifted a ban that had prevented driverless vehicles weighing more than 10,000 pounds from testing on public roads, and established a regulatory path toward eventual deployment. The permits carry conditions: a human safety operator must stay behind the wheel, and companies cannot operate on roads with posted speed limits of 25 mph or less unless traveling a direct route between destinations.
+
+The expansion is not going uncontested. Teamsters California sued the state DMV last week, alleging the agency sidestepped laws requiring it to study and publicly disclose the economic consequences of allowing self-driving trucks, and failed to weigh the safety risks for motorists. The case was filed in Alameda County Superior Court.
+
+The two firms are headquartered in California but previously focused their efforts in Texas because of the home-state ban. Aurora launched a self-driving truck service there in May 2025, starting with a Dallas-to-Houston route and later adding more. Kodiak began driverless commercial operations in early 2025 in West Texas&#x27; remote Permian Basin before expanding onto highways, including Dallas-Houston.
+
+*The regulatory door is open, but the Teamsters&#x27; challenge could make the road to full deployment a long one.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/"><span class="tih">California opens its highways to self-driving truck testing</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Joshua Kushner urges Silicon Valley VCs to temper AI enthusiasm" data-b="In his investment firm&#x27;s first-ever investor letter, Thrive Capital founder Joshua Kushner warns his West Coast rivals against letting AI hype erode discipline, according to a report from TechCrunch based on the letter leaked to Bloomberg.
+
+Kushner argues the opportunity in AI is immense but says excitement must not weaken investment discipline, and criticizes Silicon Valley&#x27;s tendency to fixate on incremental technological turns. He contrasts Thrive&#x27;s approach with the &quot;outlier&quot; philosophy associated with Marc Andreessen, in which firms place many bets hoping a few big wins cover the rest.
+
+Thrive instead concentrates its bets: according to Bloomberg estimates, about 90% of its capital goes into the top 15 investments of each fund. Kushner frames the firm as independent thinkers, noting markets swing between fear and enthusiasm and neither substitutes for judgment.
+
+The letter details Thrive&#x27;s deepening ties with OpenAI, including OpenAI taking an ownership stake in Thrive Holdings in December 2025. Thrive Holdings has acquired more than 70 businesses and employs 35 engineers, with agent-driven accounting and IT-service teams reporting significant productivity gains.
+
+Thrive&#x27;s 2022 early-stage fund of $516 million, which backed OpenAI, Anduril, and SpaceX, is now valued above $3.7 billion. Overall, the firm manages $60 billion in assets, reports a 41% gross IRR and 33% net IRR, and returned over $1 billion to investors in the past year.
+
+*Kushner&#x27;s critique is easier to make when your fund is already up billions — concentration works wonderfully when you picked the winners.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-vcs-over-ai-euphoria/"><span class="tih">Joshua Kushner urges Silicon Valley VCs to temper AI enthusiasm</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="New Galaxy headphones could be Samsung&#x27;s first premium over-ear set in a decade" data-b="Strings of code found inside Samsung&#x27;s Galaxy Wearable app point to an upcoming pair of over-ear wireless headphones the company is reportedly calling the &quot;Galaxy H1,&quot; according to a report from SamMobile cited by The Verge. The outlet says the launch could land in 2027, which would make them the first over-ear headphones Samsung has produced since the Level On in 2015 — a device that predates its acquisition of Harman and other audio brands.
+
+The Verge notes that connection-status icons in the app depict generic over-ear, wireless Bluetooth headphones, so the final design remains unclear. Samsung&#x27;s current audio lineup centers on the Galaxy Buds series, and it lacks a premium headphone to rival Apple&#x27;s AirPods Max or the Sony XM line for now.
+
+Apple refreshed its AirPods Max earlier this year with a new model that kept the same look but added a chip enabling features such as adaptive audio and live translation, according to the original story. When the Galaxy H1 arrives, SamMobile expects it to support the Samsung Seamless Codec Ultra High Quality (SSC UHQ) codec, which works exclusively with 2023-and-newer Galaxy devices, along with AI assistant integration for Gemini and Bixby similar to what the Galaxy Buds 4 Pro offers.
+
+*Samsung is finally closing its premium headphone gap, but a 2027 target gives Apple and Sony plenty of time to move first.*
+
+— *Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/980547/samsung-galaxy-h1-over-ear-headphones"><span class="tih">New Galaxy headphones could be Samsung&#x27;s first premium over-ear set in a decade</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Largest all-electric aircraft completes first test flight on $5 of electricity" data-b="Heart Aerospace&#x27;s X1 demonstrator aircraft carried out its maiden flight on August 12 at Plattsburgh International Airport in upstate New York, according to Ars Technica. The roughly half-hour flight consumed only about $5 of electricity — a striking contrast at a time when jet fuel prices have climbed sharply amid geopolitical conflicts, the outlet reports.
+
+The X1 is comparable in size to a small regional airliner, with a maximum takeoff weight exceeding 25,000 pounds, and relies on four wing-mounted electric motors that delivered more than one megawatt of power during the flight.
+
+Ars Technica notes the flight validates the quieter, cleaner potential of all-electric propulsion, though battery-electric systems remain limited to ranges of roughly 100–200 miles, keeping them in air-taxi territory for now.
+
+Instead, Heart Aerospace is using the X1 and a planned X2 to inform development of its ES-30, a 30-seat hybrid-electric regional airliner that couples inboard electric motors with turboprop engines, offering 125 miles of all-electric flying and up to 500 miles in hybrid mode. United Airlines has committed to purchasing 100 aircraft, with several other carriers also invested in the program, including Air Canada and Mesa Air Group, per the report.
+
+Heart Aerospace claims the ES-30 could cut regional operating costs by over 40 percent, and the company targets certification and commercial service around 2031.
+
+*If a $5 flight can force airlines to reconsider their fuel assumptions, that is a bargain worth studying.*
+
+— *Written by AI (deepseek-v4-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/gadgets/2026/08/first-test-flight-of-largest-all-electric-aircraft-used-just-5-of-electricity/"><span class="tih">Largest all-electric aircraft completes first test flight on $5 of electricity</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="The Humanoid Influencer Boom: A 4-Foot Robot From China Takes the Streets" data-b="According to WIRED, the four-foot-tall humanoid now wandering Poland&#x27;s city streets is called Edward Warchocki — a name its creators, software developer Bartosz Idzik and his friend Radosław Grzelaczyk, crafted from the Polish word for growling and a dog named Eddie. The pair bought the machine from China six months ago in humanoid form; initially speechless, it frightened people. After Idzik linked it to a large language model, it began holding live conversations in Polish, and the reaction flipped.
+
+WIRED reports Edward has since visited the Polish parliament, hiked mountains, been jokingly arrested by police, and chased wild boars through Warsaw in a viral April video — accumulating over 1 million followers and 4 billion views across social media.
+
+The magazine flags a twist: these viral robots are all the same model, the Unitree G1, made by a Chinese company with commercial momentum. WIRED notes the firm is set to go public in China in about two weeks, with more than half of 2025 revenue coming from actual humanoid deliveries — 5,511 units at an average price under $25,000, with 43 percent of sales outside China and its first profitable year.
+
+Yet according to WIRED, doubts persist about whether the clout-chasing machines can hold down traditional jobs like assembly-line work or house cleaning.
+
+*The robots have mastered going viral—going to work is another question entirely.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/"><span class="tih">The Humanoid Influencer Boom: A 4-Foot Robot From China Takes the Streets</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="California opens its highways to self-driving truck testing" data-b="According to TechCrunch, self-driving trucks are now officially testing on California highways. Two developers of autonomous trucks, Aurora Innovation and Kodiak AI, received permits from the California Department of Motor Vehicles to run their technology on public roads, and Kodiak said it has already begun, starting with a small fleet of test trucks near its Mountain View office.
+
+Both companies applied this spring under updated state rules approved in late April. Those regulations lifted a ban that had prevented driverless vehicles weighing more than 10,000 pounds from testing on public roads, and established a regulatory path toward eventual deployment. The permits carry conditions: a human safety operator must stay behind the wheel, and companies cannot operate on roads with posted speed limits of 25 mph or less unless traveling a direct route between destinations.
+
+The expansion is not going uncontested. Teamsters California sued the state DMV last week, alleging the agency sidestepped laws requiring it to study and publicly disclose the economic consequences of allowing self-driving trucks, and failed to weigh the safety risks for motorists. The case was filed in Alameda County Superior Court.
+
+The two firms are headquartered in California but previously focused their efforts in Texas because of the home-state ban. Aurora launched a self-driving truck service there in May 2025, starting with a Dallas-to-Houston route and later adding more. Kodiak began driverless commercial operations in early 2025 in West Texas&#x27; remote Permian Basin before expanding onto highways, including Dallas-Houston.
+
+*The regulatory door is open, but the Teamsters&#x27; challenge could make the road to full deployment a long one.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/"><span class="tih">California opens its highways to self-driving truck testing</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Joshua Kushner urges Silicon Valley VCs to temper AI enthusiasm" data-b="In his investment firm&#x27;s first-ever investor letter, Thrive Capital founder Joshua Kushner warns his West Coast rivals against letting AI hype erode discipline, according to a report from TechCrunch based on the letter leaked to Bloomberg.
+
+Kushner argues the opportunity in AI is immense but says excitement must not weaken investment discipline, and criticizes Silicon Valley&#x27;s tendency to fixate on incremental technological turns. He contrasts Thrive&#x27;s approach with the &quot;outlier&quot; philosophy associated with Marc Andreessen, in which firms place many bets hoping a few big wins cover the rest.
+
+Thrive instead concentrates its bets: according to Bloomberg estimates, about 90% of its capital goes into the top 15 investments of each fund. Kushner frames the firm as independent thinkers, noting markets swing between fear and enthusiasm and neither substitutes for judgment.
+
+The letter details Thrive&#x27;s deepening ties with OpenAI, including OpenAI taking an ownership stake in Thrive Holdings in December 2025. Thrive Holdings has acquired more than 70 businesses and employs 35 engineers, with agent-driven accounting and IT-service teams reporting significant productivity gains.
+
+Thrive&#x27;s 2022 early-stage fund of $516 million, which backed OpenAI, Anduril, and SpaceX, is now valued above $3.7 billion. Overall, the firm manages $60 billion in assets, reports a 41% gross IRR and 33% net IRR, and returned over $1 billion to investors in the past year.
+
+*Kushner&#x27;s critique is easier to make when your fund is already up billions — concentration works wonderfully when you picked the winners.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-vcs-over-ai-euphoria/"><span class="tih">Joshua Kushner urges Silicon Valley VCs to temper AI enthusiasm</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="New Galaxy headphones could be Samsung&#x27;s first premium over-ear set in a decade" data-b="Strings of code found inside Samsung&#x27;s Galaxy Wearable app point to an upcoming pair of over-ear wireless headphones the company is reportedly calling the &quot;Galaxy H1,&quot; according to a report from SamMobile cited by The Verge. The outlet says the launch could land in 2027, which would make them the first over-ear headphones Samsung has produced since the Level On in 2015 — a device that predates its acquisition of Harman and other audio brands.
+
+The Verge notes that connection-status icons in the app depict generic over-ear, wireless Bluetooth headphones, so the final design remains unclear. Samsung&#x27;s current audio lineup centers on the Galaxy Buds series, and it lacks a premium headphone to rival Apple&#x27;s AirPods Max or the Sony XM line for now.
+
+Apple refreshed its AirPods Max earlier this year with a new model that kept the same look but added a chip enabling features such as adaptive audio and live translation, according to the original story. When the Galaxy H1 arrives, SamMobile expects it to support the Samsung Seamless Codec Ultra High Quality (SSC UHQ) codec, which works exclusively with 2023-and-newer Galaxy devices, along with AI assistant integration for Gemini and Bixby similar to what the Galaxy Buds 4 Pro offers.
+
+*Samsung is finally closing its premium headphone gap, but a 2027 target gives Apple and Sony plenty of time to move first.*
+
+— *Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/980547/samsung-galaxy-h1-over-ear-headphones"><span class="tih">New Galaxy headphones could be Samsung&#x27;s first premium over-ear set in a decade</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Largest all-electric aircraft completes first test flight on $5 of electricity" data-b="Heart Aerospace&#x27;s X1 demonstrator aircraft carried out its maiden flight on August 12 at Plattsburgh International Airport in upstate New York, according to Ars Technica. The roughly half-hour flight consumed only about $5 of electricity — a striking contrast at a time when jet fuel prices have climbed sharply amid geopolitical conflicts, the outlet reports.
+
+The X1 is comparable in size to a small regional airliner, with a maximum takeoff weight exceeding 25,000 pounds, and relies on four wing-mounted electric motors that delivered more than one megawatt of power during the flight.
+
+Ars Technica notes the flight validates the quieter, cleaner potential of all-electric propulsion, though battery-electric systems remain limited to ranges of roughly 100–200 miles, keeping them in air-taxi territory for now.
+
+Instead, Heart Aerospace is using the X1 and a planned X2 to inform development of its ES-30, a 30-seat hybrid-electric regional airliner that couples inboard electric motors with turboprop engines, offering 125 miles of all-electric flying and up to 500 miles in hybrid mode. United Airlines has committed to purchasing 100 aircraft, with several other carriers also invested in the program, including Air Canada and Mesa Air Group, per the report.
+
+Heart Aerospace claims the ES-30 could cut regional operating costs by over 40 percent, and the company targets certification and commercial service around 2031.
+
+*If a $5 flight can force airlines to reconsider their fuel assumptions, that is a bargain worth studying.*
+
+— *Written by AI (deepseek-v4-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/gadgets/2026/08/first-test-flight-of-largest-all-electric-aircraft-used-just-5-of-electricity/"><span class="tih">Largest all-electric aircraft completes first test flight on $5 of electricity</span> <span class="tis">— arstechnica.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://www.anthropic.com/news/claude-text-watermark" target="_blank" rel="noopener">
+    <img src="images/lead_2026-08-15.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Claude watermark</p>
+        <h1>Anthropic rolls out text watermarking for Claude under the EU AI Act</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Anthropic detailed its SynthID-based invisible watermark, now applied to all Claude text outputs for EU AI Act compliance, saying it has no measurable impact on cost, quality, or privacy and that a public watermark detection API is planned. Other Code of Practice signatories are implementing similar measures.</p>
+        <p class="byline"><span class="src">Anthropic</span> · <span>2026-08-15</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:06</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-08-15.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/omarsar0/status/2088309745740591429" target="_blank" rel="noopener">
+    <h3>Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out paper replication</h3>
+    <p>Researchers trained a 27B-parameter agent on a scalable RL environment built from paper replication; it outperforms far larger frontier models on held-out replication tasks, arguing long-horizon scientific capability lives in the weights.</p>
+    <p class="byline"><span class="src">omarsar0</span> · 2026-08-15</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://roboticsandautomationnews.com/2026/08/14/unitree-ipo-oversubscribed-more-than-5000-times-as-investors-pile-into-humanoid-robotics/104171/" target="_blank" rel="noopener">
+    <h3>Unitree IPO oversubscribed more than 5,000 times as investors pile into humanoid robotics</h3>
+    <p>Retail and institutional investors scrambled for shares in one of China's best-known humanoid robot makers, underscoring runaway demand for humanoid hardware exposure.</p>
+    <p class="byline"><span class="src">Robotics &amp; Automation News</span> · 2026-08-14</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://finance.yahoo.com/technology/ai/articles/nvidia-scales-back-250-billion-234356524.html" target="_blank" rel="noopener">
+    <h3>Nvidia scales back $250B OpenAI data center guarantee in Ohio</h3>
+    <p>Per WSJ, Nvidia revised its planned financial backing for OpenAI's giant Ohio data center, cutting its guarantee from roughly $250 billion to under $120 billion to address investor concerns about risk.</p>
+    <p class="byline"><span class="src">Yahoo Finance</span> · 2026-08-15</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">06</span>
+  </div>
+  <a href="https://x.com/omarsar0/status/2088292067994951928" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research_2026-08-15.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Meta's Wiggle framework stress-tests LLM judges — verdicts flip up to 91%</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2088292067994951928" target="_blank" rel="noopener">
+    <h4>Meta's Wiggle framework stress-tests LLM judges — verdicts flip up to 91%</h4>
+    <p>Meta pushed frontier LLM judges across 14 tasks: verdicts flip 25-71% under static pushback and 62-91% under an adversarial persuader, casting doubt on AI-as-judge pipelines without robustness checks.</p>
+    <p class="byline"><span class="src">omarsar0</span> · 2026-08-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.13517" target="_blank" rel="noopener">
+    <h4>DFM Mimir v1: an open 1B-parameter HRM built only on permissible data</h4>
+    <p>Trained from scratch on 161 datasets using only permissible post-training data, the 1B model outperforms HRM-Text 1B and competes with larger frontier models, setting a new state of the art for Danish.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-13</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.13505" target="_blank" rel="noopener">
+    <h4>Intern-S2-Preview: a scientific agentic foundation model</h4>
+    <p>A series of scientific agentic foundation models supporting multimodal understanding, reasoning, generation and long-horizon tasks, trained over rendered documents, interleaved image-text data and diverse scientific corpora.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-13</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.13555" target="_blank" rel="noopener">
+    <h4>HumanTracker: a human-aligned motion tracking benchmark</h4>
+    <p>A humanoid motion tracking benchmark whose evaluation aligns with human perception, targeting contact-rich long-horizon behaviors — foot skating, mistimed touch-downs — that kinematic per-frame errors miss, at larger scale than existing suites.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-13</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.13552" target="_blank" rel="noopener">
+    <h4>PlayWorld benchmarks world models with agent players over long horizons</h4>
+    <p>A benchmark that evaluates interactive video world models through long-horizon agent-player objectives, checking whether simulated environments stay consistent (360-degree turns, water ripples) instead of relying on short human clips.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-13</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.13547" target="_blank" rel="noopener">
+    <h4>QuoteBench: how matched scores can hide command-path failures</h4>
+    <p>A benchmark with 56 one-shot tasks from 14 incident-derived families that isolates command-generation errors from execution-transport failures in LLM coding agents, showing matched execution scores hide parser-induced failures.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-13</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <a href="https://x.com/togethercompute/status/2088075829586923583" target="_blank" rel="noopener" class="section-hero"><img src="images/section_open_source_2026-08-15.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Qwen open-releases Qwen3.8-2.4T-A95B, its first Qwen3.8-Max-class model</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/togethercompute/status/2088075829586923583" target="_blank" rel="noopener">
+    <h4>Qwen open-releases Qwen3.8-2.4T-A95B, its first Qwen3.8-Max-class model</h4>
+    <p>Qwen released Qwen3.8-2.4T-A95B, the first open-weights MoE at 2.4T total parameters (95B active) with a 1M-token context window and strong coding/agentic performance — now available on Together AI as the open base for Qwen3.8-Max.</p>
+    <p class="byline"><span class="src">@togethercompute</span> · 2026-08-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/lmsysorg/status/2088293978248794355" target="_blank" rel="noopener">
+    <h4>Qwen3.8-27B gets day-0 SGLang support with fast local inference</h4>
+    <p>LMSYS added day-0 SGLang support for the compact Qwen3.8-27B dense vision-language model, claiming near-instant TTFT and &gt;200 tokens/s decode on RTX 5090-class GPUs and easing local agent deployment.</p>
+    <p class="byline"><span class="src">@lmsysorg</span> · 2026-08-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/huggingface/status/2088301795890044975" target="_blank" rel="noopener">
+    <h4>Hugging Face publishes State of Open Models, Summer 2026</h4>
+    <p>Frontier models keep growing while small models still dominate real-world usage and local inference; Qwen leads local inference ahead of Gemma, and AI agents are becoming a major presence on the Hub.</p>
+    <p class="byline"><span class="src">@huggingface</span> · 2026-08-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/NousResearch/status/2088367838977237029" target="_blank" rel="noopener">
+    <h4>Nous Research ships /loop command and Cloud agent integration for Hermes</h4>
+    <p>The new /loop 5m &lt;prompt&gt; command re-runs a prompt on a schedule with intelligent back-off, while Hermes Desktop can now link to a persistent Hermes Cloud agent that keeps running after the laptop closes.</p>
+    <p class="byline"><span class="src">@NousResearch</span> · 2026-08-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <a href="https://www.producthunt.com/products/suno" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools_2026-08-15.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Suno Studio 2.0 turns generative music into a browser-based DAW</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.producthunt.com/products/suno" target="_blank" rel="noopener">
+    <h4>Suno Studio 2.0 turns generative music into a browser-based DAW</h4>
+    <p>Suno's platform becomes a generative DAW that runs entirely in the browser, letting users compose and produce music without leaving the tab.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://explainx.ai/blog/glm-5-3-launch-cyber-defense-benchmarks-august-2026" target="_blank" rel="noopener">
+    <h4>Z.ai launches GLM-5.3, a 743B-parameter post-trained model topping cyber benchmarks</h4>
+    <p>The post-trained model leads CyberGym and AutomationBench, with open weights staged rather than immediate.</p>
+    <p class="byline"><span class="src">ExplainX</span> · 2026-08-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/deepseek" target="_blank" rel="noopener">
+    <h4>DeepSeek Harness: a composable open-source agent harness where every component is a plugin</h4>
+    <p>The harness treats every component as a plugin for flexible, composable agent setups.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/freebuff-2" target="_blank" rel="noopener">
+    <h4>Freebuff offers free coding agents as an alternative to Claude, Cursor, Replit and Devin</h4>
+    <p>Free coding agents positioned directly against the paid incumbents.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <a href="https://www.corriere.it/economia/innovazione/26_agosto_15/startup-investimenti-su-del-29-in-un-anno-il-tech-italiano-ora-vale-140-miliardi-0c2974ef-694b-4361-ace8-e7de966cfxlk.shtml" target="_blank" rel="noopener" class="section-hero"><img src="images/section_italia_2026-08-15.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Italian tech investments up 29% in a year as AI sector nears $8.2B in value</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.corriere.it/economia/innovazione/26_agosto_15/startup-investimenti-su-del-29-in-un-anno-il-tech-italiano-ora-vale-140-miliardi-0c2974ef-694b-4361-ace8-e7de966cfxlk.shtml" target="_blank" rel="noopener">
+    <h4>Italian tech investments up 29% in a year as AI sector nears $8.2B in value</h4>
+    <p>Italian startups attracted $652M in VC in H1 2026 as the tech sector reached €140B; Italian AI companies raised $204M, growing enterprise value to $8.2B — nearly triple 2022 levels — and supporting about 25,000 jobs, with rounds from Lexroom, MDOTM, Smartness and others.</p>
+    <p class="byline"><span class="src">Corriere della Sera</span> · 2026-08-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.bitmat.it/vertical/startup/lombardia-protagonista-del-boom-startup-393-milioni-di-investimenti-in-sei-mesi/" target="_blank" rel="noopener">
+    <h4>Lombardy leads Italian startup boom with €393M invested in six months</h4>
+    <p>€393M went into regional startups during H1 2026 as Italian startup investments grew 82% year-over-year, with AI cited as the main driver.</p>
+    <p class="byline"><span class="src">BitMat</span> · 2026-08-14</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <a href="https://news.crunchbase.com/ai/biggest-funding-rounds-databricks-river-ai-data-energy/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_money_2026-08-15.jpg" alt="" class="section-hero-img"><h4 class="hero-title">CodeRabbit raises $143M Series C for AI code review</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://news.crunchbase.com/ai/biggest-funding-rounds-databricks-river-ai-data-energy/" target="_blank" rel="noopener">
+    <h4>CodeRabbit raises $143M Series C for AI code review</h4>
+    <p>AI code review used by 150K open-source projects and 17K customers; round led by Atomico and Smash Capital.</p>
+    <p class="byline"><span class="src">Crunchbase News</span> · 2026-08-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.crunchbase.com/ai/biggest-funding-rounds-databricks-river-ai-data-energy/" target="_blank" rel="noopener">
+    <h4>Aureka Biotechnologies raises $100M Series B for AI drug discovery</h4>
+    <p>Granite Asia led the round for the AI-native drug discovery platform based in Shanghai and California; funds train the model via lab-in-the-loop feedback.</p>
+    <p class="byline"><span class="src">Crunchbase News</span> · 2026-08-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techfundingnews.com/a16z-leads-40m-vals-ai-round-at-400m-valuation-to-test-ai-on-real-world-tasks/" target="_blank" rel="noopener">
+    <h4>Vals AI raises $40M Series A at $400M valuation led by a16z</h4>
+    <p>Andreessen Horowitz leads the round for the independent model evaluation platform; existing backers 8VC, Pear VC and Bloomberg Beta joined by HRT Ventures and Next Ladder Ventures.</p>
+    <p class="byline"><span class="src">Tech Funding News</span> · 2026-08-14</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">cathrynlavery/diagram-design</span>
+    <span class="t-meta">HTML · 17.5k ★ · +3,646 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cactus-compute/needle" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">cactus-compute/needle</span>
+    <span class="t-meta">Python · 5.7k ★ · +662 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/megadose/holehe" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">megadose/holehe</span>
+    <span class="t-meta">Python · 12.9k ★ · +427 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/macro-inc/macro" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">macro-inc/macro</span>
+    <span class="t-meta">Rust · 3.1k ★ · +436 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/smicallef/spiderfoot" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">smicallef/spiderfoot</span>
+    <span class="t-meta">Python · 21.0k ★ · +293 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/citrolabs/ego-lite" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">citrolabs/ego-lite</span>
+    <span class="t-meta">JavaScript · 10.5k ★ · +165 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/holaboss-ai/holaOS" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">holaboss-ai/holaOS</span>
+    <span class="t-meta">TypeScript · 7.4k ★ · +769 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">github/spec-kit</span>
+    <span class="t-meta">Python · 128.6k ★ · +1,160 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/lightningpixel/modly" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">lightningpixel/modly</span>
+    <span class="t-meta">TypeScript · 6.0k ★ · +579 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/infiniflow/ragflow" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">infiniflow/ragflow</span>
+    <span class="t-meta">Go · 88.4k ★ · +473 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cursor/plugins" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">cursor/plugins</span>
+    <span class="t-meta">TypeScript · 2.8k ★ · +41 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/deepseek-ai/awesome-deepseek-agent" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">deepseek-ai/awesome-deepseek-agent</span>
+    <span class="t-meta">5.8k ★ · +222 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/semantica-agi/semantica" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">semantica-agi/semantica</span>
+    <span class="t-meta">Python · 7.6k ★ · +1,181 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/rustdesk/rustdesk" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">rustdesk/rustdesk</span>
+    <span class="t-meta">Rust · 120.7k ★ · +143 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/OpenCut-app/OpenCut" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">OpenCut-app/OpenCut</span>
+    <span class="t-meta">TypeScript · 83.3k ★ · +255 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B dense vision-language model, 262K native context up to 1M, agentic</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">meta-models/Muse-Glimmer-30B</span>
+    <span class="t-meta">Meta's 30B local agentic model, distilled from Muse Spark, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Qwen/Qwen3.8-2.4T-A95B</span>
+    <span class="t-meta">First open Qwen-Max-class release, 2.4T total / 95B active MoE</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">MiniMaxAI/MiniMax-H3</span>
+    <span class="t-meta">Omni-modal 33B DiT, generates video + native stereo audio up to 2K, 15s</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Qwen3.8-27B-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">unsloth/Qwen3.8-27B-GGUF</span>
+    <span class="t-meta">Community quants of Qwen3.8-27B for llama.cpp / Ollama / LM Studio</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Open world model, video + audio + world sim, 22B DiT, self-hostable</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-Music3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiniMaxAI/MiniMax-Music3</span>
+    <span class="t-meta">Full songs up to 5 min from lyrics + description, hybrid-LM, 32kHz stereo</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4-Flash-0731</span>
+    <span class="t-meta">Official Flash release with big agentic gains, DSpark speculative decoding, MIT</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4-Pro-0813</span>
+    <span class="t-meta">Official Pro release superseding preview, enhanced agentics, DSpark, MIT</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">unsloth/Muse-Glimmer-30B-GGUF</span>
+    <span class="t-meta">Community quants of Meta's Muse Glimmer-30B</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://arxiv.org/abs/2608.13547" target="_blank" rel="noopener"><span class="qh-title">QuoteBench: matched scores can hide command-path failures</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.13538" target="_blank" rel="noopener"><span class="qh-title">SAEVerbalizer explains sparse autoencoder features in plain language</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.13524" target="_blank" rel="noopener"><span class="qh-title">DARTree: speculative diffusion decoding with autoregressive draft trees</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.13474" target="_blank" rel="noopener"><span class="qh-title">Decoding task progress from VLA representations</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/browseract" target="_blank" rel="noopener"><span class="qh-title">BrowserAct Cloud scrapes any site from a natural-language prompt</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/port22" target="_blank" rel="noopener"><span class="qh-title">Port22 brings Claude Code, Codex and other coding agents to the phone</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/lambdatest" target="_blank" rel="noopener"><span class="qh-title">Kane CLI writes natural-language browser and mobile app tests from the terminal</span><span class="qh-src">LambdaTest</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/scrimba" target="_blank" rel="noopener"><span class="qh-title">Scrimba Explain answers any question with an instant video</span><span class="qh-src">Scrimba</span></a></li>
+
+    <li><a href="https://github.com/gtesei/llm-watermark" target="_blank" rel="noopener"><span class="qh-title">WMTrace visualizes how LLM text watermarking works in practice</span><span class="qh-src">GitHub</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2088286997492146627" target="_blank" rel="noopener"><span class="qh-title">Viktor: production AI employee with ~3,000-tool OAuth scaling campaigns across 29 markets</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-jetson-chip-found-in-russian-cruise-missile-ukraine-claims-presence-in-s-71-monochrome-weapon-may-indicate-use-of-ai-tech" target="_blank" rel="noopener"><span class="qh-title">Nvidia Jetson-class chip found in Russian cruise missile, Ukraine claims</span><span class="qh-src">Tom's Hardware</span></a></li>
+
+    <li><a href="https://www.tomshardware.com/tech-industry/cargo-thieves-rammed-security-escorts-to-hijack-ai-hardware-shipments-in-california" target="_blank" rel="noopener"><span class="qh-title">Cargo thieves ram security escorts to hijack AI hardware shipments in California</span><span class="qh-src">Tom's Hardware</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-08-15 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
