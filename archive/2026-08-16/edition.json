@@ -1,0 +1,147 @@
+{
+  "issue_no": 52,
+  "date_iso": "2026-08-16",
+  "date_human": "August 16, 2026",
+  "notice": "Light news day \u2014 fewer fresh items than usual.",
+  "lead": {
+    "kicker": "SpaceX seals Cursor",
+    "title": "SpaceX officially closes its $60B Cursor acquisition",
+    "summary": "AI coding startup Cursor has closed its acquisition by SpaceX for $60 billion in stock, completing the deal after SpaceX's blockbuster IPO. The merger hands one of the fastest-growing AI coding tools to Musk's empire, in the largest AI coding acquisition to date. No new primary funding round was announced in the window.",
+    "source": "TechCrunch",
+    "date": "2026-08-15",
+    "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+    "image": "images/lead_2026-08-16.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "IBM BenchDrift paper shows benchmark scores swing with phrasing",
+      "summary": "IBM Research shows meaning-preserving rephrasings still move benchmark scores in frontier models, questioning the precision of leaderboard deltas.",
+      "source": "omarsar0 (dair.ai)",
+      "date": "2026-08-15",
+      "url": "https://x.com/omarsar0/status/2088675092238889461"
+    },
+    {
+      "title": "Humanoid robot deployed as traffic officer on Chinese city streets",
+      "summary": "A humanoid robot now patrols streets and manages traffic in China \u2014 a real-world application of embodied AI in public infrastructure.",
+      "source": "Local 10 News",
+      "date": "2026-08-15",
+      "url": "https://www.local10.com/video/news/2026/08/15/humanoid-robot-traffic-officer-patrols-the-streets-in-china/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Tools & Startups",
+      "image": "images/section_tools_2026-08-16.jpg",
+      "items": [
+        {
+          "title": "Waku \u2014 native coding-agent app built with Rust and GPUI",
+          "summary": "A native desktop app for AI coding agents, positioned as a faster alternative to browser-based agent UIs.",
+          "source": "Hacker News",
+          "date": "2026-08-16",
+          "url": "https://waku.sh"
+        },
+        {
+          "title": "Velorn \u2014 open-source desktop video editor with MCP agent control",
+          "summary": "Exposes MCP-based agent control so AI agents can drive the editor programmatically.",
+          "source": "Hacker News",
+          "date": "2026-08-15",
+          "url": "https://github.com/VelornLabs/velorn"
+        },
+        {
+          "title": "Widen \u2014 native Postgres GUI using Apple's on-device LLM",
+          "summary": "Assists with queries, schema exploration and natural-language SQL entirely on-device.",
+          "source": "Hacker News",
+          "date": "2026-08-16",
+          "url": "https://github.com/betocmn/widen"
+        },
+        {
+          "title": "Bento Term \u2014 native tmux client with agent states and voice input",
+          "summary": "Surfaces agent states inside terminal multiplexing sessions with voice support.",
+          "source": "Hacker News",
+          "date": "2026-08-15",
+          "url": "https://bentoai.dev/term/"
+        },
+        {
+          "title": "Snafu \u2014 agentic flow for naming things in source code",
+          "summary": "Automates the \u201cnaming things\u201d part of coding, one of the two hard problems in CS.",
+          "source": "Hacker News",
+          "date": "2026-08-15",
+          "url": "https://github.com/sebastiancarlos/snafu"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-08-16",
+      "items": [
+        {"name": "cordiverse/cordis", "url": "https://github.com/cordiverse/cordis", "meta": "TypeScript \u00b7 4.1k \u2605 \u00b7 +599 today"},
+        {"name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "meta": "HTML \u00b7 18.7k \u2605 \u00b7 +1,607 today"},
+        {"name": "cursor/plugins", "url": "https://github.com/cursor/plugins", "meta": "TypeScript \u00b7 3.0k \u2605 \u00b7 +149 today"},
+        {"name": "cactus-compute/needle", "url": "https://github.com/cactus-compute/needle", "meta": "Python \u00b7 6.1k \u2605 \u00b7 +547 today"},
+        {"name": "unslothai/unsloth", "url": "https://github.com/unslothai/unsloth", "meta": "Python \u00b7 72.1k \u2605 \u00b7 +434 today"},
+        {"name": "public-apis/public-apis", "url": "https://github.com/public-apis/public-apis", "meta": "Python \u00b7 460.3k \u2605 \u00b7 +2,260 today"},
+        {"name": "MakazhanAlpamys/Soup", "url": "https://github.com/MakazhanAlpamys/Soup", "meta": "Python \u00b7 1.7k \u2605 \u00b7 +297 today"},
+        {"name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "meta": "Python \u00b7 129.3k \u2605 \u00b7 +892 today"},
+        {"name": "megadose/holehe", "url": "https://github.com/megadose/holehe", "meta": "Python \u00b7 13.1k \u2605 \u00b7 +382 today"},
+        {"name": "altic-dev/FluidVoice", "url": "https://github.com/altic-dev/FluidVoice", "meta": "Swift \u00b7 10.4k \u2605 \u00b7 +104 today"},
+        {"name": "ToolJet/ToolJet", "url": "https://github.com/ToolJet/ToolJet", "meta": "JavaScript \u00b7 39.6k \u2605 \u00b7 +544 today"},
+        {"name": "HKUDS/CLI-Anything", "url": "https://github.com/HKUDS/CLI-Anything", "meta": "Python \u00b7 47.4k \u2605 \u00b7 +118 today"},
+        {"name": "citrolabs/ego-lite", "url": "https://github.com/citrolabs/ego-lite", "meta": "JavaScript \u00b7 11.0k \u2605 \u00b7 +545 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-08-16",
+      "items": [
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B dense LLM from Qwen"},
+        {"name": "meta-models/Muse-Glimmer-30B", "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B", "meta": "30B LLM from Meta"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "GGUF quant of Qwen3.8-27B"},
+        {"name": "Qwen/Qwen3.8-2.4T-A95B", "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B", "meta": "MoE, ~2.4T total / 95B active params"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Video generation model"},
+        {"name": "MiniMaxAI/MiniMax-H3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3", "meta": "Hybrid-linear LLM from MiniMax"},
+        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "Music generation model"},
+        {"name": "deepseek-ai/DeepSeek-V4-Pro-0813", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813", "meta": "Frontier open-weights LLM, 88.5% DeepSWE"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731", "meta": "Fast DeepSeek-V4 variant"},
+        {"name": "unsloth/Muse-Glimmer-30B-GGUF", "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF", "meta": "GGUF quant of Muse-Glimmer-30B"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "DeepSeek-V4 Pro 0813 tops DeepSWE at 88.5% pass@4, 35x cheaper than closed rivals",
+      "source": "@togethercompute",
+      "date": "2026-08-16",
+      "url": "https://x.com/togethercompute/status/2088468211159171246"
+    },
+    {
+      "title": "Nous Portal surfaces hundreds of open models with bundled tool use",
+      "source": "@NousResearch",
+      "date": "2026-08-15",
+      "url": "https://x.com/NousResearch/status/2088505146875527353"
+    },
+    {
+      "title": "LetterTrace \u2014 self-hosted monitoring for AI recommendations",
+      "source": "Hacker News",
+      "date": "2026-08-15",
+      "url": "https://lettertrace.com"
+    },
+    {
+      "title": "Claude Trofeo HUD \u2014 live Claude usage on a $38 LCD",
+      "source": "Hacker News",
+      "date": "2026-08-15",
+      "url": "https://github.com/christensen143/claude-trofeo-hud"
+    }
+  ],
+  "spiked": {
+    "out of window": 17,
+    "already ran": 4,
+    "duplicate url": 1,
+    "low signal": 1
+  }
+}
