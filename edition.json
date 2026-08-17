@@ -42,14 +42,86 @@
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
       "date": "2026-08-17",
-      "items": []
+      "items": [
+        {
+          "name": "cordiverse/cordis",
+          "url": "https://github.com/cordiverse/cordis",
+          "meta": "TypeScript"
+        },
+        {
+          "name": "basecamp/omarchy",
+          "url": "https://github.com/basecamp/omarchy",
+          "meta": "Shell"
+        },
+        {
+          "name": "unslothai/unsloth",
+          "url": "https://github.com/unslothai/unsloth",
+          "meta": "Python"
+        },
+        {
+          "name": "OpenCut-app/OpenCut",
+          "url": "https://github.com/OpenCut-app/OpenCut",
+          "meta": "TypeScript"
+        },
+        {
+          "name": "public-apis/public-apis",
+          "url": "https://github.com/public-apis/public-apis",
+          "meta": "Python"
+        },
+        {
+          "name": "ToolJet/ToolJet",
+          "url": "https://github.com/ToolJet/ToolJet",
+          "meta": "JavaScript"
+        },
+        {
+          "name": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle",
+          "meta": "Python"
+        }
+      ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
       "date": "2026-08-17",
-      "items": []
+      "items": [
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "267,725 downloads · 10,397 likes"
+        },
+        {
+          "name": "meta-models/Muse-Glimmer-30B",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "meta": "292,973 downloads · 1,638 likes"
+        },
+        {
+          "name": "unsloth/Qwen3.8-27B-GGUF",
+          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+          "meta": "1,945,635 downloads · 1,511 likes"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "424,099 downloads · 1,042 likes"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-Music3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+          "meta": "8,639 downloads · 862 likes"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-H3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+          "meta": "2,307,541 downloads · 4,046 likes"
+        },
+        {
+          "name": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "meta": "21,873 downloads · 548 likes"
+        }
+      ]
     }
   },
   "quick_hits": [
