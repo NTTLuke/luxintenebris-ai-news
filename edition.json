@@ -2,25 +2,177 @@
   "issue_no": 54,
   "date_iso": "2026-08-18",
   "date_human": "August 18, 2026",
-  "notice": "Light news day — fewer fresh items than usual.",
+  "notice": null,
   "lead": {
-    "kicker": "Agent Bots",
-    "title": "Nous Research launches Bot Mode, turning Hermes Desktop profiles into named Bots",
-    "summary": "Agent profiles are now persistent, named Bots with their own roles, skills, model selection, memory, and profile pictures, opening up multi-agent workflows in Hermes Desktop. The launch drew roughly a million views in a day and includes free model tiers alongside discounted premium models.",
-    "source": "NousResearch (X)",
+    "image": "images/lead_2026-08-18.jpg",
+    "kicker": "Chipmaker Pivot",
+    "title": "Groq raises $350M to fuel pivot from AI chips to Nvidia-powered neocloud",
+    "summary": "Groq closed a $350M Series A at a $3.5B valuation — down from $6.9B after Nvidia's acqui-hire of its founder and team — as it pivots from building AI chips to operating an Nvidia-powered inference cloud across 13 global data centers. Disruptive led the round with planned participation from Nvidia.",
+    "source": "TechCrunch",
     "date": "2026-08-17",
-    "url": "https://x.com/NousResearch/status/2089429432612147572"
+    "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
   },
   "top_stories": [
     {
-      "title": "SGLang and Meta AI detail Breakable CUDA Graph as the new default prefill backend",
-      "summary": "LMSYS Org, with Meta AI, lays out advanced CUDA Graph techniques for SGLang, making Breakable CUDA Graph (BCG) the default prefill path along with a full CUDA Graph prefill experiment and graph memory reuse for predictable memory use.",
-      "source": "LMSYS Org (X)",
+      "title": "Higgsfield raises $400M Series B, quadrupling valuation to $5.4B in eight months",
+      "summary": "AI video generation company Higgsfield closed a $400M round led by DST Global at a $5.4B valuation, touting $700M annualized revenue and 390 Fortune 500 enterprise customers.",
+      "source": "TechCrunch",
       "date": "2026-08-17",
-      "url": "https://x.com/lmsysorg/status/2089392627578011902"
+      "url": "https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/"
+    },
+    {
+      "title": "Wispr raises $280M at $2B valuation, launches Canto speech recognition model",
+      "summary": "Wispr closed a $280M Series B led by Menlo Ventures and previewed Canto, its proprietary speech-recognition model that cuts dictation errors in noisy environments from ~30% to under 10%.",
+      "source": "TechCrunch",
+      "date": "2026-08-17",
+      "url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/"
+    },
+    {
+      "title": "Gravis Robotics raises $200M Series A from SoftBank for autonomous construction equipment",
+      "summary": "The ETH Zurich spinout closed the largest Series A in construction robotics history at a $1B valuation. Its Gravis Rack retrofit kit adds AI autonomy to excavators and bulldozers, claiming up to 30% productivity gains across ~300 machines on four continents.",
+      "source": "Forbes",
+      "date": "2026-08-17",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2026/08/17/excavators-meet-ai-gravis-nabs-200-million-from-softbank-to-give-construction-equipment-brains/"
+    },
+    {
+      "title": "Anthropic's revenue surges as IPO speculation intensifies",
+      "summary": "Bloomberg reports Anthropic's revenue is climbing sharply, fueling speculation that the AI company behind Claude may be preparing for an initial public offering.",
+      "source": "Bloomberg Technology (YouTube)",
+      "date": "2026-08-17",
+      "url": "https://www.youtube.com/watch?v=tlyMdDfeiuA"
     }
   ],
-  "sections": [],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "image": "images/section_research_2026-08-18.jpg",
+      "title": "AutoSR: Automatic symbolic regression by searching research states",
+          "summary": "Introduces a fully automated system for symbolic regression that searches persistent scientific investigations rather than isolated equations, producing more interpretable and robust expressions.",
+          "source": "arXiv",
+          "date": "2026-08-17",
+          "url": "https://arxiv.org/abs/2608.16876"
+        },
+        {
+          "title": "Proteus: Incremental memory activation for long-context sequence modeling",
+          "summary": "Proposes a memory-based model that compresses context into a compact state, addressing the quadratic cost of attention for long contexts more effectively than static memory models.",
+          "source": "arXiv",
+          "date": "2026-08-17",
+          "url": "https://arxiv.org/abs/2608.16844"
+        },
+        {
+          "title": "CaliBench: Are the stochastic dynamics of video world models physically calibrated?",
+          "summary": "New benchmark evaluating whether video world models produce physically calibrated stochastic dynamics, testing fine-grained aleatoric uncertainty of specific phenomena.",
+          "source": "arXiv",
+          "date": "2026-08-17",
+          "url": "https://arxiv.org/abs/2608.16829"
+        },
+        {
+          "title": "PertMind: Eliciting emergent biological reasoning in LLMs via RL on cellular perturbation data",
+          "summary": "Shows cellular perturbation atlases can become RL environments where measured gene responses provide computable rewards, enabling LLMs to learn biological reasoning without costly manually curated traces.",
+          "source": "arXiv",
+          "date": "2026-08-17",
+          "url": "https://arxiv.org/abs/2608.16419"
+        },
+        {
+          "title": "Foresight-England: A national-scale generative AI model of electronic health records for medical event prediction",
+          "summary": "First national-scale generative foundation model of EHRs, developed as a COVID-19 research pilot trained from scratch on England's population-level health data.",
+          "source": "arXiv",
+          "date": "2026-08-17",
+          "url": "https://arxiv.org/abs/2608.16273"
+        }
+      ]
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "image": "images/section_open-source_2026-08-18.jpg",
+      "title": "Nous Research promotes free and heavily discounted open-weights model access via Hermes Cloud",
+          "summary": "Hermes Cloud offers free models including Solar Pro 4, Hy3, Step 3.7 Flash, and Laguna S/XS, with 50% off GPT-5.6 Terra/Luna and a new DeepSeek V4 Flash discount incoming.",
+          "source": "NousResearch",
+          "date": "2026-08-18",
+          "url": "https://x.com/NousResearch/status/2089501310869512674"
+        },
+        {
+          "title": "Together AI highlights specialized small code-generation models trained on dedicated GPU clusters",
+          "summary": "Together AI showcases purpose-built small models for code generation trained on dedicated Y Combinator GPU clusters, emphasizing cost savings with specialized open-weights.",
+          "source": "Together AI",
+          "date": "2026-08-17",
+          "url": "https://x.com/togethercompute/status/2089429778164232282"
+        },
+        {
+          "title": "Qwen3.8-27B-Uncensored GGUF released for local deployment",
+          "summary": "OrcaRouter published a guide for running the abliterated Qwen3.8-27B model locally with llama.cpp and Ollama. The GGUF quantized release preserves 262K context and vision projector, fitting a 24 GB GPU at Q4_K_M.",
+          "source": "OrcaRouter",
+          "date": "2026-08-17",
+          "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally"
+        }
+      ]
+    },
+    {
+      "title": "YouTube & Video",
+      "items": [
+        {
+          "image": "images/section_youtube_2026-08-18.jpg",
+      "title": "Bedrock brings autonomous driving technology to construction sites",
+          "summary": "Bedrock is deploying autonomous driving systems in construction environments, expanding self-driving technology beyond roads into off-road industrial applications.",
+          "source": "Bloomberg Technology (YouTube)",
+          "date": "2026-08-17",
+          "url": "https://www.youtube.com/watch?v=Nzus4Y9ysFA"
+        },
+        {
+          "title": "AI models increasingly break containment — safety researchers raise concerns",
+          "summary": "Matt Wolfe covers a growing trend of AI models intentionally or inadvertently bypassing safety guardrails, with researchers reporting multiple recent incidents where frontier models found ways around containment measures.",
+          "source": "Matt Wolfe (YouTube)",
+          "date": "2026-08-17",
+          "url": "https://www.youtube.com/watch?v=9ZKeu_7k9ik"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "image": "images/section_tools_2026-08-18.jpg",
+      "title": "Wispr launches Canto, a proprietary speech recognition model reducing errors from 30% to under 10%",
+          "summary": "Canto cuts dictation error rates in noisy environments from approximately 30% to below 10%, and Wispr is expanding beyond dictation into meeting note-taking.",
+          "source": "TechCrunch",
+          "date": "2026-08-17",
+          "url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/"
+        },
+        {
+          "title": "Cogni: MCP memory for LLMs with no LLM in the retrieval path",
+          "summary": "Cogni provides Model Context Protocol memory storage for LLMs that does not use an LLM in the retrieval path, offering a lightweight alternative for persistent agent memory.",
+          "source": "Hacker News",
+          "date": "2026-08-18",
+          "url": "https://news.ycombinator.com/item?id=49334008"
+        },
+        {
+          "title": "Open-DeepSeek-Harness-Desktop: n8n-like orchestration toolkit for DeepSeek harnesses",
+          "summary": "A desktop orchestration toolkit offering an n8n-like visual workflow builder for chaining DeepSeek models and tools.",
+          "source": "Hacker News",
+          "date": "2026-08-18",
+          "url": "https://news.ycombinator.com/item?id=49334006"
+        },
+        {
+          "title": "AgentBridge: M2M payment loop where AI agents pay for data via x402",
+          "summary": "Implements a machine-to-machine payment loop enabling AI agents to autonomously pay for data access using the x402 protocol, creating a marketplace where agents compensate data providers per request.",
+          "source": "Hacker News",
+          "date": "2026-08-18",
+          "url": "https://news.ycombinator.com/item?id=49334005"
+        },
+        {
+          "title": "Show HN: A public AI whose memory is shared across all users",
+          "summary": "An experimental public AI where every user shares the same memory context, creating a collective AI experience reminiscent of a modern Cleverbot.",
+          "source": "Hacker News",
+          "date": "2026-08-17",
+          "url": "https://news.ycombinator.com/item?id=49319814"
+        }
+      ]
+    }
+  ],
   "trending": {
     "github": {
       "title": "GitHub Trending",
@@ -28,61 +180,12 @@
       "link_label": "github.com/trending",
       "date": "2026-08-18",
       "items": [
-        {
-          "name": "harry0703/MoneyPrinterTurbo",
-          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-          "meta": "Python"
-        },
-        {
-          "name": "usestrix/strix",
-          "url": "https://github.com/usestrix/strix",
-          "meta": "Python"
-        },
-        {
-          "name": "nautechsystems/nautilus_trader",
-          "url": "https://github.com/nautechsystems/nautilus_trader",
-          "meta": "Rust"
-        },
-        {
-          "name": "akitaonrails/ai-memory",
-          "url": "https://github.com/akitaonrails/ai-memory",
-          "meta": "Rust"
-        },
-        {
-          "name": "mukul975/Anthropic-Cybersecurity-Skills",
-          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-          "meta": "Python"
-        },
-        {
-          "name": "AlexsJones/llmfit",
-          "url": "https://github.com/AlexsJones/llmfit",
-          "meta": "Rust"
-        },
-        {
-          "name": "santifer/career-ops",
-          "url": "https://github.com/santifer/career-ops",
-          "meta": "JavaScript"
-        },
-        {
-          "name": "jundot/omlx",
-          "url": "https://github.com/jundot/omlx",
-          "meta": "Python"
-        },
-        {
-          "name": "immich-app/immich",
-          "url": "https://github.com/immich-app/immich",
-          "meta": "TypeScript"
-        },
-        {
-          "name": "cordiverse/cordis",
-          "url": "https://github.com/cordiverse/cordis",
-          "meta": "TypeScript"
-        },
-        {
-          "name": "agalwood/Motrix",
-          "url": "https://github.com/agalwood/Motrix",
-          "meta": "TypeScript"
-        }
+        {"name": "harry0703/MoneyPrinterTurbo", "url": "https://github.com/harry0703/MoneyPrinterTurbo", "meta": "Python · 106,840 ★ · +1,189 today"},
+        {"name": "usestrix/strix", "url": "https://github.com/usestrix/strix", "meta": "Python · 54,549 ★ · +598 today"},
+        {"name": "nautechsystems/nautilus_trader", "url": "https://github.com/nautechsystems/nautilus_trader", "meta": "Rust · 26,092 ★ · +120 today"},
+        {"name": "akitaonrails/ai-memory", "url": "https://github.com/akitaonrails/ai-memory", "meta": "Rust · 2,303 ★ · +207 today"},
+        {"name": "immich-app/immich", "url": "https://github.com/immich-app/immich", "meta": "TypeScript · 111,356 ★ · +175 today"},
+        {"name": "cordiverse/cordis", "url": "https://github.com/cordiverse/cordis", "meta": "TypeScript · 5,828 ★ · +957 today"}
       ]
     },
     "huggingface": {
@@ -91,82 +194,73 @@
       "link_label": "huggingface.co/models",
       "date": "2026-08-18",
       "items": [
-        {
-          "name": "Qwen/Qwen3.8-27B",
-          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-          "meta": "415,039 downloads · 10,806 likes"
-        },
-        {
-          "name": "unsloth/Qwen3.8-27B-GGUF",
-          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-          "meta": "2,727,609 downloads · 1,668 likes"
-        },
-        {
-          "name": "Qwen/Qwen3.8-2.4T-A95B",
-          "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-          "meta": "9,465 downloads · 1,043 likes"
-        },
-        {
-          "name": "Lightricks/LTX-2.5",
-          "url": "https://huggingface.co/Lightricks/LTX-2.5",
-          "meta": "465,529 downloads · 1,134 likes"
-        },
-        {
-          "name": "MiniMaxAI/MiniMax-Music3",
-          "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-          "meta": "10,375 downloads · 915 likes"
-        },
-        {
-          "name": "meta-models/Muse-Glimmer-30B",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "meta": "334,099 downloads · 1,667 likes"
-        },
-        {
-          "name": "MiniMaxAI/MiniMax-H3",
-          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-          "meta": "2,403,238 downloads · 4,098 likes"
-        },
-        {
-          "name": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
-          "meta": "25,006 downloads · 577 likes"
-        },
-        {
-          "name": "Qwen/Qwen3.8-27B-FP8",
-          "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-          "meta": "495,646 downloads · 534 likes"
-        },
-        {
-          "name": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
-          "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
-          "meta": "15,812 downloads · 454 likes"
-        }
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B parameter open-weight language model, multilingual"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "GGUF quantized Qwen3.8-27B for local inference"},
+        {"name": "Qwen/Qwen3.8-2.4T-A95B", "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B", "meta": "2.4T total (95B active) MoE open-weight model"},
+        {"name": "deepseek-ai/DeepSeek-V4-Pro-0813", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813", "meta": "671B MoE flagship, latest DeepSeek model"},
+        {"name": "meta-models/Muse-Glimmer-30B", "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B", "meta": "30B open-weight language model by Meta"}
       ]
     }
   },
   "quick_hits": [
     {
-      "title": "Agent skills help mostly as procedural anchoring, not knowledge injection, study of 8,135 trials finds",
-      "source": "omarsar0",
+      "title": "Seeing Machines launches Physical AI Platform for humanoid robots and industrial automation",
+      "source": "RoboticsTomorrow",
       "date": "2026-08-17",
-      "url": "https://x.com/omarsar0/status/2089376463330128151"
+      "url": "https://www.roboticstomorrow.com/news/2026/08/17/seeing-machines-launches-physical-ai-platform-to-power-the-next-generation-of-humanoid-robots/26956/"
     },
     {
-      "title": "New framework scales agent skill management past 56,000 competing skills with path-based addressing",
-      "source": "omarsar0",
-      "date": "2026-08-17",
-      "url": "https://x.com/omarsar0/status/2089411994499903566"
-    },
-    {
-      "title": "Trajectory pushes continual learning beyond GRPO with on-policy methods",
+      "title": "swyx discusses LLM token probability modeling and the Aaronson mechanism",
       "source": "swyx",
       "date": "2026-08-17",
-      "url": "https://x.com/swyx/status/2089393073327653344"
+      "url": "https://x.com/swyx/status/2089264969309389138"
+    },
+    {
+      "title": "Improving the matrix multiplication exponent with modern optimization and AlphaEvolve",
+      "source": "arXiv",
+      "date": "2026-08-17",
+      "url": "https://arxiv.org/abs/2608.16884"
+    },
+    {
+      "title": "When single-dataset conclusions fail: a 45-task study of threshold tuning and resampling",
+      "source": "arXiv",
+      "date": "2026-08-17",
+      "url": "https://arxiv.org/abs/2608.16147"
+    },
+    {
+      "title": "Would this change your answer? Evaluating explanations of LLM behavior with counterfactual experiments",
+      "source": "arXiv",
+      "date": "2026-08-17",
+      "url": "https://arxiv.org/abs/2608.16747"
+    },
+    {
+      "title": "Learn what's left, not what's mastered: saturation-aware advantage reweighting for multi-reward RL",
+      "source": "arXiv",
+      "date": "2026-08-17",
+      "url": "https://arxiv.org/abs/2608.16072"
+    },
+    {
+      "title": "A scalable pipeline for LLM-teacher distillation labeling with work-stealing job scheduling",
+      "source": "arXiv",
+      "date": "2026-08-17",
+      "url": "https://arxiv.org/abs/2608.15975"
+    },
+    {
+      "title": "ClawGym II: Exploring black-box RL on agent harness",
+      "source": "arXiv",
+      "date": "2026-08-17",
+      "url": "https://arxiv.org/abs/2608.16798"
+    },
+    {
+      "title": "Nous Research promotes free models and heavy discounts on premium AI models",
+      "source": "NousResearch",
+      "date": "2026-08-17",
+      "url": "https://x.com/NousResearch/status/2089498392653156376"
     }
   ],
   "spiked": {
-    "low signal": 1,
-    "already ran": 1,
-    "thin section": 3
+    "already ran": 9,
+    "out of window": 24,
+    "low signal": 1
   }
 }
