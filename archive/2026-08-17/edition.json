@@ -1,0 +1,144 @@
+{
+  "issue_no": 53,
+  "date_iso": "2026-08-17",
+  "date_human": "August 17, 2026",
+  "notice": "Light news day — fewer fresh items than usual. Most AI research papers published over the weekend fell outside the 24-hour window.",
+  "lead": {
+    "kicker": "Gateway Acquired",
+    "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+    "summary": "Stripe has finalized a deal to acquire OpenRouter, the AI model gateway startup, for more than $7 billion, per Bloomberg. OpenRouter, which raised a $113M Series B at a $1.3B valuation in May 2026, claims 8 million users and access to 400+ models. The deal marks one of the largest AI infrastructure acquisitions to date, consolidating API access to the fragmented model ecosystem under Stripe's payments infrastructure.",
+    "source": "TechCrunch",
+    "date": "2026-08-16",
+    "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+    "image": "images/lead_2026-08-17.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Nous Research launches Hermes Agent Desktop App",
+      "summary": "Nous Research released a cross-platform desktop app for Hermes Agent on macOS, Windows, and Linux, with 19x faster session loading, free models, support for local/open-source models, and a Blank Slate Mode for zero-configuration starting points.",
+      "source": "NousResearch",
+      "date": "2026-08-16",
+      "url": "https://x.com/NousResearch/status/2089055111125307813"
+    },
+    {
+      "title": "Yann LeCun publishes major defense of open foundation models",
+      "summary": "LeCun posted a detailed argument that AI progress depends on widely shared open foundation models, comparing the technology to the printing press and the internet, and arguing that competition over centralization is the right risk mitigation strategy.",
+      "source": "ylecun",
+      "date": "2026-08-16",
+      "url": "https://x.com/ylecun/status/2088880284129210405"
+    },
+    {
+      "title": "Anthropic researcher denies All-In Podcast rumors, sparks AI concentration debate",
+      "summary": "Sholto Douglas (Anthropic) forcefully denied rumors that Anthropic aims to be one of few private companies in an AGI world, sparking a wide debate with Yann LeCun, Elon Musk, Gavin Baker, and others on regulation, market concentration, and open vs closed models.",
+      "source": "Sholto Douglas / All-In Podcast",
+      "date": "2026-08-16",
+      "url": "https://x.com/i/status/2088463770318516734"
+    }
+  ],
+  "sections": [],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-08-17",
+      "items": [
+        {
+          "name": "cordiverse/cordis",
+          "url": "https://github.com/cordiverse/cordis",
+          "meta": "TypeScript"
+        },
+        {
+          "name": "basecamp/omarchy",
+          "url": "https://github.com/basecamp/omarchy",
+          "meta": "Shell"
+        },
+        {
+          "name": "unslothai/unsloth",
+          "url": "https://github.com/unslothai/unsloth",
+          "meta": "Python"
+        },
+        {
+          "name": "OpenCut-app/OpenCut",
+          "url": "https://github.com/OpenCut-app/OpenCut",
+          "meta": "TypeScript"
+        },
+        {
+          "name": "public-apis/public-apis",
+          "url": "https://github.com/public-apis/public-apis",
+          "meta": "Python"
+        },
+        {
+          "name": "ToolJet/ToolJet",
+          "url": "https://github.com/ToolJet/ToolJet",
+          "meta": "JavaScript"
+        },
+        {
+          "name": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle",
+          "meta": "Python"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-08-17",
+      "items": [
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "267,725 downloads · 10,397 likes"
+        },
+        {
+          "name": "meta-models/Muse-Glimmer-30B",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "meta": "292,973 downloads · 1,638 likes"
+        },
+        {
+          "name": "unsloth/Qwen3.8-27B-GGUF",
+          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+          "meta": "1,945,635 downloads · 1,511 likes"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "424,099 downloads · 1,042 likes"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-Music3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+          "meta": "8,639 downloads · 862 likes"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-H3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+          "meta": "2,307,541 downloads · 4,046 likes"
+        },
+        {
+          "name": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "meta": "21,873 downloads · 548 likes"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Simon Willison reviews Qwen 3.8 27B with enthusiasm",
+      "source": "simonw",
+      "date": "2026-08-16",
+      "url": "https://x.com/simonw/status/2089112517796827439"
+    },
+    {
+      "title": "Biocomputing breakthrough: chip built with living human brain cells",
+      "source": "YouTube — Beyond AI News",
+      "date": "2026-08-17",
+      "url": "https://www.youtube.com/watch?v=FOyG-e2mnyY"
+    }
+  ],
+  "spiked": {
+    "out of window": 23
+  }
+}

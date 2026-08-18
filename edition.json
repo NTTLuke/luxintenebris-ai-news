@@ -1,38 +1,23 @@
 {
-  "issue_no": 53,
-  "date_iso": "2026-08-17",
-  "date_human": "August 17, 2026",
-  "notice": "Light news day — fewer fresh items than usual. Most AI research papers published over the weekend fell outside the 24-hour window.",
+  "issue_no": 54,
+  "date_iso": "2026-08-18",
+  "date_human": "August 18, 2026",
+  "notice": "Light news day — fewer fresh items than usual.",
   "lead": {
-    "kicker": "Gateway Acquired",
-    "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
-    "summary": "Stripe has finalized a deal to acquire OpenRouter, the AI model gateway startup, for more than $7 billion, per Bloomberg. OpenRouter, which raised a $113M Series B at a $1.3B valuation in May 2026, claims 8 million users and access to 400+ models. The deal marks one of the largest AI infrastructure acquisitions to date, consolidating API access to the fragmented model ecosystem under Stripe's payments infrastructure.",
-    "source": "TechCrunch",
-    "date": "2026-08-16",
-    "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
-    "image": "images/lead_2026-08-17.jpg"
+    "kicker": "Agent Bots",
+    "title": "Nous Research launches Bot Mode, turning Hermes Desktop profiles into named Bots",
+    "summary": "Agent profiles are now persistent, named Bots with their own roles, skills, model selection, memory, and profile pictures, opening up multi-agent workflows in Hermes Desktop. The launch drew roughly a million views in a day and includes free model tiers alongside discounted premium models.",
+    "source": "NousResearch (X)",
+    "date": "2026-08-17",
+    "url": "https://x.com/NousResearch/status/2089429432612147572"
   },
   "top_stories": [
     {
-      "title": "Nous Research launches Hermes Agent Desktop App",
-      "summary": "Nous Research released a cross-platform desktop app for Hermes Agent on macOS, Windows, and Linux, with 19x faster session loading, free models, support for local/open-source models, and a Blank Slate Mode for zero-configuration starting points.",
-      "source": "NousResearch",
-      "date": "2026-08-16",
-      "url": "https://x.com/NousResearch/status/2089055111125307813"
-    },
-    {
-      "title": "Yann LeCun publishes major defense of open foundation models",
-      "summary": "LeCun posted a detailed argument that AI progress depends on widely shared open foundation models, comparing the technology to the printing press and the internet, and arguing that competition over centralization is the right risk mitigation strategy.",
-      "source": "ylecun",
-      "date": "2026-08-16",
-      "url": "https://x.com/ylecun/status/2088880284129210405"
-    },
-    {
-      "title": "Anthropic researcher denies All-In Podcast rumors, sparks AI concentration debate",
-      "summary": "Sholto Douglas (Anthropic) forcefully denied rumors that Anthropic aims to be one of few private companies in an AGI world, sparking a wide debate with Yann LeCun, Elon Musk, Gavin Baker, and others on regulation, market concentration, and open vs closed models.",
-      "source": "Sholto Douglas / All-In Podcast",
-      "date": "2026-08-16",
-      "url": "https://x.com/i/status/2088463770318516734"
+      "title": "SGLang and Meta AI detail Breakable CUDA Graph as the new default prefill backend",
+      "summary": "LMSYS Org, with Meta AI, lays out advanced CUDA Graph techniques for SGLang, making Breakable CUDA Graph (BCG) the default prefill path along with a full CUDA Graph prefill experiment and graph memory reuse for predictable memory use.",
+      "source": "LMSYS Org (X)",
+      "date": "2026-08-17",
+      "url": "https://x.com/lmsysorg/status/2089392627578011902"
     }
   ],
   "sections": [],
@@ -41,42 +26,62 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-17",
+      "date": "2026-08-18",
       "items": [
+        {
+          "name": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "meta": "Python"
+        },
+        {
+          "name": "usestrix/strix",
+          "url": "https://github.com/usestrix/strix",
+          "meta": "Python"
+        },
+        {
+          "name": "nautechsystems/nautilus_trader",
+          "url": "https://github.com/nautechsystems/nautilus_trader",
+          "meta": "Rust"
+        },
+        {
+          "name": "akitaonrails/ai-memory",
+          "url": "https://github.com/akitaonrails/ai-memory",
+          "meta": "Rust"
+        },
+        {
+          "name": "mukul975/Anthropic-Cybersecurity-Skills",
+          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+          "meta": "Python"
+        },
+        {
+          "name": "AlexsJones/llmfit",
+          "url": "https://github.com/AlexsJones/llmfit",
+          "meta": "Rust"
+        },
+        {
+          "name": "santifer/career-ops",
+          "url": "https://github.com/santifer/career-ops",
+          "meta": "JavaScript"
+        },
+        {
+          "name": "jundot/omlx",
+          "url": "https://github.com/jundot/omlx",
+          "meta": "Python"
+        },
+        {
+          "name": "immich-app/immich",
+          "url": "https://github.com/immich-app/immich",
+          "meta": "TypeScript"
+        },
         {
           "name": "cordiverse/cordis",
           "url": "https://github.com/cordiverse/cordis",
           "meta": "TypeScript"
         },
         {
-          "name": "basecamp/omarchy",
-          "url": "https://github.com/basecamp/omarchy",
-          "meta": "Shell"
-        },
-        {
-          "name": "unslothai/unsloth",
-          "url": "https://github.com/unslothai/unsloth",
-          "meta": "Python"
-        },
-        {
-          "name": "OpenCut-app/OpenCut",
-          "url": "https://github.com/OpenCut-app/OpenCut",
+          "name": "agalwood/Motrix",
+          "url": "https://github.com/agalwood/Motrix",
           "meta": "TypeScript"
-        },
-        {
-          "name": "public-apis/public-apis",
-          "url": "https://github.com/public-apis/public-apis",
-          "meta": "Python"
-        },
-        {
-          "name": "ToolJet/ToolJet",
-          "url": "https://github.com/ToolJet/ToolJet",
-          "meta": "JavaScript"
-        },
-        {
-          "name": "cactus-compute/needle",
-          "url": "https://github.com/cactus-compute/needle",
-          "meta": "Python"
         }
       ]
     },
@@ -84,61 +89,84 @@
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-17",
+      "date": "2026-08-18",
       "items": [
         {
           "name": "Qwen/Qwen3.8-27B",
           "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-          "meta": "267,725 downloads · 10,397 likes"
-        },
-        {
-          "name": "meta-models/Muse-Glimmer-30B",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "meta": "292,973 downloads · 1,638 likes"
+          "meta": "415,039 downloads · 10,806 likes"
         },
         {
           "name": "unsloth/Qwen3.8-27B-GGUF",
           "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-          "meta": "1,945,635 downloads · 1,511 likes"
+          "meta": "2,727,609 downloads · 1,668 likes"
+        },
+        {
+          "name": "Qwen/Qwen3.8-2.4T-A95B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+          "meta": "9,465 downloads · 1,043 likes"
         },
         {
           "name": "Lightricks/LTX-2.5",
           "url": "https://huggingface.co/Lightricks/LTX-2.5",
-          "meta": "424,099 downloads · 1,042 likes"
+          "meta": "465,529 downloads · 1,134 likes"
         },
         {
           "name": "MiniMaxAI/MiniMax-Music3",
           "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-          "meta": "8,639 downloads · 862 likes"
+          "meta": "10,375 downloads · 915 likes"
+        },
+        {
+          "name": "meta-models/Muse-Glimmer-30B",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "meta": "334,099 downloads · 1,667 likes"
         },
         {
           "name": "MiniMaxAI/MiniMax-H3",
           "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-          "meta": "2,307,541 downloads · 4,046 likes"
+          "meta": "2,403,238 downloads · 4,098 likes"
         },
         {
           "name": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
-          "meta": "21,873 downloads · 548 likes"
+          "meta": "25,006 downloads · 577 likes"
+        },
+        {
+          "name": "Qwen/Qwen3.8-27B-FP8",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+          "meta": "495,646 downloads · 534 likes"
+        },
+        {
+          "name": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+          "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+          "meta": "15,812 downloads · 454 likes"
         }
       ]
     }
   },
   "quick_hits": [
     {
-      "title": "Simon Willison reviews Qwen 3.8 27B with enthusiasm",
-      "source": "simonw",
-      "date": "2026-08-16",
-      "url": "https://x.com/simonw/status/2089112517796827439"
+      "title": "Agent skills help mostly as procedural anchoring, not knowledge injection, study of 8,135 trials finds",
+      "source": "omarsar0",
+      "date": "2026-08-17",
+      "url": "https://x.com/omarsar0/status/2089376463330128151"
     },
     {
-      "title": "Biocomputing breakthrough: chip built with living human brain cells",
-      "source": "YouTube — Beyond AI News",
+      "title": "New framework scales agent skill management past 56,000 competing skills with path-based addressing",
+      "source": "omarsar0",
       "date": "2026-08-17",
-      "url": "https://www.youtube.com/watch?v=FOyG-e2mnyY"
+      "url": "https://x.com/omarsar0/status/2089411994499903566"
+    },
+    {
+      "title": "Trajectory pushes continual learning beyond GRPO with on-policy methods",
+      "source": "swyx",
+      "date": "2026-08-17",
+      "url": "https://x.com/swyx/status/2089393073327653344"
     }
   ],
   "spiked": {
-    "out of window": 23
+    "low signal": 1,
+    "already ran": 1,
+    "thin section": 3
   }
 }
