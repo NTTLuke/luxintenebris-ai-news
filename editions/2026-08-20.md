@@ -3,34 +3,62 @@
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
 > Issue No. 56 · https://luxintenebris.news/
 
-## Lead Frontier Privacy: OpenAI previews Private Safety Processing, keeps Zero Data Retention for frontier models
+## Lead Wafer-Scale Reloaded: Cerebras unveils CS-4 with double clock speed, 43 PB/s memory bandwidth in redesigned rack
 
-OpenAI confirmed it maintains Zero Data Retention for frontier models and previewed Private Safety Processing, a new capability that lets safety systems detect risks across related agent interactions without giving OpenAI personnel access to the content. The move aims to reconcile stronger safety monitoring with strict data-privacy commitments for enterprise and frontier use.
+Cerebras revealed its fourth-generation CS-4 rack built on the same 5nm WSE-3 wafer but with double clock speeds, 43 PB/s on-chip memory bandwidth, and 3 wafers per rack (up from 2). The redesigned modular 'backpack' architecture claims up to 4,000 tok/sec/user on frontier models and enables heterogeneous disaggregated inference alongside AMD and AWS Trainium hardware. SemiAnalysis estimates CS-4 delivers roughly 30x more interactivity per watt than equivalent GPU-based systems.
 
-Source: [OpenAI](https://x.com/OpenAI/status/2090165328290701800)
+Source: [SemiAnalysis](https://newsletter.semianalysis.com/p/cerebrass-next-generation-cs-4-fast)
 
 ## Top stories
 
-### Hermes Agent nears public release, adds NVIDIA SkillEvaluator security scanning
+### Nebius raises $4.5B in convertible bonds to build AI data centres at massive scale
 
-Nous Research integrated NVIDIA's open-source SkillEvaluator into Hermes, auto-scanning installed skills for PII, leaked secrets, Unicode smuggling and licensing issues before install, and fixed 11 bundled skills in the process.
+The AI cloud provider announced a $4.5B convertible bond offering split across 2030 and 2034 notes. Goldman Sachs, JPMorgan, Citi and BofA are running the sale — the second big convertible raise for Nebius in 2026.
 
-Source: [NousResearch](https://x.com/NousResearch/status/2090166128509096187)
+Source: [TNW](https://thenextweb.com/news/nebius-4-5bn-convertible-bonds-data-centres)
 
-### TrueFoundry releases TrueForge, an open-source MIT agent harness
+### World Humanoid Robot Games opens in Beijing with 2,056 robots from 666 teams across 16 countries
 
-TrueForge is a self-hosted, vendor-neutral agent harness supporting frontier and open-weight models; early tests show it matches Claude Managed Agents accuracy at ~30% lower token usage, with up to 75% cost savings routing to GLM-5.2.
+The second annual competition features a record 311% increase in robot participants and a 138% increase in teams. The 50 events split into 30 autonomous sports and 20 work-scenario tasks targeting retail, food service, assembly, and warehousing — revealing China's expected deployment priorities.
 
-Source: [omarsar0](https://x.com/omarsar0/status/2090138030296219973)
+Source: [Forbes](https://www.forbes.com/sites/johnkoetsier/2026/08/19/the-world-humanoid-robot-games-events-are-a-market-map/)
 
-### Microsoft's Agent Lightning v1.0 trains agents inside the harness via RL
+### Temporal in talks to raise $500M at $12B valuation, doubling since February Series D
 
-Microsoft shared research on post-training agents within their harness via an endpoint proxy; with ~6K examples it lifted Qwen3.5-9B on SWE-bench Verified from 41.8% to 56.4%.
+The AI agent orchestration platform, whose largest customer is OpenAI, is negotiating a raise that would more than double its $5B valuation from February's $300M Series D led by a16z. The round has not closed and terms could still change.
 
-Source: [omarsar0](https://x.com/omarsar0/status/2090078336697733531)
+Source: [TNW](https://thenextweb.com/news/temporal-500m-raise-12bn-valuation)
 
-### DeepSeek-V4-Pro serving optimizations deliver big gains on H20 GPUs
+### Google launches new AI study tools across Search and Gemini with interactive visuals and 3D simulations
 
-LMSYS and Ant OSS detailed serving the 1.6T MoE DeepSeek-V4-Pro on H20 GPUs with a custom SGLang stack: 271 output tokens/s at batch size 1, 1M-token prefill in 43.7s, and >2x per-GPU decode throughput.
+Students can now generate custom practice quizzes, access a study hub, create multi-step research reports via Gemini Live, and get lens-based problem-solving help. The package also includes interactive 3D simulations and study documents generated from uploaded files.
 
-Source: [lmsysorg](https://x.com/lmsysorg/status/2090114644396675408)
+Source: [TechCrunch](https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/)
+
+## Research & Papers
+
+- **[What is missing from AI post-training AI: an empirical analysis](https://arxiv.org/abs/2608.19072)** — A comprehensive study finds current LLM agents excel at execution — launching training runs, evaluating checkpoints — but consistently lack iterative innovation capability, revealing a fundamental gap in AI-for-AI research pipelines. *(arXiv)*
+- **[Harness continual learning: adaptation beyond model parameters](https://arxiv.org/abs/2608.19013)** — Extends continual learning to agent harnesses — prompts, memories, tools, skills, and routing rules — showing that collective adaptation of the full harness outperforms model-parameter-only approaches by a wide margin. *(arXiv)*
+- **[DART-SD: diamond-topology aware self-distillation for multi-turn tool-calling agents](https://arxiv.org/abs/2608.18524)** — Proposes replacing full-length trajectory imitation with sub-goal structure exploitation in self-distillation, achieving significant gains for multi-turn tool-calling agents without requiring complete trajectory data. *(arXiv)*
+- **[Preference reasoning under indeterminacy in large language models](https://arxiv.org/abs/2608.18631)** — Evaluates LLMs on preference reasoning under incomplete information, ambiguous trade-offs, and strategic uncertainty, finding systematic failures across all frontier models in indeterminate scenarios. *(arXiv)*
+- **[HarnessRisk: a lifecycle-oriented benchmark for agent harness safety](https://huggingface.co/papers/2608.17597)** — A comprehensive benchmark evaluating agent harness safety across the full lifecycle — covering multiple attack mechanisms including prompt injection, tool poisoning, and memory corruption across operational settings. *(HuggingFace)*
+
+## Hardware & Robotics
+
+- **[World Humanoid Robot Games schedule acts as market map — 2,056 robots from 666 teams compete in Beijing](https://www.forbes.com/sites/johnkoetsier/2026/08/19/the-world-humanoid-robot-games-events-are-a-market-map/)** — The second annual competition opens August 22 with 50 events split into autonomous sports and real-world work scenarios, revealing China's expected deployment priorities in retail, food service, assembly, and hospitality. *(Forbes)*
+- **[China robot makers showcase humanoids at World Robot Conference as humanoid shipments rise 272% in H1](https://nypost.com/2026/08/19/business/china-robot-makers-show-off-humanoids-at-world-robot-conference/)** — Over 300 companies displayed humanoids sorting parcels, packing phones, and doing chores at the Beijing WRC. Global humanoid shipments reached ~19,000 units in H1 2026 with China accounting for 97% of volume. Nvidia's Jensen Huang's daughter made a surprise visit for Omniverse marketing. *(New York Post)*
+- **[Fort Robotics to go public through SPAC merger at $556.6M valuation](https://theaiinsider.tech/2026/08/19/robotics-safety-stack-company-fort-robotics-to-go-public-through-spac-merger/)** — The robotics safety platform merges with Newbury Street II Acquisition Corp. for ~$201M in gross proceeds. Its Trust Layer has 25 patents, Safety Integrity Level 3 certification, and 600+ customers including Agility Robotics, Google DeepMind, and Zoox. *(AI Insider)*
+- **[Construction begins on Kazakhstan's first humanoid robot production facility in Astana — $200M QAZBOT complex](https://kz.kursiv.media/en/2026-08-20/engk-nknk-construction-of-humanoid-robot-production-facility-begins-in-astana/)** — QAZBOT Technologies broke ground on a humanoid robot production and AI R&D facility, Kazakhstan's first such plant. Phase 1 investment is ~$200M, with AGIBOT as strategic technology partner for manufacturing, logistics, healthcare, and education applications. *(Kursiv Media)*
+
+## Tools & Startups
+
+- **[Google launches new AI study tools across Search and Gemini with 3D simulations and practice quizzes](https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/)** — Students can generate custom study materials, access interactive visuals, get lens-based problem-solving help, and create multi-step research reports via Gemini Live. The study hub centralizes all AI-powered learning features in one place. *(TechCrunch)*
+- **[MatrAIx Persona-8B: population-scale simulated user infrastructure released](https://github.com/MatrAIx-ai/MatrAIx-Persona-8B)** — An open-source framework with 8.3 billion simulated user personas across 1,290 attributes, enabling AI product testing with heterogeneous virtual users before real-world deployment. Targets both interactive products and AI system evaluation. *(GitHub)*
+- **[Rove — open-source parallel coding agent multiplexer](https://github.com/Sma1lboy/rove)** — Runs Claude Code, Codex, Copilot, Kimi, or any CLI coding agent in parallel, each on its own git worktree and branch. Sessions persist after disconnect and support SSH reattachment for long-running multi-agent coding workflows. *(GitHub)*
+
+## Money & Markets
+
+- **[Nebius raises $4.5B in convertible bonds to build AI data centres and buy GPUs](https://thenextweb.com/news/nebius-4-5bn-convertible-bonds-data-centres)** — The AI cloud provider's $4.5B offering splits into $2.75B of 2030 notes and $1.75B of 2034 notes. Goldman Sachs, JPMorgan, Citi, and BofA are managing the sale — the second major convertible raise for the company in 2026. *(TNW)*
+- **[Rillet raises $100M Series C at $1B valuation — 2 years after emerging from stealth](https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/)** — Iconiq Growth led the round with a16z and Sequoia returning. The AI accounting startup automates enterprise general ledger operations using AI agents, reaching unicorn status just two years after its public debut. *(TechCrunch)*
+- **[Prevalent AI raises $22M to fix the data problem behind failing AI projects](https://thenextweb.com/news/prevalent-ai-22m-integrity-growth-partners-knowledge-graph)** — London-based enterprise AI data company founded by GCHQ alumni raised from Integrity Growth Partners. Profitable since first customer, ARR more than doubled in the past 12 months — first primary capital in 9 years. *(TNW)*
+- **[Medly AI raises $8M seed to put an AI tutor in front of every UK exam student](https://thenextweb.com/news/medly-ai-8m-seed-felix-capital-gcse-tutoring)** — Felix Capital led the round with Eka Ventures and Ada Ventures returning. The London-based platform built by former NHS doctors covers GCSEs, A-levels, IB, and SAT exams, and already has 400K+ UK users. *(TNW)*
