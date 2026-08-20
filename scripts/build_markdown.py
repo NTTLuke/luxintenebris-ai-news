@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate markdown editions of Lux in Tenebris.
+"""Generate publication files for Lux in Tenebris.
 
 Discovers all editions (root edition.json = current, archive/<date>/edition.json
 = past editions; the five oldest archive dirs are HTML-only and get header +
@@ -7,6 +7,7 @@ lead extracted from their index.html) and writes:
   - editions/<date>.md  (markdown edition of every edition)
   - editions/index.md   (reverse-chronological index)
   - latest.md           (markdown copy of the current edition)
+  - rss.xml             (RSS 2.0 feed of current and archived editions)
 
 Pure Python 3 stdlib, deterministic, idempotent, no network.
 Run from the repo root: python3 scripts/build_markdown.py
@@ -16,7 +17,9 @@ import html
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, time, timezone
+from email.utils import format_datetime
+from xml.etree import ElementTree as ET
 
 BASE = "https://luxintenebris.news"
 TAGLINE = (
@@ -24,6 +27,8 @@ TAGLINE = (
     "from the last 24 hours."
 )
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+ET.register_namespace("atom", "http://www.w3.org/2005/Atom")
 
 
 def _clean(s):
@@ -164,6 +169,76 @@ def edition_markdown(d, payload, permalink):
     return "\n".join(lines).rstrip() + "\n"
 
 
+def edition_permalink(d, is_root):
+    """Return the canonical public URL for an edition."""
+    return BASE + "/" if is_root else "{}/archive/{}/".format(BASE, d.isoformat())
+
+
+def _rss_description(payload):
+    """Build a compact HTML summary suitable for RSS readers."""
+    lead = payload.get("lead") or {}
+    parts = []
+    summary = (lead.get("summary") or "").strip()
+    if summary:
+        parts.append("<p>{}</p>".format(html.escape(summary)))
+
+    top_stories = payload.get("top_stories") or []
+    if top_stories:
+        parts.append("<p><strong>Top stories</strong></p><ul>")
+        for story in top_stories:
+            title = html.escape(story.get("title", "Untitled"))
+            url = story.get("url")
+            if url:
+                title = '<a href="{}">{}</a>'.format(html.escape(url, quote=True), title)
+            parts.append("<li>{}</li>".format(title))
+        parts.append("</ul>")
+    return "".join(parts) or "<p>Read today’s AI dispatch.</p>"
+
+
+def write_rss(editions):
+    """Write an RSS 2.0 feed for every available edition."""
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+    ET.SubElement(channel, "title").text = "Lux in Tenebris — AI dispatches"
+    ET.SubElement(channel, "link").text = BASE + "/"
+    ET.SubElement(channel, "description").text = TAGLINE
+    ET.SubElement(channel, "language").text = "en"
+    ET.SubElement(
+        channel,
+        "{http://www.w3.org/2005/Atom}link",
+        href=BASE + "/rss.xml",
+        rel="self",
+        type="application/rss+xml",
+    )
+
+    if editions:
+        latest_date = editions[0][0]
+        ET.SubElement(channel, "lastBuildDate").text = format_datetime(
+            datetime.combine(latest_date, time(12), tzinfo=timezone.utc), usegmt=True
+        )
+
+    for d, payload, is_root in editions:
+        permalink = edition_permalink(d, is_root)
+        issue = payload.get("issue_no")
+        issue_label = " — No. {}".format(issue) if issue not in (None, "", "?") else ""
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = "Lux in Tenebris — AI dispatches · {}{}".format(
+            _human_date(d), issue_label
+        )
+        ET.SubElement(item, "link").text = permalink
+        guid = ET.SubElement(item, "guid", isPermaLink="true")
+        guid.text = permalink
+        ET.SubElement(item, "pubDate").text = format_datetime(
+            datetime.combine(d, time(12), tzinfo=timezone.utc), usegmt=True
+        )
+        ET.SubElement(item, "description").text = _rss_description(payload)
+
+    ET.indent(rss, space="  ")
+    ET.ElementTree(rss).write(
+        os.path.join(ROOT, "rss.xml"), encoding="utf-8", xml_declaration=True
+    )
+
+
 def main():
     editions = load_editions()
     outdir = os.path.join(ROOT, "editions")
@@ -177,10 +252,7 @@ def main():
     ]
     written = 0
     for d, payload, is_root in editions:
-        if is_root:
-            permalink = BASE + "/"
-        else:
-            permalink = "{}/archive/{}/".format(BASE, d.isoformat())
+        permalink = edition_permalink(d, is_root)
         md = edition_markdown(d, payload, permalink)
         fname = "{}.md".format(d.isoformat())
         with open(os.path.join(outdir, fname), "w", encoding="utf-8") as f:
@@ -196,7 +268,8 @@ def main():
 
     with open(os.path.join(outdir, "index.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(index_lines) + "\n")
-    print("build_markdown: {} editions written to editions/ + latest.md".format(written))
+    write_rss(editions)
+    print("build_markdown: {} editions written to editions/ + latest.md + rss.xml".format(written))
 
 
 if __name__ == "__main__":
