@@ -27,6 +27,7 @@ TAGLINE = (
     "from the last 24 hours."
 )
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RSS_MAX_ITEMS = 50  # keep the feed from growing forever as the archive does
 
 ET.register_namespace("atom", "http://www.w3.org/2005/Atom")
 
@@ -196,7 +197,12 @@ def _rss_description(payload):
 
 
 def write_rss(editions):
-    """Write an RSS 2.0 feed for every available edition."""
+    """Write an RSS 2.0 feed of the most recent editions.
+
+    `editions` is sorted newest first (see load_editions), so capping to
+    RSS_MAX_ITEMS keeps the feed from growing without bound as the archive
+    does — readers only ever care about recent issues anyway.
+    """
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
     ET.SubElement(channel, "title").text = "Lux in Tenebris — AI dispatches"
@@ -217,7 +223,7 @@ def write_rss(editions):
             datetime.combine(latest_date, time(12), tzinfo=timezone.utc), usegmt=True
         )
 
-    for d, payload, is_root in editions:
+    for d, payload, is_root in editions[:RSS_MAX_ITEMS]:
         permalink = edition_permalink(d, is_root)
         issue = payload.get("issue_no")
         issue_label = " — No. {}".format(issue) if issue not in (None, "", "?") else ""
