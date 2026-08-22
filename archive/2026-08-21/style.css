@@ -378,16 +378,6 @@ a:focus-visible{ outline:2px solid var(--lux); outline-offset:3px; border-radius
   background: var(--rule);
 }
 
-/* Variant for when trending-wrap sits inside a .section that already has its
-   own .section-head title + rule (e.g. Free Models) — the wrap's own
-   top border/margin/divider-offset would just double that rule. */
-.trending-wrap--in-section {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: 0;
-}
-.trending-wrap--in-section::before { top: 0; }
-
 .trending-col {
   padding: 0 32px;
 }
@@ -482,18 +472,6 @@ a:focus-visible{ outline:2px solid var(--lux); outline-offset:3px; border-radius
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-top: -1px;
-}
-
-.section-note {
-  grid-column: 1 / -1;
-  font-family: var(--sans);
-  font-size: 10.5px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--muted);
-  margin-top: 20px;
-  padding-top: 14px;
-  border-top: 1px solid var(--rule);
 }
 
 @media (max-width: 900px) {

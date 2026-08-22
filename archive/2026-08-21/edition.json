@@ -1,0 +1,272 @@
+{
+  "issue_no": 57,
+  "date_iso": "2026-08-21",
+  "date_human": "August 21, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Nous Research",
+    "image": "images/lead_2026-08-21.jpg",
+    "title": "Hermes Agent launches fully open-source, taking on paid agents",
+    "summary": "Nous Research released Hermes Agent, an open-source agent platform with persistent remote compute, any-model/provider support and Mixture of Agents blending. It responds directly to Grok Bot's remote-compute claims, positioning cloud instances at far lower cost, and highlights self-improving agents with no vendor lock-in.",
+    "source": "NousResearch",
+    "date": "2026-08-20",
+    "url": "https://x.com/NousResearch/status/2090432645528252532"
+  },
+  "top_stories": [
+    {
+      "title": "NVIDIA in $6B move to acquire or back a top-performing model factory",
+      "summary": "A roughly $6B deal to acquire or heavily invest in a model factory whose models outperform reference benchmarks, flagged by Latent Space as the emerging AI-native company landscape takes shape.",
+      "source": "swyx",
+      "date": "2026-08-21",
+      "url": "https://x.com/swyx/status/2090577677916807429"
+    },
+    {
+      "title": "Chinese humanoid makers admit the real obstacle: humans are still better",
+      "summary": "At the World Robot Conference, Unitree's founder said robots still struggle to generalize while its shares fell 18.7% after an IPO-day surge; Keenon said it has shipped over 100,000 robots and expects 150,000 by end of next year.",
+      "source": "CNBC",
+      "date": "2026-08-21",
+      "url": "https://www.cnbc.com/2026/08/21/chinese-humanoid-robots-face-challenge-of-their-own-capabilities.html"
+    },
+    {
+      "title": "Dots3-note: open-weight 280B MoE built for long-horizon autonomy",
+      "summary": "A 280B-total/16B-active MoE with 512K context and recursive self-critique, featuring a test-time agentic value model (TEMPO) and a perfect 42/42 in a math-proof harness at IMO 2026. Free preview on OpenRouter.",
+      "source": "omarsar0",
+      "date": "2026-08-20",
+      "url": "https://x.com/omarsar0/status/2090445786924413226"
+    },
+    {
+      "title": "Callosum raises $100M seed to route AI workloads across chips and models",
+      "summary": "One of Europe's largest seed rounds, led by Atomico with Plural, DCVC and the UK Sovereign AI Fund, for London-based AI inference orchestration.",
+      "source": "Tech Startups",
+      "date": "2026-08-20",
+      "url": "https://techstartups.com/2026/08/20/uk-ai-startup-callosum-raises-100m-to-rethink-how-ai-uses-models-and-chips-backed-by-sovereign-ai-fund/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "image": "images/section_research_2026-08-21.jpg",
+      "items": [
+        {
+          "title": "SemaPLC: verification-gated PLC code generation",
+          "summary": "A project-grounded, verification-gated agent harness that only declares tasks complete when external checks pass. Record 72.6% mean strict verified pass rate across seven models and a dynamic-behavior score of 52.2 vs 22.4-31.4 for baselines on live PLC runtime traces.",
+          "source": "arXiv",
+          "date": "2026-08-19",
+          "url": "https://arxiv.org/abs/2608.18565"
+        },
+        {
+          "title": "SPADE: self-play in adaptive synthetic executable environments",
+          "summary": "One LLM writes executable Gym-style environments while another solves them. Scaling to 30B parameters improves over the strongest fixed-environment baseline by +5.3 on average across eight held-out benchmarks, and lifts tool-use by +5.7 on BFCL-v4 and +13.9 on ACEBench-Agent.",
+          "source": "arXiv",
+          "date": "2026-08-19",
+          "url": "https://arxiv.org/abs/2608.19197"
+        },
+        {
+          "title": "FM-Bench: long-horizon management with competing agents",
+          "summary": "LLMs run a football club for 20 in-game years with ~340-400 decision stops and 26 tools; all 15 frontier models finish where scripted baselines die, and claude-fable-5 tops both solo and Arena tracks with the title rotating among ten models.",
+          "source": "arXiv",
+          "date": "2026-08-19",
+          "url": "https://arxiv.org/abs/2608.18423"
+        },
+        {
+          "title": "SkillGate: training in-policy skill selection for long-horizon agents",
+          "summary": "Giving skill-naming tokens an action-local advantage in a 16-candidate slate lifts a 9B policy from 40.8% to 53.2% trial success across five agentic benchmarks, while cutting misleading skill exposure by two thirds.",
+          "source": "arXiv",
+          "date": "2026-08-19",
+          "url": "https://arxiv.org/abs/2608.18852"
+        },
+        {
+          "title": "Study: agents lock into post-training strategies early",
+          "summary": "Examining a large set of public post-training trajectories, researchers find agents fix their initial training strategy early and then only adjust locally. Experience-driven scaffolds gave +12.6 on GSM8K and +40.8 on HumanEval, while extra inference compute did little to enable mid-execution shifts.",
+          "source": "omarsar0",
+          "date": "2026-08-20",
+          "url": "https://x.com/omarsar0/status/2090466402809561334"
+        }
+      ]
+    },
+    {
+      "title": "Open Source & Models",
+      "image": "images/section_open-source_2026-08-21.jpg",
+      "items": [
+        {
+          "title": "Yutori AI's Navigator web agent, built on post-trained Qwen models",
+          "summary": "Together AI showcases Navigator, which reportedly achieves 2-5x better cost and speed than closed models on web tasks via ~80% prefix cache hit rates, speculative decoding, and heavy SFT+RL post-training of Qwen models.",
+          "source": "@togethercompute",
+          "date": "2026-08-21",
+          "url": "https://x.com/togethercompute/status/2090555766747140364"
+        },
+        {
+          "title": "Awesome Gemma repo centralizes model cards and fine-tuning recipes",
+          "summary": "Philipp Schmid's GitHub hub covers 16 Gemma variants with setup guides for Ollama/vLLM/LiteRT, fine-tuning recipes via Unsloth, Tunix and MLX, plus community projects.",
+          "source": "@_philschmid",
+          "date": "2026-08-20",
+          "url": "https://x.com/_philschmid/status/2090485095396180034"
+        },
+        {
+          "title": "Karpathy muses on extrapolating LLM architecture down to 'microgpt' scale",
+          "summary": "Very small, scalar-valued Python-with-loops model specs could anchor the extreme efficiency end of open-weights development, Karpathy argues — anything larger being a compilation problem. A design note, not a release.",
+          "source": "@karpathy",
+          "date": "2026-08-21",
+          "url": "https://x.com/karpathy/status/2090479399842054610"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "image": "images/section_tools_2026-08-21.jpg",
+      "items": [
+        {
+          "title": "Ox Alpha: free anonymous 'stealth' reasoning model on OpenRouter",
+          "summary": "Released via an anonymous third-party provider, it offers a 1M-token context window, text/image/video input and tool calling, positioned for coding and long-horizon agentic work.",
+          "source": "OpenRouter",
+          "date": "2026-08-20",
+          "url": "https://openrouter.ai/stealth/ox-alpha"
+        },
+        {
+          "title": "Binance now lets AI agents trade on its exchange",
+          "summary": "Agent applications can trade directly via MCP and other developer tooling, though Binance warns that agent 'keep-safes' remain largely the trader's responsibility. Rival exchanges are moving similarly.",
+          "source": "TechCrunch",
+          "date": "2026-08-20",
+          "url": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/"
+        },
+        {
+          "title": "Codacy Skills let coding agents set up test coverage",
+          "summary": "The third open-sourced entry in Codacy's Skills series lets agents discover code paths and auto-configure test coverage, keeping instrumentation and assertions in sync with agent-generated code.",
+          "source": "Codacy",
+          "date": "2026-08-20",
+          "url": "https://blog.codacy.com/introducing-codacy-skills-part-3-let-your-agent-set-up-test-coverage"
+        },
+        {
+          "title": "Show HN: Molecule.dev — AI-first composable package ecosystem",
+          "summary": "An open-source, AI-first composable package ecosystem launched on Show HN, aimed at letting agents compose and manage packages as modular building blocks.",
+          "source": "Hacker News",
+          "date": "2026-08-20",
+          "url": "https://news.ycombinator.com/item?id=49380202"
+        },
+        {
+          "title": "Show HN: luoluoAI — gateway for OpenAI and Claude protocols",
+          "summary": "An API gateway compatible with both the OpenAI and Anthropic Claude Messages formats, letting one endpoint serve tooling built for either protocol.",
+          "source": "Hacker News",
+          "date": "2026-08-20",
+          "url": "https://news.ycombinator.com/item?id=49381675"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-08-21",
+      "items": [
+        {"name": "harry0703/MoneyPrinterTurbo", "url": "https://github.com/harry0703/MoneyPrinterTurbo", "meta": "Python · 112.0k ★ · +2,221 today"},
+        {"name": "volcengine/OpenViking", "url": "https://github.com/volcengine/OpenViking", "meta": "Python · 30.6k ★ · +804 today"},
+        {"name": "chaitanyagiri/munder-difflin", "url": "https://github.com/chaitanyagiri/munder-difflin", "meta": "TypeScript · 2.9k ★ · +795 today"},
+        {"name": "mukul975/Anthropic-Cybersecurity-Skills", "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills", "meta": "Python · 30.1k ★ · +766 today"},
+        {"name": "akitaonrails/ai-memory", "url": "https://github.com/akitaonrails/ai-memory", "meta": "Rust · 3.3k ★ · +606 today"},
+        {"name": "nautechsystems/nautilus_trader", "url": "https://github.com/nautechsystems/nautilus_trader", "meta": "Rust · 26.6k ★ · +80 today"},
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 224.5k ★ · +1,894 today"},
+        {"name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "meta": "Shell · 274.5k ★ · +557 today"},
+        {"name": "jundot/omlx", "url": "https://github.com/jundot/omlx", "meta": "Python · 20.0k ★ · +472 today"},
+        {"name": "santifer/career-ops", "url": "https://github.com/santifer/career-ops", "meta": "JavaScript · 66.1k ★ · +198 today"},
+        {"name": "immich-app/immich", "url": "https://github.com/immich-app/immich", "meta": "TypeScript · 112.1k ★ · +128 today"},
+        {"name": "amadeusprotocol/node", "url": "https://github.com/amadeusprotocol/node", "meta": "Rust · 4.9k ★ · +1,397 today"},
+        {"name": "marceloprates/prettymaps", "url": "https://github.com/marceloprates/prettymaps", "meta": "Python · 13.4k ★ · +63 today"},
+        {"name": "genlayerlabs/genlayer-project-boilerplate", "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate", "meta": "TypeScript · 16.3k ★ · +430 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-08-21",
+      "items": [
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B open-weights LLM, new Qwen generation"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "GGUF quantized for local inference"},
+        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "Music generation model"},
+        {"name": "Qwen/Qwen3.8-27B-FP8", "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8", "meta": "FP8 quantized for efficient serving"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-FP8", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8", "meta": "Abliterated FP8 variant"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-MLX", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX", "meta": "Abliterated MLX variant for Apple Silicon"},
+        {"name": "deepseek-ai/DeepSeek-V4-Pro-0813", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813", "meta": "DeepSeek V4 Pro checkpoint (0813)"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Video generation model"},
+        {"name": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "meta": "Abliterated GGUF variant"},
+        {"name": "Qwen/Qwen3.8-2.4T-A95B", "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B", "meta": "MoE flagship, 2.4T total / 95B active"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Twin1 AI emerges from stealth with $20M seed for enterprise digital twins",
+      "source": "Tech Startups",
+      "date": "2026-08-20",
+      "url": "https://techstartups.com/2026/08/20/twin1-ai-emerges-from-stealth-with-20m-in-funding-to-give-every-professional-an-ai-powered-digital-twin/"
+    },
+    {
+      "title": "Astromech raises $20M at reported $3.8B valuation for AI predictive biology",
+      "source": "Tech Startups",
+      "date": "2026-08-20",
+      "url": "https://techstartups.com/2026/08/20/venture-capital-startup-funding-roundup-august-20-2026-aramco-ventures-bessemer-venture-partners-google-tribeca-venture-partners-y-combinator-more/"
+    },
+    {
+      "title": "NVIDIA is plotting its China comeback via a new LPU-based inference chip",
+      "source": "WCCFTech",
+      "date": "2026-08-20",
+      "url": "https://www.wccftech.com/nvidia-is-plotting-its-china-comeback-via-a-new-lpu-based-inference-chip-as-smic-rides-us-export-controls-to-a-virtual-china-monopoly/"
+    },
+    {
+      "title": "C3LM: chemical-plausibility-aware LLMs for single-step retrosynthesis",
+      "source": "arXiv",
+      "date": "2026-08-19",
+      "url": "https://arxiv.org/abs/2608.18940"
+    },
+    {
+      "title": "DA-LeWM: decision-metric alignment in latent world models",
+      "source": "arXiv",
+      "date": "2026-08-19",
+      "url": "https://arxiv.org/abs/2608.18746"
+    },
+    {
+      "title": "On-device 125M model autocompletes piano from MIDI",
+      "source": "Hacker News",
+      "date": "2026-08-20",
+      "url": "https://news.ycombinator.com/item?id=49373456"
+    },
+    {
+      "title": "Show HN: Pigame — pi+LLM plays black-box browser games",
+      "source": "Hacker News",
+      "date": "2026-08-21",
+      "url": "https://news.ycombinator.com/item?id=49382504"
+    },
+    {
+      "title": "Show HN: TakoVM — serverless file systems for AI agents",
+      "source": "Hacker News",
+      "date": "2026-08-21",
+      "url": "https://news.ycombinator.com/item?id=49382104"
+    },
+    {
+      "title": "Show HN: ParqDB — vector search in the browser from Parquet over HTTP",
+      "source": "Hacker News",
+      "date": "2026-08-21",
+      "url": "https://news.ycombinator.com/item?id=49382022"
+    },
+    {
+      "title": "Karpathy: capable agents are eroding traditional software abstractions",
+      "source": "karpathy",
+      "date": "2026-08-20",
+      "url": "https://x.com/karpathy/status/2090478783895929036"
+    },
+    {
+      "title": "Harvey highlighted as a template for AI-native companies",
+      "source": "omarsar0",
+      "date": "2026-08-20",
+      "url": "https://x.com/omarsar0/status/2090476536034197871"
+    }
+  ],
+  "spiked": {
+    "already ran": 4,
+    "out of window": 5,
+    "same story": 2,
+    "thin section": 3
+  }
+}

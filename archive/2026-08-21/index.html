@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · August 21, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 57 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>August 21, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>53 stories <span class="mk-note">(<span class="mk-beta">Beta</span> : <a href="making-of.html" class="mk-link" title="Replay how this issue assembled itself">See how this issue made itself</a>)</span></span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DwarfStar · DeepSeek V4 Flash 0731!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Valvoline Instant Oil Change Deals for August 2026, Per WIRED" data-b="According to WIRED, Valvoline is best known for retail automotive products like oil and additives, but it also runs roughly 2,100 Valvoline Instant Oil Change garages across the US, where the publication says oil changes can cost up to 50 percent less than at most dealerships and typically take around half an hour.
+
+The article, written by commerce editor Kat Merck, details several current offers. A $10 off coupon applies to a full-service conventional oil change and includes five quarts of Valvoline-brand motor oil, a filter, a lube and maintenance check, and tax. A $15 off coupon targets synthetic and synthetic blend oil changes, which WIRED recommends for hybrid and luxury vehicles, trucks that tow, and cars exposed to heavy stop-and-go traffic. A Subscribe and Save option offers discounts of up to 25 percent off when buying multiple containers of motor oil, gear oil, or transmission fluid. There is also a $5 rebate at farm stores for purchasing five quarts of Valvoline Motor Oil or one gallon of Premium Blue Heavy Diesel Engine Oil, limited to three per customer.
+
+WIRED notes that with more than 2,100 locations, there is likely a Valvoline within twenty minutes of most drivers, and suggests checking the coupon page or finding the nearest garage online before heading out.
+
+*An AI-written roundup of coupon promotions is a strange addition to a publication known for long-form journalism, but if it helps readers save money on basic maintenance, it earns its place.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline Instant Oil Change Deals for August 2026, Per WIRED</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta Quest Deals and Coupons for August 2026, per WIRED" data-b="WIRED has rounded up the Meta discounts available this August for shoppers eyeing the company&#x27;s virtual reality headsets or its smart glasses line. According to WIRED, Meta leads the market in smart eyewear and VR hardware, with its glasses-style wearables — fitted with speakers, microphones, cameras, and AI assistants — credited with popularizing the latest wave of &quot;face computers,&quot; even as their subtle design raises fresh privacy questions.
+
+The guide splits the headset lineup in two: the Quest 3 and the cheaper Quest 3S. The 3S offers a lower-resolution screen and less sharp pass-through, but current markdowns of up to $50 bring it as low as $250, with accessories also reduced by 20% — WIRED recommends the battery-equipped Elite Strap. Buying either headset earns $30 in Quest Cash, usable in-store on games, apps, or DLC once the device is activated. A Quest+ subscription yields at least two free games monthly, while bundle purchases add three months of Quest+ plus Batman: Arkham Shadow.
+
+For budget paths, refurbished Quest 3 units are listed from $380 with a one-year warranty, Touch Plus controllers, and charging accessories, while certified-refurbished Ray-Ban Meta glasses start at $239 and include free shipping and a 30-day return window.
+
+Coupon highlights include 10% off Arkham Shadow, Metro Awakening, and Beat Saber, plus 50% off first add-on purchases in Gorilla Tag and VAIL. Students and teachers verifying through the Education Purchase Program earn 10% off at checkout.
+
+*On paper, the refurbished-direct pricing and bundled Quest+ deals make this a rare window to enter VR cheaply — though the privacy trade-offs of the smart glasses deserve just as much attention as the discounts.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/meta-quest-promo-code/"><span class="tih">Meta Quest Deals and Coupons for August 2026, per WIRED</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nevada clears Tesla, Uber, and Waymo to run thousands of robotaxis around Las Vegas" data-b="Nevada regulators have approved permits that will let Tesla, Uber, and Waymo launch commercial robotaxi services in Clark County, the county encompassing Las Vegas. According to TechCrunch, the Nevada Transportation Authority voted unanimously on Thursday to grant the three companies the green light, with the combined permits potentially putting up to 8,000 robotaxis on the county&#x27;s roads over the next 12 months.
+
+Tesla&#x27;s permit covers up to 5,000 vehicles, while Waymo and Uber were each cleared for 1,000. Uber plans to operate through partnerships with Hyundai subsidiary Motional and Zoox, which already holds its own permit for 100 robotaxis.
+
+Whether those targets will actually be met remains unclear. As reported, Tesla&#x27;s Cybercab chief engineer, Eric Early, said during the meeting that 5,000 had always been a ceiling and that the company would be happy to reach roughly 2,500 within a year.
+
+The rapid, large-scale deployment could transform the region&#x27;s workforce, either generating new jobs maintaining, charging, and cleaning vehicles or displacing human taxi and gig drivers. Representatives from the Livery Operators Association and local taxi companies opposed the approvals, with attorney Kimberly Maxson-Rushton citing concerns about oversaturation of Nevada&#x27;s commercial transportation industry and overcrowded roadways, particularly the Golden Triangle near the airport. Uber, meanwhile, has advocated for a hybrid model that combines human drivers with robotaxis, a position that sets it apart from Waymo.
+
+*Whether Las Vegas becomes a robotaxi battleground or a blueprint will depend on who actually hits the road.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/"><span class="tih">Nevada clears Tesla, Uber, and Waymo to run thousands of robotaxis around Las Vegas</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Micro1&#x27;s gross revenue run rate quintuples to $500M as AI data demand booms" data-b="The boom in demand for exclusive AI training data is fueling rapid growth among data-labeling startups, and Micro1 is among the fastest risers, according to TechCrunch.
+
+The four-year-old company grew its gross annual run rate from $100 million to $500 million in just eight months, a person familiar with the matter told TechCrunch. Micro1 keeps roughly 60 to 70 percent of that, leaving its net annual run rate between $150 million and $200 million.
+
+That still trails rivals like Mercor and Handshake, which report far larger figures, but the growth suggests the market can sustain multiple players at once, TechCrunch notes. Some researchers believe future spending on training data could rival compute budgets.
+
+Micro1&#x27;s contract sizes are growing at an accelerating pace and margins are expected to widen, the outlet reports. The startup increasingly generates synthetic data without human involvement — for instance, automated descriptions of video content — and some datasets can be resold to multiple customers, pushing gross margins on that &quot;off-the-shelf&quot; data as high as 80 to 90 percent.
+
+That resale practice has sparked controversy, with critics concerned that such data reaching Chinese AI developers could make their models as strong as top U.S. ones. Founder Ali Ansari countered on X that Micro1, unlike some competitors, does not sell to Chinese model makers.
+
+Micro1, which began as an AI recruiting startup, is also building a robotics pre-training dataset from hundreds of generalists recording everyday object interactions. It raised a Series A at a $500 million valuation last September and may have recently closed a higher round.
+
+*It is striking how synthetic generation and data resale have turned labeling from a commoditized service into a scalable, high-margin product.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/"><span class="tih">Micro1&#x27;s gross revenue run rate quintuples to $500M as AI data demand booms</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Founder behind $1B in venture funding breaks down what investors actually expect of startups" data-b="Investors back founders who genuinely understand the financial reality of their own business, according to a new episode of the Build Mode podcast first reported by TechCrunch. Host Isabelle Johannessen sits down with Sasha Orloff, founder and CEO of Puzzle and a Startup Battlefield alum, whose companies have raised more than $1 billion collectively.
+
+Orloff warns that messy financial data, misunderstood metrics, or waiting until cash is nearly depleted to begin fundraising can cost founders leverage, valuation, and even a term sheet. He recounts nearly losing a deal because his data room was not ready. The episode covers the financial metrics founders should know by heart before pitching, and how due-diligence expectations evolve from pre-seed and seed through Series A, B, and later stages.
+
+Revenue growth and the quality of that revenue are singled out as critical fundraising metrics, with runway, margins, sales efficiency, and profitability all feeding into investor decisions. The broader message: VCs do not expect perfection — they expect founders to understand the reality of their business, including what is not working, which can make for a stronger pitch. Financial organization and compliance, Orloff says, can influence investor confidence and startup valuations. His own frustrations with fundraising and finance ultimately led him to build Puzzle, and he reflects on how AI could change the way startups manage accounting and assess their financial health.
+
+*A pitch may win a meeting, but the data room is what closes the term sheet — worth a reminder for every founder who puts off their financials.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/video/learn-what-vcs-actually-want-from-a-founder-whos-raised-1b/"><span class="tih">Founder behind $1B in venture funding breaks down what investors actually expect of startups</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Valvoline Instant Oil Change Deals for August 2026, Per WIRED" data-b="According to WIRED, Valvoline is best known for retail automotive products like oil and additives, but it also runs roughly 2,100 Valvoline Instant Oil Change garages across the US, where the publication says oil changes can cost up to 50 percent less than at most dealerships and typically take around half an hour.
+
+The article, written by commerce editor Kat Merck, details several current offers. A $10 off coupon applies to a full-service conventional oil change and includes five quarts of Valvoline-brand motor oil, a filter, a lube and maintenance check, and tax. A $15 off coupon targets synthetic and synthetic blend oil changes, which WIRED recommends for hybrid and luxury vehicles, trucks that tow, and cars exposed to heavy stop-and-go traffic. A Subscribe and Save option offers discounts of up to 25 percent off when buying multiple containers of motor oil, gear oil, or transmission fluid. There is also a $5 rebate at farm stores for purchasing five quarts of Valvoline Motor Oil or one gallon of Premium Blue Heavy Diesel Engine Oil, limited to three per customer.
+
+WIRED notes that with more than 2,100 locations, there is likely a Valvoline within twenty minutes of most drivers, and suggests checking the coupon page or finding the nearest garage online before heading out.
+
+*An AI-written roundup of coupon promotions is a strange addition to a publication known for long-form journalism, but if it helps readers save money on basic maintenance, it earns its place.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline Instant Oil Change Deals for August 2026, Per WIRED</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta Quest Deals and Coupons for August 2026, per WIRED" data-b="WIRED has rounded up the Meta discounts available this August for shoppers eyeing the company&#x27;s virtual reality headsets or its smart glasses line. According to WIRED, Meta leads the market in smart eyewear and VR hardware, with its glasses-style wearables — fitted with speakers, microphones, cameras, and AI assistants — credited with popularizing the latest wave of &quot;face computers,&quot; even as their subtle design raises fresh privacy questions.
+
+The guide splits the headset lineup in two: the Quest 3 and the cheaper Quest 3S. The 3S offers a lower-resolution screen and less sharp pass-through, but current markdowns of up to $50 bring it as low as $250, with accessories also reduced by 20% — WIRED recommends the battery-equipped Elite Strap. Buying either headset earns $30 in Quest Cash, usable in-store on games, apps, or DLC once the device is activated. A Quest+ subscription yields at least two free games monthly, while bundle purchases add three months of Quest+ plus Batman: Arkham Shadow.
+
+For budget paths, refurbished Quest 3 units are listed from $380 with a one-year warranty, Touch Plus controllers, and charging accessories, while certified-refurbished Ray-Ban Meta glasses start at $239 and include free shipping and a 30-day return window.
+
+Coupon highlights include 10% off Arkham Shadow, Metro Awakening, and Beat Saber, plus 50% off first add-on purchases in Gorilla Tag and VAIL. Students and teachers verifying through the Education Purchase Program earn 10% off at checkout.
+
+*On paper, the refurbished-direct pricing and bundled Quest+ deals make this a rare window to enter VR cheaply — though the privacy trade-offs of the smart glasses deserve just as much attention as the discounts.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/meta-quest-promo-code/"><span class="tih">Meta Quest Deals and Coupons for August 2026, per WIRED</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nevada clears Tesla, Uber, and Waymo to run thousands of robotaxis around Las Vegas" data-b="Nevada regulators have approved permits that will let Tesla, Uber, and Waymo launch commercial robotaxi services in Clark County, the county encompassing Las Vegas. According to TechCrunch, the Nevada Transportation Authority voted unanimously on Thursday to grant the three companies the green light, with the combined permits potentially putting up to 8,000 robotaxis on the county&#x27;s roads over the next 12 months.
+
+Tesla&#x27;s permit covers up to 5,000 vehicles, while Waymo and Uber were each cleared for 1,000. Uber plans to operate through partnerships with Hyundai subsidiary Motional and Zoox, which already holds its own permit for 100 robotaxis.
+
+Whether those targets will actually be met remains unclear. As reported, Tesla&#x27;s Cybercab chief engineer, Eric Early, said during the meeting that 5,000 had always been a ceiling and that the company would be happy to reach roughly 2,500 within a year.
+
+The rapid, large-scale deployment could transform the region&#x27;s workforce, either generating new jobs maintaining, charging, and cleaning vehicles or displacing human taxi and gig drivers. Representatives from the Livery Operators Association and local taxi companies opposed the approvals, with attorney Kimberly Maxson-Rushton citing concerns about oversaturation of Nevada&#x27;s commercial transportation industry and overcrowded roadways, particularly the Golden Triangle near the airport. Uber, meanwhile, has advocated for a hybrid model that combines human drivers with robotaxis, a position that sets it apart from Waymo.
+
+*Whether Las Vegas becomes a robotaxi battleground or a blueprint will depend on who actually hits the road.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/"><span class="tih">Nevada clears Tesla, Uber, and Waymo to run thousands of robotaxis around Las Vegas</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Micro1&#x27;s gross revenue run rate quintuples to $500M as AI data demand booms" data-b="The boom in demand for exclusive AI training data is fueling rapid growth among data-labeling startups, and Micro1 is among the fastest risers, according to TechCrunch.
+
+The four-year-old company grew its gross annual run rate from $100 million to $500 million in just eight months, a person familiar with the matter told TechCrunch. Micro1 keeps roughly 60 to 70 percent of that, leaving its net annual run rate between $150 million and $200 million.
+
+That still trails rivals like Mercor and Handshake, which report far larger figures, but the growth suggests the market can sustain multiple players at once, TechCrunch notes. Some researchers believe future spending on training data could rival compute budgets.
+
+Micro1&#x27;s contract sizes are growing at an accelerating pace and margins are expected to widen, the outlet reports. The startup increasingly generates synthetic data without human involvement — for instance, automated descriptions of video content — and some datasets can be resold to multiple customers, pushing gross margins on that &quot;off-the-shelf&quot; data as high as 80 to 90 percent.
+
+That resale practice has sparked controversy, with critics concerned that such data reaching Chinese AI developers could make their models as strong as top U.S. ones. Founder Ali Ansari countered on X that Micro1, unlike some competitors, does not sell to Chinese model makers.
+
+Micro1, which began as an AI recruiting startup, is also building a robotics pre-training dataset from hundreds of generalists recording everyday object interactions. It raised a Series A at a $500 million valuation last September and may have recently closed a higher round.
+
+*It is striking how synthetic generation and data resale have turned labeling from a commoditized service into a scalable, high-margin product.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/"><span class="tih">Micro1&#x27;s gross revenue run rate quintuples to $500M as AI data demand booms</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Founder behind $1B in venture funding breaks down what investors actually expect of startups" data-b="Investors back founders who genuinely understand the financial reality of their own business, according to a new episode of the Build Mode podcast first reported by TechCrunch. Host Isabelle Johannessen sits down with Sasha Orloff, founder and CEO of Puzzle and a Startup Battlefield alum, whose companies have raised more than $1 billion collectively.
+
+Orloff warns that messy financial data, misunderstood metrics, or waiting until cash is nearly depleted to begin fundraising can cost founders leverage, valuation, and even a term sheet. He recounts nearly losing a deal because his data room was not ready. The episode covers the financial metrics founders should know by heart before pitching, and how due-diligence expectations evolve from pre-seed and seed through Series A, B, and later stages.
+
+Revenue growth and the quality of that revenue are singled out as critical fundraising metrics, with runway, margins, sales efficiency, and profitability all feeding into investor decisions. The broader message: VCs do not expect perfection — they expect founders to understand the reality of their business, including what is not working, which can make for a stronger pitch. Financial organization and compliance, Orloff says, can influence investor confidence and startup valuations. His own frustrations with fundraising and finance ultimately led him to build Puzzle, and he reflects on how AI could change the way startups manage accounting and assess their financial health.
+
+*A pitch may win a meeting, but the data room is what closes the term sheet — worth a reminder for every founder who puts off their financials.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/video/learn-what-vcs-actually-want-from-a-founder-whos-raised-1b/"><span class="tih">Founder behind $1B in venture funding breaks down what investors actually expect of startups</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/NousResearch/status/2090432645528252532" target="_blank" rel="noopener">
+    <img src="images/lead_2026-08-21.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Nous Research</p>
+        <h1>Hermes Agent launches fully open-source, taking on paid agents</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Nous Research released Hermes Agent, an open-source agent platform with persistent remote compute, any-model/provider support and Mixture of Agents blending. It responds directly to Grok Bot's remote-compute claims, positioning cloud instances at far lower cost, and highlights self-improving agents with no vendor lock-in.</p>
+        <p class="byline"><span class="src">NousResearch</span> · <span>2026-08-20</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">0:57</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-08-21.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/swyx/status/2090577677916807429" target="_blank" rel="noopener">
+    <h3>NVIDIA in $6B move to acquire or back a top-performing model factory</h3>
+    <p>A roughly $6B deal to acquire or heavily invest in a model factory whose models outperform reference benchmarks, flagged by Latent Space as the emerging AI-native company landscape takes shape.</p>
+    <p class="byline"><span class="src">swyx</span> · 2026-08-21</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.cnbc.com/2026/08/21/chinese-humanoid-robots-face-challenge-of-their-own-capabilities.html" target="_blank" rel="noopener">
+    <h3>Chinese humanoid makers admit the real obstacle: humans are still better</h3>
+    <p>At the World Robot Conference, Unitree's founder said robots still struggle to generalize while its shares fell 18.7% after an IPO-day surge; Keenon said it has shipped over 100,000 robots and expects 150,000 by end of next year.</p>
+    <p class="byline"><span class="src">CNBC</span> · 2026-08-21</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/omarsar0/status/2090445786924413226" target="_blank" rel="noopener">
+    <h3>Dots3-note: open-weight 280B MoE built for long-horizon autonomy</h3>
+    <p>A 280B-total/16B-active MoE with 512K context and recursive self-critique, featuring a test-time agentic value model (TEMPO) and a perfect 42/42 in a math-proof harness at IMO 2026. Free preview on OpenRouter.</p>
+    <p class="byline"><span class="src">omarsar0</span> · 2026-08-20</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research_2026-08-21.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.18565" target="_blank" rel="noopener">
+    <h4>SemaPLC: verification-gated PLC code generation</h4>
+    <p>A project-grounded, verification-gated agent harness that only declares tasks complete when external checks pass. Record 72.6% mean strict verified pass rate across seven models and a dynamic-behavior score of 52.2 vs 22.4-31.4 for baselines on live PLC runtime traces.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.19197" target="_blank" rel="noopener">
+    <h4>SPADE: self-play in adaptive synthetic executable environments</h4>
+    <p>One LLM writes executable Gym-style environments while another solves them. Scaling to 30B parameters improves over the strongest fixed-environment baseline by +5.3 on average across eight held-out benchmarks, and lifts tool-use by +5.7 on BFCL-v4 and +13.9 on ACEBench-Agent.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.18423" target="_blank" rel="noopener">
+    <h4>FM-Bench: long-horizon management with competing agents</h4>
+    <p>LLMs run a football club for 20 in-game years with ~340-400 decision stops and 26 tools; all 15 frontier models finish where scripted baselines die, and claude-fable-5 tops both solo and Arena tracks with the title rotating among ten models.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.18852" target="_blank" rel="noopener">
+    <h4>SkillGate: training in-policy skill selection for long-horizon agents</h4>
+    <p>Giving skill-naming tokens an action-local advantage in a 16-candidate slate lifts a 9B policy from 40.8% to 53.2% trial success across five agentic benchmarks, while cutting misleading skill exposure by two thirds.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2090466402809561334" target="_blank" rel="noopener">
+    <h4>Study: agents lock into post-training strategies early</h4>
+    <p>Examining a large set of public post-training trajectories, researchers find agents fix their initial training strategy early and then only adjust locally. Experience-driven scaffolds gave +12.6 on GSM8K and +40.8 on HumanEval, while extra inference compute did little to enable mid-execution shifts.</p>
+    <p class="byline"><span class="src">omarsar0</span> · 2026-08-20</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source_2026-08-21.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/togethercompute/status/2090555766747140364" target="_blank" rel="noopener">
+    <h4>Yutori AI's Navigator web agent, built on post-trained Qwen models</h4>
+    <p>Together AI showcases Navigator, which reportedly achieves 2-5x better cost and speed than closed models on web tasks via ~80% prefix cache hit rates, speculative decoding, and heavy SFT+RL post-training of Qwen models.</p>
+    <p class="byline"><span class="src">@togethercompute</span> · 2026-08-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/_philschmid/status/2090485095396180034" target="_blank" rel="noopener">
+    <h4>Awesome Gemma repo centralizes model cards and fine-tuning recipes</h4>
+    <p>Philipp Schmid's GitHub hub covers 16 Gemma variants with setup guides for Ollama/vLLM/LiteRT, fine-tuning recipes via Unsloth, Tunix and MLX, plus community projects.</p>
+    <p class="byline"><span class="src">@_philschmid</span> · 2026-08-20</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/karpathy/status/2090479399842054610" target="_blank" rel="noopener">
+    <h4>Karpathy muses on extrapolating LLM architecture down to 'microgpt' scale</h4>
+    <p>Very small, scalar-valued Python-with-loops model specs could anchor the extreme efficiency end of open-weights development, Karpathy argues — anything larger being a compilation problem. A design note, not a release.</p>
+    <p class="byline"><span class="src">@karpathy</span> · 2026-08-21</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools_2026-08-21.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://openrouter.ai/stealth/ox-alpha" target="_blank" rel="noopener">
+    <h4>Ox Alpha: free anonymous 'stealth' reasoning model on OpenRouter</h4>
+    <p>Released via an anonymous third-party provider, it offers a 1M-token context window, text/image/video input and tool calling, positioned for coding and long-horizon agentic work.</p>
+    <p class="byline"><span class="src">OpenRouter</span> · 2026-08-20</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/" target="_blank" rel="noopener">
+    <h4>Binance now lets AI agents trade on its exchange</h4>
+    <p>Agent applications can trade directly via MCP and other developer tooling, though Binance warns that agent 'keep-safes' remain largely the trader's responsibility. Rival exchanges are moving similarly.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-08-20</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://blog.codacy.com/introducing-codacy-skills-part-3-let-your-agent-set-up-test-coverage" target="_blank" rel="noopener">
+    <h4>Codacy Skills let coding agents set up test coverage</h4>
+    <p>The third open-sourced entry in Codacy's Skills series lets agents discover code paths and auto-configure test coverage, keeping instrumentation and assertions in sync with agent-generated code.</p>
+    <p class="byline"><span class="src">Codacy</span> · 2026-08-20</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49380202" target="_blank" rel="noopener">
+    <h4>Show HN: Molecule.dev — AI-first composable package ecosystem</h4>
+    <p>An open-source, AI-first composable package ecosystem launched on Show HN, aimed at letting agents compose and manage packages as modular building blocks.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-20</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49381675" target="_blank" rel="noopener">
+    <h4>Show HN: luoluoAI — gateway for OpenAI and Claude protocols</h4>
+    <p>An API gateway compatible with both the OpenAI and Anthropic Claude Messages formats, letting one endpoint serve tooling built for either protocol.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-20</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">harry0703/MoneyPrinterTurbo</span>
+    <span class="t-meta">Python · 112.0k ★ · +2,221 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/volcengine/OpenViking" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">volcengine/OpenViking</span>
+    <span class="t-meta">Python · 30.6k ★ · +804 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/chaitanyagiri/munder-difflin" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">chaitanyagiri/munder-difflin</span>
+    <span class="t-meta">TypeScript · 2.9k ★ · +795 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">mukul975/Anthropic-Cybersecurity-Skills</span>
+    <span class="t-meta">Python · 30.1k ★ · +766 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/akitaonrails/ai-memory" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">akitaonrails/ai-memory</span>
+    <span class="t-meta">Rust · 3.3k ★ · +606 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/nautechsystems/nautilus_trader" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">nautechsystems/nautilus_trader</span>
+    <span class="t-meta">Rust · 26.6k ★ · +80 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 224.5k ★ · +1,894 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">obra/superpowers</span>
+    <span class="t-meta">Shell · 274.5k ★ · +557 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/jundot/omlx" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">jundot/omlx</span>
+    <span class="t-meta">Python · 20.0k ★ · +472 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/santifer/career-ops" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">santifer/career-ops</span>
+    <span class="t-meta">JavaScript · 66.1k ★ · +198 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/immich-app/immich" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">immich-app/immich</span>
+    <span class="t-meta">TypeScript · 112.1k ★ · +128 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/amadeusprotocol/node" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">amadeusprotocol/node</span>
+    <span class="t-meta">Rust · 4.9k ★ · +1,397 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/marceloprates/prettymaps" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">marceloprates/prettymaps</span>
+    <span class="t-meta">Python · 13.4k ★ · +63 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/genlayerlabs/genlayer-project-boilerplate" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">genlayerlabs/genlayer-project-boilerplate</span>
+    <span class="t-meta">TypeScript · 16.3k ★ · +430 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B open-weights LLM, new Qwen generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Qwen3.8-27B-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">unsloth/Qwen3.8-27B-GGUF</span>
+    <span class="t-meta">GGUF quantized for local inference</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-Music3" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">MiniMaxAI/MiniMax-Music3</span>
+    <span class="t-meta">Music generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B-FP8" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Qwen/Qwen3.8-27B-FP8</span>
+    <span class="t-meta">FP8 quantized for efficient serving</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">orcarouter/Qwen3.8-27B-Uncensored-FP8</span>
+    <span class="t-meta">Abliterated FP8 variant</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">orcarouter/Qwen3.8-27B-Uncensored-MLX</span>
+    <span class="t-meta">Abliterated MLX variant for Apple Silicon</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4-Pro-0813</span>
+    <span class="t-meta">DeepSeek V4 Pro checkpoint (0813)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Video generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">JonathanColetti/Qwen3.8-27B-Uncensored-GGUF</span>
+    <span class="t-meta">Abliterated GGUF variant</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Qwen/Qwen3.8-2.4T-A95B</span>
+    <span class="t-meta">MoE flagship, 2.4T total / 95B active</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">11</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://techstartups.com/2026/08/20/twin1-ai-emerges-from-stealth-with-20m-in-funding-to-give-every-professional-an-ai-powered-digital-twin/" target="_blank" rel="noopener"><span class="qh-title">Twin1 AI emerges from stealth with $20M seed for enterprise digital twins</span><span class="qh-src">Tech Startups</span></a></li>
+
+    <li><a href="https://techstartups.com/2026/08/20/venture-capital-startup-funding-roundup-august-20-2026-aramco-ventures-bessemer-venture-partners-google-tribeca-venture-partners-y-combinator-more/" target="_blank" rel="noopener"><span class="qh-title">Astromech raises $20M at reported $3.8B valuation for AI predictive biology</span><span class="qh-src">Tech Startups</span></a></li>
+
+    <li><a href="https://www.wccftech.com/nvidia-is-plotting-its-china-comeback-via-a-new-lpu-based-inference-chip-as-smic-rides-us-export-controls-to-a-virtual-china-monopoly/" target="_blank" rel="noopener"><span class="qh-title">NVIDIA is plotting its China comeback via a new LPU-based inference chip</span><span class="qh-src">WCCFTech</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.18940" target="_blank" rel="noopener"><span class="qh-title">C3LM: chemical-plausibility-aware LLMs for single-step retrosynthesis</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.18746" target="_blank" rel="noopener"><span class="qh-title">DA-LeWM: decision-metric alignment in latent world models</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49373456" target="_blank" rel="noopener"><span class="qh-title">On-device 125M model autocompletes piano from MIDI</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49382504" target="_blank" rel="noopener"><span class="qh-title">Show HN: Pigame — pi+LLM plays black-box browser games</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49382104" target="_blank" rel="noopener"><span class="qh-title">Show HN: TakoVM — serverless file systems for AI agents</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=49382022" target="_blank" rel="noopener"><span class="qh-title">Show HN: ParqDB — vector search in the browser from Parquet over HTTP</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://x.com/karpathy/status/2090478783895929036" target="_blank" rel="noopener"><span class="qh-title">Karpathy: capable agents are eroding traditional software abstractions</span><span class="qh-src">karpathy</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2090476536034197871" target="_blank" rel="noopener"><span class="qh-title">Harvey highlighted as a template for AI-native companies</span><span class="qh-src">omarsar0</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-08-21 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
