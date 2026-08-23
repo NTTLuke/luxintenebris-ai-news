@@ -1,0 +1,238 @@
+{
+  "issue_no": 58,
+  "date_iso": "2026-08-22",
+  "date_human": "August 22, 2026",
+  "notice": null,
+  "lead": {
+    "image": "images/lead_2026-08-22.jpg",
+    "kicker": "OpenAI price cut",
+    "title": "OpenAI cuts GPT-5.6 Sol prices by over 20% for three months",
+    "summary": "OpenAI slashed API and credit prices for GPT-5.6 Sol by more than a fifth for the next three months, now rolling out to eligible ChatGPT Work, Codex, Pro, Plus and Business plans. The move lands as flagship model competition keeps intensifying.",
+    "source": "OpenAI",
+    "date": "2026-08-21",
+    "url": "https://x.com/OpenAI/status/2090885187634905500"
+  },
+  "top_stories": [
+    {
+      "title": "Starcloud raises $250M extension for orbital AI compute at $2.3B valuation",
+      "summary": "Starcloud added $250M to its March Series A for AI data centers in space, with Nvidia among the backers.",
+      "source": "TechCrunch",
+      "date": "2026-08-21",
+      "url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/"
+    },
+    {
+      "title": "RealMan Robotics to deploy 1,000 humanoids in kitchens and pharmacies",
+      "summary": "RealMan plans roughly 1,000 RealBOT deployments this year, demoing medicine and food handling at the World Robot Conference.",
+      "source": "Aroged",
+      "date": "2026-08-21",
+      "url": "https://www.aroged.com/2026/08/21/this-year-1000-of-realman-robotics-humanoid-robots-will-do-real-work-in-kitchens-and-pharmacies/"
+    },
+    {
+      "title": "Grok 4.6 arrives on Google Enterprise Agent Platform",
+      "summary": "xAI's Grok 4.6 is now available on Vertex AI for enterprise deployment, with Grok Bot also included in more plans.",
+      "source": "xAI",
+      "date": "2026-08-21",
+      "url": "https://x.ai/news/grok-4-6-vertex-ai"
+    },
+    {
+      "title": "DeepMind recaps 15 years of game AI and expands EVE Online research with Fenris Creations",
+      "summary": "From Atari to EVE Online, DeepMind documents its game-based milestones and a new program targeting continual learning, deep memory and long-horizon planning.",
+      "source": "Google DeepMind",
+      "date": "2026-08-21",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Open Source & Models",
+      "image": "images/section_opensource_2026-08-22.jpg",
+      "items": [
+        {
+          "title": "SGLang Fast Engine Recovery cuts huge-model reloads to sub-second",
+          "summary": "A new Weight Cache Daemon slashes weight-loading times to ~0.63s for Ling-2.6-1T FP8 and delivers ~500x speedups on Qwen3-235B via zero-copy CUDA IPC over persistent GPU processes.",
+          "source": "@lmsysorg",
+          "date": "2026-08-22",
+          "url": "https://x.com/lmsysorg/status/2090852146497626592"
+        },
+        {
+          "title": "Together AI to demo production serving of Kimi K3",
+          "summary": "An August 26 webinar will cover production serving of Kimi K3, including architecture, quality and optimizations.",
+          "source": "@togethercompute",
+          "date": "2026-08-22",
+          "url": "https://x.com/togethercompute/status/2090913396317175855"
+        },
+        {
+          "title": "Nous Research highlights long-standing inference implementations",
+          "summary": "Nous shared inference features it has kept in production for months; a thin update with no new model attached.",
+          "source": "@NousResearch",
+          "date": "2026-08-22",
+          "url": "https://x.com/NousResearch/status/2090767395430257017"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "image": "images/section_hardware_2026-08-22.jpg",
+      "items": [
+        {
+          "title": "Schaeffler to mass produce humanoid strain wave gearboxes in 2027",
+          "summary": "Schaeffler validated formed strain wave gearboxes for humanoids and will scale production in 2027, cutting manufacturing costs by over 25% and material use by more than 75%.",
+          "source": "The Robot Report",
+          "date": "2026-08-21",
+          "url": "https://www.therobotreport.com/schaeffler-plans-to-mass-manufacture-gearboxes-for-humanoids-in-2027/"
+        },
+        {
+          "title": "Galaxy Corp opens Seoul robot park with humanoid taekwondo showcase",
+          "summary": "Galaxy Robot Park opened in Seoul with humanoids performing taekwondo, and hands-on programs for visitors to pilot robot dogs and dance with robots.",
+          "source": "Yonhap News Agency",
+          "date": "2026-08-21",
+          "url": "https://en.yna.co.kr/view/AEN20260821008051320"
+        },
+        {
+          "title": "Humanoid robot crashes into wall during Robot Olympics training",
+          "summary": "A humanoid training for the 2026 World Humanoid Robot Games in Beijing ran too fast during a run event, failed to stop and slammed into a safety cushion in a shower of sparks.",
+          "source": "Khaosod English",
+          "date": "2026-08-21",
+          "url": "https://www.khaosodenglish.com/tech/2026/08/21/humanoid-robot-crashes-into-wall-during-robot-olympics-training/"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "image": "images/section_tools_2026-08-22.jpg",
+      "items": [
+        {
+          "title": "DeepSeek-V4-Flash-Vision-Exp adds image understanding with no vision surcharge",
+          "summary": "DeepSeek's experimental multimodal variant of V4-Flash adds image understanding at existing token rates, with same-day support in DeepSeek Harness 0.1.1 and the Responses API.",
+          "source": "DeepSeek",
+          "date": "2026-08-21",
+          "url": "https://api-docs.deepseek.com/news/news260821/"
+        },
+        {
+          "title": "OzBrain offers a shared knowledge layer for agents and teams",
+          "summary": "Show HN: OzBrain acts as a 'shared brain' so multiple agents and humans read and write the same trusted context instead of siloed memory.",
+          "source": "OzBrain",
+          "date": "2026-08-21",
+          "url": "https://ozbrain.com"
+        },
+        {
+          "title": "Heimdall gives coding agents trust-verified context",
+          "summary": "Show HN: Heimdall is a knowledge layer that hands coding agents verified context so they act on trusted information rather than ungrounded model memory.",
+          "source": "GitHub",
+          "date": "2026-08-22",
+          "url": "https://github.com/ArihantDeva/heimdall"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-08-22",
+      "items": [
+        {"name": "harry0703/MoneyPrinterTurbo", "url": "https://github.com/harry0703/MoneyPrinterTurbo", "meta": "Python · 112.0k ★ · +2221 today"},
+        {"name": "volcengine/OpenViking", "url": "https://github.com/volcengine/OpenViking", "meta": "Python · 30.6k ★ · +804 today"},
+        {"name": "chaitanyagiri/munder-difflin", "url": "https://github.com/chaitanyagiri/munder-difflin", "meta": "TypeScript · 2.9k ★ · +795 today"},
+        {"name": "mukul975/Anthropic-Cybersecurity-Skills", "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills", "meta": "Python · 30.1k ★ · +766 today"},
+        {"name": "akitaonrails/ai-memory", "url": "https://github.com/akitaonrails/ai-memory", "meta": "Rust · 3.3k ★ · +606 today"},
+        {"name": "nautechsystems/nautilus_trader", "url": "https://github.com/nautechsystems/nautilus_trader", "meta": "Rust · 26.6k ★ · +80 today"},
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 224.5k ★ · +1894 today"},
+        {"name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "meta": "Shell · 274.5k ★ · +557 today"},
+        {"name": "jundot/omlx", "url": "https://github.com/jundot/omlx", "meta": "Python · 20.0k ★ · +472 today"},
+        {"name": "santifer/career-ops", "url": "https://github.com/santifer/career-ops", "meta": "JavaScript · 66.1k ★ · +198 today"},
+        {"name": "immich-app/immich", "url": "https://github.com/immich-app/immich", "meta": "TypeScript · 112.1k ★ · +128 today"},
+        {"name": "amadeusprotocol/node", "url": "https://github.com/amadeusprotocol/node", "meta": "Rust · 4.9k ★ · +1397 today"},
+        {"name": "marceloprates/prettymaps", "url": "https://github.com/marceloprates/prettymaps", "meta": "Python · 13.4k ★ · +63 today"},
+        {"name": "genlayerlabs/genlayer-project-boilerplate", "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate", "meta": "TypeScript · 16.3k ★ · +430 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-08-22",
+      "items": [
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B flagship of the Qwen3.8 generation"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "GGUF quantization of Qwen3.8-27B"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-MLX", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX", "meta": "MLX build, uncensored variant"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-FP8", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8", "meta": "FP8 uncensored variant"},
+        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "music generation model"},
+        {"name": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "meta": "GGUF uncensored variant"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "video generation model"},
+        {"name": "Qwen/Qwen3.8-27B-FP8", "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8", "meta": "official FP8 quantization of Qwen3.8-27B"},
+        {"name": "OBLITERATUS/Qwen3.8-27B-OBLITERATED", "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED", "meta": "abliterated uncensored variant"},
+        {"name": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "meta": "GGUF uncensored with aggressive MTP"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Gemini 3.1 Flash Live tops Speech Agent Arena",
+      "source": "Artificial Analysis via @_philschmid",
+      "date": "2026-08-21",
+      "url": "https://x.com/_philschmid/status/2090835478798831616"
+    },
+    {
+      "title": "Grok Bot now included with more plans",
+      "source": "xAI",
+      "date": "2026-08-21",
+      "url": "https://x.ai/news/grok-bot-more-plans"
+    },
+    {
+      "title": "DeepLearning.AI publishes updated AI Engineering Skills Map",
+      "source": "DeepLearningAI",
+      "date": "2026-08-21",
+      "url": "https://x.com/DeepLearningAI/status/2090829131608924377"
+    },
+    {
+      "title": "viktor.com adds OpenAI-compatible APIs and a hosted MCP server",
+      "source": "omarsar0",
+      "date": "2026-08-21",
+      "url": "https://x.com/omarsar0/status/2090894380080971825"
+    },
+    {
+      "title": "swyx argues simulation is the next scaling law",
+      "source": "swyx",
+      "date": "2026-08-22",
+      "url": "https://x.com/swyx/status/2090948945753076141"
+    },
+    {
+      "title": "Traccia gives AI agents observability, runtime control and audit",
+      "source": "Traccia",
+      "date": "2026-08-21",
+      "url": "https://traccia.ai/"
+    },
+    {
+      "title": "Oasis gives AI agents situational awareness",
+      "source": "Oasis",
+      "date": "2026-08-21",
+      "url": "https://joinoasis.com"
+    },
+    {
+      "title": "Anjadhe is a privacy-first AI assistant with no account and no server-side database",
+      "source": "Anjadhe",
+      "date": "2026-08-22",
+      "url": "https://www.anjadhe.com/demo"
+    },
+    {
+      "title": "ChickenButt is a native GTK chat client for Ollama",
+      "source": "ChickenButt",
+      "date": "2026-08-21",
+      "url": "https://www.chickenbutt.dev/"
+    },
+    {
+      "title": "oh-my-subagents packages a three-day codebase refactor pattern",
+      "source": "GitHub",
+      "date": "2026-08-22",
+      "url": "https://github.com/ringlochid/oh-my-subagents"
+    }
+  ],
+  "spiked": {
+    "out of window": 23,
+    "already ran": 4,
+    "duplicate url": 2,
+    "same story": 4
+  }
+}
