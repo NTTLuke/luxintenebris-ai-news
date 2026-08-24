@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 23 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · August 23, 2026 — No. 59</title>
+      <title>Lux in Tenebris — AI dispatches · August 24, 2026 — No. 60</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Mon, 24 Aug 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Google launched Antigravity IDE Extensions, putting its coding agents inside existing editors so developers can launch and monitor several agents at once without leaving their IDE. The move turns any editor into an agent host, a step toward the supervised multi-agent workflow many teams are converging on.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2091631620025647184"&gt;Structured conflict beats naive agent scaling in multi-agent code review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2091596538099196076"&gt;LeCun pushes research beyond LLMs toward human-efficient real-world learning&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · August 23, 2026 — No. 59</title>
+      <link>https://luxintenebris.news/archive/2026-08-23/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-23/</guid>
       <pubDate>Sun, 23 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Chinese electronics maker Honor&amp;#x27;s self-developed Lightning humanoid clocked 100m in 9.32 seconds during a test ahead of the second World Humanoid Robot Games in Beijing, shaving 0.26s off Usain Bolt&amp;#x27;s 9.58s men&amp;#x27;s record and peaking at 14.5 m/s. The run underscores how quickly humanoid platforms are approaching — and now exceeding — human athletic performance.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://theintelligent.us/technology/2026/nvidia-partners-cloverleaf-speed-ai-data-center-buildout"&gt;Nvidia takes minority stake in Cloverleaf Infrastructure to speed AI data center buildout&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.chinamoneynetwork.com/2026/08/22/chinas-ai-data-center-boom-in-inner-mongolia"&gt;China&amp;#x27;s AI data center boom turns Inner Mongolia&amp;#x27;s Ulanqab into a 12.5 GW hub&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2091293710877175964"&gt;Nous Research celebrates open-source harness adoption and stack sovereignty around Hermes Agent&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-04/</guid>
       <pubDate>Sat, 04 Jul 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;A new paradigm compiles natural-language function specifications into compact neural artifacts using a 4B-parameter compiler and 0.6B-parameter interpreter. The approach achieves performance parity with Qwen3-32B while using 50x less inference memory, running at 30 tokens per second on a consumer MacBook M3 — a fundamental step toward running frontier-level intelligence on edge devices.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · July 3, 2026 — No. 8</title>
-      <link>https://luxintenebris.news/archive/2026-07-03/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-03/</guid>
-      <pubDate>Fri, 03 Jul 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;ByteDance Seed presents Seed2.0, a model series tackling long-tail knowledge, complex instruction following, and world-leading reasoning, visual understanding, and search capabilities. The paper details an evaluation system built from real user needs, pushing toward what the team calls the &amp;#x27;intelligence frontier for real-world complexity.&amp;#x27;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
