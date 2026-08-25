@@ -1,72 +1,229 @@
 {
-  "issue_no": 60,
-  "date_iso": "2026-08-24",
-  "date_human": "August 24, 2026",
+  "issue_no": 61,
+  "date_iso": "2026-08-25",
+  "date_human": "August 25, 2026",
   "notice": null,
   "lead": {
-    "kicker": "Agents in your IDE",
-    "title": "Google brings Antigravity coding agents to any IDE with new extensions",
-    "summary": "Google launched Antigravity IDE Extensions, putting its coding agents inside existing editors so developers can launch and monitor several agents at once without leaving their IDE. The move turns any editor into an agent host, a step toward the supervised multi-agent workflow many teams are converging on.",
-    "source": "Product Hunt",
+    "kicker": "Hot Chips 2026",
+    "title": "NVIDIA Groq 3 LPX inference accelerator enters full production at 3,400 tokens/sec, Vera CPU detailed",
+    "summary": "At Hot Chips 2026, NVIDIA announced its dedicated Groq 3 LPX inference chip entering full production with 3,400 tokens/sec on Gemma 4 31B at 100K context, purpose-built for agentic AI on the Vera Rubin NVL72 platform. The company also detailed its Vera 88-core Arm server CPU with LPDDR5X memory and 96 PCIe Gen6 lanes. Nebius is Groq 3 LPX's first customer.",
+    "source": "SiliconANGLE / ServeTheHome",
     "date": "2026-08-24",
-    "url": "https://www.producthunt.com/products/google-antigravity",
-    "image": "images/lead_2026-08-24.jpg"
+    "url": "https://siliconangle.com/2026/08/24/nvidias-dedicated-inference-accelerator-groq-3-lpx-enters-full-production-to-supercharge-ai-agents/",
+    "image": "images/lead_2026-08-25.jpg"
   },
   "top_stories": [
     {
-      "title": "Structured conflict beats naive agent scaling in multi-agent code review",
-      "summary": "Adding more coding agents hits diminishing returns on repository-level tasks. A three-agent setup (coder, reviewer, critic) with encouraged, evidence-based disagreement beats a 5-agent baseline on LiveCodeBench and posts the highest F1 on SWE-PRBench.",
-      "source": "Dair.ai (@omarsar0)",
+      "title": "Arm unveils first in-house AGI data center CPU at Hot Chips 2026: 136 Neoverse V3 cores",
+      "summary": "Arm presented its first complete commercial CPU design at Hot Chips, built on TSMC N3P with dual chiplets (>50B transistors each), up to 136 Neoverse V3 cores at 3.7 GHz, 800+ GB/s memory bandwidth, and 96 PCIe Gen6 lanes at 300W TDP. Demand forecast raised to $2B for 2027-2028.",
+      "source": "ServeTheHome",
       "date": "2026-08-24",
-      "url": "https://x.com/omarsar0/status/2091631620025647184"
+      "url": "https://www.servethehome.com/arms-agi-data-center-cpu-at-hot-chips-2026/"
     },
     {
-      "title": "LeCun pushes research beyond LLMs toward human-efficient real-world learning",
-      "summary": "Yann LeCun again urged students to focus on architectures that learn physical, real-world tasks as efficiently as humans and animals, and pushed back on overhyped AGI-is-imminent narratives.",
-      "source": "Yann LeCun (@ylecun)",
+      "title": "XPeng Robotics raises $900M+ at $6.3B valuation from Alibaba, Tencent, IDG Capital",
+      "summary": "XPeng Robotics raised over $900M in its first funding round led by IDG Capital, with GaoRong Capital, Tencent, and Alibaba as strategic investors. Funds target mass production of the IRON humanoid robot and global commercial deployment. Record single PE round in China's embodied intelligence sector.",
+      "source": "ChinaEVHome",
       "date": "2026-08-24",
-      "url": "https://x.com/ylecun/status/2091596538099196076"
+      "url": "https://chinaevhome.com/2026/08/24/xpeng-robotics-raises-over-900m-valuation-tops-6-3b/"
+    },
+    {
+      "title": "Hugging Face reportedly in talks to be acquired for $13B",
+      "summary": "The AI model hub and open-source platform is reportedly in acquisition talks at a $13B+ valuation, having engaged banks to evaluate bids. The potential sale follows surging demand for AI infrastructure; Hugging Face last raised at $4.5B in 2023.",
+      "source": "TechCrunch",
+      "date": "2026-08-24",
+      "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/"
+    },
+    {
+      "title": "General Intuition in talks to raise at $6B valuation backed by Valor and Point72",
+      "summary": "General Intuition, building foundation models for physical AI agents, is in talks at a $6B pre-money valuation with Valor Equity Partners, Point72 Ventures, and Seven Seven Six joining existing backers Khosla Ventures and General Catalyst in an oversubscribed round.",
+      "source": "TechCrunch",
+      "date": "2026-08-24",
+      "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/"
     }
   ],
   "sections": [
     {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "How to train a critic stably and efficiently for GRPO-based LLM post-training",
+          "summary": "Proposes a stable critic training recipe showing that a well-trained critic can estimate token-level advantages from a single response matching GRPO's multi-sample performance.",
+          "source": "arXiv",
+          "date": "2026-08-24",
+          "url": "https://arxiv.org/abs/2608.23566",
+          "image": "images/section_research_2026-08-25.jpg",
+          "scout_source": "research"
+        },
+        {
+          "title": "Reward-free continual adaptation for resilient space robots",
+          "summary": "Introduces a reward-free continual RL framework for space robots under hardware degradation, removing the need for reward signals during deployment while maintaining online adaptation.",
+          "source": "arXiv",
+          "date": "2026-08-24",
+          "url": "https://arxiv.org/abs/2608.23452",
+          "scout_source": "research"
+        },
+        {
+          "title": "Credal LLMs for semantic commitment under uncertainty",
+          "summary": "Credal LLMs maintain multiple predictive distributions to separate epistemic ignorance from aleatory ambiguity, improving calibration on ambiguous queries without sacrificing accuracy.",
+          "source": "arXiv",
+          "date": "2026-08-24",
+          "url": "https://arxiv.org/abs/2608.23244",
+          "scout_source": "research"
+        },
+        {
+          "title": "SplitLite: low-rank residual compression for split learning on-device LLMs",
+          "summary": "Proposes a low-rank residual compression method reducing communication overhead in split learning while maintaining fine-tuning quality for on-device LLMs.",
+          "source": "arXiv",
+          "date": "2026-08-24",
+          "url": "https://arxiv.org/abs/2608.23018",
+          "scout_source": "research"
+        },
+        {
+          "title": "A physical response-and-memory model for Muon optimization",
+          "summary": "Derives a physically-motivated optimizer from a response-and-memory model, achieving competitive training loss against Muon and AdamW while providing theoretical grounding for update rules.",
+          "source": "arXiv",
+          "date": "2026-08-24",
+          "url": "https://arxiv.org/abs/2608.22994",
+          "scout_source": "research"
+        },
+        {
+          "title": "Beyond the harness: end-to-end optimization of context artifacts for enterprise Text-to-SQL",
+          "summary": "Shows that optimizing knowledge-base context artifacts (schema selection, table linking) outperforms model fine-tuning alone for enterprise Text-to-SQL.",
+          "source": "arXiv",
+          "date": "2026-08-24",
+          "url": "https://arxiv.org/abs/2608.22830",
+          "scout_source": "research"
+        },
+        {
+          "title": "TailSieve: partial-rollout-guided tail routing for LLM rollouts",
+          "summary": "A routing system that redirects tail-latency requests to faster surrogate models guided by partial rollout analysis, improving throughput in RL training and evaluation pipelines.",
+          "source": "arXiv",
+          "date": "2026-08-24",
+          "url": "https://arxiv.org/abs/2608.22788",
+          "scout_source": "research"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "NVIDIA Vera CPU detailed at Hot Chips 2026: 88-core Arm server processor with Olympus architecture",
+          "summary": "NVIDIA presented its in-house Vera server CPU featuring 88 Olympus-architecture cores, LPDDR5X memory, 96 PCIe Gen6/CXL lanes, and NVLink-C2C interconnects as the CPU backbone of the Vera Rubin AI platform for confidential computing across the full rack.",
+          "source": "ServeTheHome",
+          "date": "2026-08-24",
+          "url": "https://www.servethehome.com/nvidia-vera-cpu-at-hot-chips-2026/",
+          "image": "images/section_hardware_2026-08-25.jpg",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Xiaomi launches Xring O3 mobile AI chip: first to break 5M on AnTuTu with LPDDR6 support",
+          "summary": "Xiaomi's in-house Xring O3 flagship SoC on 3nm features a 10-core CPU and 16-core GPU delivering 85% higher graphics performance, 5.22M AnTuTu score, first LPDDR6 memory support at 113.8 GB/s, and 200 TOPS AI tensor performance.",
+          "source": "TechTimes",
+          "date": "2026-08-24",
+          "url": "https://www.techtimes.com/articles/325315/20260824/xiaomi-xring-o3-tops-5m-antutu-all-big-core-cpu-first-lpddr6-mobile-chip.htm",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "IBM unveils dual-architecture mainframe processor running native Z and Arm on the same core",
+          "summary": "IBM revealed its first dual-ISA processor for IBM Z and LinuxONE at Hot Chips 2026, where each core natively executes both z/Architecture and Arm AArch64 instructions on a 2nm process with 11 Z cores above 5.7 GHz.",
+          "source": "ServeTheHome",
+          "date": "2026-08-24",
+          "url": "https://www.servethehome.com/ibm-z-and-linuxone-dual-isa-processor-and-ai-acceleration-at-hot-chips-2026/",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Galbot humanoid completes 100+ autonomous tennis rallies at World Humanoid Robot Games",
+          "summary": "Galbot's humanoids demonstrated the world's first live autonomous humanoid tennis match using the LATENT AI framework, tracking balls and executing varied shots without human control over 100 consecutive rallies.",
+          "source": "Interesting Engineering",
+          "date": "2026-08-24",
+          "url": "https://interestingengineering.com/ai-robotics/china-galbot-humanoids-tennis-rallies",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Marvell pushes DDR4 recycling for CXL memory expansion amid worst DRAM shortage in years",
+          "summary": "Marvell promotes CXL-based memory expansion using recycled DDR4 modules via Meta's Vistara ASIC, bridging two DDR4 channels for 128GB per chip from recovered server memory as the industry faces a severe DRAM shortage.",
+          "source": "Tom's Hardware",
+          "date": "2026-08-24",
+          "url": "https://www.tomshardware.com/pc-components/dram/marvell-sells-cxl-memory-recycling-into-the-worst-dram-shortage-in-years",
+          "scout_source": "hardware"
+        }
+      ]
+    },
+    {
       "title": "Tools & Startups",
       "items": [
         {
-          "title": "Supernova — all your data in Claude and Codex",
-          "summary": "Supernova connects live startup data (Stripe, HubSpot, PostgreSQL, 30+ apps) to Claude and Codex for natural-language queries, with MCP support and no extra warehouse or ETL.",
-          "image": "images/section_tools-startups_2026-08-24.jpg",
+          "title": "Construct Computer — AI coworker with cloud desktop and persistent memory",
+          "summary": "An AI coworker platform giving each agent its own browser-based cloud desktop (browser, terminal, files, email, calendar) with persistent memory. Topped Product Hunt on August 24 with 313 upvotes.",
           "source": "Product Hunt",
           "date": "2026-08-24",
-          "url": "https://www.producthunt.com/products/supernova-ai"
+          "url": "https://www.producthunt.com/products/construct-computer",
+          "image": "images/section_tools_2026-08-25.jpg",
+          "scout_source": "tools"
         },
         {
-          "title": "Router by Ramp — LLM routing layer to cut inference cost",
-          "summary": "Ramp launched Router, a unified API endpoint that routes every LLM request to the lowest-cost model meeting a performance threshold, claiming average savings of 40% on inference spend.",
+          "title": "Slack Code — AI coding agents in shared team channels",
+          "summary": "Slack shipped a new channel type where teams and AI coding agents (Claude, Devin, GitHub Copilot, Vercel) collaborate in the same shared thread, launching with an Agents and Tools management hub.",
+          "source": "Creative AI News",
+          "date": "2026-08-24",
+          "url": "https://www.creativeainews.com/articles/slack-code-channels-ai-agents-2026/",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Claude Academy — Anthropic's official learning hub for mastering Claude",
+          "summary": "Anthropic launched an official learning hub with structured courses and tutorials to bridge AI education and adoption for Claude users.",
           "source": "Product Hunt",
           "date": "2026-08-24",
-          "url": "https://www.producthunt.com/products/ramp-router"
+          "url": "https://www.producthunt.com/products/claude-academy",
+          "scout_source": "tools"
         },
         {
-          "title": "HyNote for Mac — free 100% private local transcription",
-          "summary": "HyNote runs speech-to-text entirely on-device, captures system audio across Zoom, Meet and Teams without a bot, and offers free unlimited local transcription plus multi-source ingestion.",
-          "source": "Product Hunt",
-          "date": "2026-08-23",
-          "url": "https://www.producthunt.com/products/hynote-ai"
-        },
-        {
-          "title": "Actx0 — managed memory infrastructure for AI agents",
-          "summary": "Actx0 is a drop-in managed memory layer for agents, storing what matters, retrieving it in milliseconds, and keeping memory across sessions with an SDK and per-workspace isolation.",
-          "source": "Product Hunt",
+          "title": "Cybermes v2.0 — open-source AI red teaming agent for automated pentesting",
+          "summary": "An autonomous offensive-security agent rewritten in Go, featuring 50+ security skills, a zero-false-positive gate, and automatic CVSS reporting under PolyForm Noncommercial license.",
+          "source": "GitHub",
           "date": "2026-08-24",
-          "url": "https://www.producthunt.com/products/actx0"
+          "url": "https://github.com/Zyrexnn/Cybermes",
+          "scout_source": "tools"
         },
         {
-          "title": "Wizstar — expressive digital avatar actors",
-          "summary": "Wizstar generates avatars that gesture naturally, interact with objects and keep precise lip sync, supporting source videos up to 5 minutes with multilingual localization.",
-          "source": "Product Hunt",
+          "title": "PicoMQ — durable streams over HTTP on object storage",
+          "summary": "A messaging system providing durable HTTP streams backed by object storage, presented as a lightweight alternative to traditional message queues. Hit 108 points on Hacker News Show HN.",
+          "source": "Hacker News",
           "date": "2026-08-24",
-          "url": "https://www.producthunt.com/products/wizstar"
+          "url": "https://picomq.com/",
+          "scout_source": "tools"
+        }
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "General Intuition in talks to raise at $6B valuation backed by Valor and Point72",
+          "summary": "General Intuition, building foundation models for physical AI agents, is in talks at $6B pre-money with Valor Equity Partners, Point72 Ventures, and Seven Seven Six joining existing backers in an oversubscribed round for compute and robotics hiring.",
+          "source": "TechCrunch",
+          "date": "2026-08-24",
+          "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
+          "image": "images/section_money_2026-08-25.jpg",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Hugging Face reportedly in talks to be acquired for $13B",
+          "summary": "The AI model hub is reportedly in acquisition talks at $13B+, having engaged banks to evaluate bids following surging demand for AI infrastructure. Last raised at $4.5B in 2023.",
+          "source": "TechCrunch",
+          "date": "2026-08-24",
+          "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Oura reportedly eyeing September IPO at $16B+ valuation",
+          "summary": "Smart ring maker Oura plans to raise up to $3B in a US IPO next month at a valuation north of $16B, jumping from $10.9B in its 2025 Series E. Backed by Fidelity, ICONIQ, and Whale Rock.",
+          "source": "TechCrunch",
+          "date": "2026-08-24",
+          "url": "https://techcrunch.com/2026/08/24/oura-is-reportedly-eyeing-a-september-ipo-that-could-value-it-at-more-than-16b/",
+          "scout_source": "funding"
         }
       ]
     }
@@ -76,40 +233,40 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "items": [
-        {"name": "harry0703/MoneyPrinterTurbo", "url": "https://github.com/harry0703/MoneyPrinterTurbo", "meta": "Python · 112.0k ★ · +2,221 today"},
-        {"name": "volcengine/OpenViking", "url": "https://github.com/volcengine/OpenViking", "meta": "Python · 30.6k ★ · +804 today"},
-        {"name": "chaitanyagiri/munder-difflin", "url": "https://github.com/chaitanyagiri/munder-difflin", "meta": "TypeScript · 2.9k ★ · +795 today"},
-        {"name": "mukul975/Anthropic-Cybersecurity-Skills", "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills", "meta": "Python · 30.1k ★ · +766 today"},
-        {"name": "akitaonrails/ai-memory", "url": "https://github.com/akitaonrails/ai-memory", "meta": "Rust · 3.3k ★ · +606 today"},
-        {"name": "nautechsystems/nautilus_trader", "url": "https://github.com/nautechsystems/nautilus_trader", "meta": "Rust · 26.6k ★ · +80 today"},
-        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 224.5k ★ · +1,894 today"},
-        {"name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "meta": "Shell · 274.5k ★ · +557 today"},
-        {"name": "jundot/omlx", "url": "https://github.com/jundot/omlx", "meta": "Python · 20.0k ★ · +472 today"},
-        {"name": "santifer/career-ops", "url": "https://github.com/santifer/career-ops", "meta": "JavaScript · 66.1k ★ · +198 today"},
-        {"name": "immich-app/immich", "url": "https://github.com/immich-app/immich", "meta": "TypeScript · 112.1k ★ · +128 today"},
-        {"name": "amadeusprotocol/node", "url": "https://github.com/amadeusprotocol/node", "meta": "Rust · 4.9k ★ · +1,397 today"},
-        {"name": "marceloprates/prettymaps", "url": "https://github.com/marceloprates/prettymaps", "meta": "Python · 13.4k ★ · +63 today"},
-        {"name": "genlayerlabs/genlayer-project-boilerplate", "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate", "meta": "TypeScript · 16.3k ★ · +430 today"}
+        {"name": "harry0703/MoneyPrinterTurbo", "url": "https://github.com/harry0703/MoneyPrinterTurbo", "meta": "Python · 112,017 ★ · +2,221 today"},
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 224,484 ★ · +1,894 today"},
+        {"name": "amadeusprotocol/node", "url": "https://github.com/amadeusprotocol/node", "meta": "Rust · 4,871 ★ · +1,397 today"},
+        {"name": "volcengine/OpenViking", "url": "https://github.com/volcengine/OpenViking", "meta": "Python · 30,641 ★ · +804 today"},
+        {"name": "chaitanyagiri/munder-difflin", "url": "https://github.com/chaitanyagiri/munder-difflin", "meta": "TypeScript · 2,881 ★ · +795 today"},
+        {"name": "mukul975/Anthropic-Cybersecurity-Skills", "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills", "meta": "Python · 30,122 ★ · +766 today"},
+        {"name": "akitaonrails/ai-memory", "url": "https://github.com/akitaonrails/ai-memory", "meta": "Rust · 3,315 ★ · +606 today"},
+        {"name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "meta": "Shell · 274,542 ★ · +557 today"},
+        {"name": "jundot/omlx", "url": "https://github.com/jundot/omlx", "meta": "Python · 19,956 ★ · +472 today"},
+        {"name": "genlayerlabs/genlayer-project-boilerplate", "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate", "meta": "TypeScript · 16,273 ★ · +430 today"},
+        {"name": "santifer/career-ops", "url": "https://github.com/santifer/career-ops", "meta": "JavaScript · 66,090 ★ · +198 today"},
+        {"name": "immich-app/immich", "url": "https://github.com/immich-app/immich", "meta": "TypeScript · 112,067 ★ · +128 today"},
+        {"name": "nautechsystems/nautilus_trader", "url": "https://github.com/nautechsystems/nautilus_trader", "meta": "Rust · 26,588 ★ · +80 today"},
+        {"name": "marceloprates/prettymaps", "url": "https://github.com/marceloprates/prettymaps", "meta": "Python · 13,385 ★ · +63 today"}
       ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "items": [
-        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B open-weight LLM, Qwen 3.8 flagship"},
-        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "GGUF quant of Qwen3.8-27B"},
-        {"name": "orcarouter/Qwen3.8-27B-Uncensored-FP8", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8", "meta": "FP8 uncensored variant of Qwen3.8-27B"},
-        {"name": "orcarouter/Qwen3.8-27B-Uncensored-MLX", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX", "meta": "MLX uncensored variant for Apple Silicon"},
-        {"name": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "meta": "GGUF uncensored variant"},
-        {"name": "OBLITERATUS/Qwen3.8-27B-OBLITERATED", "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED", "meta": "Abliterated uncensored variant"},
-        {"name": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "meta": "GGUF uncensored MTP variant"},
-        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Open video generation model"},
-        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "Music generation model"},
-        {"name": "ornith-ai/Ornith-1.5-35B-A3B", "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B", "meta": "35B MoE, 3B active language model"}
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B dense vision-language model, Apache 2.0"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "GGUF quantization of Qwen3.8-27B"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-FP8", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8", "meta": "Uncensored FP8 variant of Qwen3.8-27B"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-MLX", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX", "meta": "Uncensored MLX variant for Apple Silicon"},
+        {"name": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "meta": "Uncensored GGUF quantized variant"},
+        {"name": "OBLITERATUS/Qwen3.8-27B-OBLITERATED", "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED", "meta": "Abliterated (uncensored) Qwen3.8-27B"},
+        {"name": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "meta": "Aggressive MTP finetune, GGUF quantized"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "22B open-weights video generation model"},
+        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "Music generation model, up to 5 min songs"},
+        {"name": "ornith-ai/Ornith-1.5-35B-A3B", "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B", "meta": "35B MoE with 3B active, MIT license"}
       ]
     }
   },
@@ -118,26 +275,24 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "items": [
         {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
         {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
         {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
         {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
         {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
-        {"name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free", "meta": "256K ctx"},
+        {"name": "MiniMax: MiniMax M2.7 (free)", "url": "https://openrouter.ai/minimax/minimax-m2.7:free", "meta": "196K ctx"},
         {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
         {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
         {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
         {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
         {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
-        {"name": "NVIDIA: Nemotron Nano 12B 2 VL (free)", "url": "https://openrouter.ai/nvidia/nemotron-nano-12b-v2-vl:free", "meta": "128K ctx"},
-        {"name": "NVIDIA: Nemotron Nano 9B V2 (free)", "url": "https://openrouter.ai/nvidia/nemotron-nano-9b-v2:free", "meta": "128K ctx"},
         {"name": "Ox Alpha", "url": "https://openrouter.ai/stealth/ox-alpha", "meta": "1.04858M ctx"},
         {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
         {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
-        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "262K ctx"},
-        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"},
         {"name": "Z.ai: GLM 5.2 (free)", "url": "https://openrouter.ai/z-ai/glm-5.2:free", "meta": "256K ctx"}
       ]
     },
@@ -145,7 +300,7 @@
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "items": [
         {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
         {"name": "Ox Alpha Free", "url": "https://opencode.ai/docs/zen/", "meta": "x-preview-f-free"},
@@ -159,80 +314,82 @@
   },
   "quick_hits": [
     {
-      "title": "GLM-5.3 dominates agentic-coding benchmarks at ~1/5 the cost of Claude Fable 5",
-      "source": "@togethercompute",
+      "title": "NVIDIA ACES paper proposes Skill Lift for agent skill evaluation",
+      "source": "omarsar0",
       "date": "2026-08-24",
-      "url": "https://x.com/togethercompute/status/2091361283459223731"
+      "url": "https://x.com/omarsar0/status/2091869893339812222"
     },
     {
-      "title": "Mystery AI model reportedly beats top frontier models — origin unknown",
-      "source": "YouTube — Beyond AI News",
+      "title": "Grok 4.6 delivers massive leap in agentic efficiency — half the turns of other models",
+      "source": "DeepLearningAI",
       "date": "2026-08-24",
-      "url": "https://www.youtube.com/watch?v=wCXPqsZ0cYE"
+      "url": "https://x.com/DeepLearningAI/status/2091914953116549510"
     },
     {
-      "title": "Nous Research rolls out accessibility mode ahead of full rebrand in 2-3 weeks",
-      "source": "Nous Research (@NousResearch)",
+      "title": "exo: open-source agent harness built for recursive self-improvement",
+      "source": "omarsar0",
       "date": "2026-08-24",
-      "url": "https://x.com/NousResearch/status/2091608127456059645"
+      "url": "https://x.com/omarsar0/status/2091915906305704015"
     },
     {
-      "title": "Open models keep gaining token share as supervisor + sub-agent pattern spreads",
-      "source": "Dair.ai (@omarsar0)",
-      "date": "2026-08-23",
-      "url": "https://x.com/omarsar0/status/2091588680565522564"
-    },
-    {
-      "title": "Debate grows that current evaluation harnesses are 'completely broken'",
-      "source": "Dair.ai (@omarsar0)",
-      "date": "2026-08-23",
-      "url": "https://x.com/omarsar0/status/2091565973098676670"
-    },
-    {
-      "title": "Hermes models and plugins now available via the Nous Portal",
-      "source": "@NousResearch",
+      "title": "Netflix production LLM judges lifecycle — birth, training, deployment, monitoring",
+      "source": "omarsar0",
       "date": "2026-08-24",
-      "url": "https://x.com/NousResearch/status/2091598357818908836"
+      "url": "https://x.com/omarsar0/status/2091691980552388634"
     },
     {
-      "title": "Epho — run Claude Code, Codex or Opencode in the cloud",
-      "source": "Product Hunt",
+      "title": "Hermes Agent HUD Mode demo — seamless uninterrupted multi-step prompting",
+      "source": "NousResearch",
       "date": "2026-08-24",
-      "url": "https://www.producthunt.com/products/epho-claude-code-in-the-cloud"
+      "url": "https://x.com/NousResearch/status/2091893618801885456"
     },
     {
-      "title": "Checksum AI — auto-generating, self-healing test suite",
-      "source": "Product Hunt",
-      "date": "2026-08-23",
-      "url": "https://www.producthunt.com/products/checksum-ai"
+      "title": "Grok 4.6 at 50% off via Nous Portal for one week",
+      "source": "NousResearch",
+      "date": "2026-08-24",
+      "url": "https://x.com/NousResearch/status/2091953856234062313"
     },
     {
-      "title": "MeetStream AI — unified API & infra for AI meeting agents",
-      "source": "Product Hunt",
-      "date": "2026-08-23",
-      "url": "https://www.producthunt.com/products/meetstream-ai"
+      "title": "DF-MoE: generalizable deepfake detection via multimodal sparse mixture-of-experts",
+      "source": "arXiv",
+      "date": "2026-08-24",
+      "url": "https://arxiv.org/abs/2608.23363"
     },
     {
-      "title": "Froging AI — image and video models in one workflow",
-      "source": "Hacker News",
-      "date": "2026-08-23",
-      "url": "https://www.froging.ai"
+      "title": "Sigmoid attention as a better substrate for learned KV cache eviction",
+      "source": "arXiv",
+      "date": "2026-08-24",
+      "url": "https://arxiv.org/abs/2608.23296"
     },
     {
-      "title": "Histiq — local semantic search for browser history and PDFs",
-      "source": "Hacker News",
-      "date": "2026-08-23",
-      "url": "https://histiq.com/"
+      "title": "Graph Engineering in the era of LLM agents: from individual to system intelligence",
+      "source": "HuggingFace",
+      "date": "2026-08-24",
+      "url": "https://huggingface.co/papers/2608.21156"
     },
     {
-      "title": "enozunu — reproducible configuration materializer for AI agents",
-      "source": "Hacker News",
-      "date": "2026-08-23",
-      "url": "https://github.com/tooppoo/enozunu"
+      "title": "CLEAR: continuous latent adapter routing for utility-preserving LLM safety alignment",
+      "source": "HuggingFace",
+      "date": "2026-08-24",
+      "url": "https://huggingface.co/papers/2608.21278"
+    },
+    {
+      "title": "Llama-Mobile: efficient 2.7-bit quantization of vision-language models for on-device deployment",
+      "source": "HuggingFace",
+      "date": "2026-08-24",
+      "url": "https://huggingface.co/papers/2608.21134"
+    },
+    {
+      "title": "AgentMercury: LLM agents that synthesize verifiable environments for enterprise scenarios",
+      "source": "HuggingFace",
+      "date": "2026-08-24",
+      "url": "https://huggingface.co/papers/2608.20634"
     }
   ],
   "spiked": {
-    "out of window": 18,
-    "already ran": 7
+    "low signal": 2,
+    "duplicate url": 1,
+    "same story": 2,
+    "already ran": 2
   }
 }

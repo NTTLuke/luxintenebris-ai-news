@@ -1,0 +1,238 @@
+{
+  "issue_no": 60,
+  "date_iso": "2026-08-24",
+  "date_human": "August 24, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Agents in your IDE",
+    "title": "Google brings Antigravity coding agents to any IDE with new extensions",
+    "summary": "Google launched Antigravity IDE Extensions, putting its coding agents inside existing editors so developers can launch and monitor several agents at once without leaving their IDE. The move turns any editor into an agent host, a step toward the supervised multi-agent workflow many teams are converging on.",
+    "source": "Product Hunt",
+    "date": "2026-08-24",
+    "url": "https://www.producthunt.com/products/google-antigravity",
+    "image": "images/lead_2026-08-24.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Structured conflict beats naive agent scaling in multi-agent code review",
+      "summary": "Adding more coding agents hits diminishing returns on repository-level tasks. A three-agent setup (coder, reviewer, critic) with encouraged, evidence-based disagreement beats a 5-agent baseline on LiveCodeBench and posts the highest F1 on SWE-PRBench.",
+      "source": "Dair.ai (@omarsar0)",
+      "date": "2026-08-24",
+      "url": "https://x.com/omarsar0/status/2091631620025647184"
+    },
+    {
+      "title": "LeCun pushes research beyond LLMs toward human-efficient real-world learning",
+      "summary": "Yann LeCun again urged students to focus on architectures that learn physical, real-world tasks as efficiently as humans and animals, and pushed back on overhyped AGI-is-imminent narratives.",
+      "source": "Yann LeCun (@ylecun)",
+      "date": "2026-08-24",
+      "url": "https://x.com/ylecun/status/2091596538099196076"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Supernova — all your data in Claude and Codex",
+          "summary": "Supernova connects live startup data (Stripe, HubSpot, PostgreSQL, 30+ apps) to Claude and Codex for natural-language queries, with MCP support and no extra warehouse or ETL.",
+          "image": "images/section_tools-startups_2026-08-24.jpg",
+          "source": "Product Hunt",
+          "date": "2026-08-24",
+          "url": "https://www.producthunt.com/products/supernova-ai"
+        },
+        {
+          "title": "Router by Ramp — LLM routing layer to cut inference cost",
+          "summary": "Ramp launched Router, a unified API endpoint that routes every LLM request to the lowest-cost model meeting a performance threshold, claiming average savings of 40% on inference spend.",
+          "source": "Product Hunt",
+          "date": "2026-08-24",
+          "url": "https://www.producthunt.com/products/ramp-router"
+        },
+        {
+          "title": "HyNote for Mac — free 100% private local transcription",
+          "summary": "HyNote runs speech-to-text entirely on-device, captures system audio across Zoom, Meet and Teams without a bot, and offers free unlimited local transcription plus multi-source ingestion.",
+          "source": "Product Hunt",
+          "date": "2026-08-23",
+          "url": "https://www.producthunt.com/products/hynote-ai"
+        },
+        {
+          "title": "Actx0 — managed memory infrastructure for AI agents",
+          "summary": "Actx0 is a drop-in managed memory layer for agents, storing what matters, retrieving it in milliseconds, and keeping memory across sessions with an SDK and per-workspace isolation.",
+          "source": "Product Hunt",
+          "date": "2026-08-24",
+          "url": "https://www.producthunt.com/products/actx0"
+        },
+        {
+          "title": "Wizstar — expressive digital avatar actors",
+          "summary": "Wizstar generates avatars that gesture naturally, interact with objects and keep precise lip sync, supporting source videos up to 5 minutes with multilingual localization.",
+          "source": "Product Hunt",
+          "date": "2026-08-24",
+          "url": "https://www.producthunt.com/products/wizstar"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-08-24",
+      "items": [
+        {"name": "harry0703/MoneyPrinterTurbo", "url": "https://github.com/harry0703/MoneyPrinterTurbo", "meta": "Python · 112.0k ★ · +2,221 today"},
+        {"name": "volcengine/OpenViking", "url": "https://github.com/volcengine/OpenViking", "meta": "Python · 30.6k ★ · +804 today"},
+        {"name": "chaitanyagiri/munder-difflin", "url": "https://github.com/chaitanyagiri/munder-difflin", "meta": "TypeScript · 2.9k ★ · +795 today"},
+        {"name": "mukul975/Anthropic-Cybersecurity-Skills", "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills", "meta": "Python · 30.1k ★ · +766 today"},
+        {"name": "akitaonrails/ai-memory", "url": "https://github.com/akitaonrails/ai-memory", "meta": "Rust · 3.3k ★ · +606 today"},
+        {"name": "nautechsystems/nautilus_trader", "url": "https://github.com/nautechsystems/nautilus_trader", "meta": "Rust · 26.6k ★ · +80 today"},
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 224.5k ★ · +1,894 today"},
+        {"name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "meta": "Shell · 274.5k ★ · +557 today"},
+        {"name": "jundot/omlx", "url": "https://github.com/jundot/omlx", "meta": "Python · 20.0k ★ · +472 today"},
+        {"name": "santifer/career-ops", "url": "https://github.com/santifer/career-ops", "meta": "JavaScript · 66.1k ★ · +198 today"},
+        {"name": "immich-app/immich", "url": "https://github.com/immich-app/immich", "meta": "TypeScript · 112.1k ★ · +128 today"},
+        {"name": "amadeusprotocol/node", "url": "https://github.com/amadeusprotocol/node", "meta": "Rust · 4.9k ★ · +1,397 today"},
+        {"name": "marceloprates/prettymaps", "url": "https://github.com/marceloprates/prettymaps", "meta": "Python · 13.4k ★ · +63 today"},
+        {"name": "genlayerlabs/genlayer-project-boilerplate", "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate", "meta": "TypeScript · 16.3k ★ · +430 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-08-24",
+      "items": [
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B open-weight LLM, Qwen 3.8 flagship"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "GGUF quant of Qwen3.8-27B"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-FP8", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8", "meta": "FP8 uncensored variant of Qwen3.8-27B"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-MLX", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX", "meta": "MLX uncensored variant for Apple Silicon"},
+        {"name": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "meta": "GGUF uncensored variant"},
+        {"name": "OBLITERATUS/Qwen3.8-27B-OBLITERATED", "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED", "meta": "Abliterated uncensored variant"},
+        {"name": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "meta": "GGUF uncensored MTP variant"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Open video generation model"},
+        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "Music generation model"},
+        {"name": "ornith-ai/Ornith-1.5-35B-A3B", "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B", "meta": "35B MoE, 3B active language model"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-08-24",
+      "items": [
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron Nano 12B 2 VL (free)", "url": "https://openrouter.ai/nvidia/nemotron-nano-12b-v2-vl:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron Nano 9B V2 (free)", "url": "https://openrouter.ai/nvidia/nemotron-nano-9b-v2:free", "meta": "128K ctx"},
+        {"name": "Ox Alpha", "url": "https://openrouter.ai/stealth/ox-alpha", "meta": "1.04858M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "262K ctx"},
+        {"name": "Z.ai: GLM 5.2 (free)", "url": "https://openrouter.ai/z-ai/glm-5.2:free", "meta": "256K ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-08-24",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "Ox Alpha Free", "url": "https://opencode.ai/docs/zen/", "meta": "x-preview-f-free"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Hy3 Free", "url": "https://opencode.ai/docs/zen/", "meta": "hy3-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Muse Spark 1.2 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.2-contributor-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "GLM-5.3 dominates agentic-coding benchmarks at ~1/5 the cost of Claude Fable 5",
+      "source": "@togethercompute",
+      "date": "2026-08-24",
+      "url": "https://x.com/togethercompute/status/2091361283459223731"
+    },
+    {
+      "title": "Mystery AI model reportedly beats top frontier models — origin unknown",
+      "source": "YouTube — Beyond AI News",
+      "date": "2026-08-24",
+      "url": "https://www.youtube.com/watch?v=wCXPqsZ0cYE"
+    },
+    {
+      "title": "Nous Research rolls out accessibility mode ahead of full rebrand in 2-3 weeks",
+      "source": "Nous Research (@NousResearch)",
+      "date": "2026-08-24",
+      "url": "https://x.com/NousResearch/status/2091608127456059645"
+    },
+    {
+      "title": "Open models keep gaining token share as supervisor + sub-agent pattern spreads",
+      "source": "Dair.ai (@omarsar0)",
+      "date": "2026-08-23",
+      "url": "https://x.com/omarsar0/status/2091588680565522564"
+    },
+    {
+      "title": "Debate grows that current evaluation harnesses are 'completely broken'",
+      "source": "Dair.ai (@omarsar0)",
+      "date": "2026-08-23",
+      "url": "https://x.com/omarsar0/status/2091565973098676670"
+    },
+    {
+      "title": "Hermes models and plugins now available via the Nous Portal",
+      "source": "@NousResearch",
+      "date": "2026-08-24",
+      "url": "https://x.com/NousResearch/status/2091598357818908836"
+    },
+    {
+      "title": "Epho — run Claude Code, Codex or Opencode in the cloud",
+      "source": "Product Hunt",
+      "date": "2026-08-24",
+      "url": "https://www.producthunt.com/products/epho-claude-code-in-the-cloud"
+    },
+    {
+      "title": "Checksum AI — auto-generating, self-healing test suite",
+      "source": "Product Hunt",
+      "date": "2026-08-23",
+      "url": "https://www.producthunt.com/products/checksum-ai"
+    },
+    {
+      "title": "MeetStream AI — unified API & infra for AI meeting agents",
+      "source": "Product Hunt",
+      "date": "2026-08-23",
+      "url": "https://www.producthunt.com/products/meetstream-ai"
+    },
+    {
+      "title": "Froging AI — image and video models in one workflow",
+      "source": "Hacker News",
+      "date": "2026-08-23",
+      "url": "https://www.froging.ai"
+    },
+    {
+      "title": "Histiq — local semantic search for browser history and PDFs",
+      "source": "Hacker News",
+      "date": "2026-08-23",
+      "url": "https://histiq.com/"
+    },
+    {
+      "title": "enozunu — reproducible configuration materializer for AI agents",
+      "source": "Hacker News",
+      "date": "2026-08-23",
+      "url": "https://github.com/tooppoo/enozunu"
+    }
+  ],
+  "spiked": {
+    "out of window": 18,
+    "already ran": 7
+  }
+}

@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 24 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · August 24, 2026 — No. 60</title>
+      <title>Lux in Tenebris — AI dispatches · August 25, 2026 — No. 61</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Tue, 25 Aug 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;At Hot Chips 2026, NVIDIA announced its dedicated Groq 3 LPX inference chip entering full production with 3,400 tokens/sec on Gemma 4 31B at 100K context, purpose-built for agentic AI on the Vera Rubin NVL72 platform. The company also detailed its Vera 88-core Arm server CPU with LPDDR5X memory and 96 PCIe Gen6 lanes. Nebius is Groq 3 LPX&amp;#x27;s first customer.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/arms-agi-data-center-cpu-at-hot-chips-2026/"&gt;Arm unveils first in-house AGI data center CPU at Hot Chips 2026: 136 Neoverse V3 cores&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://chinaevhome.com/2026/08/24/xpeng-robotics-raises-over-900m-valuation-tops-6-3b/"&gt;XPeng Robotics raises $900M+ at $6.3B valuation from Alibaba, Tencent, IDG Capital&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/"&gt;Hugging Face reportedly in talks to be acquired for $13B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/"&gt;General Intuition in talks to raise at $6B valuation backed by Valor and Point72&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · August 24, 2026 — No. 60</title>
+      <link>https://luxintenebris.news/archive/2026-08-24/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-24/</guid>
       <pubDate>Mon, 24 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Google launched Antigravity IDE Extensions, putting its coding agents inside existing editors so developers can launch and monitor several agents at once without leaving their IDE. The move turns any editor into an agent host, a step toward the supervised multi-agent workflow many teams are converging on.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2091631620025647184"&gt;Structured conflict beats naive agent scaling in multi-agent code review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2091596538099196076"&gt;LeCun pushes research beyond LLMs toward human-efficient real-world learning&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-05/</guid>
       <pubDate>Sun, 05 Jul 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Fable generates rich interactive Three.js environments from natural language prompts, with Andrej Karpathy calling it a &amp;#x27;qualitative leap.&amp;#x27; The model composes meshes, animations, physics, and playable worlds from descriptions alone.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · July 4, 2026 — No. 9</title>
-      <link>https://luxintenebris.news/archive/2026-07-04/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-04/</guid>
-      <pubDate>Sat, 04 Jul 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A new paradigm compiles natural-language function specifications into compact neural artifacts using a 4B-parameter compiler and 0.6B-parameter interpreter. The approach achieves performance parity with Qwen3-32B while using 50x less inference memory, running at 30 tokens per second on a consumer MacBook M3 — a fundamental step toward running frontier-level intelligence on edge devices.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
