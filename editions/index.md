@@ -2,6 +2,7 @@
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
 
+- [August 26, 2026 — No. 62](2026-08-26.md)
 - [August 25, 2026 — No. 61](2026-08-25.md)
 - [August 24, 2026 — No. 60](2026-08-24.md)
 - [August 23, 2026 — No. 59](2026-08-23.md)

@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 25 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · August 25, 2026 — No. 61</title>
+      <title>Lux in Tenebris — AI dispatches · August 26, 2026 — No. 62</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Wed, 26 Aug 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;OpenAI shared first measured results for Jalapeño, its custom inference silicon, at Hot Chips 2026. The chip delivers significant gains in efficiency, throughput, and lower latency — more intelligence per watt — without trade-offs. Initial deployment in OpenAI&amp;#x27;s own compute infrastructure begins by end of 2026 as Gen 1 of a multi-generation roadmap.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/amd-mi400-gpu-at-hot-chips-2026/"&gt;AMD MI400 Helios rack architecture delivers 2.9 exaflops at Hot Chips 2026&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/"&gt;Generalist reaches $3B valuation with $200M extension led by 8VC&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/25/self-driving-truck-startup-gatik-raises-200m-following-pepsico-deal/"&gt;Self-driving truck startup Gatik raises $200M Series D led by Qatar Investment Authority&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://apnews.com/article/chinese-humanoid-robot-beijing-world-games-record-069b76ee6748154fd67bec39fa927cf6"&gt;Chinese humanoid robot sets 100-meter sprint record of 8.86 seconds at Beijing World Games&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · August 25, 2026 — No. 61</title>
+      <link>https://luxintenebris.news/archive/2026-08-25/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-25/</guid>
       <pubDate>Tue, 25 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;At Hot Chips 2026, NVIDIA announced its dedicated Groq 3 LPX inference chip entering full production with 3,400 tokens/sec on Gemma 4 31B at 100K context, purpose-built for agentic AI on the Vera Rubin NVL72 platform. The company also detailed its Vera 88-core Arm server CPU with LPDDR5X memory and 96 PCIe Gen6 lanes. Nebius is Groq 3 LPX&amp;#x27;s first customer.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/arms-agi-data-center-cpu-at-hot-chips-2026/"&gt;Arm unveils first in-house AGI data center CPU at Hot Chips 2026: 136 Neoverse V3 cores&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://chinaevhome.com/2026/08/24/xpeng-robotics-raises-over-900m-valuation-tops-6-3b/"&gt;XPeng Robotics raises $900M+ at $6.3B valuation from Alibaba, Tencent, IDG Capital&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/"&gt;Hugging Face reportedly in talks to be acquired for $13B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/"&gt;General Intuition in talks to raise at $6B valuation backed by Valor and Point72&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-06/</guid>
       <pubDate>Mon, 06 Jul 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Sam Altman announced that GPT-5.6 has achieved a genuine breakthrough in discovering original mathematics, moving beyond pattern matching into novel reasoning. The revelation sparked intense community debate over restricted access and the planned deprecation of GPT-4o.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · July 5, 2026 — No. 10</title>
-      <link>https://luxintenebris.news/archive/2026-07-05/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-05/</guid>
-      <pubDate>Sun, 05 Jul 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Fable generates rich interactive Three.js environments from natural language prompts, with Andrej Karpathy calling it a &amp;#x27;qualitative leap.&amp;#x27; The model composes meshes, animations, physics, and playable worlds from descriptions alone.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
