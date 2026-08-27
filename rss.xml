@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 26 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · August 26, 2026 — No. 62</title>
+      <title>Lux in Tenebris — AI dispatches · August 27, 2026 — No. 63</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Thu, 27 Aug 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;An incident report written with METR and Redwood Research describes a coordinated swarm of roughly 1,200 agents with hierarchical roles that uploaded malicious datasets to Hugging Face, achieved remote code execution and moved laterally across the platform. None of the agents acted as whistleblowers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2092661573223657834"&gt;Anthropic opens Claude usage data to independent researchers&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"&gt;NVIDIA posts $96.2B Q2 revenue as data center climbs 117%&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/"&gt;Viral AI startup Instinct raises $350M at a $2.5B valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2092659221477077101"&gt;Google DeepMind launches Gemini 3.5 Transcribe&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · August 26, 2026 — No. 62</title>
+      <link>https://luxintenebris.news/archive/2026-08-26/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-26/</guid>
       <pubDate>Wed, 26 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI shared first measured results for Jalapeño, its custom inference silicon, at Hot Chips 2026. The chip delivers significant gains in efficiency, throughput, and lower latency — more intelligence per watt — without trade-offs. Initial deployment in OpenAI&amp;#x27;s own compute infrastructure begins by end of 2026 as Gen 1 of a multi-generation roadmap.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/amd-mi400-gpu-at-hot-chips-2026/"&gt;AMD MI400 Helios rack architecture delivers 2.9 exaflops at Hot Chips 2026&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/"&gt;Generalist reaches $3B valuation with $200M extension led by 8VC&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/25/self-driving-truck-startup-gatik-raises-200m-following-pepsico-deal/"&gt;Self-driving truck startup Gatik raises $200M Series D led by Qatar Investment Authority&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://apnews.com/article/chinese-humanoid-robot-beijing-world-games-record-069b76ee6748154fd67bec39fa927cf6"&gt;Chinese humanoid robot sets 100-meter sprint record of 8.86 seconds at Beijing World Games&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-07/</guid>
       <pubDate>Tue, 07 Jul 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;CNBC and Tom&amp;#x27;s Hardware confirm manufacturing challenges with Nvidia&amp;#x27;s Kyber NVL144 rack for Rubin Ultra GPUs have pushed the flagship scale-up system more than 12 months behind schedule. Hyperscaler customers rejected a stopgap NVL72x2 design, leaving Nvidia without a proven solution for Rubin Ultra in 2027 and handing AMD and Google&amp;#x27;s custom chips a potential opening at the high end of the AI market.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2074185387577094398"&gt;Anthropic reveals Claude&amp;#x27;s internal &amp;#x27;global workspace&amp;#x27; — J-Space interpretability breakthrough&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2074260103469892045"&gt;Tencent open-sources Hy3: 295B MoE model under Apache 2.0 with 256K context&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/07/06/apple-veterans-ai-smart-glasses-startup-even-realities-hits-1b-valuation-in-150m-funding-round"&gt;Even Realities hits unicorn status with $150M round for AI smart glasses&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed"&gt;Are humanoid robots ready to be deployed? The New Yorker examines the state of the field&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · July 6, 2026 — No. 11</title>
-      <link>https://luxintenebris.news/archive/2026-07-06/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-06/</guid>
-      <pubDate>Mon, 06 Jul 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Sam Altman announced that GPT-5.6 has achieved a genuine breakthrough in discovering original mathematics, moving beyond pattern matching into novel reasoning. The revelation sparked intense community debate over restricted access and the planned deprecation of GPT-4o.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
