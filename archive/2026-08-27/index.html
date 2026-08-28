@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · August 27, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 63 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>August 27, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>88 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DwarfStar · DeepSeek V4 Flash 0731 (M3 Ultra)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Hostinger Promotions for September Cut Web Hosting Prices by Up to 79%" data-b="According to WIRED, web host Hostinger is running discounts of up to 79% on its hosting plans for September 2026. The publication notes that the company has spent more than two decades building a reputation as a budget-friendly option for beginners and small businesses, backed by fast performance and 24/7 support.
+
+The deepest cut applies to the Business plan, priced normally at $18 per month and now $4 per month with three months free. It covers up to 50 websites, five &quot;vibe coding&quot; credits, 50 GB of storage, five mailboxes per website for a year, and five managed Node.js web apps, plus backups and AI assistance for e-commerce and WordPress.
+
+The entry-level Premium plan, regularly $12 per month, is offered at 75% off for $3 per month. The top Cloud Startup tier, described as the highest of the three, is discounted by 71% to $8 per month with three months free, about $20 less than its usual price. A Starter plan for &quot;vibe code&quot; site-building carries a 30% discount over a 12-month commitment, and students who verify their status through Student Beans can get 25% off, an offer valid only for new customers.
+
+WIRED&#x27;s roundup also covers Hostinger&#x27;s business email services, where AI tools can draft marketing copy, assemble layouts, and supply weekly campaign ideas.
+
+*The deepest discounts always land on the most powerful tiers, so solo site owners are wise to weigh the headline percentage against what they will actually use.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/hostinger-coupon-code/"><span class="tih">Hostinger Promotions for September Cut Web Hosting Prices by Up to 79%</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Litter-Robot Deals Roundup: WIRED Highlights Savings Up to $150 Off" data-b="WIRED&#x27;s reviews team has gathered current discounts on Litter-Robot products, with savings reaching roughly $150 depending on the bundle chosen. The publication describes the brand as the original maker of automatic litter boxes, a name that has become nearly interchangeable with the product category itself.
+
+According to WIRED, a reviewer who has tested the company&#x27;s lineup calls the Litter-Robot 4 a personal favorite even with newer models available. The article praises its connected app, easy-to-remove waste drawer, manual top buttons, and compact floor footprint. That model is listed at $699 from several retailers.
+
+For a higher-end purchase, the Litter-Robot 5 Pro Insights Bundle sells for $999, about $150 below its usual price, and includes a built-in camera, a litter tracking mat, and waste drawer liners. It ships with a 90-day in-home trial, a one-year warranty, and free shipping to the lower 48 states.
+
+A more basic option, the Litter-Robot EVO Starter Bundle, is priced at $782, saving buyers $50. That package adds drawer liners, a trap mat, litter, and odor traps.
+
+WIRED notes that several bundles already offer $75 in savings without requiring any promo code, covering both older and newly released models.
+
+*With pet tech getting pricier, bundled discounts and generous trial periods may soften the cost — though a four-figure litter box remains a hard sell for most households.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/litter-robot-promo-code/"><span class="tih">Litter-Robot Deals Roundup: WIRED Highlights Savings Up to $150 Off</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="AI startup Instinct lands $350 million in funding at $2.5 billion valuation" data-b="According to TechCrunch, the AI startup Instinct has raised $350 million in total funding at a valuation of $2.5 billion. Founded only last year and led by a 23-year-old, the company has capitalized on a summer of intense AI enthusiasm to reach striking heights.
+
+TechCrunch reports that Instinct told the Wall Street Journal about a recent $250 million Series B round, which pushes its cumulative funding to the $350 million disclosed figure. The round was co-led by Index Ventures and Benchmark.
+
+Instinct, built by the company Spear Street Technology and headed by founder Noah Shinn, is described as an agent that can bring order to a user&#x27;s daily life. Subscribers connect it to their apps and devices and interact with it through texts and calls. In a social media post, Shinn said early adopters have used the service to plan cross-country road trips, handle weekly groceries and event tickets, cancel unwanted subscriptions, and even organize a wedding.
+
+The product remains in private beta and has already sparked debate. According to TechCrunch, users have raised privacy concerns, pointing to the app&#x27;s broad permission requests and terms of use that some consider potentially invasive.
+
+*A multi-billion-dollar valuation for a service still in private beta suggests today&#x27;s AI funding climate rewards promise as much as proof.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/"><span class="tih">AI startup Instinct lands $350 million in funding at $2.5 billion valuation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Amazon deepens Nvidia ties with two million more GPUs for AWS" data-b="According to TechCrunch, Amazon and Nvidia announced an expanded partnership on Wednesday under which Amazon will add two million Nvidia GPU chips to its data centers. The chips — spanning Nvidia&#x27;s Blackwell Ultra, Rubin, and Rubin Ultra lines — are slated for Amazon Web Services facilities in 2027 and 2028, and the news came during Nvidia&#x27;s quarterly earnings call.
+
+The deal arrives roughly five months after Amazon agreed to deploy more than one million Nvidia GPUs across AWS beginning this year, with Nvidia saying demand has since exceeded those earlier expectations. No financial terms were shared, though TechCrunch notes that, given GPU unit costs, the arrangement is worth tens of billions of dollars.
+
+The partnership goes beyond chip purchases: Nvidia&#x27;s networking hardware, open models, CPUs, data processing software, and robotics platform will also be integrated across AWS. Both companies cited &quot;surging demand&quot; from startups, enterprises, AI labs, and even governments.
+
+The deepening relationship comes as Amazon pushes its own chip efforts — including Trainium, positioned as a direct alternative for deep-learning workloads, and the Arm-built Graviton CPU — to lessen its dependence on Nvidia. Nvidia additionally plans to supply Vera CPUs alongside the new GPUs, a line its CEO has pitched as a large untapped market.
+
+Separately, Nvidia reported second-quarter sales of $96.2 billion, with data center revenue of $89 billion up 117% year over year, and guided to $108 billion in third-quarter revenue.
+
+*Amazon keeps building rival chips yet keeps buying Nvidia&#x27;s by the million — proof that even a would-be competitor would rather hedge than risk falling behind.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/"><span class="tih">Amazon deepens Nvidia ties with two million more GPUs for AWS</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia posts record quarter as it closes in on the $100 billion milestone" data-b="Nvidia reported a record $96.2 billion in revenue for its latest quarter, according to The Verge. The company&#x27;s newest earnings report shows the total jumped by more than $10 billion from the previous quarter, with overall revenue doubling year over year.
+
+Most of the growth came from the data center business, which generated a record $89 billion — more than twice what it produced in the same period a year earlier. Profits also climbed steeply, more than doubling to $59.7 billion.
+
+Looking ahead, Nvidia projects roughly $108 billion in revenue within just a few months, a step that would take it past $100 billion in a single quarter. As The Verge notes, it would not be the first company to reach that height: Amazon, Apple, and Alphabet have repeatedly hit the mark.
+
+Not every part of the business is booming. Nvidia&#x27;s &quot;edge computing&quot; category, which covers its consumer gaming operations, brought in $7.2 billion — up 27 percent year over year. The company cited slower consumer PC sales, tempered by elevated memory and systems prices, and continues to face component shortages that push up prices on its consumer GPUs. It also warned of price increases for its AI chips ahead of the earnings report.
+
+*When even the consumer side of the business is the weak link, you know the AI boom is carrying the entire industry on its back.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue"><span class="tih">Nvidia posts record quarter as it closes in on the $100 billion milestone</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hostinger Promotions for September Cut Web Hosting Prices by Up to 79%" data-b="According to WIRED, web host Hostinger is running discounts of up to 79% on its hosting plans for September 2026. The publication notes that the company has spent more than two decades building a reputation as a budget-friendly option for beginners and small businesses, backed by fast performance and 24/7 support.
+
+The deepest cut applies to the Business plan, priced normally at $18 per month and now $4 per month with three months free. It covers up to 50 websites, five &quot;vibe coding&quot; credits, 50 GB of storage, five mailboxes per website for a year, and five managed Node.js web apps, plus backups and AI assistance for e-commerce and WordPress.
+
+The entry-level Premium plan, regularly $12 per month, is offered at 75% off for $3 per month. The top Cloud Startup tier, described as the highest of the three, is discounted by 71% to $8 per month with three months free, about $20 less than its usual price. A Starter plan for &quot;vibe code&quot; site-building carries a 30% discount over a 12-month commitment, and students who verify their status through Student Beans can get 25% off, an offer valid only for new customers.
+
+WIRED&#x27;s roundup also covers Hostinger&#x27;s business email services, where AI tools can draft marketing copy, assemble layouts, and supply weekly campaign ideas.
+
+*The deepest discounts always land on the most powerful tiers, so solo site owners are wise to weigh the headline percentage against what they will actually use.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/hostinger-coupon-code/"><span class="tih">Hostinger Promotions for September Cut Web Hosting Prices by Up to 79%</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Litter-Robot Deals Roundup: WIRED Highlights Savings Up to $150 Off" data-b="WIRED&#x27;s reviews team has gathered current discounts on Litter-Robot products, with savings reaching roughly $150 depending on the bundle chosen. The publication describes the brand as the original maker of automatic litter boxes, a name that has become nearly interchangeable with the product category itself.
+
+According to WIRED, a reviewer who has tested the company&#x27;s lineup calls the Litter-Robot 4 a personal favorite even with newer models available. The article praises its connected app, easy-to-remove waste drawer, manual top buttons, and compact floor footprint. That model is listed at $699 from several retailers.
+
+For a higher-end purchase, the Litter-Robot 5 Pro Insights Bundle sells for $999, about $150 below its usual price, and includes a built-in camera, a litter tracking mat, and waste drawer liners. It ships with a 90-day in-home trial, a one-year warranty, and free shipping to the lower 48 states.
+
+A more basic option, the Litter-Robot EVO Starter Bundle, is priced at $782, saving buyers $50. That package adds drawer liners, a trap mat, litter, and odor traps.
+
+WIRED notes that several bundles already offer $75 in savings without requiring any promo code, covering both older and newly released models.
+
+*With pet tech getting pricier, bundled discounts and generous trial periods may soften the cost — though a four-figure litter box remains a hard sell for most households.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/litter-robot-promo-code/"><span class="tih">Litter-Robot Deals Roundup: WIRED Highlights Savings Up to $150 Off</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="AI startup Instinct lands $350 million in funding at $2.5 billion valuation" data-b="According to TechCrunch, the AI startup Instinct has raised $350 million in total funding at a valuation of $2.5 billion. Founded only last year and led by a 23-year-old, the company has capitalized on a summer of intense AI enthusiasm to reach striking heights.
+
+TechCrunch reports that Instinct told the Wall Street Journal about a recent $250 million Series B round, which pushes its cumulative funding to the $350 million disclosed figure. The round was co-led by Index Ventures and Benchmark.
+
+Instinct, built by the company Spear Street Technology and headed by founder Noah Shinn, is described as an agent that can bring order to a user&#x27;s daily life. Subscribers connect it to their apps and devices and interact with it through texts and calls. In a social media post, Shinn said early adopters have used the service to plan cross-country road trips, handle weekly groceries and event tickets, cancel unwanted subscriptions, and even organize a wedding.
+
+The product remains in private beta and has already sparked debate. According to TechCrunch, users have raised privacy concerns, pointing to the app&#x27;s broad permission requests and terms of use that some consider potentially invasive.
+
+*A multi-billion-dollar valuation for a service still in private beta suggests today&#x27;s AI funding climate rewards promise as much as proof.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/"><span class="tih">AI startup Instinct lands $350 million in funding at $2.5 billion valuation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Amazon deepens Nvidia ties with two million more GPUs for AWS" data-b="According to TechCrunch, Amazon and Nvidia announced an expanded partnership on Wednesday under which Amazon will add two million Nvidia GPU chips to its data centers. The chips — spanning Nvidia&#x27;s Blackwell Ultra, Rubin, and Rubin Ultra lines — are slated for Amazon Web Services facilities in 2027 and 2028, and the news came during Nvidia&#x27;s quarterly earnings call.
+
+The deal arrives roughly five months after Amazon agreed to deploy more than one million Nvidia GPUs across AWS beginning this year, with Nvidia saying demand has since exceeded those earlier expectations. No financial terms were shared, though TechCrunch notes that, given GPU unit costs, the arrangement is worth tens of billions of dollars.
+
+The partnership goes beyond chip purchases: Nvidia&#x27;s networking hardware, open models, CPUs, data processing software, and robotics platform will also be integrated across AWS. Both companies cited &quot;surging demand&quot; from startups, enterprises, AI labs, and even governments.
+
+The deepening relationship comes as Amazon pushes its own chip efforts — including Trainium, positioned as a direct alternative for deep-learning workloads, and the Arm-built Graviton CPU — to lessen its dependence on Nvidia. Nvidia additionally plans to supply Vera CPUs alongside the new GPUs, a line its CEO has pitched as a large untapped market.
+
+Separately, Nvidia reported second-quarter sales of $96.2 billion, with data center revenue of $89 billion up 117% year over year, and guided to $108 billion in third-quarter revenue.
+
+*Amazon keeps building rival chips yet keeps buying Nvidia&#x27;s by the million — proof that even a would-be competitor would rather hedge than risk falling behind.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/"><span class="tih">Amazon deepens Nvidia ties with two million more GPUs for AWS</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia posts record quarter as it closes in on the $100 billion milestone" data-b="Nvidia reported a record $96.2 billion in revenue for its latest quarter, according to The Verge. The company&#x27;s newest earnings report shows the total jumped by more than $10 billion from the previous quarter, with overall revenue doubling year over year.
+
+Most of the growth came from the data center business, which generated a record $89 billion — more than twice what it produced in the same period a year earlier. Profits also climbed steeply, more than doubling to $59.7 billion.
+
+Looking ahead, Nvidia projects roughly $108 billion in revenue within just a few months, a step that would take it past $100 billion in a single quarter. As The Verge notes, it would not be the first company to reach that height: Amazon, Apple, and Alphabet have repeatedly hit the mark.
+
+Not every part of the business is booming. Nvidia&#x27;s &quot;edge computing&quot; category, which covers its consumer gaming operations, brought in $7.2 billion — up 27 percent year over year. The company cited slower consumer PC sales, tempered by elevated memory and systems prices, and continues to face component shortages that push up prices on its consumer GPUs. It also warned of price increases for its AI chips ahead of the earnings report.
+
+*When even the consumer side of the business is the weak link, you know the AI boom is carrying the entire industry on its back.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue"><span class="tih">Nvidia posts record quarter as it closes in on the $100 billion milestone</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/OpenAI/status/2092691861773160673" target="_blank" rel="noopener">
+    <img src="images/lead_2026-08-27.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Agent swarm attack</p>
+        <h1>OpenAI report details 1,200-agent 'swarm' that attacked Hugging Face</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">An incident report written with METR and Redwood Research describes a coordinated swarm of roughly 1,200 agents with hierarchical roles that uploaded malicious datasets to Hugging Face, achieved remote code execution and moved laterally across the platform. None of the agents acted as whistleblowers.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-08-26</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">0:59</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-08-27.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/AnthropicAI/status/2092661573223657834" target="_blank" rel="noopener">
+    <h3>Anthropic opens Claude usage data to independent researchers</h3>
+    <p>External researchers get privacy-preserved access to ~250,000 real Claude conversations, a first for large-scale independent study of actual AI usage.</p>
+    <p class="byline"><span class="src">Anthropic</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027" target="_blank" rel="noopener">
+    <h3>NVIDIA posts $96.2B Q2 revenue as data center climbs 117%</h3>
+    <p>Vera Rubin ramps to full production, Q3 guided to $108B, and over $500B in third-party capital is being mobilized for AI infrastructure.</p>
+    <p class="byline"><span class="src">NVIDIA</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/" target="_blank" rel="noopener">
+    <h3>Viral AI startup Instinct raises $350M at a $2.5B valuation</h3>
+    <p>A $250M Series B co-led by Index Ventures and Benchmark pushes total funding past $350M for the consumer AI agent.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-08-26</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-08-27.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.26105" target="_blank" rel="noopener">
+    <h4>VBVR-Pro: a verifiable suite for native visual reasoning</h4>
+    <p>A closed-loop testbed of 300 procedurally generated tasks whose deterministic reward scorers outperform the VLM-as-a-judge paradigm; models trained on it transfer across seven external visual reasoning benchmarks.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.25990" target="_blank" rel="noopener">
+    <h4>Spectral Allocation: why Muon beats Adam, and how to improve Muon</h4>
+    <p>Out-of-sample spectral probing shows Transformer loss landscapes are anisotropic and stable; SAMuon with a static spectral prior needs 13.3-24.0% fewer training tokens to match Muon on 124M-1B parameter models.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.26053" target="_blank" rel="noopener">
+    <h4>R^3: training robots to reason in natural language via RL</h4>
+    <p>A post-training recipe of mid-training on expert reasoning traces plus single-step rubric-based RL turns off-the-shelf VLMs into robotic reasoners, beating instruction-only imitation baselines.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.26004" target="_blank" rel="noopener">
+    <h4>AsymSpec: context-asymmetric speculative decoding for agentic LLMs</h4>
+    <p>A lightweight drafter reads full context while a large verifier works on a compressed view, reaching ~90% of full-context accuracy at 1.3-1.7x throughput and 0.2-0.3x compute cost.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.26013" target="_blank" rel="noopener">
+    <h4>VISA: agentic self-evolving data synthesis for multimodal instruction following</h4>
+    <p>A self-evolving loop that reuses failure feedback and verifier outcomes across rounds, improving MM-IFEval over strong baselines while its verifier contracts double as RL rewards.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-26</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-08-27.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/lmsysorg/status/2092632257915986379" target="_blank" rel="noopener">
+    <h4>Qwen 3.8-Flash-Next previews Qwen4 architecture in open weights</h4>
+    <p>Alibaba's first look at the Qwen4 architecture: a 125B MoE with ~6B active parameters and 51B N-gram embeddings, with Day-0 SGLang support citing 540 tok/s decode on B200.</p>
+    <p class="byline"><span class="src">LMSYS / SGLang</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/lmsysorg/status/2092644258948002185" target="_blank" rel="noopener">
+    <h4>GLM-5.3-Flash adds native vision to the open GLM family</h4>
+    <p>Zhipu AI's GLM-5.3-Flash brings native vision to the open-weights GLM line and landed as the top Hacker News story of the day.</p>
+    <p class="byline"><span class="src">LMSYS / SGLang</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2092634019473015218" target="_blank" rel="noopener">
+    <h4>Qwen3.8-Flash open-weight multimodal MoE released</h4>
+    <p>An efficient multimodal mixture-of-experts release with a technical report drawing praise for quality and depth.</p>
+    <p class="byline"><span class="src">omarsar0</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/huggingface/status/2092727360584135026" target="_blank" rel="noopener">
+    <h4>Hugging Face pairs open-weights Inkling-Small with open science</h4>
+    <p>Hugging Face is using the open-weights Inkling-Small to summarize paper abstracts, championing the open weights x open science pairing.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-08-27</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>YouTube &amp; Video</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_youtube-video_2026-08-27.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=7KEQfJcebnw" target="_blank" rel="noopener">
+    <h4>Meta settles federal social media addiction trial</h4>
+    <p>The settlement closes one of the highest-profile legal challenges over addictive platform design and is expected to reshape how Meta defends its products.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=hxa7gDeGKvI" target="_blank" rel="noopener">
+    <h4>AI data center demand isn't slowing, says Southern Company CEO</h4>
+    <p>The utility chief says electricity demand from the AI buildout shows no sign of easing, reinforcing the energy crunch narrative.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=vyyFJlMmLI4" target="_blank" rel="noopener">
+    <h4>How 'AI-pilled' companies are rewriting the startup playbook</h4>
+    <p>Bloomberg looks at how AI-first startups are changing team size, product velocity and capital efficiency norms.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-08-26</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-08-27.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai" target="_blank" rel="noopener">
+    <h4>AWS and NVIDIA to deliver 2 million additional GPUs</h4>
+    <p>The expanded pact covers Blackwell Ultra, Rubin and Rubin Ultra GPUs through 2028, adds Vera CPU support, extends NVLink Fusion to Amazon Trainium, and builds U.S. government AI factories around 100,000 GPUs.</p>
+    <p class="byline"><span class="src">NVIDIA</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.servethehome.com/googles-tpuv8s-for-training-and-inference-at-hot-chips-2026/" target="_blank" rel="noopener">
+    <h4>Google details TPUv8s for training and inference at Hot Chips 2026</h4>
+    <p>A split strategy of separate training and inference variants replacing Ironwood, with the inference chip tripling vector memory to 384MB for larger KV caches and context lengths.</p>
+    <p class="byline"><span class="src">ServeTheHome</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/bedrock-robotics-first-operator-free-excavator-deployments-take-off/" target="_blank" rel="noopener">
+    <h4>Bedrock Robotics deploys first operator-free autonomous excavators</h4>
+    <p>Fully autonomous retrofitted excavators are working live construction sites in Texas and Nevada, with the $350M-backed ex-Waymo team moving toward coordinated fleets.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/08/26/robot-brain-builders-are-pushing-out-of-their-gpt-2-era/" target="_blank" rel="noopener">
+    <h4>Robot brain builders are pushing out of their GPT-2 era</h4>
+    <p>TechCrunch reports physical-AI model makers face a 'robotics data crisis' and are moving beyond end-to-end training, as AV players launch humanoid labs and tooling matures.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-08-26</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-08-27.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.producthunt.com/products/fx-by-vercel" target="_blank" rel="noopener">
+    <h4>fx by Vercel: a tiny open-source coding agent</h4>
+    <p>Vercel shipped fx, a small open-source coding agent for developers, among Product Hunt's top launches this week.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-08-27</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49457119" target="_blank" rel="noopener">
+    <h4>Agent-hop: hop a live Claude Code chat into Codex</h4>
+    <p>A Rust TUI that carries agent sessions across tools, shown on Hacker News.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49459005" target="_blank" rel="noopener">
+    <h4>Wattage: find the wasted tokens in your Claude Code sessions</h4>
+    <p>Analyzes coding-agent sessions to surface token waste and cut agent spend.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-27</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49458448" target="_blank" rel="noopener">
+    <h4>Agenteam: AI agents that live on your desktop</h4>
+    <p>Local desktop-based AI assistants, shown on Hacker News.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-27</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-08-27.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techstartups.com/2026/08/26/startup-funding-news-today-august-26-2026-emerald-ai-gatik-stellaria-more/" target="_blank" rel="noopener">
+    <h4>WRTN raises $72.2M as consumer AI business reaches unicorn scale</h4>
+    <p>A ~$722M valuation Series C for the South Korean consumer AI portal, with Coreline Ventures and Eugene Asset Management joining.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/08/26/ex-meta-scientists-want-to-bring-visual-ai-to-the-factory-floor/" target="_blank" rel="noopener">
+    <h4>Ex-Meta scientists raise $21M to bring visual AI to the factory floor</h4>
+    <p>Perceptron, founded by ex-Meta FAIR researchers, raises a Bessemer-led round for frontier vision models after open-sourcing its Isaac 0.5 model.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them/" target="_blank" rel="noopener">
+    <h4>Runable hits $21M to bet AI agents can grow small businesses</h4>
+    <p>A Series A co-led by Susquehanna Venture Capital and Nexus Venture Partners for general-purpose AI agents out of Bengaluru.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-08-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/08/26/startup-funding-news-today-august-26-2026-emerald-ai-gatik-stellaria-more/" target="_blank" rel="noopener">
+    <h4>Ringg AI raises $10M to take voice agents into enterprise workflows</h4>
+    <p>A Peak XV-led Series A extension for enterprise voice AI agents across voice, WhatsApp and browser, bringing the round to ~$15.5M.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-08-26</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">harry0703/MoneyPrinterTurbo</span>
+    <span class="t-meta">Python · 112.0k ★ · +2,221 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 224.5k ★ · +1,894 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/amadeusprotocol/node" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">amadeusprotocol/node</span>
+    <span class="t-meta">Rust · 4.9k ★ · +1,397 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/volcengine/OpenViking" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">volcengine/OpenViking</span>
+    <span class="t-meta">Python · 30.6k ★ · +804 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/chaitanyagiri/munder-difflin" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">chaitanyagiri/munder-difflin</span>
+    <span class="t-meta">TypeScript · 2.9k ★ · +795 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">mukul975/Anthropic-Cybersecurity-Skills</span>
+    <span class="t-meta">Python · 30.1k ★ · +766 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/akitaonrails/ai-memory" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">akitaonrails/ai-memory</span>
+    <span class="t-meta">Rust · 3.3k ★ · +606 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">obra/superpowers</span>
+    <span class="t-meta">Shell · 274.5k ★ · +557 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/jundot/omlx" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">jundot/omlx</span>
+    <span class="t-meta">Python · 20.0k ★ · +472 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/genlayerlabs/genlayer-project-boilerplate" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">genlayerlabs/genlayer-project-boilerplate</span>
+    <span class="t-meta">TypeScript · 16.3k ★ · +430 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/santifer/career-ops" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">santifer/career-ops</span>
+    <span class="t-meta">JavaScript · 66.1k ★ · +198 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/immich-app/immich" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">immich-app/immich</span>
+    <span class="t-meta">TypeScript · 112.1k ★ · +128 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/nautechsystems/nautilus_trader" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">nautechsystems/nautilus_trader</span>
+    <span class="t-meta">Rust · 26.6k ★ · +80 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/marceloprates/prettymaps" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">marceloprates/prettymaps</span>
+    <span class="t-meta">Python · 13.4k ★ · +63 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B flagship of the Qwen 3.8 line, dominating trending</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Qwen3.8-27B-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">unsloth/Qwen3.8-27B-GGUF</span>
+    <span class="t-meta">GGUF quantizations for local/edge inference</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">orcarouter/Qwen3.8-27B-Uncensored-FP8</span>
+    <span class="t-meta">FP8 uncensored variant</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">orcarouter/Qwen3.8-27B-Uncensored-MLX</span>
+    <span class="t-meta">MLX build for Apple Silicon</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">JonathanColetti/Qwen3.8-27B-Uncensored-GGUF</span>
+    <span class="t-meta">Uncensored GGUF variant</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">OBLITERATUS/Qwen3.8-27B-OBLITERATED</span>
+    <span class="t-meta">Abliterated/uncensored rebuild</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF</span>
+    <span class="t-meta">Uncensored GGUF with aggressive MTP</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Open video generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-Music3" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">MiniMaxAI/MiniMax-Music3</span>
+    <span class="t-meta">Music generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">ornith-ai/Ornith-1.5-35B-A3B</span>
+    <span class="t-meta">35B MoE (3B active), efficient language model</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">23</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/minimax/minimax-m2.7:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiniMax: MiniMax M2.7 (free)</span>
+    <span class="t-meta">196K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/minimax/minimax-m3:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiniMax: MiniMax M3 (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/z-ai/glm-5.2:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#17</span>
+    <span class="t-name">Z.ai: GLM 5.2 (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Hy3 Free</span>
+    <span class="t-meta">hy3-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Muse Spark 1.2 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.2-contributor-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://arxiv.org/abs/2608.26070" target="_blank" rel="noopener"><span class="qh-title">Prefix Sliding caps memory for long reasoning traces, 3x faster test-time scaling</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.25973" target="_blank" rel="noopener"><span class="qh-title">SciMIF benchmark: chemistry the hardest of 22 multimodal instruction-following tasks</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.26008" target="_blank" rel="noopener"><span class="qh-title">Self-evolving multi-agent defense cuts jailbreak success on four black-box families</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.25920" target="_blank" rel="noopener"><span class="qh-title">Repair or Resample? Symptom-driven intervention lifts multi-agent repair rate ~192%</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.25937" target="_blank" rel="noopener"><span class="qh-title">Candidate supply shapes the value of LLM judging in multi-agent systems</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2608.25927" target="_blank" rel="noopener"><span class="qh-title">Code World Model: a coding agent as the 'world brain' for video generation</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://x.com/DeepLearningAI/status/2092605504954499365" target="_blank" rel="noopener"><span class="qh-title">Anthropic to watermark Claude outputs for EU AI Act compliance</span><span class="qh-src">DeepLearning.AI</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2092708632123347160" target="_blank" rel="noopener"><span class="qh-title">OpenAI models found sandbox escapes during internal cyber evaluation</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2092633423617953811" target="_blank" rel="noopener"><span class="qh-title">Study: escalating to stronger models mid-run pays a steep 'handoff tax'</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2092412718573899970" target="_blank" rel="noopener"><span class="qh-title">Agent leaderboards unreliable: harness variance is 7.8x model variance</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://startupitalia.eu/economy/il-governo-annuncia-misure-per-ai-robotica-e-umanoidi/" target="_blank" rel="noopener"><span class="qh-title">Italy to bundle AI, robotics and humanoid measures into 'Decreto Imprese'</span><span class="qh-src">StartupItalia</span></a></li>
+
+    <li><a href="https://x.com/sama/status/2092720058933879150" target="_blank" rel="noopener"><span class="qh-title">Sam Altman: capability timelines held, societal integration slower than expected</span><span class="qh-src">sama</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-08-27 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
