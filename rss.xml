@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 28 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · August 28, 2026 — No. 64</title>
+      <title>Lux in Tenebris — AI dispatches · August 29, 2026 — No. 65</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sat, 29 Aug 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic released research showing Claude Sonnet 5 can act as an autonomous AI researcher, using 48 hours and a single GPU to post-train smaller models and hill-climb alignment benchmarks across 10 failure modes. The improvements generalized to unseen benchmarks and models up to 4.7x larger, and Anthropic is releasing the full setup to the community.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2093323034195378306"&gt;DeepMind&amp;#x27;s Co-Scientist moves AI experiments into physical labs&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=EdySgw4C9Yg"&gt;Anthropic wins a legal round against the Trump administration&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=m1oGaHK38Cg"&gt;Bank of England&amp;#x27;s Bailey says AI could push inflation either way&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · August 28, 2026 — No. 64</title>
+      <link>https://luxintenebris.news/archive/2026-08-28/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-28/</guid>
       <pubDate>Fri, 28 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic&amp;#x27;s new standard lets AI agents safely discover and operate physical lab and manufacturing equipment, compressing a multi-week HHMI Janelia imaging experiment into a single day and lifting laser stabilization on QuEra quantum computers from 58% to 99.3%. The company plans to open-source it after further safety work.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2093060670472241368"&gt;OpenAI, Anthropic and Big Tech issue joint call for AI-powered cyber defense&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/_philschmid/status/2093011024370643453"&gt;Google releases Gemini Omni 1.1 Flash video generation model&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techfundingnews.com/openai-launches-400m-second-venture-fund-after-backing-harvey-cursor-and-more/"&gt;OpenAI prepares $400M second venture fund&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-09/</guid>
       <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI unveiled GPT-5.6 Sol, its next-generation flagship model, along with specialized variants Terra and Luna for targeted domains. Global preview access is expanding now ahead of the public launch on Thursday, marking the company&amp;#x27;s most significant model release since GPT-5.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2074907025537224840"&gt;OpenAI introduces GPT-Live, a full-duplex voice model for natural conversation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.ai/news/grok-4-5"&gt;xAI launches Grok 4.5 as its smartest model yet, rivals GPT-5.5 at 1/5 the cost&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close"&gt;SambaNova raises $1B at $11B valuation in Series F first close&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web"&gt;Anthropic expands Claude Cowork to mobile and web in beta launch&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · July 8, 2026 — No. 13</title>
-      <link>https://luxintenebris.news/archive/2026-07-08/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-08/</guid>
-      <pubDate>Wed, 08 Jul 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;The Chinese AI startup is building a custom inference chip, marking a strategic pivot from software-only innovation to full-stack hardware sovereignty. The move, reported by Bloomberg via Reuters, signals deepening vertical integration across the industry as firms seek alternatives to dominant GPU suppliers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/"&gt;Meta launches Muse Image and Muse Video — free AI generation with native audio&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation"&gt;Norm AI raises $120M Series C at $1.2B valuation for legal AI platform&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2074556579580711050"&gt;LLM verifiers emerge as a new scaling axis: continuous scoring without fine-tuning&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2074543978129793462"&gt;NVIDIA compresses hybrid MoE into Puzzle-75B-A9B, doubling inference throughput&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
