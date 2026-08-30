@@ -1,65 +1,113 @@
 {
-  "issue_no": 65,
-  "date_iso": "2026-08-29",
-  "date_human": "August 29, 2026",
-  "notice": "Light news day — research, funding and official scouts returned no fresh items.",
+  "issue_no": 66,
+  "date_iso": "2026-08-30",
+  "date_human": "August 30, 2026",
+  "notice": "Light news day — fewer fresh items than usual.",
   "lead": {
-    "kicker": "Autonomous Alignment",
-    "title": "Anthropic shows Claude autonomously performing alignment research",
-    "summary": "Anthropic released research showing Claude Sonnet 5 can act as an autonomous AI researcher, using 48 hours and a single GPU to post-train smaller models and hill-climb alignment benchmarks across 10 failure modes. The improvements generalized to unseen benchmarks and models up to 4.7x larger, and Anthropic is releasing the full setup to the community.",
-    "source": "Anthropic",
-    "date": "2026-08-28",
-    "url": "https://x.com/AnthropicAI/status/2093386528668172373",
-    "image": "images/lead_2026-08-29.jpg"
+    "kicker": "OpenAI cuts Cursor",
+    "title": "OpenAI terminates Cursor partnership after SpaceX acquisition",
+    "summary": "OpenAI is ending its partnership with Cursor following the code editor's acquisition by SpaceX, with direct access to OpenAI models ending November 12, 2026. Developers immediately pushed back, accusing OpenAI of contradicting earlier statements about not restricting third-party use of its models.",
+    "source": "OpenAI",
+    "date": "2026-08-29",
+    "url": "https://x.com/OpenAI/status/2093515564786540695",
+    "image": "images/lead_2026-08-30.jpg"
   },
   "top_stories": [
     {
-      "title": "DeepMind's Co-Scientist moves AI experiments into physical labs",
-      "summary": "Google DeepMind's Co-Scientist ran real lab pipelines: designing a safe precursor route for MXenes, operating a CVD reactor to grow 2D materials, and predicting E. coli swarming phenotypes from sparse data.",
-      "source": "Google DeepMind",
+      "title": "DeepSeek nears $7.4B funding round at $74B valuation ahead of 2027 IPO",
+      "summary": "DeepSeek's first external equity round, expected to close by the end of August, will fund frontier model development ahead of a planned 2027 IPO on Shanghai's Star Market.",
+      "source": "TechStartups",
       "date": "2026-08-28",
-      "url": "https://x.com/omarsar0/status/2093323034195378306"
+      "url": "https://techstartups.com/2026/08/28/deepseek-nears-7-4-billion-funding-round-at-74-billion-valuation-ahead-of-2027-ipo/"
     },
     {
-      "title": "Anthropic wins a legal round against the Trump administration",
-      "summary": "Bloomberg reports Anthropic prevailed in court against the Trump administration, a notable regulatory and legal win for the AI industry challenging executive-branch actions.",
-      "source": "Bloomberg",
-      "date": "2026-08-28",
-      "url": "https://www.youtube.com/watch?v=EdySgw4C9Yg"
+      "title": "Tencent open-sources Hy4 preview: 770B MoE with 1M-token context",
+      "summary": "The Apache 2.0 flagship packs 49B active parameters and a 1M-token context window, with API access at $0.834/M input tokens.",
+      "source": "Product Hunt",
+      "date": "2026-08-29",
+      "url": "https://www.producthunt.com/posts/hy4-preview"
     },
     {
-      "title": "Bank of England's Bailey says AI could push inflation either way",
-      "summary": "Governor Andrew Bailey says the macroeconomic impact of AI on inflation is uncertain and could move it in either direction, adding to the central-bank debate.",
-      "source": "Bloomberg",
+      "title": "Nvidia locks in a $279B bet on memory chips for its data center business",
+      "summary": "The commitment secures HBM/DRAM supply for Nvidia's datacenter hardware amid a tight memory market.",
+      "source": "The Motley Fool",
+      "date": "2026-08-29",
+      "url": "https://www.fool.com/investing/2026/08/29/nvidia-just-locked-in-a-279-billion-bet-on-memory/"
+    },
+    {
+      "title": "a16z launches a $1.1B 'Machine Age' fund for AI's physical buildout",
+      "summary": "The new venture fund targets AI hardware, infrastructure and supply-chain bottlenecks constraining the AI buildout.",
+      "source": "TechCrunch",
       "date": "2026-08-28",
-      "url": "https://www.youtube.com/watch?v=m1oGaHK38Cg"
+      "url": "https://techcrunch.com/2026/08/28/a16z-creates-a-1-1b-machine-age-fund-to-accelerate-the-physical-buildout-of-ai/"
     }
   ],
   "sections": [
     {
-      "title": "Tools & Startups",
+      "title": "Hardware & Robotics",
+      "image": "images/section_hardware-robotics_2026-08-30.jpg",
       "items": [
         {
-          "title": "Lenz — vendor-neutral, multi-model fact-checking API",
-          "summary": "A fact-checking layer that verifies model outputs across multiple models through one independent API, aimed at grounding and reliability for production agents.",
-          "source": "Product Hunt",
-          "date": "2026-08-28",
-          "url": "https://www.producthunt.com/products/lenz-2",
-          "image": "images/section_tools-startups_2026-08-29.jpg"
+          "title": "Nvidia's AI advantage is moving beyond the GPU",
+          "summary": "Nvidia is extending its lead into networking, CPUs and full-stack AI infrastructure as hyperscale buildouts scale.",
+          "source": "TechCrunch",
+          "date": "2026-08-29",
+          "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/"
         },
         {
-          "title": "Speko — OpenRouter-style abstraction for voice APIs",
-          "summary": "Routes voice workloads across multiple providers with a single integration, abstracting voice APIs the way OpenRouter does for LLMs.",
-          "source": "Product Hunt",
-          "date": "2026-08-28",
-          "url": "https://www.producthunt.com/products/speko"
+          "title": "ICE eyes up to $2M on Boston Dynamics robot dogs",
+          "summary": "US Immigration and Customs Enforcement plans to spend up to $2 million on Boston Dynamics' four-legged Spot robots, per a federal procurement notice.",
+          "source": "The Boston Globe",
+          "date": "2026-08-29",
+          "url": "https://www.bostonglobe.com/2026/08/29/business/boston-dynamics-robot-dog-ice/"
         },
         {
-          "title": "GitNexus — open-source kernel for coding agents",
-          "summary": "An open-source foundation layer for building code-aware AI tooling without starting from scratch, targeting the growing coding-agent infrastructure niche.",
+          "title": "China could sharply narrow its advanced chip supply gap by 2035",
+          "summary": "A Goldman Sachs report projects China can cut its advanced chip production gap to roughly 34% by 2035, though lithography remains a major constraint.",
+          "source": "Interesting Engineering",
+          "date": "2026-08-29",
+          "url": "https://interestingengineering.com/ai-robotics/china-could-slash-chip-supply-gap"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "image": "images/section_tools-startups_2026-08-30.jpg",
+      "items": [
+        {
+          "title": "Oz by Warp orchestrates hundreds of AI coding agents from the cloud",
+          "summary": "Warp's cloud-native platform deploys and orchestrates coding agents from any device, topping Product Hunt's daily leaderboard.",
           "source": "Product Hunt",
-          "date": "2026-08-28",
-          "url": "https://www.producthunt.com/products/gitnexus-akon-labs"
+          "date": "2026-08-29",
+          "url": "https://www.producthunt.com/posts/oz-by-warp"
+        },
+        {
+          "title": "Cohere Parse 5 undercuts frontier document parsers by up to 95%",
+          "summary": "The 2.3B-parameter vision language model converts complex documents into structured Markdown at $1.50 per 1,000 pages.",
+          "source": "Product Hunt",
+          "date": "2026-08-29",
+          "url": "https://www.producthunt.com/posts/cohere-parse-5"
+        },
+        {
+          "title": "Viktor launches a Skills Marketplace for its AI employee",
+          "summary": "Teams can install, share and mix pre-built skills for Viktor's AI employee that operates inside Slack and Teams.",
+          "source": "Product Hunt",
+          "date": "2026-08-29",
+          "url": "https://www.producthunt.com/posts/viktor-skills-marketplace"
+        },
+        {
+          "title": "Memnest: one local-first memory store shared across coding agents",
+          "summary": "A local-first memory store that carries context across pi, Claude Code and Codex.",
+          "source": "Hacker News",
+          "date": "2026-08-30",
+          "url": "https://news.ycombinator.com/item?id=49495320"
+        },
+        {
+          "title": "Focus Buddy relaunches as an AI productivity co-pilot",
+          "summary": "The YC-backed tool ranked among the top launches on Product Hunt's August 29 daily board.",
+          "source": "Product Hunt",
+          "date": "2026-08-29",
+          "url": "https://www.producthunt.com/posts/focusbuddy-yc-s24"
         }
       ]
     }
@@ -69,141 +117,41 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-29",
+      "date": "2026-08-30",
       "items": [
-        {
-          "name": "tt-a1i/archify",
-          "url": "https://github.com/tt-a1i/archify",
-          "meta": "JavaScript"
-        },
-        {
-          "name": "K-Dense-AI/scientific-agent-skills",
-          "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-          "meta": "Python"
-        },
-        {
-          "name": "anthropics/claude-plugins-official",
-          "url": "https://github.com/anthropics/claude-plugins-official",
-          "meta": "Python"
-        },
-        {
-          "name": "bilawalsidhu/gods-eye-view",
-          "url": "https://github.com/bilawalsidhu/gods-eye-view",
-          "meta": "JavaScript"
-        },
-        {
-          "name": "abhigyanpatwari/GitNexus",
-          "url": "https://github.com/abhigyanpatwari/GitNexus",
-          "meta": "TypeScript"
-        },
-        {
-          "name": "JetBrains/go-modern-guidelines",
-          "url": "https://github.com/JetBrains/go-modern-guidelines",
-          "meta": "Go"
-        },
-        {
-          "name": "calesthio/OpenMontage",
-          "url": "https://github.com/calesthio/OpenMontage",
-          "meta": "Python"
-        },
-        {
-          "name": "abi/screenshot-to-code",
-          "url": "https://github.com/abi/screenshot-to-code",
-          "meta": "Python"
-        },
-        {
-          "name": "cursor/plugins",
-          "url": "https://github.com/cursor/plugins",
-          "meta": "TypeScript"
-        },
-        {
-          "name": "freestylefly/awesome-gpt-image-2",
-          "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-          "meta": "JavaScript"
-        },
-        {
-          "name": "tailscale/tailcat",
-          "url": "https://github.com/tailscale/tailcat",
-          "meta": "Go"
-        },
-        {
-          "name": "NationalSecurityAgency/ghidra",
-          "url": "https://github.com/NationalSecurityAgency/ghidra",
-          "meta": "Java"
-        },
-        {
-          "name": "swoole/typephp",
-          "url": "https://github.com/swoole/typephp",
-          "meta": "PHP"
-        },
-        {
-          "name": "marin-community/marin",
-          "url": "https://github.com/marin-community/marin",
-          "meta": "Python"
-        },
-        {
-          "name": "tashfeenahmed/freellmapi",
-          "url": "https://github.com/tashfeenahmed/freellmapi",
-          "meta": "TypeScript"
-        }
+        {"name": "tt-a1i/archify", "url": "https://github.com/tt-a1i/archify", "meta": "JavaScript · 28.9k ★ · +4562 today"},
+        {"name": "K-Dense-AI/scientific-agent-skills", "url": "https://github.com/K-Dense-AI/scientific-agent-skills", "meta": "Python · 37.2k ★ · +720 today"},
+        {"name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "meta": "Python · 35.2k ★ · +457 today"},
+        {"name": "bilawalsidhu/gods-eye-view", "url": "https://github.com/bilawalsidhu/gods-eye-view", "meta": "JavaScript · 11.7k ★ · +3829 today"},
+        {"name": "abhigyanpatwari/GitNexus", "url": "https://github.com/abhigyanpatwari/GitNexus", "meta": "TypeScript · 46.3k ★ · +202 today"},
+        {"name": "JetBrains/go-modern-guidelines", "url": "https://github.com/JetBrains/go-modern-guidelines", "meta": "Go · 2.7k ★ · +574 today"},
+        {"name": "calesthio/OpenMontage", "url": "https://github.com/calesthio/OpenMontage", "meta": "Python · 53.6k ★ · +1144 today"},
+        {"name": "abi/screenshot-to-code", "url": "https://github.com/abi/screenshot-to-code", "meta": "Python · 75.8k ★ · +326 today"},
+        {"name": "cursor/plugins", "url": "https://github.com/cursor/plugins", "meta": "TypeScript · 6.1k ★ · +246 today"},
+        {"name": "freestylefly/awesome-gpt-image-2", "url": "https://github.com/freestylefly/awesome-gpt-image-2", "meta": "JavaScript · 24.6k ★ · +1687 today"},
+        {"name": "tailscale/tailcat", "url": "https://github.com/tailscale/tailcat", "meta": "Go · 3.0k ★ · +965 today"},
+        {"name": "NationalSecurityAgency/ghidra", "url": "https://github.com/NationalSecurityAgency/ghidra", "meta": "Java · 73.5k ★ · +191 today"},
+        {"name": "swoole/typephp", "url": "https://github.com/swoole/typephp", "meta": "PHP · 877 ★ · +188 today"},
+        {"name": "marin-community/marin", "url": "https://github.com/marin-community/marin", "meta": "Python · 2.9k ★ · +236 today"},
+        {"name": "tashfeenahmed/freellmapi", "url": "https://github.com/tashfeenahmed/freellmapi", "meta": "TypeScript · 21.8k ★ · +433 today"}
       ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-29",
+      "date": "2026-08-30",
       "items": [
-        {
-          "name": "Qwen/Qwen3.8-Flash-Next",
-          "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-          "meta": "4,810 downloads · 4,182 likes"
-        },
-        {
-          "name": "zai-org/GLM-5.3-Flash",
-          "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-          "meta": "34 downloads · 1,530 likes"
-        },
-        {
-          "name": "zai-org/GLM-5.3",
-          "url": "https://huggingface.co/zai-org/GLM-5.3",
-          "meta": "1,177 likes"
-        },
-        {
-          "name": "Qwen/Qwen3.8-27B",
-          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-          "meta": "3,457,687 downloads · 13,165 likes"
-        },
-        {
-          "name": "unsloth/Qwen3.8-Flash-Next-GGUF",
-          "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
-          "meta": "4,354 downloads · 531 likes"
-        },
-        {
-          "name": "unsloth/Qwen3.8-27B-GGUF",
-          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-          "meta": "7,758,790 downloads · 3,155 likes"
-        },
-        {
-          "name": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-          "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-          "meta": "509,270 downloads · 884 likes"
-        },
-        {
-          "name": "Lightricks/LTX-2.5",
-          "url": "https://huggingface.co/Lightricks/LTX-2.5",
-          "meta": "912,729 downloads · 2,033 likes"
-        },
-        {
-          "name": "orcarouter/Qwen3.8-27B-Uncensored-MLX",
-          "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX",
-          "meta": "83,352 downloads · 1,194 likes"
-        },
-        {
-          "name": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
-          "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
-          "meta": "273,577 downloads · 1,237 likes"
-        }
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B dense LLM, Qwen 3.8 flagship"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "GGUF quantizations of Qwen3.8-27B"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-FP8", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8", "meta": "FP8 uncensored fine-tune of Qwen3.8-27B"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-MLX", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX", "meta": "MLX port of an uncensored Qwen3.8-27B"},
+        {"name": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "meta": "GGUF of an uncensored Qwen3.8-27B"},
+        {"name": "OBLITERATUS/Qwen3.8-27B-OBLITERATED", "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED", "meta": "Abliterated (uncensored) Qwen3.8-27B"},
+        {"name": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "meta": "Aggressive abliterated MTP GGUF of Qwen3.8-27B"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Next-gen video generation model from Lightricks"},
+        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "Music generation model from MiniMax"},
+        {"name": "ornith-ai/Ornith-1.5-35B-A3B", "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B", "meta": "35B MoE, ~3B active language model"}
       ]
     }
   },
@@ -212,162 +160,121 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-08-29",
+      "date": "2026-08-30",
       "items": [
-        {
-          "name": "Cohere: North Mini Code (free)",
-          "url": "https://openrouter.ai/cohere/north-mini-code:free",
-          "meta": "256K ctx"
-        },
-        {
-          "name": "Dots Studio: Dots3-Note Preview (free)",
-          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
-          "meta": "512K ctx"
-        },
-        {
-          "name": "Google: Gemma 4 26B A4B (free)",
-          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
-          "meta": "262K ctx"
-        },
-        {
-          "name": "Google: Gemma 4 31B (free)",
-          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
-          "meta": "262K ctx"
-        },
-        {
-          "name": "Ling 3.0 Flash Fin (free)",
-          "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free",
-          "meta": "262K ctx"
-        },
-        {
-          "name": "LiquidAI: LFM2.5-2.6B (free)",
-          "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
-          "meta": "65K ctx"
-        },
-        {
-          "name": "MiniMax: MiniMax M2.7 (free)",
-          "url": "https://openrouter.ai/minimax/minimax-m2.7:free",
-          "meta": "196K ctx"
-        },
-        {
-          "name": "MiniMax: MiniMax M3 (free)",
-          "url": "https://openrouter.ai/minimax/minimax-m3:free",
-          "meta": "1.04858M ctx"
-        },
-        {
-          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
-          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "meta": "256K ctx"
-        },
-        {
-          "name": "NVIDIA: Nemotron 3 Super (free)",
-          "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free",
-          "meta": "262K ctx"
-        },
-        {
-          "name": "NVIDIA: Nemotron 3 Ultra (free)",
-          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
-          "meta": "1M ctx"
-        },
-        {
-          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-          "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
-          "meta": "128K ctx"
-        },
-        {
-          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
-          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
-          "meta": "1M ctx"
-        },
-        {
-          "name": "Poolside: Laguna S 2.1 (free)",
-          "url": "https://openrouter.ai/poolside/laguna-s-2.1:free",
-          "meta": "262K ctx"
-        },
-        {
-          "name": "Poolside: Laguna XS 2.1 (free)",
-          "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
-          "meta": "262K ctx"
-        },
-        {
-          "name": "Thinking Machines: Inkling (free)",
-          "url": "https://openrouter.ai/thinkingmachines/inkling:free",
-          "meta": "1.04858M ctx"
-        },
-        {
-          "name": "Thinking Machines: Inkling Small (free)",
-          "url": "https://openrouter.ai/thinkingmachines/inkling-small:free",
-          "meta": "1.04858M ctx"
-        },
-        {
-          "name": "Z.ai: GLM 5.2 (free)",
-          "url": "https://openrouter.ai/z-ai/glm-5.2:free",
-          "meta": "256K ctx"
-        }
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "Ling 3.0 Flash Fin (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "MiniMax: MiniMax M2.7 (free)", "url": "https://openrouter.ai/minimax/minimax-m2.7:free", "meta": "196K ctx"},
+        {"name": "MiniMax: MiniMax M3 (free)", "url": "https://openrouter.ai/minimax/minimax-m3:free", "meta": "1.04858M ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"},
+        {"name": "Z.ai: GLM 5.2 (free)", "url": "https://openrouter.ai/z-ai/glm-5.2:free", "meta": "256K ctx"}
       ]
     },
     "opencode_zen": {
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-08-29",
+      "date": "2026-08-30",
       "items": [
-        {
-          "name": "Big Pickle",
-          "url": "https://opencode.ai/docs/zen/",
-          "meta": "big-pickle"
-        },
-        {
-          "name": "MiMo-V2.5 Free",
-          "url": "https://opencode.ai/docs/zen/",
-          "meta": "mimo-v2.5-free"
-        },
-        {
-          "name": "Hy3 Free",
-          "url": "https://opencode.ai/docs/zen/",
-          "meta": "hy3-free"
-        },
-        {
-          "name": "Ling 3.0 Flash Fin Free",
-          "url": "https://opencode.ai/docs/zen/",
-          "meta": "ling-3.0-flash-fin-free"
-        },
-        {
-          "name": "Nemotron 3 Ultra Free",
-          "url": "https://opencode.ai/docs/zen/",
-          "meta": "nemotron-3-ultra-free"
-        },
-        {
-          "name": "Nemotron 3.5 Lightning Free",
-          "url": "https://opencode.ai/docs/zen/",
-          "meta": "nemotron-3.5-lightning-free"
-        },
-        {
-          "name": "Muse Spark 1.2 Contributor Free",
-          "url": "https://opencode.ai/docs/zen/",
-          "meta": "muse-spark-1.2-contributor-free"
-        }
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Muse Spark 1.2 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.2-contributor-free"}
       ]
     }
   },
   "quick_hits": [
     {
-      "title": "SGLang ships day-0 support for the open-weights GLM-5.3",
-      "source": "LMSYS",
-      "date": "2026-08-28",
-      "url": "https://x.com/lmsysorg/status/2093382524617769467"
+      "title": "Hermes agents get an official Box integration",
+      "source": "@NousResearch",
+      "date": "2026-08-30",
+      "url": "https://x.com/NousResearch/status/2093818374119739674"
     },
     {
-      "title": "LMSYS Infer-forge: agents run long-running inference optimization with verified provenance",
-      "source": "LMSYS",
+      "title": "Together benchmarks GLM-5.3 against GLM-5.3 Flash on agentic coding",
+      "source": "@togethercompute",
+      "date": "2026-08-29",
+      "url": "https://x.com/togethercompute/status/2093549698615234719"
+    },
+    {
+      "title": "Neocloud Lambda secures $1B in debt to buy more Nvidia GPUs",
+      "source": "TechCrunch",
       "date": "2026-08-28",
-      "url": "https://x.com/lmsysorg/status/2093377329728991626"
+      "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/"
+    },
+    {
+      "title": "Microsoft-backed data center faces backlash over unpermitted gas turbines",
+      "source": "Tom's Hardware",
+      "date": "2026-08-29",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/microsoft-backed-ai-data-center-faces-multiple-complaints-from-community-issues-range-from-unpermitted-gas-turbines-to-illegal-construction-and-noise-pollution"
+    },
+    {
+      "title": "China's new AI video system pushes 'alternate reality' generation",
+      "source": "YouTube — Beyond AI News",
+      "date": "2026-08-29",
+      "url": "https://www.youtube.com/watch?v=22ruz4eysQQ"
+    },
+    {
+      "title": "Apple's 'Agent Seer' auto-generates agent eval suites from MCP specs",
+      "source": "omarsar0",
+      "date": "2026-08-29",
+      "url": "https://x.com/omarsar0/status/2093741222443786244"
+    },
+    {
+      "title": "Persistent agents develop emergent 'worlds', research shows",
+      "source": "omarsar0",
+      "date": "2026-08-29",
+      "url": "https://x.com/omarsar0/status/2093761700558229523"
+    },
+    {
+      "title": "VibeGuard: a security linter for AI-generated code",
+      "source": "Hacker News",
+      "date": "2026-08-29",
+      "url": "https://news.ycombinator.com/item?id=49494097"
+    },
+    {
+      "title": "Neurometric ships a small language model tuned for tool calling",
+      "source": "Hacker News",
+      "date": "2026-08-29",
+      "url": "https://news.ycombinator.com/item?id=49493085"
+    },
+    {
+      "title": "Staats: ask your coding agent how the deployed site is doing",
+      "source": "Product Hunt",
+      "date": "2026-08-29",
+      "url": "https://www.producthunt.com/posts/staats-3"
+    },
+    {
+      "title": "Claypot: a block-based studio that opens up AI internals for kids",
+      "source": "Hacker News",
+      "date": "2026-08-30",
+      "url": "https://news.ycombinator.com/item?id=49495751"
+    },
+    {
+      "title": "Cardwall: A2A health-check status badges for AI agents",
+      "source": "Hacker News",
+      "date": "2026-08-30",
+      "url": "https://news.ycombinator.com/item?id=49494495"
     }
   ],
   "spiked": {
     "low signal": 5,
-    "same story": 1,
-    "already ran": 5,
-    "thin section": 1
+    "out of window": 14,
+    "duplicate url": 1,
+    "already ran": 8
   }
 }
