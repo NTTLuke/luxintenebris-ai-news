@@ -1,113 +1,72 @@
 {
-  "issue_no": 66,
-  "date_iso": "2026-08-30",
-  "date_human": "August 30, 2026",
+  "issue_no": 67,
+  "date_iso": "2026-08-31",
+  "date_human": "August 31, 2026",
   "notice": "Light news day — fewer fresh items than usual.",
   "lead": {
-    "kicker": "OpenAI cuts Cursor",
-    "title": "OpenAI terminates Cursor partnership after SpaceX acquisition",
-    "summary": "OpenAI is ending its partnership with Cursor following the code editor's acquisition by SpaceX, with direct access to OpenAI models ending November 12, 2026. Developers immediately pushed back, accusing OpenAI of contradicting earlier statements about not restricting third-party use of its models.",
-    "source": "OpenAI",
-    "date": "2026-08-29",
-    "url": "https://x.com/OpenAI/status/2093515564786540695",
-    "image": "images/lead_2026-08-30.jpg"
+    "kicker": "Physical AI 2.0",
+    "title": "XPENG rolls out VLA 2.0 physical AI stack spanning cars and humanoid robots",
+    "summary": "XPENG's updated physical AI platform adds 4D temporal perception via Infini-VLA, streaming inference and X-Foresight predictive reasoning, running on in-house Turing chips rated at 750 TOPS each — up to four per vehicle. The update rolls out to Ultra and Ultra SE models in September alongside continued development of the IRON humanoid program.",
+    "source": "CleanTechnica",
+    "date": "2026-08-30",
+    "url": "https://cleantechnica.com/2026/08/30/xpeng-drives-physical-ai-to-next-level/",
+    "image": "images/lead_2026-08-31.jpg"
   },
   "top_stories": [
     {
-      "title": "DeepSeek nears $7.4B funding round at $74B valuation ahead of 2027 IPO",
-      "summary": "DeepSeek's first external equity round, expected to close by the end of August, will fund frontier model development ahead of a planned 2027 IPO on Shanghai's Star Market.",
-      "source": "TechStartups",
-      "date": "2026-08-28",
-      "url": "https://techstartups.com/2026/08/28/deepseek-nears-7-4-billion-funding-round-at-74-billion-valuation-ahead-of-2027-ipo/"
-    },
-    {
-      "title": "Tencent open-sources Hy4 preview: 770B MoE with 1M-token context",
-      "summary": "The Apache 2.0 flagship packs 49B active parameters and a 1M-token context window, with API access at $0.834/M input tokens.",
+      "title": "Superagent brings \"Claude Code for the rest of us\" to the Mac",
+      "summary": "A Mac-focused developer tool that delivers Claude Code-style agentic coding to non-expert users, launching on Product Hunt.",
       "source": "Product Hunt",
-      "date": "2026-08-29",
-      "url": "https://www.producthunt.com/posts/hy4-preview"
+      "date": "2026-08-31",
+      "url": "https://www.producthunt.com/products/superagent-a-home-for-your-ai-agents"
     },
     {
-      "title": "Nvidia locks in a $279B bet on memory chips for its data center business",
-      "summary": "The commitment secures HBM/DRAM supply for Nvidia's datacenter hardware amid a tight memory market.",
-      "source": "The Motley Fool",
-      "date": "2026-08-29",
-      "url": "https://www.fool.com/investing/2026/08/29/nvidia-just-locked-in-a-279-billion-bet-on-memory/"
+      "title": "oMLX cuts Mac agent wait times from ~90 seconds to ~5 seconds",
+      "summary": "An open-source local LLM inference server for macOS that claims a dramatic drop in agent round-trip latency.",
+      "source": "Product Hunt",
+      "date": "2026-08-31",
+      "url": "https://www.producthunt.com/products/omlx"
     },
     {
-      "title": "a16z launches a $1.1B 'Machine Age' fund for AI's physical buildout",
-      "summary": "The new venture fund targets AI hardware, infrastructure and supply-chain bottlenecks constraining the AI buildout.",
-      "source": "TechCrunch",
-      "date": "2026-08-28",
-      "url": "https://techcrunch.com/2026/08/28/a16z-creates-a-1-1b-machine-age-fund-to-accelerate-the-physical-buildout-of-ai/"
+      "title": "Berkeley Humanoid Lite: an open-source humanoid for under $5,000",
+      "summary": "Researchers released a reference design built on 3D-printed cycloidal actuators with magnetic encoders, including VR teleoperation demos.",
+      "source": "Hackaday",
+      "date": "2026-08-30",
+      "url": "https://hackaday.com/2026/08/30/lower-cost-humanoid-robot-leverages-diy-actuators/"
     }
   ],
   "sections": [
     {
-      "title": "Hardware & Robotics",
-      "image": "images/section_hardware-robotics_2026-08-30.jpg",
-      "items": [
-        {
-          "title": "Nvidia's AI advantage is moving beyond the GPU",
-          "summary": "Nvidia is extending its lead into networking, CPUs and full-stack AI infrastructure as hyperscale buildouts scale.",
-          "source": "TechCrunch",
-          "date": "2026-08-29",
-          "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/"
-        },
-        {
-          "title": "ICE eyes up to $2M on Boston Dynamics robot dogs",
-          "summary": "US Immigration and Customs Enforcement plans to spend up to $2 million on Boston Dynamics' four-legged Spot robots, per a federal procurement notice.",
-          "source": "The Boston Globe",
-          "date": "2026-08-29",
-          "url": "https://www.bostonglobe.com/2026/08/29/business/boston-dynamics-robot-dog-ice/"
-        },
-        {
-          "title": "China could sharply narrow its advanced chip supply gap by 2035",
-          "summary": "A Goldman Sachs report projects China can cut its advanced chip production gap to roughly 34% by 2035, though lithography remains a major constraint.",
-          "source": "Interesting Engineering",
-          "date": "2026-08-29",
-          "url": "https://interestingengineering.com/ai-robotics/china-could-slash-chip-supply-gap"
-        }
-      ]
-    },
-    {
       "title": "Tools & Startups",
-      "image": "images/section_tools-startups_2026-08-30.jpg",
+      "image": "images/section_tools-startups_2026-08-31.jpg",
       "items": [
         {
-          "title": "Oz by Warp orchestrates hundreds of AI coding agents from the cloud",
-          "summary": "Warp's cloud-native platform deploys and orchestrates coding agents from any device, topping Product Hunt's daily leaderboard.",
+          "title": "Olostep turns the web into clean data for AI",
+          "summary": "An API and developer tool that converts raw web pages into structured, AI-ready data, launched under API and Developer Tools.",
           "source": "Product Hunt",
-          "date": "2026-08-29",
-          "url": "https://www.producthunt.com/posts/oz-by-warp"
+          "date": "2026-08-31",
+          "url": "https://www.producthunt.com/products/olostep"
         },
         {
-          "title": "Cohere Parse 5 undercuts frontier document parsers by up to 95%",
-          "summary": "The 2.3B-parameter vision language model converts complex documents into structured Markdown at $1.50 per 1,000 pages.",
-          "source": "Product Hunt",
-          "date": "2026-08-29",
-          "url": "https://www.producthunt.com/posts/cohere-parse-5"
-        },
-        {
-          "title": "Viktor launches a Skills Marketplace for its AI employee",
-          "summary": "Teams can install, share and mix pre-built skills for Viktor's AI employee that operates inside Slack and Teams.",
-          "source": "Product Hunt",
-          "date": "2026-08-29",
-          "url": "https://www.producthunt.com/posts/viktor-skills-marketplace"
-        },
-        {
-          "title": "Memnest: one local-first memory store shared across coding agents",
-          "summary": "A local-first memory store that carries context across pi, Claude Code and Codex.",
-          "source": "Hacker News",
+          "title": "Academa: LLM-generated long-form STEM lecture videos",
+          "summary": "An open AI education tool that generates long-form STEM lectures from LLMs, drawing attention on Hacker News.",
+          "source": "Academa",
           "date": "2026-08-30",
-          "url": "https://news.ycombinator.com/item?id=49495320"
+          "url": "https://academa.ai/"
         },
         {
-          "title": "Focus Buddy relaunches as an AI productivity co-pilot",
-          "summary": "The YC-backed tool ranked among the top launches on Product Hunt's August 29 daily board.",
+          "title": "Murfy AI helps researchers write, review and publish to arXiv 10x faster",
+          "summary": "An AI assistant for researchers covering writing, reviewing and arXiv submission in one workflow.",
           "source": "Product Hunt",
-          "date": "2026-08-29",
-          "url": "https://www.producthunt.com/posts/focusbuddy-yc-s24"
+          "date": "2026-08-31",
+          "url": "https://www.producthunt.com/products/murfy"
+        },
+        {
+          "title": "Ulpaso: open-source alternative to paid meeting notes",
+          "summary": "A free, open-source meeting notes tool positioned against paid note-takers, launched under Productivity and Open Source.",
+          "source": "Product Hunt",
+          "date": "2026-08-31",
+          "url": "https://www.producthunt.com/products/ulpaso"
         }
       ]
     }
@@ -117,9 +76,9 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "items": [
-        {"name": "tt-a1i/archify", "url": "https://github.com/tt-a1i/archify", "meta": "JavaScript · 28.9k ★ · +4562 today"},
+        {"name": "tt-a1i/archify", "url": "https://github.com/tt-a1i/archify", "meta": "JavaScript · 29.1k ★ · +4562 today"},
         {"name": "K-Dense-AI/scientific-agent-skills", "url": "https://github.com/K-Dense-AI/scientific-agent-skills", "meta": "Python · 37.2k ★ · +720 today"},
         {"name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "meta": "Python · 35.2k ★ · +457 today"},
         {"name": "bilawalsidhu/gods-eye-view", "url": "https://github.com/bilawalsidhu/gods-eye-view", "meta": "JavaScript · 11.7k ★ · +3829 today"},
@@ -128,30 +87,30 @@
         {"name": "calesthio/OpenMontage", "url": "https://github.com/calesthio/OpenMontage", "meta": "Python · 53.6k ★ · +1144 today"},
         {"name": "abi/screenshot-to-code", "url": "https://github.com/abi/screenshot-to-code", "meta": "Python · 75.8k ★ · +326 today"},
         {"name": "cursor/plugins", "url": "https://github.com/cursor/plugins", "meta": "TypeScript · 6.1k ★ · +246 today"},
-        {"name": "freestylefly/awesome-gpt-image-2", "url": "https://github.com/freestylefly/awesome-gpt-image-2", "meta": "JavaScript · 24.6k ★ · +1687 today"},
+        {"name": "freestylefly/awesome-gpt-image-2", "url": "https://github.com/freestylefly/awesome-gpt-image-2", "meta": "JavaScript · 24.7k ★ · +1687 today"},
         {"name": "tailscale/tailcat", "url": "https://github.com/tailscale/tailcat", "meta": "Go · 3.0k ★ · +965 today"},
         {"name": "NationalSecurityAgency/ghidra", "url": "https://github.com/NationalSecurityAgency/ghidra", "meta": "Java · 73.5k ★ · +191 today"},
-        {"name": "swoole/typephp", "url": "https://github.com/swoole/typephp", "meta": "PHP · 877 ★ · +188 today"},
+        {"name": "swoole/typephp", "url": "https://github.com/swoole/typephp", "meta": "PHP · 880 ★ · +188 today"},
         {"name": "marin-community/marin", "url": "https://github.com/marin-community/marin", "meta": "Python · 2.9k ★ · +236 today"},
-        {"name": "tashfeenahmed/freellmapi", "url": "https://github.com/tashfeenahmed/freellmapi", "meta": "TypeScript · 21.8k ★ · +433 today"}
+        {"name": "tashfeenahmed/freellmapi", "url": "https://github.com/tashfeenahmed/freellmapi", "meta": "TypeScript · 21.9k ★ · +433 today"}
       ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "items": [
-        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B dense LLM, Qwen 3.8 flagship"},
-        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "GGUF quantizations of Qwen3.8-27B"},
-        {"name": "orcarouter/Qwen3.8-27B-Uncensored-FP8", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8", "meta": "FP8 uncensored fine-tune of Qwen3.8-27B"},
-        {"name": "orcarouter/Qwen3.8-27B-Uncensored-MLX", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX", "meta": "MLX port of an uncensored Qwen3.8-27B"},
-        {"name": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "meta": "GGUF of an uncensored Qwen3.8-27B"},
-        {"name": "OBLITERATUS/Qwen3.8-27B-OBLITERATED", "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED", "meta": "Abliterated (uncensored) Qwen3.8-27B"},
-        {"name": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "meta": "Aggressive abliterated MTP GGUF of Qwen3.8-27B"},
-        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Next-gen video generation model from Lightricks"},
-        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "Music generation model from MiniMax"},
-        {"name": "ornith-ai/Ornith-1.5-35B-A3B", "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B", "meta": "35B MoE, ~3B active language model"}
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B open-weights LLM, new Qwen3.8 flagship"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "unsloth GGUF quant of Qwen3.8-27B"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-FP8", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8", "meta": "FP8 uncensored variant"},
+        {"name": "orcarouter/Qwen3.8-27B-Uncensored-MLX", "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX", "meta": "MLX uncensored variant"},
+        {"name": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF", "meta": "GGUF uncensored variant"},
+        {"name": "OBLITERATUS/Qwen3.8-27B-OBLITERATED", "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED", "meta": "abliterated variant"},
+        {"name": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "meta": "GGUF uncensored variant with MTP"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "video generation model"},
+        {"name": "MiniMaxAI/MiniMax-Music3", "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3", "meta": "music generation model"},
+        {"name": "ornith-ai/Ornith-1.5-35B-A3B", "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B", "meta": "35B A3B MoE reasoning model"}
       ]
     }
   },
@@ -160,7 +119,7 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "items": [
         {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
         {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
@@ -186,7 +145,7 @@
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "items": [
         {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
         {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
@@ -199,82 +158,57 @@
   },
   "quick_hits": [
     {
-      "title": "Hermes agents get an official Box integration",
-      "source": "@NousResearch",
+      "title": "NPO: single-lineage prompt optimizer rivals heavier methods like GEPA",
+      "source": "omarsar0",
       "date": "2026-08-30",
-      "url": "https://x.com/NousResearch/status/2093818374119739674"
+      "url": "https://x.com/omarsar0/status/2094198501475590616"
     },
     {
-      "title": "Together benchmarks GLM-5.3 against GLM-5.3 Flash on agentic coding",
-      "source": "@togethercompute",
-      "date": "2026-08-29",
-      "url": "https://x.com/togethercompute/status/2093549698615234719"
-    },
-    {
-      "title": "Neocloud Lambda secures $1B in debt to buy more Nvidia GPUs",
-      "source": "TechCrunch",
-      "date": "2026-08-28",
-      "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/"
-    },
-    {
-      "title": "Microsoft-backed data center faces backlash over unpermitted gas turbines",
-      "source": "Tom's Hardware",
-      "date": "2026-08-29",
-      "url": "https://www.tomshardware.com/tech-industry/data-centers/microsoft-backed-ai-data-center-faces-multiple-complaints-from-community-issues-range-from-unpermitted-gas-turbines-to-illegal-construction-and-noise-pollution"
-    },
-    {
-      "title": "China's new AI video system pushes 'alternate reality' generation",
-      "source": "YouTube — Beyond AI News",
-      "date": "2026-08-29",
-      "url": "https://www.youtube.com/watch?v=22ruz4eysQQ"
-    },
-    {
-      "title": "Apple's 'Agent Seer' auto-generates agent eval suites from MCP specs",
-      "source": "omarsar0",
-      "date": "2026-08-29",
-      "url": "https://x.com/omarsar0/status/2093741222443786244"
-    },
-    {
-      "title": "Persistent agents develop emergent 'worlds', research shows",
-      "source": "omarsar0",
-      "date": "2026-08-29",
-      "url": "https://x.com/omarsar0/status/2093761700558229523"
-    },
-    {
-      "title": "VibeGuard: a security linter for AI-generated code",
-      "source": "Hacker News",
-      "date": "2026-08-29",
-      "url": "https://news.ycombinator.com/item?id=49494097"
-    },
-    {
-      "title": "Neurometric ships a small language model tuned for tool calling",
-      "source": "Hacker News",
-      "date": "2026-08-29",
-      "url": "https://news.ycombinator.com/item?id=49493085"
-    },
-    {
-      "title": "Staats: ask your coding agent how the deployed site is doing",
+      "title": "Topview Motion Studio — create launch videos without After Effects",
       "source": "Product Hunt",
-      "date": "2026-08-29",
-      "url": "https://www.producthunt.com/posts/staats-3"
+      "date": "2026-08-31",
+      "url": "https://www.producthunt.com/products/topview-ai"
     },
     {
-      "title": "Claypot: a block-based studio that opens up AI internals for kids",
-      "source": "Hacker News",
+      "title": "1752vc Pitch Deck Analyzer — predict investor feedback before sending",
+      "source": "Product Hunt",
       "date": "2026-08-30",
-      "url": "https://news.ycombinator.com/item?id=49495751"
+      "url": "https://www.producthunt.com/products/1752vc-pitch-deck-analysis"
     },
     {
-      "title": "Cardwall: A2A health-check status badges for AI agents",
-      "source": "Hacker News",
+      "title": "Neo — novel-writing tool from the author of Silo",
+      "source": "Product Hunt",
       "date": "2026-08-30",
-      "url": "https://news.ycombinator.com/item?id=49494495"
+      "url": "https://www.producthunt.com/products/neo"
+    },
+    {
+      "title": "Growtics — AI growth agent that tells you what to do next",
+      "source": "Growtics",
+      "date": "2026-08-31",
+      "url": "https://growtics.io"
+    },
+    {
+      "title": "Ration — track Claude usage across all your terminals",
+      "source": "Ration (GitHub)",
+      "date": "2026-08-30",
+      "url": "https://github.com/solodynamo/Ration"
+    },
+    {
+      "title": "seendiff — code diff viewer with progress tracking",
+      "source": "Product Hunt",
+      "date": "2026-08-30",
+      "url": "https://www.producthunt.com/products/seendiff"
+    },
+    {
+      "title": "August 2026 Monthly Recap: AGI 2026, OpenAI Astra, first AI OS, and a $10 trillion sector",
+      "source": "YouTube — Beyond AI News",
+      "date": "2026-08-30",
+      "url": "https://www.youtube.com/watch?v=OsxsC8zw0gw"
     }
   ],
   "spiked": {
-    "low signal": 5,
-    "out of window": 14,
-    "duplicate url": 1,
-    "already ran": 8
+    "low signal": 3,
+    "out of window": 18,
+    "already ran": 7
   }
 }
