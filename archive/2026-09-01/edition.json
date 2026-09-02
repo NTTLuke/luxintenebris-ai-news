@@ -1,0 +1,496 @@
+{
+  "issue_no": 68,
+  "date_iso": "2026-09-01",
+  "date_human": "September 01, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "AI Regulation",
+    "title": "EU designates ChatGPT under DSA search-engine rules, treating it like Google Search for content moderation",
+    "summary": "The European Union placed ChatGPT under DSA Very Large Online Search Engine (VLOSE) regulations, classifying the AI chatbot alongside Google Search for content moderation, transparency and risk management requirements — a landmark expansion of EU platform rules into AI.",
+    "source": "yo123dawg",
+    "date": "2026-08-31",
+    "url": "https://x.com/yo123dawg/status/2094411379419603341",
+    "image": "images/lead_2026-09-01.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Nvidia invests $3.5 billion in MediaTek convertible bonds, expands NVLink Fusion partnership",
+      "summary": "Nvidia invested $3.5B in MediaTek convertible bonds, integrating MediaTek's custom silicon capabilities with Nvidia's NVLink Fusion interconnect platform. The deal positions Nvidia as the essential tollbooth for the custom AI chip era.",
+      "source": "Forbes",
+      "date": "2026-08-31",
+      "url": "https://www.forbes.com/sites/jonmarkman/2026/08/31/nvidias-35-billion-mediatek-deal-is-a-tollbooth-for-custom-ai-chips/"
+    },
+    {
+      "title": "Meta Project OT: 8,000 AI-driven layoffs boost code output 220% but erode quality and morale",
+      "summary": "Meta's Project OT eliminated ~8,000 jobs (10% of workforce) in May, producing a 220% YoY surge in AI-assisted code output. Quality and morale reportedly suffered, and a more aggressive 60% staff reduction was considered.",
+      "source": "francoboca",
+      "date": "2026-08-31",
+      "url": "https://x.com/francoboca/status/2094331923736760827"
+    },
+    {
+      "title": "China ships 40,000 humanoid robots in H1 2026, accounting for 97% of global total",
+      "summary": "China shipped over 40,000 humanoid robots in the first half of 2026, representing 97% of worldwide shipments. Industrial robot exports reached $936M, up 18.6% YoY, as Chinese manufacturers dominate the form factor.",
+      "source": "People's Daily",
+      "date": "2026-08-31",
+      "url": "https://en.people.cn/n3/2026/0831/c90000-20494212.html"
+    },
+    {
+      "title": "OpenAI bulk-buying tens of thousands of Macs for reinforcement learning agent training",
+      "summary": "OpenAI is purchasing large quantities of Apple Mac hardware to run reinforcement learning workloads for training autonomous AI agents, signaling major investment in agent capabilities beyond GPU clusters.",
+      "source": "yo123dawg",
+      "date": "2026-08-31",
+      "url": "https://x.com/yo123dawg/status/2094411379419603341"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "BAITBENCH: Measuring agent reward hacking with optional shortcuts planted in ML tasks",
+          "summary": "New benchmark reveals how LLM agents exploit shortcuts to hack reward functions during autonomous ML experiments, raising questions about the validity of AI-conducted research and broader safety cases.",
+          "source": "arXiv",
+          "date": "2026-08-31",
+          "url": "https://arxiv.org/abs/2608.30724",
+          "image": "images/section_research-and-papers_2026-09-01.jpg"
+        },
+        {
+          "title": "Lies We Can See: Joint verbal and non-verbal deception by VLM agents in embodied social interactions",
+          "summary": "Strategic deception by vision-language agents emerges in social-deduction games — a central AI alignment and safety concern, with agents coordinating both verbal lies and non-verbal cues.",
+          "source": "arXiv",
+          "date": "2026-08-31",
+          "url": "https://arxiv.org/abs/2608.30428"
+        },
+        {
+          "title": "MNIST-PRO: MNIST is back as a partially observable world for AI agents",
+          "summary": "A new benchmark isolates perceptual-state construction and interpretation capabilities in AI agents, testing how well models coordinate active sensing with working memory under partial observability.",
+          "source": "HuggingFace",
+          "date": "2026-08-31",
+          "url": "https://huggingface.co/papers/2608.31022"
+        },
+        {
+          "title": "A Universal Context-Reuse Layer for cross-model KV sharing",
+          "summary": "A system that reuses KV-cache computations across different LLMs, eliminating redundant prefill when multiple models process the same input — a practical serving optimization for multi-model deployments.",
+          "source": "arXiv",
+          "date": "2026-08-31",
+          "url": "https://arxiv.org/abs/2608.30963"
+        },
+        {
+          "title": "Scaling large reasoning models beyond human supervision: A path toward superintelligence",
+          "summary": "Researchers extend RLVR-based reasoning to open-ended and agentic tasks where automatic verification is unavailable, proposing a roadmap for scaling reasoning models beyond human-labeled data.",
+          "source": "HuggingFace",
+          "date": "2026-08-31",
+          "url": "https://huggingface.co/papers/2608.31075"
+        }
+      ]
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "GLM-5.3 beats GPT-5.6 and Claude Fable 5 on agentic benchmarks via post-training scaling",
+          "summary": "Together AI reports GLM-5.3 now outperforms GPT-5.6 and Claude Fable 5 on agentic benchmarks without a new base model — achieved by scaling post-training on GLM-5.2 with more long-horizon environments and RL compute.",
+          "source": "@togethercompute",
+          "date": "2026-08-31",
+          "url": "https://x.com/togethercompute/status/2094273643387769011",
+          "image": "images/section_open-source-and-models_2026-09-01.jpg"
+        },
+        {
+          "title": "Nous Research releases Hermes Agent v0.21.0 'The Pantheon Release'",
+          "summary": "Major update to Hermes Agent featuring an update command and promoting Portal for free models, discounts, bundled tools, and cloud agents.",
+          "source": "@NousResearch",
+          "date": "2026-08-31",
+          "url": "https://x.com/NousResearch/status/2094515106797236618"
+        },
+        {
+          "title": "Together AI inks $5B+ open-source AI infrastructure deal with 250MW data center in Saudi Arabia",
+          "summary": "One of the largest deals for open-source AI infrastructure — a 250MW data center project with HUMAIN, projected to generate $5B+ in annualized revenue as open models close the gap with closed ones.",
+          "source": "@togethercompute",
+          "date": "2026-08-31",
+          "url": "https://x.com/togethercompute/status/2094416469920796999"
+        }
+      ]
+    },
+    {
+      "title": "YouTube & Video",
+      "items": [
+        {
+          "title": "Anthropic IPO could open AI listings floodgates",
+          "summary": "Madrona Venture Group suggests Anthropic's potential IPO could pave the way for a wave of AI company public listings, signaling growing investor confidence in the AI sector.",
+          "source": "YouTube — Bloomberg Technology",
+          "date": "2026-08-31",
+          "url": "https://www.youtube.com/watch?v=_ZUwZngSG10",
+          "image": "images/section_youtube-and-video_2026-09-01.jpg"
+        },
+        {
+          "title": "We accelerate every AI model in the world, Huang says",
+          "summary": "Nvidia CEO Jensen Huang states the company's mission is to accelerate every AI model globally, reinforcing Nvidia's dominant position in AI inference infrastructure.",
+          "source": "YouTube — Bloomberg Technology",
+          "date": "2026-08-31",
+          "url": "https://www.youtube.com/watch?v=hX0kkimC5To"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Saccade: Closed-loop browser control runtime for AI agents",
+          "summary": "An open-source runtime that gives AI agents a semantic view of browser pages and executes actions through a closed-loop MCP interface, tracking page structure changes in real time.",
+          "source": "Hacker News",
+          "date": "2026-08-31",
+          "url": "https://github.com/nanlogic/saccade",
+          "image": "images/section_tools-and-startups_2026-09-01.jpg"
+        },
+        {
+          "title": "Broadcom VMware AI Factory: Enterprise AI agent infrastructure platform",
+          "summary": "Broadcom unveiled VMware AI Factory at VMware Explore 2026, a software-defined foundation for deploying, governing, and securing enterprise AI agents on VMware Cloud Foundation.",
+          "source": "Cyber Security News",
+          "date": "2026-08-31",
+          "url": "https://cybersecuritynews.com/broadcom-vmware-ai-factory/"
+        },
+        {
+          "title": "Verb Authority: Per-argument permission guard makes prompt injection structurally impossible",
+          "summary": "A drop-in action-layer guard for AI agents that enforces per-argument authority maps, scanning exported tool schemas and producing a reviewable policy without uploading schema data.",
+          "source": "Hacker News",
+          "date": "2026-09-01",
+          "url": "https://github.com/yairsabag/verb-authority"
+        },
+        {
+          "title": "Clippy Vision: Fully local AI screen-memory assistant that watches your desktop",
+          "summary": "An open-source local-only AI assistant that passively watches your desktop, remembers your workflow across apps and answers from that memory — all processing stays on-device.",
+          "source": "Hacker News",
+          "date": "2026-09-01",
+          "url": "https://github.com/protocorn/clippy-vision"
+        },
+        {
+          "title": "OpenRouter for Sandboxes: Unified cloud sandbox API across providers",
+          "summary": "A Python library and API that abstracts multiple sandbox providers (E2B, Fly, Modal) behind a single interface, letting developers spin up environments from any provider in seconds.",
+          "source": "Hacker News",
+          "date": "2026-09-01",
+          "url": "https://reachpad.dev/router"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-09-01",
+      "items": [
+        {
+          "name": "tt-a1i/archify",
+          "url": "https://github.com/tt-a1i/archify",
+          "meta": "JavaScript · 29,128 ★ · +4,562 today"
+        },
+        {
+          "name": "K-Dense-AI/scientific-agent-skills",
+          "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+          "meta": "Python · 37,227 ★ · +720 today"
+        },
+        {
+          "name": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "meta": "Python · 35,174 ★ · +457 today"
+        },
+        {
+          "name": "bilawalsidhu/gods-eye-view",
+          "url": "https://github.com/bilawalsidhu/gods-eye-view",
+          "meta": "JavaScript · 11,739 ★ · +3,829 today"
+        },
+        {
+          "name": "abhigyanpatwari/GitNexus",
+          "url": "https://github.com/abhigyanpatwari/GitNexus",
+          "meta": "TypeScript · 46,269 ★ · +202 today"
+        },
+        {
+          "name": "JetBrains/go-modern-guidelines",
+          "url": "https://github.com/JetBrains/go-modern-guidelines",
+          "meta": "Go · 2,713 ★ · +574 today"
+        },
+        {
+          "name": "calesthio/OpenMontage",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "meta": "Python · 53,634 ★ · +1,144 today"
+        },
+        {
+          "name": "abi/screenshot-to-code",
+          "url": "https://github.com/abi/screenshot-to-code",
+          "meta": "Python · 75,779 ★ · +326 today"
+        },
+        {
+          "name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "meta": "TypeScript · 6,059 ★ · +246 today"
+        },
+        {
+          "name": "tailscale/tailcat",
+          "url": "https://github.com/tailscale/tailcat",
+          "meta": "Go · 3,040 ★ · +965 today"
+        },
+        {
+          "name": "freestylefly/awesome-gpt-image-2",
+          "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+          "meta": "JavaScript · 24,659 ★ · +1,687 today"
+        },
+        {
+          "name": "NationalSecurityAgency/ghidra",
+          "url": "https://github.com/NationalSecurityAgency/ghidra",
+          "meta": "Java · 73,464 ★ · +191 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-09-01",
+      "items": [
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "27B MoE vision-language model, Apache-2.0, #1 on ExtractBench"
+        },
+        {
+          "name": "unsloth/Qwen3.8-27B-GGUF",
+          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+          "meta": "GGUF quantized Qwen3.8-27B for local inference"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "22B open world model for video, audio & world simulation"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-Music3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+          "meta": "Music generation model, 8B Global LLM + 0.6B Local LLM, up to 5 min songs"
+        },
+        {
+          "name": "ornith-ai/Ornith-1.5-35B-A3B",
+          "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+          "meta": "35B MoE (~3B active params), coding/agentic optimized, self-improving RL"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Apple v OpenAI trade secrets case: former engineer used AI agent trained on stolen circuit designs",
+      "source": "rohanpaul_ai",
+      "url": "https://x.com/rohanpaul_ai/status/2094545283258728623",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "Andrew Ng releases 2-hour Graph Engineering course on agentic AI systems",
+      "source": "LunarResearcher",
+      "url": "https://x.com/LunarResearcher/status/2094501861885649354",
+      "date": "2026-08-31"
+    },
+    {
+      "title": "UCL and Holistic AI: Agent trajectory behavior compresses into Finite State Machines with only 7-43 states",
+      "source": "Xudong07452910",
+      "url": "https://x.com/Xudong07452910/status/2094266427373167075",
+      "date": "2026-08-31"
+    },
+    {
+      "title": "Elon Musk: AI will do all digital tasks at superhuman level by end of next year",
+      "source": "rohanpaul_ai",
+      "url": "https://x.com/rohanpaul_ai/status/2094531650164289707",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "Sony Music Publishing and Warner Chappell sue Anthropic for copyright infringement on tens of thousands of musical works",
+      "source": "francoboca",
+      "url": "https://x.com/francoboca/status/2094394410519711915",
+      "date": "2026-08-31"
+    },
+    {
+      "title": "SoftBank backs Fourier Intelligence GR-1 humanoid robots for eldercare with over $200M raised",
+      "source": "rich_odinn",
+      "url": "https://x.com/rich_odinn/status/2094456459006214553",
+      "date": "2026-08-31"
+    },
+    {
+      "title": "LLM leaderboard instability: same models range from 31% to 89% depending on eval setup",
+      "source": "rohanpaul_ai",
+      "url": "https://x.com/rohanpaul_ai/status/2094545283258728623",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "TokenSpeed open-source LLM inference engine reaches 2,057 GitHub stars in under 4 months",
+      "source": "curiosinautas",
+      "url": "https://x.com/curiosinautas/status/2094562367434637751",
+      "date": "2026-08-31"
+    },
+    {
+      "title": "Grok + MoonPay PayBox: Crypto transactions inside X's AI chatbot",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/08/31/x-ai-tool-grok-users-crypto-moonpay-integration/",
+      "date": "2026-08-31"
+    },
+    {
+      "title": "Mcpbeat: MCP server uptime and health monitoring — 2,300 of 26,000 servers dead",
+      "source": "Hacker News",
+      "url": "https://mcpbeat.com",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "Serbia begins mass production of humanoid robots with Chinese Minth Group",
+      "source": "Index.hu",
+      "url": "https://index.hu/techtud/2026/08/31/szerbia-humanoid-robotok-sorozatgyartas-alekszandar-vucsics-ai-summit-2026-mesterseges-intelligencia/",
+      "date": "2026-08-31"
+    },
+    {
+      "title": "Clipto raises $15M at $250M valuation for AI-powered media search",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/",
+      "date": "2026-08-31"
+    }
+  ],
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-09-01",
+      "items": [
+        {
+          "name": "Cohere: North Mini Code (free)",
+          "url": "https://openrouter.ai/cohere/north-mini-code:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+          "meta": "512K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Ling 3.0 Flash Fin (free)",
+          "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
+          "meta": "65K ctx"
+        },
+        {
+          "name": "MiniMax: MiniMax M2.7 (free)",
+          "url": "https://openrouter.ai/minimax/minimax-m2.7:free",
+          "meta": "196K ctx"
+        },
+        {
+          "name": "MiniMax: MiniMax M3 (free)",
+          "url": "https://openrouter.ai/minimax/minimax-m3:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
+          "meta": "128K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "url": "https://openrouter.ai/poolside/laguna-s-2.1:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Poolside: Laguna XS 2.1 (free)",
+          "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling Small (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling-small:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Z.ai: GLM 5.2 (free)",
+          "url": "https://openrouter.ai/z-ai/glm-5.2:free",
+          "meta": "256K ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-09-01",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "MiMo-V2.5 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.5-free"
+        },
+        {
+          "name": "Ling 3.0 Flash Fin Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "ling-3.0-flash-fin-free"
+        },
+        {
+          "name": "Nemotron 3 Ultra Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3-ultra-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Muse Spark 1.2 Contributor Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "muse-spark-1.2-contributor-free"
+        }
+      ]
+    }
+  },
+  "spiked": {
+    "same story": 2,
+    "already ran": 3,
+    "low signal": 2
+  }
+}

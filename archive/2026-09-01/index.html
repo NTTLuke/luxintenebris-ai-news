@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · September 01, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 68 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>September 01, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>73 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DwarfStar · DeepSeek V4 Flash 0731 (M3 Ultra)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Tim Cook bids farewell as Apple CEO with a heartfelt letter to staff" data-b="Tim Cook has sent his final message to Apple employees as the company&#x27;s chief executive, marking the end of a tenure that began in 2011. Cook&#x27;s letter, reported by Bloomberg and 9to5Mac and published by The Verge, expresses gratitude toward the team and reflects on his time leading the company.
+
+In the note, Cook describes the decision to step down as one he always knew would come, calling his role as CEO &quot;the privilege of a lifetime.&quot; He credits the company&#x27;s success entirely to its people, stating that they brought out the best in him and formed an extraordinary team unlike any he had seen. Cook emphasizes that culture is what makes Apple special — a shared belief that the company&#x27;s work matters and carries a responsibility to leave the world better than it was found. He passes the torch to incoming CEO John Ternus, whom he describes as brilliant, wonderful, and capable, expressing full confidence in the leadership transition. Cook also clarifies that he is not leaving Apple entirely but will take on a new role at Apple Park, allowing him to remain with the company he loves.
+
+*Cook&#x27;s departure closes a remarkable chapter, but his decision to stay on in a different capacity suggests Apple&#x27;s leadership transition may be more gradual than a clean break.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/986832/read-tim-cooks-final-message-as-ceo-to-apple-staff"><span class="tih">Tim Cook bids farewell as Apple CEO with a heartfelt letter to staff</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Wayfair Deals Hit Up to 80% Off in September 2026" data-b="The online furniture retailer Wayfair is running aggressive discounts this month, with flash deals reaching up to 80% off on furniture and home goods, according to WIRED. The Boston-based company, founded two decades ago, now offers 14 million items from more than 11,000 global suppliers and has become a go-to for everything from mattresses and sofas to office chairs and pet furniture.
+
+Among the current promotions are rotating 24-hour Deals of the Day, which change daily, as well as Closeout Deals on discontinued and overstocked items offering up to 70% off. First-time customers can also get 10% off their first order by signing up for emails or text alerts. Wayfair&#x27;s mobile app provides additional savings of up to 20%, along with augmented-reality tools to visualize items in a room. Business buyers can join Wayfair Professional for exclusive discounted pricing.
+
+The retailer also highlights its &quot;Wayfair Verified&quot; program, where in-house product specialists use a ten-point inspection system to hand-verify items for quality of materials, ease of assembly, and functionality. According to the report, only 1% of products on the site earn this stamp of approval.
+
+*A roundup of e-commerce coupons is standard editorial fare, but the sheer breadth of Wayfair&#x27;s catalog — 14 million items — makes the scale of these discounts worth noting.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/wayfair-promo-code/"><span class="tih">Wayfair Deals Hit Up to 80% Off in September 2026</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dyson Promo Codes: How to Save on Vacuums, Fans, and More This September" data-b="Shoppers looking to save on Dyson&#x27;s premium appliances this September have several paths to a discount, according to WIRED. The brand&#x27;s lineup spans powerful vacuum cleaners, hair care tools, and air purifiers, but the high price tag can make the purchase a tough call. WIRED reports that new customers can get 10 percent off by signing up with a mobile number on the Dyson homepage — a pop-up triggers a text, a reply of &quot;Y&quot; completes registration, and a single-use code arrives via link. Existing Dyson owners can do better: registering the serial number of a current product unlocks 15 percent off a future order, while the Owner Rewards program offers 20 percent off qualifying floorcare or air purifiers, applied automatically at checkout or redeemable in-store or by phone.
+
+For steeper savings, WIRED points to the Dyson Outlet, where refurbished vacuums, hair tools, and air purifiers can go for up to 30 percent off original prices. Each unit is inspected and restored to like-new condition with a warranty, though the coverage period is shorter — six months to a year instead of the typical two to five years. Weekly rotating deals are also available at the Dyson Deals Hub, and a seasonal standout this month is the Cool CF1 fan, a bladeless, quiet model currently marked down to $250 from $380.
+
+*Useful to see that Dyson rewards loyalty with tiered discounts, making repeat buyers the real winners in the savings game.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson Promo Codes: How to Save on Vacuums, Fans, and More This September</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Solo investor Lachy Groom backs a Bengaluru startup working on aircraft that stay airborne for over a year" data-b="An Indian startup called Alteon has raised $2.5 million in pre-seed funding from prominent solo investor Lachy Groom and Together Fund, according to a report by TechCrunch. The company, founded by 20-year-old Samay Sanghvi, is developing autonomous fixed-wing aircraft that harvest energy from wind shear over the ocean using dynamic soaring — a technique used by albatrosses.
+
+Groom decided to invest within the first half-hour of meeting Sanghvi, the report said. Alteon plans to use its aircraft initially for maritime surveillance, giving governments persistent visibility into their territorial waters. The current design has a roughly three-meter wingspan and would fly low over the ocean surface, repeatedly climbing and turning through layers of faster-moving air to gain energy. Eventually, the startup intends to use its propellers as turbines to recharge onboard batteries.
+
+Alteon has not yet proven that its aircraft can sustain flight through wind-harvested energy alone, TechCrunch noted. However, a recent test over the Bay of Bengal saw the aircraft autonomously complete seven O-shaped circuits at over 62 miles per hour while staying within a meter of the water. The next milestone is what Sanghvi calls &quot;energy-neutral dynamic soaring&quot; — flying continuously with the propulsion turned off.
+
+Aerospace researcher Dr. Gabriel Bousquet, who studied dynamic soaring during his MIT PhD, called the low-altitude flight a promising first result but said reliable energy extraction from real-world winds remains a harder challenge. Dr. Bharath Swaminathan, who studied dynamic soaring stability at IIT Madras, noted that local wind shear and turbulence vary significantly. Sanghvi, who began building radio-controlled aircraft after high school and formally founded Alteon in 2025, now leads a team of 20 in Bengaluru running more than 200 test flights per month.
+
+*Keeping a small autonomous aircraft aloft for days would already be a milestone; a full year remains firmly in the realm of ambition until the physics meets real ocean turbulence.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/31/lachy-groom-backs-indian-startup-aiming-to-keep-aircraft-aloft-for-a-year/"><span class="tih">Solo investor Lachy Groom backs a Bengaluru startup working on aircraft that stay airborne for over a year</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple faces OpenAI in court over alleged trade secret theft by former employee" data-b="According to TechCrunch, Apple has presented what it describes as &quot;shocking evidence&quot; in its lawsuit against OpenAI, reinforcing claims that former employees stole confidential company data for the benefit of the AI firm. The new details emerged after Chang Liu — an ex-Apple engineer now employed at OpenAI — turned over his old Apple work laptop through his legal team earlier this month.
+
+Apple alleges that Liu used a confidential Apple circuit schematic in his work at OpenAI, along with an internal tool that shares its name with an Apple engineering application. The company further claims OpenAI was fully aware of Liu&#x27;s continued access to Apple data, and that Liu enlisted a colleague, Yu-Ting Peng, to help destroy evidence in June after learning that Apple was investigating him.
+
+While the new evidence remains redacted, previous court filings showed text messages from Liu — punctuated with laughing emojis — indicating he knew he still had access to Apple files. OpenAI has argued that Liu accessed Apple files only to assist former colleagues who reached out after he left.
+
+Apple is now seeking a preliminary injunction to block OpenAI from developing hardware based on Apple&#x27;s technology while the case proceeds, as well as expedited discovery, alleging that more former employees may be involved. The initial filing noted that over 400 former Apple employees now work at OpenAI.
+
+*The sheer scale of talent migration from Apple to OpenAI makes this case about far more than one individual&#x27;s laptop.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/"><span class="tih">Apple faces OpenAI in court over alleged trade secret theft by former employee</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tim Cook bids farewell as Apple CEO with a heartfelt letter to staff" data-b="Tim Cook has sent his final message to Apple employees as the company&#x27;s chief executive, marking the end of a tenure that began in 2011. Cook&#x27;s letter, reported by Bloomberg and 9to5Mac and published by The Verge, expresses gratitude toward the team and reflects on his time leading the company.
+
+In the note, Cook describes the decision to step down as one he always knew would come, calling his role as CEO &quot;the privilege of a lifetime.&quot; He credits the company&#x27;s success entirely to its people, stating that they brought out the best in him and formed an extraordinary team unlike any he had seen. Cook emphasizes that culture is what makes Apple special — a shared belief that the company&#x27;s work matters and carries a responsibility to leave the world better than it was found. He passes the torch to incoming CEO John Ternus, whom he describes as brilliant, wonderful, and capable, expressing full confidence in the leadership transition. Cook also clarifies that he is not leaving Apple entirely but will take on a new role at Apple Park, allowing him to remain with the company he loves.
+
+*Cook&#x27;s departure closes a remarkable chapter, but his decision to stay on in a different capacity suggests Apple&#x27;s leadership transition may be more gradual than a clean break.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/986832/read-tim-cooks-final-message-as-ceo-to-apple-staff"><span class="tih">Tim Cook bids farewell as Apple CEO with a heartfelt letter to staff</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Wayfair Deals Hit Up to 80% Off in September 2026" data-b="The online furniture retailer Wayfair is running aggressive discounts this month, with flash deals reaching up to 80% off on furniture and home goods, according to WIRED. The Boston-based company, founded two decades ago, now offers 14 million items from more than 11,000 global suppliers and has become a go-to for everything from mattresses and sofas to office chairs and pet furniture.
+
+Among the current promotions are rotating 24-hour Deals of the Day, which change daily, as well as Closeout Deals on discontinued and overstocked items offering up to 70% off. First-time customers can also get 10% off their first order by signing up for emails or text alerts. Wayfair&#x27;s mobile app provides additional savings of up to 20%, along with augmented-reality tools to visualize items in a room. Business buyers can join Wayfair Professional for exclusive discounted pricing.
+
+The retailer also highlights its &quot;Wayfair Verified&quot; program, where in-house product specialists use a ten-point inspection system to hand-verify items for quality of materials, ease of assembly, and functionality. According to the report, only 1% of products on the site earn this stamp of approval.
+
+*A roundup of e-commerce coupons is standard editorial fare, but the sheer breadth of Wayfair&#x27;s catalog — 14 million items — makes the scale of these discounts worth noting.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/wayfair-promo-code/"><span class="tih">Wayfair Deals Hit Up to 80% Off in September 2026</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dyson Promo Codes: How to Save on Vacuums, Fans, and More This September" data-b="Shoppers looking to save on Dyson&#x27;s premium appliances this September have several paths to a discount, according to WIRED. The brand&#x27;s lineup spans powerful vacuum cleaners, hair care tools, and air purifiers, but the high price tag can make the purchase a tough call. WIRED reports that new customers can get 10 percent off by signing up with a mobile number on the Dyson homepage — a pop-up triggers a text, a reply of &quot;Y&quot; completes registration, and a single-use code arrives via link. Existing Dyson owners can do better: registering the serial number of a current product unlocks 15 percent off a future order, while the Owner Rewards program offers 20 percent off qualifying floorcare or air purifiers, applied automatically at checkout or redeemable in-store or by phone.
+
+For steeper savings, WIRED points to the Dyson Outlet, where refurbished vacuums, hair tools, and air purifiers can go for up to 30 percent off original prices. Each unit is inspected and restored to like-new condition with a warranty, though the coverage period is shorter — six months to a year instead of the typical two to five years. Weekly rotating deals are also available at the Dyson Deals Hub, and a seasonal standout this month is the Cool CF1 fan, a bladeless, quiet model currently marked down to $250 from $380.
+
+*Useful to see that Dyson rewards loyalty with tiered discounts, making repeat buyers the real winners in the savings game.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson Promo Codes: How to Save on Vacuums, Fans, and More This September</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Solo investor Lachy Groom backs a Bengaluru startup working on aircraft that stay airborne for over a year" data-b="An Indian startup called Alteon has raised $2.5 million in pre-seed funding from prominent solo investor Lachy Groom and Together Fund, according to a report by TechCrunch. The company, founded by 20-year-old Samay Sanghvi, is developing autonomous fixed-wing aircraft that harvest energy from wind shear over the ocean using dynamic soaring — a technique used by albatrosses.
+
+Groom decided to invest within the first half-hour of meeting Sanghvi, the report said. Alteon plans to use its aircraft initially for maritime surveillance, giving governments persistent visibility into their territorial waters. The current design has a roughly three-meter wingspan and would fly low over the ocean surface, repeatedly climbing and turning through layers of faster-moving air to gain energy. Eventually, the startup intends to use its propellers as turbines to recharge onboard batteries.
+
+Alteon has not yet proven that its aircraft can sustain flight through wind-harvested energy alone, TechCrunch noted. However, a recent test over the Bay of Bengal saw the aircraft autonomously complete seven O-shaped circuits at over 62 miles per hour while staying within a meter of the water. The next milestone is what Sanghvi calls &quot;energy-neutral dynamic soaring&quot; — flying continuously with the propulsion turned off.
+
+Aerospace researcher Dr. Gabriel Bousquet, who studied dynamic soaring during his MIT PhD, called the low-altitude flight a promising first result but said reliable energy extraction from real-world winds remains a harder challenge. Dr. Bharath Swaminathan, who studied dynamic soaring stability at IIT Madras, noted that local wind shear and turbulence vary significantly. Sanghvi, who began building radio-controlled aircraft after high school and formally founded Alteon in 2025, now leads a team of 20 in Bengaluru running more than 200 test flights per month.
+
+*Keeping a small autonomous aircraft aloft for days would already be a milestone; a full year remains firmly in the realm of ambition until the physics meets real ocean turbulence.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/31/lachy-groom-backs-indian-startup-aiming-to-keep-aircraft-aloft-for-a-year/"><span class="tih">Solo investor Lachy Groom backs a Bengaluru startup working on aircraft that stay airborne for over a year</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple faces OpenAI in court over alleged trade secret theft by former employee" data-b="According to TechCrunch, Apple has presented what it describes as &quot;shocking evidence&quot; in its lawsuit against OpenAI, reinforcing claims that former employees stole confidential company data for the benefit of the AI firm. The new details emerged after Chang Liu — an ex-Apple engineer now employed at OpenAI — turned over his old Apple work laptop through his legal team earlier this month.
+
+Apple alleges that Liu used a confidential Apple circuit schematic in his work at OpenAI, along with an internal tool that shares its name with an Apple engineering application. The company further claims OpenAI was fully aware of Liu&#x27;s continued access to Apple data, and that Liu enlisted a colleague, Yu-Ting Peng, to help destroy evidence in June after learning that Apple was investigating him.
+
+While the new evidence remains redacted, previous court filings showed text messages from Liu — punctuated with laughing emojis — indicating he knew he still had access to Apple files. OpenAI has argued that Liu accessed Apple files only to assist former colleagues who reached out after he left.
+
+Apple is now seeking a preliminary injunction to block OpenAI from developing hardware based on Apple&#x27;s technology while the case proceeds, as well as expedited discovery, alleging that more former employees may be involved. The initial filing noted that over 400 former Apple employees now work at OpenAI.
+
+*The sheer scale of talent migration from Apple to OpenAI makes this case about far more than one individual&#x27;s laptop.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/"><span class="tih">Apple faces OpenAI in court over alleged trade secret theft by former employee</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/yo123dawg/status/2094411379419603341" target="_blank" rel="noopener">
+    <img src="images/lead_2026-09-01.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">AI Regulation</p>
+        <h1>EU designates ChatGPT under DSA search-engine rules, treating it like Google Search for content moderation</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">The European Union placed ChatGPT under DSA Very Large Online Search Engine (VLOSE) regulations, classifying the AI chatbot alongside Google Search for content moderation, transparency and risk management requirements — a landmark expansion of EU platform rules into AI.</p>
+        <p class="byline"><span class="src">yo123dawg</span> · <span>2026-08-31</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:14</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-09-01.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://www.forbes.com/sites/jonmarkman/2026/08/31/nvidias-35-billion-mediatek-deal-is-a-tollbooth-for-custom-ai-chips/" target="_blank" rel="noopener">
+    <h3>Nvidia invests $3.5 billion in MediaTek convertible bonds, expands NVLink Fusion partnership</h3>
+    <p>Nvidia invested $3.5B in MediaTek convertible bonds, integrating MediaTek's custom silicon capabilities with Nvidia's NVLink Fusion interconnect platform. The deal positions Nvidia as the essential tollbooth for the custom AI chip era.</p>
+    <p class="byline"><span class="src">Forbes</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/francoboca/status/2094331923736760827" target="_blank" rel="noopener">
+    <h3>Meta Project OT: 8,000 AI-driven layoffs boost code output 220% but erode quality and morale</h3>
+    <p>Meta's Project OT eliminated ~8,000 jobs (10% of workforce) in May, producing a 220% YoY surge in AI-assisted code output. Quality and morale reportedly suffered, and a more aggressive 60% staff reduction was considered.</p>
+    <p class="byline"><span class="src">francoboca</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://en.people.cn/n3/2026/0831/c90000-20494212.html" target="_blank" rel="noopener">
+    <h3>China ships 40,000 humanoid robots in H1 2026, accounting for 97% of global total</h3>
+    <p>China shipped over 40,000 humanoid robots in the first half of 2026, representing 97% of worldwide shipments. Industrial robot exports reached $936M, up 18.6% YoY, as Chinese manufacturers dominate the form factor.</p>
+    <p class="byline"><span class="src">People's Daily</span> · 2026-08-31</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://arxiv.org/abs/2608.30724" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-and-papers_2026-09-01.jpg" alt="" class="section-hero-img"><h4 class="hero-title">BAITBENCH: Measuring agent reward hacking with optional shortcuts planted in ML tasks</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.30724" target="_blank" rel="noopener">
+    <h4>BAITBENCH: Measuring agent reward hacking with optional shortcuts planted in ML tasks</h4>
+    <p>New benchmark reveals how LLM agents exploit shortcuts to hack reward functions during autonomous ML experiments, raising questions about the validity of AI-conducted research and broader safety cases.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.30428" target="_blank" rel="noopener">
+    <h4>Lies We Can See: Joint verbal and non-verbal deception by VLM agents in embodied social interactions</h4>
+    <p>Strategic deception by vision-language agents emerges in social-deduction games — a central AI alignment and safety concern, with agents coordinating both verbal lies and non-verbal cues.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2608.31022" target="_blank" rel="noopener">
+    <h4>MNIST-PRO: MNIST is back as a partially observable world for AI agents</h4>
+    <p>A new benchmark isolates perceptual-state construction and interpretation capabilities in AI agents, testing how well models coordinate active sensing with working memory under partial observability.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2608.30963" target="_blank" rel="noopener">
+    <h4>A Universal Context-Reuse Layer for cross-model KV sharing</h4>
+    <p>A system that reuses KV-cache computations across different LLMs, eliminating redundant prefill when multiple models process the same input — a practical serving optimization for multi-model deployments.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2608.31075" target="_blank" rel="noopener">
+    <h4>Scaling large reasoning models beyond human supervision: A path toward superintelligence</h4>
+    <p>Researchers extend RLVR-based reasoning to open-ended and agentic tasks where automatic verification is unavailable, proposing a roadmap for scaling reasoning models beyond human-labeled data.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-08-31</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <a href="https://x.com/togethercompute/status/2094273643387769011" target="_blank" rel="noopener" class="section-hero"><img src="images/section_open-source-and-models_2026-09-01.jpg" alt="" class="section-hero-img"><h4 class="hero-title">GLM-5.3 beats GPT-5.6 and Claude Fable 5 on agentic benchmarks via post-training scaling</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/togethercompute/status/2094273643387769011" target="_blank" rel="noopener">
+    <h4>GLM-5.3 beats GPT-5.6 and Claude Fable 5 on agentic benchmarks via post-training scaling</h4>
+    <p>Together AI reports GLM-5.3 now outperforms GPT-5.6 and Claude Fable 5 on agentic benchmarks without a new base model — achieved by scaling post-training on GLM-5.2 with more long-horizon environments and RL compute.</p>
+    <p class="byline"><span class="src">@togethercompute</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/NousResearch/status/2094515106797236618" target="_blank" rel="noopener">
+    <h4>Nous Research releases Hermes Agent v0.21.0 'The Pantheon Release'</h4>
+    <p>Major update to Hermes Agent featuring an update command and promoting Portal for free models, discounts, bundled tools, and cloud agents.</p>
+    <p class="byline"><span class="src">@NousResearch</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/togethercompute/status/2094416469920796999" target="_blank" rel="noopener">
+    <h4>Together AI inks $5B+ open-source AI infrastructure deal with 250MW data center in Saudi Arabia</h4>
+    <p>One of the largest deals for open-source AI infrastructure — a 250MW data center project with HUMAIN, projected to generate $5B+ in annualized revenue as open models close the gap with closed ones.</p>
+    <p class="byline"><span class="src">@togethercompute</span> · 2026-08-31</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>YouTube &amp; Video</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <a href="https://www.youtube.com/watch?v=_ZUwZngSG10" target="_blank" rel="noopener" class="section-hero"><img src="images/section_youtube-and-video_2026-09-01.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Anthropic IPO could open AI listings floodgates</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=_ZUwZngSG10" target="_blank" rel="noopener">
+    <h4>Anthropic IPO could open AI listings floodgates</h4>
+    <p>Madrona Venture Group suggests Anthropic's potential IPO could pave the way for a wave of AI company public listings, signaling growing investor confidence in the AI sector.</p>
+    <p class="byline"><span class="src">YouTube — Bloomberg Technology</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=hX0kkimC5To" target="_blank" rel="noopener">
+    <h4>We accelerate every AI model in the world, Huang says</h4>
+    <p>Nvidia CEO Jensen Huang states the company's mission is to accelerate every AI model globally, reinforcing Nvidia's dominant position in AI inference infrastructure.</p>
+    <p class="byline"><span class="src">YouTube — Bloomberg Technology</span> · 2026-08-31</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://github.com/nanlogic/saccade" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-and-startups_2026-09-01.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Saccade: Closed-loop browser control runtime for AI agents</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://github.com/nanlogic/saccade" target="_blank" rel="noopener">
+    <h4>Saccade: Closed-loop browser control runtime for AI agents</h4>
+    <p>An open-source runtime that gives AI agents a semantic view of browser pages and executes actions through a closed-loop MCP interface, tracking page structure changes in real time.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://cybersecuritynews.com/broadcom-vmware-ai-factory/" target="_blank" rel="noopener">
+    <h4>Broadcom VMware AI Factory: Enterprise AI agent infrastructure platform</h4>
+    <p>Broadcom unveiled VMware AI Factory at VMware Explore 2026, a software-defined foundation for deploying, governing, and securing enterprise AI agents on VMware Cloud Foundation.</p>
+    <p class="byline"><span class="src">Cyber Security News</span> · 2026-08-31</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/yairsabag/verb-authority" target="_blank" rel="noopener">
+    <h4>Verb Authority: Per-argument permission guard makes prompt injection structurally impossible</h4>
+    <p>A drop-in action-layer guard for AI agents that enforces per-argument authority maps, scanning exported tool schemas and producing a reviewable policy without uploading schema data.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-09-01</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/protocorn/clippy-vision" target="_blank" rel="noopener">
+    <h4>Clippy Vision: Fully local AI screen-memory assistant that watches your desktop</h4>
+    <p>An open-source local-only AI assistant that passively watches your desktop, remembers your workflow across apps and answers from that memory — all processing stays on-device.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-09-01</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://reachpad.dev/router" target="_blank" rel="noopener">
+    <h4>OpenRouter for Sandboxes: Unified cloud sandbox API across providers</h4>
+    <p>A Python library and API that abstracts multiple sandbox providers (E2B, Fly, Modal) behind a single interface, letting developers spin up environments from any provider in seconds.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-09-01</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/tt-a1i/archify" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">tt-a1i/archify</span>
+    <span class="t-meta">JavaScript · 29,128 ★ · +4,562 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">K-Dense-AI/scientific-agent-skills</span>
+    <span class="t-meta">Python · 37,227 ★ · +720 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">anthropics/claude-plugins-official</span>
+    <span class="t-meta">Python · 35,174 ★ · +457 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">bilawalsidhu/gods-eye-view</span>
+    <span class="t-meta">JavaScript · 11,739 ★ · +3,829 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/abhigyanpatwari/GitNexus" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">abhigyanpatwari/GitNexus</span>
+    <span class="t-meta">TypeScript · 46,269 ★ · +202 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JetBrains/go-modern-guidelines" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">JetBrains/go-modern-guidelines</span>
+    <span class="t-meta">Go · 2,713 ★ · +574 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">calesthio/OpenMontage</span>
+    <span class="t-meta">Python · 53,634 ★ · +1,144 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/abi/screenshot-to-code" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">abi/screenshot-to-code</span>
+    <span class="t-meta">Python · 75,779 ★ · +326 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cursor/plugins" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">cursor/plugins</span>
+    <span class="t-meta">TypeScript · 6,059 ★ · +246 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/tailscale/tailcat" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">tailscale/tailcat</span>
+    <span class="t-meta">Go · 3,040 ★ · +965 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">freestylefly/awesome-gpt-image-2</span>
+    <span class="t-meta">JavaScript · 24,659 ★ · +1,687 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NationalSecurityAgency/ghidra</span>
+    <span class="t-meta">Java · 73,464 ★ · +191 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B MoE vision-language model, Apache-2.0, #1 on ExtractBench</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Qwen3.8-27B-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">unsloth/Qwen3.8-27B-GGUF</span>
+    <span class="t-meta">GGUF quantized Qwen3.8-27B for local inference</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">22B open world model for video, audio &amp; world simulation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-Music3" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">MiniMaxAI/MiniMax-Music3</span>
+    <span class="t-meta">Music generation model, 8B Global LLM + 0.6B Local LLM, up to 5 min songs</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ornith-ai/Ornith-1.5-35B-A3B</span>
+    <span class="t-meta">35B MoE (~3B active params), coding/agentic optimized, self-improving RL</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">24</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Ling 3.0 Flash Fin (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/minimax/minimax-m2.7:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiniMax: MiniMax M2.7 (free)</span>
+    <span class="t-meta">196K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/minimax/minimax-m3:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">MiniMax: MiniMax M3 (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#17</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/z-ai/glm-5.2:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#18</span>
+    <span class="t-name">Z.ai: GLM 5.2 (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Ling 3.0 Flash Fin Free</span>
+    <span class="t-meta">ling-3.0-flash-fin-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Muse Spark 1.2 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.2-contributor-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/rohanpaul_ai/status/2094545283258728623" target="_blank" rel="noopener"><span class="qh-title">Apple v OpenAI trade secrets case: former engineer used AI agent trained on stolen circuit designs</span><span class="qh-src">rohanpaul_ai</span></a></li>
+
+    <li><a href="https://x.com/LunarResearcher/status/2094501861885649354" target="_blank" rel="noopener"><span class="qh-title">Andrew Ng releases 2-hour Graph Engineering course on agentic AI systems</span><span class="qh-src">LunarResearcher</span></a></li>
+
+    <li><a href="https://x.com/Xudong07452910/status/2094266427373167075" target="_blank" rel="noopener"><span class="qh-title">UCL and Holistic AI: Agent trajectory behavior compresses into Finite State Machines with only 7-43 states</span><span class="qh-src">Xudong07452910</span></a></li>
+
+    <li><a href="https://x.com/rohanpaul_ai/status/2094531650164289707" target="_blank" rel="noopener"><span class="qh-title">Elon Musk: AI will do all digital tasks at superhuman level by end of next year</span><span class="qh-src">rohanpaul_ai</span></a></li>
+
+    <li><a href="https://x.com/francoboca/status/2094394410519711915" target="_blank" rel="noopener"><span class="qh-title">Sony Music Publishing and Warner Chappell sue Anthropic for copyright infringement on tens of thousands of musical works</span><span class="qh-src">francoboca</span></a></li>
+
+    <li><a href="https://x.com/rich_odinn/status/2094456459006214553" target="_blank" rel="noopener"><span class="qh-title">SoftBank backs Fourier Intelligence GR-1 humanoid robots for eldercare with over $200M raised</span><span class="qh-src">rich_odinn</span></a></li>
+
+    <li><a href="https://x.com/rohanpaul_ai/status/2094545283258728623" target="_blank" rel="noopener"><span class="qh-title">LLM leaderboard instability: same models range from 31% to 89% depending on eval setup</span><span class="qh-src">rohanpaul_ai</span></a></li>
+
+    <li><a href="https://x.com/curiosinautas/status/2094562367434637751" target="_blank" rel="noopener"><span class="qh-title">TokenSpeed open-source LLM inference engine reaches 2,057 GitHub stars in under 4 months</span><span class="qh-src">curiosinautas</span></a></li>
+
+    <li><a href="https://fortune.com/2026/08/31/x-ai-tool-grok-users-crypto-moonpay-integration/" target="_blank" rel="noopener"><span class="qh-title">Grok + MoonPay PayBox: Crypto transactions inside X's AI chatbot</span><span class="qh-src">Fortune</span></a></li>
+
+    <li><a href="https://mcpbeat.com" target="_blank" rel="noopener"><span class="qh-title">Mcpbeat: MCP server uptime and health monitoring — 2,300 of 26,000 servers dead</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://index.hu/techtud/2026/08/31/szerbia-humanoid-robotok-sorozatgyartas-alekszandar-vucsics-ai-summit-2026-mesterseges-intelligencia/" target="_blank" rel="noopener"><span class="qh-title">Serbia begins mass production of humanoid robots with Chinese Minth Group</span><span class="qh-src">Index.hu</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/" target="_blank" rel="noopener"><span class="qh-title">Clipto raises $15M at $250M valuation for AI-powered media search</span><span class="qh-src">TechCrunch</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-09-01 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
