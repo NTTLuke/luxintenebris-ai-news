@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 03 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · September 3, 2026 — No. 70</title>
+      <title>Lux in Tenebris — AI dispatches · September 4, 2026 — No. 71</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;NVIDIA has agreed to acquire Hugging Face for about $12.9 billion, confirmed on September 3. The hub hosts more than 3 million models, 500,000 datasets and 1 million apps, making it the shared home of the open-weight AI world. The deal pushes NVIDIA from chips into the center of open-source AI and raises immediate questions about the platform&amp;#x27;s continued neutrality.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.forbes.com/sites/johnkoetsier/2026/09/03/openai-is-making-a-humanoid-robot-everyone-should-have-one/"&gt;OpenAI confirms it will build a humanoid robot&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2095528012791902536"&gt;Google DeepMind&amp;#x27;s WeatherNext 3 now powers Search, Maps and Gemini&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.ai/news/grok-bot-for-enterprise"&gt;Grok Bot for enterprise launches with free access for Grok and Cursor teams&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · September 3, 2026 — No. 70</title>
+      <link>https://luxintenebris.news/archive/2026-09-03/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-03/</guid>
       <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Google DeepMind released Gemini 3.8 Flash, its most intelligent Flash model yet, with 1M token context, improved reasoning, and enhanced coding for autonomous agents. A restricted Cyber variant targets autonomous vulnerability discovery and automated patching, available through the new Fairwind Program for national cyber authorities and critical infrastructure providers. Pricing holds at $0.75/$3.75 per 1M tokens through December 2026.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2095278094244339967"&gt;DeepSeek releases V4 Pro 0813 alongside fully open-source evaluation harness with full reproducibility logging&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/"&gt;Wonderful raises $550M at $5B valuation for enterprise AI operating system, doubling valuation in under 6 months&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/"&gt;HiddenLayer nabs $100M Series B for AI model security as ARR grows 10x YoY&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.crunchbase.com/venture/robotics-ai-startup-lyte-seriesc-raise-maverick/"&gt;Former Apple engineers&amp;#x27; physical AI startup Lyte raises $165M at $1.6B valuation for robotics sensing technology&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-16/</guid>
       <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Thinking Machines released Inkling, a 975B total / 41B active parameter open-source MoE model with up to 1M token context and native multimodal reasoning over text, images, and audio. The model features ShortConv attention, shared expert sink MoE, and day-one production support via SGLang with CUDA graph prefill, MXFP8 KV cache, and DFlash speculative decoding. Open weights are available immediately.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/"&gt;NVIDIA introduces Jetson Thor edge AI modules with Blackwell architecture&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2077446718728425686"&gt;OpenAI launches GPT-Red, an automated red-teaming tool for prompt injections&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2077452646303006927"&gt;Anthropic publishes research on agentic misalignment in autonomous agents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/"&gt;Emergent raises $130M Series C at $1.5B valuation, becomes a unicorn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · July 15, 2026 — No. 18</title>
-      <link>https://luxintenebris.news/archive/2026-07-15/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-15/</guid>
-      <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Sam Altman announced GPT-5.6 Sol delivers roughly half the price and roughly 2x more token efficiency than Fable for many tasks, positioning it as a major cost-performance breakthrough for production AI workloads. OpenAI&amp;#x27;s inference team is struggling to keep up with demand.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2077033807736459713"&gt;OpenAI agentic usage explodes 2.5x in one week&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/swyx/status/2077162040108748830"&gt;Codex reaches 6M users, described as &amp;#x27;IPO altering&amp;#x27; for OpenAI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/"&gt;DeepSeek reportedly in talks to raise $1.5B at $71B valuation ahead of IPO&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.fiercebiotech.com/biotech/chai-brews-400m-series-c-fuel-ai-used-lilly-novartis-and-pfizer"&gt;Chai Discovery raises $400M Series C at $3.8B valuation for AI drug discovery&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
