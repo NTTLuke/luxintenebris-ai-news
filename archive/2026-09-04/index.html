@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · September 04, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 71 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>September 04, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>86 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DwarfStar · DeepSeek V4 Flash 0731 (M3 Ultra)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="iRobot unveils the Roomba Duo at IFA 2026" data-b="At the IFA 2026 tech show in Berlin, iRobot presented a concept robot that packs two floor cleaners into a single device, according to The Verge. Called the Roomba Duo, it pairs a heavy-duty floor-washing machine with a smaller, slimmer Roomba that rides on top. The main unit handles sweeping and mopping of larger areas, while the smaller companion lowers mechanically to reach tight spaces such as corners and spots under furniture.
+
+The Verge reports that the smaller robot is the Roomba Plus 757, lowered into action by a mechanical arm. The Duo also functions as an autonomous mobile dock, carrying clean and dirty water tanks plus a dust bag, and uses lidar and camera-based navigation to map the home, avoid obstacles, and detect dirt. According to iRobot&#x27;s Adam Pope, the main unit is the most powerful vacuum the company has ever made, comparable in capability to an upright model, and can steam-mop with a large roller mop. In one demonstration, the device sucked up pasta from a carpet and then washed the carpet afterward.
+
+iRobot&#x27;s new CEO, Hao Li, who hails from parent company Picea — the firm that acquired iRobot out of bankruptcy earlier this year — introduced the machine, saying the innovation proves the future of floor care has a familiar name. The Verge notes the Duo resembles the commercial cleaning robots found in hotels and malls, and its reviewer raised concerns about long-term durability. The company has not announced a price or release date.
+
+*The Duo is an impressive piece of engineering, but whether an average home needs a two-robot cleaning convoy is a harder question than the demo makes it look.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/990045/irobot-roomba-duo-concept-robot-vacuum"><span class="tih">iRobot unveils the Roomba Duo at IFA 2026</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Bluetti rolls out a wheeled e-generator to challenge gas-powered rivals" data-b="According to The Verge, Bluetti has launched the Pioneer 5000, an e-generator the company insists should not be called a solar generator, even though that is essentially what it is. The Verge reports the device stands apart from other solar-chargeable power stations thanks to a dolly-style cart and up to 18kW of instantaneous surge output, enough to start heavy equipment such as air compressors, water pumps, and industrial motors. The unit offers IP65 protection against water and dust and is designed to operate in temperatures from -20C to 55C, according to The Verge. At its core is a 5.12kWh LFP battery that can be expanded to 35kWh, which the publication says could keep an average American home running at full blast for a little over a day. AC and solar input can be combined to charge the device at up to 6.2kW. Bluetti is positioning the e-generator as an alternative to gas generators for job sites, events, emergency response teams, and homes, highlighting quieter, cleaner operation, according to The Verge. Still, its usefulness during an outage depends on how it gets refilled: the story notes that when the grid is down, recharging can become a problem, so keeping a cheap gas generator on hand to charge the e-generator may still make sense. Pricing and availability have yet to be announced.
+
+*If quiet, emission-free power is the pitch, the real test will be whether owners can keep it charged when it matters most.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/986123/bluetti-pioneer-5000-solar-generator"><span class="tih">Bluetti rolls out a wheeled e-generator to challenge gas-powered rivals</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Altman apologizes after GPT-6 Astra launch leaves paying users locked out" data-b="Sam Altman apologized for a &quot;messy rollout&quot; of OpenAI&#x27;s GPT-6 Astra just hours after the company launched the model, according to The Verge. The outlet reports that paying subscribers who expected immediate access to the new frontier model were left waiting.
+
+OpenAI hailed the release as a &quot;generational leap in capability&quot; and the start of what it called &quot;the AGI era,&quot; according to The Verge. Astra would reach some enterprise customers that day, specifically those with access to its Daybreak cybersecurity platform, and expand to Plus, Pro, Business, and Enterprise users as well as the OpenAI API, Microsoft Azure, and AWS Bedrock over the following days.
+
+The staggered approach that seemed to favor business customers irked paid subscribers, particularly those on the pricier Pro plan, The Verge reports. On X, Altman said the company was &quot;working towards getting Astra in everyone&#x27;s hands as quickly as we can&quot; and appreciated users&#x27; patience, adding that &quot;it should be quick.&quot; No timeline followed, though Altman said he hoped people could try it over the weekend, without promising it. Codex engineering lead Thibault Sottiaux said paid ChatGPT plans would receive one banked reset for every day without access, as of that day.
+
+OpenAI also drew criticism from safety advocates who argued Astra&#x27;s reasoning was harder to monitor than that of its other models, according to The Verge.
+
+*In a sector where access delays annoy paying customers, a prompt apology may matter less than a precise release schedule.*
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout"><span class="tih">Altman apologizes after GPT-6 Astra launch leaves paying users locked out</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="WIRED Names Petkit&#x27;s Purobot Max Pro 2 the Best Automatic Litter Box of 2026" data-b="According to WIRED, its staff spent at least a week — often more — testing a dozen of the most highly rated, technologically advanced automatic litter boxes, using standard clay clumping litter. Their new favourite is Petkit&#x27;s Purobot Max Pro 2, picked for its compact design and the camera it carries for monitoring cats. Whisker&#x27;s Litter-Robot 4 is a close second, thanks to a LitterHopper attachment that refills litter automatically, while the Petkit PuraMax 2 remains a solid choice for most people.
+
+The Purobot Max Pro 2 is Petkit&#x27;s newest model. WIRED highlights its built-in 1080p camera with a 210-degree wide-angle view, AI-powered multi-cat face recognition, usage tracking via a companion app, audio recording, night vision, and support for 2.4- and 5-GHz Wi-Fi; it can even film a cat using the box and its waste. The opening is 43 percent larger than the previous model, suiting bigger cats, and the self-sealing waste bag holds up to 17 days of waste for one cat. The app alerts owners when the basket fills up, and two odor-eliminating cartridges help keep smells down. A free Care+ trial tracks weight and usage and flags unusual activity, though some reviewers complained the camera confused their cats once the trial ended, and the app itself is cluttered with ads.
+
+WIRED also credits the Litter-Robot 4&#x27;s simple, intuitive app on Android and iOS, which logs usage and weight and keeps an eye on litter and waste levels. Still, continued testing showed the box sometimes sensing cats that were not there and stopping repeatedly during cleaning cycles.
+
+*Smart litter boxes are impressive engineering, but watching a cat use the bathroom is where even a tech enthusiast would draw the line.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/gallery/best-automatic-cat-litter-boxes/"><span class="tih">WIRED Names Petkit&#x27;s Purobot Max Pro 2 the Best Automatic Litter Box of 2026</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Ugreen&#x27;s HomeAgent wants to keep your entire smart home off the cloud" data-b="Ugreen, known for NAS storage, has entered the smart home market with HomeAgent, a platform unveiled at this week&#x27;s IFA tech show, according to The Verge. One hub combines security camera storage, on-device AI, and smart home control, managed by a voice assistant called Uliya and built around the promise that everything runs locally.
+
+The hub keeps all data on-site and processes footage on the device, the report says, offering cross-camera tracking, smart alerts for people, vehicles, pets, and packages, AI video search, and natural language control of connected gadgets. Three versions exist: HA100, HA100 Pro, and the flagship MasterAgent MA100, powered by an Nvidia Jetson Thor T5000 rated at up to 2,070 TFLOPS. Early bird prices range from $899 to $2,999 and $9,999, with Ugreen suggesting pricing will roughly double after an October Kickstarter launch.
+
+The Verge notes that cloud rivals such as Amazon&#x27;s Ring and Google&#x27;s Nest charge monthly storage fees, while Ugreen joins SwitchBot, Reolink, Aqara, and Anker, which debuted its similar Eufy MindBase at IFA. The hub is a Matter controller that supports third-party devices over Wi-Fi, Zigbee, Thread, Bluetooth, NFC, ONVIF/RTSP, and PoE, though its compatibility list remains small. Ugreen also launched a Uliya smart speaker, a SynCare camera line, and an E Ink photo frame; a hands-on demo showed voice control of Nanoleaf lights and smart blinds, while push notifications and remote viewing still need internet access.
+
+*The promise of a smart home that never leaves your walls is a strong one, but a small compatibility list and internet-reliant extras suggest the local-first ideal still comes with compromises.*
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home"><span class="tih">Ugreen&#x27;s HomeAgent wants to keep your entire smart home off the cloud</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="iRobot unveils the Roomba Duo at IFA 2026" data-b="At the IFA 2026 tech show in Berlin, iRobot presented a concept robot that packs two floor cleaners into a single device, according to The Verge. Called the Roomba Duo, it pairs a heavy-duty floor-washing machine with a smaller, slimmer Roomba that rides on top. The main unit handles sweeping and mopping of larger areas, while the smaller companion lowers mechanically to reach tight spaces such as corners and spots under furniture.
+
+The Verge reports that the smaller robot is the Roomba Plus 757, lowered into action by a mechanical arm. The Duo also functions as an autonomous mobile dock, carrying clean and dirty water tanks plus a dust bag, and uses lidar and camera-based navigation to map the home, avoid obstacles, and detect dirt. According to iRobot&#x27;s Adam Pope, the main unit is the most powerful vacuum the company has ever made, comparable in capability to an upright model, and can steam-mop with a large roller mop. In one demonstration, the device sucked up pasta from a carpet and then washed the carpet afterward.
+
+iRobot&#x27;s new CEO, Hao Li, who hails from parent company Picea — the firm that acquired iRobot out of bankruptcy earlier this year — introduced the machine, saying the innovation proves the future of floor care has a familiar name. The Verge notes the Duo resembles the commercial cleaning robots found in hotels and malls, and its reviewer raised concerns about long-term durability. The company has not announced a price or release date.
+
+*The Duo is an impressive piece of engineering, but whether an average home needs a two-robot cleaning convoy is a harder question than the demo makes it look.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/990045/irobot-roomba-duo-concept-robot-vacuum"><span class="tih">iRobot unveils the Roomba Duo at IFA 2026</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Bluetti rolls out a wheeled e-generator to challenge gas-powered rivals" data-b="According to The Verge, Bluetti has launched the Pioneer 5000, an e-generator the company insists should not be called a solar generator, even though that is essentially what it is. The Verge reports the device stands apart from other solar-chargeable power stations thanks to a dolly-style cart and up to 18kW of instantaneous surge output, enough to start heavy equipment such as air compressors, water pumps, and industrial motors. The unit offers IP65 protection against water and dust and is designed to operate in temperatures from -20C to 55C, according to The Verge. At its core is a 5.12kWh LFP battery that can be expanded to 35kWh, which the publication says could keep an average American home running at full blast for a little over a day. AC and solar input can be combined to charge the device at up to 6.2kW. Bluetti is positioning the e-generator as an alternative to gas generators for job sites, events, emergency response teams, and homes, highlighting quieter, cleaner operation, according to The Verge. Still, its usefulness during an outage depends on how it gets refilled: the story notes that when the grid is down, recharging can become a problem, so keeping a cheap gas generator on hand to charge the e-generator may still make sense. Pricing and availability have yet to be announced.
+
+*If quiet, emission-free power is the pitch, the real test will be whether owners can keep it charged when it matters most.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/986123/bluetti-pioneer-5000-solar-generator"><span class="tih">Bluetti rolls out a wheeled e-generator to challenge gas-powered rivals</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Altman apologizes after GPT-6 Astra launch leaves paying users locked out" data-b="Sam Altman apologized for a &quot;messy rollout&quot; of OpenAI&#x27;s GPT-6 Astra just hours after the company launched the model, according to The Verge. The outlet reports that paying subscribers who expected immediate access to the new frontier model were left waiting.
+
+OpenAI hailed the release as a &quot;generational leap in capability&quot; and the start of what it called &quot;the AGI era,&quot; according to The Verge. Astra would reach some enterprise customers that day, specifically those with access to its Daybreak cybersecurity platform, and expand to Plus, Pro, Business, and Enterprise users as well as the OpenAI API, Microsoft Azure, and AWS Bedrock over the following days.
+
+The staggered approach that seemed to favor business customers irked paid subscribers, particularly those on the pricier Pro plan, The Verge reports. On X, Altman said the company was &quot;working towards getting Astra in everyone&#x27;s hands as quickly as we can&quot; and appreciated users&#x27; patience, adding that &quot;it should be quick.&quot; No timeline followed, though Altman said he hoped people could try it over the weekend, without promising it. Codex engineering lead Thibault Sottiaux said paid ChatGPT plans would receive one banked reset for every day without access, as of that day.
+
+OpenAI also drew criticism from safety advocates who argued Astra&#x27;s reasoning was harder to monitor than that of its other models, according to The Verge.
+
+*In a sector where access delays annoy paying customers, a prompt apology may matter less than a precise release schedule.*
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout"><span class="tih">Altman apologizes after GPT-6 Astra launch leaves paying users locked out</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="WIRED Names Petkit&#x27;s Purobot Max Pro 2 the Best Automatic Litter Box of 2026" data-b="According to WIRED, its staff spent at least a week — often more — testing a dozen of the most highly rated, technologically advanced automatic litter boxes, using standard clay clumping litter. Their new favourite is Petkit&#x27;s Purobot Max Pro 2, picked for its compact design and the camera it carries for monitoring cats. Whisker&#x27;s Litter-Robot 4 is a close second, thanks to a LitterHopper attachment that refills litter automatically, while the Petkit PuraMax 2 remains a solid choice for most people.
+
+The Purobot Max Pro 2 is Petkit&#x27;s newest model. WIRED highlights its built-in 1080p camera with a 210-degree wide-angle view, AI-powered multi-cat face recognition, usage tracking via a companion app, audio recording, night vision, and support for 2.4- and 5-GHz Wi-Fi; it can even film a cat using the box and its waste. The opening is 43 percent larger than the previous model, suiting bigger cats, and the self-sealing waste bag holds up to 17 days of waste for one cat. The app alerts owners when the basket fills up, and two odor-eliminating cartridges help keep smells down. A free Care+ trial tracks weight and usage and flags unusual activity, though some reviewers complained the camera confused their cats once the trial ended, and the app itself is cluttered with ads.
+
+WIRED also credits the Litter-Robot 4&#x27;s simple, intuitive app on Android and iOS, which logs usage and weight and keeps an eye on litter and waste levels. Still, continued testing showed the box sometimes sensing cats that were not there and stopping repeatedly during cleaning cycles.
+
+*Smart litter boxes are impressive engineering, but watching a cat use the bathroom is where even a tech enthusiast would draw the line.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/gallery/best-automatic-cat-litter-boxes/"><span class="tih">WIRED Names Petkit&#x27;s Purobot Max Pro 2 the Best Automatic Litter Box of 2026</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Ugreen&#x27;s HomeAgent wants to keep your entire smart home off the cloud" data-b="Ugreen, known for NAS storage, has entered the smart home market with HomeAgent, a platform unveiled at this week&#x27;s IFA tech show, according to The Verge. One hub combines security camera storage, on-device AI, and smart home control, managed by a voice assistant called Uliya and built around the promise that everything runs locally.
+
+The hub keeps all data on-site and processes footage on the device, the report says, offering cross-camera tracking, smart alerts for people, vehicles, pets, and packages, AI video search, and natural language control of connected gadgets. Three versions exist: HA100, HA100 Pro, and the flagship MasterAgent MA100, powered by an Nvidia Jetson Thor T5000 rated at up to 2,070 TFLOPS. Early bird prices range from $899 to $2,999 and $9,999, with Ugreen suggesting pricing will roughly double after an October Kickstarter launch.
+
+The Verge notes that cloud rivals such as Amazon&#x27;s Ring and Google&#x27;s Nest charge monthly storage fees, while Ugreen joins SwitchBot, Reolink, Aqara, and Anker, which debuted its similar Eufy MindBase at IFA. The hub is a Matter controller that supports third-party devices over Wi-Fi, Zigbee, Thread, Bluetooth, NFC, ONVIF/RTSP, and PoE, though its compatibility list remains small. Ugreen also launched a Uliya smart speaker, a SynCare camera line, and an E Ink photo frame; a hands-on demo showed voice control of Nanoleaf lights and smart blinds, while push notifications and remote viewing still need internet access.
+
+*The promise of a smart home that never leaves your walls is a strong one, but a small compatibility list and internet-reliant extras suggest the local-first ideal still comes with compromises.*
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home"><span class="tih">Ugreen&#x27;s HomeAgent wants to keep your entire smart home off the cloud</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/" target="_blank" rel="noopener">
+    <img src="images/lead_2026-09-04.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Deal of the year</p>
+        <h1>NVIDIA buys Hugging Face for $12.9B, reshaping the open-model ecosystem</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">NVIDIA has agreed to acquire Hugging Face for about $12.9 billion, confirmed on September 3. The hub hosts more than 3 million models, 500,000 datasets and 1 million apps, making it the shared home of the open-weight AI world. The deal pushes NVIDIA from chips into the center of open-source AI and raises immediate questions about the platform's continued neutrality.</p>
+        <p class="byline"><span class="src">TechCrunch</span> · <span>2026-09-03</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">0:55</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-09-04.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://www.forbes.com/sites/johnkoetsier/2026/09/03/openai-is-making-a-humanoid-robot-everyone-should-have-one/" target="_blank" rel="noopener">
+    <h3>OpenAI confirms it will build a humanoid robot</h3>
+    <p>Sam Altman said on the Sources podcast that OpenAI will definitely make a humanoid robot, ending months of speculation about whether the company's hardware push included physical bodies.</p>
+    <p class="byline"><span class="src">Forbes</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/GoogleDeepMind/status/2095528012791902536" target="_blank" rel="noopener">
+    <h3>Google DeepMind's WeatherNext 3 now powers Search, Maps and Gemini</h3>
+    <p>Trained directly on real-time satellite and weather-station observations, WeatherNext 3 produces hourly forecasts at 5 km resolution and cuts precipitation error by up to 50%. It is already live across Google's flagship products.</p>
+    <p class="byline"><span class="src">Google DeepMind</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.ai/news/grok-bot-for-enterprise" target="_blank" rel="noopener">
+    <h3>Grok Bot for enterprise launches with free access for Grok and Cursor teams</h3>
+    <p>xAI opened Grok Bot to enterprise customers, letting whole organizations — including people without an existing seat — use persistent agents that live beyond a single session. Grok and Cursor Enterprise customers get free usage for two weeks.</p>
+    <p class="byline"><span class="src">xAI</span> · 2026-09-03</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-09-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://huggingface.co/papers/2609.03430" target="_blank" rel="noopener">
+    <h4>Random Attention: rethinking KV cache eviction for efficient reasoning</h4>
+    <p>Randomly evicting KV cache entries within each head matches the strongest prior evictor across four models and six reasoning tasks while serving 32-43% higher throughput in vLLM, suggesting eviction selection signals add almost nothing.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2609.03796" target="_blank" rel="noopener">
+    <h4>LLaDA-Image: open image generation with fully open training recipes</h4>
+    <p>A 6B diffusion transformer trained from scratch with a frozen diffusion-VLM module sets a new open-source state of the art on Qwen-Image-Bench and distills to 2-4 step Turbo inference.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2609.04148" target="_blank" rel="noopener">
+    <h4>Terminal-Universe: turning agent trajectories into scalable terminal environments</h4>
+    <p>Researchers reconstruct 37,300 executable terminal environments from recorded agent trajectories; SFT of Qwen3.5-27B improves Terminal-Bench 2.1 by 11.9 points and EvoCode-Bench v2 by 13.8 points.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.03436" target="_blank" rel="noopener">
+    <h4>It's the problem, not the path: budget and difficulty confounds in reasoning traces</h4>
+    <p>Restart-controlled truncation probes show that apparent 'breakthrough' moments and early-legible fates in LLM reasoning traces are confounded by test-time budget and problem difficulty, not by path properties.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2095612805496164801" target="_blank" rel="noopener">
+    <h4>Declarative Attention slashes long-context compute with no fine-tuning</h4>
+    <p>A Google DeepMind paper lets models declare global, focus or local attention modes in chain-of-thought so the runtime skips KV cache reads, cutting attended tokens by 52% on Gemma-4-31B and 31% on Qwen-3.6-27B across 15 long-context tasks.</p>
+    <p class="byline"><span class="src">Google DeepMind</span> · 2026-09-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-09-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://ifm.ai/blog/k2/" target="_blank" rel="noopener">
+    <h4>K2 Horizon: a connected fleet of six open models</h4>
+    <p>K2 introduced Horizon, six open models released together as one connected family, expanding the lineup beyond the original flagship.</p>
+    <p class="byline"><span class="src">K2 (IFM)</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://inference-docs.cerebras.ai/models/qwen-3.8-27b" target="_blank" rel="noopener">
+    <h4>Qwen 3.8 27B lands on Cerebras at up to 1500 tokens per second</h4>
+    <p>Alibaba's Qwen 3.8 27B dense multimodal model is live on Cerebras' inference platform, targeting agentic coding, tool use and research workloads.</p>
+    <p class="byline"><span class="src">Cerebras</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/NousResearch/status/2095602995874410664" target="_blank" rel="noopener">
+    <h4>Hermes Desktop adds one-click local open-weight setup</h4>
+    <p>Hermes Desktop now detects GPU, VRAM, CPU and RAM on first launch, then recommends, downloads and configures the best local model and runtime, with NVIDIA-optimized support.</p>
+    <p class="byline"><span class="src">Nous Research</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/omarchy-3" target="_blank" rel="noopener">
+    <h4>Omarchy: an open-source malleable OS for the age of AI agents</h4>
+    <p>A Rust-based operating system built around AI agents, hosted on GitHub as an open-source alternative to agent-constrained platforms.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-09-04</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-09-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.techtimes.com/articles/326585/20260904/amd-launches-threadripper-halo-station-ifa-targets-trillion-parameter-local-ai.htm" target="_blank" rel="noopener">
+    <h4>AMD launches Threadripper Halo Station, targets trillion-parameter local AI</h4>
+    <p>At IFA 2026 AMD unveiled the Ryzen AI Max Pro 400 platform and the liquid-cooled Threadripper Halo Station — a 96-core workstation with two MI350P accelerators and up to 576GB HBM3E — claiming it can run models beyond one trillion parameters fully offline. Lenovo and HP showed first OEM systems.</p>
+    <p class="byline"><span class="src">TechTimes</span> · 2026-09-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/" target="_blank" rel="noopener">
+    <h4>NVIDIA accelerates local AI at IFA with RTX Spark PCs and the PAIR router</h4>
+    <p>NVIDIA previewed RTX Spark Windows PCs from Lenovo and Acer for October with up to 1.9x faster local inference, and launched PAIR, a Personal AI Router that spreads inference across idle PCs on a home network.</p>
+    <p class="byline"><span class="src">NVIDIA</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.guru3d.com/story/acemagic-f9a-mini-workstation-packs-ryzen-ai-pro-495/" target="_blank" rel="noopener">
+    <h4>Acemagic F9A mini workstation packs Ryzen AI Max+ PRO 495 with 192GB</h4>
+    <p>One of the first compact systems on AMD's new professional Ryzen AI Max+ silicon runs a 284-billion-parameter DeepSeek V4 Flash model fully locally.</p>
+    <p class="byline"><span class="src">Guru3D</span> · 2026-09-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-09-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.producthunt.com/products/atlas-by-world-labs" target="_blank" rel="noopener">
+    <h4>Atlas by World Labs turns any asset into camera-controlled HD video</h4>
+    <p>The developer tool takes text, images, video and 3D assets and renders them as photorealistic, camera-controlled HD video.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/airtop" target="_blank" rel="noopener">
+    <h4>Agent Builder by Airtop: no-code self-healing agents</h4>
+    <p>A no-code platform for creating agents that recover from failures on their own instead of stopping mid-task.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0" target="_blank" rel="noopener">
+    <h4>Audacity 4.0 ships its biggest release in years</h4>
+    <p>The open-source audio editor ships a modern Qt interface, a new clip editing model and a revised project file format.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/trackmcp" target="_blank" rel="noopener">
+    <h4>TrackMCP brings analytics to MCP server observability</h4>
+    <p>A Google Analytics-style dashboard for model context protocol servers, tracking usage and quality of MCP integrations.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-09-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/twelvelabs" target="_blank" rel="noopener">
+    <h4>Compliance by TwelveLabs reviews video content against your rules</h4>
+    <p>Organizations define the rules and the AI system flags violations automatically in video content.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-09-04</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-09-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/" target="_blank" rel="noopener">
+    <h4>Crusoe reportedly raises $3B at a $30B valuation</h4>
+    <p>The AI data center developer is said to be raising $3B co-led by Atreides Management and Valor Equity Partners with Mubadala Capital, serving customers including Meta, Microsoft and OpenAI.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/" target="_blank" rel="noopener">
+    <h4>Accel in talks to lead $1B round for Thinking Machines at $40B</h4>
+    <p>Mira Murati's frontier lab is reportedly raising $1B at a ~$40B valuation with more than $100M in annual revenue, up from a $2B seed at $12B.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-09-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techfundingnews.com/andreessen-backed-gimlet-labs-hits-3b-valuation-with-300m-round-as-ai-goes-multi-chip/" target="_blank" rel="noopener">
+    <h4>Gimlet Labs hits $3B valuation with $300M round as AI goes multi-chip</h4>
+    <p>The multi-chip inference startup raised $300M led by Andreessen Horowitz, with new backing from Arm Holdings and Microsoft's M12, following an $80M Series A led by Menlo Ventures.</p>
+    <p class="byline"><span class="src">TechFundingNews</span> · 2026-09-04</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/tt-a1i/archify" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">tt-a1i/archify</span>
+    <span class="t-meta">JavaScript · 29.1k ★ · +4,562 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">K-Dense-AI/scientific-agent-skills</span>
+    <span class="t-meta">Python · 37.2k ★ · +720 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">anthropics/claude-plugins-official</span>
+    <span class="t-meta">Python · 35.2k ★ · +457 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">bilawalsidhu/gods-eye-view</span>
+    <span class="t-meta">JavaScript · 11.7k ★ · +3,829 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/abhigyanpatwari/GitNexus" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">abhigyanpatwari/GitNexus</span>
+    <span class="t-meta">TypeScript · 46.3k ★ · +202 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JetBrains/go-modern-guidelines" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">JetBrains/go-modern-guidelines</span>
+    <span class="t-meta">Go · 2.7k ★ · +574 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">calesthio/OpenMontage</span>
+    <span class="t-meta">Python · 53.6k ★ · +1,144 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/abi/screenshot-to-code" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">abi/screenshot-to-code</span>
+    <span class="t-meta">Python · 75.8k ★ · +326 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cursor/plugins" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">cursor/plugins</span>
+    <span class="t-meta">TypeScript · 6.1k ★ · +246 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">freestylefly/awesome-gpt-image-2</span>
+    <span class="t-meta">JavaScript · 24.7k ★ · +1,687 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/tailscale/tailcat" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">tailscale/tailcat</span>
+    <span class="t-meta">Go · 3.0k ★ · +965 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NationalSecurityAgency/ghidra</span>
+    <span class="t-meta">Java · 73.5k ★ · +191 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/swoole/typephp" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">swoole/typephp</span>
+    <span class="t-meta">PHP · 880 ★ · +188 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/marin-community/marin" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">marin-community/marin</span>
+    <span class="t-meta">Python · 2.9k ★ · +236 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/tashfeenahmed/freellmapi" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">tashfeenahmed/freellmapi</span>
+    <span class="t-meta">TypeScript · 21.9k ★ · +433 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/zai-org/GLM-5.3" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">zai-org/GLM-5.3</span>
+    <span class="t-meta">~751B MoE (fp8), multilingual text generation, GLM MoE DSA</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Qwen/Qwen3.8-Flash-Next</span>
+    <span class="t-meta">~180B multimodal (image-text-to-text), Qwen3.8 Flash Next</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27.8B multimodal (image-text-to-text), Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/zai-org/GLM-5.3-Flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">zai-org/GLM-5.3-Flash</span>
+    <span class="t-meta">6.9B multimodal GLM-5.3 Flash, MIT</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4-Flash-Vision-Exp</span>
+    <span class="t-meta">DeepSeek V4 Flash Vision experimental, multimodal, MIT</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Open video generation model (image/text-to-video)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/google/timesfm-3.0-pytorch" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">google/timesfm-3.0-pytorch</span>
+    <span class="t-meta">Time-series forecasting foundation model (Google)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Qwen3.8-27B-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">unsloth/Qwen3.8-27B-GGUF</span>
+    <span class="t-meta">GGUF quantization of Qwen3.8-27B</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/XHToken/Spark-X2.5-4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">XHToken/Spark-X2.5-4B</span>
+    <span class="t-meta">4B text-generation LLM (Spark X2.5)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">unsloth/Qwen3.8-Flash-Next-GGUF</span>
+    <span class="t-meta">GGUF quantization of Qwen3.8-Flash-Next</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">25</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Ling 3.0 Flash Fin (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/minimax/minimax-m2.7:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiniMax: MiniMax M2.7 (free)</span>
+    <span class="t-meta">196K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/minimax/minimax-m3:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">MiniMax: MiniMax M3 (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#17</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/z-ai/glm-5.2:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#18</span>
+    <span class="t-name">Z.ai: GLM 5.2 (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Ling 3.0 Flash Fin Free</span>
+    <span class="t-meta">ling-3.0-flash-fin-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Muse Spark 1.3 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.3-contributor-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Muse Spark 1.2 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.2-contributor-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://www.youtube.com/watch?v=OB66Q0NoU9M" target="_blank" rel="noopener"><span class="qh-title">Uber and Wayve launch supervised robotaxi service in London</span><span class="qh-src">YouTube — Bloomberg Technology</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2095518433865777600" target="_blank" rel="noopener"><span class="qh-title">Meta details CORAL, a production agent for recommender systems</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://x.com/DeepLearningAI/status/2095511844299354204" target="_blank" rel="noopener"><span class="qh-title">Self-GC brings intelligent garbage collection to agent memory</span><span class="qh-src">DeepLearningAI</span></a></li>
+
+    <li><a href="https://x.com/_philschmid/status/2095539789835456545" target="_blank" rel="noopener"><span class="qh-title">Gemini 3.8 Flash managed agents gain remote sandbox and cron triggers</span><span class="qh-src">@_philschmid</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/magicrew" target="_blank" rel="noopener"><span class="qh-title">MagiCrew gives every team member their own AI workforce</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/nex-4" target="_blank" rel="noopener"><span class="qh-title">Nex launches a Claude Cowork-style orchestrator for go-to-market teams</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/myaicademy" target="_blank" rel="noopener"><span class="qh-title">myAIcademy teaches practical AI skills by role and team</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://vacuumwars.com/roborocks-ifa-2026-lineup/" target="_blank" rel="noopener"><span class="qh-title">Roborock's IFA lineup brings the wheel-legged Saros Rover to Europe</span><span class="qh-src">Vacuum Wars</span></a></li>
+
+    <li><a href="https://apify.com/neon_innovation_lab/mcp-security-auditor" target="_blank" rel="noopener"><span class="qh-title">MCP Security Auditor scans MCP servers without executing code</span><span class="qh-src">Apify</span></a></li>
+
+    <li><a href="https://github.com/aurict/aurict" target="_blank" rel="noopener"><span class="qh-title">Aurict: open-source terminal-native AI assistant for your shell</span><span class="qh-src">GitHub</span></a></li>
+
+    <li><a href="https://github.com/fosrl/pangolin" target="_blank" rel="noopener"><span class="qh-title">Pangolin replaces API keys for LLM access with SSO and WireGuard tunnels</span><span class="qh-src">GitHub</span></a></li>
+
+    <li><a href="https://viasocket.com" target="_blank" rel="noopener"><span class="qh-title">viaSocket builds AI workflows visually and exposes apps as MCP servers</span><span class="qh-src">viaSocket</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-09-04 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
