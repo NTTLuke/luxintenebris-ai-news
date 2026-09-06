@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sat, 05 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · September 5, 2026 — No. 72</title>
+      <title>Lux in Tenebris — AI dispatches · September 6, 2026 — No. 73</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sun, 06 Sep 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;GPT-6 Astra produced a fully interactive 3D keyboard with 122 component groups and 1,877 modeled pieces in Three.js from a single reference image, including PBR materials, studio lighting, and exploded-view interactions. The demonstration suggests a significant leap in one-shot generative 3D capability.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2096241436509544744"&gt;Sam Altman showcases GPT-6 Astra turning a casual idea into a playable game in minutes&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2096368290603946360"&gt;Astra agent workflow: Medium mode for prototyping, Max for polish&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2096272427818811495"&gt;OpenAI Astra introduces persistent context management across sessions&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · September 5, 2026 — No. 72</title>
+      <link>https://luxintenebris.news/archive/2026-09-05/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-05/</guid>
       <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic says Claude produced the first fully formalized proof of Fermat&amp;#x27;s Last Theorem in the Lean proof assistant: more than 13 million lines and over 29,000 supporting theorems, completed and machine-verified in about a month. The theorem stood unproven for over 350 years before Andrew Wiles, and a fully machine-checkable version has been a long-standing open goal in formal mathematics. The result is a landmark for AI in mathematics.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/simonw/status/2095930035500925272"&gt;OpenAI &amp;#x27;rogue agents&amp;#x27; leaked benchmark answers through a dormant wiki&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/04/bytedance-secures-29-6-billion-mega-loan-to-fund-ai-and-data-center-expansion-outside-china/"&gt;ByteDance lands a $29.6B mega-loan to fund AI and data centers abroad&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://bob.ibm.com/"&gt;IBM launches Bob, an agentic dev partner for enterprise modernization&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.eu-startups.com/2026/09/spains-ipronics-raises-e107-6-million-with-nvidia-backing-to-scale-optical-networking-for-ai-data-centres/"&gt;iPronics raises €107.6M with NVIDIA backing for optical networking in AI data centers&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-18/</guid>
       <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Databricks raised approximately $3 billion in a funding round led by Coatue, pushing its valuation to $188 billion. The company continues to dominate the AI data and infrastructure sector as enterprises race to operationalize machine learning pipelines at scale.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=5D4Zqp9GLSc"&gt;Apple sues OpenAI for intellectual property theft&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=tgoMkQxGOVw"&gt;OpenAI unveils its first hardware product&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/"&gt;General Compute lands $400M loan for inference chip infrastructure&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blogs.nvidia.com/blog/nvidia-vera-rubin-post-training-intelligence-per-dollar/"&gt;NVIDIA Vera Rubin maximizes intelligence per dollar for post-training workloads&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · July 17, 2026 — No. 19</title>
-      <link>https://luxintenebris.news/archive/2026-07-17/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-17/</guid>
-      <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Moonshot AI unveiled Kimi K3, the world&amp;#x27;s first openly available 3-trillion-parameter model, achieving frontier performance across coding, knowledge work, and reasoning with native multimodality and a 1M-token context window. The release marks a watershed moment for open-weight AI, proving that frontier-scale intelligence can be open-sourced without sacrificing capability.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/07/16/venture-capital-startup-funding-roundup-july-16-2026-8vc-accel-ark-invest-gv-khosla-ventures-mark-cuban-and-sequoia-capital/"&gt;Fireworks Raises $1.5B Series D at $17.5B Valuation for Specialized AI Infrastructure&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/"&gt;Elorian AI Raises $55M Seed at $300M Valuation for Visual Frontier Models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://lmstudio.ai/blog/introducing-lm-studio-bionic"&gt;LM Studio Launches Bionic: An AI Agent Purpose-Built for Open Models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blogs.nvidia.com/blog/japan-ecosystem-2026/"&gt;NVIDIA and Japan Bring Full-Stack AI and Robotics to Every Industry&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
