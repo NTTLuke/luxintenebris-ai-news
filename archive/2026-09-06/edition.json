@@ -1,0 +1,389 @@
+{
+  "issue_no": 73,
+  "date_iso": "2026-09-06",
+  "date_human": "September 06, 2026",
+  "notice": "Light news day — fewer fresh items than usual, after a heavy Saturday issue.",
+  "lead": {
+    "kicker": "Astra in action",
+    "title": "GPT-6 Astra generates production-ready interactive 3D assets from a single image",
+    "summary": "GPT-6 Astra produced a fully interactive 3D keyboard with 122 component groups and 1,877 modeled pieces in Three.js from a single reference image, including PBR materials, studio lighting, and exploded-view interactions. The demonstration suggests a significant leap in one-shot generative 3D capability.",
+    "source": "omarsar0",
+    "date": "2026-09-05",
+    "url": "https://x.com/omarsar0/status/2096321091148947887",
+    "image": "images/lead_2026-09-06.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Sam Altman showcases GPT-6 Astra turning a casual idea into a playable game in minutes",
+      "summary": "Altman demonstrated Astra's ability to rapidly prototype and ship a complete game from a conversational prompt, calling the experience 'so cool.'",
+      "source": "sama",
+      "date": "2026-09-05",
+      "url": "https://x.com/sama/status/2096241436509544744"
+    },
+    {
+      "title": "Astra agent workflow: Medium mode for prototyping, Max for polish",
+      "summary": "Elvis Saravia shared a practical two-stage agent workflow using GPT-6 Astra's Medium mode for rapid prototyping with explicit /goal proofs, then Max mode for refinement, preventing context bloat.",
+      "source": "omarsar0",
+      "date": "2026-09-05",
+      "url": "https://x.com/omarsar0/status/2096368290603946360"
+    },
+    {
+      "title": "OpenAI Astra introduces persistent context management across sessions",
+      "summary": "Astra maintains persistent notes across context windows and sessions, solving context bloat in long-running agent tasks without relying on lossy summarization.",
+      "source": "omarsar0",
+      "date": "2026-09-05",
+      "url": "https://x.com/omarsar0/status/2096272427818811495"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Tools & Startups",
+      "image": "images/section_tools-startups_2026-09-06.jpg",
+      "items": [
+        {
+          "title": "dif.sh: Markdown feature flags your coding agent installs for you",
+          "summary": "Open-source feature flags stored as Markdown in your Git repo. Installs with one command and no account, enabling AI coding agents to autonomously set up feature flags via PR workflows.",
+          "source": "Product Hunt",
+          "date": "2026-09-05",
+          "url": "https://www.producthunt.com/products/dif-sh"
+        },
+        {
+          "title": "Reflexio turns user corrections into reusable agent behaviors",
+          "summary": "SaaS platform that converts failed paths and successful agent interactions into reusable behaviors, with every learning visible, testable, and reversible.",
+          "source": "Product Hunt",
+          "date": "2026-09-06",
+          "url": "https://www.producthunt.com/products/reflexio-2"
+        },
+        {
+          "title": "Hyperprobe lets AI agents debug production without redeploying",
+          "summary": "Production-debugging tool that lets Claude Code, Codex, or Cursor drop read-only probes into running services via MCP to capture variable state around failures.",
+          "source": "Product Hunt",
+          "date": "2026-09-06",
+          "url": "https://www.producthunt.com/products/hyperprobe"
+        },
+        {
+          "title": "Replay QA brings autonomous app testing for AI-speed teams",
+          "summary": "Autonomous QA platform that explores web apps, writes Playwright tests, captures time-travel recordings, and feeds bug reports back to coding agents.",
+          "source": "Product Hunt",
+          "date": "2026-09-06",
+          "url": "https://www.producthunt.com/products/replayio"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-09-06",
+      "items": [
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "meta": "Shell · 253,021 ★ · +2,692 today"
+        },
+        {
+          "name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "meta": "JavaScript · 250,157 ★ · +1,314 today"
+        },
+        {
+          "name": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "meta": "JavaScript · 128,228 ★ · +2,845 today"
+        },
+        {
+          "name": "NousResearch/hermes-agent",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "meta": "Python · 242,098 ★ · +575 today"
+        },
+        {
+          "name": "fmtlib/fmt",
+          "url": "https://github.com/fmtlib/fmt",
+          "meta": "C++ · 25,583 ★ · +134 today"
+        },
+        {
+          "name": "anthropics/skills",
+          "url": "https://github.com/anthropics/skills",
+          "meta": "Python · 174,639 ★ · +475 today"
+        },
+        {
+          "name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "meta": "HTML · 31,833 ★ · +855 today"
+        },
+        {
+          "name": "anomalyco/opencode",
+          "url": "https://github.com/anomalyco/opencode",
+          "meta": "TypeScript · 204,777 ★ · +725 today"
+        },
+        {
+          "name": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo",
+          "meta": "TypeScript · 70,744 ★ · +136 today"
+        },
+        {
+          "name": "humanlayer/skills",
+          "url": "https://github.com/humanlayer/skills",
+          "meta": "TypeScript · 2,805 ★ · +442 today"
+        },
+        {
+          "name": "blader/humanizer",
+          "url": "https://github.com/blader/humanizer",
+          "meta": "Python · 43,627 ★ · +990 today"
+        },
+        {
+          "name": "BraveOPotato/FckSignups",
+          "url": "https://github.com/BraveOPotato/FckSignups",
+          "meta": "TypeScript · 2,963 ★ · +68 today"
+        },
+        {
+          "name": "WorldFlowAI/everything-claude-code",
+          "url": "https://github.com/WorldFlowAI/everything-claude-code",
+          "meta": "JavaScript · 2,421 ★ · +95 today"
+        },
+        {
+          "name": "magnitudedev/magnitude",
+          "url": "https://github.com/magnitudedev/magnitude",
+          "meta": "TypeScript · 3,307 ★ · +674 today"
+        },
+        {
+          "name": "bikini/exploitarium",
+          "url": "https://github.com/bikini/exploitarium",
+          "meta": "Python · 4,737 ★ · +230 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-09-06",
+      "items": [
+        {
+          "name": "zai-org/GLM-5.3",
+          "url": "https://huggingface.co/zai-org/GLM-5.3",
+          "meta": "753B MoE, open-weights coding model, SOTA on Terminal Bench 3.0 and CyberGym"
+        },
+        {
+          "name": "Qwen/Qwen3.8-Flash-Next",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "meta": "Qwen4 architecture preview, hybrid QSA attention, multimodal"
+        },
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "27B language model, part of the Qwen3.8 family"
+        },
+        {
+          "name": "zai-org/GLM-5.3-Flash",
+          "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+          "meta": "320B-A18B natively multimodal, sparse/linear hybrid attention, MIT License"
+        },
+        {
+          "name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+          "meta": "First multimodal model in DeepSeek V4 family, experimental vision release"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "Open-weights video generation with synchronized audio from text/image inputs"
+        },
+        {
+          "name": "google/timesfm-3.0-pytorch",
+          "url": "https://huggingface.co/google/timesfm-3.0-pytorch",
+          "meta": "Time Series Foundation Model v3 by Google for forecasting"
+        },
+        {
+          "name": "unsloth/Qwen3.8-27B-GGUF",
+          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+          "meta": "GGUF quantized Qwen3.8-27B for local inference via llama.cpp"
+        },
+        {
+          "name": "XHToken/Spark-X2.5-4B",
+          "url": "https://huggingface.co/XHToken/Spark-X2.5-4B",
+          "meta": "4B parameter Spark 2.5 language model"
+        },
+        {
+          "name": "unsloth/Qwen3.8-Flash-Next-GGUF",
+          "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+          "meta": "GGUF quantized Qwen3.8-Flash-Next for local inference"
+        }
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-09-06",
+      "items": [
+        {
+          "name": "Cohere: North Mini Code (free)",
+          "url": "https://openrouter.ai/cohere/north-mini-code:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+          "meta": "512K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
+          "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+          "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
+          "meta": "65K ctx"
+        },
+        {
+          "name": "MiniMax: MiniMax M2.7 (free)",
+          "url": "https://openrouter.ai/minimax/minimax-m2.7:free",
+          "meta": "196K ctx"
+        },
+        {
+          "name": "MiniMax: MiniMax M3 (free)",
+          "url": "https://openrouter.ai/minimax/minimax-m3:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
+          "meta": "128K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "url": "https://openrouter.ai/poolside/laguna-s-2.1:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Poolside: Laguna XS 2.1 (free)",
+          "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling Small (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling-small:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Z.ai: GLM 5.2 (free)",
+          "url": "https://openrouter.ai/z-ai/glm-5.2:free",
+          "meta": "256K ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-09-06",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "MiMo-V2.5 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.5-free"
+        },
+        {
+          "name": "Ling 3.0 Flash Fin Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "ling-3.0-flash-fin-free"
+        },
+        {
+          "name": "Nemotron 3 Ultra Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3-ultra-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Muse Spark 1.3 Contributor Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "muse-spark-1.3-contributor-free"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "CROCODIL framework uses multiplicative reward to prevent coding models from over-editing foreign code",
+      "source": "omarsar0",
+      "date": "2026-09-05",
+      "url": "https://x.com/omarsar0/status/2096303354435760305"
+    },
+    {
+      "title": "NousResearch teases open source harnesses for Hermes Agent",
+      "source": "@NousResearch",
+      "date": "2026-09-06",
+      "url": "https://x.com/NousResearch/status/2096060060099096946"
+    },
+    {
+      "title": "NousResearch demos Hermes Agent with video walkthrough and 50% off Portal promo",
+      "source": "@NousResearch",
+      "date": "2026-09-06",
+      "url": "https://x.com/NousResearch/status/2096263611811320228"
+    }
+  ],
+  "spiked": {
+    "low signal": 2,
+    "duplicate url": 1,
+    "same story": 2,
+    "already ran": 7,
+    "out of window": 28,
+    "thin section": 4,
+    "no link": 0
+  }
+}
