@@ -1,118 +1,172 @@
 {
-  "issue_no": 74,
-  "date_iso": "2026-09-07",
-  "date_human": "September 07, 2026",
+  "issue_no": 75,
+  "date_iso": "2026-09-08",
+  "date_human": "September 08, 2026",
   "notice": "Light news day - fewer fresh items than usual.",
   "lead": {
-    "kicker": "Recursive Self-Improvement",
-    "title": "OpenAI opens up its North Stars roadmap: automated research intern is live, automated researcher set for March 2028",
-    "summary": "OpenAI's transparency update says automated research interns now contribute about 3.1 workdays of runtime for every human workday inside its research organization. The next milestone, an automated AI researcher, is targeted for March 2028. The release includes an 'An Alien Mind' post and commentary from Noam Brown, Jakub Pachocki and Kevin Liu on keeping humans in the loop.",
-    "source": "omarsar0",
-    "date": "2026-09-06",
-    "url": "https://x.com/omarsar0/status/2096641382110707850",
-    "scout_source": "x",
-    "image": "images/lead_2026-09-07.jpg"
+    "kicker": "Humanoids, Mass-Produced",
+    "title": "XPeng switches on the world's first automated humanoid robot production line",
+    "summary": "XPeng has started what it calls the world's first automated production line for advanced humanoid robots in Guangzhou, with more than 80% of core processes automated. Its IRON robot — 76 degrees of freedom and three in-house Turing AI chips rated at 2,250 TOPS — walked off the line, with mass production targeted for the end of 2026. The move lands as Tesla's Optimus program stalls.",
+    "source": "Electrek",
+    "date": "2026-09-07",
+    "url": "https://electrek.co/2026/09/07/xpeng-iron-humanoid-robot-production-line/",
+    "scout_source": "hardware",
+    "image": "images/lead_2026-09-08.jpg"
   },
   "top_stories": [
     {
-      "title": "Hong Kong gets its first humanoid-staffed 24-hour convenience stores",
-      "summary": "Galbot's G1 humanoid Xiao Gai stocks shelves, handles checkout and serves customers in three Hong Kong outlets with no human staff, backed by the Hong Kong Investment Corporation. The pilot could expand to 100 stores across 10 cities.",
-      "source": "@GalbotRobotics",
-      "date": "2026-09-06",
-      "url": "https://x.com/GalbotRobotics/status/2096516636714942913",
-      "scout_source": "hardware"
-    },
-    {
-      "title": "Google-backed Pixxel raises $100M in India's biggest space-tech round",
-      "summary": "A $100M Series C led by Temasek and Seraphim brings Pixxel's total funding to $195M for AI-driven satellite Earth-observation and its Aurora analytics platform.",
-      "source": "India Today",
+      "title": "Nvidia chip export loophole clouds US-China AI summit talks",
+      "summary": "An investigation found Aivres, the unlisted US subsidiary of blacklisted Inspur, exported at least $5.6B in advanced tech to Southeast Asia between April 2024 and February 2026 — including over $3B in servers packed with Nvidia's most advanced Blackwell chips that ended up serving ByteDance and Alibaba. Lawmakers are pushing the Remote Access Security Act to close the cloud loophole.",
+      "source": "Asia Times",
       "date": "2026-09-07",
-      "url": "https://www.indiatoday.in/business/story/pixxel-raises-100-million-google-backed-indias-biggest-space-tech-funding-round-2988583-2026-09-07",
-      "scout_source": "funding"
-    },
-    {
-      "title": "AI data-center land deals hit $6B as rural America pushes back",
-      "summary": "US land purchases for AI data centers reached $6 billion in the first half of 2026, up 79% year over year, driving rural property prices to record highs while communities object over water, power and farmland loss.",
-      "source": "CNBC",
-      "date": "2026-09-06",
-      "url": "https://www.cnbc.com/2026/09/06/ai-data-centers-are-transforming-rural-land-markets-fueling-backlash.html",
+      "url": "https://asiatimes.com/2026/09/nvidia-chip-export-loophole-clouds-us-china-ai-summit-talks/",
       "scout_source": "hardware"
     },
     {
-      "title": "AI agents are starting to disrupt professional 3D modeling, says Simon Willison",
-      "summary": "Willison says artists using Blender with AI assistance are already working much faster, while roles that build models from others' designs face direct disruption, and asks whether cheaper animated production will expand the broader 3D asset market.",
-      "source": "simonw",
-      "date": "2026-09-06",
-      "url": "https://x.com/simonw/status/2096647662775017918",
-      "scout_source": "x"
+      "title": "Broadcom's AI chip revenue grew 221% last quarter",
+      "summary": "Broadcom's fiscal Q3 2026 revenue hit $29.6B, with AI chip revenue up 221% to $16.7B. The company guided Q4 AI semiconductor revenue to $21.7B and full-year fiscal 2026 AI revenue to roughly $56-58B, with line of sight beyond $100B in FY2027.",
+      "source": "Meridians",
+      "date": "2026-09-07",
+      "url": "https://meridians.news/article/broadcom-q3-fy2026-ai-revenue-guidance-2026-09-07",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "Agility Robotics reports $1.8M revenue ahead of humanoid SPAC",
+      "summary": "Agility Robotics' S-4 filing reveals just $1.8 million in 2025 revenue against a $140 million operating loss, as it plans to scale production of its Digit humanoid ahead of going public via SPAC.",
+      "source": "The Robot Report",
+      "date": "2026-09-07",
+      "url": "https://www.therobotreport.com/agility-robotics-reports-18m-revenue-ahead-of-humanoid-spac/",
+      "scout_source": "hardware"
     }
   ],
   "sections": [
     {
-      "title": "Tools & Startups",
+      "title": "Research & Papers",
+      "image": "images/section_research-papers_2026-09-08.jpg",
       "items": [
         {
-          "title": "Tadata: an AI employee for Slack that reads conversations and takes action",
-          "summary": "Launched on Product Hunt on Sep 6, Tadata sits in Slack to understand ongoing threads and execute on tasks.",
-          "source": "Product Hunt",
-          "date": "2026-09-06",
-          "url": "https://www.producthunt.com/products/tadata",
-          "scout_source": "tools",
-          "image": "images/section_tools-startups_2026-09-07.jpg"
+          "title": "Verify before you distill: prompt-level teacher gating for on-policy distillation",
+          "summary": "TGOPD verifies teacher reliability per prompt with small verifier-scored probe sets, then routes prompts to dense on-policy distillation or verifier-grounded GRPO. Across 4B and 35B students it beats vanilla OPD in all six single-domain settings and lifts teacher-node GPU utilization from 9.8% to 78.9%.",
+          "source": "Hugging Face",
+          "date": "2026-09-08",
+          "url": "https://huggingface.co/papers/2609.02998",
+          "scout_source": "research"
         },
         {
-          "title": "Kit by Speakeasy: a fast, cheap coding agent runtime",
-          "summary": "Positioned as a concise, low-cost alternative to Claude for coding agent workloads; launched on Product Hunt on Sep 6.",
-          "source": "Product Hunt",
-          "date": "2026-09-06",
-          "url": "https://www.producthunt.com/products/speakeasydev",
-          "scout_source": "tools"
+          "title": "What else needs fixing? Test-time compute for revision propagation in AI-generated artifacts",
+          "summary": "A new benchmark tracks how local user revisions propagate through LLM-generated artifacts, evaluating nine revision methods with GPT-OSS, GPT-5.4-mini and Qwen3.5. Selecting from three parallel samples via LLM-based or medoid selection improves accuracy by 2.2-9.7% at the lowest cost.",
+          "source": "Hugging Face",
+          "date": "2026-09-08",
+          "url": "https://huggingface.co/papers/2609.03254",
+          "scout_source": "research"
         },
         {
-          "title": "H3 Max by fal: post-trained MiniMax H3 for AI video production",
-          "summary": "fal's tuned H3 model targets high-quality AI video output; launched on Product Hunt on Sep 6.",
-          "source": "Product Hunt",
-          "date": "2026-09-06",
-          "url": "https://www.producthunt.com/products/fal-ai",
-          "scout_source": "tools"
-        },
-        {
-          "title": "Mador: an 80-line Proxy state tuple that makes any DOM reactive",
-          "summary": "Show HN crowd favorite (84 points) showing framework-free reactivity with a tiny, readable implementation.",
-          "source": "GitHub",
-          "date": "2026-09-06",
-          "url": "https://github.com/marsbos/mador",
-          "scout_source": "tools"
-        },
-        {
-          "title": "Coop: isolated VM environments for running coding agents safely",
-          "summary": "Trail of Bits' tool gives Claude Code and Codex agents sandboxed VMs, posted on Hacker News on Sep 7.",
-          "source": "GitHub",
+          "title": "'Design docs are all you need': DeepMind-led paper rebuilds code from docs",
+          "summary": "A Google DeepMind and MIT study maintains a performance-modeling library as a graph of natural-language design docs; coding agents regenerate the implementation on every change, reproducing reference results to round-off precision.",
+          "source": "omarsar0",
           "date": "2026-09-07",
-          "url": "https://github.com/trailofbits/coop",
-          "scout_source": "tools"
+          "url": "https://x.com/omarsar0/status/2096983084956852537",
+          "scout_source": "x"
+        },
+        {
+          "title": "DeepMind studies proactive agents that choose when to intervene",
+          "summary": "A DeepMind study followed 16 writers for a week using agents with configurable roles and proactivity levels, finding users favor prospective planning and lightweight, non-directive presentation over intrusive interruptions.",
+          "source": "omarsar0",
+          "date": "2026-09-07",
+          "url": "https://x.com/omarsar0/status/2096780509540139364",
+          "scout_source": "x"
+        },
+        {
+          "title": "NoRA: a one-line normalization tweak improves LoRA across training regimes",
+          "summary": "NoRA normalizes the LoRA down-projection during training or at initialization, improving convergence, stability and final performance with zero extra parameters or inference cost across pretraining, SFT and RL.",
+          "source": "omarsar0",
+          "date": "2026-09-07",
+          "url": "https://x.com/omarsar0/status/2096837122892485069",
+          "scout_source": "x"
         }
       ]
     },
     {
-      "title": "Italia AI Spotlight",
+      "title": "Hardware & Robotics",
+      "image": "images/section_hardware-robotics_2026-09-08.jpg",
       "items": [
         {
-          "title": "Qura raises EUR 1.5M to make AI preventive healthcare mainstream in Europe",
-          "summary": "Led by United Ventures with Vento (Exor) and Italian Angels for Growth, Qura combines 60+ blood biomarkers with a proprietary AI engine and personalized consultations to catch chronic conditions early.",
-          "source": "La Tech Made in Italy",
-          "date": "2026-09-06",
-          "url": "https://www.latechmadeinitaly.com/prevenzione-sanitaria-qura-la-made-in-italy-che-trasforma-il-privilegio-in-diritto/",
-          "scout_source": "italia",
-          "image": "images/section_italia-spotlight_2026-09-07.jpg"
+          "title": "Xiaomi's L3 autonomous driving lead exits to launch a physical AI startup",
+          "summary": "Wang Naiyan, former head of Xiaomi Auto's L3 autonomous driving technology, has left to start a physical AI venture, joining a wave of Chinese automotive talent moving into embodied AI as Xiaomi prepares its own electric car for a robotaxi trial.",
+          "source": "CnEVPost",
+          "date": "2026-09-08",
+          "url": "https://cnevpost.com/2026/09/08/xiaomi-l3-lead-exits-for-physical-ai/",
+          "scout_source": "hardware"
         },
         {
-          "title": "AIKO: the Turin startup that taught satellites to think on orbit",
-          "summary": "The Politecnico di Torino spin-off was first in Europe to run deep learning directly in orbit, with autonomous AI agents for clients including ESA, ASI, Eutelsat OneWeb and Avio; it now opens a Toulouse office ahead of a US push.",
-          "source": "La Tech Made in Italy",
-          "date": "2026-09-06",
-          "url": "https://www.latechmadeinitaly.com/una-tech-made-in-italy-che-insegna-ai-satelliti-a-pensare/",
+          "title": "AI data centers are less thirsty now, tech giants say",
+          "summary": "Data-center water consumption reached 222 billion liters globally in 2025 and could nearly triple by 2030, but closed-loop liquid cooling is improving efficiency: Nvidia says its DSX design nearly eliminates water use with 45°C coolant, while Microsoft and AWS improved water-use efficiency 25% and 37% between 2022 and 2025.",
+          "source": "Tech Xplore",
+          "date": "2026-09-07",
+          "url": "https://techxplore.com/news/2026-09-ai-centers-thirsty-tech-giants.html",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Robot learns to walk like a stick insect using AI",
+          "summary": "Researchers from Tohoku University and VISTEC used adversarial inverse reinforcement learning to teach a hexapedal robot stick-insect style locomotion from brief observation, mastering varied terrain in under an hour with a reward network that transfers across body types.",
+          "source": "New Atlas",
+          "date": "2026-09-07",
+          "url": "https://newatlas.com/ai-humanoids/teaching-hexapedal-robot-walk-stick-insect/",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "MassRobotics survey finds industry split on FCC robot restrictions",
+          "summary": "A MassRobotics survey of member companies found the industry evenly split on the FCC's July 2026 decision adding foreign-produced advanced robotics devices — including some mobile robots and humanoids — to its Covered List, with views largely tracking where companies manufacture and source components.",
+          "source": "The Robot Report",
+          "date": "2026-09-07",
+          "url": "https://www.therobotreport.com/massrobotics-shares-member-survey-results-around-fcc-restrictions/",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Inbolt: physical AI's factory bottleneck is deployment, not training data",
+          "summary": "After deploying vision-guided control across over 100 factories and 40M-plus robot cycles, Inbolt's CEO argues physical AI progress in the factory is gated by deployment and part-handling constraints rather than raw training data, as in-hand localization lets robots adjust trajectories mid-move.",
+          "source": "The Robot Report",
+          "date": "2026-09-07",
+          "url": "https://www.therobotreport.com/inbolt-ceo-to-discuss-physical-ais-deployment-problem-at-robobusiness/",
+          "scout_source": "hardware"
+        }
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "image": "images/section_money-markets_2026-09-08.jpg",
+      "items": [
+        {
+          "title": "Milan-based Cato raises €6M seed to automate public tender bidding with AI",
+          "summary": "Cato closed a €6 million seed round led by Keen Venture Partners, bringing total funding to €7.6 million. Its AI platform tracks more than 27,000 sources to help companies find, analyze and prepare bids for Italian public tenders, and the startup says it has reached 150 active clients.",
+          "source": "StartupBusiness",
+          "date": "2026-09-07",
+          "url": "https://www.startupbusiness.it/cato-round-da-6-milioni-di-euro-guidato-da-keen-venture-partners/194770/",
           "scout_source": "italia"
+        },
+        {
+          "title": "Navana.ai raises $4.2M Series A for Indian-language voice AI",
+          "summary": "Led by Ronnie Screwvala with Antler India, Sharad Sanghi, Sandeep Singhal and Paula Mariwala, the round funds Navana's full-stack voice AI for Indian languages, targeting BFSI and regulated enterprises.",
+          "source": "TechStartups",
+          "date": "2026-09-07",
+          "url": "https://techstartups.com/2026/09/07/startup-funding-news-today-september-7-2026-pixxel-jet-zero-navana-ai-more/",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Swiss industrial-AI startup Jaipur Robotics raises €4.3M seed",
+          "summary": "Led by EquityPitcher Ventures and High-Tech Gründerfonds, the round funds Jaipur Robotics' computer vision and AI for waste-to-energy, cement and biomass plants — hazard detection, calorific value estimation and crane guidance.",
+          "source": "TechStartups",
+          "date": "2026-09-07",
+          "url": "https://techstartups.com/2026/09/07/startup-funding-news-today-september-7-2026-pixxel-jet-zero-navana-ai-more/",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Eric Wu's NavigateAI raises $25M for AI construction copilots",
+          "summary": "A $25M seed at $225M post-money, led by Elad Gil with Khosla Ventures, Fifth Wall, Lennar and others, funds a hands-free AI copilot for construction field workers that runs on smartphones and Meta glasses.",
+          "source": "TechCrunch",
+          "date": "2026-09-07",
+          "url": "https://techcrunch.com/2026/09/07/eric-wus-newest-company-out-of-stealth-since-may-is-going-after-constructions-labor-crunch/",
+          "scout_source": "funding"
         }
       ]
     }
@@ -122,7 +176,7 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "items": [
         {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 253.3k ★ · +2,692 today"},
         {"name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "meta": "JavaScript · 250.3k ★ · +1,314 today"},
@@ -145,18 +199,18 @@
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "items": [
-        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "Image-Text-to-Text · 305B"},
-        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "Image-Text-to-Text · 28B"},
-        {"name": "XHToken/Spark-X2.5-4B", "url": "https://huggingface.co/XHToken/Spark-X2.5-4B", "meta": "Text Generation · 4B"},
-        {"name": "Qwen/Qwen3.8-Flash-Next", "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next", "meta": "Image-Text-to-Text · 180B"},
-        {"name": "google/timesfm-3.0-pytorch", "url": "https://huggingface.co/google/timesfm-3.0-pytorch", "meta": "Time Series Forecasting · 0.3B"},
-        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "Image-Text-to-Text · 27B"},
-        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Image-to-Video"},
-        {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "Image-Text-to-Text · 321B"},
-        {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "Text Generation · 753B"},
-        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B, GGUF"}
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "305B image-text-to-text, vision experimental"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "28B image-text-to-text"},
+        {"name": "XHToken/Spark-X2.5-4B", "url": "https://huggingface.co/XHToken/Spark-X2.5-4B", "meta": "4B text generation"},
+        {"name": "Qwen/Qwen3.8-Flash-Next", "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next", "meta": "180B image-text-to-text"},
+        {"name": "google/timesfm-3.0-pytorch", "url": "https://huggingface.co/google/timesfm-3.0-pytorch", "meta": "0.3B time series forecasting"},
+        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "27B quantization GGUF"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "image-to-video"},
+        {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "321B image-text-to-text, flash variant"},
+        {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "753B text generation"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B GGUF quantized"}
       ]
     }
   },
@@ -165,7 +219,7 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "items": [
         {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
         {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
@@ -174,8 +228,6 @@
         {"name": "inclusionAI: Ling 3.0 Flash Fin (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free", "meta": "262K ctx"},
         {"name": "inclusionAI: Ling 3.0 Flash Sante (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free", "meta": "262K ctx"},
         {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
-        {"name": "MiniMax: MiniMax M2.7 (free)", "url": "https://openrouter.ai/minimax/minimax-m2.7:free", "meta": "196K ctx"},
-        {"name": "MiniMax: MiniMax M3 (free)", "url": "https://openrouter.ai/minimax/minimax-m3:free", "meta": "1.04858M ctx"},
         {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
         {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
         {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
@@ -191,7 +243,7 @@
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "items": [
         {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
         {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
@@ -204,80 +256,37 @@
   },
   "quick_hits": [
     {
-      "title": "IBM STAIR: structure-aware generative retrieval beats chunked RAG using a document's table of contents",
-      "source": "omarsar0",
-      "date": "2026-09-06",
-      "url": "https://x.com/omarsar0/status/2096648881962652046",
-      "scout_source": "x"
-    },
-    {
-      "title": "50 Real GPT-6 Builds Show What the Model Can Actually Do",
-      "source": "YouTube - Beyond AI News",
-      "date": "2026-09-06",
-      "url": "https://www.youtube.com/watch?v=9nDktTTxNKY",
-      "scout_source": "youtube"
-    },
-    {
-      "title": "Andrew Ng letter: the five foundational skills of using coding agents",
-      "source": "DeepLearningAI",
-      "date": "2026-09-06",
-      "url": "https://x.com/DeepLearningAI/status/2096618904445468673",
-      "scout_source": "x"
-    },
-    {
-      "title": "LeCun calls AI-generated paper-like outputs 'cargo-cult research'",
+      "title": "LeCun: 'The announced AI-fueled jobpocalypse turns out to be an AI-fueled jobundance'",
       "source": "ylecun",
-      "date": "2026-09-06",
-      "url": "https://x.com/ylecun/status/2096653159305224229",
+      "date": "2026-09-07",
+      "url": "https://x.com/ylecun/status/2097069227484025094",
       "scout_source": "x"
     },
     {
-      "title": "AI Toolbox 3.0: search, organize and export every AI chat from one place",
-      "source": "Product Hunt",
-      "date": "2026-09-06",
-      "url": "https://www.producthunt.com/products/chatgpt-toolbox",
-      "scout_source": "tools"
-    },
-    {
-      "title": "DocsAlot Visual Editor: build docs by typing, for humans and AI alike",
-      "source": "Product Hunt",
-      "date": "2026-09-06",
-      "url": "https://www.producthunt.com/products/docsalot-2",
-      "scout_source": "tools"
-    },
-    {
-      "title": "Notify.domains: instant alerts when a domain opportunity appears",
-      "source": "Product Hunt",
-      "date": "2026-09-06",
-      "url": "https://www.producthunt.com/products/notify-domains",
-      "scout_source": "tools"
-    },
-    {
-      "title": "MathKernel: evidence-aware multi-engine math kernel with an MCP server for agents",
-      "source": "GitHub",
+      "title": "Daily agent use pushes researcher inference bills past $600 a day",
+      "source": "simonw",
       "date": "2026-09-07",
-      "url": "https://github.com/Staatsgeheim/MathKernel",
+      "url": "https://x.com/simonw/status/2096969760789680217",
+      "scout_source": "x"
+    },
+    {
+      "title": "EmbedFlow: zero-downtime embedding model upgrades in production (Show HN)",
+      "source": "Hacker News",
+      "date": "2026-09-08",
+      "url": "https://news.ycombinator.com/item?id=49605110",
       "scout_source": "tools"
     },
     {
-      "title": "ripwire: Red Hat's ripgrep-style CLI and MCP server that maps codebase context for coding agents",
-      "source": "GitHub",
+      "title": "Animaxxing: AI agents animate a site's existing content (Show HN)",
+      "source": "Hacker News",
       "date": "2026-09-07",
-      "url": "https://github.com/redhat-et/ripwire",
-      "scout_source": "tools"
-    },
-    {
-      "title": "Engrim: universal, local-first SQLite memory engine for AI applications",
-      "source": "GitHub",
-      "date": "2026-09-07",
-      "url": "https://github.com/timgordontg/engrim",
+      "url": "https://news.ycombinator.com/item?id=49603561",
       "scout_source": "tools"
     }
   ],
   "spiked": {
-    "out of window": 27,
-    "already ran": 2,
-    "same story": 1,
-    "low signal": 1
+    "out of window": 14,
+    "already ran": 10,
+    "same story": 1
   }
 }

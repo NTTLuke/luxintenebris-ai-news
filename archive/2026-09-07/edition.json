@@ -1,0 +1,283 @@
+{
+  "issue_no": 74,
+  "date_iso": "2026-09-07",
+  "date_human": "September 07, 2026",
+  "notice": "Light news day - fewer fresh items than usual.",
+  "lead": {
+    "kicker": "Recursive Self-Improvement",
+    "title": "OpenAI opens up its North Stars roadmap: automated research intern is live, automated researcher set for March 2028",
+    "summary": "OpenAI's transparency update says automated research interns now contribute about 3.1 workdays of runtime for every human workday inside its research organization. The next milestone, an automated AI researcher, is targeted for March 2028. The release includes an 'An Alien Mind' post and commentary from Noam Brown, Jakub Pachocki and Kevin Liu on keeping humans in the loop.",
+    "source": "omarsar0",
+    "date": "2026-09-06",
+    "url": "https://x.com/omarsar0/status/2096641382110707850",
+    "scout_source": "x",
+    "image": "images/lead_2026-09-07.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Hong Kong gets its first humanoid-staffed 24-hour convenience stores",
+      "summary": "Galbot's G1 humanoid Xiao Gai stocks shelves, handles checkout and serves customers in three Hong Kong outlets with no human staff, backed by the Hong Kong Investment Corporation. The pilot could expand to 100 stores across 10 cities.",
+      "source": "@GalbotRobotics",
+      "date": "2026-09-06",
+      "url": "https://x.com/GalbotRobotics/status/2096516636714942913",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "Google-backed Pixxel raises $100M in India's biggest space-tech round",
+      "summary": "A $100M Series C led by Temasek and Seraphim brings Pixxel's total funding to $195M for AI-driven satellite Earth-observation and its Aurora analytics platform.",
+      "source": "India Today",
+      "date": "2026-09-07",
+      "url": "https://www.indiatoday.in/business/story/pixxel-raises-100-million-google-backed-indias-biggest-space-tech-funding-round-2988583-2026-09-07",
+      "scout_source": "funding"
+    },
+    {
+      "title": "AI data-center land deals hit $6B as rural America pushes back",
+      "summary": "US land purchases for AI data centers reached $6 billion in the first half of 2026, up 79% year over year, driving rural property prices to record highs while communities object over water, power and farmland loss.",
+      "source": "CNBC",
+      "date": "2026-09-06",
+      "url": "https://www.cnbc.com/2026/09/06/ai-data-centers-are-transforming-rural-land-markets-fueling-backlash.html",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "AI agents are starting to disrupt professional 3D modeling, says Simon Willison",
+      "summary": "Willison says artists using Blender with AI assistance are already working much faster, while roles that build models from others' designs face direct disruption, and asks whether cheaper animated production will expand the broader 3D asset market.",
+      "source": "simonw",
+      "date": "2026-09-06",
+      "url": "https://x.com/simonw/status/2096647662775017918",
+      "scout_source": "x"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Tadata: an AI employee for Slack that reads conversations and takes action",
+          "summary": "Launched on Product Hunt on Sep 6, Tadata sits in Slack to understand ongoing threads and execute on tasks.",
+          "source": "Product Hunt",
+          "date": "2026-09-06",
+          "url": "https://www.producthunt.com/products/tadata",
+          "scout_source": "tools",
+          "image": "images/section_tools-startups_2026-09-07.jpg"
+        },
+        {
+          "title": "Kit by Speakeasy: a fast, cheap coding agent runtime",
+          "summary": "Positioned as a concise, low-cost alternative to Claude for coding agent workloads; launched on Product Hunt on Sep 6.",
+          "source": "Product Hunt",
+          "date": "2026-09-06",
+          "url": "https://www.producthunt.com/products/speakeasydev",
+          "scout_source": "tools"
+        },
+        {
+          "title": "H3 Max by fal: post-trained MiniMax H3 for AI video production",
+          "summary": "fal's tuned H3 model targets high-quality AI video output; launched on Product Hunt on Sep 6.",
+          "source": "Product Hunt",
+          "date": "2026-09-06",
+          "url": "https://www.producthunt.com/products/fal-ai",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Mador: an 80-line Proxy state tuple that makes any DOM reactive",
+          "summary": "Show HN crowd favorite (84 points) showing framework-free reactivity with a tiny, readable implementation.",
+          "source": "GitHub",
+          "date": "2026-09-06",
+          "url": "https://github.com/marsbos/mador",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Coop: isolated VM environments for running coding agents safely",
+          "summary": "Trail of Bits' tool gives Claude Code and Codex agents sandboxed VMs, posted on Hacker News on Sep 7.",
+          "source": "GitHub",
+          "date": "2026-09-07",
+          "url": "https://github.com/trailofbits/coop",
+          "scout_source": "tools"
+        }
+      ]
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "Qura raises EUR 1.5M to make AI preventive healthcare mainstream in Europe",
+          "summary": "Led by United Ventures with Vento (Exor) and Italian Angels for Growth, Qura combines 60+ blood biomarkers with a proprietary AI engine and personalized consultations to catch chronic conditions early.",
+          "source": "La Tech Made in Italy",
+          "date": "2026-09-06",
+          "url": "https://www.latechmadeinitaly.com/prevenzione-sanitaria-qura-la-made-in-italy-che-trasforma-il-privilegio-in-diritto/",
+          "scout_source": "italia",
+          "image": "images/section_italia-spotlight_2026-09-07.jpg"
+        },
+        {
+          "title": "AIKO: the Turin startup that taught satellites to think on orbit",
+          "summary": "The Politecnico di Torino spin-off was first in Europe to run deep learning directly in orbit, with autonomous AI agents for clients including ESA, ASI, Eutelsat OneWeb and Avio; it now opens a Toulouse office ahead of a US push.",
+          "source": "La Tech Made in Italy",
+          "date": "2026-09-06",
+          "url": "https://www.latechmadeinitaly.com/una-tech-made-in-italy-che-insegna-ai-satelliti-a-pensare/",
+          "scout_source": "italia"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-09-07",
+      "items": [
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 253.3k ★ · +2,692 today"},
+        {"name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "meta": "JavaScript · 250.3k ★ · +1,314 today"},
+        {"name": "DietrichGebert/ponytail", "url": "https://github.com/DietrichGebert/ponytail", "meta": "JavaScript · 128.4k ★ · +2,845 today"},
+        {"name": "NousResearch/hermes-agent", "url": "https://github.com/NousResearch/hermes-agent", "meta": "Python · 242.2k ★ · +575 today"},
+        {"name": "fmtlib/fmt", "url": "https://github.com/fmtlib/fmt", "meta": "C++ · 25.6k ★ · +134 today"},
+        {"name": "anthropics/skills", "url": "https://github.com/anthropics/skills", "meta": "Python · 174.7k ★ · +475 today"},
+        {"name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "meta": "HTML · 31.9k ★ · +855 today"},
+        {"name": "anomalyco/opencode", "url": "https://github.com/anomalyco/opencode", "meta": "TypeScript · 204.9k ★ · +725 today"},
+        {"name": "ruvnet/ruflo", "url": "https://github.com/ruvnet/ruflo", "meta": "TypeScript · 70.8k ★ · +136 today"},
+        {"name": "humanlayer/skills", "url": "https://github.com/humanlayer/skills", "meta": "TypeScript · 2.9k ★ · +442 today"},
+        {"name": "blader/humanizer", "url": "https://github.com/blader/humanizer", "meta": "Python · 43.7k ★ · +990 today"},
+        {"name": "BraveOPotato/FckSignups", "url": "https://github.com/BraveOPotato/FckSignups", "meta": "TypeScript · 3.0k ★ · +68 today"},
+        {"name": "WorldFlowAI/everything-claude-code", "url": "https://github.com/WorldFlowAI/everything-claude-code", "meta": "JavaScript · 2.5k ★ · +95 today"},
+        {"name": "magnitudedev/magnitude", "url": "https://github.com/magnitudedev/magnitude", "meta": "TypeScript · 3.4k ★ · +674 today"},
+        {"name": "bikini/exploitarium", "url": "https://github.com/bikini/exploitarium", "meta": "Python · 4.8k ★ · +230 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-09-07",
+      "items": [
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "Image-Text-to-Text · 305B"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "Image-Text-to-Text · 28B"},
+        {"name": "XHToken/Spark-X2.5-4B", "url": "https://huggingface.co/XHToken/Spark-X2.5-4B", "meta": "Text Generation · 4B"},
+        {"name": "Qwen/Qwen3.8-Flash-Next", "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next", "meta": "Image-Text-to-Text · 180B"},
+        {"name": "google/timesfm-3.0-pytorch", "url": "https://huggingface.co/google/timesfm-3.0-pytorch", "meta": "Time Series Forecasting · 0.3B"},
+        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "Image-Text-to-Text · 27B"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Image-to-Video"},
+        {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "Image-Text-to-Text · 321B"},
+        {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "Text Generation · 753B"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B, GGUF"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-09-07",
+      "items": [
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash Fin (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash Sante (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "MiniMax: MiniMax M2.7 (free)", "url": "https://openrouter.ai/minimax/minimax-m2.7:free", "meta": "196K ctx"},
+        {"name": "MiniMax: MiniMax M3 (free)", "url": "https://openrouter.ai/minimax/minimax-m3:free", "meta": "1.04858M ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-09-07",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Muse Spark 1.3 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.3-contributor-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "IBM STAIR: structure-aware generative retrieval beats chunked RAG using a document's table of contents",
+      "source": "omarsar0",
+      "date": "2026-09-06",
+      "url": "https://x.com/omarsar0/status/2096648881962652046",
+      "scout_source": "x"
+    },
+    {
+      "title": "50 Real GPT-6 Builds Show What the Model Can Actually Do",
+      "source": "YouTube - Beyond AI News",
+      "date": "2026-09-06",
+      "url": "https://www.youtube.com/watch?v=9nDktTTxNKY",
+      "scout_source": "youtube"
+    },
+    {
+      "title": "Andrew Ng letter: the five foundational skills of using coding agents",
+      "source": "DeepLearningAI",
+      "date": "2026-09-06",
+      "url": "https://x.com/DeepLearningAI/status/2096618904445468673",
+      "scout_source": "x"
+    },
+    {
+      "title": "LeCun calls AI-generated paper-like outputs 'cargo-cult research'",
+      "source": "ylecun",
+      "date": "2026-09-06",
+      "url": "https://x.com/ylecun/status/2096653159305224229",
+      "scout_source": "x"
+    },
+    {
+      "title": "AI Toolbox 3.0: search, organize and export every AI chat from one place",
+      "source": "Product Hunt",
+      "date": "2026-09-06",
+      "url": "https://www.producthunt.com/products/chatgpt-toolbox",
+      "scout_source": "tools"
+    },
+    {
+      "title": "DocsAlot Visual Editor: build docs by typing, for humans and AI alike",
+      "source": "Product Hunt",
+      "date": "2026-09-06",
+      "url": "https://www.producthunt.com/products/docsalot-2",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Notify.domains: instant alerts when a domain opportunity appears",
+      "source": "Product Hunt",
+      "date": "2026-09-06",
+      "url": "https://www.producthunt.com/products/notify-domains",
+      "scout_source": "tools"
+    },
+    {
+      "title": "MathKernel: evidence-aware multi-engine math kernel with an MCP server for agents",
+      "source": "GitHub",
+      "date": "2026-09-07",
+      "url": "https://github.com/Staatsgeheim/MathKernel",
+      "scout_source": "tools"
+    },
+    {
+      "title": "ripwire: Red Hat's ripgrep-style CLI and MCP server that maps codebase context for coding agents",
+      "source": "GitHub",
+      "date": "2026-09-07",
+      "url": "https://github.com/redhat-et/ripwire",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Engrim: universal, local-first SQLite memory engine for AI applications",
+      "source": "GitHub",
+      "date": "2026-09-07",
+      "url": "https://github.com/timgordontg/engrim",
+      "scout_source": "tools"
+    }
+  ],
+  "spiked": {
+    "out of window": 27,
+    "already ran": 2,
+    "same story": 1,
+    "low signal": 1
+  }
+}
