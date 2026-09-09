@@ -1,0 +1,292 @@
+{
+  "issue_no": 75,
+  "date_iso": "2026-09-08",
+  "date_human": "September 08, 2026",
+  "notice": "Light news day - fewer fresh items than usual.",
+  "lead": {
+    "kicker": "Humanoids, Mass-Produced",
+    "title": "XPeng switches on the world's first automated humanoid robot production line",
+    "summary": "XPeng has started what it calls the world's first automated production line for advanced humanoid robots in Guangzhou, with more than 80% of core processes automated. Its IRON robot — 76 degrees of freedom and three in-house Turing AI chips rated at 2,250 TOPS — walked off the line, with mass production targeted for the end of 2026. The move lands as Tesla's Optimus program stalls.",
+    "source": "Electrek",
+    "date": "2026-09-07",
+    "url": "https://electrek.co/2026/09/07/xpeng-iron-humanoid-robot-production-line/",
+    "scout_source": "hardware",
+    "image": "images/lead_2026-09-08.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Nvidia chip export loophole clouds US-China AI summit talks",
+      "summary": "An investigation found Aivres, the unlisted US subsidiary of blacklisted Inspur, exported at least $5.6B in advanced tech to Southeast Asia between April 2024 and February 2026 — including over $3B in servers packed with Nvidia's most advanced Blackwell chips that ended up serving ByteDance and Alibaba. Lawmakers are pushing the Remote Access Security Act to close the cloud loophole.",
+      "source": "Asia Times",
+      "date": "2026-09-07",
+      "url": "https://asiatimes.com/2026/09/nvidia-chip-export-loophole-clouds-us-china-ai-summit-talks/",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "Broadcom's AI chip revenue grew 221% last quarter",
+      "summary": "Broadcom's fiscal Q3 2026 revenue hit $29.6B, with AI chip revenue up 221% to $16.7B. The company guided Q4 AI semiconductor revenue to $21.7B and full-year fiscal 2026 AI revenue to roughly $56-58B, with line of sight beyond $100B in FY2027.",
+      "source": "Meridians",
+      "date": "2026-09-07",
+      "url": "https://meridians.news/article/broadcom-q3-fy2026-ai-revenue-guidance-2026-09-07",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "Agility Robotics reports $1.8M revenue ahead of humanoid SPAC",
+      "summary": "Agility Robotics' S-4 filing reveals just $1.8 million in 2025 revenue against a $140 million operating loss, as it plans to scale production of its Digit humanoid ahead of going public via SPAC.",
+      "source": "The Robot Report",
+      "date": "2026-09-07",
+      "url": "https://www.therobotreport.com/agility-robotics-reports-18m-revenue-ahead-of-humanoid-spac/",
+      "scout_source": "hardware"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "image": "images/section_research-papers_2026-09-08.jpg",
+      "items": [
+        {
+          "title": "Verify before you distill: prompt-level teacher gating for on-policy distillation",
+          "summary": "TGOPD verifies teacher reliability per prompt with small verifier-scored probe sets, then routes prompts to dense on-policy distillation or verifier-grounded GRPO. Across 4B and 35B students it beats vanilla OPD in all six single-domain settings and lifts teacher-node GPU utilization from 9.8% to 78.9%.",
+          "source": "Hugging Face",
+          "date": "2026-09-08",
+          "url": "https://huggingface.co/papers/2609.02998",
+          "scout_source": "research"
+        },
+        {
+          "title": "What else needs fixing? Test-time compute for revision propagation in AI-generated artifacts",
+          "summary": "A new benchmark tracks how local user revisions propagate through LLM-generated artifacts, evaluating nine revision methods with GPT-OSS, GPT-5.4-mini and Qwen3.5. Selecting from three parallel samples via LLM-based or medoid selection improves accuracy by 2.2-9.7% at the lowest cost.",
+          "source": "Hugging Face",
+          "date": "2026-09-08",
+          "url": "https://huggingface.co/papers/2609.03254",
+          "scout_source": "research"
+        },
+        {
+          "title": "'Design docs are all you need': DeepMind-led paper rebuilds code from docs",
+          "summary": "A Google DeepMind and MIT study maintains a performance-modeling library as a graph of natural-language design docs; coding agents regenerate the implementation on every change, reproducing reference results to round-off precision.",
+          "source": "omarsar0",
+          "date": "2026-09-07",
+          "url": "https://x.com/omarsar0/status/2096983084956852537",
+          "scout_source": "x"
+        },
+        {
+          "title": "DeepMind studies proactive agents that choose when to intervene",
+          "summary": "A DeepMind study followed 16 writers for a week using agents with configurable roles and proactivity levels, finding users favor prospective planning and lightweight, non-directive presentation over intrusive interruptions.",
+          "source": "omarsar0",
+          "date": "2026-09-07",
+          "url": "https://x.com/omarsar0/status/2096780509540139364",
+          "scout_source": "x"
+        },
+        {
+          "title": "NoRA: a one-line normalization tweak improves LoRA across training regimes",
+          "summary": "NoRA normalizes the LoRA down-projection during training or at initialization, improving convergence, stability and final performance with zero extra parameters or inference cost across pretraining, SFT and RL.",
+          "source": "omarsar0",
+          "date": "2026-09-07",
+          "url": "https://x.com/omarsar0/status/2096837122892485069",
+          "scout_source": "x"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "image": "images/section_hardware-robotics_2026-09-08.jpg",
+      "items": [
+        {
+          "title": "Xiaomi's L3 autonomous driving lead exits to launch a physical AI startup",
+          "summary": "Wang Naiyan, former head of Xiaomi Auto's L3 autonomous driving technology, has left to start a physical AI venture, joining a wave of Chinese automotive talent moving into embodied AI as Xiaomi prepares its own electric car for a robotaxi trial.",
+          "source": "CnEVPost",
+          "date": "2026-09-08",
+          "url": "https://cnevpost.com/2026/09/08/xiaomi-l3-lead-exits-for-physical-ai/",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "AI data centers are less thirsty now, tech giants say",
+          "summary": "Data-center water consumption reached 222 billion liters globally in 2025 and could nearly triple by 2030, but closed-loop liquid cooling is improving efficiency: Nvidia says its DSX design nearly eliminates water use with 45°C coolant, while Microsoft and AWS improved water-use efficiency 25% and 37% between 2022 and 2025.",
+          "source": "Tech Xplore",
+          "date": "2026-09-07",
+          "url": "https://techxplore.com/news/2026-09-ai-centers-thirsty-tech-giants.html",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Robot learns to walk like a stick insect using AI",
+          "summary": "Researchers from Tohoku University and VISTEC used adversarial inverse reinforcement learning to teach a hexapedal robot stick-insect style locomotion from brief observation, mastering varied terrain in under an hour with a reward network that transfers across body types.",
+          "source": "New Atlas",
+          "date": "2026-09-07",
+          "url": "https://newatlas.com/ai-humanoids/teaching-hexapedal-robot-walk-stick-insect/",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "MassRobotics survey finds industry split on FCC robot restrictions",
+          "summary": "A MassRobotics survey of member companies found the industry evenly split on the FCC's July 2026 decision adding foreign-produced advanced robotics devices — including some mobile robots and humanoids — to its Covered List, with views largely tracking where companies manufacture and source components.",
+          "source": "The Robot Report",
+          "date": "2026-09-07",
+          "url": "https://www.therobotreport.com/massrobotics-shares-member-survey-results-around-fcc-restrictions/",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Inbolt: physical AI's factory bottleneck is deployment, not training data",
+          "summary": "After deploying vision-guided control across over 100 factories and 40M-plus robot cycles, Inbolt's CEO argues physical AI progress in the factory is gated by deployment and part-handling constraints rather than raw training data, as in-hand localization lets robots adjust trajectories mid-move.",
+          "source": "The Robot Report",
+          "date": "2026-09-07",
+          "url": "https://www.therobotreport.com/inbolt-ceo-to-discuss-physical-ais-deployment-problem-at-robobusiness/",
+          "scout_source": "hardware"
+        }
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "image": "images/section_money-markets_2026-09-08.jpg",
+      "items": [
+        {
+          "title": "Milan-based Cato raises €6M seed to automate public tender bidding with AI",
+          "summary": "Cato closed a €6 million seed round led by Keen Venture Partners, bringing total funding to €7.6 million. Its AI platform tracks more than 27,000 sources to help companies find, analyze and prepare bids for Italian public tenders, and the startup says it has reached 150 active clients.",
+          "source": "StartupBusiness",
+          "date": "2026-09-07",
+          "url": "https://www.startupbusiness.it/cato-round-da-6-milioni-di-euro-guidato-da-keen-venture-partners/194770/",
+          "scout_source": "italia"
+        },
+        {
+          "title": "Navana.ai raises $4.2M Series A for Indian-language voice AI",
+          "summary": "Led by Ronnie Screwvala with Antler India, Sharad Sanghi, Sandeep Singhal and Paula Mariwala, the round funds Navana's full-stack voice AI for Indian languages, targeting BFSI and regulated enterprises.",
+          "source": "TechStartups",
+          "date": "2026-09-07",
+          "url": "https://techstartups.com/2026/09/07/startup-funding-news-today-september-7-2026-pixxel-jet-zero-navana-ai-more/",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Swiss industrial-AI startup Jaipur Robotics raises €4.3M seed",
+          "summary": "Led by EquityPitcher Ventures and High-Tech Gründerfonds, the round funds Jaipur Robotics' computer vision and AI for waste-to-energy, cement and biomass plants — hazard detection, calorific value estimation and crane guidance.",
+          "source": "TechStartups",
+          "date": "2026-09-07",
+          "url": "https://techstartups.com/2026/09/07/startup-funding-news-today-september-7-2026-pixxel-jet-zero-navana-ai-more/",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Eric Wu's NavigateAI raises $25M for AI construction copilots",
+          "summary": "A $25M seed at $225M post-money, led by Elad Gil with Khosla Ventures, Fifth Wall, Lennar and others, funds a hands-free AI copilot for construction field workers that runs on smartphones and Meta glasses.",
+          "source": "TechCrunch",
+          "date": "2026-09-07",
+          "url": "https://techcrunch.com/2026/09/07/eric-wus-newest-company-out-of-stealth-since-may-is-going-after-constructions-labor-crunch/",
+          "scout_source": "funding"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-09-08",
+      "items": [
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 253.3k ★ · +2,692 today"},
+        {"name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "meta": "JavaScript · 250.3k ★ · +1,314 today"},
+        {"name": "DietrichGebert/ponytail", "url": "https://github.com/DietrichGebert/ponytail", "meta": "JavaScript · 128.4k ★ · +2,845 today"},
+        {"name": "NousResearch/hermes-agent", "url": "https://github.com/NousResearch/hermes-agent", "meta": "Python · 242.2k ★ · +575 today"},
+        {"name": "fmtlib/fmt", "url": "https://github.com/fmtlib/fmt", "meta": "C++ · 25.6k ★ · +134 today"},
+        {"name": "anthropics/skills", "url": "https://github.com/anthropics/skills", "meta": "Python · 174.7k ★ · +475 today"},
+        {"name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "meta": "HTML · 31.9k ★ · +855 today"},
+        {"name": "anomalyco/opencode", "url": "https://github.com/anomalyco/opencode", "meta": "TypeScript · 204.9k ★ · +725 today"},
+        {"name": "ruvnet/ruflo", "url": "https://github.com/ruvnet/ruflo", "meta": "TypeScript · 70.8k ★ · +136 today"},
+        {"name": "humanlayer/skills", "url": "https://github.com/humanlayer/skills", "meta": "TypeScript · 2.9k ★ · +442 today"},
+        {"name": "blader/humanizer", "url": "https://github.com/blader/humanizer", "meta": "Python · 43.7k ★ · +990 today"},
+        {"name": "BraveOPotato/FckSignups", "url": "https://github.com/BraveOPotato/FckSignups", "meta": "TypeScript · 3.0k ★ · +68 today"},
+        {"name": "WorldFlowAI/everything-claude-code", "url": "https://github.com/WorldFlowAI/everything-claude-code", "meta": "JavaScript · 2.5k ★ · +95 today"},
+        {"name": "magnitudedev/magnitude", "url": "https://github.com/magnitudedev/magnitude", "meta": "TypeScript · 3.4k ★ · +674 today"},
+        {"name": "bikini/exploitarium", "url": "https://github.com/bikini/exploitarium", "meta": "Python · 4.8k ★ · +230 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-09-08",
+      "items": [
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "305B image-text-to-text, vision experimental"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "28B image-text-to-text"},
+        {"name": "XHToken/Spark-X2.5-4B", "url": "https://huggingface.co/XHToken/Spark-X2.5-4B", "meta": "4B text generation"},
+        {"name": "Qwen/Qwen3.8-Flash-Next", "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next", "meta": "180B image-text-to-text"},
+        {"name": "google/timesfm-3.0-pytorch", "url": "https://huggingface.co/google/timesfm-3.0-pytorch", "meta": "0.3B time series forecasting"},
+        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "27B quantization GGUF"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "image-to-video"},
+        {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "321B image-text-to-text, flash variant"},
+        {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "753B text generation"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B GGUF quantized"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-09-08",
+      "items": [
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash Fin (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash Sante (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-09-08",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Muse Spark 1.3 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.3-contributor-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "LeCun: 'The announced AI-fueled jobpocalypse turns out to be an AI-fueled jobundance'",
+      "source": "ylecun",
+      "date": "2026-09-07",
+      "url": "https://x.com/ylecun/status/2097069227484025094",
+      "scout_source": "x"
+    },
+    {
+      "title": "Daily agent use pushes researcher inference bills past $600 a day",
+      "source": "simonw",
+      "date": "2026-09-07",
+      "url": "https://x.com/simonw/status/2096969760789680217",
+      "scout_source": "x"
+    },
+    {
+      "title": "EmbedFlow: zero-downtime embedding model upgrades in production (Show HN)",
+      "source": "Hacker News",
+      "date": "2026-09-08",
+      "url": "https://news.ycombinator.com/item?id=49605110",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Animaxxing: AI agents animate a site's existing content (Show HN)",
+      "source": "Hacker News",
+      "date": "2026-09-07",
+      "url": "https://news.ycombinator.com/item?id=49603561",
+      "scout_source": "tools"
+    }
+  ],
+  "spiked": {
+    "out of window": 14,
+    "already ran": 10,
+    "same story": 1
+  }
+}
