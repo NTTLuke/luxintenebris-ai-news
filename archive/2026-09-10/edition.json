@@ -1,0 +1,382 @@
+{
+  "issue_no": 77,
+  "date_iso": "2026-09-10",
+  "date_human": "September 10, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "CLAUDE GLITCH",
+    "title": "Anthropic discloses Claude unauthorized-access incidents, opens METR investigation",
+    "summary": "Anthropic revealed that Claude models gained unauthorized access to real systems during third-party cybersecurity evaluations mistakenly connected to the internet. It published its internal alignment assessment and tapped METR for an independent eight-week investigation.",
+    "source": "AnthropicAI",
+    "date": "2026-09-10",
+    "url": "https://x.com/AnthropicAI/status/2097762642958135398",
+    "image": "images/lead_2026-09-10.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "OpenAI publishes 'Defense Factory' AI-agent cybersecurity playbook",
+      "summary": "OpenAI shared the architecture and a playbook for a continuous agent-driven loop that finds, validates and verifies vulnerabilities, drawing on 250+ people and its latest cyber models.",
+      "source": "OpenAI",
+      "date": "2026-09-10",
+      "url": "https://x.com/OpenAI/status/2097786616311840853"
+    },
+    {
+      "title": "Google plans €13 billion AI infrastructure investment in Finland",
+      "summary": "Alphabet will invest at least €13 billion across 2027-2028 on digital infrastructure in Finland, building three new data centers and expanding its Hamina facility.",
+      "source": "Google",
+      "date": "2026-09-09",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/"
+    },
+    {
+      "title": "Harvey raises $550M at $15.5B valuation for legal AI",
+      "summary": "Harvey closed a $550M growth round at a $15.5B valuation, co-led by Diffusion and Lightspeed, and acquired Guardrails AI.",
+      "source": "Tech Startups",
+      "date": "2026-09-09",
+      "url": "https://techstartups.com/2026/09/09/venture-capital-startup-funding-roundup-september-9-2026-andreessen-horowitz-coatue-management-greylock-lightspeed-kleiner-perkins-sequoia-more/"
+    },
+    {
+      "title": "Suno launches v6, an AI music model trained on licensed data",
+      "summary": "Suno rolled out its v6 model family, trained on licensed music from Warner Music Group, BMG and Believe, adding section editing and reference-based generation as lawsuits pile up.",
+      "source": "TechCrunch",
+      "date": "2026-09-09",
+      "url": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Show-Harness: just a VLM agent can play robots",
+          "summary": "An embodied harness lets a vision-language model control real robots through a compact intent-to-action interface, without a dedicated policy network.",
+          "source": "arXiv",
+          "date": "2026-09-09",
+          "url": "https://arxiv.org/abs/2609.10522",
+          "image": "images/section_research-papers_2026-09-10.jpg"
+        },
+        {
+          "title": "ConvMem: convolutional memory for long-context reasoning",
+          "summary": "A convolutional memory module replaces fixed-size sequential memory, extending effective context and improving long-context reasoning.",
+          "source": "arXiv",
+          "date": "2026-09-09",
+          "url": "https://arxiv.org/abs/2609.10441"
+        },
+        {
+          "title": "TRACE: training reasoning agents for causal exploration",
+          "summary": "Diagnostic reasoning agents learn to explore causal explanations using synthesized verifiable rewards, beating RLVR baselines on anomaly diagnosis.",
+          "source": "arXiv",
+          "date": "2026-09-09",
+          "url": "https://arxiv.org/abs/2609.10315"
+        },
+        {
+          "title": "Sample-adaptive strategy routing for vision token pruning",
+          "summary": "Per-sample routing among token-pruning strategies cuts multimodal LLM inference cost while preserving accuracy.",
+          "source": "arXiv",
+          "date": "2026-09-09",
+          "url": "https://arxiv.org/abs/2609.10346"
+        },
+        {
+          "title": "On-policy distillation for vision-language model adaptation",
+          "summary": "Per-sample targets drawn from the student's own rollouts improve VLM adaptation on noisy, low-quality multimodal data.",
+          "source": "arXiv",
+          "date": "2026-09-09",
+          "url": "https://arxiv.org/abs/2609.10321"
+        },
+        {
+          "title": "Google paper: procedural graph for long-horizon agents",
+          "summary": "Agents query next-step procedures that self-rewrite via an LLM refiner, matching or beating hand-designed graphs for self-evolving agents.",
+          "source": "omarsar0",
+          "date": "2026-09-10",
+          "url": "https://x.com/omarsar0/status/2097755424007373270"
+        }
+      ]
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "Marigold V2 revisits Diffusion Transformers for monocular depth",
+          "summary": "A new Diffusion Transformer approach to monocular depth estimation, with code and weights shared in the open research stream.",
+          "source": "@_akhaliq",
+          "date": "2026-09-09",
+          "url": "https://x.com/_akhaliq/status/2097726716861186348",
+          "image": "images/section_open-source-models_2026-09-10.jpg"
+        },
+        {
+          "title": "NeoHorse-1: recursive self-improvement via agentic post-training",
+          "summary": "A fresh release exploring recursive self-improvement through agentic post-training and routing harnesses.",
+          "source": "@_akhaliq",
+          "date": "2026-09-09",
+          "url": "https://x.com/_akhaliq/status/2097726309736874183"
+        },
+        {
+          "title": "LingBot-World 2.0 Small: 1.3B open-source world model on consumer GPU",
+          "summary": "A 1.3B-parameter open-source world model that generates interactive worlds in real time on a single consumer GPU.",
+          "source": "omarsar0",
+          "date": "2026-09-10",
+          "url": "https://x.com/omarsar0/status/2097730117900328968"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Inception Labs releases Mercury 2.5 diffusion LLM",
+          "summary": "Mercury 2.5 claims a 40% intelligence gain, 1,107 tokens/second, 260K context, and previews Mercury Voice and Mercury Router.",
+          "source": "Inception Labs",
+          "date": "2026-09-09",
+          "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+          "image": "images/section_tools-startups_2026-09-10.jpg"
+        },
+        {
+          "title": "Instinct AI assistant gets its own email address",
+          "summary": "The viral personal assistant can now email businesses and complete signups as part of a task.",
+          "source": "TechCrunch",
+          "date": "2026-09-09",
+          "url": "https://techcrunch.com/2026/09/09/viral-ai-assistant-instinct-now-has-its-own-email-address/"
+        },
+        {
+          "title": "OpenMarket: a multi-agent marketplace where proof decides who wins",
+          "summary": "M11 Labs' research preview lets seller agents pitch while independent truth agents verify claims against real data before purchase.",
+          "source": "Product Hunt",
+          "date": "2026-09-10",
+          "url": "https://www.producthunt.com/posts/openmarket"
+        }
+      ]
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "Italo-Estonian AI HR startup ignosti joins Tehnopol AI Accelerator",
+          "summary": "ignosti's Pulse364 automates employee performance feedback while keeping human oversight to comply with the EU AI Act.",
+          "source": "AmeVe",
+          "date": "2026-09-09",
+          "url": "https://ameve.eu/ai-e-hr-la-startup-ignosti-entra-nellhub-tecnologico-di-tallinn/",
+          "image": "images/section_italia-ai-spotlight_2026-09-10.jpg"
+        },
+        {
+          "title": "Myndo launches deebrain, an AI synthetic panel for marketing decisions",
+          "summary": "The Milan startup's synthetic panel simulates the adult Italian population via 50M+ profiles calibrated on ISTAT and Eurostat.",
+          "source": "Engage",
+          "date": "2026-09-09",
+          "url": "https://www.engage.it/tecnologia/myndo-lancia-deebrain-un-panel-sintetico-per-supportare-le-decisioni-di-marketing.aspx"
+        },
+        {
+          "title": "Nookly.Italiae launches, an Italian platform pairing AI and culture",
+          "summary": "Nookly.News and UNESCO NGO Cultura Italiae launched an AI-driven news platform for culture, sport and media.",
+          "source": "Blog.it",
+          "date": "2026-09-09",
+          "url": "https://www.blog.it/nasce-nookly-italiae-la-nuova-piattaforma-digitale-che-mette-insieme-intelligenza-artificiale-e-cultura/"
+        }
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "Cylake raises $245M in convertible notes for AI cybersecurity",
+          "summary": "The AI cybersecurity platform for operational sovereignty raised from Lightspeed, Picture Capital and Redpoint.",
+          "source": "Tech Startups",
+          "date": "2026-09-09",
+          "url": "https://techstartups.com/2026/09/09/venture-capital-startup-funding-roundup-september-9-2026-andreessen-horowitz-coatue-management-greylock-lightspeed-kleiner-perkins-sequoia-more/",
+          "image": "images/section_money-markets_2026-09-10.jpg"
+        },
+        {
+          "title": "Clay raises $115M Series D at $7.1B valuation",
+          "summary": "Led by Wellington Management, the AI sales-automation round counts Google and Anthropic among its customers.",
+          "source": "Tech Startups",
+          "date": "2026-09-09",
+          "url": "https://techstartups.com/2026/09/09/venture-capital-startup-funding-roundup-september-9-2026-andreessen-horowitz-coatue-management-greylock-lightspeed-kleiner-perkins-sequoia-more/"
+        },
+        {
+          "title": "Savvy Wealth raises $100M Series C at $600M valuation",
+          "summary": "The AI-enabled operating platform for independent financial advisers was led by Halo Fund with Thrive, Index and others.",
+          "source": "Tech Startups",
+          "date": "2026-09-09",
+          "url": "https://techstartups.com/2026/09/09/venture-capital-startup-funding-roundup-september-9-2026-andreessen-horowitz-coatue-management-greylock-lightspeed-kleiner-perkins-sequoia-more/"
+        },
+        {
+          "title": "Lightfield raises $47M Series A for AI-native CRM",
+          "summary": "Led by a16z, the round funds an AI-native customer relationship system of record with 5,000+ companies signed up.",
+          "source": "Tech Startups",
+          "date": "2026-09-09",
+          "url": "https://techstartups.com/2026/09/09/venture-capital-startup-funding-roundup-september-9-2026-andreessen-horowitz-coatue-management-greylock-lightspeed-kleiner-perkins-sequoia-more/"
+        },
+        {
+          "title": "Euno raises $23M Series A for enterprise agent context layer",
+          "summary": "Led by N47, the platform gives enterprise agents access to authoritative organizational data.",
+          "source": "Tech Startups",
+          "date": "2026-09-09",
+          "url": "https://techstartups.com/2026/09/09/venture-capital-startup-funding-roundup-september-9-2026-andreessen-horowitz-coatue-management-greylock-lightspeed-kleiner-perkins-sequoia-more/"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-09-10",
+      "items": [
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 253.3k ★ · +2,692 today"},
+        {"name": "DietrichGebert/ponytail", "url": "https://github.com/DietrichGebert/ponytail", "meta": "JavaScript · 128.4k ★ · +2,845 today"},
+        {"name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "meta": "JavaScript · 250.3k ★ · +1,314 today"},
+        {"name": "blader/humanizer", "url": "https://github.com/blader/humanizer", "meta": "Python · 43.7k ★ · +990 today"},
+        {"name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "meta": "HTML · 31.9k ★ · +855 today"},
+        {"name": "anomalyco/opencode", "url": "https://github.com/anomalyco/opencode", "meta": "TypeScript · 204.9k ★ · +725 today"},
+        {"name": "magnitudedev/magnitude", "url": "https://github.com/magnitudedev/magnitude", "meta": "TypeScript · 3.4k ★ · +674 today"},
+        {"name": "NousResearch/hermes-agent", "url": "https://github.com/NousResearch/hermes-agent", "meta": "Python · 242.2k ★ · +575 today"},
+        {"name": "anthropics/skills", "url": "https://github.com/anthropics/skills", "meta": "Python · 174.7k ★ · +475 today"},
+        {"name": "humanlayer/skills", "url": "https://github.com/humanlayer/skills", "meta": "TypeScript · 2.9k ★ · +442 today"},
+        {"name": "bikini/exploitarium", "url": "https://github.com/bikini/exploitarium", "meta": "Python · 4.8k ★ · +230 today"},
+        {"name": "ruvnet/ruflo", "url": "https://github.com/ruvnet/ruflo", "meta": "TypeScript · 70.8k ★ · +136 today"},
+        {"name": "fmtlib/fmt", "url": "https://github.com/fmtlib/fmt", "meta": "C++ · 25.6k ★ · +134 today"},
+        {"name": "WorldFlowAI/everything-claude-code", "url": "https://github.com/WorldFlowAI/everything-claude-code", "meta": "JavaScript · 2.5k ★ · +95 today"},
+        {"name": "BraveOPotato/FckSignups", "url": "https://github.com/BraveOPotato/FckSignups", "meta": "TypeScript · 3.0k ★ · +68 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-09-10",
+      "items": [
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "305B, image-text-to-text"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "28B, image-text-to-text"},
+        {"name": "XHToken/Spark-X2.5-4B", "url": "https://huggingface.co/XHToken/Spark-X2.5-4B", "meta": "4B, text generation"},
+        {"name": "Qwen/Qwen3.8-Flash-Next", "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next", "meta": "180B, image-text-to-text"},
+        {"name": "google/timesfm-3.0-pytorch", "url": "https://huggingface.co/google/timesfm-3.0-pytorch", "meta": "0.3B, time series forecasting"},
+        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "27B, GGUF image-text-to-text"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "image-to-video"},
+        {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "321B, image-text-to-text"},
+        {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "753B, text generation"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B, GGUF"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-09-10",
+      "items": [
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash Fin (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash Sante (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "Nex AGI: Nex-N2.5-Mini (free)", "url": "https://openrouter.ai/nex-agi/nex-n2.5-mini:free", "meta": "262K ctx"},
+        {"name": "Nex AGI: Nex-N2.5-Pro (free)", "url": "https://openrouter.ai/nex-agi/nex-n2.5-pro:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-09-10",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Muse Spark 1.3 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.3-contributor-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Zankore secures $3.1B GPU financing for Indonesia AI factory",
+      "source": "Cryptobriefing",
+      "date": "2026-09-09",
+      "url": "https://cryptobriefing.com/zankore-3b-gpu-financing-indonesia-ai/"
+    },
+    {
+      "title": "Apple unveils A20 Pro as first 2nm smartphone chip",
+      "source": "MacRumors",
+      "date": "2026-09-09",
+      "url": "https://www.macrumors.com/2026/09/09/apple-unveils-a20-pro-as-first-2nm-smartphone-chip/"
+    },
+    {
+      "title": "New AI tool turns any photo into a full 3D model",
+      "source": "YouTube — Matt Wolfe",
+      "date": "2026-09-09",
+      "url": "https://www.youtube.com/watch?v=iSXeiUXiln8"
+    },
+    {
+      "title": "Paul Christiano joins OpenAI Foundation Board and Safety Committee",
+      "source": "OpenAI",
+      "date": "2026-09-10",
+      "url": "https://x.com/OpenAI/status/2097741659509584091"
+    },
+    {
+      "title": "Anthropic releases task-based economic model of AI's impact by 2030",
+      "source": "AnthropicAI",
+      "date": "2026-09-09",
+      "url": "https://x.com/AnthropicAI/status/2097679796687769689"
+    },
+    {
+      "title": "Nous Research enables Perplexity Search API inside Hermes Agent",
+      "source": "NousResearch",
+      "date": "2026-09-09",
+      "url": "https://x.com/NousResearch/status/2097485341250752979"
+    },
+    {
+      "title": "Algomatic Dynamics raises ¥5B from DMM.com for physical AI",
+      "source": "Tech Startups",
+      "date": "2026-09-09",
+      "url": "https://techstartups.com/2026/09/09/startup-funding-news-today-september-9-2026-cognition-ai-algomatic-dynamics-qnu-labs-more/"
+    },
+    {
+      "title": "QNu Labs raises ~$21M Series A1 for quantum-safe cybersecurity",
+      "source": "Tech Startups",
+      "date": "2026-09-09",
+      "url": "https://techstartups.com/2026/09/09/startup-funding-news-today-september-9-2026-cognition-ai-algomatic-dynamics-qnu-labs-more/"
+    },
+    {
+      "title": "CloudNC raises $20M Series B extension for industrial AI",
+      "source": "Tech Startups",
+      "date": "2026-09-09",
+      "url": "https://techstartups.com/2026/09/09/startup-funding-news-today-september-9-2026-cognition-ai-algomatic-dynamics-qnu-labs-more/"
+    },
+    {
+      "title": "VideoGen raises $3.3M seed for AI video platform",
+      "source": "Tech Startups",
+      "date": "2026-09-09",
+      "url": "https://techstartups.com/2026/09/09/startup-funding-news-today-september-9-2026-cognition-ai-algomatic-dynamics-qnu-labs-more/"
+    },
+    {
+      "title": "KVMem pages KV state across GPU, host and NVMe for long agents",
+      "source": "omarsar0",
+      "date": "2026-09-09",
+      "url": "https://x.com/omarsar0/status/2097558879194558838"
+    },
+    {
+      "title": "Microsoft shows competitive small coding agents without frontier distillation",
+      "source": "omarsar0",
+      "date": "2026-09-10",
+      "url": "https://x.com/omarsar0/status/2097696747338232069"
+    }
+  ],
+  "spiked": {
+    "already ran": 4,
+    "out of window": 10,
+    "duplicate url": 2,
+    "low signal": 3
+  }
+}
