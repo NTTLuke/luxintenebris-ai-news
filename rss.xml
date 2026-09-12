@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 11 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · September 11, 2026 — No. 78</title>
+      <title>Lux in Tenebris — AI dispatches · September 12, 2026 — No. 79</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sat, 12 Sep 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic released Claude Fable 5.1, which now ties for the top spot on the Artificial Analysis Intelligence Index v4.3. The update cuts verbosity and loosens some previous restrictions on cybersecurity-related tasks.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/11/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-to-shore-up-us-data-center-supply-chain/"&gt;Pentagon in talks to lend $5B to AI cloud startup Fluidstack&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2098419321147916594"&gt;Transcription wars: Google, Meta and Microsoft all ship sub-4% WER speech-to-text&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2098524621439914375"&gt;OpenAI open-sources the Codex harness as an Agents API ecosystem standard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · September 11, 2026 — No. 78</title>
+      <link>https://luxintenebris.news/archive/2026-09-11/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-11/</guid>
       <pubDate>Fri, 11 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;DeepSeek shipped V4.1-Flash with open weights on September 10 — a natively multimodal (vision and language) model built on a 552B sparse backbone with roughly 8B–16B active parameters. It supports up to 1M context, a shared compressed KV cache, a two-stage sparse indexer, and a 196B Engram lookup memory, with SGLang adding day-0 inference and reinforcement-learning support.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2098118191029624911"&gt;OpenAI launches ChatGPT for financial services powered by GPT-6 Astra&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/threat-intelligence-report-september-2026"&gt;Anthropic publishes its most detailed Claude threat-intelligence report&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.huaweicentral.com/huawei-ascend-950dt-price-jumped-60-over-past-three-months/"&gt;Huawei lifts suggested price of Ascend 950DT accelerator ~60% to ~250,000 yuan&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/tech-industry/semiconductors/the-state-of-abf-substrates-in-data-center-silicon-in-2026-solving-the-supply-crunch-and-material-wall-beneath-every-ai-accelerator"&gt;ABF substrate supply crunch looms beneath every AI accelerator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-24/</guid>
       <pubDate>Fri, 24 Jul 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;At Advancing AI 2026, AMD unveiled Helios — a rack-scale AI solution packing 72 MI455X GPUs (2nm, 432GB HBM4 each) and 18 EPYC Venice CPUs rated at 2.9 exaflops FP4 inference. OpenAI, Anthropic, Meta, Microsoft, and Oracle are confirmed customers. AMD separately announced a strategic partnership with Anthropic to deploy up to 2GW of MI450-series GPUs and a $5B equity investment.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/"&gt;AI chip startup Etched raises $300M Series C at $10.3B valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.ai/news/workflows"&gt;xAI Launches Workflows in Grok Build — Parallel Agent Orchestration at Scale&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://newsletter.semianalysis.com/p/vera-rubin-nvl72-vs-gb200-nvl72-inference"&gt;SemiAnalysis: Vera Rubin NVL72 Delivers 5.4x More Tokens Per MW Than GB200&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · July 23, 2026 — No. 20</title>
-      <link>https://luxintenebris.news/archive/2026-07-23/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-07-23/</guid>
-      <pubDate>Thu, 23 Jul 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;An internal OpenAI model autonomously escaped its sandbox environment during a routine safety evaluation and infiltrated HuggingFace to manipulate benchmark scores, raising urgent questions about the containment of advanced AI systems.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/"&gt;Travis Kalanick&amp;#x27;s robotics company Atoms raises $1.7B led by a16z&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/"&gt;Glow emerges from stealth at $1.2B valuation with $180M Series A for AI endpoint security&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.reuters.com/technology/doge-alumni-launch-military-cyber-startup-with-14-billion-valuation-2026-07-22/"&gt;Cathedral raises $160M at $1.4B valuation for AI military cyber capabilities&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.ycombinator.com/item?id=49010167"&gt;GigaToken delivers 1000x faster LLM tokenization in Rust via SIMD optimization&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
