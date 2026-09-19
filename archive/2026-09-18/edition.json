@@ -1,0 +1,196 @@
+{
+  "issue_no": 85,
+  "date_iso": "2026-09-18",
+  "date_human": "September 18, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "GPT-6 in the courtroom",
+    "title": "OpenAI launches Astra for Law, a legal suite built on GPT-6 Astra",
+    "summary": "OpenAI debuted Astra for Law, a legal offering built on GPT-6 Astra with a Legal Search Index covering roughly 230 million URLs of US case law and statutes. It ships with M&A diligence and IPO-preparation tools built alongside firms like Sullivan & Cromwell, Ropes & Gray and Cooley.",
+    "source": "OpenAI",
+    "date": "2026-09-17",
+    "url": "https://openai.com/index/astra-for-law",
+    "image": "images/lead_2026-09-18.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Huawei pulls its Ascend 960DT AI chip launch forward to Q1 2027",
+      "summary": "At Huawei Connect 2026, the company said the next-generation Ascend 960DT accelerator ships three quarters ahead of schedule, deepening its push to challenge Nvidia.",
+      "source": "TechCrunch",
+      "date": "2026-09-17",
+      "url": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
+    },
+    {
+      "title": "Google DeepMind releases AlphaGenome Atlas, mapping every single-letter DNA change",
+      "summary": "A free predictive map of the effect of every possible single-letter change in the human genome, improving detection of rare genetic signals by over 22% in UK Biobank data.",
+      "source": "Google DeepMind",
+      "date": "2026-09-17",
+      "url": "https://x.com/i/status/2100586760036143330"
+    },
+    {
+      "title": "Anthropic publishes transparency metrics on how much AI R&D is done by AI",
+      "summary": "Anthropic disclosed that over 26% of its AI R&D is now performed by AI (up from near zero seven months earlier), with roughly 30,000 concurrent AI agents and hard data on agent-oversight quality.",
+      "source": "Anthropic",
+      "date": "2026-09-18",
+      "url": "https://x.com/AnthropicAI/status/2100684274114699295"
+    },
+    {
+      "title": "Claude Code relaunches Projects to orchestrate parallel cloud agent threads",
+      "summary": "Anthropic redesigned Claude Code Projects around a coordinator that splits engineering goals across multiple parallel cloud sessions with shared memory, in beta for select Pro and Max subscribers.",
+      "source": "The Verge",
+      "date": "2026-09-17",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {"title": "Quantifying overclaiming propensity in frontier LLM agents", "summary": "Measures how often frontier coding agents misrepresent task completion in their final responses, framing overclaiming as a systematic misreporting risk for autonomous long-horizon use.", "source": "arXiv", "date": "2026-09-17", "url": "https://arxiv.org/abs/2609.20812", "image": "images/section_research-papers_2026-09-18.jpg"},
+        {"title": "Large language models as falsifiers for cyber-physical systems", "summary": "Presents LLM-driven falsification of Signal Temporal Logic specifications, framing counterexample search as robustness optimization against black-box baselines.", "source": "arXiv", "date": "2026-09-17", "url": "https://arxiv.org/abs/2609.20752"},
+        {"title": "Video DeltaNet: a video-native hybrid attention for livestream video generation", "summary": "Proposes a video-native hybrid linear attention to replace quadratic attention in video diffusion denoising, cutting the long-token bottleneck for livestream generation.", "source": "arXiv", "date": "2026-09-17", "url": "https://arxiv.org/abs/2609.20744"},
+        {"title": "On-demand attention: language models know when to recall", "summary": "Shows pretrained decoding states already signal when attention is needed, enabling conditional selective recall for cheaper long-context inference.", "source": "arXiv", "date": "2026-09-17", "url": "https://arxiv.org/abs/2609.20734"},
+        {"title": "DeepSeek-V4.1-Flash: pushing the limits of KV cache compression", "summary": "Reports a model targeting input-heavy long-context workloads via aggressive KV cache compression, reducing expensive prefill for long-horizon agents.", "source": "Hugging Face", "date": "2026-09-17", "url": "https://huggingface.co/papers/2609.19969"}
+      ]
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {"title": "Google open-sources its entire OpenAPI generator suite with Speakeasy", "summary": "Google partnered with Speakeasy to open-source its full SDK generation suite, including agent CLIs and MCP servers, making client SDK generation a community-owned practice.", "source": "_philschmid", "date": "2026-09-17", "url": "https://x.com/_philschmid/status/2100664321646690491", "image": "images/section_open-source-models_2026-09-18.jpg"},
+        {"title": "Anthropic's Claude optimizes 30+ open-source biomolecular models, ~4x faster", "summary": "Anthropic released custom GPU-optimized inference for more than 30 specialized open-source biology models and open-sourced all the optimization code on GitHub.", "source": "Anthropic", "date": "2026-09-18", "url": "https://x.com/AnthropicAI/status/2100701581109072332"},
+        {"title": "LimiX-2: a contextual mechanism network for structured-data intelligence", "summary": "A new research model and paper introducing a contextual mechanism network aimed at general structured-data intelligence, with video demo.", "source": "@_akhaliq", "date": "2026-09-17", "url": "https://x.com/_akhaliq/status/2100636566997836191"},
+        {"title": "Agora: Git as shared memory for collective auto-research", "summary": "A research-infrastructure project exploring Git as shared memory for collaborating AI research agents, with multi-agent runs improving a 119.6M-parameter model without training data.", "source": "@_akhaliq", "date": "2026-09-17", "url": "https://x.com/_akhaliq/status/2100676592577937659"}
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {"title": "Apple reportedly plans an enterprise AI server with M8 Ultra and Nvidia NVLink Fusion", "summary": "Apple is exploring a return to enterprise servers with its own M8 Ultra silicon plus Nvidia's NVLink Fusion interconnect. The product is not expected before 2029 and could still be cancelled.", "source": "TrendForce", "date": "2026-09-17", "url": "https://www.trendforce.com/news/2026/09/17/news-apple-reportedly-eyes-2029-enterprise-server-return-with-m8-ultra-nvidia-nvlink/", "image": "images/section_hardware-robotics_2026-09-18.jpg"},
+        {"title": "Arm launches Total Design for Physical AI with 80+ partners", "summary": "Arm brought together more than 80 companies across the physical AI stack and introduced a Robotics Capability Framework defining six levels of robotic capability.", "source": "The Robot Report", "date": "2026-09-17", "url": "https://www.therobotreport.com/arm-total-design-for-physical-ai-brings-more-than-80-developers-together/"},
+        {"title": "Ex-HiSilicon chief's startup Jiuwanli raises $100M+ for single-chip ultra-large AI", "summary": "Jiuwanli Future Technology, founded by former HiSilicon Kunpeng chief Peng Chen, raised more than $100M to target running ultra-large AI models on a single chip.", "source": "TrendForce", "date": "2026-09-17", "url": "https://www.trendforce.com/news/2026/09/17/news-ex-hisilicon-chip-chiefs-startup-jiuwanli-reportedly-raises-100m-targets-ultra-large-ai-models-on-a-single-chip/"},
+        {"title": "SMIC eyes backside power delivery for N7/N5 as AMEC ALD tool clears validation", "summary": "SMIC is reportedly evaluating backside power delivery for its N7 and N5-class processes as AMEC's atomic layer deposition tool passes validation, a step toward scaling advanced logic amid export controls.", "source": "TrendForce", "date": "2026-09-17", "url": "https://www.trendforce.com/news/2026/09/17/breaking-smic-eyes-backside-power-for-n7n5-as-amec-ald-tool-reportedly-clears-validation/"}
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {"title": "Gemini managed agents major update with Files, credentials APIs and Gemini 3.8 Flash default", "summary": "Google's Gemini managed agents now default to Gemini 3.8 Flash, add a persistent Linux sandbox, a Files API and a Credentials API, cutting multi-turn coding cost by about 30%.", "source": "_philschmid", "date": "2026-09-17", "url": "https://x.com/_philschmid/status/2100635151080550793", "image": "images/section_tools-startups_2026-09-18.jpg"},
+        {"title": "Claude gets Docs and Slides, merging chats and Cowork into 'one Claude'", "summary": "Anthropic launched Claude Docs and Slides in beta, letting users create and edit documents and presentations from any chat, and merged regular chats and Cowork into a single interface.", "source": "The Verge", "date": "2026-09-17", "url": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides"},
+        {"title": "Weave Router 2.0: subscription-aware model router for coding agents", "summary": "Routes coding-agent requests across Claude, GPT, DeepSeek, GLM and Gemini, picking the cheapest capable model on available quota to cut LLM inference costs.", "source": "Product Hunt", "date": "2026-09-17", "url": "https://www.producthunt.com/products/weave"},
+        {"title": "OpenSpec Cloud Agent enters early access", "summary": "OpenSpec, a configurable spec framework for keeping coding agents aligned with software specifications, announced early access to its Cloud Agent across Claude Code, Codex and Cursor.", "source": "OpenSpec", "date": "2026-09-18", "url": "https://openspec.dev/"}
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {"title": "D-Robotics raises $400M Series C to build the compute-and-software backbone for robots", "summary": "Robot AI chips and development infrastructure, with Mirae Asset reported as lead alongside Meituan and government-backed investors.", "source": "TechStartups", "date": "2026-09-17", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/", "image": "images/section_money-markets_2026-09-18.jpg"},
+        {"title": "Google, Nvidia and Anthropic back Emerald AI's $150M grid software for data centers", "summary": "Grid demand-response software to free up data center capacity, in a round led by Energize Capital and DCVC.", "source": "TechCrunch", "date": "2026-09-17", "url": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/"},
+        {"title": "Comp AI raises $34M Series A for agentic security and compliance", "summary": "AI agents for security policies and compliance audits, led by Roo Capital and Grand Ventures.", "source": "TechCrunch", "date": "2026-09-17", "url": "https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continiously-agentic-future-for-security-and-complaince/"},
+        {"title": "Facilo raises ¥6.4B Series B to turn real-estate brokerage into an AI workflow", "summary": "A ~$42M equity-plus-debt package led by Globis Capital Partners for an AI property-valuation and brokerage platform.", "source": "TechStartups", "date": "2026-09-17", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"}
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-09-18",
+      "items": [
+        {"name": "alibaba/open-code-review", "url": "https://github.com/alibaba/open-code-review", "meta": "Go · 34.1k ★ · +3,290 today"},
+        {"name": "cloudflare/security-audit-skill", "url": "https://github.com/cloudflare/security-audit-skill", "meta": "JavaScript · 9.8k ★ · +3,606 today"},
+        {"name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "meta": "JavaScript · 95.9k ★ · +680 today"},
+        {"name": "Tencent/BrowserSkill", "url": "https://github.com/Tencent/BrowserSkill", "meta": "TypeScript · 3.9k ★ · +1,350 today"},
+        {"name": "alphaXiv/OpenResearch", "url": "https://github.com/alphaXiv/OpenResearch", "meta": "Rust · 5.0k ★ · +940 today"},
+        {"name": "anthropics/claude-code", "url": "https://github.com/anthropics/claude-code", "meta": "TypeScript · 145.8k ★ · +538 today"},
+        {"name": "NationalSecurityAgency/ghidra", "url": "https://github.com/NationalSecurityAgency/ghidra", "meta": "Java · 78.3k ★ · +912 today"},
+        {"name": "anthropics/knowledge-work-plugins", "url": "https://github.com/anthropics/knowledge-work-plugins", "meta": "Python · 24.5k ★ · +287 today"},
+        {"name": "Tencent/WeKnora", "url": "https://github.com/Tencent/WeKnora", "meta": "Go · 26.1k ★ · +1,123 today"},
+        {"name": "abue-ammar/tinycast", "url": "https://github.com/abue-ammar/tinycast", "meta": "Swift · 6.0k ★ · +738 today"},
+        {"name": "cilium/cilium", "url": "https://github.com/cilium/cilium", "meta": "Go · 25.3k ★ · +20 today"},
+        {"name": "jamiepine/voicebox", "url": "https://github.com/jamiepine/voicebox", "meta": "TypeScript · 54.8k ★ · +665 today"},
+        {"name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "meta": "JavaScript · 261.0k ★ · +1,173 today"},
+        {"name": "roboflow/supervision", "url": "https://github.com/roboflow/supervision", "meta": "Python · 50.8k ★ · +327 today"},
+        {"name": "JustVugg/colibri", "url": "https://github.com/JustVugg/colibri", "meta": "C · 35.5k ★ · +872 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-09-18",
+      "items": [
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "305B, image-text-to-text vision model"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "28B, image-text-to-text"},
+        {"name": "XHToken/Spark-X2.5-4B", "url": "https://huggingface.co/XHToken/Spark-X2.5-4B", "meta": "4B, text generation"},
+        {"name": "Qwen/Qwen3.8-Flash-Next", "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next", "meta": "180B, image-text-to-text"},
+        {"name": "google/timesfm-3.0-pytorch", "url": "https://huggingface.co/google/timesfm-3.0-pytorch", "meta": "0.3B, time series forecasting"},
+        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "27B, GGUF quantized"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "image-to-video"},
+        {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "321B, image-text-to-text (GLM)"},
+        {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "753B, text generation (GLM)"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B, GGUF quantized"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-09-18",
+      "items": [
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "DeepSeek: DeepSeek V4 Flash 0731 (free)", "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731:free", "meta": "1.04858M ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash Fin (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash Sante (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash VL (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "Nex AGI: Nex-N2.5-Mini (free)", "url": "https://openrouter.ai/nex-agi/nex-n2.5-mini:free", "meta": "262K ctx"},
+        {"name": "Nex AGI: Nex-N2.5-Pro (free)", "url": "https://openrouter.ai/nex-agi/nex-n2.5-pro:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Qwen: Qwen3.8 27B (free)", "url": "https://openrouter.ai/qwen/qwen3.8-27b:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"},
+        {"name": "Z.ai: GLM 5.2 (free)", "url": "https://openrouter.ai/z-ai/glm-5.2:free", "meta": "32K ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-09-18",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "Union Alpha Free", "url": "https://opencode.ai/docs/zen/", "meta": "union-alpha"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Muse Spark 1.3 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.3-contributor-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {"title": "SpaceX is reportedly in talks to buy data from failed AI startups to train models", "source": "Bloomberg Technology", "url": "https://www.youtube.com/watch?v=6mD7QByu9H0"},
+    {"title": "Italy joins a 19-country EU project to build federated AI services (IPCEI)", "source": "AI4Business", "url": "https://www.ai4business.it/intelligenza-artificiale/leuropa-accelera-sullai-con-un-progetto-comune-tra-19-paesi/"},
+    {"title": "Treble raises $18M to give physical AI a synthetic acoustic world", "source": "TechStartups", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"},
+    {"title": "syte raises €9M to automate real-estate pre-construction decisions", "source": "TechStartups", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"},
+    {"title": "Creem raises €5M to build billing rails for AI-native software", "source": "TechStartups", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"},
+    {"title": "Health Force raises €4.2M to automate hospital back-office workflows", "source": "TechStartups", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"},
+    {"title": "Anthropic opens its Life Sciences Verification Program for safe biology access", "source": "Anthropic", "url": "https://x.com/AnthropicAI/status/2100646837799834096"},
+    {"title": "Anthropic and Adaptyv Bio run a protein design competition with up to $1M in Claude credits", "source": "Anthropic", "url": "https://x.com/AnthropicAI/status/2100701582744797347"},
+    {"title": "Opal Zero: just-in-time intent-based access control for AI agent teams", "source": "omarsar0", "url": "https://x.com/omarsar0/status/2100620493997113741"},
+    {"title": "JEPA-Anything: learning predictive world models across different worlds", "source": "arXiv", "url": "https://arxiv.org/abs/2609.20800"}
+  ],
+  "spiked": {"same story": 5, "already ran": 2}
+}

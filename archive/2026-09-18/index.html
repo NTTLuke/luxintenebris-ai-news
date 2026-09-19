@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · September 18, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 85 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>September 18, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>90 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DwarfStar · DeepSeek V4 Flash 0731 (M3 Ultra)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Dyson&#x27;s Cheapest Paths: Coupon Codes, Refurbs, and Owner Perks" data-b="Dyson may be best known for its powerful vacuums, but according to a WIRED guide the brand&#x27;s range also covers hair care and air purification. The article lays out several ways to lower the cost of a Dyson purchase.
+
+One route rewards existing customers rather than new ones. Registering the serial number of a current Dyson product earns 15 percent off a next order. A separate option needs no device at all: signing up a mobile number through a pop-up on Dyson&#x27;s homepage triggers a text, and replying with &quot;Y&quot; registers the user for a single-use code worth 10 percent off. The piece also notes that joining text alerts or email newsletters can open doors to exclusive sale events and new product releases.
+
+The company&#x27;s online Deals Hub is described as rotating its discounts weekly across product categories, with savings on items like the V12 vacuum and the Dyson Airstrait. Refurbished goods in the Dyson outlet can run up to 30 percent off, and are inspected, restored to near-new condition, and backed by an official warranty — though that warranty lasts only six months to a year, shorter than on brand-new machines. An owner savings event gives 20 percent off qualifying floorcare or air purifiers, applied at checkout automatically or via a one-time code.
+
+*The most interesting detail here is that the deepest discounts go to people who already own a Dyson — a smart move that buys loyalty rather than chasing new customers.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson&#x27;s Cheapest Paths: Coupon Codes, Refurbs, and Owner Perks</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="iRobot Offers Discounts Across Its Roomba Lineup" data-b="According to WIRED, iRobot has offered a string of promotional codes and coupons across several models in its Roomba lineup. The publication notes that iRobot launched the first Roomba robot vacuum in 2002, and while countless competitors have emerged, the brand is still going strong, with its latest models doubling as both vacuum and mop while offering advanced navigation and suction.
+
+One offer lets you give a friend 15% off a robot vacuum while taking $15 off iRobot accessories for yourself. A separate code takes 33% off the Roomba Max 705, which WIRED describes as a favorite for its two anti-tangle brushes, navigation, and self-emptying base station. The Roomba Plus 405 Combo Robot, which pairs mopping and vacuuming with an auto-emptying dock, is listed at $300 cheaper. The Roomba 205 DustCompactor compacts and stores debris for up to 60 days inside the robot itself, with no emptying station required, and is offered at nearly $300 off. Signing up for iRobot emails also yields a code for 10% off a first purchase. Some listings show deeper cuts, including around 39% off the Roomba Max 705 Combo and roughly 38% off the Roomba j7+.
+
+*WIRED frames these deals as a chance to upgrade your cleaning routine, but if you&#x27;re hunting for real-world value, it&#x27;s worth checking which of these &quot;limited-time&quot; discounts beat the everyday street price.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/irobot-promo-code/"><span class="tih">iRobot Offers Discounts Across Its Roomba Lineup</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Mazama Energy Raises $135M to Drill Deeper for Super-Hot-Rock Geothermal" data-b="Geothermal startup Mazama Energy has raised $135 million in an oversubscribed Series B, according to TechCrunch. The funding will support the company&#x27;s development of horizontal wells in super-hot rock, with each well designed to generate about 15 megawatts of electricity.
+
+The company plans to begin generating electricity sometime next year. Mazama said its first site in Oregon could produce 10 gigawatts, a sharp upward revision from last year&#x27;s estimate of 5 gigawatts, which investor Vinod Khosla cited at the time.
+
+Enhanced geothermal startups are emerging as a potential dark horse in the race to power AI data centers and other large grid loads. While tech companies and data center developers have leaned heavily on natural gas, geothermal firms have been advancing their technology rapidly.
+
+Unlike traditional geothermal projects, these startups target deeper and hotter rock. Mazama said it has drilled past 10,000 feet in 15 days en route to roughly 15,000 feet, where it can reach 750 degrees Fahrenheit (400 C). At those depths and high pressures, water turns into a &quot;supercritical&quot; fluid that is neither fully liquid nor fully gas, absorbing far more energy than ordinary steam and letting each well produce up to 10 times more power than conventional geothermal.
+
+Mazama has also secured land for a second site, though work in Oregon remains in early stages. It aims to complete the first site by 2030, generating about 200 megawatts.
+
+The round was led by Centaurus Capital and Doerr Capital, with participation from ConocoPhillips and Shell Ventures, among others. Mazama was incubated at Khosla Ventures.
+
+*Super-hot rock could undercut the natural-gas boom powering the AI buildout — if the drilling math holds up at scale.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/"><span class="tih">Mazama Energy Raises $135M to Drill Deeper for Super-Hot-Rock Geothermal</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Crusoe raises $3.9B to fund data centers and modular &#x27;AI factories&#x27;" data-b="Data center developer Crusoe has announced a $3.9 billion Series F round, bringing its valuation to $30.9 billion, according to TechCrunch. The round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners, with participation from Founders Fund, GIC, Nvidia, Qatar Investment Authority, Radical Ventures, and TPG.
+
+The company also named three new board members: Cloudflare CFO Thomas Seifert; Bill Stein, partner and CIO at Primary Digital Infrastructure; and Redwood Materials founder and CEO JB Straubel, who also sits on Tesla&#x27;s board. Straubel already has ties to Crusoe, having personally invested in 2021 before Crusoe became the first customer of Redwood&#x27;s energy storage business.
+
+The fresh capital will help finance existing projects, including a large site in Abilene, Texas, used by OpenAI, and smaller modular &quot;AI factories&quot; that can be transported by truck and connected to large power sources nearly anywhere. By manufacturing these modular centers, called Spark, in-house, Crusoe says it can deploy compute capacity quickly without large construction workforces, and sidestep some of the backlash local communities have directed at massive complexes.
+
+Crusoe monetizes by leasing data center space to customers bringing their own GPUs, renting out its own GPUs, and selling compute for AI inference. The company recently signed a $13 billion five-year cloud contract with trading firm Jane Street, per Bloomberg, and has discussed a potential IPO with banks including Goldman Sachs and Morgan Stanley, Axios reported.
+
+*The &quot;electrons to tokens&quot; pitch is compelling, but building the AI infrastructure of tomorrow raises real questions about who benefits from the compute boom — and who has to live next door to it.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/"><span class="tih">Crusoe raises $3.9B to fund data centers and modular &#x27;AI factories&#x27;</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Google DeepMind Institute aims to widen the AGI conversation" data-b="According to TechCrunch, Google and Google DeepMind researchers launched the DeepMind Institute this week to move the debate over artificial general intelligence (AGI) forward. The new body lists co-founder Shane Legg, Google executive James Manyika, and chair Demis Hassabis as directors, with Legg serving as managing editor.
+
+The institute intends to air divergent views among Google, DeepMind, and the broader research community, acknowledging that these groups may not always agree and could well change their positions as fresh evidence appears.
+
+Its opening set of four essays spans economic policies for handling potential AGI disruption, preserving human-readable model reasoning, principles for human flourishing, and a framework for evaluating frontier models.
+
+In one essay, DeepMind safety researchers Rohin Shah and Anca Dragan argue that AI&#x27;s narrowing window of transparency is not inevitable. As newer architectures make the most capable models harder to inspect, they urge developers and regulators to confront the safety trade-offs directly, possibly by limiting opaque serial depth or requiring proof that less transparent systems remain monitorable.
+
+In another, Hassabis proposes a U.S.-led standards body for advanced models. Developers would first submit models up to 30 days before release, and passing its tests could later become a requirement to deploy frontier systems in the United States. Assessments would begin with company input but eventually shift to independent held-out tests, with the framework able to escalate if needed, potentially to coordinated slowdowns.
+
+The essays arrive as the industry&#x27;s safety debate moves from broad concern toward concrete proposals, a shift accelerated this week as leaders endorsed parts of Anthropic CEO Dario Amodei&#x27;s call to pace frontier development.
+
+*The most striking shift is that AI labs are finally willing to propose specific, enforceable rules for themselves rather than just warn about the future.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/"><span class="tih">Google DeepMind Institute aims to widen the AGI conversation</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dyson&#x27;s Cheapest Paths: Coupon Codes, Refurbs, and Owner Perks" data-b="Dyson may be best known for its powerful vacuums, but according to a WIRED guide the brand&#x27;s range also covers hair care and air purification. The article lays out several ways to lower the cost of a Dyson purchase.
+
+One route rewards existing customers rather than new ones. Registering the serial number of a current Dyson product earns 15 percent off a next order. A separate option needs no device at all: signing up a mobile number through a pop-up on Dyson&#x27;s homepage triggers a text, and replying with &quot;Y&quot; registers the user for a single-use code worth 10 percent off. The piece also notes that joining text alerts or email newsletters can open doors to exclusive sale events and new product releases.
+
+The company&#x27;s online Deals Hub is described as rotating its discounts weekly across product categories, with savings on items like the V12 vacuum and the Dyson Airstrait. Refurbished goods in the Dyson outlet can run up to 30 percent off, and are inspected, restored to near-new condition, and backed by an official warranty — though that warranty lasts only six months to a year, shorter than on brand-new machines. An owner savings event gives 20 percent off qualifying floorcare or air purifiers, applied at checkout automatically or via a one-time code.
+
+*The most interesting detail here is that the deepest discounts go to people who already own a Dyson — a smart move that buys loyalty rather than chasing new customers.*
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson&#x27;s Cheapest Paths: Coupon Codes, Refurbs, and Owner Perks</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="iRobot Offers Discounts Across Its Roomba Lineup" data-b="According to WIRED, iRobot has offered a string of promotional codes and coupons across several models in its Roomba lineup. The publication notes that iRobot launched the first Roomba robot vacuum in 2002, and while countless competitors have emerged, the brand is still going strong, with its latest models doubling as both vacuum and mop while offering advanced navigation and suction.
+
+One offer lets you give a friend 15% off a robot vacuum while taking $15 off iRobot accessories for yourself. A separate code takes 33% off the Roomba Max 705, which WIRED describes as a favorite for its two anti-tangle brushes, navigation, and self-emptying base station. The Roomba Plus 405 Combo Robot, which pairs mopping and vacuuming with an auto-emptying dock, is listed at $300 cheaper. The Roomba 205 DustCompactor compacts and stores debris for up to 60 days inside the robot itself, with no emptying station required, and is offered at nearly $300 off. Signing up for iRobot emails also yields a code for 10% off a first purchase. Some listings show deeper cuts, including around 39% off the Roomba Max 705 Combo and roughly 38% off the Roomba j7+.
+
+*WIRED frames these deals as a chance to upgrade your cleaning routine, but if you&#x27;re hunting for real-world value, it&#x27;s worth checking which of these &quot;limited-time&quot; discounts beat the everyday street price.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/irobot-promo-code/"><span class="tih">iRobot Offers Discounts Across Its Roomba Lineup</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Mazama Energy Raises $135M to Drill Deeper for Super-Hot-Rock Geothermal" data-b="Geothermal startup Mazama Energy has raised $135 million in an oversubscribed Series B, according to TechCrunch. The funding will support the company&#x27;s development of horizontal wells in super-hot rock, with each well designed to generate about 15 megawatts of electricity.
+
+The company plans to begin generating electricity sometime next year. Mazama said its first site in Oregon could produce 10 gigawatts, a sharp upward revision from last year&#x27;s estimate of 5 gigawatts, which investor Vinod Khosla cited at the time.
+
+Enhanced geothermal startups are emerging as a potential dark horse in the race to power AI data centers and other large grid loads. While tech companies and data center developers have leaned heavily on natural gas, geothermal firms have been advancing their technology rapidly.
+
+Unlike traditional geothermal projects, these startups target deeper and hotter rock. Mazama said it has drilled past 10,000 feet in 15 days en route to roughly 15,000 feet, where it can reach 750 degrees Fahrenheit (400 C). At those depths and high pressures, water turns into a &quot;supercritical&quot; fluid that is neither fully liquid nor fully gas, absorbing far more energy than ordinary steam and letting each well produce up to 10 times more power than conventional geothermal.
+
+Mazama has also secured land for a second site, though work in Oregon remains in early stages. It aims to complete the first site by 2030, generating about 200 megawatts.
+
+The round was led by Centaurus Capital and Doerr Capital, with participation from ConocoPhillips and Shell Ventures, among others. Mazama was incubated at Khosla Ventures.
+
+*Super-hot rock could undercut the natural-gas boom powering the AI buildout — if the drilling math holds up at scale.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/"><span class="tih">Mazama Energy Raises $135M to Drill Deeper for Super-Hot-Rock Geothermal</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Crusoe raises $3.9B to fund data centers and modular &#x27;AI factories&#x27;" data-b="Data center developer Crusoe has announced a $3.9 billion Series F round, bringing its valuation to $30.9 billion, according to TechCrunch. The round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners, with participation from Founders Fund, GIC, Nvidia, Qatar Investment Authority, Radical Ventures, and TPG.
+
+The company also named three new board members: Cloudflare CFO Thomas Seifert; Bill Stein, partner and CIO at Primary Digital Infrastructure; and Redwood Materials founder and CEO JB Straubel, who also sits on Tesla&#x27;s board. Straubel already has ties to Crusoe, having personally invested in 2021 before Crusoe became the first customer of Redwood&#x27;s energy storage business.
+
+The fresh capital will help finance existing projects, including a large site in Abilene, Texas, used by OpenAI, and smaller modular &quot;AI factories&quot; that can be transported by truck and connected to large power sources nearly anywhere. By manufacturing these modular centers, called Spark, in-house, Crusoe says it can deploy compute capacity quickly without large construction workforces, and sidestep some of the backlash local communities have directed at massive complexes.
+
+Crusoe monetizes by leasing data center space to customers bringing their own GPUs, renting out its own GPUs, and selling compute for AI inference. The company recently signed a $13 billion five-year cloud contract with trading firm Jane Street, per Bloomberg, and has discussed a potential IPO with banks including Goldman Sachs and Morgan Stanley, Axios reported.
+
+*The &quot;electrons to tokens&quot; pitch is compelling, but building the AI infrastructure of tomorrow raises real questions about who benefits from the compute boom — and who has to live next door to it.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/"><span class="tih">Crusoe raises $3.9B to fund data centers and modular &#x27;AI factories&#x27;</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Google DeepMind Institute aims to widen the AGI conversation" data-b="According to TechCrunch, Google and Google DeepMind researchers launched the DeepMind Institute this week to move the debate over artificial general intelligence (AGI) forward. The new body lists co-founder Shane Legg, Google executive James Manyika, and chair Demis Hassabis as directors, with Legg serving as managing editor.
+
+The institute intends to air divergent views among Google, DeepMind, and the broader research community, acknowledging that these groups may not always agree and could well change their positions as fresh evidence appears.
+
+Its opening set of four essays spans economic policies for handling potential AGI disruption, preserving human-readable model reasoning, principles for human flourishing, and a framework for evaluating frontier models.
+
+In one essay, DeepMind safety researchers Rohin Shah and Anca Dragan argue that AI&#x27;s narrowing window of transparency is not inevitable. As newer architectures make the most capable models harder to inspect, they urge developers and regulators to confront the safety trade-offs directly, possibly by limiting opaque serial depth or requiring proof that less transparent systems remain monitorable.
+
+In another, Hassabis proposes a U.S.-led standards body for advanced models. Developers would first submit models up to 30 days before release, and passing its tests could later become a requirement to deploy frontier systems in the United States. Assessments would begin with company input but eventually shift to independent held-out tests, with the framework able to escalate if needed, potentially to coordinated slowdowns.
+
+The essays arrive as the industry&#x27;s safety debate moves from broad concern toward concrete proposals, a shift accelerated this week as leaders endorsed parts of Anthropic CEO Dario Amodei&#x27;s call to pace frontier development.
+
+*The most striking shift is that AI labs are finally willing to propose specific, enforceable rules for themselves rather than just warn about the future.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/"><span class="tih">Google DeepMind Institute aims to widen the AGI conversation</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://openai.com/index/astra-for-law" target="_blank" rel="noopener">
+    <img src="images/lead_2026-09-18.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">GPT-6 in the courtroom</p>
+        <h1>OpenAI launches Astra for Law, a legal suite built on GPT-6 Astra</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">OpenAI debuted Astra for Law, a legal offering built on GPT-6 Astra with a Legal Search Index covering roughly 230 million URLs of US case law and statutes. It ships with M&amp;A diligence and IPO-preparation tools built alongside firms like Sullivan &amp; Cromwell, Ropes &amp; Gray and Cooley.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-09-17</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:06</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-09-18.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/" target="_blank" rel="noopener">
+    <h3>Huawei pulls its Ascend 960DT AI chip launch forward to Q1 2027</h3>
+    <p>At Huawei Connect 2026, the company said the next-generation Ascend 960DT accelerator ships three quarters ahead of schedule, deepening its push to challenge Nvidia.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/i/status/2100586760036143330" target="_blank" rel="noopener">
+    <h3>Google DeepMind releases AlphaGenome Atlas, mapping every single-letter DNA change</h3>
+    <p>A free predictive map of the effect of every possible single-letter change in the human genome, improving detection of rare genetic signals by over 22% in UK Biobank data.</p>
+    <p class="byline"><span class="src">Google DeepMind</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/AnthropicAI/status/2100684274114699295" target="_blank" rel="noopener">
+    <h3>Anthropic publishes transparency metrics on how much AI R&amp;D is done by AI</h3>
+    <p>Anthropic disclosed that over 26% of its AI R&amp;D is now performed by AI (up from near zero seven months earlier), with roughly 30,000 concurrent AI agents and hard data on agent-oversight quality.</p>
+    <p class="byline"><span class="src">Anthropic</span> · 2026-09-18</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://arxiv.org/abs/2609.20812" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-09-18.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Quantifying overclaiming propensity in frontier LLM agents</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.20812" target="_blank" rel="noopener">
+    <h4>Quantifying overclaiming propensity in frontier LLM agents</h4>
+    <p>Measures how often frontier coding agents misrepresent task completion in their final responses, framing overclaiming as a systematic misreporting risk for autonomous long-horizon use.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.20752" target="_blank" rel="noopener">
+    <h4>Large language models as falsifiers for cyber-physical systems</h4>
+    <p>Presents LLM-driven falsification of Signal Temporal Logic specifications, framing counterexample search as robustness optimization against black-box baselines.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.20744" target="_blank" rel="noopener">
+    <h4>Video DeltaNet: a video-native hybrid attention for livestream video generation</h4>
+    <p>Proposes a video-native hybrid linear attention to replace quadratic attention in video diffusion denoising, cutting the long-token bottleneck for livestream generation.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.20734" target="_blank" rel="noopener">
+    <h4>On-demand attention: language models know when to recall</h4>
+    <p>Shows pretrained decoding states already signal when attention is needed, enabling conditional selective recall for cheaper long-context inference.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2609.19969" target="_blank" rel="noopener">
+    <h4>DeepSeek-V4.1-Flash: pushing the limits of KV cache compression</h4>
+    <p>Reports a model targeting input-heavy long-context workloads via aggressive KV cache compression, reducing expensive prefill for long-horizon agents.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-09-17</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <a href="https://x.com/_philschmid/status/2100664321646690491" target="_blank" rel="noopener" class="section-hero"><img src="images/section_open-source-models_2026-09-18.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Google open-sources its entire OpenAPI generator suite with Speakeasy</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/_philschmid/status/2100664321646690491" target="_blank" rel="noopener">
+    <h4>Google open-sources its entire OpenAPI generator suite with Speakeasy</h4>
+    <p>Google partnered with Speakeasy to open-source its full SDK generation suite, including agent CLIs and MCP servers, making client SDK generation a community-owned practice.</p>
+    <p class="byline"><span class="src">_philschmid</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/AnthropicAI/status/2100701581109072332" target="_blank" rel="noopener">
+    <h4>Anthropic's Claude optimizes 30+ open-source biomolecular models, ~4x faster</h4>
+    <p>Anthropic released custom GPU-optimized inference for more than 30 specialized open-source biology models and open-sourced all the optimization code on GitHub.</p>
+    <p class="byline"><span class="src">Anthropic</span> · 2026-09-18</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/_akhaliq/status/2100636566997836191" target="_blank" rel="noopener">
+    <h4>LimiX-2: a contextual mechanism network for structured-data intelligence</h4>
+    <p>A new research model and paper introducing a contextual mechanism network aimed at general structured-data intelligence, with video demo.</p>
+    <p class="byline"><span class="src">@_akhaliq</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/_akhaliq/status/2100676592577937659" target="_blank" rel="noopener">
+    <h4>Agora: Git as shared memory for collective auto-research</h4>
+    <p>A research-infrastructure project exploring Git as shared memory for collaborating AI research agents, with multi-agent runs improving a 119.6M-parameter model without training data.</p>
+    <p class="byline"><span class="src">@_akhaliq</span> · 2026-09-17</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <a href="https://www.trendforce.com/news/2026/09/17/news-apple-reportedly-eyes-2029-enterprise-server-return-with-m8-ultra-nvidia-nvlink/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_hardware-robotics_2026-09-18.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Apple reportedly plans an enterprise AI server with M8 Ultra and Nvidia NVLink Fusion</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.trendforce.com/news/2026/09/17/news-apple-reportedly-eyes-2029-enterprise-server-return-with-m8-ultra-nvidia-nvlink/" target="_blank" rel="noopener">
+    <h4>Apple reportedly plans an enterprise AI server with M8 Ultra and Nvidia NVLink Fusion</h4>
+    <p>Apple is exploring a return to enterprise servers with its own M8 Ultra silicon plus Nvidia's NVLink Fusion interconnect. The product is not expected before 2029 and could still be cancelled.</p>
+    <p class="byline"><span class="src">TrendForce</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/arm-total-design-for-physical-ai-brings-more-than-80-developers-together/" target="_blank" rel="noopener">
+    <h4>Arm launches Total Design for Physical AI with 80+ partners</h4>
+    <p>Arm brought together more than 80 companies across the physical AI stack and introduced a Robotics Capability Framework defining six levels of robotic capability.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.trendforce.com/news/2026/09/17/news-ex-hisilicon-chip-chiefs-startup-jiuwanli-reportedly-raises-100m-targets-ultra-large-ai-models-on-a-single-chip/" target="_blank" rel="noopener">
+    <h4>Ex-HiSilicon chief's startup Jiuwanli raises $100M+ for single-chip ultra-large AI</h4>
+    <p>Jiuwanli Future Technology, founded by former HiSilicon Kunpeng chief Peng Chen, raised more than $100M to target running ultra-large AI models on a single chip.</p>
+    <p class="byline"><span class="src">TrendForce</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.trendforce.com/news/2026/09/17/breaking-smic-eyes-backside-power-for-n7n5-as-amec-ald-tool-reportedly-clears-validation/" target="_blank" rel="noopener">
+    <h4>SMIC eyes backside power delivery for N7/N5 as AMEC ALD tool clears validation</h4>
+    <p>SMIC is reportedly evaluating backside power delivery for its N7 and N5-class processes as AMEC's atomic layer deposition tool passes validation, a step toward scaling advanced logic amid export controls.</p>
+    <p class="byline"><span class="src">TrendForce</span> · 2026-09-17</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <a href="https://x.com/_philschmid/status/2100635151080550793" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-09-18.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Gemini managed agents major update with Files, credentials APIs and Gemini 3.8 Flash default</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/_philschmid/status/2100635151080550793" target="_blank" rel="noopener">
+    <h4>Gemini managed agents major update with Files, credentials APIs and Gemini 3.8 Flash default</h4>
+    <p>Google's Gemini managed agents now default to Gemini 3.8 Flash, add a persistent Linux sandbox, a Files API and a Credentials API, cutting multi-turn coding cost by about 30%.</p>
+    <p class="byline"><span class="src">_philschmid</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides" target="_blank" rel="noopener">
+    <h4>Claude gets Docs and Slides, merging chats and Cowork into 'one Claude'</h4>
+    <p>Anthropic launched Claude Docs and Slides in beta, letting users create and edit documents and presentations from any chat, and merged regular chats and Cowork into a single interface.</p>
+    <p class="byline"><span class="src">The Verge</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/weave" target="_blank" rel="noopener">
+    <h4>Weave Router 2.0: subscription-aware model router for coding agents</h4>
+    <p>Routes coding-agent requests across Claude, GPT, DeepSeek, GLM and Gemini, picking the cheapest capable model on available quota to cut LLM inference costs.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://openspec.dev/" target="_blank" rel="noopener">
+    <h4>OpenSpec Cloud Agent enters early access</h4>
+    <p>OpenSpec, a configurable spec framework for keeping coding agents aligned with software specifications, announced early access to its Cloud Agent across Claude Code, Codex and Cursor.</p>
+    <p class="byline"><span class="src">OpenSpec</span> · 2026-09-18</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <a href="https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_money-markets_2026-09-18.jpg" alt="" class="section-hero-img"><h4 class="hero-title">D-Robotics raises $400M Series C to build the compute-and-software backbone for robots</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/" target="_blank" rel="noopener">
+    <h4>D-Robotics raises $400M Series C to build the compute-and-software backbone for robots</h4>
+    <p>Robot AI chips and development infrastructure, with Mirae Asset reported as lead alongside Meituan and government-backed investors.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/" target="_blank" rel="noopener">
+    <h4>Google, Nvidia and Anthropic back Emerald AI's $150M grid software for data centers</h4>
+    <p>Grid demand-response software to free up data center capacity, in a round led by Energize Capital and DCVC.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continiously-agentic-future-for-security-and-complaince/" target="_blank" rel="noopener">
+    <h4>Comp AI raises $34M Series A for agentic security and compliance</h4>
+    <p>AI agents for security policies and compliance audits, led by Roo Capital and Grand Ventures.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-09-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/" target="_blank" rel="noopener">
+    <h4>Facilo raises ¥6.4B Series B to turn real-estate brokerage into an AI workflow</h4>
+    <p>A ~$42M equity-plus-debt package led by Globis Capital Partners for an AI property-valuation and brokerage platform.</p>
+    <p class="byline"><span class="src">TechStartups</span> · 2026-09-17</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">alibaba/open-code-review</span>
+    <span class="t-meta">Go · 34.1k ★ · +3,290 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">cloudflare/security-audit-skill</span>
+    <span class="t-meta">JavaScript · 9.8k ★ · +3,606 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">addyosmani/agent-skills</span>
+    <span class="t-meta">JavaScript · 95.9k ★ · +680 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Tencent/BrowserSkill" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Tencent/BrowserSkill</span>
+    <span class="t-meta">TypeScript · 3.9k ★ · +1,350 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/alphaXiv/OpenResearch" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">alphaXiv/OpenResearch</span>
+    <span class="t-meta">Rust · 5.0k ★ · +940 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">anthropics/claude-code</span>
+    <span class="t-meta">TypeScript · 145.8k ★ · +538 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NationalSecurityAgency/ghidra</span>
+    <span class="t-meta">Java · 78.3k ★ · +912 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/knowledge-work-plugins" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">anthropics/knowledge-work-plugins</span>
+    <span class="t-meta">Python · 24.5k ★ · +287 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Tencent/WeKnora" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Tencent/WeKnora</span>
+    <span class="t-meta">Go · 26.1k ★ · +1,123 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/abue-ammar/tinycast" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">abue-ammar/tinycast</span>
+    <span class="t-meta">Swift · 6.0k ★ · +738 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cilium/cilium" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">cilium/cilium</span>
+    <span class="t-meta">Go · 25.3k ★ · +20 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">jamiepine/voicebox</span>
+    <span class="t-meta">TypeScript · 54.8k ★ · +665 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">affaan-m/ECC</span>
+    <span class="t-meta">JavaScript · 261.0k ★ · +1,173 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/roboflow/supervision" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">roboflow/supervision</span>
+    <span class="t-meta">Python · 50.8k ★ · +327 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JustVugg/colibri" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">JustVugg/colibri</span>
+    <span class="t-meta">C · 35.5k ★ · +872 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4-Flash-Vision-Exp</span>
+    <span class="t-meta">305B, image-text-to-text vision model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">28B, image-text-to-text</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/XHToken/Spark-X2.5-4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">XHToken/Spark-X2.5-4B</span>
+    <span class="t-meta">4B, text generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Qwen/Qwen3.8-Flash-Next</span>
+    <span class="t-meta">180B, image-text-to-text</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/google/timesfm-3.0-pytorch" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">google/timesfm-3.0-pytorch</span>
+    <span class="t-meta">0.3B, time series forecasting</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF</span>
+    <span class="t-meta">27B, GGUF quantized</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">image-to-video</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/zai-org/GLM-5.3-Flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">zai-org/GLM-5.3-Flash</span>
+    <span class="t-meta">321B, image-text-to-text (GLM)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/zai-org/GLM-5.3" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">zai-org/GLM-5.3</span>
+    <span class="t-meta">753B, text generation (GLM)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Qwen3.8-27B-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">unsloth/Qwen3.8-27B-GGUF</span>
+    <span class="t-meta">27B, GGUF quantized</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">27</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/deepseek/deepseek-v4-flash-0731:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">DeepSeek: DeepSeek V4 Flash 0731 (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI: Ling 3.0 Flash Fin (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">inclusionAI: Ling 3.0 Flash Sante (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">inclusionAI: Ling 3.0 Flash VL (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nex-agi/nex-n2.5-mini:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nex AGI: Nex-N2.5-Mini (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nex-agi/nex-n2.5-pro:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nex AGI: Nex-N2.5-Pro (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#17</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#18</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/qwen/qwen3.8-27b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#19</span>
+    <span class="t-name">Qwen: Qwen3.8 27B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#20</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Union Alpha Free</span>
+    <span class="t-meta">union-alpha</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Ling 3.0 Flash Fin Free</span>
+    <span class="t-meta">ling-3.0-flash-fin-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Muse Spark 1.3 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.3-contributor-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">10</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://www.youtube.com/watch?v=6mD7QByu9H0" target="_blank" rel="noopener"><span class="qh-title">SpaceX is reportedly in talks to buy data from failed AI startups to train models</span><span class="qh-src">Bloomberg Technology</span></a></li>
+
+    <li><a href="https://www.ai4business.it/intelligenza-artificiale/leuropa-accelera-sullai-con-un-progetto-comune-tra-19-paesi/" target="_blank" rel="noopener"><span class="qh-title">Italy joins a 19-country EU project to build federated AI services (IPCEI)</span><span class="qh-src">AI4Business</span></a></li>
+
+    <li><a href="https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/" target="_blank" rel="noopener"><span class="qh-title">Treble raises $18M to give physical AI a synthetic acoustic world</span><span class="qh-src">TechStartups</span></a></li>
+
+    <li><a href="https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/" target="_blank" rel="noopener"><span class="qh-title">syte raises €9M to automate real-estate pre-construction decisions</span><span class="qh-src">TechStartups</span></a></li>
+
+    <li><a href="https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/" target="_blank" rel="noopener"><span class="qh-title">Creem raises €5M to build billing rails for AI-native software</span><span class="qh-src">TechStartups</span></a></li>
+
+    <li><a href="https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/" target="_blank" rel="noopener"><span class="qh-title">Health Force raises €4.2M to automate hospital back-office workflows</span><span class="qh-src">TechStartups</span></a></li>
+
+    <li><a href="https://x.com/AnthropicAI/status/2100646837799834096" target="_blank" rel="noopener"><span class="qh-title">Anthropic opens its Life Sciences Verification Program for safe biology access</span><span class="qh-src">Anthropic</span></a></li>
+
+    <li><a href="https://x.com/AnthropicAI/status/2100701582744797347" target="_blank" rel="noopener"><span class="qh-title">Anthropic and Adaptyv Bio run a protein design competition with up to $1M in Claude credits</span><span class="qh-src">Anthropic</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2100620493997113741" target="_blank" rel="noopener"><span class="qh-title">Opal Zero: just-in-time intent-based access control for AI agent teams</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2609.20800" target="_blank" rel="noopener"><span class="qh-title">JEPA-Anything: learning predictive world models across different worlds</span><span class="qh-src">arXiv</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-09-18 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

@@ -1,92 +1,154 @@
 {
-  "issue_no": 85,
-  "date_iso": "2026-09-18",
-  "date_human": "September 18, 2026",
+  "issue_no": 86,
+  "date_iso": "2026-09-19",
+  "date_human": "September 19, 2026",
   "notice": null,
   "lead": {
-    "kicker": "GPT-6 in the courtroom",
-    "title": "OpenAI launches Astra for Law, a legal suite built on GPT-6 Astra",
-    "summary": "OpenAI debuted Astra for Law, a legal offering built on GPT-6 Astra with a Legal Search Index covering roughly 230 million URLs of US case law and statutes. It ships with M&A diligence and IPO-preparation tools built alongside firms like Sullivan & Cromwell, Ropes & Gray and Cooley.",
-    "source": "OpenAI",
-    "date": "2026-09-17",
-    "url": "https://openai.com/index/astra-for-law",
-    "image": "images/lead_2026-09-18.jpg"
+    "image": "images/lead_2026-09-19.jpg",
+    "kicker": "Frontier Safeguards",
+    "title": "Anthropic and Accenture commit $1B+ each to independent frontier AI evaluation",
+    "summary": "The two firms will scale independent evaluation of frontier AI models, with each side expecting to invest at least $1 billion over five years, deepening Anthropic's push to embed external auditors.",
+    "source": "Anthropic (X)",
+    "date": "2026-09-18",
+    "url": "https://x.com/AnthropicAI/status/2101039819870937247"
   },
   "top_stories": [
     {
-      "title": "Huawei pulls its Ascend 960DT AI chip launch forward to Q1 2027",
-      "summary": "At Huawei Connect 2026, the company said the next-generation Ascend 960DT accelerator ships three quarters ahead of schedule, deepening its push to challenge Nvidia.",
+      "title": "Manus seeks a $4B valuation in a new $500M fundraise",
+      "summary": "The AI agent startup, resuming independent operations, is in talks on a round proposed at a $4B valuation with IDG Capital, Boyu Capital, CATL and Tencent among potential backers.",
       "source": "TechCrunch",
-      "date": "2026-09-17",
-      "url": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
-    },
-    {
-      "title": "Google DeepMind releases AlphaGenome Atlas, mapping every single-letter DNA change",
-      "summary": "A free predictive map of the effect of every possible single-letter change in the human genome, improving detection of rare genetic signals by over 22% in UK Biobank data.",
-      "source": "Google DeepMind",
-      "date": "2026-09-17",
-      "url": "https://x.com/i/status/2100586760036143330"
-    },
-    {
-      "title": "Anthropic publishes transparency metrics on how much AI R&D is done by AI",
-      "summary": "Anthropic disclosed that over 26% of its AI R&D is now performed by AI (up from near zero seven months earlier), with roughly 30,000 concurrent AI agents and hard data on agent-oversight quality.",
-      "source": "Anthropic",
       "date": "2026-09-18",
-      "url": "https://x.com/AnthropicAI/status/2100684274114699295"
+      "url": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/"
     },
     {
-      "title": "Claude Code relaunches Projects to orchestrate parallel cloud agent threads",
-      "summary": "Anthropic redesigned Claude Code Projects around a coordinator that splits engineering goals across multiple parallel cloud sessions with shared memory, in beta for select Pro and Max subscribers.",
-      "source": "The Verge",
-      "date": "2026-09-17",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects"
+      "title": "Huawei unveils an optical 'super node' as it speeds up its AI chip roadmap",
+      "summary": "At Huawei Connect the company introduced what it calls the industry's first super node using near-packaged optics, aiming to let large compute clusters run as a single machine.",
+      "source": "Caixin Global",
+      "date": "2026-09-18",
+      "url": "https://www.caixinglobal.com/2026-09-18/huawei-speeds-up-ai-chip-roadmap-unveils-optical-super-node-102486033.html"
+    },
+    {
+      "title": "EVAS Intelligence raises ~RMB2B to scale RISC-V cloud AI chips",
+      "summary": "The Beijing-based AI compute startup raised nearly RMB2B (about $280M) at a ~RMB15B valuation, drawing in more than 20 investors including SMIC-linked funds.",
+      "source": "TechStartups",
+      "date": "2026-09-18",
+      "url": "https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"
     }
   ],
   "sections": [
     {
       "title": "Research & Papers",
       "items": [
-        {"title": "Quantifying overclaiming propensity in frontier LLM agents", "summary": "Measures how often frontier coding agents misrepresent task completion in their final responses, framing overclaiming as a systematic misreporting risk for autonomous long-horizon use.", "source": "arXiv", "date": "2026-09-17", "url": "https://arxiv.org/abs/2609.20812", "image": "images/section_research-papers_2026-09-18.jpg"},
-        {"title": "Large language models as falsifiers for cyber-physical systems", "summary": "Presents LLM-driven falsification of Signal Temporal Logic specifications, framing counterexample search as robustness optimization against black-box baselines.", "source": "arXiv", "date": "2026-09-17", "url": "https://arxiv.org/abs/2609.20752"},
-        {"title": "Video DeltaNet: a video-native hybrid attention for livestream video generation", "summary": "Proposes a video-native hybrid linear attention to replace quadratic attention in video diffusion denoising, cutting the long-token bottleneck for livestream generation.", "source": "arXiv", "date": "2026-09-17", "url": "https://arxiv.org/abs/2609.20744"},
-        {"title": "On-demand attention: language models know when to recall", "summary": "Shows pretrained decoding states already signal when attention is needed, enabling conditional selective recall for cheaper long-context inference.", "source": "arXiv", "date": "2026-09-17", "url": "https://arxiv.org/abs/2609.20734"},
-        {"title": "DeepSeek-V4.1-Flash: pushing the limits of KV cache compression", "summary": "Reports a model targeting input-heavy long-context workloads via aggressive KV cache compression, reducing expensive prefill for long-horizon agents.", "source": "Hugging Face", "date": "2026-09-17", "url": "https://huggingface.co/papers/2609.19969"}
-      ]
-    },
-    {
-      "title": "Open Source & Models",
-      "items": [
-        {"title": "Google open-sources its entire OpenAPI generator suite with Speakeasy", "summary": "Google partnered with Speakeasy to open-source its full SDK generation suite, including agent CLIs and MCP servers, making client SDK generation a community-owned practice.", "source": "_philschmid", "date": "2026-09-17", "url": "https://x.com/_philschmid/status/2100664321646690491", "image": "images/section_open-source-models_2026-09-18.jpg"},
-        {"title": "Anthropic's Claude optimizes 30+ open-source biomolecular models, ~4x faster", "summary": "Anthropic released custom GPU-optimized inference for more than 30 specialized open-source biology models and open-sourced all the optimization code on GitHub.", "source": "Anthropic", "date": "2026-09-18", "url": "https://x.com/AnthropicAI/status/2100701581109072332"},
-        {"title": "LimiX-2: a contextual mechanism network for structured-data intelligence", "summary": "A new research model and paper introducing a contextual mechanism network aimed at general structured-data intelligence, with video demo.", "source": "@_akhaliq", "date": "2026-09-17", "url": "https://x.com/_akhaliq/status/2100636566997836191"},
-        {"title": "Agora: Git as shared memory for collective auto-research", "summary": "A research-infrastructure project exploring Git as shared memory for collaborating AI research agents, with multi-agent runs improving a 119.6M-parameter model without training data.", "source": "@_akhaliq", "date": "2026-09-17", "url": "https://x.com/_akhaliq/status/2100676592577937659"}
+        {
+          "image": "images/section_research-papers_2026-09-19.jpg",
+          "title": "NVIDIA's SoL-Pi harness cuts agent token traffic by roughly half",
+          "summary": "NVlabs open-sourced SoL-Pi, an evolutionary approach that tunes agent harness mechanisms like action fusion and online context compacting, nearly halving token usage while matching stronger baselines.",
+          "source": "@omarsar0",
+          "date": "2026-09-18",
+          "url": "https://x.com/omarsar0/status/2101074795643494546"
+        },
+        {
+          "title": "Empirical study isolates which harness choices matter for coding agents",
+          "summary": "Using a lightweight harness with a fixed execution loop, the study separates the effect of individual scaffolding decisions on long-horizon software-engineering performance and cost.",
+          "source": "@_akhaliq",
+          "date": "2026-09-18",
+          "url": "https://x.com/_akhaliq/status/2101020560964866103"
+        },
+        {
+          "title": "EvoSkill v2 lets agents self-improve without retraining weights",
+          "summary": "A coach agent writes persistent skill lessons from failed runs that a worker agent loads on similar tasks, lifting hard spreadsheet-task success from 3/120 to 21/120 with proper separation and review.",
+          "source": "@omarsar0",
+          "date": "2026-09-18",
+          "url": "https://x.com/omarsar0/status/2100989618845823364"
+        }
       ]
     },
     {
       "title": "Hardware & Robotics",
       "items": [
-        {"title": "Apple reportedly plans an enterprise AI server with M8 Ultra and Nvidia NVLink Fusion", "summary": "Apple is exploring a return to enterprise servers with its own M8 Ultra silicon plus Nvidia's NVLink Fusion interconnect. The product is not expected before 2029 and could still be cancelled.", "source": "TrendForce", "date": "2026-09-17", "url": "https://www.trendforce.com/news/2026/09/17/news-apple-reportedly-eyes-2029-enterprise-server-return-with-m8-ultra-nvidia-nvlink/", "image": "images/section_hardware-robotics_2026-09-18.jpg"},
-        {"title": "Arm launches Total Design for Physical AI with 80+ partners", "summary": "Arm brought together more than 80 companies across the physical AI stack and introduced a Robotics Capability Framework defining six levels of robotic capability.", "source": "The Robot Report", "date": "2026-09-17", "url": "https://www.therobotreport.com/arm-total-design-for-physical-ai-brings-more-than-80-developers-together/"},
-        {"title": "Ex-HiSilicon chief's startup Jiuwanli raises $100M+ for single-chip ultra-large AI", "summary": "Jiuwanli Future Technology, founded by former HiSilicon Kunpeng chief Peng Chen, raised more than $100M to target running ultra-large AI models on a single chip.", "source": "TrendForce", "date": "2026-09-17", "url": "https://www.trendforce.com/news/2026/09/17/news-ex-hisilicon-chip-chiefs-startup-jiuwanli-reportedly-raises-100m-targets-ultra-large-ai-models-on-a-single-chip/"},
-        {"title": "SMIC eyes backside power delivery for N7/N5 as AMEC ALD tool clears validation", "summary": "SMIC is reportedly evaluating backside power delivery for its N7 and N5-class processes as AMEC's atomic layer deposition tool passes validation, a step toward scaling advanced logic amid export controls.", "source": "TrendForce", "date": "2026-09-17", "url": "https://www.trendforce.com/news/2026/09/17/breaking-smic-eyes-backside-power-for-n7n5-as-amec-ald-tool-reportedly-clears-validation/"}
+        {
+          "image": "images/section_hardware-robotics_2026-09-19.jpg",
+          "title": "Spirit AI predicts a robot-brain breakthrough by mid-2027",
+          "summary": "The $2.9B Chinese embodied-AI firm says a robot brain comparable to OpenAI's GPT-3 could arrive around mid-2027, while useful home deployment may take eight years. Its Moz1 wheeled humanoids already work production lines at CATL and JD.com.",
+          "source": "Brussels Morning",
+          "date": "2026-09-18",
+          "url": "https://brusselsmorning.com/robot-brain-breakthrough-2027/103060/"
+        },
+        {
+          "title": "BrainChip launches the AKD1500 PCIe card for edge AI evaluation",
+          "summary": "The ultra-low-power, self-learning neuromorphic card slots into any standard PCIe machine, completing the AKD1500 product line so any team can validate Akida with its own models and data.",
+          "source": "Edge AI and Vision Alliance",
+          "date": "2026-09-18",
+          "url": "https://www.edge-ai-vision.com/2026/09/brainchip-launches-akd1500-pcie-card-for-edge-ai-evaluation-everywhere/"
+        },
+        {
+          "title": "Chinese humanoid Tiangong Ultra runs the 100m in 8.64s",
+          "summary": "At the second World Humanoid Robot Games in Beijing, the humanoid clipped past Usain Bolt's 9.58s human record, highlighting the rapid physical capabilities of Chinese humanoid hardware.",
+          "source": "Dogonews",
+          "date": "2026-09-18",
+          "url": "https://www.dogonews.com/2026/9/18/humanoid-robots-break-records-in-beijing"
+        }
       ]
     },
     {
       "title": "Tools & Startups",
       "items": [
-        {"title": "Gemini managed agents major update with Files, credentials APIs and Gemini 3.8 Flash default", "summary": "Google's Gemini managed agents now default to Gemini 3.8 Flash, add a persistent Linux sandbox, a Files API and a Credentials API, cutting multi-turn coding cost by about 30%.", "source": "_philschmid", "date": "2026-09-17", "url": "https://x.com/_philschmid/status/2100635151080550793", "image": "images/section_tools-startups_2026-09-18.jpg"},
-        {"title": "Claude gets Docs and Slides, merging chats and Cowork into 'one Claude'", "summary": "Anthropic launched Claude Docs and Slides in beta, letting users create and edit documents and presentations from any chat, and merged regular chats and Cowork into a single interface.", "source": "The Verge", "date": "2026-09-17", "url": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides"},
-        {"title": "Weave Router 2.0: subscription-aware model router for coding agents", "summary": "Routes coding-agent requests across Claude, GPT, DeepSeek, GLM and Gemini, picking the cheapest capable model on available quota to cut LLM inference costs.", "source": "Product Hunt", "date": "2026-09-17", "url": "https://www.producthunt.com/products/weave"},
-        {"title": "OpenSpec Cloud Agent enters early access", "summary": "OpenSpec, a configurable spec framework for keeping coding agents aligned with software specifications, announced early access to its Cloud Agent across Claude Code, Codex and Cursor.", "source": "OpenSpec", "date": "2026-09-18", "url": "https://openspec.dev/"}
+        {
+          "image": "images/section_tools-startups_2026-09-19.jpg",
+          "title": "Z.ai launches GLM-5.3-FlashX, a fast serving tier up to 200 tokens/s",
+          "summary": "The low-latency tier uses the same GLM-5.3-Flash weights on throughput-tuned infrastructure, reaching up to 200 output tokens per second at 2.5x the base model's price.",
+          "source": "OpenRouter",
+          "date": "2026-09-18",
+          "url": "https://openrouter.ai/z-ai/glm-5.3-flashx"
+        },
+        {
+          "title": "Agentgit: a Git host for AI agents with no account, token or key",
+          "summary": "A Show HN project offering a Git remote that AI agents can push to without any authentication, aimed at simplifying agent-driven version control.",
+          "source": "Hacker News",
+          "date": "2026-09-18",
+          "url": "https://news.ycombinator.com/item?id=49761528"
+        },
+        {
+          "title": "CRT: a local code review tool for agentic development",
+          "summary": "A self-hosted Show HN project built to review code produced by AI coding agents.",
+          "source": "Hacker News",
+          "date": "2026-09-18",
+          "url": "https://news.ycombinator.com/item?id=49761478"
+        }
       ]
     },
     {
       "title": "Money & Markets",
       "items": [
-        {"title": "D-Robotics raises $400M Series C to build the compute-and-software backbone for robots", "summary": "Robot AI chips and development infrastructure, with Mirae Asset reported as lead alongside Meituan and government-backed investors.", "source": "TechStartups", "date": "2026-09-17", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/", "image": "images/section_money-markets_2026-09-18.jpg"},
-        {"title": "Google, Nvidia and Anthropic back Emerald AI's $150M grid software for data centers", "summary": "Grid demand-response software to free up data center capacity, in a round led by Energize Capital and DCVC.", "source": "TechCrunch", "date": "2026-09-17", "url": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/"},
-        {"title": "Comp AI raises $34M Series A for agentic security and compliance", "summary": "AI agents for security policies and compliance audits, led by Roo Capital and Grand Ventures.", "source": "TechCrunch", "date": "2026-09-17", "url": "https://techcrunch.com/2026/09/17/comp-ai-sets-eyes-on-a-continiously-agentic-future-for-security-and-complaince/"},
-        {"title": "Facilo raises ¥6.4B Series B to turn real-estate brokerage into an AI workflow", "summary": "A ~$42M equity-plus-debt package led by Globis Capital Partners for an AI property-valuation and brokerage platform.", "source": "TechStartups", "date": "2026-09-17", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"}
+        {
+          "image": "images/section_money-markets_2026-09-19.jpg",
+          "title": "British AI forecasting startup Mantic raises $25M after its Metaculus win",
+          "summary": "The London-based forecasting platform, which beat all human contestants in the summer 2026 Metaculus Cup, raised a $25M seed led by Radical Ventures with Microsoft M12 and Thinking Machines Lab.",
+          "source": "TechStartups",
+          "date": "2026-09-18",
+          "url": "https://techstartups.com/2026/09/18/british-ai-startup-mantic-raises-25m-to-build-superhuman-ai-forecasting-after-metaculus-win/"
+        },
+        {
+          "title": "Xili Optoelectronics raises RMB100M-scale for AI data-center photonics",
+          "summary": "The Hangzhou-based thin-film lithium niobate photonic chip maker closed a Pre-Series A led by Futeng Capital for high-speed AI optical interconnects.",
+          "source": "TechStartups",
+          "date": "2026-09-18",
+          "url": "https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"
+        },
+        {
+          "title": "Shutu Technology raises ~RMB100M for robot data and tactile AI",
+          "summary": "The Shenzhen embodied-AI startup co-led by CDH Baifu and Kunpeng Fund is building training data and tactile intelligence for robots, its third round in about a month.",
+          "source": "TechStartups",
+          "date": "2026-09-18",
+          "url": "https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"
+        },
+        {
+          "title": "Arclight Quantum raises RMB100M+ with China Mobile backing",
+          "summary": "The Beijing full-stack quantum software company secured strategic financing from China Mobile's Chain-Leader Fund for quantum-plus-AI research and distributed quantum chips.",
+          "source": "TechStartups",
+          "date": "2026-09-18",
+          "url": "https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"
+        }
       ]
     }
   ],
@@ -95,7 +157,7 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "items": [
         {"name": "alibaba/open-code-review", "url": "https://github.com/alibaba/open-code-review", "meta": "Go · 34.1k ★ · +3,290 today"},
         {"name": "cloudflare/security-audit-skill", "url": "https://github.com/cloudflare/security-audit-skill", "meta": "JavaScript · 9.8k ★ · +3,606 today"},
@@ -118,18 +180,18 @@
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "items": [
-        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "305B, image-text-to-text vision model"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "305B, image-text-to-text"},
         {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "28B, image-text-to-text"},
         {"name": "XHToken/Spark-X2.5-4B", "url": "https://huggingface.co/XHToken/Spark-X2.5-4B", "meta": "4B, text generation"},
         {"name": "Qwen/Qwen3.8-Flash-Next", "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next", "meta": "180B, image-text-to-text"},
         {"name": "google/timesfm-3.0-pytorch", "url": "https://huggingface.co/google/timesfm-3.0-pytorch", "meta": "0.3B, time series forecasting"},
-        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "27B, GGUF quantized"},
+        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "27B, image-text-to-text, GGUF"},
         {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "image-to-video"},
-        {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "321B, image-text-to-text (GLM)"},
-        {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "753B, text generation (GLM)"},
-        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B, GGUF quantized"}
+        {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "321B, image-text-to-text"},
+        {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "753B, text generation"},
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B, GGUF"}
       ]
     }
   },
@@ -138,7 +200,7 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "items": [
         {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
         {"name": "DeepSeek: DeepSeek V4 Flash 0731 (free)", "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731:free", "meta": "1.04858M ctx"},
@@ -168,10 +230,9 @@
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "items": [
         {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
-        {"name": "Union Alpha Free", "url": "https://opencode.ai/docs/zen/", "meta": "union-alpha"},
         {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
         {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
         {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
@@ -181,16 +242,58 @@
     }
   },
   "quick_hits": [
-    {"title": "SpaceX is reportedly in talks to buy data from failed AI startups to train models", "source": "Bloomberg Technology", "url": "https://www.youtube.com/watch?v=6mD7QByu9H0"},
-    {"title": "Italy joins a 19-country EU project to build federated AI services (IPCEI)", "source": "AI4Business", "url": "https://www.ai4business.it/intelligenza-artificiale/leuropa-accelera-sullai-con-un-progetto-comune-tra-19-paesi/"},
-    {"title": "Treble raises $18M to give physical AI a synthetic acoustic world", "source": "TechStartups", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"},
-    {"title": "syte raises €9M to automate real-estate pre-construction decisions", "source": "TechStartups", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"},
-    {"title": "Creem raises €5M to build billing rails for AI-native software", "source": "TechStartups", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"},
-    {"title": "Health Force raises €4.2M to automate hospital back-office workflows", "source": "TechStartups", "url": "https://techstartups.com/2026/09/17/startup-funding-news-today-september-17-2026-d-robotics-treble-tusk-ic-more/"},
-    {"title": "Anthropic opens its Life Sciences Verification Program for safe biology access", "source": "Anthropic", "url": "https://x.com/AnthropicAI/status/2100646837799834096"},
-    {"title": "Anthropic and Adaptyv Bio run a protein design competition with up to $1M in Claude credits", "source": "Anthropic", "url": "https://x.com/AnthropicAI/status/2100701582744797347"},
-    {"title": "Opal Zero: just-in-time intent-based access control for AI agent teams", "source": "omarsar0", "url": "https://x.com/omarsar0/status/2100620493997113741"},
-    {"title": "JEPA-Anything: learning predictive world models across different worlds", "source": "arXiv", "url": "https://arxiv.org/abs/2609.20800"}
+    {
+      "title": "DeepSeek-V4-Flash and Kimi-K3 run on a single RTX 5090 via SSD expert caching",
+      "source": "@lmsysorg",
+      "date": "2026-09-18",
+      "url": "https://x.com/lmsysorg/status/2100989817303814183"
+    },
+    {
+      "title": "OnPanda lets you steer LLMs and agents at the token level",
+      "source": "Hacker News",
+      "date": "2026-09-18",
+      "url": "https://news.ycombinator.com/item?id=49759013"
+    },
+    {
+      "title": "Wcagent routes coding work through your existing ChatGPT subscription",
+      "source": "Hacker News",
+      "date": "2026-09-18",
+      "url": "https://news.ycombinator.com/item?id=49761790"
+    },
+    {
+      "title": "GGG: a local-first, zero-telemetry proxy for AI tools",
+      "source": "Hacker News",
+      "date": "2026-09-19",
+      "url": "https://news.ycombinator.com/item?id=49762923"
+    },
+    {
+      "title": "Andrew Ng's The Batch pushes back on 'runaway agent' cybersecurity hype",
+      "source": "DeepLearningAI",
+      "date": "2026-09-18",
+      "url": "https://x.com/DeepLearningAI/status/2100985469177569545"
+    },
+    {
+      "title": "Sherpa: an AI storytelling tool trained on 5.5 billion minutes of content",
+      "source": "@omarsar0",
+      "date": "2026-09-18",
+      "url": "https://x.com/omarsar0/status/2101030043673837726"
+    },
+    {
+      "title": "AgentCloak: a free extension that redacts sensitive prompts",
+      "source": "@omarsar0",
+      "date": "2026-09-18",
+      "url": "https://x.com/omarsar0/status/2100974730387829014"
+    },
+    {
+      "title": "Milan startup Bynario raises €2.1M after uncovering Apple macOS flaws",
+      "source": "ItaliaOggi",
+      "date": "2026-09-18",
+      "url": "https://www.italiaoggi.it/economia-e-politica/economia-e-finanza/la-startup-milanese-che-ha-individuato-un-bug-di-apple-st6884vp"
+    }
   ],
-  "spiked": {"same story": 5, "already ran": 2}
+  "spiked": {
+    "out of window": 28,
+    "already ran": 3,
+    "duplicate url": 1
+  }
 }
