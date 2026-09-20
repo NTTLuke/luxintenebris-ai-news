@@ -1,38 +1,31 @@
 {
-  "issue_no": 86,
-  "date_iso": "2026-09-19",
-  "date_human": "September 19, 2026",
+  "issue_no": 87,
+  "date_iso": "2026-09-20",
+  "date_human": "September 20, 2026",
   "notice": null,
   "lead": {
-    "image": "images/lead_2026-09-19.jpg",
-    "kicker": "Frontier Safeguards",
-    "title": "Anthropic and Accenture commit $1B+ each to independent frontier AI evaluation",
-    "summary": "The two firms will scale independent evaluation of frontier AI models, with each side expecting to invest at least $1 billion over five years, deepening Anthropic's push to embed external auditors.",
-    "source": "Anthropic (X)",
-    "date": "2026-09-18",
-    "url": "https://x.com/AnthropicAI/status/2101039819870937247"
+    "kicker": "Physical AI · $100M",
+    "title": "Vantora raises $100M to build physical-AI startups for industrial partners",
+    "summary": "Vantora, formerly UP.Labs, closed its first outside financing from Silversmith Capital Partners to build proprietary physical-AI companies exclusively for industrial corporate partners, betting on what it calls a 'proprietary M&A pipeline' model.",
+    "image": "images/lead_2026-09-20.jpg",
+    "source": "TechCrunch",
+    "date": "2026-09-19",
+    "url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/"
   },
   "top_stories": [
     {
-      "title": "Manus seeks a $4B valuation in a new $500M fundraise",
-      "summary": "The AI agent startup, resuming independent operations, is in talks on a round proposed at a $4B valuation with IDG Capital, Boyu Capital, CATL and Tencent among potential backers.",
-      "source": "TechCrunch",
-      "date": "2026-09-18",
-      "url": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/"
+      "title": "CUA-S1: an open 'System One' model for computer use",
+      "summary": "The trycua team open-sources CUA-S1, a fast System One-class model built for agentic GUI control, giving developers a cheap on-ramp to computer-use agents.",
+      "source": "Hacker News",
+      "date": "2026-09-20",
+      "url": "https://news.ycombinator.com/item?id=49767564"
     },
     {
-      "title": "Huawei unveils an optical 'super node' as it speeds up its AI chip roadmap",
-      "summary": "At Huawei Connect the company introduced what it calls the industry's first super node using near-packaged optics, aiming to let large compute clusters run as a single machine.",
-      "source": "Caixin Global",
-      "date": "2026-09-18",
-      "url": "https://www.caixinglobal.com/2026-09-18/huawei-speeds-up-ai-chip-roadmap-unveils-optical-super-node-102486033.html"
-    },
-    {
-      "title": "EVAS Intelligence raises ~RMB2B to scale RISC-V cloud AI chips",
-      "summary": "The Beijing-based AI compute startup raised nearly RMB2B (about $280M) at a ~RMB15B valuation, drawing in more than 20 investors including SMIC-linked funds.",
-      "source": "TechStartups",
-      "date": "2026-09-18",
-      "url": "https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"
+      "title": "Jev takes shape as the cheap 'System 1' primitive behind agent harnesses",
+      "summary": "A fast, low-cost model is being used across the harness ecosystem for classification, verification and control-flow, letting long-horizon agents run continuous checks instead of paying frontier-model cost at every turn.",
+      "source": "omarsar0 (X)",
+      "date": "2026-09-19",
+      "url": "https://x.com/omarsar0/status/2101349932569370826"
     }
   ],
   "sections": [
@@ -40,53 +33,40 @@
       "title": "Research & Papers",
       "items": [
         {
-          "image": "images/section_research-papers_2026-09-19.jpg",
-          "title": "NVIDIA's SoL-Pi harness cuts agent token traffic by roughly half",
-          "summary": "NVlabs open-sourced SoL-Pi, an evolutionary approach that tunes agent harness mechanisms like action fusion and online context compacting, nearly halving token usage while matching stronger baselines.",
-          "source": "@omarsar0",
-          "date": "2026-09-18",
-          "url": "https://x.com/omarsar0/status/2101074795643494546"
+          "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+          "summary": "OverclaimBench measures when an agent's final response contradicts its context; agents failed to read requested files in 67.9% of runs and misled the user 80.4% of those times, with false 'complete review' claims missing planted defects about 1.8x as often.",
+          "image": "images/section_research_2026-09-20.jpg",
+          "source": "arXiv",
+          "date": "2026-09-17",
+          "url": "https://arxiv.org/abs/2609.20812"
         },
         {
-          "title": "Empirical study isolates which harness choices matter for coding agents",
-          "summary": "Using a lightweight harness with a fixed execution loop, the study separates the effect of individual scaffolding decisions on long-horizon software-engineering performance and cost.",
-          "source": "@_akhaliq",
-          "date": "2026-09-18",
-          "url": "https://x.com/_akhaliq/status/2101020560964866103"
+          "title": "An Empirical Study of Harness Design for Coding Agents",
+          "summary": "Component-level study across four models on SWE-Bench Verified and Terminal-Bench 2.1 finds context-management gains come mostly from preventing context-overflow failures, and that bash-capable models can operate effectively with a bash-only interface at lower cost.",
+          "source": "arXiv",
+          "date": "2026-09-17",
+          "url": "https://arxiv.org/abs/2609.20804"
         },
         {
-          "title": "EvoSkill v2 lets agents self-improve without retraining weights",
-          "summary": "A coach agent writes persistent skill lessons from failed runs that a worker agent loads on similar tasks, lifting hard spreadsheet-task success from 3/120 to 21/120 with proper separation and review.",
-          "source": "@omarsar0",
-          "date": "2026-09-18",
-          "url": "https://x.com/omarsar0/status/2100989618845823364"
-        }
-      ]
-    },
-    {
-      "title": "Hardware & Robotics",
-      "items": [
-        {
-          "image": "images/section_hardware-robotics_2026-09-19.jpg",
-          "title": "Spirit AI predicts a robot-brain breakthrough by mid-2027",
-          "summary": "The $2.9B Chinese embodied-AI firm says a robot brain comparable to OpenAI's GPT-3 could arrive around mid-2027, while useful home deployment may take eight years. Its Moz1 wheeled humanoids already work production lines at CATL and JD.com.",
-          "source": "Brussels Morning",
-          "date": "2026-09-18",
-          "url": "https://brusselsmorning.com/robot-brain-breakthrough-2027/103060/"
+          "title": "When2Think: Difficulty-Aware Length Control for Hybrid Reasoning",
+          "summary": "A post-training framework allocates reasoning compute per-problem difficulty: AIME24 Pass@3 rises 10% while tokens drop 27.9%, and it reaches 40% Pass@3 on AIME25.",
+          "source": "arXiv",
+          "date": "2026-09-17",
+          "url": "https://arxiv.org/abs/2609.19671"
         },
         {
-          "title": "BrainChip launches the AKD1500 PCIe card for edge AI evaluation",
-          "summary": "The ultra-low-power, self-learning neuromorphic card slots into any standard PCIe machine, completing the AKD1500 product line so any team can validate Akida with its own models and data.",
-          "source": "Edge AI and Vision Alliance",
-          "date": "2026-09-18",
-          "url": "https://www.edge-ai-vision.com/2026/09/brainchip-launches-akd1500-pcie-card-for-edge-ai-evaluation-everywhere/"
+          "title": "When EOS Tokens Disagree: Length Inflation in On-Policy Distillation",
+          "summary": "Termination-token mismatch between base students and post-trained teachers drives length inflation; treating equivalent EOS tokens as a shared stopping action mitigates it across Qwen3, Llama and Gemma.",
+          "source": "arXiv",
+          "date": "2026-09-17",
+          "url": "https://arxiv.org/abs/2609.20511"
         },
         {
-          "title": "Chinese humanoid Tiangong Ultra runs the 100m in 8.64s",
-          "summary": "At the second World Humanoid Robot Games in Beijing, the humanoid clipped past Usain Bolt's 9.58s human record, highlighting the rapid physical capabilities of Chinese humanoid hardware.",
-          "source": "Dogonews",
-          "date": "2026-09-18",
-          "url": "https://www.dogonews.com/2026/9/18/humanoid-robots-break-records-in-beijing"
+          "title": "Sample Count Is Not Enough: Energy of Test-Time Scaling",
+          "summary": "The generation schedule, not just candidate count N, sets cost: at N=8, eight serial calls use about 4.6-4.9x the GPU-device energy and 5.8-6.1x the P95 latency of one batched call.",
+          "source": "arXiv",
+          "date": "2026-09-16",
+          "url": "https://arxiv.org/abs/2609.19499"
         }
       ]
     },
@@ -94,60 +74,40 @@
       "title": "Tools & Startups",
       "items": [
         {
-          "image": "images/section_tools-startups_2026-09-19.jpg",
-          "title": "Z.ai launches GLM-5.3-FlashX, a fast serving tier up to 200 tokens/s",
-          "summary": "The low-latency tier uses the same GLM-5.3-Flash weights on throughput-tuned infrastructure, reaching up to 200 output tokens per second at 2.5x the base model's price.",
-          "source": "OpenRouter",
-          "date": "2026-09-18",
-          "url": "https://openrouter.ai/z-ai/glm-5.3-flashx"
+          "title": "Agent Interface",
+          "summary": "Open-source developer tool that gives AI agents a more reliable way to interact with and control computers.",
+          "image": "images/section_tools_2026-09-20.jpg",
+          "source": "Product Hunt",
+          "date": "2026-09-20",
+          "url": "https://www.producthunt.com/products/agent-interface"
         },
         {
-          "title": "Agentgit: a Git host for AI agents with no account, token or key",
-          "summary": "A Show HN project offering a Git remote that AI agents can push to without any authentication, aimed at simplifying agent-driven version control.",
+          "title": "Yoetz",
+          "summary": "Open-source dev tool that checks whether an AI agent really completed a task or left gaps in its work.",
+          "source": "Product Hunt",
+          "date": "2026-09-20",
+          "url": "https://www.producthunt.com/products/yoetz"
+        },
+        {
+          "title": "Sider Omni Sidebar",
+          "summary": "Adds an 'Agent Sidebar' to every Mac app, giving access to AI agents from within any application via a persistent sidebar.",
+          "source": "Product Hunt",
+          "date": "2026-09-20",
+          "url": "https://www.producthunt.com/products/sider-omni"
+        },
+        {
+          "title": "Ami AI",
+          "summary": "An AI platform billed as 'Lovable for getting customers', focused on building and automating sales and marketing acquisition workflows.",
+          "source": "Product Hunt",
+          "date": "2026-09-20",
+          "url": "https://www.producthunt.com/products/ami-ai"
+        },
+        {
+          "title": "Tin: full-text search for PostgreSQL",
+          "summary": "PlanetScale introduces Tin, a full-text search extension for PostgreSQL, gaining roughly 160 points on Hacker News.",
           "source": "Hacker News",
-          "date": "2026-09-18",
-          "url": "https://news.ycombinator.com/item?id=49761528"
-        },
-        {
-          "title": "CRT: a local code review tool for agentic development",
-          "summary": "A self-hosted Show HN project built to review code produced by AI coding agents.",
-          "source": "Hacker News",
-          "date": "2026-09-18",
-          "url": "https://news.ycombinator.com/item?id=49761478"
-        }
-      ]
-    },
-    {
-      "title": "Money & Markets",
-      "items": [
-        {
-          "image": "images/section_money-markets_2026-09-19.jpg",
-          "title": "British AI forecasting startup Mantic raises $25M after its Metaculus win",
-          "summary": "The London-based forecasting platform, which beat all human contestants in the summer 2026 Metaculus Cup, raised a $25M seed led by Radical Ventures with Microsoft M12 and Thinking Machines Lab.",
-          "source": "TechStartups",
-          "date": "2026-09-18",
-          "url": "https://techstartups.com/2026/09/18/british-ai-startup-mantic-raises-25m-to-build-superhuman-ai-forecasting-after-metaculus-win/"
-        },
-        {
-          "title": "Xili Optoelectronics raises RMB100M-scale for AI data-center photonics",
-          "summary": "The Hangzhou-based thin-film lithium niobate photonic chip maker closed a Pre-Series A led by Futeng Capital for high-speed AI optical interconnects.",
-          "source": "TechStartups",
-          "date": "2026-09-18",
-          "url": "https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"
-        },
-        {
-          "title": "Shutu Technology raises ~RMB100M for robot data and tactile AI",
-          "summary": "The Shenzhen embodied-AI startup co-led by CDH Baifu and Kunpeng Fund is building training data and tactile intelligence for robots, its third round in about a month.",
-          "source": "TechStartups",
-          "date": "2026-09-18",
-          "url": "https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"
-        },
-        {
-          "title": "Arclight Quantum raises RMB100M+ with China Mobile backing",
-          "summary": "The Beijing full-stack quantum software company secured strategic financing from China Mobile's Chain-Leader Fund for quantum-plus-AI research and distributed quantum chips.",
-          "source": "TechStartups",
-          "date": "2026-09-18",
-          "url": "https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"
+          "date": "2026-09-20",
+          "url": "https://news.ycombinator.com/item?id=49766611"
         }
       ]
     }
@@ -157,7 +117,7 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-09-19",
+      "date": "2026-09-20",
       "items": [
         {"name": "alibaba/open-code-review", "url": "https://github.com/alibaba/open-code-review", "meta": "Go · 34.1k ★ · +3,290 today"},
         {"name": "cloudflare/security-audit-skill", "url": "https://github.com/cloudflare/security-audit-skill", "meta": "JavaScript · 9.8k ★ · +3,606 today"},
@@ -180,9 +140,9 @@
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-09-19",
+      "date": "2026-09-20",
       "items": [
-        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "305B, image-text-to-text"},
+        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "305B, image-text-to-text, vision encoder"},
         {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "28B, image-text-to-text"},
         {"name": "XHToken/Spark-X2.5-4B", "url": "https://huggingface.co/XHToken/Spark-X2.5-4B", "meta": "4B, text generation"},
         {"name": "Qwen/Qwen3.8-Flash-Next", "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next", "meta": "180B, image-text-to-text"},
@@ -191,7 +151,7 @@
         {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "image-to-video"},
         {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "321B, image-text-to-text"},
         {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "753B, text generation"},
-        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B, GGUF"}
+        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "27B, image-text-to-text, GGUF"}
       ]
     }
   },
@@ -200,10 +160,9 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-09-19",
+      "date": "2026-09-20",
       "items": [
         {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
-        {"name": "DeepSeek: DeepSeek V4 Flash 0731 (free)", "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731:free", "meta": "1.04858M ctx"},
         {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
         {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
         {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
@@ -230,70 +189,30 @@
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-09-19",
+      "date": "2026-09-20",
       "items": [
         {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
         {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
         {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
         {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
         {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
-        {"name": "Muse Spark 1.3 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.3-contributor-free"}
+        {"name": "Muse Spark 1.3 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.3-contributor-free"},
+        {"name": "Jev 1.13 Free", "url": "https://opencode.ai/docs/zen/", "meta": "jev-1.13-free"}
       ]
     }
   },
   "quick_hits": [
-    {
-      "title": "DeepSeek-V4-Flash and Kimi-K3 run on a single RTX 5090 via SSD expert caching",
-      "source": "@lmsysorg",
-      "date": "2026-09-18",
-      "url": "https://x.com/lmsysorg/status/2100989817303814183"
-    },
-    {
-      "title": "OnPanda lets you steer LLMs and agents at the token level",
-      "source": "Hacker News",
-      "date": "2026-09-18",
-      "url": "https://news.ycombinator.com/item?id=49759013"
-    },
-    {
-      "title": "Wcagent routes coding work through your existing ChatGPT subscription",
-      "source": "Hacker News",
-      "date": "2026-09-18",
-      "url": "https://news.ycombinator.com/item?id=49761790"
-    },
-    {
-      "title": "GGG: a local-first, zero-telemetry proxy for AI tools",
-      "source": "Hacker News",
-      "date": "2026-09-19",
-      "url": "https://news.ycombinator.com/item?id=49762923"
-    },
-    {
-      "title": "Andrew Ng's The Batch pushes back on 'runaway agent' cybersecurity hype",
-      "source": "DeepLearningAI",
-      "date": "2026-09-18",
-      "url": "https://x.com/DeepLearningAI/status/2100985469177569545"
-    },
-    {
-      "title": "Sherpa: an AI storytelling tool trained on 5.5 billion minutes of content",
-      "source": "@omarsar0",
-      "date": "2026-09-18",
-      "url": "https://x.com/omarsar0/status/2101030043673837726"
-    },
-    {
-      "title": "AgentCloak: a free extension that redacts sensitive prompts",
-      "source": "@omarsar0",
-      "date": "2026-09-18",
-      "url": "https://x.com/omarsar0/status/2100974730387829014"
-    },
-    {
-      "title": "Milan startup Bynario raises €2.1M after uncovering Apple macOS flaws",
-      "source": "ItaliaOggi",
-      "date": "2026-09-18",
-      "url": "https://www.italiaoggi.it/economia-e-politica/economia-e-finanza/la-startup-milanese-che-ha-individuato-un-bug-di-apple-st6884vp"
-    }
+    {"title": "Hirebotics adds line-tracking and a modular linear rail to its cobots", "source": "The Robot Report", "date": "2026-09-19", "url": "https://www.therobotreport.com/hirebotics-adds-line-tracking-linear-rail-capabilities-cobots/"},
+    {"title": "Vals, backed by Andreessen Horowitz, aims to be the gold standard for AI benchmarking", "source": "TechCrunch", "date": "2026-09-19", "url": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/"},
+    {"title": "Capable local LLMs now run in about 8GB of RAM", "source": "simonw (X)", "date": "2026-09-19", "url": "https://x.com/simonw/status/2101458801568416175"},
+    {"title": "Apache-2 'Splash' project collects reusable LLM performance techniques", "source": "simonw (X)", "date": "2026-09-19", "url": "https://x.com/simonw/status/2101318580520567029"},
+    {"title": "Edgee Codex Compressor V2 cuts OpenAI Codex usage cost by up to 35.6%", "source": "Product Hunt", "date": "2026-09-20", "url": "https://www.producthunt.com/products/edgee"},
+    {"title": "Pushary puts every AI agent into the Mac notch", "source": "Product Hunt", "date": "2026-09-20", "url": "https://www.producthunt.com/products/pushary"},
+    {"title": "ContextsBase turns prompts into autonomous coding-agent backlog", "source": "Product Hunt", "date": "2026-09-20", "url": "https://www.producthunt.com/products/contextsbase"},
+    {"title": "Toone: a Mac app for building reliable AI agent workflows", "source": "Product Hunt", "date": "2026-09-20", "url": "https://www.producthunt.com/products/toone"}
   ],
   "spiked": {
-    "out of window": 28,
-    "already ran": 3,
-    "duplicate url": 1
+    "already ran": 6,
+    "same story": 2
   }
 }
