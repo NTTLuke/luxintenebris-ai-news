@@ -4,102 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Nemotron-Labs-Diffusion: NVIDIA unifies autoregressive, diffusion and self-speculation decoding",
-      "source": "arXiv",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "SenseNova-Vision: All CV tasks reformulated as unified multimodal generation",
-      "source": "HuggingFace",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "RynnWorld-4D: Alibaba's 4D embodied world model for robotic manipulation",
-      "source": "HuggingFace",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "Flex-Forcing: NVIDIA unifies autoregressive and bidirectional video diffusion",
-      "source": "HuggingFace",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "Grok 4.5 rivals GPT-5.5, outperforms Opus 4.8 at 1/5 the price",
-      "source": "Theo - t3.gg",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "OpenAI expands GPT-5.6 release globally after Trump administration approval",
-      "source": "Bloomberg Technology",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "Bank of America reverses course, extends $520M credit line to OpenAI",
-      "source": "Bloomberg Technology",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "ZML/LLMD: Free inference server runs open-weight models across Nvidia, AMD, Apple and Intel chips",
-      "source": "TechCrunch",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "Rowboat: Open-source, local-first alternative to Claude Desktop with memory",
-      "source": "Hacker News",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "Halo: Open-source, tamper-evident runtime evidence for AI agents",
-      "source": "Hacker News",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "Framer launches AI Agents for design and publishing on the canvas",
-      "source": "Product Hunt",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "Universal-3.5 Pro: AssemblyAI's most accurate speech-to-text model",
-      "source": "Product Hunt",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "OpenAI audits SWE-Bench Pro, finds 30% of tasks broken, retracts recommendation",
-      "source": "OpenAI",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "Anthropic and AE Studio release GRAM: removable dual-use capabilities in AI models",
-      "source": "AnthropicAI",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "Prime Intellect raises $130M Series A at $1B valuation for enterprise AI agents",
-      "source": "TechCrunch",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
-      "text": "LingBot-Video: Open-weights 30B MoE video foundation model for embodied intelligence",
-      "source": "@_akhaliq",
-      "date": "2026-07-09",
-      "issue": 13
-    },
-    {
       "text": "LingBot-World 2.0 Infinity: Interactive world model with hour-long zero-drift generation",
       "source": "@_akhaliq",
       "date": "2026-07-09",
@@ -12002,6 +11906,102 @@
       "source": "Product Hunt",
       "date": "2026-09-20",
       "issue": 87
+    },
+    {
+      "text": "Toyota unveils ELEY humanoid and plans a 400,000-unit factory deployment",
+      "source": "SpecsLib",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Google open-sources AX, a cluster-scale orchestration framework for AI agents",
+      "source": "@stretchcloud",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Crusoe raises $3.9B to build AI factory infrastructure",
+      "source": "@KissonL",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "MIND raises $72M Series B for AI-native data-loss prevention",
+      "source": "@AiFinnews",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Alibaba releases Qwen Image 2.1, an open-weights image generation and editing model",
+      "source": "Qwen",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Bolt Forge: a coding agent that runs on open-source models",
+      "source": "Product Hunt",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Framer ships AI agents that work on the canvas",
+      "source": "Product Hunt",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Ruby UTCP: an open-source alternative to MCP for agent tool calling",
+      "source": "Product Hunt",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Basedash Models: define a data model once, query it like a table",
+      "source": "Product Hunt",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "BiBimba: a clipboard manager that reads screenshots",
+      "source": "Product Hunt",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Naive AI reaches a $1.42B valuation on top of open-weight models",
+      "source": "@shawnchauhan1",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Synapse Analytics raises $13M Series A for decisioning infrastructure",
+      "source": "@Techawk_NG",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Polymarket prices ~72% odds of the next Claude Opus by Sept 24",
+      "source": "@Polymarket",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "More than 300 robots demonstrate real-world skills at a Hangzhou exhibition",
+      "source": "Global Times",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "As humanoid robots scale, the industry still lacks a plan for recycling them",
+      "source": "The Robot Report",
+      "date": "2026-09-21",
+      "issue": 88
+    },
+    {
+      "text": "Sigabrt.dev: a lightweight cron job monitor with an SSH-based TUI",
+      "source": "Hacker News",
+      "date": "2026-09-21",
+      "issue": 88
     }
   ]
 }
