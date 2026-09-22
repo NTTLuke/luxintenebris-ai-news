@@ -1,135 +1,175 @@
 {
-  "issue_no": 88,
-  "date_iso": "2026-09-21",
-  "date_human": "September 21, 2026",
-  "notice": "A light news day — research and video beats were quiet, and several older papers had already run earlier this week.",
+  "issue_no": 89,
+  "date_iso": "2026-09-22",
+  "date_human": "September 22, 2026",
+  "notice": null,
   "lead": {
-    "kicker": "Physical AI",
-    "title": "Toyota unveils ELEY humanoid and plans a 400,000-unit factory deployment",
-    "summary": "Toyota revealed ELEY, a ~50 kg wheeled humanoid robot that learns tasks by observing veteran workers fitted with sensor jigs, mastering actions like fabric folding after roughly 1,500 repetitions. The automaker plans to invest about $6.4 billion a year to deploy 400,000 robots across its global production network beginning in 2028.",
-    "image": "images/lead_2026-09-21.jpg",
-    "source": "SpecsLib",
-    "date": "2026-09-20",
-    "url": "https://specslib.com/en/news/toyota-eley-humanoid-deployment/"
+    "kicker": "Math Milestone",
+    "title": "OpenAI model clears 100+ open math problems, shrugs off Navier-Stokes",
+    "summary": "An internal OpenAI model has resolved more than 100 long-standing open mathematics problems, including the Navier-Stokes Millennium Prize problem. OpenAI is standing up an independent advisory group hosted at the Institute for Advanced Study to guide how such results are reviewed and communicated.",
+    "source": "OpenAI",
+    "date": "2026-09-21",
+    "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+    "image": "images/lead_2026-09-22.jpg"
   },
   "top_stories": [
     {
-      "title": "Google open-sources AX, a cluster-scale orchestration framework for AI agents",
-      "summary": "Google released AX, a Kubernetes-style declarative orchestrator for agent workloads that targets billions of concurrent agents per cluster with sub-second suspend and resume.",
-      "source": "@stretchcloud",
-      "date": "2026-09-20",
-      "url": "https://x.com/stretchcloud/status/2101808631599808714",
-      "scout_source": "x"
+      "title": "xAI ships Grok 4.7, its most capable coding and knowledge model",
+      "summary": "Built on a larger base model with a longer RL run and an entirely new safeguard stack, Grok 4.7 hits CursorBench 4.0 frontier price-performance at $2/$6 per million tokens; Nous Portal ran it at half price for a week.",
+      "source": "xAI",
+      "date": "2026-09-21",
+      "url": "https://x.ai/news/grok-4-7"
     },
     {
-      "title": "Crusoe raises $3.9B to build AI factory infrastructure",
-      "summary": "Crusoe closed a $3.9B round to build AI data-center capacity, echoing continued heavy capital flow into energy-hungry training clusters.",
-      "source": "@KissonL",
-      "date": "2026-09-20",
-      "url": "https://x.com/KissonL/status/2101706701783404673",
-      "scout_source": "x"
+      "title": "Meta's Muse agent moves prompt-injection defenses down to the OS",
+      "summary": "Assuming the model will be tricked, Muse never hands it real credentials, runs tools in isolated Linux containers, and relies on an independent gatekeeper to verify outbound calls.",
+      "source": "DeepLearningAI",
+      "date": "2026-09-21",
+      "url": "https://x.com/DeepLearningAI/status/2102070383398502862"
     },
     {
-      "title": "MIND raises $72M Series B for AI-native data-loss prevention",
-      "summary": "MIND closed a $72M round (total $112M) led by Crosspoint for GenAI and agent-native data-loss prevention, reporting 17x revenue growth over the past year.",
-      "source": "@AiFinnews",
-      "date": "2026-09-20",
-      "url": "https://x.com/AiFinnews/status/2101592692241416318",
-      "scout_source": "x"
+      "title": "Huawei shelves global AI chip rollout as domestic demand outstrips supply",
+      "summary": "Overseas sales of its AI accelerators are paused while China's own demand for 15,488-chip Atlas clusters outstrips supply; optical networking scales clusters toward 120 EFLOPS to offset a per-chip gap versus Nvidia.",
+      "source": "Tom's Hardware",
+      "date": "2026-09-21",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/huawei-shelves-global-ai-chip-rollout-as-chinas-own-demand-outstrips-supply-15-488-chip-atlas-clusters-leverage-optical-networking-to-counter-nvidia-scales-to-120-eflops"
     },
     {
-      "title": "Alibaba releases Qwen Image 2.1, an open-weights image generation and editing model",
-      "summary": "Qwen Image 2.1 hit Hugging Face with improved instruction following and style-transfer editing, and topped the Hacker News front page with over 400 points.",
-      "source": "Qwen",
-      "date": "2026-09-20",
-      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
-      "scout_source": "tools"
+      "title": "OpenAI pushes global technical standards for the next phase of AI",
+      "summary": "The lab argues the US should lead an international effort on frontier-AI standards, including recursive self-improvement, with shared measurements and incident-reporting protocols to help pace the field.",
+      "source": "OpenAI",
+      "date": "2026-09-21",
+      "url": "https://openai.com/index/building-standards-next-phase-ai"
     }
   ],
   "sections": [
     {
-      "title": "Tools & Startups",
+      "title": "Research & Papers",
       "items": [
         {
-          "title": "Bolt Forge: a coding agent that runs on open-source models",
-          "image": "images/section_tools_2026-09-21.jpg",
-          "summary": "Bolt's new agent can run on open models and advertises 50x usage for AI-assisted app building and vibe coding.",
-          "source": "Product Hunt",
+          "title": "RRSI: Regularized recursive self-improvement of agent harnesses",
+          "summary": "Because an agent's harness (prompts, control flow, tooling, memory) drives capability, this work regularizes recursive self-improvement of the harness itself, curbing memorization of training tasks while preserving gains.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.24972",
           "date": "2026-09-21",
-          "url": "https://www.producthunt.com/products/bolt-new",
-          "scout_source": "tools"
+          "image": "images/section_research-papers_2026-09-22.jpg"
         },
         {
-          "title": "Framer ships AI agents that work on the canvas",
-          "summary": "Framer adds agents that design, write, and organize sites on the canvas, with branching for safe experimentation.",
-          "source": "Product Hunt",
-          "date": "2026-09-21",
-          "url": "https://www.producthunt.com/products/framer",
-          "scout_source": "tools"
+          "title": "ARM: Attention with routed-memory for learnable sparse control",
+          "summary": "A differentiable, fixed-size routed-memory KV cache learns which information to retain in long-context inference, beating selective eviction and pruning baselines by keeping core context in a learned sparse control path.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.24417",
+          "date": "2026-09-21"
         },
         {
-          "title": "Ruby UTCP: an open-source alternative to MCP for agent tool calling",
-          "summary": "Ruby UTCP is a secure, openly scalable tool-calling protocol designed as a drop-in alternative to MCP for AI agents.",
-          "source": "Product Hunt",
-          "date": "2026-09-21",
-          "url": "https://www.producthunt.com/products/utcp",
-          "scout_source": "tools"
+          "title": "KV-COBRA: KV cache compression via co-optimized bit-rank allocation",
+          "summary": "The real limiter at extreme compression rates is how the budget is spread across heads; co-optimizing per-head low-rank truncation and scalar quantization dominates uniform allocation, with the biggest gains at low bit-rates.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.24298",
+          "date": "2026-09-21"
         },
         {
-          "title": "Basedash Models: define a data model once, query it like a table",
-          "summary": "Basedash lets teams model data once and query it as a table for dashboards and internal tooling.",
-          "source": "Product Hunt",
-          "date": "2026-09-21",
-          "url": "https://www.producthunt.com/products/basedash",
-          "scout_source": "tools"
+          "title": "TTSE: a two-track online self-evolution framework",
+          "summary": "Agents evolve their own capabilities online in continuously interactive environments, treating environmental knowledge as living input rather than fixed data, and beat RL baselines that adapt to fixed task distributions.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.24289",
+          "date": "2026-09-21"
         },
         {
-          "title": "BiBimba: a clipboard manager that reads screenshots",
-          "summary": "BiBimba is a Mac clipboard history app that reads images, letting users search and reuse content captured in screenshots.",
-          "source": "Product Hunt",
-          "date": "2026-09-21",
-          "url": "https://www.producthunt.com/products/bibimba",
-          "scout_source": "tools"
+          "title": "Fathom-Vaidya: medical reasoning with rubric-based rewards",
+          "summary": "Training LLMs on rubric-based rewards spanning diagnostic and multi-turn clinical reasoning improves performance on HealthBench and MedXpert relative to standard reward schemes.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.24480",
+          "date": "2026-09-21"
         }
       ]
     },
     {
-      "title": "Money & Markets",
+      "title": "Hardware & Robotics",
       "items": [
         {
-          "title": "Naive AI reaches a $1.42B valuation on top of open-weight models",
-          "image": "images/section_money_2026-09-21.jpg",
-          "summary": "Tencent-backed Naive AI hit $1.42B by building on existing open weights rather than training large models from scratch.",
-          "source": "@shawnchauhan1",
-          "date": "2026-09-20",
-          "url": "https://x.com/shawnchauhan1/status/2101718056108216458",
-          "scout_source": "x"
+          "title": "Unitree unveils the Dex5-S, a human-sized robot hand from $6,500",
+          "summary": "The 22-DoF hand targets in-hand manipulation for humanoids at an accessible price point.",
+          "source": "Humanoids Daily",
+          "url": "https://www.humanoidsdaily.com/news/unitree-dex5-s-robot-hand",
+          "date": "2026-09-21",
+          "image": "images/section_hardware-robotics_2026-09-22.jpg"
         },
         {
-          "title": "Synapse Analytics raises $13M Series A for decisioning infrastructure",
-          "summary": "Egyptian AI firm Synapse Analytics raised a $13M round led by Partech for banks and fintechs across MENA and Latin America.",
-          "source": "@Techawk_NG",
-          "date": "2026-09-20",
-          "url": "https://x.com/Techawk_NG/status/2101744943911825669",
-          "scout_source": "x"
+          "title": "OpenAI projections point to a $278B cash burn through 2030",
+          "summary": "Reported internal projections show cumulative negative free cash flow of $278B from 2026-2030, with $856B earmarked for compute tab-outpaces, sustaining enormous datacenter hardware demand.",
+          "source": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-projections-point-to-a-massive-usd278-billion-cash-burn-through-2030-that-exceeds-the-national-budgets-of-indonesia-and-norway-usd856-billion-compute-tab-outpaces-tenfold-revenue-surge",
+          "date": "2026-09-21"
         },
         {
-          "title": "Polymarket prices ~72% odds of the next Claude Opus by Sept 24",
-          "summary": "Traders on Polymarket put roughly 72% odds on a new Claude Opus model launching on or before September 24.",
-          "source": "@Polymarket",
-          "date": "2026-09-20",
-          "url": "https://x.com/Polymarket/status/2101775874609545326",
-          "scout_source": "x"
+          "title": "China's humanoid robot boom faces a reality check",
+          "summary": "Analysts question whether humanoids can do useful factory, warehouse and service work reliably and at an economically sensible cost, without suggesting China is stepping back from the sector.",
+          "source": "Kursiv Media",
+          "url": "https://kz.kursiv.media/en/2026-09-21/engk-tank-chinas-humanoid-robot-boom-faces-reality-check/",
+          "date": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Kev: tiny decision models built on Qwen3.5",
+          "summary": "A Jev-like family of small decision models from Jared Palmer, drawing ~370 upvotes on Hacker News.",
+          "source": "GitHub",
+          "url": "https://github.com/jaredpalmer/kev",
+          "date": "2026-09-21",
+          "image": "images/section_tools-startups_2026-09-22.jpg"
+        },
+        {
+          "title": "Xiaomi's MiMo v2.6 tops Hacker News",
+          "summary": "Xiaomi's MiMo v2.6 model release hit the Hacker News front page with roughly 229 points.",
+          "source": "Xiaomi",
+          "url": "https://mimo.xiaomi.com/mimo-v2-6",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "Heretic: an open tool that strips restrictions from language models",
+          "summary": "The tool removes guardrails from language models, drawing roughly 217 points on Hacker News.",
+          "source": "Hacker News",
+          "url": "https://heretic-project.org/",
+          "date": "2026-09-21"
+        },
+        {
+          "title": "Python Workers is now generally available on Cloudflare",
+          "summary": "Cloudflare's Python Workers reached GA on its edge platform, ~155 points on Hacker News.",
+          "source": "Cloudflare",
+          "url": "https://blog.cloudflare.com/python-workers-ga/",
+          "date": "2026-09-21"
+        },
+        {
+          "title": "Foremerge catches intent conflicts between parallel coding agents",
+          "summary": "A Show HN tool that detects conflicting intent when multiple coding agents work the same repo in parallel.",
+          "source": "GitHub",
+          "url": "https://github.com/naw103/foremerge",
+          "date": "2026-09-22"
         }
       ]
     }
+  ],
+  "quick_hits": [
+    {"title": "Qwen3.5-397B-A17B open MoE pairs with NVFP4 KV cache in SGLang for ~1.78x more context per GPU", "source": "@lmsysorg", "url": "https://x.com/lmsysorg/status/2102076478183907705"},
+    {"title": "Corridor raises $25M seed led by Bain Capital Ventures for AI-enabled health benefits", "source": "Tech Startups", "url": "https://techstartups.com/2026/09/21/venture-capital-startup-funding-roundup-september-21-2026-bain-capital-ventures-dream-ventures-morgan-stanley-more/"},
+    {"title": "Metris Energy raises $5M seed for an AI-native energy asset data layer", "source": "Tech.eu", "url": "https://tech.eu/2026/09/21/metris-secures-5m-to-build-a-unified-data-layer-for-energy-assets/"},
+    {"title": "Answers by Context.dev returns structured output from research tasks", "source": "Product Hunt", "url": "https://www.producthunt.com/products/context-dev"},
+    {"title": "Epismo OS keeps your work when switching between AI tools", "source": "Product Hunt", "url": "https://www.producthunt.com/products/epismo"},
+    {"title": "Mycel drafts every future deliverable from one past artifact", "source": "Product Hunt", "url": "https://www.producthunt.com/products/mycel"},
+    {"title": "OpenAI Academy adds role-based learning paths with badges", "source": "OpenAI", "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths"},
+    {"title": "V7 Go's Context Graph gives agents institutional memory", "source": "OpenAI", "url": "https://openai.com/index/v7"},
+    {"title": "Higgsfield ships new video features in a day with GPT-6 Astra", "source": "OpenAI", "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"}
   ],
   "trending": {
     "github": {
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "items": [
         {"name": "alibaba/open-code-review", "url": "https://github.com/alibaba/open-code-review", "meta": "Go · 34.1k ★ · +3,290 today"},
         {"name": "cloudflare/security-audit-skill", "url": "https://github.com/cloudflare/security-audit-skill", "meta": "JavaScript · 9.8k ★ · +3,606 today"},
@@ -152,18 +192,18 @@
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "items": [
-        {"name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "meta": "Image-Text-to-Text · 305B"},
-        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "Image-Text-to-Text · 28B"},
-        {"name": "XHToken/Spark-X2.5-4B", "url": "https://huggingface.co/XHToken/Spark-X2.5-4B", "meta": "Text Generation · 4B"},
-        {"name": "Qwen/Qwen3.8-Flash-Next", "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next", "meta": "Image-Text-to-Text · 180B"},
-        {"name": "google/timesfm-3.0-pytorch", "url": "https://huggingface.co/google/timesfm-3.0-pytorch", "meta": "Time Series Forecasting · 0.3B"},
-        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "Image-Text-to-Text · 27B"},
-        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Image-to-Video"},
-        {"name": "zai-org/GLM-5.3-Flash", "url": "https://huggingface.co/zai-org/GLM-5.3-Flash", "meta": "Image-Text-to-Text · 321B"},
-        {"name": "zai-org/GLM-5.3", "url": "https://huggingface.co/zai-org/GLM-5.3", "meta": "Text Generation · 753B"},
-        {"name": "unsloth/Qwen3.8-27B-GGUF", "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF", "meta": "Image-Text-to-Text · 27B"}
+        {"name": "prism-ml/Ternary-Bonsai-2-27B-gguf", "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf", "meta": "27B GGUF quantized MoE"},
+        {"name": "convaiinnovations/laya", "url": "https://huggingface.co/convaiinnovations/laya", "meta": "multimodal model"},
+        {"name": "Qwen/Qwen-Image-2.1", "url": "https://huggingface.co/Qwen/Qwen-Image-2.1", "meta": "image generation model"},
+        {"name": "XingChen-AGI/Xing4.0-29B-A4B", "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B", "meta": "29B MoE, 4B active params"},
+        {"name": "deepseek-ai/DeepSeek-V4.1-Flash", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash", "meta": "lightweight LLM"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B dense LLM"},
+        {"name": "harshatheg/Qwen-2.5-1B-RLCD", "url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD", "meta": "1B small-model finetune"},
+        {"name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF", "meta": "quantized GGUF"},
+        {"name": "m-a-p/YuE2-3B", "url": "https://huggingface.co/m-a-p/YuE2-3B", "meta": "3B music generation"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "video generation model"}
       ]
     }
   },
@@ -172,7 +212,7 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "items": [
         {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
         {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
@@ -201,9 +241,10 @@
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "items": [
         {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "MiMo-V2.6-Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.6-flash-free"},
         {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
         {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
         {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
@@ -213,33 +254,9 @@
       ]
     }
   },
-  "quick_hits": [
-    {
-      "title": "More than 300 robots demonstrate real-world skills at a Hangzhou exhibition",
-      "source": "Global Times",
-      "date": "2026-09-20",
-      "url": "https://www.globaltimes.cn/page/202609/1370971.shtml",
-      "scout_source": "hardware"
-    },
-    {
-      "title": "As humanoid robots scale, the industry still lacks a plan for recycling them",
-      "source": "The Robot Report",
-      "date": "2026-09-20",
-      "url": "https://www.therobotreport.com/what-do-you-do-with-a-humanoid-robot-when-it-breaks-down/",
-      "scout_source": "hardware"
-    },
-    {
-      "title": "Sigabrt.dev: a lightweight cron job monitor with an SSH-based TUI",
-      "source": "Hacker News",
-      "date": "2026-09-20",
-      "url": "https://sigabrt.dev",
-      "scout_source": "tools"
-    }
-  ],
   "spiked": {
-    "low signal": 1,
-    "out of window": 5,
-    "same story": 1,
-    "already ran": 10
+    "already ran": 5,
+    "same story": 2,
+    "low signal": 2
   }
 }
