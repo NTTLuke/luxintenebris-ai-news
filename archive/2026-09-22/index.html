@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · September 22, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 89 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>September 22, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>81 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · powered by DwarfStar · DeepSeek V4 Flash 0731 (M3 Ultra)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Meta Quest and Quest 3S Discounts, Refurbished Deals, and Game Coupons for September 2026" data-b="Meta&#x27;s smart glasses and virtual reality headsets rank among its most recognizable hardware, and a September roundup from WIRED rounds up the current discounts across the Quest line and related gear.
+
+According to WIRED, Meta currently offers two headsets: the flagship Quest 3 and the more budget-friendly Quest 3S. The 3S is described as having a slightly lower-resolution screen and less sharp passthrough, and it is discounted by up to $50, taking prices as low as $250. Accessories are also marked down by 20%, with WIRED recommending the Elite Strap with battery for added comfort and improved battery life.
+
+Buyers who purchase a new Quest 3 or Quest 3S can also claim $30 in Quest Cash, credited once the device is activated and redeemable on games, apps and downloadable content. A Quest+ subscription, which WIRED says typically includes at least two free games each month, comes as a three-month bundle with the Quest 3, alongside Batman: Arkham Shadow.
+
+For used gear, refurbished Quest 3 units are listed at $380 — about $50 below new — complete with a one-year warranty, Touch Plus controllers, a charging cable and a power adapter. Refurbished Ray-Ban Meta glasses start at $239, with various Gen 1 styles including the Wayfarer, plus free shipping and a 30-day return window.
+
+WIRED also flags game coupons of 10% on Batman: Arkham Shadow, Metro Awakening and Beat Saber, as well as 50% off the first add-on purchase in Gorilla Tag and VAIL. Students and teachers with a .edu email can verify through the Education Purchase Program to get 10% off at checkout.
+
+*With prices, Quest Cash and refurbished units all stacking up, the cost of entering VR keeps dropping — the real question is whether the library can keep players coming back.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/meta-quest-promo-code/"><span class="tih">Meta Quest and Quest 3S Discounts, Refurbished Deals, and Game Coupons for September 2026</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Western Digital Offers Discounts for Recycling and More" data-b="Data storage company Western Digital, which has been operating for more than 50 years and is among the world&#x27;s largest hard disk drive manufacturers, also produces solid-state drives and flash memory devices. According to the source, the company offers a range of ways to save on its storage products, including a sustainability-focused recycling program.
+
+Under Western Digital&#x27;s Easy Recycle program, customers can safely dispose of NAS systems and internal or external hard drives and SSDs. The program accepts devices from any manufacturer, not just Western Digital products. As a token of appreciation, participants can receive a 15% off promo code that applies to a next purchase of $50 or more made online.
+
+Western Digital also offers a 10% discount on a first order for customers who sign up to receive company emails, with the code sent to their inbox. Additional savings come through education discounts, where students and teachers can get up to 15% off after verifying their status, and a 15% discount for seniors aged 55 or older, following identity verification for eligibility.
+
+The company provides free standard shipping on eligible orders of $50 or more for non-members, while members receive free standard shipping on all eligible orders in the lower 48. Weekly deals pages feature discounts on best-selling tech, and select products purchased online come with an extra year of limited warranty. Pro Rewards is a program aimed at business members and channel partners.
+
+*Recycling incentives are a genuinely nice touch, though these stacking codes are the kind of thing to use before they expire.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/western-digital-promo-code/"><span class="tih">Western Digital Offers Discounts for Recycling and More</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hundreds of flights delayed after fiber cable cut" data-b="A severed Verizon fiber cable used for air traffic control disrupted air travel across the US on Monday, according to The Verge. Construction crews in New Jersey accidentally cut the line, forcing cancellations and delays at airports across the Northeast, including ground stops at all three major New York City airports.
+
+According to ABC News, Federal Aviation Administration Administrator Bryan Bedford said a circuit failure led operators to discover the damaged cable. Verizon told CNBC it bore &quot;no responsibility for this incident,&quot; blaming &quot;construction contractors working in the area&quot; that &quot;dug up and cut our cable.&quot;
+
+Responsibility has been disputed. US Transportation Secretary Sean Duffy said an Amtrak crew accidentally cut the line, but the Associated Press reports that Amtrak blames a New Jersey Transit crew. An Amtrak spokesperson told NBC4 that &quot;this incident occurred on New Jersey Transit property and involved a New Jersey Transit contractor.&quot;
+
+By Monday evening, Duffy said &quot;the telecom lines have been repaired, and all airport operations in the Northeast are resuming,&quot; though he cautioned that clearing existing delays will take &quot;some time.&quot; FlightAware reported over 1,000 US flights canceled that day.
+
+The aviation system is only as resilient as the cable it sits on, and a single misdirected dig exposed how fragile that foundation really is.
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us"><span class="tih">Hundreds of flights delayed after fiber cable cut</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="The man behind Apple&#x27;s stores doubts AI will take over shopping" data-b="According to TechCrunch, Ron Johnson, the executive who spearheaded Apple&#x27;s retail operations, doesn&#x27;t share Silicon Valley&#x27;s enthusiasm for AI-driven shopping. While major tech firms pour billions into AI agents designed to find and buy products for consumers, Johnson argues the industry overestimates how much purchasing people will hand to machines, and believes physical stores will keep thriving.
+
+Johnson, 66, joined Apple in 2000 to build its retail business just as online shopping began to grow. In an interview, he said AI will improve the online experience, but he questions whether it will change how people shop. When asked if anyone would let an agent choose and buy a laptop without ever visiting a website or store, Johnson was blunt: &quot;Honestly, nobody&#x27;s going to do that.&quot;
+
+He contends buying a laptop is too personal to delegate fully, since buyers want to feel its weight and see the display. He told TechCrunch that AI may narrow choices, but agents will mainly make shoppers more informed before they walk into a store. &quot;AI will never be able to have you physically experience a product,&quot; he said.
+
+Johnson credits Apple&#x27;s people — non-commissioned employees focused on customer needs — as the chain&#x27;s real edge. He remains bullish on AI itself and believes Steve Jobs would have welcomed it without replacing human judgment. &quot;There&#x27;s no substitute for human intuition,&quot; Johnson said.
+
+*It&#x27;s a striking reminder that even as agents automate the transaction, the physical experience still holds real value for high-stakes purchases.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/"><span class="tih">The man behind Apple&#x27;s stores doubts AI will take over shopping</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="California tightens rules on AI data center energy and water use" data-b="California Governor Gavin Newsom has signed a package of seven bills aimed at preventing AI data centers from passing utility costs onto residents, according to The Verge. The legislation directs the California Public Utilities Commission to create a new rate classification for data centers and requires them to cover the costs of upgrading local power grids and water systems.
+
+Other measures in the package mandate that proposed data centers disclose their estimated water use to local governments, along with details on energy efficiency and drought planning. Facilities must also meet specific energy, water, and fuel consumption requirements before qualifying for a streamlined approval process. The signing follows an executive order Newsom issued last week to expedite development of an AI &quot;kill switch.&quot;
+
+Newsom said the Trump administration is moving toward deregulation while communities face rising electricity demand, grid constraints, water use, and pollution. He stated the new laws ensure Californians remain &quot;in the driver&#x27;s seat&quot; and that those profiting from data centers are not doing so at residents&#x27; expense, as reported by The Verge.
+
+*As data centers keep expanding, state-level accountability may increasingly shape the pace of AI infrastructure in the U.S.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"><span class="tih">California tightens rules on AI data center energy and water use</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta Quest and Quest 3S Discounts, Refurbished Deals, and Game Coupons for September 2026" data-b="Meta&#x27;s smart glasses and virtual reality headsets rank among its most recognizable hardware, and a September roundup from WIRED rounds up the current discounts across the Quest line and related gear.
+
+According to WIRED, Meta currently offers two headsets: the flagship Quest 3 and the more budget-friendly Quest 3S. The 3S is described as having a slightly lower-resolution screen and less sharp passthrough, and it is discounted by up to $50, taking prices as low as $250. Accessories are also marked down by 20%, with WIRED recommending the Elite Strap with battery for added comfort and improved battery life.
+
+Buyers who purchase a new Quest 3 or Quest 3S can also claim $30 in Quest Cash, credited once the device is activated and redeemable on games, apps and downloadable content. A Quest+ subscription, which WIRED says typically includes at least two free games each month, comes as a three-month bundle with the Quest 3, alongside Batman: Arkham Shadow.
+
+For used gear, refurbished Quest 3 units are listed at $380 — about $50 below new — complete with a one-year warranty, Touch Plus controllers, a charging cable and a power adapter. Refurbished Ray-Ban Meta glasses start at $239, with various Gen 1 styles including the Wayfarer, plus free shipping and a 30-day return window.
+
+WIRED also flags game coupons of 10% on Batman: Arkham Shadow, Metro Awakening and Beat Saber, as well as 50% off the first add-on purchase in Gorilla Tag and VAIL. Students and teachers with a .edu email can verify through the Education Purchase Program to get 10% off at checkout.
+
+*With prices, Quest Cash and refurbished units all stacking up, the cost of entering VR keeps dropping — the real question is whether the library can keep players coming back.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/meta-quest-promo-code/"><span class="tih">Meta Quest and Quest 3S Discounts, Refurbished Deals, and Game Coupons for September 2026</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Western Digital Offers Discounts for Recycling and More" data-b="Data storage company Western Digital, which has been operating for more than 50 years and is among the world&#x27;s largest hard disk drive manufacturers, also produces solid-state drives and flash memory devices. According to the source, the company offers a range of ways to save on its storage products, including a sustainability-focused recycling program.
+
+Under Western Digital&#x27;s Easy Recycle program, customers can safely dispose of NAS systems and internal or external hard drives and SSDs. The program accepts devices from any manufacturer, not just Western Digital products. As a token of appreciation, participants can receive a 15% off promo code that applies to a next purchase of $50 or more made online.
+
+Western Digital also offers a 10% discount on a first order for customers who sign up to receive company emails, with the code sent to their inbox. Additional savings come through education discounts, where students and teachers can get up to 15% off after verifying their status, and a 15% discount for seniors aged 55 or older, following identity verification for eligibility.
+
+The company provides free standard shipping on eligible orders of $50 or more for non-members, while members receive free standard shipping on all eligible orders in the lower 48. Weekly deals pages feature discounts on best-selling tech, and select products purchased online come with an extra year of limited warranty. Pro Rewards is a program aimed at business members and channel partners.
+
+*Recycling incentives are a genuinely nice touch, though these stacking codes are the kind of thing to use before they expire.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/western-digital-promo-code/"><span class="tih">Western Digital Offers Discounts for Recycling and More</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hundreds of flights delayed after fiber cable cut" data-b="A severed Verizon fiber cable used for air traffic control disrupted air travel across the US on Monday, according to The Verge. Construction crews in New Jersey accidentally cut the line, forcing cancellations and delays at airports across the Northeast, including ground stops at all three major New York City airports.
+
+According to ABC News, Federal Aviation Administration Administrator Bryan Bedford said a circuit failure led operators to discover the damaged cable. Verizon told CNBC it bore &quot;no responsibility for this incident,&quot; blaming &quot;construction contractors working in the area&quot; that &quot;dug up and cut our cable.&quot;
+
+Responsibility has been disputed. US Transportation Secretary Sean Duffy said an Amtrak crew accidentally cut the line, but the Associated Press reports that Amtrak blames a New Jersey Transit crew. An Amtrak spokesperson told NBC4 that &quot;this incident occurred on New Jersey Transit property and involved a New Jersey Transit contractor.&quot;
+
+By Monday evening, Duffy said &quot;the telecom lines have been repaired, and all airport operations in the Northeast are resuming,&quot; though he cautioned that clearing existing delays will take &quot;some time.&quot; FlightAware reported over 1,000 US flights canceled that day.
+
+The aviation system is only as resilient as the cable it sits on, and a single misdirected dig exposed how fragile that foundation really is.
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us"><span class="tih">Hundreds of flights delayed after fiber cable cut</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="The man behind Apple&#x27;s stores doubts AI will take over shopping" data-b="According to TechCrunch, Ron Johnson, the executive who spearheaded Apple&#x27;s retail operations, doesn&#x27;t share Silicon Valley&#x27;s enthusiasm for AI-driven shopping. While major tech firms pour billions into AI agents designed to find and buy products for consumers, Johnson argues the industry overestimates how much purchasing people will hand to machines, and believes physical stores will keep thriving.
+
+Johnson, 66, joined Apple in 2000 to build its retail business just as online shopping began to grow. In an interview, he said AI will improve the online experience, but he questions whether it will change how people shop. When asked if anyone would let an agent choose and buy a laptop without ever visiting a website or store, Johnson was blunt: &quot;Honestly, nobody&#x27;s going to do that.&quot;
+
+He contends buying a laptop is too personal to delegate fully, since buyers want to feel its weight and see the display. He told TechCrunch that AI may narrow choices, but agents will mainly make shoppers more informed before they walk into a store. &quot;AI will never be able to have you physically experience a product,&quot; he said.
+
+Johnson credits Apple&#x27;s people — non-commissioned employees focused on customer needs — as the chain&#x27;s real edge. He remains bullish on AI itself and believes Steve Jobs would have welcomed it without replacing human judgment. &quot;There&#x27;s no substitute for human intuition,&quot; Johnson said.
+
+*It&#x27;s a striking reminder that even as agents automate the transaction, the physical experience still holds real value for high-stakes purchases.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/"><span class="tih">The man behind Apple&#x27;s stores doubts AI will take over shopping</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="California tightens rules on AI data center energy and water use" data-b="California Governor Gavin Newsom has signed a package of seven bills aimed at preventing AI data centers from passing utility costs onto residents, according to The Verge. The legislation directs the California Public Utilities Commission to create a new rate classification for data centers and requires them to cover the costs of upgrading local power grids and water systems.
+
+Other measures in the package mandate that proposed data centers disclose their estimated water use to local governments, along with details on energy efficiency and drought planning. Facilities must also meet specific energy, water, and fuel consumption requirements before qualifying for a streamlined approval process. The signing follows an executive order Newsom issued last week to expedite development of an AI &quot;kill switch.&quot;
+
+Newsom said the Trump administration is moving toward deregulation while communities face rising electricity demand, grid constraints, water use, and pollution. He stated the new laws ensure Californians remain &quot;in the driver&#x27;s seat&quot; and that those profiting from data centers are not doing so at residents&#x27; expense, as reported by The Verge.
+
+*As data centers keep expanding, state-level accountability may increasingly shape the pace of AI infrastructure in the U.S.*
+
+*— Written by AI (deepseek-v4-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"><span class="tih">California tightens rules on AI data center energy and water use</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://openai.com/index/advisory-group-on-mathematics-and-ai" target="_blank" rel="noopener">
+    <img src="images/lead_2026-09-22.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Math Milestone</p>
+        <h1>OpenAI model clears 100+ open math problems, shrugs off Navier-Stokes</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">An internal OpenAI model has resolved more than 100 long-standing open mathematics problems, including the Navier-Stokes Millennium Prize problem. OpenAI is standing up an independent advisory group hosted at the Institute for Advanced Study to guide how such results are reviewed and communicated.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-09-21</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:14</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-09-22.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.ai/news/grok-4-7" target="_blank" rel="noopener">
+    <h3>xAI ships Grok 4.7, its most capable coding and knowledge model</h3>
+    <p>Built on a larger base model with a longer RL run and an entirely new safeguard stack, Grok 4.7 hits CursorBench 4.0 frontier price-performance at $2/$6 per million tokens; Nous Portal ran it at half price for a week.</p>
+    <p class="byline"><span class="src">xAI</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/DeepLearningAI/status/2102070383398502862" target="_blank" rel="noopener">
+    <h3>Meta's Muse agent moves prompt-injection defenses down to the OS</h3>
+    <p>Assuming the model will be tricked, Muse never hands it real credentials, runs tools in isolated Linux containers, and relies on an independent gatekeeper to verify outbound calls.</p>
+    <p class="byline"><span class="src">DeepLearningAI</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/huawei-shelves-global-ai-chip-rollout-as-chinas-own-demand-outstrips-supply-15-488-chip-atlas-clusters-leverage-optical-networking-to-counter-nvidia-scales-to-120-eflops" target="_blank" rel="noopener">
+    <h3>Huawei shelves global AI chip rollout as domestic demand outstrips supply</h3>
+    <p>Overseas sales of its AI accelerators are paused while China's own demand for 15,488-chip Atlas clusters outstrips supply; optical networking scales clusters toward 120 EFLOPS to offset a per-chip gap versus Nvidia.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-09-21</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://arxiv.org/abs/2609.24972" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-09-22.jpg" alt="" class="section-hero-img"><h4 class="hero-title">RRSI: Regularized recursive self-improvement of agent harnesses</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.24972" target="_blank" rel="noopener">
+    <h4>RRSI: Regularized recursive self-improvement of agent harnesses</h4>
+    <p>Because an agent's harness (prompts, control flow, tooling, memory) drives capability, this work regularizes recursive self-improvement of the harness itself, curbing memorization of training tasks while preserving gains.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.24417" target="_blank" rel="noopener">
+    <h4>ARM: Attention with routed-memory for learnable sparse control</h4>
+    <p>A differentiable, fixed-size routed-memory KV cache learns which information to retain in long-context inference, beating selective eviction and pruning baselines by keeping core context in a learned sparse control path.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.24298" target="_blank" rel="noopener">
+    <h4>KV-COBRA: KV cache compression via co-optimized bit-rank allocation</h4>
+    <p>The real limiter at extreme compression rates is how the budget is spread across heads; co-optimizing per-head low-rank truncation and scalar quantization dominates uniform allocation, with the biggest gains at low bit-rates.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.24289" target="_blank" rel="noopener">
+    <h4>TTSE: a two-track online self-evolution framework</h4>
+    <p>Agents evolve their own capabilities online in continuously interactive environments, treating environmental knowledge as living input rather than fixed data, and beat RL baselines that adapt to fixed task distributions.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2609.24480" target="_blank" rel="noopener">
+    <h4>Fathom-Vaidya: medical reasoning with rubric-based rewards</h4>
+    <p>Training LLMs on rubric-based rewards spanning diagnostic and multi-turn clinical reasoning improves performance on HealthBench and MedXpert relative to standard reward schemes.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-09-21</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <a href="https://www.humanoidsdaily.com/news/unitree-dex5-s-robot-hand" target="_blank" rel="noopener" class="section-hero"><img src="images/section_hardware-robotics_2026-09-22.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Unitree unveils the Dex5-S, a human-sized robot hand from $6,500</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.humanoidsdaily.com/news/unitree-dex5-s-robot-hand" target="_blank" rel="noopener">
+    <h4>Unitree unveils the Dex5-S, a human-sized robot hand from $6,500</h4>
+    <p>The 22-DoF hand targets in-hand manipulation for humanoids at an accessible price point.</p>
+    <p class="byline"><span class="src">Humanoids Daily</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-projections-point-to-a-massive-usd278-billion-cash-burn-through-2030-that-exceeds-the-national-budgets-of-indonesia-and-norway-usd856-billion-compute-tab-outpaces-tenfold-revenue-surge" target="_blank" rel="noopener">
+    <h4>OpenAI projections point to a $278B cash burn through 2030</h4>
+    <p>Reported internal projections show cumulative negative free cash flow of $278B from 2026-2030, with $856B earmarked for compute tab-outpaces, sustaining enormous datacenter hardware demand.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://kz.kursiv.media/en/2026-09-21/engk-tank-chinas-humanoid-robot-boom-faces-reality-check/" target="_blank" rel="noopener">
+    <h4>China's humanoid robot boom faces a reality check</h4>
+    <p>Analysts question whether humanoids can do useful factory, warehouse and service work reliably and at an economically sensible cost, without suggesting China is stepping back from the sector.</p>
+    <p class="byline"><span class="src">Kursiv Media</span> · 2026-09-21</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://github.com/jaredpalmer/kev" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-09-22.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Kev: tiny decision models built on Qwen3.5</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://github.com/jaredpalmer/kev" target="_blank" rel="noopener">
+    <h4>Kev: tiny decision models built on Qwen3.5</h4>
+    <p>A Jev-like family of small decision models from Jared Palmer, drawing ~370 upvotes on Hacker News.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://mimo.xiaomi.com/mimo-v2-6" target="_blank" rel="noopener">
+    <h4>Xiaomi's MiMo v2.6 tops Hacker News</h4>
+    <p>Xiaomi's MiMo v2.6 model release hit the Hacker News front page with roughly 229 points.</p>
+    <p class="byline"><span class="src">Xiaomi</span> · 2026-09-22</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://heretic-project.org/" target="_blank" rel="noopener">
+    <h4>Heretic: an open tool that strips restrictions from language models</h4>
+    <p>The tool removes guardrails from language models, drawing roughly 217 points on Hacker News.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://blog.cloudflare.com/python-workers-ga/" target="_blank" rel="noopener">
+    <h4>Python Workers is now generally available on Cloudflare</h4>
+    <p>Cloudflare's Python Workers reached GA on its edge platform, ~155 points on Hacker News.</p>
+    <p class="byline"><span class="src">Cloudflare</span> · 2026-09-21</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/naw103/foremerge" target="_blank" rel="noopener">
+    <h4>Foremerge catches intent conflicts between parallel coding agents</h4>
+    <p>A Show HN tool that detects conflicting intent when multiple coding agents work the same repo in parallel.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-09-22</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">alibaba/open-code-review</span>
+    <span class="t-meta">Go · 34.1k ★ · +3,290 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">cloudflare/security-audit-skill</span>
+    <span class="t-meta">JavaScript · 9.8k ★ · +3,606 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">addyosmani/agent-skills</span>
+    <span class="t-meta">JavaScript · 95.9k ★ · +680 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Tencent/BrowserSkill" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Tencent/BrowserSkill</span>
+    <span class="t-meta">TypeScript · 3.9k ★ · +1,350 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/alphaXiv/OpenResearch" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">alphaXiv/OpenResearch</span>
+    <span class="t-meta">Rust · 5.0k ★ · +940 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">anthropics/claude-code</span>
+    <span class="t-meta">TypeScript · 145.8k ★ · +538 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NationalSecurityAgency/ghidra</span>
+    <span class="t-meta">Java · 78.3k ★ · +912 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/knowledge-work-plugins" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">anthropics/knowledge-work-plugins</span>
+    <span class="t-meta">Python · 24.5k ★ · +287 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Tencent/WeKnora" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Tencent/WeKnora</span>
+    <span class="t-meta">Go · 26.1k ★ · +1,123 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/abue-ammar/tinycast" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">abue-ammar/tinycast</span>
+    <span class="t-meta">Swift · 6.0k ★ · +738 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cilium/cilium" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">cilium/cilium</span>
+    <span class="t-meta">Go · 25.3k ★ · +20 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">jamiepine/voicebox</span>
+    <span class="t-meta">TypeScript · 54.8k ★ · +665 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">affaan-m/ECC</span>
+    <span class="t-meta">JavaScript · 261.0k ★ · +1,173 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/roboflow/supervision" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">roboflow/supervision</span>
+    <span class="t-meta">Python · 50.8k ★ · +327 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JustVugg/colibri" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">JustVugg/colibri</span>
+    <span class="t-meta">C · 35.5k ★ · +872 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">prism-ml/Ternary-Bonsai-2-27B-gguf</span>
+    <span class="t-meta">27B GGUF quantized MoE</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/convaiinnovations/laya" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">convaiinnovations/laya</span>
+    <span class="t-meta">multimodal model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-Image-2.1" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Qwen/Qwen-Image-2.1</span>
+    <span class="t-meta">image generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">XingChen-AGI/Xing4.0-29B-A4B</span>
+    <span class="t-meta">29B MoE, 4B active params</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4.1-Flash</span>
+    <span class="t-meta">lightweight LLM</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B dense LLM</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">harshatheg/Qwen-2.5-1B-RLCD</span>
+    <span class="t-meta">1B small-model finetune</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF</span>
+    <span class="t-meta">quantized GGUF</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/m-a-p/YuE2-3B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">m-a-p/YuE2-3B</span>
+    <span class="t-meta">3B music generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">video generation model</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">28</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">inclusionAI: Ling 3.0 Flash Fin (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI: Ling 3.0 Flash Sante (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">inclusionAI: Ling 3.0 Flash VL (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nex-agi/nex-n2.5-mini:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Nex AGI: Nex-N2.5-Mini (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nex-agi/nex-n2.5-pro:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nex AGI: Nex-N2.5-Pro (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#17</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/qwen/qwen3.8-27b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#18</span>
+    <span class="t-name">Qwen: Qwen3.8 27B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#19</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#20</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Ling 3.0 Flash Fin Free</span>
+    <span class="t-meta">ling-3.0-flash-fin-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Muse Spark 1.3 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.3-contributor-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">09</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/lmsysorg/status/2102076478183907705" target="_blank" rel="noopener"><span class="qh-title">Qwen3.5-397B-A17B open MoE pairs with NVFP4 KV cache in SGLang for ~1.78x more context per GPU</span><span class="qh-src">@lmsysorg</span></a></li>
+
+    <li><a href="https://techstartups.com/2026/09/21/venture-capital-startup-funding-roundup-september-21-2026-bain-capital-ventures-dream-ventures-morgan-stanley-more/" target="_blank" rel="noopener"><span class="qh-title">Corridor raises $25M seed led by Bain Capital Ventures for AI-enabled health benefits</span><span class="qh-src">Tech Startups</span></a></li>
+
+    <li><a href="https://tech.eu/2026/09/21/metris-secures-5m-to-build-a-unified-data-layer-for-energy-assets/" target="_blank" rel="noopener"><span class="qh-title">Metris Energy raises $5M seed for an AI-native energy asset data layer</span><span class="qh-src">Tech.eu</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/context-dev" target="_blank" rel="noopener"><span class="qh-title">Answers by Context.dev returns structured output from research tasks</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/epismo" target="_blank" rel="noopener"><span class="qh-title">Epismo OS keeps your work when switching between AI tools</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/mycel" target="_blank" rel="noopener"><span class="qh-title">Mycel drafts every future deliverable from one past artifact</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://openai.com/index/expanding-openai-academy-with-new-learning-paths" target="_blank" rel="noopener"><span class="qh-title">OpenAI Academy adds role-based learning paths with badges</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://openai.com/index/v7" target="_blank" rel="noopener"><span class="qh-title">V7 Go's Context Graph gives agents institutional memory</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://openai.com/index/higgsfield-from-prompt-to-production-with-astra" target="_blank" rel="noopener"><span class="qh-title">Higgsfield ships new video features in a day with GPT-6 Astra</span><span class="qh-src">OpenAI</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-09-22 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

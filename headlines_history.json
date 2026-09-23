@@ -4,204 +4,6 @@
   },
   "headlines": [
     {
-      "text": "ConnectMachine 2.0 turns networking into an AI-managed searchable contact database",
-      "source": "Product Hunt",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "StoryChief Connect lets teams publish Claude-generated content directly to websites and social media",
-      "source": "Product Hunt",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "Sam Altman: GPT-5.6 Sol is the best model in the world on many benchmarks",
-      "source": "sama",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "Sam Altman discusses orbital space datacenters for AI compute using solar and radiative cooling",
-      "source": "sama",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "Simon Willison criticizes framing AI as 'employees' as short-sighted and disrespectful",
-      "source": "simonw",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "omarsar0 argues AI's original goal was augmentation, not replacement",
-      "source": "omarsar0",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "Video Friday: A World Cup for Robots from IEEE Spectrum weekly roundup",
-      "source": "IEEE Spectrum",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "SAM-MT achieves real-time multi-target video segmentation at 36+ FPS for 10 targets",
-      "source": "HuggingFace",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "ARDY brings autoregressive diffusion to real-time controllable 3D human motion generation",
-      "source": "HuggingFace",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "Mispher combines dictation, rewriting, translation, and AI agent in a single Mac app",
-      "source": "Product Hunt",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "Yasmine Works embeds an AI teammate in Slack for task completion without context switching",
-      "source": "Product Hunt",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "Shotgun is an open-source AI cofounder framework for solo builders from ideation to shipping",
-      "source": "Product Hunt",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "DrugGen 2 enhances drug discovery with disease-aware language model for molecular generation",
-      "source": "HuggingFace",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "Linear Attention Architectures study compares softmax vs recurrent variants at scale",
-      "source": "HuggingFace",
-      "date": "2026-07-12",
-      "issue": 17
-    },
-    {
-      "text": "ChatGPT Work \u2014 OpenAI rebrands Codex into long-running autonomous agent",
-      "source": "Ars Technica",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "Tesla's AI5 with 2nm-class node tapes out at Samsung Foundry \u2014 production starts soon, months after TSMC tape out",
-      "source": "Tom's Hardware",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "European AI defense startup Helsing raises $1.8B at $18B valuation",
-      "source": "TechStartups",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "Video generation startup PixVerse raises $439M, valuation soars past $2B",
-      "source": "TechCrunch",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "Video generation models are general-purpose vision learners (GenCeption)",
-      "source": "arXiv",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "Long-Horizon-Terminal-Bench: Testing limits of agents on long-horizon terminal tasks",
-      "source": "arXiv",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "GATS: Graph-augmented tree search with layered world models for agent planning",
-      "source": "arXiv",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "KronQ: LLM quantization via Kronecker-factored Hessian",
-      "source": "arXiv",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "RIPO: Riemannian isometric policy optimization for LLM reasoning",
-      "source": "arXiv",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "GPT 5.6 Ultra Mode burns through limits 15x faster with sub-agent spawning",
-      "source": "YouTube \u2014 Theo - t3.gg",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "OpenAI removes standalone Codex app, merges it into ChatGPT",
-      "source": "YouTube \u2014 Theo - t3.gg",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "Sqlsure \u2014 Deterministic semantic checks for AI-generated SQL",
-      "source": "Hacker News",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "Fudge MCP \u2014 Design reference engine for AI agents",
-      "source": "Product Hunt",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "FetchSandbox \u2014 API integration testing that remembers what breaks",
-      "source": "Product Hunt",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "AgentKey \u2014 One-stop live data marketplace for AI agents",
-      "source": "Product Hunt",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "Valarian raises $50M to build a sovereign AI sealed cloud",
-      "source": "TechStartups",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "Hermes agent maker Nous Research in talks for new funding at $1.5B valuation",
-      "source": "TechCrunch",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "Guthrie AI raises $4M to automate construction bidding with virtual bid assistants",
-      "source": "TechStartups",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
-      "text": "ProofCouncil \u2014 LLM Agent for solving open mathematical problems",
-      "source": "arXiv",
-      "date": "2026-07-14",
-      "issue": 18
-    },
-    {
       "text": "Soofi S 30B-A3B \u2014 Sovereign open-source foundation model for German and English",
       "source": "arXiv",
       "date": "2026-07-14",
@@ -12002,6 +11804,204 @@
       "source": "OpenAI",
       "date": "2026-09-22",
       "issue": 89
+    },
+    {
+      "text": "OpenAI launches GPT-6 Sol and Luna at half the price",
+      "source": "OpenAI / TechCrunch",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Alibaba unveils Zhenwu V900 AI accelerator, claims China's most powerful chip",
+      "source": "TrendForce",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Anthropic launches Claude Opus 5.5 at 40% lower cost",
+      "source": "MacRumors",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Snorkel AI triples valuation to $3.5B as AI training data demand booms",
+      "source": "TechCrunch",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Qualcomm launches Snapdragon 8 Elite Gen 6 on 2nm with on-device AI",
+      "source": "TechCrunch",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "SpeakerMem-R1: speaker-centered dual-track memory for multi-party dialogue",
+      "source": "arXiv",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "PACT: from credit assignment to critic alignment for RL in LLMs",
+      "source": "arXiv",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "You only need 2/3 of the chosen experts: dynamic expert pruning in fine-grained MoE LLMs",
+      "source": "arXiv",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Toolcompass: guiding tool trialing, not suppressing it, for LLM agents",
+      "source": "arXiv",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Ladders of Thought: self-evolving curriculum of simplified reasoning traces",
+      "source": "arXiv",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "The Sirens' Song: when proximal background context overshadows distant evidence",
+      "source": "arXiv",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Train where the quantized model goes: on-policy distillation for low-bit reasoning",
+      "source": "arXiv",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "NVIDIA Isaac ROS 5.0 brings agentic AI to open source robotics",
+      "source": "NVIDIA Blog",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "MIT's tiny flying robot gets 450% faster with new AI control system",
+      "source": "ScienceDaily",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "AMD joins $1 trillion club as fourth US chipmaker on AI demand surge",
+      "source": "Euronews",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Hello Robot shows Stretch 4 home-assistance robot at TechCrunch Disrupt 2026",
+      "source": "TechCrunch",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "JetBrains Air: agentic software development platform in public preview",
+      "source": "JetBrains",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Copperhead: open-source AI for PCB design from natural language",
+      "source": "Hacker News",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "DigitalOcean launches Managed Agents for production AI agent infrastructure",
+      "source": "omarsar0",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Tiledesk raises \u20ac1.1M for AI-powered business process automation",
+      "source": "StartupBusiness",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Gamindo secures \u20ac1.4M seed and launches AI training vertical",
+      "source": "StartupBusiness",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Verda raises $189M at $1B+ valuation for AI cloud infrastructure from Helsinki",
+      "source": "Tech.eu",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Simon Willison benchmarks Claude Opus 5.5, GPT-6 Sol, and GPT-6 Luna",
+      "source": "simonw",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "10,000 AI agents formalize Navier-Stokes equations in Lean theorem prover",
+      "source": "DeepLearningAI",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "JetBrains Air connects IDEs, governance, and multi-agent orchestration",
+      "source": "JetBrains",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "OpenAI commits to deep third-party assessor access for safety validation",
+      "source": "OpenAI",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "SpaceXAI uses Grok Bot to scale customer support, handling 175% more tickets",
+      "source": "xAI",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Spott raises \u20ac18.3M for AI-native recruitment agency OS",
+      "source": "EU-Startups",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "ReFigBench: harness design determines coding agent performance more than model choice",
+      "source": "omarsar0",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "CliffCompaction reduces long-horizon coding agent costs by 50%",
+      "source": "arXiv",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Flash-dLLM: IO-aware KV caching and parallel decoding for diffusion LLMs",
+      "source": "HuggingFace",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "Greedy decoding is not precision-invariant: BF16 vs FP16 divergence in LLM inference",
+      "source": "arXiv",
+      "date": "2026-09-23",
+      "issue": 90
+    },
+    {
+      "text": "LLM Attention Visualization \u2014 browser tool for understanding transformer attention",
+      "source": "Hacker News",
+      "date": "2026-09-23",
+      "issue": 90
     }
   ]
 }
