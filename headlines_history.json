@@ -4,210 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Hadrius raises $27M for AI-powered compliance infrastructure for financial services",
-      "source": "TechStartups",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Hinge founder raises $18M for AI dating service Overtone",
-      "source": "TechCrunch",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "OpenAI models cross design capability threshold, says Altman",
-      "source": "sama",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Anthropic commits $10M CAD to Canadian AI research, partnering with top research institutes",
-      "source": "Anthropic",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Spotify expands AI push with ChatGPT-like music assistant for Premium subscribers",
-      "source": "TechCrunch",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Google DeepMind: Build a financial analyst agent with one Gemini API call using Managed Agents and MCP",
-      "source": "_philschmid",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Comprehensive survey maps metacognition in LLMs \u2014 confidence, self-verification, and knowing when to stop",
-      "source": "omarsar0",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Playful AI in professional email: GPT-5 playful tone boosts emotional positivity and engagement",
-      "source": "arXiv",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Evidence-backed video QA: Fine-tuning on 160K-scale dataset yields +27.2 t-mean and +13.8 J&F gains",
-      "source": "HuggingFace",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "RL-trained agent that trains smaller models with RL for roughly $1.3k \u2014 proof of concept with nested RL loops",
-      "source": "Hacker News",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Interaction scaling: Grounding the third axis of test-time compute for LLM inference",
-      "source": "arXiv",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Agentcard launches debit cards for AI agents \u2014 single-use cards with fixed budgets safe for autonomous payments",
-      "source": "Product Hunt",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Claude Overlay \u2014 Open-source frameless chat window that captures your screen and runs Claude Code",
-      "source": "Product Hunt",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "China chip exports nearly doubled to $177B in H1 2026, driven by global AI demand and memory price surges",
-      "source": "Tom\u2019s Hardware",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Lexroom\u2019s algorithms bring AI-native infrastructure to traditional legal publishing in Italy",
-      "source": "AI4Business",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Google DeepMind empowers India\u2019s next generation with ATL Saathi AI assistant for educators",
-      "source": "Google DeepMind",
-      "date": "2026-07-15",
-      "issue": 18
-    },
-    {
-      "text": "Thinking Machines releases Inkling, a 975B MoE open-weights model with 1M token context",
-      "source": "LMSYS Org / Thinking Machines",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "NVIDIA introduces Jetson Thor edge AI modules with Blackwell architecture",
-      "source": "NVIDIA Blog",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "OpenAI launches GPT-Red, an automated red-teaming tool for prompt injections",
-      "source": "OpenAI",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Anthropic publishes research on agentic misalignment in autonomous agents",
-      "source": "AnthropicAI",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Emergent raises $130M Series C at $1.5B valuation, becomes a unicorn",
-      "source": "TechCrunch",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "E3 framework estimates task complexity, cutting AI agent costs by 85%",
-      "source": "arXiv",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Audio-native speech recognition with frozen 26B DiffusionGemma language model",
-      "source": "arXiv",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Resist and Update: CRC clamp makes LLMs incentive-compatible",
-      "source": "arXiv",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "SpectraReward repurposes MLLMs as zero-shot reward models for text-to-image generation",
-      "source": "Hugging Face",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Function-aware fill-in-the-middle training for coding agent foundation models",
-      "source": "Hugging Face",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Meta's custom Iris AI chip to begin manufacturing in September 2026",
-      "source": "HPCwire",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "LimX Dynamics updates COSA 0.5 agentic OS for humanoid robots",
-      "source": "LimX Dynamics",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Cadence launches AuraStack AI Super Agent for PCB and advanced packaging design",
-      "source": "Forbes",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Apple reportedly pursuing AI chip company acquisitions for server silicon",
-      "source": "MacDailyNews",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Samsung reportedly lands Anthropic as foundry customer for 2nm AI chips",
-      "source": "WCCFTech",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Ternlight ships a 7MB embedding model running entirely in-browser via WASM",
-      "source": "Hacker News",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Tiptap launches AI Toolkit for rich-text document editing by agents",
-      "source": "Product Hunt",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
-      "text": "Agently brings AI agent platform with 100+ connectors to market",
-      "source": "Product Hunt",
-      "date": "2026-07-16",
-      "issue": 18
-    },
-    {
       "text": "Lineation offers a unified security control plane for all AI agents",
       "source": "Hacker News",
       "date": "2026-07-16",
@@ -12002,6 +11798,210 @@
       "source": "TechCrunch",
       "date": "2026-09-24",
       "issue": 91
+    },
+    {
+      "text": "OpenEvidence raises $250M at $15B valuation for AI medical search engine",
+      "source": "Business Insider",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Island raises $400M at $6.4B valuation for AI-era enterprise browser security",
+      "source": "Tech Startups",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Alibaba unveils Zhenwu V900 AI chip to rival Huawei Ascend 960 in China's domestic market",
+      "source": "DigiTimes",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Hermes Agent gets fast free web search via Perplexity across all Nous Portal tiers",
+      "source": "NousResearch",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Feather Robotics launches $30K modular humanoid platform for developers",
+      "source": "TechCrunch",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "GRASP: a multi-stage LLM planning framework for strategic agents",
+      "source": "arXiv",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Rufus-Air: open 8-stage post-training recipe for 106B MoE models",
+      "source": "arXiv",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Beyond Average Safety: chance-constrained fine-tuning bounds per-prompt risk",
+      "source": "arXiv",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "SLCA-GRPO: fixing credit misattribution in tool-calling RL agents",
+      "source": "arXiv",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Forecast-Dojo: replayable benchmark for training and evaluating LLM forecasting agents",
+      "source": "arXiv",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "IterSynth: role-decoupled deep search agents outperform ReAct-style architectures",
+      "source": "HuggingFace",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "5 million industrial robots now operating in factories worldwide, IFR reports",
+      "source": "The Robot Report",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "O-ID raises $1.2M for modular humanoid robots targeting Japan's industrial sector",
+      "source": "Tech.eu",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Epson introduces AX6 collaborative robot with no-code programming",
+      "source": "The Robot Report",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Clueso MCP connects AI agents to a video creation engine",
+      "source": "Product Hunt",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Naise AI runs autonomous marketing campaigns from a single brief",
+      "source": "Product Hunt",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "WZRD turns documents into interactive AI experiences you can talk to",
+      "source": "Product Hunt",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Jev-browse delegates browser operations to lighter sub-tasks at roughly 1/3 cost",
+      "source": "Hacker News",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Precision Neuroscience raises $250M for minimally invasive brain-computer interfaces",
+      "source": "Tech Startups",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Basecamp Research raises $140M Series C for AI drug discovery on proprietary biological data",
+      "source": "Tech Startups",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "BigHat Biosciences raises $75M for AI-driven protein design and antibody-drug conjugates",
+      "source": "Tech Startups",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "PicoJool raises $27.5M to attack the optical interconnect bottleneck inside AI clusters",
+      "source": "Tech Startups",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Harness-Zero: distilling agent scaffolding into the model improves task success from 23.3% to 44.3%",
+      "source": "omarsar0",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Meta AI memory agents fight context rot, boosting Claude Sonnet 4.5 from 37.6% to 45.9%",
+      "source": "DeepLearningAI",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Pareto 26.9 model router ties GPT-6 Astra at roughly 1/3 the cost per successful task",
+      "source": "omarsar0",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Space Bunny: 1M-context vision model turns wireframes into working apps via self-verification loops",
+      "source": "omarsar0",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Pruna-Qwen-Image-2.1: few-step LoRA adapters deliver 6.3x faster image generation in 5-8 steps",
+      "source": "@_akhaliq",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Cheap production agent evaluation at 38.5% of benchmark cost with <1 point error margin",
+      "source": "omarsar0",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Agora-2: multi-agent world simulator supports up to 20 humans and agents in one real-time world",
+      "source": "omarsar0",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Jev and CLM: fast System One models for agent harness decisions and long-horizon verification",
+      "source": "omarsar0",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "macrun.dev offers dedicated macOS instances to keep Claude Code or Codex running 24/7",
+      "source": "Hacker News",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Public Browser MCP: open-source Chrome automation with 48% speed improvement over AgentBrowser",
+      "source": "Hacker News",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Trebellar raises $18M to bring vertical AI into corporate real estate management",
+      "source": "Tech Startups",
+      "date": "2026-09-25",
+      "issue": 92
+    },
+    {
+      "text": "Axya raises C$17M to automate industrial procurement with AI",
+      "source": "Tech Startups",
+      "date": "2026-09-25",
+      "issue": 92
     }
   ]
 }
