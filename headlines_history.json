@@ -4,192 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Tencent EdgeOne lets developers deploy AI agents at the edge",
-      "source": "Product Hunt",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Nitrosend builds email infrastructure for AI agents",
-      "source": "Product Hunt",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Ratel gives agents unlimited tools without context bloat",
-      "source": "Hacker News",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Albato connects AI-driven workflows across 1,000+ apps",
-      "source": "Product Hunt",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Codema launches two technical committees for continuous AI assessment standards",
-      "source": "AI4Business",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Anthropic research paper reveals key findings on AI coding assistance",
-      "source": "YouTube \u2014 Two Minute Papers",
-      "date": "2026-07-17",
-      "issue": 20
-    },
-    {
-      "text": "GPT-5.6 Sol outperforms in Claude Code over Anthropic's own Codex",
-      "source": "YouTube \u2014 Theo - t3.gg",
-      "date": "2026-07-17",
-      "issue": 20
-    },
-    {
-      "text": "Moonshot AI Releases Kimi K3: World's First Open 3T-Class Frontier Model",
-      "source": "Kimi (Moonshot AI)",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Fireworks Raises $1.5B Series D at $17.5B Valuation for Specialized AI Infrastructure",
-      "source": "TechStartups",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Elorian AI Raises $55M Seed at $300M Valuation for Visual Frontier Models",
-      "source": "TechCrunch",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "LM Studio Launches Bionic: An AI Agent Purpose-Built for Open Models",
-      "source": "LM Studio",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "NVIDIA and Japan Bring Full-Stack AI and Robotics to Every Industry",
-      "source": "NVIDIA Blog",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Ring-Zero Scales Zero RL to a Trillion Parameters for Emergent Reasoning",
-      "source": "arXiv",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "DeepLoop: Scaling Depth for Looped Transformers Without Adding Parameters",
-      "source": "arXiv",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Byte-Exact KV-Cache Grafting Turns a Frozen Small Model Into a Verified-Knowledge Flywheel",
-      "source": "arXiv",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Discrete Diffusion Models: A Unified Framework from Tokenization to Generation",
-      "source": "arXiv",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Length Penalties Make Chain-of-Thought Less Monitorable",
-      "source": "arXiv",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Forall: Spec-Driven AI Coding With Formal Verification",
-      "source": "GitHub",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "ReasonGate: Explainable Gate That Blocks LLM Prompt Injection",
-      "source": "GitHub",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Libretto Launches Debug Agents That Automatically Fix Failing Playwright Scripts",
-      "source": "Libretto",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "UIUC Open-Sources AI Teaching Assistant Platform",
-      "source": "GitHub",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Sentinel: Open-Source QA Agent That Reads Your Code Before It Clicks",
-      "source": "SimbaStack",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Fora Raises $60M Series D at $1B Valuation for AI-Augmented Travel Platform",
-      "source": "TechStartups",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Microagi Raises $55M Seed \u2014 Largest German Seed Round \u2014 for Industrial Robotics Data Layer",
-      "source": "TechStartups",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Sable Raises $45M for AI Employee and Customer-Facing Agent Platform",
-      "source": "TechStartups",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Whale Raises $40M Series C3 Extension for Enterprise AI Operating System",
-      "source": "TechStartups",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Bunkerhill Health Raises $25M Series B for AI Agents Inside Hospital Operations",
-      "source": "TechStartups",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Seltz Raises $12.5M Seed to Teach AI Agents How to Browse the Web",
-      "source": "StartupItalia",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Nous: Give GTM Agents One Context Graph Across Your Tools",
-      "source": "GitHub",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "Scribe: CLI That Builds AI Agent Memory From Your Repos and Sessions",
-      "source": "Scribe",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
-      "text": "AI Law Tracker: One Audited API for US, EU, and Global AI Regulation",
-      "source": "AI Law Tracker",
-      "date": "2026-07-17",
-      "issue": 19
-    },
-    {
       "text": "HeimWall: Catch Secrets Before You Paste Them Into Claude or Cursor",
       "source": "HeimWall",
       "date": "2026-07-17",
@@ -12002,6 +11816,192 @@
       "source": "omarsar0",
       "date": "2026-09-26",
       "issue": 93
+    },
+    {
+      "text": "Claude Opus 5.5 launches with 40% efficiency gain",
+      "source": "@Prathkum",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Meta Muse AI app sees explosive early growth, gives users free cloud computers",
+      "source": "@Speculator_io",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "OpenAI agent audit discovers rogue behavior during training evaluations",
+      "source": "@MartiniGuyYT",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Claude computes 9-loop scattering amplitude, beating prior human record",
+      "source": "@marcopapa99",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Google will launch an AI data center satellite into orbit on October 1",
+      "source": "Mashable",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Qwen-Image-2.1-viggle-turbo v0.2 delivers 5x faster image generation",
+      "source": "@_akhaliq",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Pruna-Qwen-Image-2.1 LoRA adapters achieve 6.3x speedup",
+      "source": "@_akhaliq",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "tev1-4b-experimental \u2014 finetune on Qwen3.5-4B released by Together AI",
+      "source": "@togethercompute",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "ProgramDistill turns interactive web apps into verifiable SWE tasks",
+      "source": "@_akhaliq",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Musk: Humanoid robots could outpace humans in reaction speed within 10 years",
+      "source": "Bastille Post",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Backlash over data centers tests Europe's AI ambitions",
+      "source": "DW",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Nvidia RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
+      "source": "Tom's Hardware",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Tesla robotaxi and cybercab fleet in Texas surpasses 500 registrations",
+      "source": "Tesla Oracle",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Alibaba unveils agentic computer and AI wearables at Apsara Conference",
+      "source": "Alibaba Cloud",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "PixVerse R2 \u2014 real-time world model for interactive video generation",
+      "source": "Product Hunt",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Rig \u2014 a small OS and Rust library for AI agents",
+      "source": "Hacker News",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Grabbit \u2014 agent-first screenshot API with MCP support",
+      "source": "Hacker News",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Blender Copilot \u2014 MCP bridge for AI-controlled 3D modeling",
+      "source": "Hacker News",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "ProofForge \u2014 AI agents whose proofs compile in Lean",
+      "source": "Hacker News",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "xAI Grok 4.7 released alongside Grok Bot agent work",
+      "source": "@AlternateJones",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "DeepSeek hits $1B annual revenue, undercuts on price \u2014 US policy concerns rise",
+      "source": "@AiDevCraft",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Broadcom launches AgentMinder for runtime governance of AI agents at scale",
+      "source": "Broadcom via X",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Silk raises $45M, SnorkelAI triples to $3.5B, Baselayer raises $35M in AI infrastructure wave",
+      "source": "@jonattias",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Global AI regulation calls intensify after reported hacks and incidents",
+      "source": "@tom_mende",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Supermemory.ai open-sources Company Brain \u2014 Slack-based AI teammate",
+      "source": "Supermemory.ai via X",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Higgsfield AI integrates Claude Opus 5.5 for motion design pipeline",
+      "source": "@higgsfield_ai",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "GPT-OSS 20B optimization lifts MMLU from 62.51 to 69.69 on single GPU",
+      "source": "@ChrisRoyseAI1",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Dograh \u2014 open-source self-hostable voice agent platform",
+      "source": "Product Hunt",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Framer launches AI Agents for design and publishing on canvas",
+      "source": "Product Hunt",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "Gemini 3.8 Flash TTS \u2014 Google's expressive text-to-speech models",
+      "source": "NerdsTool",
+      "date": "2026-09-27",
+      "issue": 94
+    },
+    {
+      "text": "From Viterbo to YC: Joseph Perrotta raises \u20ac1.7M for AI energy workers at Invertix",
+      "source": "Italian Tech",
+      "date": "2026-09-27",
+      "issue": 94
     }
   ]
 }

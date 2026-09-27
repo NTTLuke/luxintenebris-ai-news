@@ -2,6 +2,7 @@
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
 
+- [September 27, 2026 — No. 94](2026-09-27.md)
 - [September 26, 2026 — No. 93](2026-09-26.md)
 - [September 25, 2026 — No. 92](2026-09-25.md)
 - [September 24, 2026 — No. 91](2026-09-24.md)
