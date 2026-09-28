@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 27 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · September 27, 2026 — No. 94</title>
+      <title>Lux in Tenebris — AI dispatches · September 28, 2026 — No. 95</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;China&amp;#x27;s Ministry of Industry and Information Technology signaled it may let Alibaba and ByteDance purchase Nvidia&amp;#x27;s RTX Pro 5500 Blackwell workstation GPU (84 GB GDDR7, 21,760 CUDA cores, &amp;gt;$6,000). ByteDance could seek about 1 million chips, with shipments expected late December. The GPU sits outside the data-center accelerator category targeted by US export controls since October 2022.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://pandax1.com"&gt;Panda launches the world&amp;#x27;s first personal AI computer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/MiniMax_AI/status/2104256406786547800"&gt;MiniMax launches M3.1-Flash-Preview with 5-tier reasoning slider&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2104295014117589053"&gt;Jev catches alignment failures at a fraction of LLM judge cost&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2104232632058085593"&gt;LeCun warns domestic robot demos repeat self-driving hype cycle&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · September 27, 2026 — No. 94</title>
+      <link>https://luxintenebris.news/archive/2026-09-27/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-27/</guid>
       <pubDate>Sun, 27 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic released Claude Opus 5.5 around September 22, delivering roughly 40% lower cost, faster output, and reduced token usage. Users report strong performance on complex real-world tasks including processing 18,000+ transaction ledgers and scientific computation. Rate limits were raised and promo credits offered at launch.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Speculator_io/status/2103974641526018526"&gt;Meta Muse AI app sees explosive early growth, gives users free cloud computers&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/MartiniGuyYT/status/2103973891185975588"&gt;OpenAI agent audit discovers rogue behavior during training evaluations&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/marcopapa99/status/2103779665911697779"&gt;Claude computes 9-loop scattering amplitude, beating prior human record&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://mashable.com/tech/google-sending-ai-data-center-satellite-to-space"&gt;Google will launch an AI data center satellite into orbit on October 1&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-10/</guid>
       <pubDate>Mon, 10 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;In a red-team exercise, OpenAI&amp;#x27;s models identified and chained two separate zero-days in JFrog&amp;#x27;s Artifactory to break out of a sandbox — going beyond simple misconfiguration and acting as an automated, high-speed vulnerability research pipeline.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/"&gt;Situational Awareness invests $400M in chip startup Source Foundry&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://aiinasia.com/greater-china/moore-threads-hong-kong-listing-h1-revenue-china-gpu-2026"&gt;China GPU maker Moore Threads plans Hong Kong listing after H1 revenue jumps 147%&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 9, 2026 — No. 45</title>
-      <link>https://luxintenebris.news/archive/2026-08-09/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-09/</guid>
-      <pubDate>Sun, 09 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Jeff Dean, along with Sanjay Ghemawat, Quoc Le, and Oriol Vinyals, departed Google to launch Discovery Loop (DiscoLoopAI), a startup focused on automating scientific discovery. Backed by Radical Ventures, Khosla Ventures, and Alphabet/Google itself.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/JulianGoldieSEO/status/2086229819411632507"&gt;Prime Agent — open-source self-improving coding agent released under MIT license&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.producthunt.com/products/coldtea"&gt;Coldtea.ai tops Product Hunt with self-driving software delivery platform&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2086042924316242287"&gt;Yann LeCun: AGI requires additional conceptual breakthroughs beyond LLM scaling&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
