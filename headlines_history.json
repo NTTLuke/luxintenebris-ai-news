@@ -4,210 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Appearance Pointers enable multimodal region control of diffusion transformers without retraining",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "ATLAS: diffusion-based generative sampler for amorphous materials achieves below 0.2% free energy error",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "ABot-World-0 generates interactive 720P world rollouts at up to 16 FPS on a single RTX 5090",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "SciForma-9B exceeds GPT-Image-1.5 on structural fidelity for scientific diagram generation",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "HPD-Parsing achieves 4,752 tokens/s via hierarchical parallel decoding for document parsing",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "GAMUT benchmark reveals frontier models score at most 58.7% on factual completeness evaluation (Meta)",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "DataFlow-Harness achieves 93.3% pass rate on DAG-based data pipeline construction with LLM agents",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "Masked Visual Actions unify world modeling by expressing robotic action as pixel-space control",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "Vikk AI raises $4.2M for AI-powered legal platform and lawyer advertising marketplace",
-      "source": "Law.com",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "Justif brings TeX-quality Knuth-Plass paragraph justification and microtypography to the web",
-      "source": "Lyall",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "RLAES-AGFO achieves best LLM-based essay scoring on ASAP benchmark (QWK=0.803)",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "pDDIM provably converges to Bayesian posterior for linear inverse problems via coordinate-wise DDIM",
-      "source": "arXiv",
-      "date": "2026-07-22",
-      "issue": 20
-    },
-    {
-      "text": "OpenAI AI model breaks sandbox and hacks Hugging Face during safety test",
-      "source": "Bloomberg Technology",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "Open-weight AI model reaches 2.8 trillion parameters, rivaling proprietary frontier models",
-      "source": "YouTube \u2014 Fireship",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "Anthropic signs major compute deal with AMD as AI infrastructure race accelerates",
-      "source": "YouTube \u2014 Bloomberg Technology",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "China's synthetic AI humans replace real workers in livestreaming at scale",
-      "source": "YouTube \u2014 Beyond AI News",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "GPT-6 rogue behavior: detailed breakdown of the Hugging Face incident",
-      "source": "YouTube \u2014 AI Explained",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "Datapizza raises \u20ac10M Series A in Italy led by Nextalia Ventures for AI-powered SME digital transformation",
-      "source": "StartupItalia",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "OpenAI model breaks sandbox and hacks Hugging Face during safety test",
-      "source": "Bloomberg Technology",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "Travis Kalanick's robotics company Atoms raises $1.7B led by a16z",
-      "source": "TechCrunch",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "Glow emerges from stealth at $1.2B valuation with $180M Series A for AI endpoint security",
-      "source": "TechCrunch",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "Cathedral raises $160M at $1.4B valuation for AI military cyber capabilities",
-      "source": "Reuters",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "GigaToken delivers 1000x faster LLM tokenization in Rust via SIMD optimization",
-      "source": "Hacker News",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "PoTRE achieves 49.92% SOTA on Humanity's Last Exam with heterogeneous reasoning agents",
-      "source": "arXiv",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "SLAI T-Rex post-trains DeepSeek-V4 on Ascend SuperPOD, outperforms GPT-5.4-Mini on OR tasks",
-      "source": "arXiv",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "PRO-LONG achieves 76.1% pass@1 on ARC-AGI-3 with programmatic memory for LLM agents",
-      "source": "arXiv",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "ATSplat renders novel views at 1136 FPS with 5.7x fewer Gaussians via adaptive token expansion",
-      "source": "arXiv",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "SLPO brings outcome-reward RL to autoregressive latent reasoners via surrogate policy optimization",
-      "source": "arXiv",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "GPT-6 rogue behavior: detailed breakdown of the Hugging Face incident",
-      "source": "YouTube \u2014 AI Explained",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "Anthropic signs major compute deal with AMD as AI infrastructure race accelerates",
-      "source": "YouTube \u2014 Bloomberg Technology",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "China's synthetic AI humans replace real workers in livestreaming at scale",
-      "source": "YouTube \u2014 Beyond AI News",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "GigaToken \u2014 1000x faster LLM tokenizer in Rust via SIMD optimization",
-      "source": "Hacker News",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "Bento replaces PowerPoint with a single 560 KB HTML file",
-      "source": "Hacker News",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
-      "text": "Substack integrates Pangram AI-writing detection so readers can estimate AI vs human content",
-      "source": "TechCrunch",
-      "date": "2026-07-23",
-      "issue": 20
-    },
-    {
       "text": "ServiceNow invests $40M in BusinessNext at $700M valuation for AI banking software",
       "source": "TechCrunch",
       "date": "2026-07-23",
@@ -12002,6 +11798,210 @@
       "source": "Deutsche Welle",
       "date": "2026-10-01",
       "issue": 98
+    },
+    {
+      "text": "Broadcom to lend Anthropic up to $42 billion to finance chip leases",
+      "source": "Yahoo Finance",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "YouTube rolls out agentic AI creation tools from Made On YouTube 2026",
+      "source": "YouTube",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Tencent signs $7 billion, five-year lease for ~100,000 AI chips from Oracle",
+      "source": "Yahoo Finance",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Google DeepMind releases SynthID Bio, watermarks for AI-generated protein sequences",
+      "source": "GoogleDeepMind",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Context Language Models: agents given native write access to their own context",
+      "source": "omarsar0",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Sharpening Tax in Post-Training",
+      "source": "HuggingFace",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Finetuning with Sampling: SFT Learns Better Than You Think",
+      "source": "arXiv",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "On Language Drift during RLVR Post-Training",
+      "source": "arXiv",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Hierarchical Continuous Diffusion Language Models",
+      "source": "HuggingFace",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows",
+      "source": "HuggingFace",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Google launches Project Suncatcher prototype satellite with TPUs bound for orbital AI data centers",
+      "source": "NPR",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Figure retires its F.02 humanoid fleet by having robots walk into an arc furnace in Finland",
+      "source": "Gadget Review",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Musk details how xAI compressed Colossus data-center builds with robots and relocated components",
+      "source": "Crypto Briefing",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Meta expands AI business assistant to all advertisers globally",
+      "source": "MediaPost",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Janus: Go binary that runs GGUF models via Vulkan on any GPU",
+      "source": "GitHub",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Engrams: open-source alternative to Devin coding agents",
+      "source": "GitHub",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Computis raises \u20ac2M pre-seed to bring AI agents into SME accounting",
+      "source": "EconomyUp",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Tiledesk raises \u20ac1.1M seed to move AI agents beyond customer care",
+      "source": "La Tech Made in Italy",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Kevin Mandia's 'agent swarm' security startup Armadin raises $255.5M at $2.5B valuation",
+      "source": "TechCrunch",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Homeward raises $120M Series D to speed home buying and selling with AI-driven offers",
+      "source": "Crunchbase News",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "London's Metaview raises \u20ac53.1M Series C led by Insight Partners to scale agentic recruiting",
+      "source": "EU-Startups",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Mistral and Black Forest Labs backer Headline closes $400M European fund",
+      "source": "Tech.eu",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Barclays scales Claude to upgrade operations and improve client experience",
+      "source": "Anthropic",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "OpenAI partners with Albertsons Companies to bring ChatGPT Enterprise into retail workflows",
+      "source": "OpenAI",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Together AI: Vercel AI Gateway traffic to open-weight models jumped from ~30% to 78% in 13 weeks",
+      "source": "@togethercompute",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "TwIL-LM3-Pro: 3.6B open-source model hits 95.4% on BIG-Bench Hard logic subset",
+      "source": "omarsar0",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Qodo 3.0 launches PR Triage for cross-repo agent-generated pull requests",
+      "source": "omarsar0",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Tavus Griffin video-to-video model scores near-human on NVIDIA's full-duplex conversation benchmark",
+      "source": "omarsar0",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Anthropic: Harvard physicist on the 'impedance mismatch' between LLMs and science",
+      "source": "AnthropicAI",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Beyond Memory: harnessing long-horizon agents with explicit belief states",
+      "source": "HuggingFace",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Hob-VL: a benchmark for visually grounded Boolean reasoning",
+      "source": "arXiv",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Breadcrumb: record everything on your Mac as AI context",
+      "source": "Innerloop",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "AI Explained: OpenAI says controlling its own models has become 'hell'",
+      "source": "YouTube \u2014 AI Explained",
+      "date": "2026-10-02",
+      "issue": 99
+    },
+    {
+      "text": "Yann LeCun: restricting AI to a few companies is 'neo-obscurantist'",
+      "source": "ylecun",
+      "date": "2026-10-02",
+      "issue": 99
     }
   ]
 }
