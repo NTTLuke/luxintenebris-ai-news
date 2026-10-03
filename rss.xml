@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 02 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 2, 2026 — No. 99</title>
+      <title>Lux in Tenebris — AI dispatches · October 3, 2026 — No. 100</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sat, 03 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Cogentic, a multi-agent system from Google Research, started from bare problem statements with no expert hints and produced five new verified results on open problems in online learning, auction theory and mechanism design. The system runs orchestrator, prover, summarizer, adversarial verifier, auditor and process-advisor agents over iterative rounds — a notable step for automated proof discovery in theory, not just applied ML.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2106147184693620924"&gt;Sam Altman confirms deep OpenAI-Cerebras partnership focused on inference speed&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link"&gt;Meta open sources SDK for building your own Muse AI gadgets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/huggingface/status/2106034221005312448"&gt;Hugging Face opens multi-harness RL for coding agents: 7 trained models, TRL trainer, proxy — all public&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/"&gt;NVIDIA introduces 64GB DGX Spark configuration for local AI developers&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 2, 2026 — No. 99</title>
+      <link>https://luxintenebris.news/archive/2026-10-02/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-02/</guid>
       <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Reporting surfaced in Anthropic&amp;#x27;s IPO prospectus says Broadcom has agreed to lend Anthropic up to $42 billion to finance its infrastructure spending, making the AI lab Broadcom&amp;#x27;s largest chip-design customer. The arrangement — layered on top of a reported $125.2 billion five-year TPU lease, with convertible financing covering about a third of it — sharpens concerns about circular financing among AI compute suppliers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.youtube/madeonyoutube/"&gt;YouTube rolls out agentic AI creation tools from Made On YouTube 2026&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://finance.yahoo.com/technology/ai/articles/tencent-leases-100-000-chips-035844927.html"&gt;Tencent signs $7 billion, five-year lease for ~100,000 AI chips from Oracle&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2105624661912392028"&gt;Google DeepMind releases SynthID Bio, watermarks for AI-generated protein sequences&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2105690460429996366"&gt;Context Language Models: agents given native write access to their own context&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-15/</guid>
       <pubDate>Sat, 15 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic detailed its SynthID-based invisible watermark, now applied to all Claude text outputs for EU AI Act compliance, saying it has no measurable impact on cost, quality, or privacy and that a public watermark detection API is planned. Other Code of Practice signatories are implementing similar measures.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2088309745740591429"&gt;Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out paper replication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://roboticsandautomationnews.com/2026/08/14/unitree-ipo-oversubscribed-more-than-5000-times-as-investors-pile-into-humanoid-robotics/104171/"&gt;Unitree IPO oversubscribed more than 5,000 times as investors pile into humanoid robotics&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://finance.yahoo.com/technology/ai/articles/nvidia-scales-back-250-billion-234356524.html"&gt;Nvidia scales back $250B OpenAI data center guarantee in Ohio&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2088324824863236248"&gt;Anthropic publishes second Risk Report under Responsible Scaling Policy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 14, 2026 — No. 50</title>
-      <link>https://luxintenebris.news/archive/2026-08-14/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-14/</guid>
-      <pubDate>Fri, 14 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;OpenAI announced Ultrafast, a new API service tier running GPT-5.6 Sol up to 14x faster than standard inference, reaching 750 output tokens per second on Cerebras hardware. The limited preview targets latency-sensitive enterprise use cases including real-time voice, financial analysis, and customer support.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2087948368957894859"&gt;Gemini 3.7 Flash is generally available with major agentic coding gains&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/"&gt;Databricks raises $5B at $190B valuation to scale AI data platform&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/swyx/status/2088049159509344265"&gt;Arize AI agrees to be acquired by Dynatrace&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://api-docs.deepseek.com/news/news260813/"&gt;DeepSeek V4 Pro 0813 reaches general availability with agentic improvements&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
