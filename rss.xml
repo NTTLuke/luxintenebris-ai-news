@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sat, 03 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 3, 2026 — No. 100</title>
+      <title>Lux in Tenebris — AI dispatches · October 4, 2026 — No. 101</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;TSMC is reportedly weighing a collaboration with Terafab, the Tesla/SpaceX/Intel chip venture being built near Giga Texas, to establish advanced end-to-end semiconductor manufacturing in the United States. The Terafab project targets more than 1 terawatt of AI compute capacity per year at an estimated $20-25 billion cost — a partnership would put the world&amp;#x27;s most advanced foundry behind Musk&amp;#x27;s most ambitious AI infrastructure bet.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/GlobalFeedAI/status/2106477677293023465"&gt;Cloudflare releases Clef and Clef-Flash, open-weight &amp;#x27;decision models&amp;#x27; under Apache 2.0&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2106529236068819394"&gt;CMU trains a 4B proposer that edits agent harness code and beats its 35B teacher&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2106416745686995025"&gt;AutoCompact: agents trained to compact their own context gain +9.2 points on SWE-bench Verified&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2106528704902164855"&gt;Simon Willison: AI systems need hard, default-on budget caps&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 3, 2026 — No. 100</title>
+      <link>https://luxintenebris.news/archive/2026-10-03/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-03/</guid>
       <pubDate>Sat, 03 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Cogentic, a multi-agent system from Google Research, started from bare problem statements with no expert hints and produced five new verified results on open problems in online learning, auction theory and mechanism design. The system runs orchestrator, prover, summarizer, adversarial verifier, auditor and process-advisor agents over iterative rounds — a notable step for automated proof discovery in theory, not just applied ML.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2106147184693620924"&gt;Sam Altman confirms deep OpenAI-Cerebras partnership focused on inference speed&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link"&gt;Meta open sources SDK for building your own Muse AI gadgets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/huggingface/status/2106034221005312448"&gt;Hugging Face opens multi-harness RL for coding agents: 7 trained models, TRL trainer, proxy — all public&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/"&gt;NVIDIA introduces 64GB DGX Spark configuration for local AI developers&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-16/</guid>
       <pubDate>Sun, 16 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;AI coding startup Cursor has closed its acquisition by SpaceX for $60 billion in stock, completing the deal after SpaceX&amp;#x27;s blockbuster IPO. The merger hands one of the fastest-growing AI coding tools to Musk&amp;#x27;s empire, in the largest AI coding acquisition to date. No new primary funding round was announced in the window.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2088675092238889461"&gt;IBM BenchDrift paper shows benchmark scores swing with phrasing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.local10.com/video/news/2026/08/15/humanoid-robot-traffic-officer-patrols-the-streets-in-china/"&gt;Humanoid robot deployed as traffic officer on Chinese city streets&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 15, 2026 — No. 51</title>
-      <link>https://luxintenebris.news/archive/2026-08-15/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-15/</guid>
-      <pubDate>Sat, 15 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Anthropic detailed its SynthID-based invisible watermark, now applied to all Claude text outputs for EU AI Act compliance, saying it has no measurable impact on cost, quality, or privacy and that a public watermark detection API is planned. Other Code of Practice signatories are implementing similar measures.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2088309745740591429"&gt;Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out paper replication&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://roboticsandautomationnews.com/2026/08/14/unitree-ipo-oversubscribed-more-than-5000-times-as-investors-pile-into-humanoid-robotics/104171/"&gt;Unitree IPO oversubscribed more than 5,000 times as investors pile into humanoid robotics&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://finance.yahoo.com/technology/ai/articles/nvidia-scales-back-250-billion-234356524.html"&gt;Nvidia scales back $250B OpenAI data center guarantee in Ohio&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2088324824863236248"&gt;Anthropic publishes second Risk Report under Responsible Scaling Policy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
