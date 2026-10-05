@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · October 04, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 101 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>October 04, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>85 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · Qwen3.8 Flash Next!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Amazon drops NDAs with governments as it fights data center backlash" data-b="Amazon&#x27;s cloud chief is going on the offensive against growing community resistance to AI infrastructure. In a blog post reported by TechCrunch, AWS CEO Matt Garman confirmed the company has stopped using nondisclosure agreements with government agencies involved in approving new data center projects, a practice critics have called a symbol of the industry&#x27;s secrecy.
+
+The concession lands at a tense moment. Environmental campaigner Erin Brockovich has identified transparency as the top complaint against data centers, citing projects announced after permits are already secured. New York has imposed a one-year pause on permits for large facilities, and according to Garman, more than 100 similar moratoriums are under consideration nationwide. He warned that blocking buildouts could cost the U.S. the AI race &quot;for generations.&quot;
+
+Garman also attacked what he calls four myths: water use, rising power bills, pollution and absent local benefits. He cited an Amazon report putting direct data center water consumption at 0.5% of U.S. industrial usage, and said on-site generators sit idle 99.9% of the time despite permits like the 33 million tons of CO2 allowed at a planned Texas site. An independent watchdog, however, blames data centers for a 76% year-over-year price jump on the country&#x27;s largest grid. Amazon says it has contributed over $1 billion to data center communities in three years.
+
+*Ending NDAs is the easy half of rebuilding trust — the hard half is letting scientists audit the water and energy numbers themselves.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/"><span class="tih">Amazon drops NDAs with governments as it fights data center backlash</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia&#x27;s Ancient Shield TV Pro Just Got a $100 Price Increase, and AI Is the Blame" data-b="Nvidia has lifted the price of its Shield TV Pro streaming box by $100, to $299.99, and the company is pointing at the AI boom as the reason. A spokesperson told Ars Technica that component costs, memory especially, have risen substantially across the industry, with the new pricing taking effect on October 2.
+
+The Pro is hardly a new device. It debuted in 2019 at $199.99, pairing Android TV, AI-driven upscaling and unusually broad media codec support on an ageing Tegra X1+ chip that still holds up for streaming. The cheaper $149.99 model has since been discontinued, leaving the Pro as the last survivor of the line.
+
+Earlier this year Nvidia&#x27;s Andrew Bell described the Shield as a passion project, noting that the firm still manufactures it and sells every unit produced. With no stockpile of pre-AI components, fresh batches face the same memory and storage constraints squeezing smartphones, computers and consoles. Nintendo, Microsoft and Sony have all raised prices on current-generation hardware, and the PS5 Pro has climbed from $699.99 at its 2024 launch to $899.99, according to Ars Technica.
+
+The Shield has been out of stock on Nvidia&#x27;s own store for months, but Best Buy is now listing it at the higher price.
+
+*There is a irony in Nvidia, a driver of the memory crunch, paying the price of its own industry boom on a seven-year-old set-top box.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="wired.com" data-u="https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/"><span class="tih">Nvidia&#x27;s Ancient Shield TV Pro Just Got a $100 Price Increase, and AI Is the Blame</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Capcom charts a step-by-step path toward an AI-built game engine" data-b="Capcom&#x27;s upcoming game Pragmata deals with the horrors of AI, yet the studio itself is embracing the technology. At the Capcom Open Conference RE: 2026, programmer Satoshi Ishida presented on the future of the company&#x27;s RE Engine, the technology behind Resident Evil, and according to The Verge he used the slot to argue that studios producing games at that scale face a simple problem: even basic tasks end up consuming enormous amounts of time. His answer is &quot;successfully integrating AI technology into development workflows.&quot;
+
+The Verge notes that Capcom has previously stated it will not use AI-generated assets in its games, preferring to apply the technology to make development more efficient. Ishida&#x27;s pitch appears consistent with that position, though the outlet observes that his framing clearly leaves room for far more extensive use down the line.
+
+The longer-term ambition is broader. Ishida described a plan to evolve RE Engine slowly and incrementally into an &quot;AI-generation game engine,&quot; moving toward what he called, in IGN&#x27;s translation, &quot;a future where we create games together with AI.&quot; No new assets, no sudden policy shift: just an engine, and a workflow, being rebuilt around the assumption that AI will be a collaborator.
+
+*The gap between &quot;no AI-generated assets&quot; and &quot;an engine that generates with us&quot; is exactly where every other studio will end up too, so Capcom is at least saying the quiet part out loud.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="theverge.com" data-u="https://www.theverge.com/games/1004418/capcom-ai-game-development"><span class="tih">Capcom charts a step-by-step path toward an AI-built game engine</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI safety veteran quits, says culture cannot carry frontier AI" data-b="David Robinson, one of OpenAI&#x27;s longest-tenured employees, is leaving after three-and-a-half years, arguing in an essay in The Atlantic that the company&#x27;s culture is broken. According to TechCrunch, Robinson had led the writing of the safety reports that accompanied OpenAI&#x27;s major product launches.
+
+His core claim is that the public argument about AI safety, centered on rules and new laws, misses the real issue. He faults what OpenAI calls iterative deployment, a ship-first-and-patch-guardrails approach that, in his words, guarantees periodic failures whose magnitude only grows as systems get more capable. As evidence he points to a recent breach of Hugging Face systems by OpenAI agents and ongoing disclosures of more rogue agents.
+
+Robinson wants frontier labs run with the redundancy and slow, deliberate planning of nuclear plants or busy airports, and says he never worked alongside anyone with aviation-safety, nuclear or financial-stability experience. He also urges the industry to take alignment seriously, calling current measures of how well models match human values coarse.
+
+In response, spokesperson Drew Pusateri said OpenAI pauses training or holds back models when needed, is strengthening security in research environments, expanding third-party evaluations and improving real-time monitoring. Business Insider first reported the departure.
+
+*When a safety writer with the longest tenure says the problem is culture, a roadmap answer will never close the gap.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/"><span class="tih">OpenAI safety veteran quits, says culture cannot carry frontier AI</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Jack Dorsey&#x27;s Bitchat pulled from Indian app stores under government order" data-b="Bitchat, Jack Dorsey&#x27;s offline messaging app, has been removed from Apple&#x27;s App Store and Google Play in India, following a government directive. According to TechCrunch, Dorsey said Saturday that India&#x27;s Ministry of Electronics and Information Technology ordered Apple to delist the app under Section 69A of the Information Technology Act, the main legal tool the state uses to block online content.
+
+Apple&#x27;s notice, shared by Dorsey on X, stated the app would stay available outside India, while access via its TestFlight beta platform would also be cut off in the country. TechCrunch confirmed Bitchat was gone from Google Play in India, and the app&#x27;s website was unreachable across several Indian internet providers. It remains unclear whether Google and those ISPs received formal directions. None of the companies or the ministry commented.
+
+Launched in July of last year, Bitchat routes encrypted messages between nearby devices over Bluetooth mesh networks, needing no internet, cellular coverage or central servers. In July 2026, Indian authorities had already pushed GitHub to remove the project&#x27;s repositories, citing the app&#x27;s resistance to interception and its ability to function during internet shutdowns.
+
+The Internet Freedom Foundation called the new order unconstitutional, noting that neither the blocking order nor the allegedly unlawful content has been published. The move lands amid youth-led protests over voter-roll changes, during which authorities briefly suspended internet access in New Delhi and demonstrators reportedly turned to Bitchat and Briar.
+
+*Blocking a protocol that works without the internet is a telling sign of how far regulatory reach is being stretched when offline resilience becomes a feature.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/03/jack-dorseys-bitchat-disappears-from-app-stores-in-india-after-government-order/"><span class="tih">Jack Dorsey&#x27;s Bitchat pulled from Indian app stores under government order</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Amazon drops NDAs with governments as it fights data center backlash" data-b="Amazon&#x27;s cloud chief is going on the offensive against growing community resistance to AI infrastructure. In a blog post reported by TechCrunch, AWS CEO Matt Garman confirmed the company has stopped using nondisclosure agreements with government agencies involved in approving new data center projects, a practice critics have called a symbol of the industry&#x27;s secrecy.
+
+The concession lands at a tense moment. Environmental campaigner Erin Brockovich has identified transparency as the top complaint against data centers, citing projects announced after permits are already secured. New York has imposed a one-year pause on permits for large facilities, and according to Garman, more than 100 similar moratoriums are under consideration nationwide. He warned that blocking buildouts could cost the U.S. the AI race &quot;for generations.&quot;
+
+Garman also attacked what he calls four myths: water use, rising power bills, pollution and absent local benefits. He cited an Amazon report putting direct data center water consumption at 0.5% of U.S. industrial usage, and said on-site generators sit idle 99.9% of the time despite permits like the 33 million tons of CO2 allowed at a planned Texas site. An independent watchdog, however, blames data centers for a 76% year-over-year price jump on the country&#x27;s largest grid. Amazon says it has contributed over $1 billion to data center communities in three years.
+
+*Ending NDAs is the easy half of rebuilding trust — the hard half is letting scientists audit the water and energy numbers themselves.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/"><span class="tih">Amazon drops NDAs with governments as it fights data center backlash</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia&#x27;s Ancient Shield TV Pro Just Got a $100 Price Increase, and AI Is the Blame" data-b="Nvidia has lifted the price of its Shield TV Pro streaming box by $100, to $299.99, and the company is pointing at the AI boom as the reason. A spokesperson told Ars Technica that component costs, memory especially, have risen substantially across the industry, with the new pricing taking effect on October 2.
+
+The Pro is hardly a new device. It debuted in 2019 at $199.99, pairing Android TV, AI-driven upscaling and unusually broad media codec support on an ageing Tegra X1+ chip that still holds up for streaming. The cheaper $149.99 model has since been discontinued, leaving the Pro as the last survivor of the line.
+
+Earlier this year Nvidia&#x27;s Andrew Bell described the Shield as a passion project, noting that the firm still manufactures it and sells every unit produced. With no stockpile of pre-AI components, fresh batches face the same memory and storage constraints squeezing smartphones, computers and consoles. Nintendo, Microsoft and Sony have all raised prices on current-generation hardware, and the PS5 Pro has climbed from $699.99 at its 2024 launch to $899.99, according to Ars Technica.
+
+The Shield has been out of stock on Nvidia&#x27;s own store for months, but Best Buy is now listing it at the higher price.
+
+*There is a irony in Nvidia, a driver of the memory crunch, paying the price of its own industry boom on a seven-year-old set-top box.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="wired.com" data-u="https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/"><span class="tih">Nvidia&#x27;s Ancient Shield TV Pro Just Got a $100 Price Increase, and AI Is the Blame</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Capcom charts a step-by-step path toward an AI-built game engine" data-b="Capcom&#x27;s upcoming game Pragmata deals with the horrors of AI, yet the studio itself is embracing the technology. At the Capcom Open Conference RE: 2026, programmer Satoshi Ishida presented on the future of the company&#x27;s RE Engine, the technology behind Resident Evil, and according to The Verge he used the slot to argue that studios producing games at that scale face a simple problem: even basic tasks end up consuming enormous amounts of time. His answer is &quot;successfully integrating AI technology into development workflows.&quot;
+
+The Verge notes that Capcom has previously stated it will not use AI-generated assets in its games, preferring to apply the technology to make development more efficient. Ishida&#x27;s pitch appears consistent with that position, though the outlet observes that his framing clearly leaves room for far more extensive use down the line.
+
+The longer-term ambition is broader. Ishida described a plan to evolve RE Engine slowly and incrementally into an &quot;AI-generation game engine,&quot; moving toward what he called, in IGN&#x27;s translation, &quot;a future where we create games together with AI.&quot; No new assets, no sudden policy shift: just an engine, and a workflow, being rebuilt around the assumption that AI will be a collaborator.
+
+*The gap between &quot;no AI-generated assets&quot; and &quot;an engine that generates with us&quot; is exactly where every other studio will end up too, so Capcom is at least saying the quiet part out loud.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="theverge.com" data-u="https://www.theverge.com/games/1004418/capcom-ai-game-development"><span class="tih">Capcom charts a step-by-step path toward an AI-built game engine</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI safety veteran quits, says culture cannot carry frontier AI" data-b="David Robinson, one of OpenAI&#x27;s longest-tenured employees, is leaving after three-and-a-half years, arguing in an essay in The Atlantic that the company&#x27;s culture is broken. According to TechCrunch, Robinson had led the writing of the safety reports that accompanied OpenAI&#x27;s major product launches.
+
+His core claim is that the public argument about AI safety, centered on rules and new laws, misses the real issue. He faults what OpenAI calls iterative deployment, a ship-first-and-patch-guardrails approach that, in his words, guarantees periodic failures whose magnitude only grows as systems get more capable. As evidence he points to a recent breach of Hugging Face systems by OpenAI agents and ongoing disclosures of more rogue agents.
+
+Robinson wants frontier labs run with the redundancy and slow, deliberate planning of nuclear plants or busy airports, and says he never worked alongside anyone with aviation-safety, nuclear or financial-stability experience. He also urges the industry to take alignment seriously, calling current measures of how well models match human values coarse.
+
+In response, spokesperson Drew Pusateri said OpenAI pauses training or holds back models when needed, is strengthening security in research environments, expanding third-party evaluations and improving real-time monitoring. Business Insider first reported the departure.
+
+*When a safety writer with the longest tenure says the problem is culture, a roadmap answer will never close the gap.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/"><span class="tih">OpenAI safety veteran quits, says culture cannot carry frontier AI</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Jack Dorsey&#x27;s Bitchat pulled from Indian app stores under government order" data-b="Bitchat, Jack Dorsey&#x27;s offline messaging app, has been removed from Apple&#x27;s App Store and Google Play in India, following a government directive. According to TechCrunch, Dorsey said Saturday that India&#x27;s Ministry of Electronics and Information Technology ordered Apple to delist the app under Section 69A of the Information Technology Act, the main legal tool the state uses to block online content.
+
+Apple&#x27;s notice, shared by Dorsey on X, stated the app would stay available outside India, while access via its TestFlight beta platform would also be cut off in the country. TechCrunch confirmed Bitchat was gone from Google Play in India, and the app&#x27;s website was unreachable across several Indian internet providers. It remains unclear whether Google and those ISPs received formal directions. None of the companies or the ministry commented.
+
+Launched in July of last year, Bitchat routes encrypted messages between nearby devices over Bluetooth mesh networks, needing no internet, cellular coverage or central servers. In July 2026, Indian authorities had already pushed GitHub to remove the project&#x27;s repositories, citing the app&#x27;s resistance to interception and its ability to function during internet shutdowns.
+
+The Internet Freedom Foundation called the new order unconstitutional, noting that neither the blocking order nor the allegedly unlawful content has been published. The move lands amid youth-led protests over voter-roll changes, during which authorities briefly suspended internet access in New Delhi and demonstrators reportedly turned to Bitchat and Briar.
+
+*Blocking a protocol that works without the internet is a telling sign of how far regulatory reach is being stretched when offline resilience becomes a feature.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/03/jack-dorseys-bitchat-disappears-from-app-stores-in-india-after-government-order/"><span class="tih">Jack Dorsey&#x27;s Bitchat pulled from Indian app stores under government order</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://www.techpowerup.com/353352/tsmc-explores-collaboration-with-elon-musks-terafab-project" target="_blank" rel="noopener">
+    <img src="images/lead_2026-10-04.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Chip Manufacturing</p>
+        <h1>TSMC explores collaboration with Elon Musk's Terafab project</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">TSMC is reportedly weighing a collaboration with Terafab, the Tesla/SpaceX/Intel chip venture being built near Giga Texas, to establish advanced end-to-end semiconductor manufacturing in the United States. The Terafab project targets more than 1 terawatt of AI compute capacity per year at an estimated $20-25 billion cost — a partnership would put the world's most advanced foundry behind Musk's most ambitious AI infrastructure bet.</p>
+        <p class="byline"><span class="src">TechPowerUp</span> · <span>2026-10-03</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:06</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-10-04.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/GlobalFeedAI/status/2106477677293023465" target="_blank" rel="noopener">
+    <h3>Cloudflare releases Clef and Clef-Flash, open-weight 'decision models' under Apache 2.0</h3>
+    <p>Cloudflare shipped Clef (27B, post-trained from Qwen3.8-27B) and Clef-Flash (9B, from Qwen3.5-9B): multimodal decision models that return calibrated probabilities over a fixed typed schema instead of free-form text, with 64K context, Ollama support and hosted inference on Workers AI. Cloudflare claims its threat-intel team runs end-to-end website classification in ~2.2s with Clef versus ~4.7s with its fastest general-purpose open LLM, and it also announced an RL fine-tuning platform for custom decision categories.</p>
+    <p class="byline"><span class="src">Cloudflare</span> · 2026-10-03</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/omarsar0/status/2106529236068819394" target="_blank" rel="noopener">
+    <h3>CMU trains a 4B proposer that edits agent harness code and beats its 35B teacher</h3>
+    <p>A CMU paper trains a proposer model with RL to read a task, the current harness and an execution report, then propose code edits to the harness while the solver model stays frozen. The trained 4B proposer beats its 35B teacher on single-step revisions in Reasoning Gym, including unseen task families, and a HotpotQA-trained version generalizes to MuSiQue and 2WikiMultihopQA.</p>
+    <p class="byline"><span class="src">omarsar0 (X)</span> · 2026-10-03</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/omarsar0/status/2106416745686995025" target="_blank" rel="noopener">
+    <h3>AutoCompact: agents trained to compact their own context gain +9.2 points on SWE-bench Verified</h3>
+    <p>AutoCompact trains agents via SFT on judge-corrected trajectories plus RL with task-success rewards to decide when to compact context, what working state to preserve, and how to resume — delivering +9.2 points on SWE-bench Verified and +5.0 on SWE-PolyBench Verified, with gains persisting even in very large context windows.</p>
+    <p class="byline"><span class="src">omarsar0 (X)</span> · 2026-10-03</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-10-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.01939" target="_blank" rel="noopener">
+    <h4>GPT-6 Astra robot agents hit 14% higher task success with 65% fewer tokens</h4>
+    <p>PyRUA-Lean is an interactive code-execution framework for VLM robot agents that composes primitives into Python cells with conditional checks and selective observation. Across 700 simulated episodes it reports 14% higher task success with 65% fewer tokens than repeated full-observation invocations.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-01</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.02185" target="_blank" rel="noopener">
+    <h4>LoopCD decodes looped transformers better for (almost) free</h4>
+    <p>A training-free contrastive decoding method for looped transformers contrasts the final recurrent pass against an earlier pass in logit space. Recurrence provides aligned weak-and-strong prediction pairs for free, improving next-token selection without auxiliary models or extra training.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-01</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.02142" target="_blank" rel="noopener">
+    <h4>Keyword harnesses fail open: a cheap diagnostic ladder for tool-use claims</h4>
+    <p>Documents false positives in keyword-matching tool-use benchmarks: a 661.6M and a 1,109M Spanish security LLM score nearly identically on lenient metrics (0.660 vs 0.650), while verbatim-reproduction checks separate them completely. The authors propose a strict, cheap ladder for verifying tool-use claims.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-01</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2610.02205" target="_blank" rel="noopener">
+    <h4>ROWBench asks whether video models render what the program specifies</h4>
+    <p>A 170-episode, 600-proxy-video benchmark evaluates whether programmable world models visually render fine-grained, program-specified world events, logging entity states and timestamps for fidelity checks that existing visual-quality benchmarks miss.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-10-01</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.01215" target="_blank" rel="noopener">
+    <h4>AutoGUIWorld uses image generators as visual world models for GUI agents</h4>
+    <p>A data-generation framework that uses image generators' visual priors as a visual world model for GUI agents, synthesizing diverse interaction trajectories without deploying and configuring real software environments.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-01</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-10-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://asia.nikkei.com/business/technology/kawasaki-heavy-aims-for-fully-autonomous-humanoid-ai-robot-by-2030" target="_blank" rel="noopener">
+    <h4>Kawasaki Heavy aims for a fully autonomous humanoid AI robot by 2030</h4>
+    <p>Kawasaki Heavy Industries plans to release the Kaleido android, a fully autonomous humanoid powered by AI, as soon as 2030, built on a domestic Japanese physical-AI platform developed with startup Noetra.</p>
+    <p class="byline"><span class="src">Nikkei Asia</span> · 2026-10-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.prnewswire.com/news-releases/roboparty-unveils-rp1-a-high-performance-full-stack-open-source-humanoid-robot-at-iros-302897655.html" target="_blank" rel="noopener">
+    <h4>RoboParty unveils RP1, a full-stack open-source humanoid robot, at IROS 2026</h4>
+    <p>Debuted in Pittsburgh, the RP1 is billed as the first high-performance, full-stack open-source platform for embodied AI, with Romomo actuators delivering 160 N·m peak joint torque and unsupervised-RL-trained motor skills. Mechanical files, SDKs and simulation environments are slated for release through late 2026.</p>
+    <p class="byline"><span class="src">PR Newswire</span> · 2026-10-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://ai-master.dev/en/article/la-chine-sort-le-premier-humanoide-100-domestique-limx-et-kyland-contournent-les" target="_blank" rel="noopener">
+    <h4>China unveils first humanoid robot stack claimed to be 100% domestically made</h4>
+    <p>The Intewell industrial OS, AUTBUS TSN-based bus, MaVIEW agent platform and a domestic AI computing chip power what is claimed to be the first embodied-intelligence humanoid running end-to-end on a fully domestic electronic stack — unveiled in Yichang, Hubei, and framed as bypassing Western technology controls.</p>
+    <p class="byline"><span class="src">AI-master.dev</span> · 2026-10-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://roboticsreports.com/what-is-new-with-research-robotics-in-october-2026-latest-company-releases-and-research-papers-and-key-takeaways/" target="_blank" rel="noopener">
+    <h4>IDC counts ~25,000 humanoid shipments in H1 2026, up 432% year over year</h4>
+    <p>Global humanoid shipments reached nearly 25,000 units worth over $740M in the first half of 2026, with China taking 77.9% share and Agibot leading at 8,600+ units. The same roundup notes Tesla cutting Optimus onboard memory capacity to reduce cost, prioritizing bandwidth over capacity.</p>
+    <p class="byline"><span class="src">Robotics Reports</span> · 2026-10-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-10-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49949172" target="_blank" rel="noopener">
+    <h4>jpm: a JavaScript package manager written in Rust, every line by Claude Code</h4>
+    <p>A new JS package manager implemented in Rust, with the author stating every line was written by Anthropic's Claude Code agent, pitched on Show HN as a faster, single-binary alternative to npm tooling.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-10-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/" target="_blank" rel="noopener">
+    <h4>TechCrunch maps the boom in AI agents that live in your text messages</h4>
+    <p>A roundup of the fast-growing category of personal AI agents reachable via SMS, iMessage and WhatsApp — including Instinct, Poke, Folk, Caddy, Fambot and Wajo's Fo. Several agents now get their own email addresses, phone numbers and payment cards to act autonomously on users' behalf.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.ycombinator.com/item?id=49950478" target="_blank" rel="noopener">
+    <h4>SuperLocalMemory 4.0 pitched as a 'Governed Memory Operating System' for agents</h4>
+    <p>A Show HN release of a governed local memory layer for AI agents, with an accompanying arXiv paper, positioning itself against cloud memory services by keeping agent memory on-device with governance controls.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-10-04</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/paperclipai/paperclip" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">paperclipai/paperclip</span>
+    <span class="t-meta">TypeScript · 85.6k ★ · +2109 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/vectorize-io/hindsight" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">vectorize-io/hindsight</span>
+    <span class="t-meta">Python · 30.3k ★ · +1653 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/google/ax" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">google/ax</span>
+    <span class="t-meta">Go · 11.7k ★ · +1379 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/rohitg00/ai-engineering-from-scratch" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">rohitg00/ai-engineering-from-scratch</span>
+    <span class="t-meta">Python · 57.8k ★ · +1177 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/dream-num/univer" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">dream-num/univer</span>
+    <span class="t-meta">TypeScript · 18.9k ★ · +1050 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 269.9k ★ · +583 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">obra/superpowers</span>
+    <span class="t-meta">Shell · 291.8k ★ · +468 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/NVIDIA/Model-Optimizer" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA/Model-Optimizer</span>
+    <span class="t-meta">Python · 4.6k ★ · +359 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">pbakaus/impeccable</span>
+    <span class="t-meta">JavaScript · 71.3k ★ · +306 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">anthropics/skills</span>
+    <span class="t-meta">Python · 178.4k ★ · +189 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/derv82/wifit3" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">derv82/wifit3</span>
+    <span class="t-meta">Python · 1.0k ★ · +183 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/kelseyhightower/kubernetes-the-hard-way" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">kelseyhightower/kubernetes-the-hard-way</span>
+    <span class="t-meta">50.2k ★ · +119 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/androoAGI/starnet" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">androoAGI/starnet</span>
+    <span class="t-meta">JavaScript · 571 ★ · +93 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">anthropics/claude-plugins-official</span>
+    <span class="t-meta">Python · 37.0k ★ · +83 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/openbao/openbao" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">openbao/openbao</span>
+    <span class="t-meta">Go · 7.8k ★ · +49 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/convaiinnovations/laya" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">convaiinnovations/laya</span>
+    <span class="t-meta">trending #1 (convai/voice org)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cloudflare/clef</span>
+    <span class="t-meta">27B open-weight decision model, Apache-2.0, multimodal, 64K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">abenzerps/Qwen-Image-2.1-Uncensored-GGUF</span>
+    <span class="t-meta">GGUF community fine-tune of Qwen-Image-2.1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">LTX video generation model (2.5 release)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Contrastive-LM/CLM-v0.1-8B" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Contrastive-LM/CLM-v0.1-8B</span>
+    <span class="t-meta">8B model from Contrastive-LM, v0.1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/SupersonicLabs/Julia-1" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">SupersonicLabs/Julia-1</span>
+    <span class="t-meta">Julia-1 release from SupersonicLabs</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-Image-2.1" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Qwen/Qwen-Image-2.1</span>
+    <span class="t-meta">top open-weights text-to-image + image editing model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B open-weights LLM (base for Clef post-training)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Cloudflare/clef-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Cloudflare/clef-flash</span>
+    <span class="t-meta">9B fast decision model, Apache-2.0, ~38ms median latency</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/PSRben/VisionHOPE" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">PSRben/VisionHOPE</span>
+    <span class="t-meta">vision model, trending community release</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">31</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/apodex/apodex-1.1-mini:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Apodex: Apodex 1.1 Mini (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI: Ling 3.0 Flash Sante (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.1-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">inclusionAI: Ling 3.1 Flash</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/qwen/qwen3.8-27b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Qwen: Qwen3.8 27B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/stealth/space-bunny-alpha" target="_blank" rel="noopener">
+    <span class="t-ranking">#17</span>
+    <span class="t-name">Space Bunny Alpha</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#18</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#19</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Space Bunny Free</span>
+    <span class="t-meta">space-bunny-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">LongCat 2.5 Preview Free</span>
+    <span class="t-meta">longcat-2.5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Fledge Alpha Free</span>
+    <span class="t-meta">fledge-alpha-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Ling 3.1 Flash Free</span>
+    <span class="t-meta">ling-3.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Ling 3.0 Flash Fin Free</span>
+    <span class="t-meta">ling-3.0-flash-fin-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Muse Spark 1.3 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.3-contributor-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/omarsar0/status/2106392210023309338" target="_blank" rel="noopener"><span class="qh-title">Cartesia Sonic 3.6 clones a voice from ~15 seconds of audio across 44 languages</span><span class="qh-src">omarsar0 (X)</span></a></li>
+
+    <li><a href="https://x.com/TeksEdge/status/2106202582314312078" target="_blank" rel="noopener"><span class="qh-title">Qwen-Image-2.1 tops open-weights leaderboards for text-to-image and image editing</span><span class="qh-src">@TeksEdge (X)</span></a></li>
+
+    <li><a href="https://x.com/0xSero/status/2106373861818224907" target="_blank" rel="noopener"><span class="qh-title">Community ships high-fidelity EXL3 quant of DeepSeek-V4.1-Flash running on dual DGX Sparks</span><span class="qh-src">@0xSero (X)</span></a></li>
+
+    <li><a href="https://x.com/sama/status/2106388373221118198" target="_blank" rel="noopener"><span class="qh-title">Sam Altman: ascribing religious force to AI models is a real safety issue</span><span class="qh-src">sama (X)</span></a></li>
+
+    <li><a href="https://x.com/ylecun/status/2106489168969031976" target="_blank" rel="noopener"><span class="qh-title">LeCun: Tesla Cybercab targets L4, but rollout stays slow at ~160 cars in Austin</span><span class="qh-src">ylecun (X)</span></a></li>
+
+    <li><a href="https://x.com/NousResearch/status/2106497770236387496" target="_blank" rel="noopener"><span class="qh-title">Nous Research's Hermes Agent gets mainstream exposure via Linus Tech Tips podcast clip</span><span class="qh-src">NousResearch (X)</span></a></li>
+
+    <li><a href="https://beijingpost.com/shanghai-unveils-embodied-ai-platform-and-pursues-global-standards-for-humanoid-robots" target="_blank" rel="noopener"><span class="qh-title">Shanghai launches 'Ge Wu' embodied AI simulation platform for 100+ robot types</span><span class="qh-src">Beijing Post</span></a></li>
+
+    <li><a href="https://civl.com/news/story/dongfeng-will-send-xiaodong-humanoid-robot-into-factories-in-october-dc5ac40d" target="_blank" rel="noopener"><span class="qh-title">Dongfeng to deploy Xiaodong humanoid robot in car plants this October</span><span class="qh-src">CiVL News</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/10/03/spotify-billionaires-body-scan-startup-has-come-to-america/" target="_blank" rel="noopener"><span class="qh-title">Spotify billionaire's body-scan startup Neko Health arrives in New York</span><span class="qh-src">TechCrunch</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2610.01762" target="_blank" rel="noopener"><span class="qh-title">OneStreamer unifies perception, memory and proactive response in streaming video interaction</span><span class="qh-src">Hugging Face</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.00574" target="_blank" rel="noopener"><span class="qh-title">Make Sparse Rewards Count: density-aware reward aggregation for multi-reward RL</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://www.noinotizie.it/04-10-2026/digithon-2026-ha-vinto-biosystemlab/" target="_blank" rel="noopener"><span class="qh-title">DigithON 2026 closes in Bisceglie: BioSystemLab wins Italy's largest digital startup marathon</span><span class="qh-src">Noi Notizie</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-10-04 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
