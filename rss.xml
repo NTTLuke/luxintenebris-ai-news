@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 05 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 5, 2026 — No. 102</title>
+      <title>Lux in Tenebris — AI dispatches · October 6, 2026 — No. 103</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Reflection AI introduced Beam, a sparse 501B-parameter mixture-of-experts model with only 23B active parameters, delivering 3-4x better inference efficiency than comparable frontier models. Trained on a cluster of 10,500 NVIDIA GB300 GPUs running 46.4 million sandboxes per day for 28 days, Beam advances coding, reasoning, and agentic task performance with full open-weight release under Apache 2.0 expected later this month.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/"&gt;Etched fields funding offers at $40B+ valuation as AI chip startup draws investor frenzy&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.forbes.com/sites/annatong/2026/10/05/brett-adcock-sold-investors-a-humanoid-future-now-he-has-to-build-it/"&gt;Inside Brett Adcock&amp;#x27;s humanoid hype machine: Figure AI valued at $39B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://newstodayworld.org/breaking-news/2026/10/05/meet-rp1-the-open-source-humanoid-robot-anyone-can-study/"&gt;RP1 open-source humanoid robot unveiled at IROS 2026: full-stack bipedal platform anyone can study&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2107138770088714678"&gt;Upstage AI releases Solar Mini 4 — 3B active MoE with 512K context, free on Nous Portal&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 5, 2026 — No. 102</title>
+      <link>https://luxintenebris.news/archive/2026-10-05/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-05/</guid>
       <pubDate>Mon, 05 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Qualcomm agreed to license patents behind Huawei&amp;#x27;s LogicFolding chipmaking technique in a multi-year cross-license deal spanning 5G, AI, compute, and networking. Qualcomm also purchased certain Huawei US patents in compute, AI, and networking, marking a significant thaw in US-China chip industry collaboration.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2106783662117151003"&gt;LeCun argues distillation economics will make frontier models free or open&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.trendforce.com/news/2026/10/05/news-china-reportedly-spent-13b-stockpiling-asml-duv-tools-in-2024-25-as-advanced-chip-push-continues/"&gt;China spent over $13 billion stockpiling ASML DUV lithography systems for AI chip production&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/karpathy/status/2106806571321966793"&gt;Karpathy: more than 99% of people engaging with AI arrived in the last year&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-18/</guid>
       <pubDate>Tue, 18 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Groq closed a $350M Series A at a $3.5B valuation — down from $6.9B after Nvidia&amp;#x27;s acqui-hire of its founder and team — as it pivots from building AI chips to operating an Nvidia-powered inference cloud across 13 global data centers. Disruptive led the round with planned participation from Nvidia.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/"&gt;Higgsfield raises $400M Series B, quadrupling valuation to $5.4B in eight months&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/"&gt;Wispr raises $280M at $2B valuation, launches Canto speech recognition model&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.forbes.com/sites/johnkoetsier/2026/08/17/excavators-meet-ai-gravis-nabs-200-million-from-softbank-to-give-construction-equipment-brains/"&gt;Gravis Robotics raises $200M Series A from SoftBank for autonomous construction equipment&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=tlyMdDfeiuA"&gt;Anthropic&amp;#x27;s revenue surges as IPO speculation intensifies&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 17, 2026 — No. 53</title>
-      <link>https://luxintenebris.news/archive/2026-08-17/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-17/</guid>
-      <pubDate>Mon, 17 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Stripe has finalized a deal to acquire OpenRouter, the AI model gateway startup, for more than $7 billion, per Bloomberg. OpenRouter, which raised a $113M Series B at a $1.3B valuation in May 2026, claims 8 million users and access to 400+ models. The deal marks one of the largest AI infrastructure acquisitions to date, consolidating API access to the fragmented model ecosystem under Stripe&amp;#x27;s payments infrastructure.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2089055111125307813"&gt;Nous Research launches Hermes Agent Desktop App&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2088880284129210405"&gt;Yann LeCun publishes major defense of open foundation models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2088463770318516734"&gt;Anthropic researcher denies All-In Podcast rumors, sparks AI concentration debate&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
