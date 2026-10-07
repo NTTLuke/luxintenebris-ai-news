@@ -4,174 +4,6 @@
   },
   "headlines": [
     {
-      "text": "DraftExpert: expansion-aware self-speculative decoding for end-device MoE inference",
-      "source": "arXiv",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "SpecBox: speculative sandbox scheduling for efficient LLM agent serving with MCP",
-      "source": "arXiv",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Nvidia accelerates chip engineering with AI agents for next-gen Rosa CPU and Feynman platform",
-      "source": "The Next Platform",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Generative Bionics unveils GENE.01: a smart-skin humanoid built on peer-reviewed ergonomics",
-      "source": "Humanoids Daily",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "DAC 2026: AI chip design agents hit production as Nobel laureate joins the debate",
-      "source": "Tech Times",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Roblox launches Build: AI-powered game creation on mobile from text prompts",
-      "source": "BloxBot",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Comms: deploy live AI agents inside any iMessage thread in 30 seconds",
-      "source": "Product Hunt",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Webhound: long-running AI research agents with a configurable depth dial",
-      "source": "Product Hunt",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Robynn AI launches self-improving websites with continuous AI audit and rewrite",
-      "source": "Product Hunt",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Kdeps: open-source CLI coding agent that runs on open-weight models",
-      "source": "Hacker News",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "OpenAI expands GPT-Live voice model to Edu, Business, and Enterprise plans globally",
-      "source": "OpenAI",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "OpenAI research shows AI as a generalist tool that helps small teams solve problems across job functions",
-      "source": "OpenAI",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "LeCun pushes back on AGI claims, citing lack of level 5 autonomy and real-world dexterity",
-      "source": "ylecun",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Simon Willison suggests native image segmentation for future Gemma models",
-      "source": "simonw",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Cognizant and Anthropic expand partnership, training 30,000+ associates on Claude",
-      "source": "Anthropic",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Meta's SAM and DINO models power assistive robotics research at University of Pittsburgh",
-      "source": "Meta",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Enigma raises $71M seed round to make controlling robots as easy as adjusting the volume",
-      "source": "TechCrunch",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "AMD calls its shot on engineering velocity as Helios and Venice enter production",
-      "source": "SiliconANGLE",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "LMSYS signs Open Weights letter, reaffirming commitment to open AI models",
-      "source": "@lmsysorg",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Italian Founders Fund exceeds expectations, closes at \u20ac100M with 32 startups in portfolio",
-      "source": "Economyup",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Nielsen launches Ad Intel AI: AI-powered advertising intelligence platform with conversational interface",
-      "source": "Nielsen",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "SeaTicket: AI agent that autonomously resolves GitHub and Discord support issues",
-      "source": "Hacker News",
-      "date": "2026-07-28",
-      "issue": 33
-    },
-    {
-      "text": "Chip stocks shed over $1 trillion as AI selloff deepens",
-      "source": "CNBC",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "US bans foreign-made humanoid robots, FCC cites national security risks",
-      "source": "CNN",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "GPT-5.6 Sol self-optimization delivers 20% cost cut and 15% token efficiency gain",
-      "source": "OpenAI",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Moonshot AI surpasses funding goal to hit $35 billion valuation",
-      "source": "Bloomberg",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "ARC-AGI-3 score tripled with retained reasoning and context compaction",
-      "source": "OpenAI",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "GPT-Red: automated red teaming via self-play at scale",
-      "source": "arXiv",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
       "text": "StealthBench: measuring operational stealth in autonomous offensive-security agents",
       "source": "HuggingFace",
       "date": "2026-07-30",
@@ -12002,6 +11834,174 @@
       "source": "arXiv",
       "date": "2026-10-06",
       "issue": 103
+    },
+    {
+      "text": "OpenAI Discusses $30B Fundraising Round at $1.4T Valuation",
+      "source": "EIA",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "DeepSeek to Raise Over $12B in Tencent-Backed Funding Round",
+      "source": "TheNextWeb",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "OpenAI Releases Frontier Model Mathematical Results",
+      "source": "OpenAI",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "OpenAI Launches Decisions API in Public Beta",
+      "source": "omarsar0",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Google DeepMind Releases EmbeddingGemma 2",
+      "source": "GoogleDeepMind",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "GUI-HARVEST: Self-Improving GUI Agents Through Evidence-Driven Harness Evolution",
+      "source": "HuggingFace",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "HuatuoGPT-3: RL-Only Domain Adaptation from Base Models",
+      "source": "HuggingFace",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Knowing When Not to Answer: Cross-Domain Multi-Turn Generalization of Underspecification Signals",
+      "source": "arXiv",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "CoDe-LoRA: Mitigating the Orthogonality Dilemma in Continual Learning of LLMs",
+      "source": "arXiv",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Toward Alignment Scaling Laws: A Framework and First Preregistered Measurements",
+      "source": "arXiv",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "AMD Ryzen AI Max Pro 495 Powers Dozens of AI Mini PCs and Workstations",
+      "source": "WCCFTech",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "TwelveLabs Releases Pegasus 1.6 for First-Person Video Understanding",
+      "source": "The Robot Report",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "FireDome Builds Autonomous 'Artillery' for Wildfire Defense",
+      "source": "The Robot Report",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Underdog: Fully On-Device Private AI Assistant from Conway Research",
+      "source": "TechCrunch",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "FastRouter.ai: Intelligent LLM Routing for Cost, Latency, and Quality",
+      "source": "Product Hunt",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Cloudflare Web Search API Gives AI Agents Access to Live Internet Data",
+      "source": "Product Hunt",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "devpit: A Native Control Room for Your Claude Code Agents",
+      "source": "Product Hunt",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "OpenBot: Tag Specialized Agents Like Friends or Employees",
+      "source": "Product Hunt",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Nous Research Launches Hermes Index Agent Benchmark",
+      "source": "NousResearch",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Xiaomi MiMo-V2.6-Pro Leads Open Weights After RL Fix for Test Cheating",
+      "source": "DeepLearningAI",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Anthropic Expands Cyber Verification Program for Security Researchers",
+      "source": "AnthropicAI",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Jev-as-a-Judge Framework for Full Agent Trajectory Evaluation",
+      "source": "omarsar0",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Agent Benchmark Verifier Audit Finds 206 Bugs in Zapier AutomationBench",
+      "source": "omarsar0",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "ALoDLM: Adaptively Looped Diffusion Language Models",
+      "source": "@_akhaliq",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "OmniReasoning: Pushing the Limits of Audio-Visual Joint Reasoning",
+      "source": "@_akhaliq",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Lambda to Raise $4B in Pre-IPO Round Ahead of Planned IPO",
+      "source": "TechCrunch",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Flai Raises $27M Series A for AI Dealership Software",
+      "source": "TechCrunch",
+      "date": "2026-10-07",
+      "issue": 104
+    },
+    {
+      "text": "Ex-Ramp Engineers Raise $25M for AI Ad Platform Melius",
+      "source": "TechCrunch",
+      "date": "2026-10-07",
+      "issue": 104
     }
   ]
 }

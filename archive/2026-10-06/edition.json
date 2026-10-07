@@ -1,0 +1,279 @@
+{
+  "issue_no": 103,
+  "date_iso": "2026-10-06",
+  "date_human": "October 06, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Frontier Open Weights",
+    "title": "Reflection AI unveils Beam, a 501B open-weight model trained on 10,500 GPUs",
+    "summary": "Reflection AI introduced Beam, a sparse 501B-parameter mixture-of-experts model with only 23B active parameters, delivering 3-4x better inference efficiency than comparable frontier models. Trained on a cluster of 10,500 NVIDIA GB300 GPUs running 46.4 million sandboxes per day for 28 days, Beam advances coding, reasoning, and agentic task performance with full open-weight release under Apache 2.0 expected later this month.",
+    "source": "Reflection AI",
+    "date": "2026-10-05",
+    "url": "https://reflection.ai/blog/introducing-beam",
+    "image": "images/lead_2026-10-06.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Etched fields funding offers at $40B+ valuation as AI chip startup draws investor frenzy",
+      "summary": "Etched, a four-year-old AI inference chip startup, is receiving investment offers at $40-50 billion valuation — nearly double its $21B round just weeks ago. The company designs custom ASICs for LLM inference and operates a 10MW datacenter in Silicon Valley.",
+      "source": "TechCrunch",
+      "date": "2026-10-05",
+      "url": "https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/"
+    },
+    {
+      "title": "Inside Brett Adcock's humanoid hype machine: Figure AI valued at $39B",
+      "summary": "Forbes profiles Figure AI CEO Brett Adcock, who sold investors on a humanoid robot future at a $39 billion valuation. The company's Figure 04 humanoid is in factory pilot projects while the founder faces pressure to deliver on decades of ambitious promises.",
+      "source": "Forbes",
+      "date": "2026-10-05",
+      "url": "https://www.forbes.com/sites/annatong/2026/10/05/brett-adcock-sold-investors-a-humanoid-future-now-he-has-to-build-it/"
+    },
+    {
+      "title": "RP1 open-source humanoid robot unveiled at IROS 2026: full-stack bipedal platform anyone can study",
+      "summary": "RoboParty debuted the RP1, billed as the first high-performance full-stack open-source bipedal humanoid. It features 160 N·m peak joint torque, Romomo actuators, and PartyOS with unsupervised reinforcement learning for motor skills.",
+      "source": "News Today World",
+      "date": "2026-10-05",
+      "url": "https://newstodayworld.org/breaking-news/2026/10/05/meet-rp1-the-open-source-humanoid-robot-anyone-can-study/"
+    },
+    {
+      "title": "Upstage AI releases Solar Mini 4 — 3B active MoE with 512K context, free on Nous Portal",
+      "summary": "Solar Mini 4, a 35B total / 3B active parameters MoE model with 512K context and a score of 24 on the Artificial Analysis Intelligence Index, is free on Nous Portal for two weeks. Outperforms models with 10x the active parameters.",
+      "source": "NousResearch",
+      "date": "2026-10-05",
+      "url": "https://x.com/NousResearch/status/2107138770088714678"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "AI safety via debate is compromised by cognitive biases",
+          "summary": "RLHF evaluators often favor flattering or persuasive responses over truthful ones, creating incentives for models to prioritize appeal over accuracy. The paper demonstrates how human cognitive biases fundamentally undermine the AI safety via debate paradigm.",
+          "source": "arXiv",
+          "date": "2026-10-06",
+          "url": "https://arxiv.org/abs/2610.05461",
+          "image": "images/section_research-papers_2026-10-06.jpg"
+        },
+        {
+          "title": "AECG: Asymmetric experience consolidation and governance in multi-agent systems",
+          "summary": "Memory pollution arises when outdated, weakly supported, or spuriously successful procedural knowledge persists across agent memory systems. The paper proposes a governance framework to detect and mitigate pollution in multi-agent memory.",
+          "source": "arXiv",
+          "date": "2026-10-06",
+          "url": "https://arxiv.org/abs/2610.05176"
+        },
+        {
+          "title": "MLLMs fail to refuse when using tools agentically",
+          "summary": "Agentic multimodal LLMs that call tools such as zooming and tagging show a critical safety failure: tool-using MLLMs become significantly more likely to comply with harmful requests compared to their non-agentic counterparts, even with safety guardrails in place.",
+          "source": "arXiv",
+          "date": "2026-10-06",
+          "url": "https://arxiv.org/abs/2610.03938"
+        },
+        {
+          "title": "What did the agent actually do? Evidence-grounded oversight for long-horizon agents",
+          "summary": "As agents take on long-horizon tasks, users shift from making decisions to overseeing autonomous execution. This paper studies monitors that identify which agent decisions warrant user verification based on the fragmentation of supporting evidence.",
+          "source": "arXiv",
+          "date": "2026-10-06",
+          "url": "https://arxiv.org/abs/2610.06406"
+        },
+        {
+          "title": "Self-reflection fine-tuning: Enhancing agent security against prompt injection attacks from failure experience",
+          "summary": "LLM agents deployed in tool-augmented environments are highly vulnerable to prompt injection attacks. This work proposes self-reflection fine-tuning that learns from failed attempts to build robust resistance without relying on static expert trajectories.",
+          "source": "arXiv",
+          "date": "2026-10-06",
+          "url": "https://arxiv.org/abs/2610.04269"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "GitHub launches ReviewBench, an open benchmark for AI code review",
+          "summary": "ReviewBench is built on representative pull requests with multi-source ground truth, calibrated evaluation, and production-aligned metrics for code review agents.",
+          "source": "GitHub Blog",
+          "date": "2026-10-05",
+          "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+          "image": "images/section_tools-startups_2026-10-06.jpg"
+        },
+        {
+          "title": "Together Link: run frontier open models in your coding harness",
+          "summary": "Together AI released Together Link, a free MIT-licensed CLI that lets developers run frontier open models like Kimi K3 and GLM 5.3 inside Claude Code, Codex, and other coding agents with auto-routing per task complexity.",
+          "source": "Together AI",
+          "date": "2026-10-05",
+          "url": "https://www.together.ai/link"
+        },
+        {
+          "title": "HeyGen HyperFrames Studio Desktop — a timeline video editor built for AI agents",
+          "summary": "HyperFrames Studio ships as a native desktop app for macOS and Linux, built on HTML/CSS frames and marketed as the first video editor designed for AI agents to use programmatically.",
+          "source": "HeyGen",
+          "date": "2026-10-05",
+          "url": "https://hyperframes.heygen.com/"
+        },
+        {
+          "title": "Binance launches Binance Intelligence with three AI products for crypto",
+          "summary": "The product stack includes Binance AI for everyday users, Binance AI Pro for automated trading workflows, and Agent OS for developers building financial agents on the exchange.",
+          "source": "Binance",
+          "date": "2026-10-05",
+          "url": "https://www.binance.com/en/square/post/10-05-2026-binance-launches-binance-intelligence-offering-three-ai-products-to-cater-to-developers-general-users-and-advanced-traders-374016322447214"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-10-06",
+      "items": [
+        {"name": "paperclipai/paperclip", "url": "https://github.com/paperclipai/paperclip", "meta": "TypeScript · 85.6k ★ · +2,109 today"},
+        {"name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "meta": "Python · 37.0k ★ · +83 today"},
+        {"name": "vectorize-io/hindsight", "url": "https://github.com/vectorize-io/hindsight", "meta": "Python · 30.3k ★ · +1,653 today"},
+        {"name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "meta": "Shell · 291.8k ★ · +468 today"},
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 269.9k ★ · +583 today"},
+        {"name": "dream-num/univer", "url": "https://github.com/dream-num/univer", "meta": "TypeScript · 18.9k ★ · +1,050 today"},
+        {"name": "anthropics/skills", "url": "https://github.com/anthropics/skills", "meta": "Python · 178.4k ★ · +189 today"},
+        {"name": "androoAGI/starnet", "url": "https://github.com/androoAGI/starnet", "meta": "JavaScript · 571 ★ · +93 today"},
+        {"name": "derv82/wifit3", "url": "https://github.com/derv82/wifit3", "meta": "Python · 1.0k ★ · +183 today"},
+        {"name": "kelseyhightower/kubernetes-the-hard-way", "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way", "meta": "50.2k ★ · +119 today"},
+        {"name": "rohitg00/ai-engineering-from-scratch", "url": "https://github.com/rohitg00/ai-engineering-from-scratch", "meta": "Python · 57.8k ★ · +1,177 today"},
+        {"name": "shy3130/tick-stock-panel", "url": "https://github.com/shy3130/tick-stock-panel", "meta": "Python · 5.2k ★ · +44 today"},
+        {"name": "google/ax", "url": "https://github.com/google/ax", "meta": "Go · 11.7k ★ · +1,379 today"},
+        {"name": "NVIDIA/Model-Optimizer", "url": "https://github.com/NVIDIA/Model-Optimizer", "meta": "Python · 4.6k ★ · +359 today"},
+        {"name": "pbakaus/impeccable", "url": "https://github.com/pbakaus/impeccable", "meta": "JavaScript · 71.3k ★ · +306 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-10-06",
+      "items": [
+        {"name": "convaiinnovations/laya", "url": "https://huggingface.co/convaiinnovations/laya", "meta": "Multilingual non-autoregressive System 1 decision model (421M)"},
+        {"name": "Cloudflare/clef", "url": "https://huggingface.co/Cloudflare/clef", "meta": "27B multimodal decision model post-trained from Qwen3.8-27B"},
+        {"name": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF", "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF", "meta": "GGUF quantized Qwen-Image-2.1 uncensored variant"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "22B open world model for video, audio & world simulation"},
+        {"name": "Contrastive-LM/CLM-v0.1-8B", "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B", "meta": "Contrastive Language Model trained with InfoNCE on frozen Qwen3-8B"},
+        {"name": "SupersonicLabs/Julia-1", "url": "https://huggingface.co/SupersonicLabs/Julia-1", "meta": "144.3M decision model built on mmBERT-small encoder"},
+        {"name": "Qwen/Qwen-Image-2.1", "url": "https://huggingface.co/Qwen/Qwen-Image-2.1", "meta": "Unified text-to-image generation and image editing (7B)"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B dense VL model with thinking control, Qwen's most capable open model"},
+        {"name": "Cloudflare/clef-flash", "url": "https://huggingface.co/Cloudflare/clef-flash", "meta": "Smaller, faster variant of Clef multimodal decision model"},
+        {"name": "PSRben/VisionHOPE", "url": "https://huggingface.co/PSRben/VisionHOPE", "meta": "Visual backbones as self-modifying learning systems (ImageNet/COCO/ADE20K)"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-10-06",
+      "items": [
+        {"name": "Apodex: Apodex 1.1 Mini (free)", "url": "https://openrouter.ai/apodex/apodex-1.1-mini:free", "meta": "262K ctx"},
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.0 Flash Sante (free)", "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.1 Flash", "url": "https://openrouter.ai/inclusionai/ling-3.1-flash", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-10-06",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "Space Bunny Free", "url": "https://opencode.ai/docs/zen/", "meta": "space-bunny-free"},
+        {"name": "LongCat 2.5 Preview Free", "url": "https://opencode.ai/docs/zen/", "meta": "longcat-2.5-preview-free"},
+        {"name": "Fledge Alpha Free", "url": "https://opencode.ai/docs/zen/", "meta": "fledge-alpha-free"},
+        {"name": "MiMo-V2.6-Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.6-flash-free"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Ling 3.1 Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.1-flash-free"},
+        {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Muse Spark 1.3 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.3-contributor-free"},
+        {"name": "Jev 1.13 Free", "url": "https://opencode.ai/docs/zen/", "meta": "jev-1.13-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Nous Research publishes Hermes Agent Manifesto — user-owned, modular AI agents",
+      "source": "NousResearch",
+      "date": "2026-10-06",
+      "url": "https://x.com/NousResearch/status/2107210064549343358"
+    },
+    {
+      "title": "OpenAI expands text watermarking for EU AI Act compliance",
+      "source": "OpenAI",
+      "date": "2026-10-05",
+      "url": "https://x.com/OpenAI/status/2107164650249101695"
+    },
+    {
+      "title": "ERA by Eon: simulated companies for agent evaluation",
+      "source": "omarsar0",
+      "date": "2026-10-05",
+      "url": "https://x.com/omarsar0/status/2107144368326934732"
+    },
+    {
+      "title": "UT Austin study finds context compression can slow agents 20-80%",
+      "source": "omarsar0",
+      "date": "2026-10-05",
+      "url": "https://x.com/omarsar0/status/2106927371366596692"
+    },
+    {
+      "title": "Nolla Health launches full-cycle AI acne treatment in Utah",
+      "source": "omarsar0",
+      "date": "2026-10-05",
+      "url": "https://x.com/omarsar0/status/2107129885000884328"
+    },
+    {
+      "title": "Pi Durable: personal durable agent framework with desktop control",
+      "source": "omarsar0",
+      "date": "2026-10-06",
+      "url": "https://x.com/omarsar0/status/2107232293366505651"
+    },
+    {
+      "title": "SelfSearch: self-improving agents that rewrite own instructions and tools",
+      "source": "omarsar0",
+      "date": "2026-10-05",
+      "url": "https://x.com/omarsar0/status/2107123966792052859"
+    },
+    {
+      "title": "Do tool calls execute as intended? Measuring intent-execution correspondence in LLM agents",
+      "source": "arXiv",
+      "date": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.04375"
+    },
+    {
+      "title": "Safe context switching for agents in the wild via orthogonal adaptation",
+      "source": "arXiv",
+      "date": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.05219"
+    },
+    {
+      "title": "Benchmarking jailbreak guardrails for embodied agents",
+      "source": "arXiv",
+      "date": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.06122"
+    }
+  ],
+  "spiked": {
+    "low signal": 8,
+    "duplicate url": 1,
+    "same story": 4
+  }
+}
