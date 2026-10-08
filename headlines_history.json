@@ -4,198 +4,6 @@
   },
   "headlines": [
     {
-      "text": "StealthBench: measuring operational stealth in autonomous offensive-security agents",
-      "source": "HuggingFace",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Constitutional midtraining: content presence drives alignment gains",
-      "source": "arXiv",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "HiFloat4: end-to-end FP4 reinforcement learning post-training for LLMs",
-      "source": "arXiv",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "SkillRise: agentic reinforcement learning for cross-task skill evolution",
-      "source": "arXiv",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "A.X K2 \u2014 688B/33B MoE model drops on Hugging Face",
-      "source": "_akhaliq",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "LMSYS org open-sources Blackwell-native 8-bit and 4-bit RL stack in Miles framework",
-      "source": "@lmsysorg",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Together AI's ThunderAgent accepted as ICML 2026 Spotlight",
-      "source": "@togethercompute",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "OpenAI prototypes portable screen-free AI companion speaker",
-      "source": "YouTube \u2014 The AI Daily Brief",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Anthropic ships native sandboxed in-app browser in Claude Code Desktop",
-      "source": "YouTube \u2014 Matt Wolfe",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Nvidia's $750B AI deal spree revives circular-financing fears",
-      "source": "LA Times",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "AI chips and data center capacity are doubling every nine months",
-      "source": "New York Times",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Qualcomm-powered humanoid robot collapses on stage at Computex 2026",
-      "source": "Business Today",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Generative Bionics unveils Gene.01 humanoid with full-body tactile skin",
-      "source": "The Robot Report",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "South Korea unveils $880B 10-year plan for chips, AI data centers, and robotics",
-      "source": "Tom's Hardware",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "ChatGPT for Academic Researchers launched with free frontier model access",
-      "source": "OpenAI",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "xAI releases Grok Voice Think Fast 2.0 speech-to-speech model",
-      "source": "xAI",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Polar raises $5.7M for AI-first browser aimed at knowledge workers",
-      "source": "TechCrunch",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Freehand raises $75M Series B to automate Fortune 500 supply chain spend",
-      "source": "Crunchbase News",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Encore AI raises $30M to build AI agents that learn from customer calls",
-      "source": "TechCrunch",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Pangram raises $9M to detect AI-generated content with 99%+ accuracy",
-      "source": "TechCrunch",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Codex Security CLI released as open-source security scanner",
-      "source": "OpenAI",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "NVIDIA NOOA proposes building AI agents as Python objects",
-      "source": "omarsar0",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Kernel Forge: open-source agent harness rewrites CUDA kernels via MCTS",
-      "source": "omarsar0",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Viktor reaches $25M ARR in 16 weeks with self-serve AI model",
-      "source": "omarsar0",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Salesforce invests in Italian AI startup Solomei AI, backing Brunello Cucinelli's Callimacus platform",
-      "source": "AI4Business",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Hint \u2014 AI home management assistant co-founded by Martha Stewart",
-      "source": "TechCrunch",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Poddle AI launches world's first self-service adversarial multi-agent platform",
-      "source": "PR Newswire",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "ChipAgents raises $60M to accelerate chip design with AI agents",
-      "source": "Ciente",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Qualcomm warns partners of double-digit chip price hike starting September",
-      "source": "Pollar News",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Developer runs 28.9M-parameter AI model on $10 ESP32-S3 microcontroller",
-      "source": "Tom's Hardware",
-      "date": "2026-07-30",
-      "issue": 35
-    },
-    {
-      "text": "Anthropic reveals Claude escaped evaluation sandbox, hacked three real companies",
-      "source": "Anthropic via X",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "OpenAI cuts GPT-5.6 Luna pricing by 80%, Terra by 20%, launches Fast Sol mode",
-      "source": "OpenAI",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
       "text": "Google DeepMind launches Gemini Robotics 2 \u2014 embodied AI for humanoids with full-body intelligence",
       "source": "Google DeepMind",
       "date": "2026-07-31",
@@ -12002,6 +11810,198 @@
       "source": "TechCrunch",
       "date": "2026-10-07",
       "issue": 104
+    },
+    {
+      "text": "OpenAI rolls out GPT-6 with Intelligent UI across all tiers",
+      "source": "OpenAI",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Google DeepMind makes SynthID Detector publicly available for cross-platform AI content provenance",
+      "source": "GoogleDeepMind",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "SpaceX wants to borrow $40 billion to buy Nvidia AI chips as infrastructure demand surges",
+      "source": "24/7 Wall St.",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Google launches Gemini 3.8 Live speech-to-speech models with direct listening and reasoning",
+      "source": "DeepLearningAI",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Nous Research raises $90M Series B at $1.5B valuation for open-source Hermes Agent",
+      "source": "TechCrunch",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "CoTrace: data recipes for training terminal agents with harness-model co-evolution",
+      "source": "arXiv",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "What matters for latent reasoning with flow matching",
+      "source": "HuggingFace",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "EngramEdit: decoupled knowledge updates in LLMs through conditional memory",
+      "source": "arXiv",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "YANchor-4B: effective long-horizon reasoning in O(N) time with O(1) memory",
+      "source": "arXiv",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "SemanticFold: latent sequence compression separates language modeling, decodability, and reasoning",
+      "source": "arXiv",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Nvidia RTX Spark PC platform launches with pre-orders open",
+      "source": "Wccftech",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Faraday Future plans US robot factory for humanoids",
+      "source": "Robotics & Automation News",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Teradyne Robotics and Elite Robots settle cobot software dispute",
+      "source": "The Robot Report",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "IrisGo for solopreneurs \u2014 AI desktop agent that learns your workflows",
+      "source": "Product Hunt",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Video Editor in Manus 2.0 \u2014 full AI video editing from natural language",
+      "source": "Product Hunt",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "GenPage 3.0 \u2014 AI landing pages that auto-test every variant",
+      "source": "Product Hunt",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Databench by Alkera \u2014 open-source collaborative workspace for data teams",
+      "source": "Product Hunt",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Mecka AI nabs $60M from Sequoia for robot training data",
+      "source": "TechCrunch",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Healthleap raises $38M for AI that flags hospital patients who need closer attention",
+      "source": "TechCrunch",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Personal AI assistant Tab emerges from stealth at $300M valuation",
+      "source": "TechCrunch",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "DeepSeek achieves 437x agent memory reduction, enabling 1M token context",
+      "source": "DeepLearningAI",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "NVIDIA VERA: co-evolving models with verifiable evaluation harnesses surpasses Claude Opus 4.8 at 27B scale",
+      "source": "omarsar0",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Sam Altman signals a new era for AI in mathematics",
+      "source": "sama",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Simon Willison releases llm plugin for OpenAI GPT-6 Luna reasoning model",
+      "source": "simonw",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Velozity \u2014 multiplayer AI office for marketing, product, and UX research",
+      "source": "Product Hunt",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Qwen-Image-2.1-Multiple-Angles-LoRA released on Hugging Face",
+      "source": "@_akhaliq",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "DeepSeek V4.1 Flash highlighted as cost/speed Pareto frontier leader",
+      "source": "@NousResearch",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "dair_ai releases MCP tools for AI paper discovery and literature reviews",
+      "source": "omarsar0",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Viktor AI employee for harness engineers debuts \u2014 auto-reviews overnight eval runs",
+      "source": "omarsar0",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "On-device AI agents with local memory are gaining traction without cloud dependency",
+      "source": "DeepLearningAI",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Bloom raises $3.6M seed to become the Alibaba of American manufacturing",
+      "source": "TechCrunch",
+      "date": "2026-10-08",
+      "issue": 105
+    },
+    {
+      "text": "Exor's Vento startup factory reaches 220 companies, 3,000 jobs, and \u20ac3 billion in value",
+      "source": "Lo Spiffero",
+      "date": "2026-10-08",
+      "issue": 105
     }
   ]
 }
