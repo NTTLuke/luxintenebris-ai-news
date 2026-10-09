@@ -4,252 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Google DeepMind launches Gemini Robotics 2 \u2014 embodied AI for humanoids with full-body intelligence",
-      "source": "Google DeepMind",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "AI agent autonomously created malware, uploaded to PyPI where it stayed live for ~1 hour",
-      "source": "Simon Willison via X",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Group-Reflective Self-Distillation for Agentic Reinforcement Learning",
-      "source": "arXiv",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "TAPO: Transition-Aware Policy Optimization for LLM Agents",
-      "source": "arXiv",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Reasoning Consensus: Structural Ensembling of LLM Reasoning via Weighted DAG Aggregation",
-      "source": "arXiv",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "BM25 Wins at Scale: A Scaling Study of Retrieval-Augmented Generation Paradigms",
-      "source": "Hugging Face",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
-      "source": "Hugging Face",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Inkling-Small: 276B/12B active MoE model matches larger models on reasoning",
-      "source": "LMSYS / Thinking Machines",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "FLUX 3 Preview: Open video generation model from Black Forest Labs / Nous Research",
-      "source": "Nous Research",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "TurboVLA achieves 32Hz real-time Vision-Language-Action on single RTX 4090 with <1GB VRAM",
-      "source": "arXiv / Hugging Face",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "EU launches \u20ac10B plan for seven AI gigafactories",
-      "source": "AP News",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Samsung chip profit soars 250-fold on AI memory shortages",
-      "source": "The National",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Nvidia reportedly planning 20-30% GPU price hike for third time in 2026",
-      "source": "TechPowerUp",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Tau Robotics launches humanoid cleaning service in San Francisco at $30/hr",
-      "source": "ABC7 News",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Prizm \u2014 One API key for every top AI video, image and voice model",
-      "source": "Hacker News",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "ResiliReplay \u2014 Chaos testing for AI agents and MCP servers",
-      "source": "Hacker News",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Friend AI Wearable 2.0 returns with built-in voice at $249",
-      "source": "TechCrunch",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Anti-Slop UI \u2014 Deterministic state-machine to stop AI hallucinations in UI generation",
-      "source": "Hacker News",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Synthetic-user startup Simile raises $200M at $2B valuation",
-      "source": "TechCrunch",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Okta acquires AI security startup Permiso for ~$200M",
-      "source": "TechCrunch",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Inforcer raises $50M to help prepare SMBs for AI and security risks",
-      "source": "TechCrunch",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Algorithmiq achieves quantum advantage with IBM, proving reliable quantum computation",
-      "source": "AI4Business",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Gemini Robotics ER 2 preview model released on Gemini 3.5 Flash with bidirectional streaming",
-      "source": "Phil Schmid via X",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Avatarin built a 24/7 retail agent with GPT-Realtime for Japanese electronics retailer",
-      "source": "OpenAI",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Dili raises $21.7M to bring AI compliance to the infrastructure boom",
-      "source": "TechCrunch",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Teradyne Robotics revenue rises 33% YoY in Q2 2026",
-      "source": "The Robot Report",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Reclip \u2014 AI video clipper, voiceover and creator tools",
-      "source": "Hacker News",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Widen \u2014 open-source Mac Postgres GUI with text-to-SQL",
-      "source": "Hacker News",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Pomi \u2014 standalone voice agent running on Rabbit R1",
-      "source": "Hacker News",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "Study: AI coding agents improve task completion but significantly hurt code comprehension",
-      "source": "omarsar0 via X",
-      "date": "2026-07-31",
-      "issue": 36
-    },
-    {
-      "text": "xAI's Imagine Video 1.5 adds references and native 1080p output",
-      "source": "x.ai",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
-      "source": "TechCrunch",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Repeat founder Ryan Williams raises $10M seed for AI for private credit managers",
-      "source": "TechCrunch",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "LMSYS ships cleaner quantization stack in SGLang for Qwen3-30B-A3B",
-      "source": "LMSYS",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Qwen-UI-Agent technical report: next-gen GUI agents",
-      "source": "@_akhaliq",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Explorative Modeling: a third pretraining axis and end-to-end generation",
-      "source": "@_akhaliq",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "GAI \u2013 a Go runtime for typed, tool-using LLM agents",
-      "source": "GitHub",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Sanitizer \u2013 strip sensitive data from documents locally before an LLM",
-      "source": "Provexar",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Shellphone \u2013 MCP extension to link Claude Chat and Claude Code",
-      "source": "npm",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Vinv \u2013 IDE plug-in that finds and fixes bugs, dead code and perf issues",
-      "source": "GitHub",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Revismart closes first \u20ac500K pre-seed to bring generative AI to legal review",
-      "source": "StartupItalia",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
       "text": "Italian startups raised \u20ac102.97M in July 2026, led by AI and deep-tech rounds",
       "source": "La Repubblica",
       "date": "2026-08-01",
@@ -12002,6 +11756,252 @@
       "source": "Lo Spiffero",
       "date": "2026-10-08",
       "issue": 105
+    },
+    {
+      "text": "Anthropic commits $150M to the Genesis Mission and brings Claude to 15+ US federal agencies",
+      "source": "AnthropicAI",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Google brings agentic AI to Gemini, starting with businesses",
+      "source": "TechCrunch",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "China's Manus raises over $500M in first round since its forced split with Meta",
+      "source": "TechCrunch",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "OpenAI disrupts two AI-enabled 'false front' influence operations",
+      "source": "OpenAI",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Long-WAM scales the context of world-action models under real-time control",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "DecepEval: a benchmark for deception in LLM agents hits 87% induced rates",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Recurrent Looped Transformer generalizes parity to 256 bits at 100%",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "RSIGym: agent-run recursive self-improvement lifts SWE-bench Verified from 17.67% to 50.33%",
+      "source": "omarsar0 (X)",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Agent Plasticity measures self-improvement through experience",
+      "source": "_akhaliq (X)",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "RobotWorld benchmarks robot-use agents across 84 tasks and many embodiments",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Hermes Agent goes native on Windows, live in the Microsoft Store",
+      "source": "@NousResearch",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Hermes Agent ships deep integration with ASUS ProArt RTX Spark PCs",
+      "source": "@NousResearch",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Iris-3B: a 3B pixel-space diffusion model that drops the VAE latent",
+      "source": "@_akhaliq",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "nanoMuse: an open-source personal agent for every device you own",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "LIFT: layout-in-future video generation under large viewpoint changes",
+      "source": "@_akhaliq",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Theo: A New Small Model Finally Delivers",
+      "source": "YouTube \u2014 Theo - t3.gg",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Anthropic reportedly preparing for rapid AI transformation",
+      "source": "YouTube \u2014 Beyond AI News",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "AWS launches an open-source Physical AI Toolchain for robotics",
+      "source": "The Robot Report",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Lumos Robotics stages the world's first humanoid robot theater show",
+      "source": "Robotics & Automation News",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Jabil: manufacturability, not demo videos, will set the pace for humanoids",
+      "source": "The Robot Report",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Finland orders Google to halt two AI data centers over alleged deforestation",
+      "source": "Tom's Hardware",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Google releases AI Edge Foresight, a local-first Granola competitor",
+      "source": "TechCrunch",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Cal AI's 19-year-old co-founder launches Persona, backed by $10M from Vine Ventures",
+      "source": "TechCrunch",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Show HN: Rembrandt \u2014 free open-source Lightroom alternative, local with AI",
+      "source": "Hacker News",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "A \u20ac1B 'Made in Italy' data center network of 13 sites unveiled",
+      "source": "AI4Business",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Italian startups attract \u20ac1.465B in VC in the first nine months of 2026",
+      "source": "ANSA",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "AI leaderboard Arena nearly doubles valuation to $3.1B with $200M Series B",
+      "source": "TechCrunch",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Rein Security raises $25M Series A to protect enterprise AI agents",
+      "source": "Tech Startups",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "French startup Verso raises $6M seed for consumer intelligence in business decisions",
+      "source": "tech.eu",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Google's FlowAgent: ReAct-style repair agent in production applies 28,000+ developer-approved fixes",
+      "source": "omarsar0 (X)",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Mechanics of long-context hybrid models: a seesaw between linear-attention hybrids and SWA extrapolation",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Minimal Witness RL recovers all minimal sufficient explanations with only a verifier bit",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "UltraText Bench: 432 bilingual prompts expose divergent strengths in visual text rendering",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "RoboQuest benchmarks embodied agents that must search, inspect and test",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "AdSpark-300K: ~300K reference-image-to-advertisement pairs for product-centric video generation",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Co-evolving robot orchestrators and policies through deployment lets harnesses bypass frozen-VLA failures",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "D-OPCD distills agent-harness prompt refinements into diffusion model weights",
+      "source": "HuggingFace",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "KLPO anchors KL-regularized policy optimization at the sampler \u2014 no importance weights, no critic, one rollout",
+      "source": "arXiv",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Naver's NP-OPD adds negative-policy rollouts to on-policy distillation across scales and domains",
+      "source": "arXiv",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Capgemini survey: 79% of organizations engage with physical AI, only 27% deploy or scale it",
+      "source": "TechRadar",
+      "date": "2026-10-09",
+      "issue": 106
+    },
+    {
+      "text": "Show HN: Moching \u2014 open-source AI desktop agent in Rust with 219 built-in tools",
+      "source": "Hacker News",
+      "date": "2026-10-09",
+      "issue": 106
     }
   ]
 }
