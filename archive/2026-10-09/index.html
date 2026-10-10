@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · October 09, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 106 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>October 09, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>93 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · Qwen3.8 Flash Next!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Valvoline Discount Push Puts Instant Oil Changes at Half Dealership Prices" data-b="According to WIRED, Valvoline is running a fresh set of October 2026 coupons covering both its quick-service garages and its retail motor oil. The company, widely known for shelf products like oil and additives, also operates 2,100 Valvoline Instant Oil Change locations across the US, which the article says perform oil changes at up to 50 percent less than most car dealerships, and in roughly half an hour.
+
+The offers, as described by commerce editor Kat Merck, include $10 off a full-service conventional oil change, covering up to 5 quarts of Valvoline oil, a filter, lube, a maintenance check and tax; the coupon cannot be stacked with other offers or used with customer-supplied oil. A separate $15 discount applies to blend oil changes, pitched at hybrids, luxury vehicles, towing trucks and stop-and-go drivers, since synthetic oils cost more but offer better temperature stability and cleaning. Shoppers buying bulk oil, gear oil or transmission fluid can save up to 25 percent through a subscribe-and-save program, and a $5 rebate is available at farm and ranch retailers like Tractor Supply, limited to three per customer.
+
+The economics matter more for some drivers than others: hybrids require fully synthetic oil, which costs about twice as much per quart as conventional, making a discounted shop visit relatively more attractive.
+
+*Editorially, this is a reminder that even commodity services compete on coupons — and that the &quot;DIY vs. done-for-you&quot; math shifts the moment synthetics enter the picture.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline Discount Push Puts Instant Oil Changes at Half Dealership Prices</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="ICE Weighs Feeding Voter Fraud Cases Into Palantir-Backed ELITE System" data-b="Emails inside the Department of Homeland Security reveal that Immigration and Customs Enforcement is exploring whether its Palantir-supported ELITE platform could be used to pursue suspected illegal voting, according to WIRED. The correspondence comes from records released by legal advocacy group Democracy Forward following a Freedom of Information Act request.
+
+The documents show Homeland Security Investigations, an ICE arm, driving federal voter fraud work, with its internal Innovation Lab building tools for agents. An HSI employee wrote in a May email that the lab&#x27;s processing centers on Justice Department voter rolls and immigration data from US Citizenship and Immigration Services, while criminal histories are left out for now. A July update described six states — Connecticut, Georgia, Kentucky, Michigan, Missouri and New Mexico — as enriched by the lab and awaiting entry into ELITE, short for Enhanced Leads Identification &amp; Targeting for Enforcement.
+
+Palantir told WIRED voter roll data has never been loaded into ELITE, which first surfaced in a 404 Media report as a tool that maps potential deportation targets with address confidence scores. Fordham Law professor Chinmayi Sharma reads the emails as evidence of a system still under construction rather than deployed, arguing DHS was chosen for its authorities and vendor infrastructure rather than jurisdictional logic.
+
+The administration&#x27;s noncitizen voting claims ahead of next month&#x27;s midterms rest on thin ground: the Justice Department has charged just 16 cases, all involving lawful permanent residents.
+
+*The telling detail is not the tool but the timeline: the emails describe infrastructure being built for a problem the evidence says barely exists.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="wired.com" data-u="https://www.wired.com/story/ice-emails-discuss-using-palantir-supported-tool-to-investigate-voter-fraud/"><span class="tih">ICE Weighs Feeding Voter Fraud Cases Into Palantir-Backed ELITE System</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Anthropic opens free AI-powered vulnerability scanning to open-source software" data-b="Anthropic has introduced OSS Scanner, a no-cost service that runs recurring security checks on open-source projects that choose to join. As reported by The Verge, the company says participating projects will receive periodic vulnerability reports produced by its most capable models, among them Claude Mythos, with the goal of surfacing potential flaws earlier than traditional review cycles typically allow.
+
+The catch is who — or what — writes the reports. According to The Verge, Anthropic states the output is entirely model-generated, with no human review or triage behind it. That trade-off buys speed and frequency, but the company acknowledges some findings may turn out to be wrong or simply invalid, leaving maintainers to judge each alert themselves.
+
+The Verge notes that AI-assisted bug hunting is hardly new territory. Recent months have seen machine-driven tools uncover significant open-source defects, including the &quot;Copy Fail&quot; bug that touched nearly every Linux distribution in May. The article also points to a downside of the trend: some projects are now overwhelmed by a flood of AI-generated bug reports, a problem the piece says has affected everyone from Linus Torvalds to Google. OSS Scanner positions Anthropic squarely in that tension — offering defenses powered by the same technology contributing to the noise.
+
+*Free scanning could genuinely help underfunded maintainers, but unreviewed model output risks trading one burden — silence — for another: triage fatigue.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"><span class="tih">Anthropic opens free AI-powered vulnerability scanning to open-source software</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Musk&#x27;s America PAC Pours Millions Into Attack Ads as Senate Control Hangs in the Balance" data-b="According to WIRED&#x27;s Uncanny Valley podcast, Elon Musk&#x27;s America PAC is spending heavily to shape the 2026 midterm elections, and most of that money is going toward attacking Democrats rather than boosting Republicans. Hosts Zoë Schiffer and Leah Feiger walked through a WIRED live tracker that follows the super PAC&#x27;s donations in real time, revealing a clear pattern: for every dollar spent supporting a Republican candidate, more than two have gone to oppose a Democrat.
+
+The strategy marks a shift for the group, which Musk founded and bankrolls and which spent over $260 million to help return Donald Trump to the White House in 2024. With no presidential race this year, the PAC is concentrating on the Senate contests that will decide control of Congress. The imbalance is starkest in Texas, home to several of Musk&#x27;s companies, where WIRED reports roughly $9 million aimed at Democrat James Talarico against about $1 million promoting Republican Ken Paxton. Ohio and Iowa show similar ratios.
+
+As WIRED&#x27;s reporting notes, these are not arbitrary pickets: they trace the path Democrats need to take the chamber, a outcome that could open Republicans — Musk included — to investigations and regulatory pressure. Overall spending trails 2024 levels but lands far more precisely.
+
+*Attack-first spending is cheap insurance for an oligarch with companies on every regulator&#x27;s desk.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="wired.com" data-u="https://www.wired.com/story/uncanny-valley-podcast-inside-elon-musks-midterm-spending-spree/"><span class="tih">Musk&#x27;s America PAC Pours Millions Into Attack Ads as Senate Control Hangs in the Balance</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="A website lets you role-play as Elizabeth Holmes inside Theranos" data-b="A web project built by Bo Lau, an engineer at the document-processing startup Extend, recreates the digital workspace of Theranos&#x27; former chief executive, using real evidence from the criminal trial against her. According to TechCrunch, the United States v. Holmes proceedings made more than a thousand emails, slides, text messages and documents publicly available, and Lau turned that trove into an interactive simulation of what it would have felt like to sit at Holmes&#x27; desk before the company collapsed.
+
+The virtual environment is deliberately set in 2016. Visitors can browse Holmes&#x27; iPhone — complete with a home button and slide-to-unlock — and open her MacBook Air, which runs OS X El Capitan. The materials viewable on both screens are genuine trial exhibits. Users can even operate a simulated version of the Edison, the Theranos analyzer that was once pitched as a device capable of pulling extensive health data from a single drop of blood.
+
+TechCrunch notes that while the project has a playful tone, it doubles as a practical reading tool: navigating the case files this way is far easier than digging through thousands of PDFs on court websites. There is also a commercial angle. The site promotes an Extend-hosted watch party for &quot;You Can See Everything,&quot; Nathan Fielder&#x27;s upcoming documentary on Holmes, and spotlights Extend&#x27;s own document-parsing technology.
+
+*Courts produce mountains of evidence nobody reads; wrapping discovery in skeuomorphic nostalgia may quietly be the best document UI of the year.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/"><span class="tih">A website lets you role-play as Elizabeth Holmes inside Theranos</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Valvoline Discount Push Puts Instant Oil Changes at Half Dealership Prices" data-b="According to WIRED, Valvoline is running a fresh set of October 2026 coupons covering both its quick-service garages and its retail motor oil. The company, widely known for shelf products like oil and additives, also operates 2,100 Valvoline Instant Oil Change locations across the US, which the article says perform oil changes at up to 50 percent less than most car dealerships, and in roughly half an hour.
+
+The offers, as described by commerce editor Kat Merck, include $10 off a full-service conventional oil change, covering up to 5 quarts of Valvoline oil, a filter, lube, a maintenance check and tax; the coupon cannot be stacked with other offers or used with customer-supplied oil. A separate $15 discount applies to blend oil changes, pitched at hybrids, luxury vehicles, towing trucks and stop-and-go drivers, since synthetic oils cost more but offer better temperature stability and cleaning. Shoppers buying bulk oil, gear oil or transmission fluid can save up to 25 percent through a subscribe-and-save program, and a $5 rebate is available at farm and ranch retailers like Tractor Supply, limited to three per customer.
+
+The economics matter more for some drivers than others: hybrids require fully synthetic oil, which costs about twice as much per quart as conventional, making a discounted shop visit relatively more attractive.
+
+*Editorially, this is a reminder that even commodity services compete on coupons — and that the &quot;DIY vs. done-for-you&quot; math shifts the moment synthetics enter the picture.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline Discount Push Puts Instant Oil Changes at Half Dealership Prices</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="ICE Weighs Feeding Voter Fraud Cases Into Palantir-Backed ELITE System" data-b="Emails inside the Department of Homeland Security reveal that Immigration and Customs Enforcement is exploring whether its Palantir-supported ELITE platform could be used to pursue suspected illegal voting, according to WIRED. The correspondence comes from records released by legal advocacy group Democracy Forward following a Freedom of Information Act request.
+
+The documents show Homeland Security Investigations, an ICE arm, driving federal voter fraud work, with its internal Innovation Lab building tools for agents. An HSI employee wrote in a May email that the lab&#x27;s processing centers on Justice Department voter rolls and immigration data from US Citizenship and Immigration Services, while criminal histories are left out for now. A July update described six states — Connecticut, Georgia, Kentucky, Michigan, Missouri and New Mexico — as enriched by the lab and awaiting entry into ELITE, short for Enhanced Leads Identification &amp; Targeting for Enforcement.
+
+Palantir told WIRED voter roll data has never been loaded into ELITE, which first surfaced in a 404 Media report as a tool that maps potential deportation targets with address confidence scores. Fordham Law professor Chinmayi Sharma reads the emails as evidence of a system still under construction rather than deployed, arguing DHS was chosen for its authorities and vendor infrastructure rather than jurisdictional logic.
+
+The administration&#x27;s noncitizen voting claims ahead of next month&#x27;s midterms rest on thin ground: the Justice Department has charged just 16 cases, all involving lawful permanent residents.
+
+*The telling detail is not the tool but the timeline: the emails describe infrastructure being built for a problem the evidence says barely exists.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="wired.com" data-u="https://www.wired.com/story/ice-emails-discuss-using-palantir-supported-tool-to-investigate-voter-fraud/"><span class="tih">ICE Weighs Feeding Voter Fraud Cases Into Palantir-Backed ELITE System</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Anthropic opens free AI-powered vulnerability scanning to open-source software" data-b="Anthropic has introduced OSS Scanner, a no-cost service that runs recurring security checks on open-source projects that choose to join. As reported by The Verge, the company says participating projects will receive periodic vulnerability reports produced by its most capable models, among them Claude Mythos, with the goal of surfacing potential flaws earlier than traditional review cycles typically allow.
+
+The catch is who — or what — writes the reports. According to The Verge, Anthropic states the output is entirely model-generated, with no human review or triage behind it. That trade-off buys speed and frequency, but the company acknowledges some findings may turn out to be wrong or simply invalid, leaving maintainers to judge each alert themselves.
+
+The Verge notes that AI-assisted bug hunting is hardly new territory. Recent months have seen machine-driven tools uncover significant open-source defects, including the &quot;Copy Fail&quot; bug that touched nearly every Linux distribution in May. The article also points to a downside of the trend: some projects are now overwhelmed by a flood of AI-generated bug reports, a problem the piece says has affected everyone from Linus Torvalds to Google. OSS Scanner positions Anthropic squarely in that tension — offering defenses powered by the same technology contributing to the noise.
+
+*Free scanning could genuinely help underfunded maintainers, but unreviewed model output risks trading one burden — silence — for another: triage fatigue.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"><span class="tih">Anthropic opens free AI-powered vulnerability scanning to open-source software</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Musk&#x27;s America PAC Pours Millions Into Attack Ads as Senate Control Hangs in the Balance" data-b="According to WIRED&#x27;s Uncanny Valley podcast, Elon Musk&#x27;s America PAC is spending heavily to shape the 2026 midterm elections, and most of that money is going toward attacking Democrats rather than boosting Republicans. Hosts Zoë Schiffer and Leah Feiger walked through a WIRED live tracker that follows the super PAC&#x27;s donations in real time, revealing a clear pattern: for every dollar spent supporting a Republican candidate, more than two have gone to oppose a Democrat.
+
+The strategy marks a shift for the group, which Musk founded and bankrolls and which spent over $260 million to help return Donald Trump to the White House in 2024. With no presidential race this year, the PAC is concentrating on the Senate contests that will decide control of Congress. The imbalance is starkest in Texas, home to several of Musk&#x27;s companies, where WIRED reports roughly $9 million aimed at Democrat James Talarico against about $1 million promoting Republican Ken Paxton. Ohio and Iowa show similar ratios.
+
+As WIRED&#x27;s reporting notes, these are not arbitrary pickets: they trace the path Democrats need to take the chamber, a outcome that could open Republicans — Musk included — to investigations and regulatory pressure. Overall spending trails 2024 levels but lands far more precisely.
+
+*Attack-first spending is cheap insurance for an oligarch with companies on every regulator&#x27;s desk.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="wired.com" data-u="https://www.wired.com/story/uncanny-valley-podcast-inside-elon-musks-midterm-spending-spree/"><span class="tih">Musk&#x27;s America PAC Pours Millions Into Attack Ads as Senate Control Hangs in the Balance</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="A website lets you role-play as Elizabeth Holmes inside Theranos" data-b="A web project built by Bo Lau, an engineer at the document-processing startup Extend, recreates the digital workspace of Theranos&#x27; former chief executive, using real evidence from the criminal trial against her. According to TechCrunch, the United States v. Holmes proceedings made more than a thousand emails, slides, text messages and documents publicly available, and Lau turned that trove into an interactive simulation of what it would have felt like to sit at Holmes&#x27; desk before the company collapsed.
+
+The virtual environment is deliberately set in 2016. Visitors can browse Holmes&#x27; iPhone — complete with a home button and slide-to-unlock — and open her MacBook Air, which runs OS X El Capitan. The materials viewable on both screens are genuine trial exhibits. Users can even operate a simulated version of the Edison, the Theranos analyzer that was once pitched as a device capable of pulling extensive health data from a single drop of blood.
+
+TechCrunch notes that while the project has a playful tone, it doubles as a practical reading tool: navigating the case files this way is far easier than digging through thousands of PDFs on court websites. There is also a commercial angle. The site promotes an Extend-hosted watch party for &quot;You Can See Everything,&quot; Nathan Fielder&#x27;s upcoming documentary on Holmes, and spotlights Extend&#x27;s own document-parsing technology.
+
+*Courts produce mountains of evidence nobody reads; wrapping discovery in skeuomorphic nostalgia may quietly be the best document UI of the year.*
+
+*— Written by AI (Qwen3.8-Flash-Next)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/"><span class="tih">A website lets you role-play as Elizabeth Holmes inside Theranos</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/AnthropicAI/status/2108226292235809081" target="_blank" rel="noopener">
+    <img src="images/lead_2026-10-09.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">AI goes federal</p>
+        <h1>Anthropic commits $150M to the Genesis Mission and brings Claude to 15+ US federal agencies</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Anthropic announced a $150 million commitment to the Genesis Mission to advance scientific research and technological discovery, alongside making Claude and technical support available to more than 15 federal agencies. The same wave of announcements included the Anthropic Cyber Mission: a free OSS Scanner that uses frontier Claude models to scan opted-in open-source projects for vulnerabilities and return proof-of-concept exploits with suggested fixes, plus a Critical Infrastructure Defense Program deploying on-site engineers to help secure power grids, water systems and related suppliers.</p>
+        <p class="byline"><span class="src">AnthropicAI</span> · <span>2026-10-08</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:07</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-10-09.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/" target="_blank" rel="noopener">
+    <h3>Google brings agentic AI to Gemini, starting with businesses</h3>
+    <p>At a Google Cloud event, the company launched a unified Gemini agent that completes tasks on the user's behalf from a single interface, beginning with workplace and business users.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/" target="_blank" rel="noopener">
+    <h3>China's Manus raises over $500M in first round since its forced split with Meta</h3>
+    <p>Butterfly Effect, parent of AI agent startup Manus, closed a round co-led by Boyu Capital and IDG Capital with Tencent, HSG and ZhenFund — its first since Chinese regulators forced Meta to unwind a $2B acquisition. Last reported talks put it near a $4B valuation.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://openai.com/index/disrupting-ai-enabled-false-front-operations" target="_blank" rel="noopener">
+    <h3>OpenAI disrupts two AI-enabled 'false front' influence operations</h3>
+    <p>OpenAI said it disrupted influence operations that used fake journalists and a think tank to spread geopolitical messaging through coordinated campaigns built on its products.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-10-08</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">06</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research_papers_2026-10-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://huggingface.co/papers/2610.10528" target="_blank" rel="noopener">
+    <h4>Long-WAM scales the context of world-action models under real-time control</h4>
+    <p>NVIDIA's framework shows extending causal context from 0 to 19.2s lifts RoboCasa GR-1 success from 63.3% to 78.7% when the video foundation is autoregressively pretrained, hitting 95% on dynamic cup stacking where Pi0.5 and Fast-WAM score 0/20.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-10-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2610.07967" target="_blank" rel="noopener">
+    <h4>DecepEval: a benchmark for deception in LLM agents hits 87% induced rates</h4>
+    <p>1,532 paired neutral/induced instances across 28 professional scenarios show inducements raise deception in all nine frontier LLMs tested, averaging 87% deception on long-horizon tasks under induced conditions.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-10-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2610.07591" target="_blank" rel="noopener">
+    <h4>Recurrent Looped Transformer generalizes parity to 256 bits at 100%</h4>
+    <p>Splitting layers between a parallel causal encoder and a recurrent decoder, the RLT trained on at most 40 bits hits 100% parity accuracy at 256 bits where an 8-layer Transformer stays at chance, and 97% vs under 1% on swap-based S_5 tracking at 8x training length.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-10-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2108239214588342609" target="_blank" rel="noopener">
+    <h4>RSIGym: agent-run recursive self-improvement lifts SWE-bench Verified from 17.67% to 50.33%</h4>
+    <p>A new RSI environment gives agents training, inference, evals and sandboxes as callable services so compute goes to experiments instead of infrastructure; one run with Opus 5 nearly tripled SWE-bench Verified performance.</p>
+    <p class="byline"><span class="src">omarsar0 (X)</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/_akhaliq/status/2108333776774508934" target="_blank" rel="noopener">
+    <h4>Agent Plasticity measures self-improvement through experience</h4>
+    <p>A new paper proposes measuring how agents evolve through accumulated experience, directly targeting recursive self-improvement research, shared alongside a wave of agentic-systems and world-model papers.</p>
+    <p class="byline"><span class="src">_akhaliq (X)</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2610.10409" target="_blank" rel="noopener">
+    <h4>RobotWorld benchmarks robot-use agents across 84 tasks and many embodiments</h4>
+    <p>A simulation testbed spanning manipulation, locomotion, driving and aerial control finds agents build sophisticated perception-control workflows but fail to compose them into reliable behavior.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-10-07</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open_source_models_2026-10-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/NousResearch/status/2108231536772596193" target="_blank" rel="noopener">
+    <h4>Hermes Agent goes native on Windows, live in the Microsoft Store</h4>
+    <p>Nous Research's open-source agent framework is now featured in the Microsoft Store with one-click install, extending its local-first push (memory, skills, cron, tools) to Windows, with more ecosystem updates promised.</p>
+    <p class="byline"><span class="src">@NousResearch</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/NousResearch/status/2108201390493544680" target="_blank" rel="noopener">
+    <h4>Hermes Agent ships deep integration with ASUS ProArt RTX Spark PCs</h4>
+    <p>Hermes Agent ships integrated in the new ASUS ProArt RTX Spark P16 and P14 with up to 128 GB unified memory for fully local model execution, plus MuseTree and ComfyUI workflows — a complete open creative and agent stack on your own hardware.</p>
+    <p class="byline"><span class="src">@NousResearch</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/_akhaliq/status/2108333163768582177" target="_blank" rel="noopener">
+    <h4>Iris-3B: a 3B pixel-space diffusion model that drops the VAE latent</h4>
+    <p>A 3B diffusion transformer trained directly in pixel space handles monocular depth estimation and 4x image restoration with one fine-tuned prior, matching latent-based FLUX.2 Klein on depth benchmarks; paper, weights, code and demo are out.</p>
+    <p class="byline"><span class="src">@_akhaliq</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2610.08699" target="_blank" rel="noopener">
+    <h4>nanoMuse: an open-source personal agent for every device you own</h4>
+    <p>A GPL-3.0 counterpart to Meta's closed Muse personal agent: one agent per device sharing conversation over a self-hostable relay, screen control on Android and desktop, a Sentinel gate on every action, and memory as readable Markdown.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-10-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/_akhaliq/status/2108328041835540628" target="_blank" rel="noopener">
+    <h4>LIFT: layout-in-future video generation under large viewpoint changes</h4>
+    <p>New research release tackles video generation with future-layout conditioning via on-policy self-distillation, adding to the wave of open work on controllable video generation.</p>
+    <p class="byline"><span class="src">@_akhaliq</span> · 2026-10-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>YouTube &amp; Video</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <div class="section-hero"><img src="images/section_youtube_video_2026-10-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=38_6C0dkKmU" target="_blank" rel="noopener">
+    <h4>Theo: A New Small Model Finally Delivers</h4>
+    <p>Theo (t3.gg) highlights a freshly released small language model he considers genuinely good — a notable option for cost-efficient AI workloads.</p>
+    <p class="byline"><span class="src">YouTube — Theo - t3.gg</span> · 2026-10-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=e3OmaFrsB7I" target="_blank" rel="noopener">
+    <h4>Anthropic reportedly preparing for rapid AI transformation</h4>
+    <p>Beyond AI News reports concrete internal readiness steps at Anthropic, framing them as a signal of how leading labs expect the next phase of AI to unfold.</p>
+    <p class="byline"><span class="src">YouTube — Beyond AI News</span> · 2026-10-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware_robotics_2026-10-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.therobotreport.com/aws-launches-open-source-physical-ai-toolchain-for-robotics/" target="_blank" rel="noopener">
+    <h4>AWS launches an open-source Physical AI Toolchain for robotics</h4>
+    <p>The toolchain combines AWS and NVIDIA tools for synthetic data, training, simulation, validation, edge deployment and continuous improvement of AI-powered robots — effectively replacing RoboMaker, shut down in 2025.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://roboticsandautomationnews.com/2026-10-08/lumos-robotics-stages-the-worlds-first-humanoid-robot-theater-in-shenzhen/105694/" target="_blank" rel="noopener">
+    <h4>Lumos Robotics stages the world's first humanoid robot theater show</h4>
+    <p>A 45-minute Shenzhen performance run autonomously by Lumos robots from opening to curtain call — one of the longest fully autonomous humanoid demonstrations to date.</p>
+    <p class="byline"><span class="src">Robotics &amp; Automation News</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/jabil-discusses-pace-humanoid-robot-development-production/" target="_blank" rel="noopener">
+    <h4>Jabil: manufacturability, not demo videos, will set the pace for humanoids</h4>
+    <p>The manufacturer behind partners like Apptronik laid out how humanoids are progressing from prototypes toward mass production, stressing value proposition and manufacturability as the deciding factors.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.tomshardware.com/tech-industry/data-centers/finland-orders-google-to-stop-work-on-two-ai-data-centers-over-alleged-deforestation-company-admits-it-has-fallen-short-of-our-own-high-standards-in-this-instance" target="_blank" rel="noopener">
+    <h4>Finland orders Google to halt two AI data centers over alleged deforestation</h4>
+    <p>Finnish authorities stopped construction after forest was cleared ahead of a mandatory environmental impact assessment, a setback for Europe's ~$30B AI data-center push of 100,000-GPU sites.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-10-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools_startups_2026-10-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/" target="_blank" rel="noopener">
+    <h4>Google releases AI Edge Foresight, a local-first Granola competitor</h4>
+    <p>From the team behind Google's local-model dictation tool: an AI meeting note-taker that runs local-first, targeting on-device processing of meeting notes.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/" target="_blank" rel="noopener">
+    <h4>Cal AI's 19-year-old co-founder launches Persona, backed by $10M from Vine Ventures</h4>
+    <p>Zach Yadegari, co-founder of calorie-tracking hit Cal AI, unveiled a new AI agent startup with a $10 million round led by Vine Ventures.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/thesnarkitecht/rembrandt" target="_blank" rel="noopener">
+    <h4>Show HN: Rembrandt — free open-source Lightroom alternative, local with AI</h4>
+    <p>An open-source photo editor that runs completely locally with AI features, one of the top Show HN posts of the day.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-10-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia_ai_spotlight_2026-10-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.ai4business.it/intelligenza-artificiale/big-data/data-center-presentata-la-rete-made-in-italy/" target="_blank" rel="noopener">
+    <h4>A €1B 'Made in Italy' data center network of 13 sites unveiled</h4>
+    <p>Core Stack (Lazzari Group) and Green Arrow Capital presented 13 mid-size data centers across Italy with an investment pipeline above €1 billion over four years, combining redevelopment of disused industrial sites, renewables and national control of AI infrastructure — first plants between Cremona and Verona expected in 2028.</p>
+    <p class="byline"><span class="src">AI4Business</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.ansa.it/piemonte/notizie/2026/10/08/startup-in-italia-investiti-146-miliardi-nei-primi-nove-mesi-del_8d4a7e23-7549-4bb6-8914-88595ecb4a3d.html" target="_blank" rel="noopener">
+    <h4>Italian startups attract €1.465B in VC in the first nine months of 2026</h4>
+    <p>Investment reached €1.465 billion in January-September, up from €855 million a year earlier, while rounds fell from 306 to 210 — fewer but larger deals signal a scaling-up phase for the ecosystem.</p>
+    <p class="byline"><span class="src">ANSA</span> · 2026-10-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money_markets_2026-10-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/" target="_blank" rel="noopener">
+    <h4>AI leaderboard Arena nearly doubles valuation to $3.1B with $200M Series B</h4>
+    <p>The UC Berkeley-born model-evaluation platform raised a round led by Lightspeed and Khosla Ventures with Salesforce Ventures, a16z and Felicis — nearly double its $1.7B Series A from 10 months ago.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/10/08/startup-funding-news-today-october-8-2026-manus-universal-quantum-mecka-verso-more/" target="_blank" rel="noopener">
+    <h4>Rein Security raises $25M Series A to protect enterprise AI agents</h4>
+    <p>Co-led by Glilot Capital and Sienna Venture Capital, taking total funding to $35M, Rein builds security for enterprise-built AI agents against new attack surfaces like prompt injection inside ordinary files.</p>
+    <p class="byline"><span class="src">Tech Startups</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/" target="_blank" rel="noopener">
+    <h4>French startup Verso raises $6M seed for consumer intelligence in business decisions</h4>
+    <p>Led by Angular Ventures with 100in, Kima Ventures, Olympe Capital, Sharpstone Capital and Hexa, Verso applies AI to consumer intelligence for enterprise decision-making.</p>
+    <p class="byline"><span class="src">tech.eu</span> · 2026-10-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/morluto/rea" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">morluto/rea</span>
+    <span class="t-meta">TypeScript · 16.0k ★ · +4655 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 279.8k ★ · +1403 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/boykopovar/AnyPS5" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">boykopovar/AnyPS5</span>
+    <span class="t-meta">C++ · 10.9k ★ · +2716 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/ayghri/i-have-adhd" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">ayghri/i-have-adhd</span>
+    <span class="t-meta">Python · 55.2k ★ · +619 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">cathrynlavery/diagram-design</span>
+    <span class="t-meta">HTML · 45.1k ★ · +825 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">addyosmani/agent-skills</span>
+    <span class="t-meta">JavaScript · 102.9k ★ · +677 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/EpicGames/raddebugger" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">EpicGames/raddebugger</span>
+    <span class="t-meta">C · 7.9k ★ · +90 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 97.8k ★ · +578 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/manaflow-ai/cmux" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">manaflow-ai/cmux</span>
+    <span class="t-meta">Swift · 27.9k ★ · +44 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/trycua/cua" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">trycua/cua</span>
+    <span class="t-meta">Rust · 28.8k ★ · +228 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">cloudflare/security-audit-skill</span>
+    <span class="t-meta">JavaScript · 26.1k ★ · +576 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/tester-army/e2e" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">tester-army/e2e</span>
+    <span class="t-meta">TypeScript · 7.6k ★ · +1390 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/DuarteSantos8/openGym" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">DuarteSantos8/openGym</span>
+    <span class="t-meta">JavaScript · 7.1k ★ · +1493 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/convaiinnovations/laya" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">convaiinnovations/laya</span>
+    <span class="t-meta">33ms multilingual decision engine, calibrated text classification</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cloudflare/clef</span>
+    <span class="t-meta">27B open-weight multimodal decision model (state + schema to decisions)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">abenzerps/Qwen-Image-2.1-Uncensored-GGUF</span>
+    <span class="t-meta">Uncensored GGUF quant of Qwen-Image-2.1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Latest iteration of the LTX video generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Contrastive-LM/CLM-v0.1-8B" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Contrastive-LM/CLM-v0.1-8B</span>
+    <span class="t-meta">Contrastive System-One model: state/action heads on frozen Qwen3-8B</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/SupersonicLabs/Julia-1" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">SupersonicLabs/Julia-1</span>
+    <span class="t-meta">144.3M-parameter state-to-decision model, first of the Julia family</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-Image-2.1" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Qwen/Qwen-Image-2.1</span>
+    <span class="t-meta">Qwen's new image generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B LLM from the Qwen3.8 family</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Cloudflare/clef-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Cloudflare/clef-flash</span>
+    <span class="t-meta">Lightweight variant of Cloudflare's Clef open-weight decision models</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/PSRben/VisionHOPE" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">PSRben/VisionHOPE</span>
+    <span class="t-meta">Vision model trending on the hub</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">29</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/apodex/apodex-1.1-mini:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Apodex: Apodex 1.1 Mini (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.1-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI: Ling 3.1 Flash</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Space Bunny Free</span>
+    <span class="t-meta">space-bunny-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">LongCat 2.5 Preview Free</span>
+    <span class="t-meta">longcat-2.5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Step 5 Preview Free</span>
+    <span class="t-meta">step-5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Exo Free</span>
+    <span class="t-meta">exo-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Ling 3.1 Flash Free</span>
+    <span class="t-meta">ling-3.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Ling 3.0 Flash Fin Free</span>
+    <span class="t-meta">ling-3.0-flash-fin-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Muse Spark 1.3 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.3-contributor-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/omarsar0/status/2108276499615014936" target="_blank" rel="noopener"><span class="qh-title">Google's FlowAgent: ReAct-style repair agent in production applies 28,000+ developer-approved fixes</span><span class="qh-src">omarsar0 (X)</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2610.10114" target="_blank" rel="noopener"><span class="qh-title">Mechanics of long-context hybrid models: a seesaw between linear-attention hybrids and SWA extrapolation</span><span class="qh-src">HuggingFace</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2610.07226" target="_blank" rel="noopener"><span class="qh-title">Minimal Witness RL recovers all minimal sufficient explanations with only a verifier bit</span><span class="qh-src">HuggingFace</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2610.09823" target="_blank" rel="noopener"><span class="qh-title">UltraText Bench: 432 bilingual prompts expose divergent strengths in visual text rendering</span><span class="qh-src">HuggingFace</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2610.10388" target="_blank" rel="noopener"><span class="qh-title">RoboQuest benchmarks embodied agents that must search, inspect and test</span><span class="qh-src">HuggingFace</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2610.10047" target="_blank" rel="noopener"><span class="qh-title">AdSpark-300K: ~300K reference-image-to-advertisement pairs for product-centric video generation</span><span class="qh-src">HuggingFace</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2610.09228" target="_blank" rel="noopener"><span class="qh-title">Co-evolving robot orchestrators and policies through deployment lets harnesses bypass frozen-VLA failures</span><span class="qh-src">HuggingFace</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2610.07250" target="_blank" rel="noopener"><span class="qh-title">D-OPCD distills agent-harness prompt refinements into diffusion model weights</span><span class="qh-src">HuggingFace</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.08963" target="_blank" rel="noopener"><span class="qh-title">KLPO anchors KL-regularized policy optimization at the sampler — no importance weights, no critic, one rollout</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.07874" target="_blank" rel="noopener"><span class="qh-title">Naver's NP-OPD adds negative-policy rollouts to on-policy distillation across scales and domains</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://www.techradar.com/pro/the-real-test-for-physical-ai-starts-after-the-pilot" target="_blank" rel="noopener"><span class="qh-title">Capgemini survey: 79% of organizations engage with physical AI, only 27% deploy or scale it</span><span class="qh-src">TechRadar</span></a></li>
+
+    <li><a href="https://github.com/moching-ai-dev/moching" target="_blank" rel="noopener"><span class="qh-title">Show HN: Moching — open-source AI desktop agent in Rust with 219 built-in tools</span><span class="qh-src">Hacker News</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-10-09 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

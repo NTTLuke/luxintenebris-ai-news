@@ -4,228 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Italian startups raised \u20ac102.97M in July 2026, led by AI and deep-tech rounds",
-      "source": "La Repubblica",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Open source React Native debugging studio",
-      "source": "NativeScope",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "WhisperKeys \u2013 offline macOS dictation, key-by-key",
-      "source": "GitHub",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "Penca \u2013 branchable, versioned OLTP+OLAP on one open copy of your data",
-      "source": "GitHub",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "An LSP for agent skills \u2013 rename, references, completion, diagnostics",
-      "source": "GitHub",
-      "date": "2026-08-01",
-      "issue": 37
-    },
-    {
-      "text": "OpenAI says upcoming Astra model solved ten open problems in mathematics",
-      "source": "OpenAI",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "DeepSeek-V4-Flash-0731 lands on the price/performance frontier",
-      "source": "Simon Willison",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Over 1,000 AI lab employees sign 'Pacing the Frontier' urging the US to slow automated AI",
-      "source": "YouTube \u2014 Theo - t3.gg",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "BYD to debut its first humanoid robots in early August at Di Space venues",
-      "source": "The Outpost AI",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Repeated sampling beats self-refine and reflexion at equal token cost",
-      "source": "arXiv",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Echoverse generates deep, evolving environments to train computer-use agents",
-      "source": "arXiv",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Memory Decoder at Scale: a pretrained, parametric long-term memory for LMs",
-      "source": "HuggingFace",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "WIDE boosts adaptive LLM inference via token-level dynamic width pruning",
-      "source": "arXiv",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "ReToken adds a retrieval token to improve vision-language models on visual retrieval",
-      "source": "arXiv",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "CleanSlate \u2014 open-source coding agent for IDE, CLI and SDK",
-      "source": "Hacker News",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Cockpit for Claude Code agents \u2014 a Rust-based control panel",
-      "source": "Hacker News",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Pronto \u2014 a real-time wire for AI agents with 70k+ feeds connected",
-      "source": "Hacker News",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "CostPerPrompt \u2014 live AI API pricing and real-workload cost calculators",
-      "source": "Hacker News",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Evidence-to-Skill \u2014 a gate between untrusted sources and agent skills",
-      "source": "Hacker News",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Bending Spoons one month after IPO: shares down 13%, new M&A in sight",
-      "source": "StartupItalia",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Metriks AI subscribes first tranche of capital increase in BeBeez publisher EdiBeez",
-      "source": "StartupItalia",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "smol.ai: every repository gets its own agent",
-      "source": "swyx",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Agent 'metaharness' bake-off: Flue vs Eve vs Omnigent",
-      "source": "swyx",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Google was 'too nervous' to release its pre-ChatGPT chatbot, ex-team member recalls",
-      "source": "swyx",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Simon Willison recalls OpenAI's internal debate before launching ChatGPT",
-      "source": "Simon Willison",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "swyx argues AI teams abandoned /loop and /goal agent patterns too early",
-      "source": "swyx",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Voris \u2014 privacy-first analytics for the AI-influenced web",
-      "source": "Hacker News",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "PhaseProbe \u2014 find simulation transitions and turn them into tests",
-      "source": "Hacker News",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Symbio \u2014 a self fine-tuning AI loop",
-      "source": "Hacker News",
-      "date": "2026-08-02",
-      "issue": 38
-    },
-    {
-      "text": "Karpathy turns a Lord of the Rings paragraph into a playable Three.js world with Opus 5",
-      "source": "karpathy (X)",
-      "date": "2026-08-03",
-      "issue": 39
-    },
-    {
-      "text": "Nous Research: Hermes Agent gains traction as a high-performing open-source agent",
-      "source": "NousResearch (X)",
-      "date": "2026-08-03",
-      "issue": 39
-    },
-    {
-      "text": "Simon Willison surfaces under-discovered ChatGPT Work features: built-in browser and Cloudflare Workers deploy",
-      "source": "simonw (X)",
-      "date": "2026-08-03",
-      "issue": 39
-    },
-    {
-      "text": "Nous Portal offers DeepSeek V4 Flash at 90% off for 7 days",
-      "source": "NousResearch (X)",
-      "date": "2026-08-03",
-      "issue": 39
-    },
-    {
-      "text": "Karpathy expands on agentic long-context coding limits",
-      "source": "karpathy (X)",
-      "date": "2026-08-03",
-      "issue": 39
-    },
-    {
-      "text": "WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning",
-      "source": "arXiv",
-      "date": "2026-08-03",
-      "issue": 39
-    },
-    {
-      "text": "The Parts Are Greater Than the Sum: automated task sequencing for multi-policy LLMs",
-      "source": "arXiv",
-      "date": "2026-08-03",
-      "issue": 39
-    },
-    {
-      "text": "ExtractBench: a benchmark for schema-guided enterprise document extraction",
-      "source": "arXiv",
-      "date": "2026-08-03",
-      "issue": 39
-    },
-    {
       "text": "DungeonBench: rules-rich tactical reasoning in D&D combat",
       "source": "arXiv",
       "date": "2026-08-03",
@@ -12002,6 +11780,228 @@
       "source": "Hacker News",
       "date": "2026-10-09",
       "issue": 106
+    },
+    {
+      "text": "TypeSafe AI raises $870M at $7.5B valuation weeks after Jev launch",
+      "source": "TechCrunch",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "StepFun's Step 5 Preview goes free on the Nous Portal for one week",
+      "source": "NousResearch",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Anthropic commits to more frequent reports on unintended model behavior",
+      "source": "AnthropicAI",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "OpenAI hits $70B run rate amid infrastructure crunch",
+      "source": "Bloomberg Technology (YouTube)",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Probes catch unverbalized deception and sabotage in frontier models",
+      "source": "arXiv",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Predicting alignment generalization with value representations",
+      "source": "arXiv",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Envelope sampling tames reward hacking on surrogate judges",
+      "source": "arXiv",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Agentic-TTT: models that tune their own parameters at test time",
+      "source": "arXiv",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Harness evolution hits a ceiling: when weight training should begin",
+      "source": "arXiv",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Kleiner Perkins: next trillion-dollar AI companies will be physical",
+      "source": "YouTube \u2014 Bloomberg Technology",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Tech talent pipeline dries up as AI companies scramble for capital",
+      "source": "YouTube \u2014 Bloomberg Technology",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "BYD humanoid robot design emerges as formal debut remains pending",
+      "source": "CnEVPost",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Boston Dynamics details its redesigned Atlas hand",
+      "source": "The Robot Report",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "UBTECH and FAW-Volkswagen team up on humanoid logistics robots",
+      "source": "Interesting Engineering",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "AthenaZero: a bimanual robot that throws and catches like a human",
+      "source": "Tech Xplore",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Whistle: speech to text in 16.9 MB",
+      "source": "Hacker News",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Busabase: a general system of record for AI agents",
+      "source": "Product Hunt",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Playground by Google Labs: create games with Google AI",
+      "source": "Product Hunt",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Odyssey 3: a world model that simulates physics in real time",
+      "source": "Product Hunt",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "MXC \u2014 Microsoft Execution Containers",
+      "source": "Hacker News",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Substrate Bio comes out of stealth at WAVE by Vento with AI-native biology infrastructure",
+      "source": "Italian Tech",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Digital360 and Cybersecurity360 Awards 2026: winners announced",
+      "source": "AI4Business",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Nvidia-backed Firmus cancels $5B IPO as investors question its $30.6B valuation",
+      "source": "CNBC",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Sabi raises $50M for a wearable BCI cap targeting thought-based agent control",
+      "source": "omarsar0 (X)",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Hone raises $60M seed at $285M valuation for autonomous AI agents",
+      "source": "inforcapital",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "AREX: agentic research model that verifies answers requirement-by-requirement",
+      "source": "DeepLearningAI",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "HERMES harness paper: harness design beats raw model scale on repo-level tasks",
+      "source": "omarsar0 (X)",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Andrew Ng: AI agents could drive 5,000-10,000 web searches per day",
+      "source": "DeepLearningAI",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Microsoft releases System One / Microsoft-Decision-1 decision-making model",
+      "source": "omarsar0 (X)",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Big Arrow on the Screen \u2014 let AI agents paint on your screen",
+      "source": "Hacker News",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Zernio \u2014 marketing infrastructure for products and agents",
+      "source": "Product Hunt",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "OpenPilot \u2014 open-source desktop AI agent for any model",
+      "source": "Product Hunt",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "iwant \u2014 find GPUs and host open models in one command",
+      "source": "Product Hunt",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Opposable \u2014 computer use for phones, giving AI agents thumbs",
+      "source": "Product Hunt",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "OpenVids \u2014 open-source video editor run by chatting with AI agents",
+      "source": "Product Hunt",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "GRPODropout: less is more for online reinforcement learning rollouts",
+      "source": "arXiv",
+      "date": "2026-10-10",
+      "issue": 107
+    },
+    {
+      "text": "Memento 3: model-based recursive self-improvement through reflective rulebooks",
+      "source": "arXiv",
+      "date": "2026-10-10",
+      "issue": 107
     }
   ]
 }
