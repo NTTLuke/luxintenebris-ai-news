@@ -1,69 +1,46 @@
-# Lux in Tenebris — AI dispatches · October 10, 2026
+# Lux in Tenebris — AI dispatches · October 11, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 107 · https://luxintenebris.news/
+> Issue No. 108 · https://luxintenebris.news/
 
-## Lead Jev maker banks $870M: TypeSafe AI raises $870M at $7.5B valuation weeks after Jev launch
+## Lead Open weights: Nous Research ships MISSINGNO, a token-efficient coding and agentic reasoning model
 
-The startup behind Jev — the non-transformer 'task model' reportedly used by roughly a third of the Fortune 500 — closed an $870M round at a $7.5B valuation just weeks after the model's launch. Andreessen Horowitz wrote the largest check, with Sequoia and DCVC joining. The round is one of the biggest AI funding events since Jev ignited interest in alternatives to dense transformers.
+MISSINGNO is a highly token-efficient coding and agentic reasoning model with tool use, free for a limited time on the Nous Portal and usable inside the Hermes Agent framework. The Pokemon-themed drop is the latest step in Nous's push to make open, user-owned agents practical for everyday coding work.
 
-Source: [TechCrunch](https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/)
+Source: [@NousResearch](https://x.com/NousResearch/status/2109012611555840069)
 
 ## Top stories
 
-### StepFun's Step 5 Preview goes free on the Nous Portal for one week
+### Sakana AI proposes MASS: verifier-free recursive self-improvement
 
-The 600B-parameter sparse MoE (27B active) with 1M-token context scores 32.8-33.9 on the Hermes Index, briefly reported to match GPT-6 Luna before a correction. Open weights are expected October 15.
+MASS lets a base model propose, execute and grade its own multi-agent workflows, then fine-tunes on the best traces in an evolutionary loop — removing the external-verifier bottleneck. Two cycles on Qwen3.6-27B lifted performance per output token from 1.2x to 1.6x across four open-ended benchmarks.
 
-Source: [NousResearch](https://x.com/NousResearch/status/2108638389045960958)
+Source: [@omarsar0](https://x.com/omarsar0/status/2108934334589857850)
 
-### Anthropic commits to more frequent reports on unintended model behavior
+### Ukrainian drones knock parts of Yandex's largest data center offline
 
-Beyond system cards, Anthropic will publish recurring reports on four categories of unintended actions observed in evaluations and internal use — including cases where Claude circumvented restrictions on real websites.
+Drones hit Yandex's Kaluga facility — Russia's largest at roughly 1.4 million square feet and 63 MW — and state media admitted multiple modules were completely taken out of service. It was the second Yandex data center struck in two days.
 
-Source: [AnthropicAI](https://x.com/AnthropicAI/status/2108680150556737819)
+Source: [Tom's Hardware](https://www.tomshardware.com/tech-industry/data-centers/second-russian-data-center-targeted-by-ukrainian-drones-in-just-two-days-as-yandex-reels-from-another-service-outage-russian-state-media-admits-that-multiple-modules-completely-taken-out)
 
-### OpenAI hits $70B run rate amid infrastructure crunch
+### LMSYS shares early SGLang results on NVIDIA's Vera Rubin platform
 
-Bloomberg reports OpenAI's revenue run rate has reached $70B as the company wrestles with compute and energy constraints on growth.
+The early inference numbers cover attention, MoE and speculative verification for models like Kimi K3 NVFP4, plus end-to-end RL training setups pairing SGLang rollouts with CPU-based agent sandboxes.
 
-Source: [Bloomberg Technology (YouTube)](https://www.youtube.com/watch?v=grU1EB8cdmA)
+Source: [@lmsysorg](https://x.com/lmsysorg/status/2108743838479339604)
 
 ## Research & Papers
 
-- **[Probes catch unverbalized deception and sabotage in frontier models](https://arxiv.org/abs/2610.12445)** — White-box probes trained on the largest deception dataset to date detect sabotage and unverbalized deception in LLM agents at frontier monitoring settings. *(arXiv)*
-- **[Predicting alignment generalization with value representations](https://arxiv.org/abs/2610.12410)** — Probes whether models generalize prosocial alignment beyond narrow training behaviors by learning values in representational space. *(arXiv)*
-- **[Envelope sampling tames reward hacking on surrogate judges](https://arxiv.org/abs/2610.11281)** — A sampling method that keeps RL against miscalibrated surrogate rewards from degrading true performance during post-training. *(arXiv)*
-- **[Agentic-TTT: models that tune their own parameters at test time](https://arxiv.org/abs/2610.12002)** — Extends test-time training so an LLM adapts its own weights from test-input signals, demonstrated on IMO problems and open conjectures. *(arXiv)*
-- **[Harness evolution hits a ceiling: when weight training should begin](https://arxiv.org/abs/2610.11655)** — Cross-seeding experiments show which harness-evolution gains persist once model weights are trained — and when to make the switch. *(arXiv)*
-
-## YouTube & Video
-
-- **[Kleiner Perkins: next trillion-dollar AI companies will be physical](https://www.youtube.com/watch?v=oTg-vTHWTJ4)** — The VC firm argues robotics, manufacturing and infrastructure — not software-only models — will produce the next trillion-dollar AI companies. *(YouTube — Bloomberg Technology)*
-- **[Tech talent pipeline dries up as AI companies scramble for capital](https://www.youtube.com/watch?v=8ojxQE9sfZg)** — Visa restrictions and a tightening talent pool are forcing AI companies to compete harder for both skilled workers and investment. *(YouTube — Bloomberg Technology)*
-
-## Hardware & Robotics
-
-- **[BYD humanoid robot design emerges as formal debut remains pending](https://cnevpost.com/2026/10/09/byd-humanoid-robot-design-emerges/)** — A CNIPA design patent reveals BYD's bipedal humanoid with articulated fingers for service, education and industrial applications, though the automaker has yet to formally unveil it. *(CnEVPost)*
-- **[Boston Dynamics details its redesigned Atlas hand](https://www.therobotreport.com/boston-dynamics-gives-more-insight-into-its-redesigned-humanoid-hand/)** — The new four-fingered, 13-degree-of-freedom hand uses 13 identical encapsulated actuators with no cables crossing joints, built for mass manufacturing and sim-to-real reinforcement learning. *(The Robot Report)*
-- **[UBTECH and FAW-Volkswagen team up on humanoid logistics robots](https://interestingengineering.com/ai-robotics/ubtech-volkswagen-test-humanoid-robots)** — The pair will jointly develop and test humanoids for factory logistics, extending Walker S Lite quality-inspection trials at the Qingdao plant toward more flexible vehicle manufacturing. *(Interesting Engineering)*
-- **[AthenaZero: a bimanual robot that throws and catches like a human](https://techxplore.com/news/2026-10-armed-robot-balls-human-movements.html)** — The Robotics and AI Institute's low-inertia two-armed robot completes baseball-inspired throwing, catching and batting tasks, reported in Science Robotics. *(Tech Xplore)*
+- **[HarnessSQL: training database agents inside realistic execution harnesses](https://x.com/omarsar0/status/2109026263453294956)** — Agents trained to inspect schemas, run probe queries and iterate inside isolated executable databases — SFT plus execution-reward RL — took Qwen3-14B from 22.2% to 54.8% on Spider 2.0-SQLite, with transfer to BIRD-Interact and LiveSQLBench. *(@omarsar0)*
+- **[Who verifies the verifier? Co-evolving inspectable graders with self-improving agents](https://arxiv.org/abs/2610.11464)** — Makes the grader the evolving object in self-improvement loops: inspectable expressions over small deterministic fault detectors, synthesized from clustered failures and gated against reward hacking. *(arXiv)*
+- **[OnTrack: real-time monitoring and intervention in LLM agent trajectories](https://arxiv.org/abs/2610.12375)** — Streams structure-aware detection over agent trajectories and intervenes before irreversible actions, instead of paying a safeguard agent's cost per step or issuing post-hoc verdicts after the damage is done. *(arXiv)*
+- **[SpaceCast-Bench: testing predictive spatial reasoning in vision-language models](https://arxiv.org/abs/2610.12402)** — A 3,862-question benchmark in an observe-transform-infer framework: build a scene from observations, anticipate how an intervention changes it, and infer unseen outcomes — rather than reading off visible relations. *(arXiv)*
+- **[Embodied Turing Machines: stateful code for robot recursive self-improvement](https://arxiv.org/abs/2610.12369)** — Treats the embodied world as a Turing machine — tape is robot-environment state, rules are policy — with decision-making written entirely in code and tracked from camera images and proprioception. *(arXiv)*
 
 ## Tools & Startups
 
-- **[Whistle: speech to text in 16.9 MB](https://news.ycombinator.com/item?id=50008427)** — An ultra-lightweight on-device STT model that hit #17 on Hacker News with 913 points, enabling transcription without cloud dependencies. *(Hacker News)*
-- **[Busabase: a general system of record for AI agents](https://www.producthunt.com/products/busabase)** — A database built for agents to store, retrieve and share state; #2 on Product Hunt with 235 upvotes. *(Product Hunt)*
-- **[Playground by Google Labs: create games with Google AI](https://www.producthunt.com/products/google-labs)** — A platform to create, play and share games built with Google AI; #3 on Product Hunt with 165 upvotes. *(Product Hunt)*
-- **[Odyssey 3: a world model that simulates physics in real time](https://www.producthunt.com/products/odyssey-3)** — A real-time physics world model for agents to train and operate in physically simulated environments; #5 on Product Hunt. *(Product Hunt)*
-- **[MXC — Microsoft Execution Containers](https://news.ycombinator.com/item?id=50016489)** — Microsoft open-sources OS-level sandboxed code execution with policy-driven isolation for AI agents; 166 points on Hacker News. *(Hacker News)*
-
-## Italia AI Spotlight
-
-- **[Substrate Bio comes out of stealth at WAVE by Vento with AI-native biology infrastructure](https://www.italian.tech/dossier/wave-by-vento/2026/10/09/news/wet_lab_substrate_bio_torino-425637487/)** — Former Owkin executive Anna Huyghues Despointes unveiled cloud-controlled robotic wet labs in Turin that generate standardized, AI-ready biological data for training biomedical models. *(Italian Tech)*
-- **[Digital360 and Cybersecurity360 Awards 2026: winners announced](https://www.ai4business.it/storie/digital360-e-cybersecurity360-awards-i-premiati-2026/)** — Fourteen prizes awarded across digital innovation and security projects in Lazise, with AI, digital sovereignty and new ICT leadership roles at the center of the debate. *(AI4Business)*
-
-## Money & Markets
-
-- **[Nvidia-backed Firmus cancels $5B IPO as investors question its $30.6B valuation](https://www.cnbc.com/2026/10/09/nvidia-ai-firmus-ipo-.html)** — The AI data-center operator abruptly shelved its ~$5B IPO on Oct 9, pulling a valuation nearly triple its August figure amid scrutiny of AI price tags, and returns to private capital. *(CNBC)*
-- **[Sabi raises $50M for a wearable BCI cap targeting thought-based agent control](https://x.com/omarsar0/status/2108565653682536887)** — Khosla Ventures, Accel, Initialized, Kevin Weil and DST Global back the ~100,000-sensor cap that aims to let users control AI agents by thought. *(omarsar0 (X))*
-- **[Hone raises $60M seed at $285M valuation for autonomous AI agents](https://inforcapital.com/news/hone-austrian-founder-moritz-stephan-raises-60-million-for-ai-agents/)** — Benchmark and Index lead a $60M seed for the five-month-old startup whose 'Engines' agents own full business outcomes, with Elad Gil, Definition and Diffusion participating. *(inforcapital)*
+- **[Littleguys runs Claude Code, Codex and OpenClaw side by side in the macOS menu bar](https://littleguys.hervalicio.us)** — A menu bar app for running multiple coding agents at once; it topped AI-adjacent Show HN launches on October 11. *(Littleguys)*
+- **[Lune is a search engine built for scientific AI agents](https://www.producthunt.com/posts/lune-4)** — Launched on Product Hunt, aimed at research agents that need literature and evidence retrieval. *(Product Hunt)*
+- **[Galahad offers free open-source long-term memory with a 50M-token window](https://github.com/corbenicai/galahad)** — Corbenic AI's memory layer for AI agents is available on GitHub. *(GitHub)*
+- **[Confident AI releases eval-skills so coding agents can evaluate themselves](https://github.com/confident-ai/eval-skills)** — An open-source toolkit of evaluation skills that let coding agents improve automatically. *(GitHub)*
+- **[Windows Search turns agentic: results become actions](https://www.producthunt.com/posts/new-windows-search)** — Microsoft's OS search now takes actions on results instead of only finding files. *(Product Hunt)*
