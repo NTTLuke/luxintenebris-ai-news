@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 11 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 11, 2026 — No. 108</title>
+      <title>Lux in Tenebris — AI dispatches · October 12, 2026 — No. 109</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A new Meta Superintelligence Labs paper on compounding inference has hundreds of asynchronous agents share one Git repo as persistent memory, with each contribution a commit that cites prior work across branches and no central planner. Using GPT-5.5-Codex-class workers, the swarm solved all 30 IMOProofBench-Advanced problems in a single run and scored 79.4% on ProgramBench versus 65.1% for a single agent at similar compute, scaling from 73.1% at 100 workers to 79.4% at 500.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/karpathy/status/2109361546505966046"&gt;Karpathy&amp;#x27;s &amp;#x27;capability funnel&amp;#x27;: labs watch agent swarms while most of the world has barely touched an LLM&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.producthunt.com/products/tines"&gt;Tines opens a secure environment for agents, apps and automations&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://betterwispr.com/"&gt;BetterWispr brings free open-source AI dictation to the Mac&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.humanoid.press/artificial-intelligence/"&gt;Astribot pitches its humanoids as shared hardware for other labs&amp;#x27; AI models&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 11, 2026 — No. 108</title>
+      <link>https://luxintenebris.news/archive/2026-10-11/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-11/</guid>
       <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;MISSINGNO is a highly token-efficient coding and agentic reasoning model with tool use, free for a limited time on the Nous Portal and usable inside the Hermes Agent framework. The Pokemon-themed drop is the latest step in Nous&amp;#x27;s push to make open, user-owned agents practical for everyday coding work.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2108934334589857850"&gt;Sakana AI proposes MASS: verifier-free recursive self-improvement&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/tech-industry/data-centers/second-russian-data-center-targeted-by-ukrainian-drones-in-just-two-days-as-yandex-reels-from-another-service-outage-russian-state-media-admits-that-multiple-modules-completely-taken-out"&gt;Ukrainian drones knock parts of Yandex&amp;#x27;s largest data center offline&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/lmsysorg/status/2108743838479339604"&gt;LMSYS shares early SGLang results on NVIDIA&amp;#x27;s Vera Rubin platform&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-24/</guid>
       <pubDate>Mon, 24 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Google launched Antigravity IDE Extensions, putting its coding agents inside existing editors so developers can launch and monitor several agents at once without leaving their IDE. The move turns any editor into an agent host, a step toward the supervised multi-agent workflow many teams are converging on.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2091631620025647184"&gt;Structured conflict beats naive agent scaling in multi-agent code review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2091596538099196076"&gt;LeCun pushes research beyond LLMs toward human-efficient real-world learning&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 23, 2026 — No. 59</title>
-      <link>https://luxintenebris.news/archive/2026-08-23/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-23/</guid>
-      <pubDate>Sun, 23 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Chinese electronics maker Honor&amp;#x27;s self-developed Lightning humanoid clocked 100m in 9.32 seconds during a test ahead of the second World Humanoid Robot Games in Beijing, shaving 0.26s off Usain Bolt&amp;#x27;s 9.58s men&amp;#x27;s record and peaking at 14.5 m/s. The run underscores how quickly humanoid platforms are approaching — and now exceeding — human athletic performance.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://theintelligent.us/technology/2026/nvidia-partners-cloverleaf-speed-ai-data-center-buildout"&gt;Nvidia takes minority stake in Cloverleaf Infrastructure to speed AI data center buildout&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.chinamoneynetwork.com/2026/08/22/chinas-ai-data-center-boom-in-inner-mongolia"&gt;China&amp;#x27;s AI data center boom turns Inner Mongolia&amp;#x27;s Ulanqab into a 12.5 GW hub&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2091293710877175964"&gt;Nous Research celebrates open-source harness adoption and stack sovereignty around Hermes Agent&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

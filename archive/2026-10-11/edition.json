@@ -1,0 +1,229 @@
+{
+  "issue_no": 108,
+  "date_iso": "2026-10-11",
+  "date_human": "October 11, 2026",
+  "notice": "Light news day — fewer fresh items than usual.",
+  "lead": {
+    "kicker": "Open weights",
+    "title": "Nous Research ships MISSINGNO, a token-efficient coding and agentic reasoning model",
+    "summary": "MISSINGNO is a highly token-efficient coding and agentic reasoning model with tool use, free for a limited time on the Nous Portal and usable inside the Hermes Agent framework. The Pokemon-themed drop is the latest step in Nous's push to make open, user-owned agents practical for everyday coding work.",
+    "source": "@NousResearch",
+    "date": "2026-10-10",
+    "url": "https://x.com/NousResearch/status/2109012611555840069",
+    "image": "images/lead_2026-10-11.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Sakana AI proposes MASS: verifier-free recursive self-improvement",
+      "summary": "MASS lets a base model propose, execute and grade its own multi-agent workflows, then fine-tunes on the best traces in an evolutionary loop — removing the external-verifier bottleneck. Two cycles on Qwen3.6-27B lifted performance per output token from 1.2x to 1.6x across four open-ended benchmarks.",
+      "source": "@omarsar0",
+      "date": "2026-10-10",
+      "url": "https://x.com/omarsar0/status/2108934334589857850"
+    },
+    {
+      "title": "Ukrainian drones knock parts of Yandex's largest data center offline",
+      "summary": "Drones hit Yandex's Kaluga facility — Russia's largest at roughly 1.4 million square feet and 63 MW — and state media admitted multiple modules were completely taken out of service. It was the second Yandex data center struck in two days.",
+      "source": "Tom's Hardware",
+      "date": "2026-10-10",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/second-russian-data-center-targeted-by-ukrainian-drones-in-just-two-days-as-yandex-reels-from-another-service-outage-russian-state-media-admits-that-multiple-modules-completely-taken-out"
+    },
+    {
+      "title": "LMSYS shares early SGLang results on NVIDIA's Vera Rubin platform",
+      "summary": "The early inference numbers cover attention, MoE and speculative verification for models like Kimi K3 NVFP4, plus end-to-end RL training setups pairing SGLang rollouts with CPU-based agent sandboxes.",
+      "source": "@lmsysorg",
+      "date": "2026-10-10",
+      "url": "https://x.com/lmsysorg/status/2108743838479339604"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "HarnessSQL: training database agents inside realistic execution harnesses",
+          "summary": "Agents trained to inspect schemas, run probe queries and iterate inside isolated executable databases — SFT plus execution-reward RL — took Qwen3-14B from 22.2% to 54.8% on Spider 2.0-SQLite, with transfer to BIRD-Interact and LiveSQLBench.",
+          "source": "@omarsar0",
+          "date": "2026-10-10",
+          "url": "https://x.com/omarsar0/status/2109026263453294956",
+          "image": "images/section_research-papers_2026-10-11.jpg"
+        },
+        {
+          "title": "Who verifies the verifier? Co-evolving inspectable graders with self-improving agents",
+          "summary": "Makes the grader the evolving object in self-improvement loops: inspectable expressions over small deterministic fault detectors, synthesized from clustered failures and gated against reward hacking.",
+          "source": "arXiv",
+          "date": "2026-10-08",
+          "url": "https://arxiv.org/abs/2610.11464"
+        },
+        {
+          "title": "OnTrack: real-time monitoring and intervention in LLM agent trajectories",
+          "summary": "Streams structure-aware detection over agent trajectories and intervenes before irreversible actions, instead of paying a safeguard agent's cost per step or issuing post-hoc verdicts after the damage is done.",
+          "source": "arXiv",
+          "date": "2026-10-08",
+          "url": "https://arxiv.org/abs/2610.12375"
+        },
+        {
+          "title": "SpaceCast-Bench: testing predictive spatial reasoning in vision-language models",
+          "summary": "A 3,862-question benchmark in an observe-transform-infer framework: build a scene from observations, anticipate how an intervention changes it, and infer unseen outcomes — rather than reading off visible relations.",
+          "source": "arXiv",
+          "date": "2026-10-08",
+          "url": "https://arxiv.org/abs/2610.12402"
+        },
+        {
+          "title": "Embodied Turing Machines: stateful code for robot recursive self-improvement",
+          "summary": "Treats the embodied world as a Turing machine — tape is robot-environment state, rules are policy — with decision-making written entirely in code and tracked from camera images and proprioception.",
+          "source": "arXiv",
+          "date": "2026-10-08",
+          "url": "https://arxiv.org/abs/2610.12369"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Littleguys runs Claude Code, Codex and OpenClaw side by side in the macOS menu bar",
+          "summary": "A menu bar app for running multiple coding agents at once; it topped AI-adjacent Show HN launches on October 11.",
+          "source": "Littleguys",
+          "date": "2026-10-11",
+          "url": "https://littleguys.hervalicio.us",
+          "image": "images/section_tools-startups_2026-10-11.jpg"
+        },
+        {
+          "title": "Lune is a search engine built for scientific AI agents",
+          "summary": "Launched on Product Hunt, aimed at research agents that need literature and evidence retrieval.",
+          "source": "Product Hunt",
+          "date": "2026-10-10",
+          "url": "https://www.producthunt.com/posts/lune-4"
+        },
+        {
+          "title": "Galahad offers free open-source long-term memory with a 50M-token window",
+          "summary": "Corbenic AI's memory layer for AI agents is available on GitHub.",
+          "source": "GitHub",
+          "date": "2026-10-10",
+          "url": "https://github.com/corbenicai/galahad"
+        },
+        {
+          "title": "Confident AI releases eval-skills so coding agents can evaluate themselves",
+          "summary": "An open-source toolkit of evaluation skills that let coding agents improve automatically.",
+          "source": "GitHub",
+          "date": "2026-10-10",
+          "url": "https://github.com/confident-ai/eval-skills"
+        },
+        {
+          "title": "Windows Search turns agentic: results become actions",
+          "summary": "Microsoft's OS search now takes actions on results instead of only finding files.",
+          "source": "Product Hunt",
+          "date": "2026-10-10",
+          "url": "https://www.producthunt.com/posts/new-windows-search"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-10-11",
+      "items": [
+        {"name": "morluto/rea", "url": "https://github.com/morluto/rea", "meta": "TypeScript · 16.0k ★ · +4,655 today"},
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 279.8k ★ · +1,403 today"},
+        {"name": "boykopovar/AnyPS5", "url": "https://github.com/boykopovar/AnyPS5", "meta": "C++ · 10.9k ★ · +2,716 today"},
+        {"name": "ayghri/i-have-adhd", "url": "https://github.com/ayghri/i-have-adhd", "meta": "Python · 55.2k ★ · +619 today"},
+        {"name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "meta": "HTML · 45.1k ★ · +825 today"},
+        {"name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "meta": "JavaScript · 102.9k ★ · +677 today"},
+        {"name": "EpicGames/raddebugger", "url": "https://github.com/EpicGames/raddebugger", "meta": "C · 7.9k ★ · +90 today"},
+        {"name": "thedotmack/claude-mem", "url": "https://github.com/thedotmack/claude-mem", "meta": "TypeScript · 97.8k ★ · +578 today"},
+        {"name": "manaflow-ai/cmux", "url": "https://github.com/manaflow-ai/cmux", "meta": "Swift · 27.9k ★ · +44 today"},
+        {"name": "trycua/cua", "url": "https://github.com/trycua/cua", "meta": "Rust · 28.8k ★ · +228 today"},
+        {"name": "cloudflare/security-audit-skill", "url": "https://github.com/cloudflare/security-audit-skill", "meta": "JavaScript · 26.1k ★ · +576 today"},
+        {"name": "tester-army/e2e", "url": "https://github.com/tester-army/e2e", "meta": "TypeScript · 7.6k ★ · +1,390 today"},
+        {"name": "DuarteSantos8/openGym", "url": "https://github.com/DuarteSantos8/openGym", "meta": "JavaScript · 7.1k ★ · +1,493 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-10-11",
+      "items": [
+        {"name": "convaiinnovations/laya", "url": "https://huggingface.co/convaiinnovations/laya", "meta": "New release from Convai Innovations"},
+        {"name": "Cloudflare/clef", "url": "https://huggingface.co/Cloudflare/clef", "meta": "27B multimodal decision model, Apache-2.0, post-trained from Qwen3.8-27B"},
+        {"name": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF", "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF", "meta": "Uncensored GGUF quant of Qwen-Image-2.1"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Joint video, audio and world simulation model, self-hostable under LTX-2.x Community License"},
+        {"name": "Contrastive-LM/CLM-v0.1-8B", "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B", "meta": "8B research release from the Contrastive-LM project"},
+        {"name": "SupersonicLabs/Julia-1", "url": "https://huggingface.co/SupersonicLabs/Julia-1", "meta": "New release from SupersonicLabs"},
+        {"name": "Qwen/Qwen-Image-2.1", "url": "https://huggingface.co/Qwen/Qwen-Image-2.1", "meta": "7B text-to-image generation and editing, native RGBA and multi-image control"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B multimodal base model (image-text-to-text)"},
+        {"name": "Cloudflare/clef-flash", "url": "https://huggingface.co/Cloudflare/clef-flash", "meta": "Smaller, faster variant of the Clef decision model"},
+        {"name": "PSRben/VisionHOPE", "url": "https://huggingface.co/PSRben/VisionHOPE", "meta": "Community vision model, trending"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-10-11",
+      "items": [
+        {"name": "Apodex: Apodex 1.1 Mini (free)", "url": "https://openrouter.ai/apodex/apodex-1.1-mini:free", "meta": "262K ctx"},
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "inclusionAI: Ling 3.1 Flash", "url": "https://openrouter.ai/inclusionai/ling-3.1-flash", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-10-11",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "Space Bunny Free", "url": "https://opencode.ai/docs/zen/", "meta": "space-bunny-free"},
+        {"name": "LongCat 2.5 Preview Free", "url": "https://opencode.ai/docs/zen/", "meta": "longcat-2.5-preview-free"},
+        {"name": "Step 5 Preview Free", "url": "https://opencode.ai/docs/zen/", "meta": "step-5-preview-free"},
+        {"name": "Exo Free", "url": "https://opencode.ai/docs/zen/", "meta": "exo-free"},
+        {"name": "MiMo-V2.6-Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.6-flash-free"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Ling 3.1 Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.1-flash-free"},
+        {"name": "Ling 3.0 Flash Fin Free", "url": "https://opencode.ai/docs/zen/", "meta": "ling-3.0-flash-fin-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Muse Spark 1.3 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.3-contributor-free"},
+        {"name": "Jev 1.13 Free", "url": "https://opencode.ai/docs/zen/", "meta": "jev-1.13-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {"title": "GitGlow reviews human and AI-agent changes before you ship", "source": "Product Hunt", "date": "2026-10-10", "url": "https://www.producthunt.com/posts/gitglow-3"},
+    {"title": "Claude Dashboards & Motion generates live dashboards and animated explainers", "source": "Product Hunt", "date": "2026-10-10", "url": "https://www.producthunt.com/posts/claude-dashboards-motion"},
+    {"title": "Onepin is an AI voiceover generator that gets names, prices and dates right", "source": "Product Hunt", "date": "2026-10-10", "url": "https://www.producthunt.com/posts/onepin"},
+    {"title": "Hypervibe is an infinite-canvas board for parallel AI coding agents", "source": "Product Hunt", "date": "2026-10-10", "url": "https://www.producthunt.com/posts/hypervibe-2"},
+    {"title": "AgentDock is a unified inbox for Claude Code and Codex requests", "source": "Product Hunt", "date": "2026-10-10", "url": "https://www.producthunt.com/posts/agentdock"},
+    {"title": "KernelAI is a private, fully offline AI assistant for iPhone and Android", "source": "Product Hunt", "date": "2026-10-10", "url": "https://www.producthunt.com/posts/kernelai"},
+    {"title": "GSD Task Manager gives coding agents a persistent task list over MCP", "source": "GitHub", "date": "2026-10-11", "url": "https://github.com/vscarpenter/gsd-task-manager"},
+    {"title": "Vigil is an open-source harness for long-running pentests and code audits", "source": "GitHub", "date": "2026-10-10", "url": "https://github.com/VigilOSS/Vigil"},
+    {"title": "Listener runs meeting notes fully on-device for a one-time $5", "source": "Listener", "date": "2026-10-10", "url": "https://getlistener.vercel.app/en"},
+    {"title": "Petra Power pitches solid oxide fuel cells as power hardware for AI data centers", "source": "TechCrunch", "date": "2026-10-10", "url": "https://techcrunch.com/2026/10/10/petra-power-looks-to-modernize-energy-for-data-centers-and-defense-vehicles/"},
+    {"title": "TokenRouter: a serving system for token-level LLM routing", "source": "arXiv", "date": "2026-10-08", "url": "https://arxiv.org/abs/2610.12242"},
+    {"title": "REMORY: residual memory tokens for context compaction in long-horizon agents", "source": "arXiv", "date": "2026-10-08", "url": "https://arxiv.org/abs/2610.11287"}
+  ],
+  "spiked": {
+    "already ran": 8,
+    "duplicate url": 2,
+    "low signal": 1
+  }
+}

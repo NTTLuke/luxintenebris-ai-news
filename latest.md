@@ -1,46 +1,51 @@
-# Lux in Tenebris — AI dispatches · October 11, 2026
+# Lux in Tenebris — AI dispatches · October 12, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 108 · https://luxintenebris.news/
+> Issue No. 109 · https://luxintenebris.news/
 
-## Lead Open weights: Nous Research ships MISSINGNO, a token-efficient coding and agentic reasoning model
+## Lead Swarm intelligence: Git-based agent swarms sweep IMOProofBench-Advanced, solving all 30 problems
 
-MISSINGNO is a highly token-efficient coding and agentic reasoning model with tool use, free for a limited time on the Nous Portal and usable inside the Hermes Agent framework. The Pokemon-themed drop is the latest step in Nous's push to make open, user-owned agents practical for everyday coding work.
+A new Meta Superintelligence Labs paper on compounding inference has hundreds of asynchronous agents share one Git repo as persistent memory, with each contribution a commit that cites prior work across branches and no central planner. Using GPT-5.5-Codex-class workers, the swarm solved all 30 IMOProofBench-Advanced problems in a single run and scored 79.4% on ProgramBench versus 65.1% for a single agent at similar compute, scaling from 73.1% at 100 workers to 79.4% at 500.
 
-Source: [@NousResearch](https://x.com/NousResearch/status/2109012611555840069)
+Source: [@omarsar0 (X)](https://x.com/omarsar0/status/2109287161199812802)
 
 ## Top stories
 
-### Sakana AI proposes MASS: verifier-free recursive self-improvement
+### Karpathy's 'capability funnel': labs watch agent swarms while most of the world has barely touched an LLM
 
-MASS lets a base model propose, execute and grade its own multi-agent workflows, then fine-tunes on the best traces in an evolutionary loop — removing the external-verifier bottleneck. Two cycles on Qwen3.6-27B lifted performance per output token from 1.2x to 1.6x across four open-ended benchmarks.
+~20M professionals use frontier agents that compress weeks-long projects into hours, while roughly 5,000 people with internal lab access watch thousands-strong swarms run cyber operations and push the math frontier. Karpathy notes humans are still reviewing 722 AI-generated frontier-mathematics manuscripts.
 
-Source: [@omarsar0](https://x.com/omarsar0/status/2108934334589857850)
+Source: [@karpathy (X)](https://x.com/karpathy/status/2109361546505966046)
 
-### Ukrainian drones knock parts of Yandex's largest data center offline
+### Tines opens a secure environment for agents, apps and automations
 
-Drones hit Yandex's Kaluga facility — Russia's largest at roughly 1.4 million square feet and 63 MW — and state media admitted multiple modules were completely taken out of service. It was the second Yandex data center struck in two days.
+The automation platform now runs AI agents, apps and automations in a single secure environment, extending access to smaller teams. The launch drew 44 Product Hunt upvotes within hours.
 
-Source: [Tom's Hardware](https://www.tomshardware.com/tech-industry/data-centers/second-russian-data-center-targeted-by-ukrainian-drones-in-just-two-days-as-yandex-reels-from-another-service-outage-russian-state-media-admits-that-multiple-modules-completely-taken-out)
+Source: [Product Hunt](https://www.producthunt.com/products/tines)
 
-### LMSYS shares early SGLang results on NVIDIA's Vera Rubin platform
+### BetterWispr brings free open-source AI dictation to the Mac
 
-The early inference numbers cover attention, MoE and speculative verification for models like Kimi K3 NVFP4, plus end-to-end RL training setups pairing SGLang rollouts with CPU-based agent sandboxes.
+A local-first, open-source alternative to Wispr Flow front-paged Hacker News with 129 points, offering free AI dictation without the commercial subscription.
 
-Source: [@lmsysorg](https://x.com/lmsysorg/status/2108743838479339604)
+Source: [BetterWispr](https://betterwispr.com/)
+
+### Astribot pitches its humanoids as shared hardware for other labs' AI models
+
+A collaboration reel, "AI That Grows by Doing," shows Astribot's cable-driven robots running models from Physical Intelligence, MIT CSAIL, Generalist, Skild AI, Robbyant and DeepLeap across long-horizon manipulation and tactile-guided tasks. The company is positioning the body as a platform labs can train and evaluate policies on, ahead of the T1's North American debut at IROS 2026.
+
+Source: [Humanoid Press](https://www.humanoid.press/artificial-intelligence/)
 
 ## Research & Papers
 
-- **[HarnessSQL: training database agents inside realistic execution harnesses](https://x.com/omarsar0/status/2109026263453294956)** — Agents trained to inspect schemas, run probe queries and iterate inside isolated executable databases — SFT plus execution-reward RL — took Qwen3-14B from 22.2% to 54.8% on Spider 2.0-SQLite, with transfer to BIRD-Interact and LiveSQLBench. *(@omarsar0)*
-- **[Who verifies the verifier? Co-evolving inspectable graders with self-improving agents](https://arxiv.org/abs/2610.11464)** — Makes the grader the evolving object in self-improvement loops: inspectable expressions over small deterministic fault detectors, synthesized from clustered failures and gated against reward hacking. *(arXiv)*
-- **[OnTrack: real-time monitoring and intervention in LLM agent trajectories](https://arxiv.org/abs/2610.12375)** — Streams structure-aware detection over agent trajectories and intervenes before irreversible actions, instead of paying a safeguard agent's cost per step or issuing post-hoc verdicts after the damage is done. *(arXiv)*
-- **[SpaceCast-Bench: testing predictive spatial reasoning in vision-language models](https://arxiv.org/abs/2610.12402)** — A 3,862-question benchmark in an observe-transform-infer framework: build a scene from observations, anticipate how an intervention changes it, and infer unseen outcomes — rather than reading off visible relations. *(arXiv)*
-- **[Embodied Turing Machines: stateful code for robot recursive self-improvement](https://arxiv.org/abs/2610.12369)** — Treats the embodied world as a Turing machine — tape is robot-environment state, rules are policy — with decision-making written entirely in code and tracked from camera images and proprioception. *(arXiv)*
+- **[Generalized PPO unifies LLM reinforcement learning through the lens of divergence](https://arxiv.org/abs/2610.13015)** — GRPO and DAPO-style variants differ mainly in advantage normalization and clipping choices. The paper derives conditions under which each variant matches plain PPO, backed by controlled comparisons. *(arXiv)*
+- **[Conditional information gain proposed as the criterion for what SFT should teach](https://arxiv.org/abs/2610.12995)** — Selecting SFT demonstrations by conditional information gain optimizes for generalizable post-training, with measurable gains over conventional demonstration-matching objectives. *(arXiv)*
+- **[SpireBench uses Slay the Spire to expose long-horizon strategic decay in agents](https://arxiv.org/abs/2610.12596)** — Frontier models degrade sharply on multi-hour strategic play where short episodic benchmarks saturate, still trailing human baselines substantially. *(arXiv)*
+- **[Subliminal learning can smuggle misaligned traits through 'clean' distillation data](https://arxiv.org/abs/2610.13536)** — When a student is distilled from a teacher sharing its base parameters, behavioral traits transfer even from clean data. The authors present unsupervised methods that discover such subliminal learning, plus mitigations. *(arXiv)*
+- **[Loop-native attention residuals let looped transformers scale to tens of thousands of test-time iterations](https://huggingface.co/papers/2610.11570)** — Without their own residual connections, looped models overwrite correct intermediate deductions as iterations grow. Loop-native residuals prevent the degradation. *(HuggingFace)*
 
 ## Tools & Startups
 
-- **[Littleguys runs Claude Code, Codex and OpenClaw side by side in the macOS menu bar](https://littleguys.hervalicio.us)** — A menu bar app for running multiple coding agents at once; it topped AI-adjacent Show HN launches on October 11. *(Littleguys)*
-- **[Lune is a search engine built for scientific AI agents](https://www.producthunt.com/posts/lune-4)** — Launched on Product Hunt, aimed at research agents that need literature and evidence retrieval. *(Product Hunt)*
-- **[Galahad offers free open-source long-term memory with a 50M-token window](https://github.com/corbenicai/galahad)** — Corbenic AI's memory layer for AI agents is available on GitHub. *(GitHub)*
-- **[Confident AI releases eval-skills so coding agents can evaluate themselves](https://github.com/confident-ai/eval-skills)** — An open-source toolkit of evaluation skills that let coding agents improve automatically. *(GitHub)*
-- **[Windows Search turns agentic: results become actions](https://www.producthunt.com/posts/new-windows-search)** — Microsoft's OS search now takes actions on results instead of only finding files. *(Product Hunt)*
+- **[TensorViz: explore PyTorch models inside VS Code](https://tensorviz.dev/explore/)** — A VS Code extension for visually exploring PyTorch model architectures, tensors and activations without leaving the editor. *(Show HN)*
+- **[OpenScreen 2: record your demo and let an AI agent do the edits](https://www.producthunt.com/products/openscreen-2)** — An open-source screen recorder that hands demo footage to an AI agent for automatic editing, launched on Product Hunt. *(Product Hunt)*
+- **[Skills Hub: desktop app for managing AI agent skills](https://github.com/qufei1993/skills-hub)** — A cross-platform desktop manager for installing and organizing the skills files used by AI coding agents. *(GitHub)*
+- **[Playgrnd: tiny tools for making weird, beautiful things](https://www.playgrnd.tools/)** — A collection of small creative-coding web tools for generative art and experiments, reaching 43 points on Hacker News. *(Hacker News)*

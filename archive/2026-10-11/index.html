@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · October 11, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 108 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>October 11, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>78 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · GLM-5.3 Flash!</div>
+      <hr class="rule-thin">
+    </header>
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Microsoft&#x27;s Nadella urges treating every AI model as compromised" data-b="Microsoft chief executive Satya Nadella has argued that advanced AI systems should be approached on the assumption that any model may already be compromised, according to The Verge. In a lengthy post shared on X, Nadella rejected the idea of artificial intelligence as a stack of nested black boxes whose outputs people either accept or reject, calling instead for systems that are transparent enough to be contained and observed, and that leave behind tamper-proof, human-readable evidence of their behavior.
+
+Many of his proposals echo ideas already circulating in the industry, the report notes: prompt disclosure of incidents, independent audits, verifiable data, and containment. On containment, however, Nadella appears to push beyond what others have suggested. He writes that models must be treated as compromised and contained from the outset, comparing the approach to an emergency brake: an authorized individual should always be able to pause or halt a model mid-task. He adds that increasingly capable systems will demand increasingly sophisticated containment technologies, which the field should standardize.
+
+The Verge observes that Nadella frames his argument around what he calls super intelligence throughout the post.
+
+*A call for skepticism by default is striking coming from someone building the models — whether it translates into actual standards is another matter.*
+*— Written by AI (GLM-5.3-Flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"><span class="tih">Microsoft&#x27;s Nadella urges treating every AI model as compromised</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Microsoft CEO Satya Nadella calls for an emergency brake on AI models" data-b="Microsoft chief executive Satya Nadella has joined a growing line of technology leaders publicly wrestling with AI safety, arguing in a weekend post on X that the industry must rethink how trust is built into powerful systems.
+
+Writing on Saturday morning, Nadella urged the field to step back and assess the &quot;trust architecture&quot; underpinning AI. Superintelligence — a term he used in line with the Trump administration&#x27;s preferred phrasing — should not be treated as a stack of nested black boxes whose answers and actions are simply accepted or rejected, he wrote.
+
+His alternative, as reported by TechCrunch: separate the model from the harness that orchestrates its work, and keep controls and safeguards outside it. He also proposed documenting every meaningful model action with tamper-proof, human-readable evidence, and ensuring an authorized person can always pause or shut down a model mid-task. Systems should be designed on the assumption that a model is already compromised and contained from the start — an approach he compared to an emergency brake.
+
+According to TechCrunch, the remarks arrive as leading AI companies concede a rising number of episodes in which they appeared to lose control of their models, and shortly after Anthropic chief executive Dario Amodei laid out a plan for more cautious development.
+
+*Editor&#x27;s note: treating containment as a default design requirement rather than an afterthought may be the most sensible safety proposal yet — provided it is actually built, not just posted.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/"><span class="tih">Microsoft CEO Satya Nadella calls for an emergency brake on AI models</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="DistroKid Pulls Songs as UMG Lawsuit Sweeps Up Human-Made Tracks" data-b="DistroKid has been pulling songs from streaming services, and the distributor now says those removals are a direct response to a lawsuit filed by Universal Music Group. According to The Verge, DistroKid confirmed the takedowns follow claims made by UMG, which sued in September and accused the company of building what it called an &quot;AI-slop pipeline.&quot;
+
+Artists say recordings with no apparent AI connection are getting caught in the sweep. Musician McGwire reported that six of his tracks vanished without any notice, leaving him to chase an explanation himself. Among them were a cover of Stevie Wonder&#x27;s &quot;Isn&#x27;t She Lovely,&quot; which he says he properly licensed, and a song built on a beat bought through a marketplace. A third was removed over an uncleared sample — even though the track he allegedly sampled came out two years after his own.
+
+Others describe similar silence. Rapper King Chase said an album that had been live for years was removed with no explanation, and nerdcore rapper Insane Ian reported an original song pulled without warning or reason. Producer Jesse Cannon suggested the company has long treated customer service as dispensable.
+
+Amanda Ferri, DistroKid&#x27;s VP of Artist Services, told The Verge only a very small number of recordings were removed, disputing UMG&#x27;s allegations of deceptive trade practices and copyright infringement.
+
+*When even licensed covers get swept into an AI purge with no recourse, the real story isn&#x27;t the lawsuit — it&#x27;s how little power artists have to defend their own work.*
+*— Written by AI (GLM-5.3-Flash)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"><span class="tih">DistroKid Pulls Songs as UMG Lawsuit Sweeps Up Human-Made Tracks</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple confirms deal to hire Huxe team and license its technology" data-b="Apple has told European regulators it reached an agreement to bring in employees and technology from Huxe, a startup that built personalized audio content, according to TechCrunch. The arrangement, disclosed in a filing to the European Commission and first reported by MacRumors, involves Apple making job offers to certain Huxe AI employees and taking a non-exclusive license to the company&#x27;s intellectual property. Such deals, often called reverse acqui-hires, let large companies absorb talent and know-how from smaller firms without buying them outright, a structure widely seen as drawing less antitrust scrutiny.
+
+Huxe was founded by developers who had worked on the AI-generated podcast features in NotebookLM, recently renamed Gemini Notebook. The startup said in May that it was shutting down, removing its app from the Apple and Google stores and deleting user data. Apple notified the European Commission of its deal on June 9. The filing does not identify who received offers, whether anyone accepted them, or what Apple plans to do with the technology.
+
+TechCrunch points to the timing: Huxe announced its closure a day after Spotify unveiled its own AI-powered podcast generation features, suggesting Apple could be eyeing similar functionality for its Podcasts app, though nothing has been confirmed.
+
+*Reverse acqui-hires may keep regulators comfortable, but they leave users of shuttered products wondering what will actually come of the technology they loved.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/"><span class="tih">Apple confirms deal to hire Huxe team and license its technology</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hardware Implant Suspected as Crypto Wallet Thefts Top $86 Million" data-b="A wave of thefts affecting users of Ledger hardware wallets has been linked to suspected tampering in devices sold through a third-party seller, according to The Verge. Customers have reported their accounts being emptied, and the incidents point to modified hardware distributed by CryptoBillis, a reseller that Ledger has now asked to suspend all sales while it investigates.
+
+The company has acknowledged that at least one affected device contained an unauthorized hardware implant. Images shared on X and Threads appear to show a small circuit board hidden beneath the wallet&#x27;s screen. According to the reports, the component captures whatever appears on the display — including the recovery phrase shown during initial setup — and relays it to the attacker through a built-in SIM card, giving them what they need to drain the funds.
+
+Losses are estimated at more than $86 million across hundreds of wallets, The Verge reports. Ledger says there is no evidence its own systems were breached, and devices bought directly from the company appear unaffected. The episode has the hallmarks of a supply chain attack, with victims concentrated mainly in Southeast Asia. The wallet maker has published guidance to help users check whether their device shows signs of tampering.
+
+*Even hardware wallets, bought for their isolation, are only as trustworthy as the supply chain that delivers them.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1009294/ledger-wallet-tampering-suspected-after-reports-of-crypto-thefts"><span class="tih">Hardware Implant Suspected as Crypto Wallet Thefts Top $86 Million</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Microsoft&#x27;s Nadella urges treating every AI model as compromised" data-b="Microsoft chief executive Satya Nadella has argued that advanced AI systems should be approached on the assumption that any model may already be compromised, according to The Verge. In a lengthy post shared on X, Nadella rejected the idea of artificial intelligence as a stack of nested black boxes whose outputs people either accept or reject, calling instead for systems that are transparent enough to be contained and observed, and that leave behind tamper-proof, human-readable evidence of their behavior.
+
+Many of his proposals echo ideas already circulating in the industry, the report notes: prompt disclosure of incidents, independent audits, verifiable data, and containment. On containment, however, Nadella appears to push beyond what others have suggested. He writes that models must be treated as compromised and contained from the outset, comparing the approach to an emergency brake: an authorized individual should always be able to pause or halt a model mid-task. He adds that increasingly capable systems will demand increasingly sophisticated containment technologies, which the field should standardize.
+
+The Verge observes that Nadella frames his argument around what he calls super intelligence throughout the post.
+
+*A call for skepticism by default is striking coming from someone building the models — whether it translates into actual standards is another matter.*
+*— Written by AI (GLM-5.3-Flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"><span class="tih">Microsoft&#x27;s Nadella urges treating every AI model as compromised</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Microsoft CEO Satya Nadella calls for an emergency brake on AI models" data-b="Microsoft chief executive Satya Nadella has joined a growing line of technology leaders publicly wrestling with AI safety, arguing in a weekend post on X that the industry must rethink how trust is built into powerful systems.
+
+Writing on Saturday morning, Nadella urged the field to step back and assess the &quot;trust architecture&quot; underpinning AI. Superintelligence — a term he used in line with the Trump administration&#x27;s preferred phrasing — should not be treated as a stack of nested black boxes whose answers and actions are simply accepted or rejected, he wrote.
+
+His alternative, as reported by TechCrunch: separate the model from the harness that orchestrates its work, and keep controls and safeguards outside it. He also proposed documenting every meaningful model action with tamper-proof, human-readable evidence, and ensuring an authorized person can always pause or shut down a model mid-task. Systems should be designed on the assumption that a model is already compromised and contained from the start — an approach he compared to an emergency brake.
+
+According to TechCrunch, the remarks arrive as leading AI companies concede a rising number of episodes in which they appeared to lose control of their models, and shortly after Anthropic chief executive Dario Amodei laid out a plan for more cautious development.
+
+*Editor&#x27;s note: treating containment as a default design requirement rather than an afterthought may be the most sensible safety proposal yet — provided it is actually built, not just posted.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/"><span class="tih">Microsoft CEO Satya Nadella calls for an emergency brake on AI models</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="DistroKid Pulls Songs as UMG Lawsuit Sweeps Up Human-Made Tracks" data-b="DistroKid has been pulling songs from streaming services, and the distributor now says those removals are a direct response to a lawsuit filed by Universal Music Group. According to The Verge, DistroKid confirmed the takedowns follow claims made by UMG, which sued in September and accused the company of building what it called an &quot;AI-slop pipeline.&quot;
+
+Artists say recordings with no apparent AI connection are getting caught in the sweep. Musician McGwire reported that six of his tracks vanished without any notice, leaving him to chase an explanation himself. Among them were a cover of Stevie Wonder&#x27;s &quot;Isn&#x27;t She Lovely,&quot; which he says he properly licensed, and a song built on a beat bought through a marketplace. A third was removed over an uncleared sample — even though the track he allegedly sampled came out two years after his own.
+
+Others describe similar silence. Rapper King Chase said an album that had been live for years was removed with no explanation, and nerdcore rapper Insane Ian reported an original song pulled without warning or reason. Producer Jesse Cannon suggested the company has long treated customer service as dispensable.
+
+Amanda Ferri, DistroKid&#x27;s VP of Artist Services, told The Verge only a very small number of recordings were removed, disputing UMG&#x27;s allegations of deceptive trade practices and copyright infringement.
+
+*When even licensed covers get swept into an AI purge with no recourse, the real story isn&#x27;t the lawsuit — it&#x27;s how little power artists have to defend their own work.*
+*— Written by AI (GLM-5.3-Flash)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"><span class="tih">DistroKid Pulls Songs as UMG Lawsuit Sweeps Up Human-Made Tracks</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple confirms deal to hire Huxe team and license its technology" data-b="Apple has told European regulators it reached an agreement to bring in employees and technology from Huxe, a startup that built personalized audio content, according to TechCrunch. The arrangement, disclosed in a filing to the European Commission and first reported by MacRumors, involves Apple making job offers to certain Huxe AI employees and taking a non-exclusive license to the company&#x27;s intellectual property. Such deals, often called reverse acqui-hires, let large companies absorb talent and know-how from smaller firms without buying them outright, a structure widely seen as drawing less antitrust scrutiny.
+
+Huxe was founded by developers who had worked on the AI-generated podcast features in NotebookLM, recently renamed Gemini Notebook. The startup said in May that it was shutting down, removing its app from the Apple and Google stores and deleting user data. Apple notified the European Commission of its deal on June 9. The filing does not identify who received offers, whether anyone accepted them, or what Apple plans to do with the technology.
+
+TechCrunch points to the timing: Huxe announced its closure a day after Spotify unveiled its own AI-powered podcast generation features, suggesting Apple could be eyeing similar functionality for its Podcasts app, though nothing has been confirmed.
+
+*Reverse acqui-hires may keep regulators comfortable, but they leave users of shuttered products wondering what will actually come of the technology they loved.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/"><span class="tih">Apple confirms deal to hire Huxe team and license its technology</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hardware Implant Suspected as Crypto Wallet Thefts Top $86 Million" data-b="A wave of thefts affecting users of Ledger hardware wallets has been linked to suspected tampering in devices sold through a third-party seller, according to The Verge. Customers have reported their accounts being emptied, and the incidents point to modified hardware distributed by CryptoBillis, a reseller that Ledger has now asked to suspend all sales while it investigates.
+
+The company has acknowledged that at least one affected device contained an unauthorized hardware implant. Images shared on X and Threads appear to show a small circuit board hidden beneath the wallet&#x27;s screen. According to the reports, the component captures whatever appears on the display — including the recovery phrase shown during initial setup — and relays it to the attacker through a built-in SIM card, giving them what they need to drain the funds.
+
+Losses are estimated at more than $86 million across hundreds of wallets, The Verge reports. Ledger says there is no evidence its own systems were breached, and devices bought directly from the company appear unaffected. The episode has the hallmarks of a supply chain attack, with victims concentrated mainly in Southeast Asia. The wallet maker has published guidance to help users check whether their device shows signs of tampering.
+
+*Even hardware wallets, bought for their isolation, are only as trustworthy as the supply chain that delivers them.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1009294/ledger-wallet-tampering-suspected-after-reports-of-crypto-thefts"><span class="tih">Hardware Implant Suspected as Crypto Wallet Thefts Top $86 Million</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="notice"><b>Editor's note —</b> Light news day — fewer fresh items than usual.</div>
+
+
+    <div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/NousResearch/status/2109012611555840069" target="_blank" rel="noopener">
+    <img src="images/lead_2026-10-11.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Open weights</p>
+        <h1>Nous Research ships MISSINGNO, a token-efficient coding and agentic reasoning model</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">MISSINGNO is a highly token-efficient coding and agentic reasoning model with tool use, free for a limited time on the Nous Portal and usable inside the Hermes Agent framework. The Pokemon-themed drop is the latest step in Nous's push to make open, user-owned agents practical for everyday coding work.</p>
+        <p class="byline"><span class="src">@NousResearch</span> · <span>2026-10-10</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:02</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-10-11.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/omarsar0/status/2108934334589857850" target="_blank" rel="noopener">
+    <h3>Sakana AI proposes MASS: verifier-free recursive self-improvement</h3>
+    <p>MASS lets a base model propose, execute and grade its own multi-agent workflows, then fine-tunes on the best traces in an evolutionary loop — removing the external-verifier bottleneck. Two cycles on Qwen3.6-27B lifted performance per output token from 1.2x to 1.6x across four open-ended benchmarks.</p>
+    <p class="byline"><span class="src">@omarsar0</span> · 2026-10-10</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.tomshardware.com/tech-industry/data-centers/second-russian-data-center-targeted-by-ukrainian-drones-in-just-two-days-as-yandex-reels-from-another-service-outage-russian-state-media-admits-that-multiple-modules-completely-taken-out" target="_blank" rel="noopener">
+    <h3>Ukrainian drones knock parts of Yandex's largest data center offline</h3>
+    <p>Drones hit Yandex's Kaluga facility — Russia's largest at roughly 1.4 million square feet and 63 MW — and state media admitted multiple modules were completely taken out of service. It was the second Yandex data center struck in two days.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-10-10</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/lmsysorg/status/2108743838479339604" target="_blank" rel="noopener">
+    <h3>LMSYS shares early SGLang results on NVIDIA's Vera Rubin platform</h3>
+    <p>The early inference numbers cover attention, MoE and speculative verification for models like Kimi K3 NVFP4, plus end-to-end RL training setups pairing SGLang rollouts with CPU-based agent sandboxes.</p>
+    <p class="byline"><span class="src">@lmsysorg</span> · 2026-10-10</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://x.com/omarsar0/status/2109026263453294956" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-10-11.jpg" alt="" class="section-hero-img"><h4 class="hero-title">HarnessSQL: training database agents inside realistic execution harnesses</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2109026263453294956" target="_blank" rel="noopener">
+    <h4>HarnessSQL: training database agents inside realistic execution harnesses</h4>
+    <p>Agents trained to inspect schemas, run probe queries and iterate inside isolated executable databases — SFT plus execution-reward RL — took Qwen3-14B from 22.2% to 54.8% on Spider 2.0-SQLite, with transfer to BIRD-Interact and LiveSQLBench.</p>
+    <p class="byline"><span class="src">@omarsar0</span> · 2026-10-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.11464" target="_blank" rel="noopener">
+    <h4>Who verifies the verifier? Co-evolving inspectable graders with self-improving agents</h4>
+    <p>Makes the grader the evolving object in self-improvement loops: inspectable expressions over small deterministic fault detectors, synthesized from clustered failures and gated against reward hacking.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.12375" target="_blank" rel="noopener">
+    <h4>OnTrack: real-time monitoring and intervention in LLM agent trajectories</h4>
+    <p>Streams structure-aware detection over agent trajectories and intervenes before irreversible actions, instead of paying a safeguard agent's cost per step or issuing post-hoc verdicts after the damage is done.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.12402" target="_blank" rel="noopener">
+    <h4>SpaceCast-Bench: testing predictive spatial reasoning in vision-language models</h4>
+    <p>A 3,862-question benchmark in an observe-transform-infer framework: build a scene from observations, anticipate how an intervention changes it, and infer unseen outcomes — rather than reading off visible relations.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.12369" target="_blank" rel="noopener">
+    <h4>Embodied Turing Machines: stateful code for robot recursive self-improvement</h4>
+    <p>Treats the embodied world as a Turing machine — tape is robot-environment state, rules are policy — with decision-making written entirely in code and tracked from camera images and proprioception.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://littleguys.hervalicio.us" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-10-11.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Littleguys runs Claude Code, Codex and OpenClaw side by side in the macOS menu bar</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://littleguys.hervalicio.us" target="_blank" rel="noopener">
+    <h4>Littleguys runs Claude Code, Codex and OpenClaw side by side in the macOS menu bar</h4>
+    <p>A menu bar app for running multiple coding agents at once; it topped AI-adjacent Show HN launches on October 11.</p>
+    <p class="byline"><span class="src">Littleguys</span> · 2026-10-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/posts/lune-4" target="_blank" rel="noopener">
+    <h4>Lune is a search engine built for scientific AI agents</h4>
+    <p>Launched on Product Hunt, aimed at research agents that need literature and evidence retrieval.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/corbenicai/galahad" target="_blank" rel="noopener">
+    <h4>Galahad offers free open-source long-term memory with a 50M-token window</h4>
+    <p>Corbenic AI's memory layer for AI agents is available on GitHub.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-10-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/confident-ai/eval-skills" target="_blank" rel="noopener">
+    <h4>Confident AI releases eval-skills so coding agents can evaluate themselves</h4>
+    <p>An open-source toolkit of evaluation skills that let coding agents improve automatically.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-10-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/posts/new-windows-search" target="_blank" rel="noopener">
+    <h4>Windows Search turns agentic: results become actions</h4>
+    <p>Microsoft's OS search now takes actions on results instead of only finding files.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/morluto/rea" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">morluto/rea</span>
+    <span class="t-meta">TypeScript · 16.0k ★ · +4,655 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 279.8k ★ · +1,403 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/boykopovar/AnyPS5" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">boykopovar/AnyPS5</span>
+    <span class="t-meta">C++ · 10.9k ★ · +2,716 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/ayghri/i-have-adhd" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">ayghri/i-have-adhd</span>
+    <span class="t-meta">Python · 55.2k ★ · +619 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">cathrynlavery/diagram-design</span>
+    <span class="t-meta">HTML · 45.1k ★ · +825 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">addyosmani/agent-skills</span>
+    <span class="t-meta">JavaScript · 102.9k ★ · +677 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/EpicGames/raddebugger" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">EpicGames/raddebugger</span>
+    <span class="t-meta">C · 7.9k ★ · +90 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 97.8k ★ · +578 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/manaflow-ai/cmux" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">manaflow-ai/cmux</span>
+    <span class="t-meta">Swift · 27.9k ★ · +44 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/trycua/cua" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">trycua/cua</span>
+    <span class="t-meta">Rust · 28.8k ★ · +228 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">cloudflare/security-audit-skill</span>
+    <span class="t-meta">JavaScript · 26.1k ★ · +576 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/tester-army/e2e" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">tester-army/e2e</span>
+    <span class="t-meta">TypeScript · 7.6k ★ · +1,390 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/DuarteSantos8/openGym" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">DuarteSantos8/openGym</span>
+    <span class="t-meta">JavaScript · 7.1k ★ · +1,493 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/convaiinnovations/laya" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">convaiinnovations/laya</span>
+    <span class="t-meta">New release from Convai Innovations</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cloudflare/clef</span>
+    <span class="t-meta">27B multimodal decision model, Apache-2.0, post-trained from Qwen3.8-27B</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">abenzerps/Qwen-Image-2.1-Uncensored-GGUF</span>
+    <span class="t-meta">Uncensored GGUF quant of Qwen-Image-2.1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Joint video, audio and world simulation model, self-hostable under LTX-2.x Community License</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Contrastive-LM/CLM-v0.1-8B" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Contrastive-LM/CLM-v0.1-8B</span>
+    <span class="t-meta">8B research release from the Contrastive-LM project</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/SupersonicLabs/Julia-1" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">SupersonicLabs/Julia-1</span>
+    <span class="t-meta">New release from SupersonicLabs</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-Image-2.1" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Qwen/Qwen-Image-2.1</span>
+    <span class="t-meta">7B text-to-image generation and editing, native RGBA and multi-image control</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B multimodal base model (image-text-to-text)</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Cloudflare/clef-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Cloudflare/clef-flash</span>
+    <span class="t-meta">Smaller, faster variant of the Clef decision model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/PSRben/VisionHOPE" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">PSRben/VisionHOPE</span>
+    <span class="t-meta">Community vision model, trending</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">29</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/apodex/apodex-1.1-mini:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Apodex: Apodex 1.1 Mini (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.1-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI: Ling 3.1 Flash</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Space Bunny Free</span>
+    <span class="t-meta">space-bunny-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">LongCat 2.5 Preview Free</span>
+    <span class="t-meta">longcat-2.5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Step 5 Preview Free</span>
+    <span class="t-meta">step-5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Exo Free</span>
+    <span class="t-meta">exo-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Ling 3.1 Flash Free</span>
+    <span class="t-meta">ling-3.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Ling 3.0 Flash Fin Free</span>
+    <span class="t-meta">ling-3.0-flash-fin-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Muse Spark 1.3 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.3-contributor-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://www.producthunt.com/posts/gitglow-3" target="_blank" rel="noopener"><span class="qh-title">GitGlow reviews human and AI-agent changes before you ship</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/posts/claude-dashboards-motion" target="_blank" rel="noopener"><span class="qh-title">Claude Dashboards &amp; Motion generates live dashboards and animated explainers</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/posts/onepin" target="_blank" rel="noopener"><span class="qh-title">Onepin is an AI voiceover generator that gets names, prices and dates right</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/posts/hypervibe-2" target="_blank" rel="noopener"><span class="qh-title">Hypervibe is an infinite-canvas board for parallel AI coding agents</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/posts/agentdock" target="_blank" rel="noopener"><span class="qh-title">AgentDock is a unified inbox for Claude Code and Codex requests</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/posts/kernelai" target="_blank" rel="noopener"><span class="qh-title">KernelAI is a private, fully offline AI assistant for iPhone and Android</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://github.com/vscarpenter/gsd-task-manager" target="_blank" rel="noopener"><span class="qh-title">GSD Task Manager gives coding agents a persistent task list over MCP</span><span class="qh-src">GitHub</span></a></li>
+
+    <li><a href="https://github.com/VigilOSS/Vigil" target="_blank" rel="noopener"><span class="qh-title">Vigil is an open-source harness for long-running pentests and code audits</span><span class="qh-src">GitHub</span></a></li>
+
+    <li><a href="https://getlistener.vercel.app/en" target="_blank" rel="noopener"><span class="qh-title">Listener runs meeting notes fully on-device for a one-time $5</span><span class="qh-src">Listener</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/10/10/petra-power-looks-to-modernize-energy-for-data-centers-and-defense-vehicles/" target="_blank" rel="noopener"><span class="qh-title">Petra Power pitches solid oxide fuel cells as power hardware for AI data centers</span><span class="qh-src">TechCrunch</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.12242" target="_blank" rel="noopener"><span class="qh-title">TokenRouter: a serving system for token-level LLM routing</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.11287" target="_blank" rel="noopener"><span class="qh-title">REMORY: residual memory tokens for context compaction in long-horizon agents</span><span class="qh-src">arXiv</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-10-11 · <a href="https://github.com/NTTLuke/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
