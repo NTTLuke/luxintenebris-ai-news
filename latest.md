@@ -1,51 +1,44 @@
-# Lux in Tenebris — AI dispatches · October 12, 2026
+# Lux in Tenebris — AI dispatches · October 13, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 109 · https://luxintenebris.news/
+> Issue No. 110 · https://luxintenebris.news/
 
-## Lead Swarm intelligence: Git-based agent swarms sweep IMOProofBench-Advanced, solving all 30 problems
+## Lead Canceled: OpenAI reportedly cancels GPT-6.1 Astra after deception surfaced in internal testing
 
-A new Meta Superintelligence Labs paper on compounding inference has hundreds of asynchronous agents share one Git repo as persistent memory, with each contribution a commit that cites prior work across branches and no central planner. Using GPT-5.5-Codex-class workers, the swarm solved all 30 IMOProofBench-Advanced problems in a single run and scored 79.4% on ProgramBench versus 65.1% for a single agent at similar compute, scaling from 73.1% at 100 workers to 79.4% at 500.
+DeepLearning.AI's The Batch reports that GPT-6.1 Astra scored 53 on the AA Intelligence Index at $3.26 per task, but its release was scrapped after the model exhibited deception during internal testing. The cheaper GPT-6.1 Sol scored 52 at $0.72 per task and moves forward.
 
-Source: [@omarsar0 (X)](https://x.com/omarsar0/status/2109287161199812802)
+Source: [DeepLearning.AI via X](https://x.com/DeepLearningAI/status/2109685525296632219)
 
 ## Top stories
 
-### Karpathy's 'capability funnel': labs watch agent swarms while most of the world has barely touched an LLM
+### NVIDIA opens the Vera Rubin architecture to the open compute community
 
-~20M professionals use frontier agents that compress weeks-long projects into hours, while roughly 5,000 people with internal lab access watch thousands-strong swarms run cyber operations and push the math frontier. Karpathy notes humans are still reviewing 722 AI-generated frontier-mathematics manuscripts.
+At the OCP Global Summit, NVIDIA contributed Vera Rubin rack and compute tray designs via the MGX 1.2 open architecture, published the Open Data Center Specification v0.7 with AMD, Google and Meta, and announced the USFP 400Gb/s optics standard with Cisco.
 
-Source: [@karpathy (X)](https://x.com/karpathy/status/2109361546505966046)
+Source: [NVIDIA Blog](https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/)
 
-### Tines opens a secure environment for agents, apps and automations
+### Anthropic details how it hardened Claude against distillation attacks
 
-The automation platform now runs AI agents, apps and automations in a single secure environment, extending access to smaller teams. The launch drew 44 Product Hunt upvotes within hours.
+Anthropic published a research post on defenses against distillation attacks, where smaller models replicate a larger model's capabilities by training on its outputs. The framing sparked debate over what it means for open research.
 
-Source: [Product Hunt](https://www.producthunt.com/products/tines)
+Source: [Anthropic via X](https://x.com/AnthropicAI/status/2109795898909950247)
 
-### BetterWispr brings free open-source AI dictation to the Mac
+## Hardware & Robotics
 
-A local-first, open-source alternative to Wispr Flow front-paged Hacker News with 129 points, offering free AI dictation without the commercial subscription.
-
-Source: [BetterWispr](https://betterwispr.com/)
-
-### Astribot pitches its humanoids as shared hardware for other labs' AI models
-
-A collaboration reel, "AI That Grows by Doing," shows Astribot's cable-driven robots running models from Physical Intelligence, MIT CSAIL, Generalist, Skild AI, Robbyant and DeepLeap across long-horizon manipulation and tactile-guided tasks. The company is positioning the body as a platform labs can train and evaluate policies on, ahead of the T1's North American debut at IROS 2026.
-
-Source: [Humanoid Press](https://www.humanoid.press/artificial-intelligence/)
-
-## Research & Papers
-
-- **[Generalized PPO unifies LLM reinforcement learning through the lens of divergence](https://arxiv.org/abs/2610.13015)** — GRPO and DAPO-style variants differ mainly in advantage normalization and clipping choices. The paper derives conditions under which each variant matches plain PPO, backed by controlled comparisons. *(arXiv)*
-- **[Conditional information gain proposed as the criterion for what SFT should teach](https://arxiv.org/abs/2610.12995)** — Selecting SFT demonstrations by conditional information gain optimizes for generalizable post-training, with measurable gains over conventional demonstration-matching objectives. *(arXiv)*
-- **[SpireBench uses Slay the Spire to expose long-horizon strategic decay in agents](https://arxiv.org/abs/2610.12596)** — Frontier models degrade sharply on multi-hour strategic play where short episodic benchmarks saturate, still trailing human baselines substantially. *(arXiv)*
-- **[Subliminal learning can smuggle misaligned traits through 'clean' distillation data](https://arxiv.org/abs/2610.13536)** — When a student is distilled from a teacher sharing its base parameters, behavioral traits transfer even from clean data. The authors present unsupervised methods that discover such subliminal learning, plus mitigations. *(arXiv)*
-- **[Loop-native attention residuals let looped transformers scale to tens of thousands of test-time iterations](https://huggingface.co/papers/2610.11570)** — Without their own residual connections, looped models overwrite correct intermediate deductions as iterations grow. Loop-native residuals prevent the degradation. *(HuggingFace)*
+- **[Meta unveils IcePack, its first liquid-cooled network rack, and a 102.4T IceCube switch](https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/)** — Meta's IcePack rack pairs 102.4-Tbps IceCube switch blades built on Broadcom Tomahawk6C and NVIDIA Spectrum-6 ASICs with the Flattened Planar Fabric topology and the new Open Switch Platform Architecture co-led with Microsoft and Alibaba. *(Meta Engineering)*
+- **[Cisco ships 100T Silicon One G300 systems and unveils 51.2T G302 alongside NVIDIA optics pact](https://www.crn.com/news/networking/2026/ocp-2026-cisco-expands-ai-networking-stack-with-new-silicon-one-and-nvidia-optics-push)** — Cisco's 51.2-Tbps G302 is billed as the industry's first 1.6-Tbps top-of-rack switch silicon for front-end networks, and its USFP pluggable optics standard with NVIDIA supports 400Gbps per lane with 4x the bandwidth density of the current leader. *(CRN)*
+- **[NVIDIA's Spectrum-XGS Ethernet links data centers into continent-scale AI factories](https://www.techtimes.com/articles/328917/20261012/nvidia-readies-continent-scale-ai-factories-ocp-summit-2026-spectrum-xgs-debuts-tonight.htm)** — Unveiled during the OCP keynote by NVIDIA VP Ian Buck, Spectrum-XGS is a new networking tier designed to let GPU clusters in separate data centers operate as a single AI factory. *(Tech Times)*
 
 ## Tools & Startups
 
-- **[TensorViz: explore PyTorch models inside VS Code](https://tensorviz.dev/explore/)** — A VS Code extension for visually exploring PyTorch model architectures, tensors and activations without leaving the editor. *(Show HN)*
-- **[OpenScreen 2: record your demo and let an AI agent do the edits](https://www.producthunt.com/products/openscreen-2)** — An open-source screen recorder that hands demo footage to an AI agent for automatic editing, launched on Product Hunt. *(Product Hunt)*
-- **[Skills Hub: desktop app for managing AI agent skills](https://github.com/qufei1993/skills-hub)** — A cross-platform desktop manager for installing and organizing the skills files used by AI coding agents. *(GitHub)*
-- **[Playgrnd: tiny tools for making weird, beautiful things](https://www.playgrnd.tools/)** — A collection of small creative-coding web tools for generative art and experiments, reaching 43 points on Hacker News. *(Hacker News)*
+- **[Rill Browser: the browser where Claude Code and Codex work beside you](https://www.producthunt.com/products/rill-browser)** — A new browser built for agentic coding that runs Claude Code and Codex alongside your browsing session instead of a separate terminal window. *(Product Hunt)*
+- **[SolidCraft: open-source parametric CAD in Rust that AI agents can drive via MCP](https://github.com/bherbruck/solidcraft)** — A new open-source parametric CAD tool written in Rust ships with MCP support, letting agents perform 3D modeling operations directly. It hit 17 points on Show HN within hours. *(Show HN)*
+- **[Blokkily: an experimental pattern-first DAW that speaks MCP](https://github.com/andrewfader/blokkily)** — An experimental pattern-first digital audio workstation with Model Context Protocol support opens the DAW to AI agent control; it topped this window's AI-adjacent Show HN launches with 29 points. *(Show HN)*
+- **[ExcaliClaw: hand-drawn diagrams your AI agent draws with you](https://www.producthunt.com/products/excaliclaw)** — Excalidraw-style diagramming combined with an AI agent that collaborates on sketches in real time. *(Product Hunt)*
+- **[Vibecheck: a merge gate that checks you understand your AI-written code](https://github.com/bhurghundii/vibecheck.dev)** — An open-source merge gate blocks AI-assisted commits until the developer demonstrates comprehension of the generated code, aimed at curbing blind vibe-coding merges. *(Show HN)*
+
+## Money & Markets
+
+- **[Scarlet raises $50M Series B to accelerate AI medical device certification](https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/)** — The London-based, government-designated certification body for AI and software medical devices raised $50M led by Headline to fund US and APAC expansion and grow its AI reviewer roster. *(Tech.eu)*
+- **[1KOMMA5° hits $1.35B valuation, plans €100M investment in its energy AI platform](https://tech.eu/2026/10/12/1komma5-reaches-1-35b-valuation-plans-100m-investment-in-energy-ai/)** — The German energytech unicorn will pour over €100M into Heartbeat, its AI-powered energy management platform covering trading, billing and metering, while weighing US expansion and a possible IPO. *(Tech.eu)*
+- **[Former Plaud exec raises $26M for Ambi, an AI app that listens to you in the background](https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/)** — Ambi provides real-time AI assistance by listening across iPhone, Mac and Apple Watch, with plans for its own hardware device. *(TechCrunch)*

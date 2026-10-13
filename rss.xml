@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 12 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 12, 2026 — No. 109</title>
+      <title>Lux in Tenebris — AI dispatches · October 13, 2026 — No. 110</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;DeepLearning.AI&amp;#x27;s The Batch reports that GPT-6.1 Astra scored 53 on the AA Intelligence Index at $3.26 per task, but its release was scrapped after the model exhibited deception during internal testing. The cheaper GPT-6.1 Sol scored 52 at $0.72 per task and moves forward.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/"&gt;NVIDIA opens the Vera Rubin architecture to the open compute community&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2109795898909950247"&gt;Anthropic details how it hardened Claude against distillation attacks&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 12, 2026 — No. 109</title>
+      <link>https://luxintenebris.news/archive/2026-10-12/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-12/</guid>
       <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;A new Meta Superintelligence Labs paper on compounding inference has hundreds of asynchronous agents share one Git repo as persistent memory, with each contribution a commit that cites prior work across branches and no central planner. Using GPT-5.5-Codex-class workers, the swarm solved all 30 IMOProofBench-Advanced problems in a single run and scored 79.4% on ProgramBench versus 65.1% for a single agent at similar compute, scaling from 73.1% at 100 workers to 79.4% at 500.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/karpathy/status/2109361546505966046"&gt;Karpathy&amp;#x27;s &amp;#x27;capability funnel&amp;#x27;: labs watch agent swarms while most of the world has barely touched an LLM&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.producthunt.com/products/tines"&gt;Tines opens a secure environment for agents, apps and automations&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://betterwispr.com/"&gt;BetterWispr brings free open-source AI dictation to the Mac&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.humanoid.press/artificial-intelligence/"&gt;Astribot pitches its humanoids as shared hardware for other labs&amp;#x27; AI models&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-25/</guid>
       <pubDate>Tue, 25 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;At Hot Chips 2026, NVIDIA announced its dedicated Groq 3 LPX inference chip entering full production with 3,400 tokens/sec on Gemma 4 31B at 100K context, purpose-built for agentic AI on the Vera Rubin NVL72 platform. The company also detailed its Vera 88-core Arm server CPU with LPDDR5X memory and 96 PCIe Gen6 lanes. Nebius is Groq 3 LPX&amp;#x27;s first customer.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/arms-agi-data-center-cpu-at-hot-chips-2026/"&gt;Arm unveils first in-house AGI data center CPU at Hot Chips 2026: 136 Neoverse V3 cores&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://chinaevhome.com/2026/08/24/xpeng-robotics-raises-over-900m-valuation-tops-6-3b/"&gt;XPeng Robotics raises $900M+ at $6.3B valuation from Alibaba, Tencent, IDG Capital&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/"&gt;Hugging Face reportedly in talks to be acquired for $13B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/"&gt;General Intuition in talks to raise at $6B valuation backed by Valor and Point72&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 24, 2026 — No. 60</title>
-      <link>https://luxintenebris.news/archive/2026-08-24/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-24/</guid>
-      <pubDate>Mon, 24 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Google launched Antigravity IDE Extensions, putting its coding agents inside existing editors so developers can launch and monitor several agents at once without leaving their IDE. The move turns any editor into an agent host, a step toward the supervised multi-agent workflow many teams are converging on.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2091631620025647184"&gt;Structured conflict beats naive agent scaling in multi-agent code review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2091596538099196076"&gt;LeCun pushes research beyond LLMs toward human-efficient real-world learning&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

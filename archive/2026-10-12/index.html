@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · October 12, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 109 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>October 12, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>72 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · GLM-5.3 Flash!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="TechCrunch Disrupt 2026 opens in San Francisco with AI-era company building at its core" data-b="TechCrunch Disrupt 2026 opens October 13-15 at Moscone West in San Francisco, and according to TechCrunch the event is built around a single question: how to build an enduring company in the AI era. The program spans six editorially curated stages with more than 200 expert sessions, featuring the CEOs, investors, engineers and operators the outlet describes as shaping the next decade of technology.
+
+Rather than forecasting AI&#x27;s future, the publication says this edition focuses on building businesses inside it, with each session framed around what attendees can apply at their companies immediately.
+
+Startup Battlefield remains the centerpiece pitch competition. Two hundred startups selected in August will pitch onstage to prominent venture capitalists, with the winner receiving a $100,000 check. Applications for 2026 are closed, though the program is expanding internationally.
+
+TechCrunch also cites past attendee results: one founder reported a threefold oversubscription after confirming for the competition, along with more than 100 inbound investor messages, while another held nearly 30 consecutive investor meetings after an onstage pitch.
+
+Programming is organized by company stage, from pre-seed founders testing a thesis to scaling teams seeking talent and partnerships, with matchmaking tools, side events and a Deal Flow Café for one-on-one founder-investor conversations. Ticket discounts run until the event begins, including half-price passes for a team member and reduced Expo+ access aimed at people between jobs.
+
+*Disrupt&#x27;s bet is clear: in an AI-saturated market, the scarcest resource at a conference is no longer information but the person standing next to you.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/11/the-founders-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/"><span class="tih">TechCrunch Disrupt 2026 opens in San Francisco with AI-era company building at its core</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Sorkin&#x27;s Facebook sequel stumbles out of the gate at the box office" data-b="Aaron Sorkin&#x27;s &quot;The Social Reckoning,&quot; his follow-up to &quot;The Social Network,&quot; is heading for a modest debut, with Sunday estimates placing its domestic take at roughly $5.5 million, according to TechCrunch. That lands below the studio&#x27;s own muted forecast of $7 million to $8 million, and far from the 2010 original, which opened to $22 million and grossed $97 million domestically at 2010 ticket prices, earning Sorkin an Oscar and shaping how audiences pictured Silicon Valley and startup culture.
+
+The sequel trades the founding drama of Facebook&#x27;s early days for a darker story centered on whistleblower Frances Haugen and the leak of the Facebook files. TechCrunch floats several explanations: changed theatrical habits, a premise heavy on hearings and algorithm tweaks, softer urgency around criticizing Facebook while AI dominates public worry, and lukewarm reviews — though the outlet&#x27;s critic admits he enjoyed the film despite its dialogue-heavy style.
+
+The soft opening colors a wider slate of tech-CEO projects: Alex Gibney&#x27;s four-hour &quot;Musk&quot; documentary debuted this weekend to $69,000 across four theaters, with TechCrunch expecting its largest audience on HBO Max. Nathan Fielder&#x27;s Elizabeth Holmes documentary arrives next weekend, the OpenAI drama &quot;Artificial&quot; has found a new distributor after being dropped by Amazon, and Netflix streams an FTX series about Sam Bankman-Fried in November.
+
+*Perhaps a weak opening is fitting: audiences no longer lose sleep over Facebook — they lose it over AI.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/11/aaron-sorkins-social-reckoning-is-off-to-a-weak-start/"><span class="tih">Sorkin&#x27;s Facebook sequel stumbles out of the gate at the box office</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tech leaders fall in line behind Trump&#x27;s &quot;super intelligence&quot; rebrand for AI" data-b="President Donald Trump&#x27;s effort to relabel artificial intelligence as &quot;super intelligence&quot; is winning over some of the tech industry&#x27;s most powerful figures, according to The Verge, even as most of the public keeps saying AI. The White House has declared that anyone still using the term &quot;Artificial Intelligence&quot; rather than the &quot;more accurate&quot; new phrase is an enemy, and an executive order announced at an AI summit now requires government agencies to adopt the new terminology.
+
+Elon Musk was among the first to comply, promising to rename SpaceXAI to SpaceXSI. Hours after the declaration, Salesforce&#x27;s Marc Benioff said his company would rebrand AIForce as SIForce. Nvidia&#x27;s Jensen Huang, who attended the summit and has argued that the dangers of AI are exaggerated, said the company&#x27;s $1 billion commitment to scientific advancement would include &quot;super intelligence research.&quot; The Verge notes Huang has much to lose by getting on Trump&#x27;s bad side.
+
+Microsoft&#x27;s Satya Nadella is the latest to follow. In a post calling for an &quot;emergency brake&quot; on the technology, he repeatedly used the new term. He appeared at the summit alongside Mark Zuckerberg, Sundar Pichai, Jeff Bezos, Dario Amodei, and Musk.
+
+Per The Verge, the industry clashed with the administration during Trump&#x27;s first term but has repeatedly sought favor in his second.
+
+*A rebrand adopted this quickly says less about the technology than about how eagerly the industry is paying court.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai"><span class="tih">Tech leaders fall in line behind Trump&#x27;s &quot;super intelligence&quot; rebrand for AI</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Amazon drops NDAs in data center talks as industry confronts public backlash" data-b="Amazon says it will stop using nondisclosure agreements when negotiating data center projects with local governments, following a similar commitment Microsoft made earlier in the year, according to TechCrunch.
+
+The pledge appeared inside a longer company blog post arguing that data centers ultimately benefit the communities hosting them. On TechCrunch&#x27;s Equity podcast, reporter Sean O&#x27;Kane welcomed the move but traced much of the backlash to a deeper habit: projects negotiated largely in secret, sometimes with residents unaware of who will eventually occupy a facility. He compared it to Uber&#x27;s rapid mid-2010s expansion, when confidential talks with city governments, he argued, made the company comfortable asking for ever more concessions.
+
+Fellow panelist Rebecca Bellan doubted that the wave of local moratoriums — most lasting only a year or two — will have much lasting impact, since many data centers will not come online for several years and buildouts already face delays from zoning to funding. Host Anthony Ha countered that the industry plainly feels the pressure, pointing to public comments from figures including Trump and David Sacks, and called abandoning the NDAs a good first step, though one unlikely to convert opponents on its own.
+
+*Transparency about who is building what and why is the bare minimum — but it finally opens a conversation these projects never had.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/"><span class="tih">Amazon drops NDAs in data center talks as industry confronts public backlash</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Regulators give driverless trucks a five-year pass on warning triangles" data-b="A major regulatory obstacle for autonomous trucking has fallen. According to TechCrunch, the Federal Motor Carrier Safety Administration this week granted self-driving truck developers Aurora Innovation and Kodiak AI a five-year exemption allowing them to replace the reflective warning triangles required after a roadside breakdown with cab-mounted warning beacons.
+
+Under federal rules, the driver of a disabled big rig must pull over, activate the hazard lights and set out reflective warning triangles on the road within ten minutes. A driverless truck has nobody aboard to do that. The gap was serious enough that Aurora took federal safety regulators to court; after a court denied its exemption request, the company escalated the fight to the District of Columbia Court of Appeals, operating on a temporary waiver in the meantime.
+
+Reacting to the decision, Kodiak AI vice president of external affairs Daniel Goff said it would help move US freight hauling into an autonomous age that could save lives and make goods delivery more efficient. Aurora&#x27;s head of government relations, Gerardo Interiano, called the high-visibility beacons a contemporary safety measure that alerts nearby traffic instantly while keeping people out of harm&#x27;s way, adding that the ruling shows officials recognize the economic and community gains of autonomous trucking.
+
+TechCrunch notes an open question: whether such cab-mounted beacons could eventually become standard equipment across the entire trucking industry.
+
+*The fight was never really about triangles: legacy rules written for human drivers are becoming the real brakes on automation.*
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/11/techcrunch-mobility-a-roadblock-clears-for-self-driving-trucks/"><span class="tih">Regulators give driverless trucks a five-year pass on warning triangles</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="TechCrunch Disrupt 2026 opens in San Francisco with AI-era company building at its core" data-b="TechCrunch Disrupt 2026 opens October 13-15 at Moscone West in San Francisco, and according to TechCrunch the event is built around a single question: how to build an enduring company in the AI era. The program spans six editorially curated stages with more than 200 expert sessions, featuring the CEOs, investors, engineers and operators the outlet describes as shaping the next decade of technology.
+
+Rather than forecasting AI&#x27;s future, the publication says this edition focuses on building businesses inside it, with each session framed around what attendees can apply at their companies immediately.
+
+Startup Battlefield remains the centerpiece pitch competition. Two hundred startups selected in August will pitch onstage to prominent venture capitalists, with the winner receiving a $100,000 check. Applications for 2026 are closed, though the program is expanding internationally.
+
+TechCrunch also cites past attendee results: one founder reported a threefold oversubscription after confirming for the competition, along with more than 100 inbound investor messages, while another held nearly 30 consecutive investor meetings after an onstage pitch.
+
+Programming is organized by company stage, from pre-seed founders testing a thesis to scaling teams seeking talent and partnerships, with matchmaking tools, side events and a Deal Flow Café for one-on-one founder-investor conversations. Ticket discounts run until the event begins, including half-price passes for a team member and reduced Expo+ access aimed at people between jobs.
+
+*Disrupt&#x27;s bet is clear: in an AI-saturated market, the scarcest resource at a conference is no longer information but the person standing next to you.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/11/the-founders-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/"><span class="tih">TechCrunch Disrupt 2026 opens in San Francisco with AI-era company building at its core</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Sorkin&#x27;s Facebook sequel stumbles out of the gate at the box office" data-b="Aaron Sorkin&#x27;s &quot;The Social Reckoning,&quot; his follow-up to &quot;The Social Network,&quot; is heading for a modest debut, with Sunday estimates placing its domestic take at roughly $5.5 million, according to TechCrunch. That lands below the studio&#x27;s own muted forecast of $7 million to $8 million, and far from the 2010 original, which opened to $22 million and grossed $97 million domestically at 2010 ticket prices, earning Sorkin an Oscar and shaping how audiences pictured Silicon Valley and startup culture.
+
+The sequel trades the founding drama of Facebook&#x27;s early days for a darker story centered on whistleblower Frances Haugen and the leak of the Facebook files. TechCrunch floats several explanations: changed theatrical habits, a premise heavy on hearings and algorithm tweaks, softer urgency around criticizing Facebook while AI dominates public worry, and lukewarm reviews — though the outlet&#x27;s critic admits he enjoyed the film despite its dialogue-heavy style.
+
+The soft opening colors a wider slate of tech-CEO projects: Alex Gibney&#x27;s four-hour &quot;Musk&quot; documentary debuted this weekend to $69,000 across four theaters, with TechCrunch expecting its largest audience on HBO Max. Nathan Fielder&#x27;s Elizabeth Holmes documentary arrives next weekend, the OpenAI drama &quot;Artificial&quot; has found a new distributor after being dropped by Amazon, and Netflix streams an FTX series about Sam Bankman-Fried in November.
+
+*Perhaps a weak opening is fitting: audiences no longer lose sleep over Facebook — they lose it over AI.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/11/aaron-sorkins-social-reckoning-is-off-to-a-weak-start/"><span class="tih">Sorkin&#x27;s Facebook sequel stumbles out of the gate at the box office</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tech leaders fall in line behind Trump&#x27;s &quot;super intelligence&quot; rebrand for AI" data-b="President Donald Trump&#x27;s effort to relabel artificial intelligence as &quot;super intelligence&quot; is winning over some of the tech industry&#x27;s most powerful figures, according to The Verge, even as most of the public keeps saying AI. The White House has declared that anyone still using the term &quot;Artificial Intelligence&quot; rather than the &quot;more accurate&quot; new phrase is an enemy, and an executive order announced at an AI summit now requires government agencies to adopt the new terminology.
+
+Elon Musk was among the first to comply, promising to rename SpaceXAI to SpaceXSI. Hours after the declaration, Salesforce&#x27;s Marc Benioff said his company would rebrand AIForce as SIForce. Nvidia&#x27;s Jensen Huang, who attended the summit and has argued that the dangers of AI are exaggerated, said the company&#x27;s $1 billion commitment to scientific advancement would include &quot;super intelligence research.&quot; The Verge notes Huang has much to lose by getting on Trump&#x27;s bad side.
+
+Microsoft&#x27;s Satya Nadella is the latest to follow. In a post calling for an &quot;emergency brake&quot; on the technology, he repeatedly used the new term. He appeared at the summit alongside Mark Zuckerberg, Sundar Pichai, Jeff Bezos, Dario Amodei, and Musk.
+
+Per The Verge, the industry clashed with the administration during Trump&#x27;s first term but has repeatedly sought favor in his second.
+
+*A rebrand adopted this quickly says less about the technology than about how eagerly the industry is paying court.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai"><span class="tih">Tech leaders fall in line behind Trump&#x27;s &quot;super intelligence&quot; rebrand for AI</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Amazon drops NDAs in data center talks as industry confronts public backlash" data-b="Amazon says it will stop using nondisclosure agreements when negotiating data center projects with local governments, following a similar commitment Microsoft made earlier in the year, according to TechCrunch.
+
+The pledge appeared inside a longer company blog post arguing that data centers ultimately benefit the communities hosting them. On TechCrunch&#x27;s Equity podcast, reporter Sean O&#x27;Kane welcomed the move but traced much of the backlash to a deeper habit: projects negotiated largely in secret, sometimes with residents unaware of who will eventually occupy a facility. He compared it to Uber&#x27;s rapid mid-2010s expansion, when confidential talks with city governments, he argued, made the company comfortable asking for ever more concessions.
+
+Fellow panelist Rebecca Bellan doubted that the wave of local moratoriums — most lasting only a year or two — will have much lasting impact, since many data centers will not come online for several years and buildouts already face delays from zoning to funding. Host Anthony Ha countered that the industry plainly feels the pressure, pointing to public comments from figures including Trump and David Sacks, and called abandoning the NDAs a good first step, though one unlikely to convert opponents on its own.
+
+*Transparency about who is building what and why is the bare minimum — but it finally opens a conversation these projects never had.*
+
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/"><span class="tih">Amazon drops NDAs in data center talks as industry confronts public backlash</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Regulators give driverless trucks a five-year pass on warning triangles" data-b="A major regulatory obstacle for autonomous trucking has fallen. According to TechCrunch, the Federal Motor Carrier Safety Administration this week granted self-driving truck developers Aurora Innovation and Kodiak AI a five-year exemption allowing them to replace the reflective warning triangles required after a roadside breakdown with cab-mounted warning beacons.
+
+Under federal rules, the driver of a disabled big rig must pull over, activate the hazard lights and set out reflective warning triangles on the road within ten minutes. A driverless truck has nobody aboard to do that. The gap was serious enough that Aurora took federal safety regulators to court; after a court denied its exemption request, the company escalated the fight to the District of Columbia Court of Appeals, operating on a temporary waiver in the meantime.
+
+Reacting to the decision, Kodiak AI vice president of external affairs Daniel Goff said it would help move US freight hauling into an autonomous age that could save lives and make goods delivery more efficient. Aurora&#x27;s head of government relations, Gerardo Interiano, called the high-visibility beacons a contemporary safety measure that alerts nearby traffic instantly while keeping people out of harm&#x27;s way, adding that the ruling shows officials recognize the economic and community gains of autonomous trucking.
+
+TechCrunch notes an open question: whether such cab-mounted beacons could eventually become standard equipment across the entire trucking industry.
+
+*The fight was never really about triangles: legacy rules written for human drivers are becoming the real brakes on automation.*
+*— Written by AI (GLM-5.3-Flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/11/techcrunch-mobility-a-roadblock-clears-for-self-driving-trucks/"><span class="tih">Regulators give driverless trucks a five-year pass on warning triangles</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/omarsar0/status/2109287161199812802" target="_blank" rel="noopener">
+    <img src="images/lead_2026-10-12.png" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Swarm intelligence</p>
+        <h1>Git-based agent swarms sweep IMOProofBench-Advanced, solving all 30 problems</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">A new Meta Superintelligence Labs paper on compounding inference has hundreds of asynchronous agents share one Git repo as persistent memory, with each contribution a commit that cites prior work across branches and no central planner. Using GPT-5.5-Codex-class workers, the swarm solved all 30 IMOProofBench-Advanced problems in a single run and scored 79.4% on ProgramBench versus 65.1% for a single agent at similar compute, scaling from 73.1% at 100 workers to 79.4% at 500.</p>
+        <p class="byline"><span class="src">@omarsar0 (X)</span> · <span>2026-10-11</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:14</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-10-12.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/karpathy/status/2109361546505966046" target="_blank" rel="noopener">
+    <h3>Karpathy's 'capability funnel': labs watch agent swarms while most of the world has barely touched an LLM</h3>
+    <p>~20M professionals use frontier agents that compress weeks-long projects into hours, while roughly 5,000 people with internal lab access watch thousands-strong swarms run cyber operations and push the math frontier. Karpathy notes humans are still reviewing 722 AI-generated frontier-mathematics manuscripts.</p>
+    <p class="byline"><span class="src">@karpathy (X)</span> · 2026-10-12</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.producthunt.com/products/tines" target="_blank" rel="noopener">
+    <h3>Tines opens a secure environment for agents, apps and automations</h3>
+    <p>The automation platform now runs AI agents, apps and automations in a single secure environment, extending access to smaller teams. The launch drew 44 Product Hunt upvotes within hours.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-12</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://betterwispr.com/" target="_blank" rel="noopener">
+    <h3>BetterWispr brings free open-source AI dictation to the Mac</h3>
+    <p>A local-first, open-source alternative to Wispr Flow front-paged Hacker News with 129 points, offering free AI dictation without the commercial subscription.</p>
+    <p class="byline"><span class="src">BetterWispr</span> · 2026-10-11</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-10-12.png" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.13015" target="_blank" rel="noopener">
+    <h4>Generalized PPO unifies LLM reinforcement learning through the lens of divergence</h4>
+    <p>GRPO and DAPO-style variants differ mainly in advantage normalization and clipping choices. The paper derives conditions under which each variant matches plain PPO, backed by controlled comparisons.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.12995" target="_blank" rel="noopener">
+    <h4>Conditional information gain proposed as the criterion for what SFT should teach</h4>
+    <p>Selecting SFT demonstrations by conditional information gain optimizes for generalizable post-training, with measurable gains over conventional demonstration-matching objectives.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.12596" target="_blank" rel="noopener">
+    <h4>SpireBench uses Slay the Spire to expose long-horizon strategic decay in agents</h4>
+    <p>Frontier models degrade sharply on multi-hour strategic play where short episodic benchmarks saturate, still trailing human baselines substantially.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.13536" target="_blank" rel="noopener">
+    <h4>Subliminal learning can smuggle misaligned traits through 'clean' distillation data</h4>
+    <p>When a student is distilled from a teacher sharing its base parameters, behavioral traits transfer even from clean data. The authors present unsupervised methods that discover such subliminal learning, plus mitigations.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2610.11570" target="_blank" rel="noopener">
+    <h4>Loop-native attention residuals let looped transformers scale to tens of thousands of test-time iterations</h4>
+    <p>Without their own residual connections, looped models overwrite correct intermediate deductions as iterations grow. Loop-native residuals prevent the degradation.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-10-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-10-12.png" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://tensorviz.dev/explore/" target="_blank" rel="noopener">
+    <h4>TensorViz: explore PyTorch models inside VS Code</h4>
+    <p>A VS Code extension for visually exploring PyTorch model architectures, tensors and activations without leaving the editor.</p>
+    <p class="byline"><span class="src">Show HN</span> · 2026-10-12</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/openscreen-2" target="_blank" rel="noopener">
+    <h4>OpenScreen 2: record your demo and let an AI agent do the edits</h4>
+    <p>An open-source screen recorder that hands demo footage to an AI agent for automatic editing, launched on Product Hunt.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-12</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/qufei1993/skills-hub" target="_blank" rel="noopener">
+    <h4>Skills Hub: desktop app for managing AI agent skills</h4>
+    <p>A cross-platform desktop manager for installing and organizing the skills files used by AI coding agents.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-10-12</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.playgrnd.tools/" target="_blank" rel="noopener">
+    <h4>Playgrnd: tiny tools for making weird, beautiful things</h4>
+    <p>A collection of small creative-coding web tools for generative art and experiments, reaching 43 points on Hacker News.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-10-12</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/morluto/rea" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">morluto/rea</span>
+    <span class="t-meta">TypeScript</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/boykopovar/AnyPS5" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">boykopovar/AnyPS5</span>
+    <span class="t-meta">C++</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/storytold/artcraft" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">storytold/artcraft</span>
+    <span class="t-meta">Rust</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">cathrynlavery/diagram-design</span>
+    <span class="t-meta">HTML</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">bilawalsidhu/gods-eye-view</span>
+    <span class="t-meta">JavaScript</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pytorch/pytorch" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">pytorch/pytorch</span>
+    <span class="t-meta">Python</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/lyogavin/airllm" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">lyogavin/airllm</span>
+    <span class="t-meta">Jupyter Notebook</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/chrislgarry/Apollo-11" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">chrislgarry/Apollo-11</span>
+    <span class="t-meta">Assembly</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/google/embeddinggemma-2" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">google/embeddinggemma-2</span>
+    <span class="t-meta">98,829 downloads · 1,746 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/jialinyyzz/humanizer" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">jialinyyzz/humanizer</span>
+    <span class="t-meta">37,647 downloads · 1,139 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Cloudflare/clef</span>
+    <span class="t-meta">14,351 downloads · 2,031 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">abenzerps/Qwen-Image-2.1-Uncensored-GGUF</span>
+    <span class="t-meta">2,188,658 downloads · 4,002 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Qwen/Qwen-Image-2.1-Turbo</span>
+    <span class="t-meta">4,702 downloads · 552 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">1,726,683 downloads · 7,336 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Aleph-Alpha/Kolibri-1" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Aleph-Alpha/Kolibri-1</span>
+    <span class="t-meta">12,550 downloads · 888 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">6,843,108 downloads · 17,518 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Venastine-Research/Xing4.0-29B-A4B-GGUF</span>
+    <span class="t-meta">48,389 downloads · 691 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/canberkkkkkk/ema-lightning" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">canberkkkkkk/ema-lightning</span>
+    <span class="t-meta">18,079 downloads · 359 likes</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">29</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/apodex/apodex-1.1-mini:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Apodex: Apodex 1.1 Mini (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.1-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI: Ling 3.1 Flash</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Space Bunny Free</span>
+    <span class="t-meta">space-bunny-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">LongCat 2.5 Preview Free</span>
+    <span class="t-meta">longcat-2.5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Step 5 Preview Free</span>
+    <span class="t-meta">step-5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Exo Free</span>
+    <span class="t-meta">exo-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Ling 3.1 Flash Free</span>
+    <span class="t-meta">ling-3.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Ling 3.0 Flash Fin Free</span>
+    <span class="t-meta">ling-3.0-flash-fin-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Muse Spark 1.3 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.3-contributor-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">11</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://tensorviz.dev/explore/" target="_blank" rel="noopener"><span class="qh-title">TensorViz: explore PyTorch models inside VS Code</span><span class="qh-src">Show HN</span></a></li>
+
+    <li><a href="https://english.news.cn/europe/20261012/df2d68938c6c473bbb0a83b65bb5d697/c.html" target="_blank" rel="noopener"><span class="qh-title">Unitree G1 humanoid conducts the Ljubljana Wind Orchestra at a public parade</span><span class="qh-src">Xinhua</span></a></li>
+
+    <li><a href="https://thebostonreport.com/2026/10/11/humanoid-robots-2026-figure-bmw-agility-spac/" target="_blank" rel="noopener"><span class="qh-title">Weekend roundup: Figure-BMW hits 30,000+ vehicles, Agility SPAC unclosed, Hyundai plans Atlas rollout</span><span class="qh-src">The Boston Report</span></a></li>
+
+    <li><a href="https://www.finsmes.com/2026/10/outro-raises-7m-in-funding.html" target="_blank" rel="noopener"><span class="qh-title">Outro raises $7M across pre-seed and seed for its AI-supported deprescribing clinic</span><span class="qh-src">FinSMEs</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/openscreen-2" target="_blank" rel="noopener"><span class="qh-title">OpenScreen 2: record your demo and let an AI agent do the edits</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://github.com/qufei1993/skills-hub" target="_blank" rel="noopener"><span class="qh-title">Skills Hub: desktop app for managing AI agent skills</span><span class="qh-src">GitHub</span></a></li>
+
+    <li><a href="https://www.playgrnd.tools/" target="_blank" rel="noopener"><span class="qh-title">Playgrnd: tiny tools for making weird, beautiful things</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.13361" target="_blank" rel="noopener"><span class="qh-title">AgentSWE asks whether coding agents can build the agent you actually want</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2610.11169" target="_blank" rel="noopener"><span class="qh-title">Skill Constellations traces the supply chain of agent skills on GitHub</span><span class="qh-src">HuggingFace</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.12659" target="_blank" rel="noopener"><span class="qh-title">MagicBeanStalk escapes the RLVR zero-advantage trap with recursive data synthesis</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.12769" target="_blank" rel="noopener"><span class="qh-title">REDaCT performs collapse-free unlearning in large reasoning models</span><span class="qh-src">arXiv</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-10-12 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
