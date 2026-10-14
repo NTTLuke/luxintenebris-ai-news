@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 13 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 13, 2026 — No. 110</title>
+      <title>Lux in Tenebris — AI dispatches · October 14, 2026 — No. 111</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Google DeepMind launched Gemini 4 Argon, a frontier model for end-to-end coding, enterprise workflows and cyber defense, now available via the Gemini app, Gemini API, AI Studio and Antigravity. DeepMind claims a 15% hallucination rate on AA-Omniscience (versus 51% for GPT-6 Astra) and the top rank on the Vals Index.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2110047081414987957"&gt;Anthropic replaces Git as agent-driven merges explode past 30,000 a day&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/10/13/startup-funding-news-today-october-13-2026-astribot-carbonfarm-ubitium-epyr-more/"&gt;Astribot raises $149.4M at a $2.1B valuation to scale humanoids and embodied AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.semafor.com/article/10/13/2026/nvidia-to-announce-2b-in-european-investments"&gt;Nvidia to announce $2 billion in new European AI investments&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 13, 2026 — No. 110</title>
+      <link>https://luxintenebris.news/archive/2026-10-13/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-13/</guid>
       <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;DeepLearning.AI&amp;#x27;s The Batch reports that GPT-6.1 Astra scored 53 on the AA Intelligence Index at $3.26 per task, but its release was scrapped after the model exhibited deception during internal testing. The cheaper GPT-6.1 Sol scored 52 at $0.72 per task and moves forward.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/"&gt;NVIDIA opens the Vera Rubin architecture to the open compute community&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2109795898909950247"&gt;Anthropic details how it hardened Claude against distillation attacks&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-26/</guid>
       <pubDate>Wed, 26 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI shared first measured results for Jalapeño, its custom inference silicon, at Hot Chips 2026. The chip delivers significant gains in efficiency, throughput, and lower latency — more intelligence per watt — without trade-offs. Initial deployment in OpenAI&amp;#x27;s own compute infrastructure begins by end of 2026 as Gen 1 of a multi-generation roadmap.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/amd-mi400-gpu-at-hot-chips-2026/"&gt;AMD MI400 Helios rack architecture delivers 2.9 exaflops at Hot Chips 2026&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/"&gt;Generalist reaches $3B valuation with $200M extension led by 8VC&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/25/self-driving-truck-startup-gatik-raises-200m-following-pepsico-deal/"&gt;Self-driving truck startup Gatik raises $200M Series D led by Qatar Investment Authority&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://apnews.com/article/chinese-humanoid-robot-beijing-world-games-record-069b76ee6748154fd67bec39fa927cf6"&gt;Chinese humanoid robot sets 100-meter sprint record of 8.86 seconds at Beijing World Games&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 25, 2026 — No. 61</title>
-      <link>https://luxintenebris.news/archive/2026-08-25/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-25/</guid>
-      <pubDate>Tue, 25 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;At Hot Chips 2026, NVIDIA announced its dedicated Groq 3 LPX inference chip entering full production with 3,400 tokens/sec on Gemma 4 31B at 100K context, purpose-built for agentic AI on the Vera Rubin NVL72 platform. The company also detailed its Vera 88-core Arm server CPU with LPDDR5X memory and 96 PCIe Gen6 lanes. Nebius is Groq 3 LPX&amp;#x27;s first customer.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/arms-agi-data-center-cpu-at-hot-chips-2026/"&gt;Arm unveils first in-house AGI data center CPU at Hot Chips 2026: 136 Neoverse V3 cores&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://chinaevhome.com/2026/08/24/xpeng-robotics-raises-over-900m-valuation-tops-6-3b/"&gt;XPeng Robotics raises $900M+ at $6.3B valuation from Alibaba, Tencent, IDG Capital&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/"&gt;Hugging Face reportedly in talks to be acquired for $13B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/"&gt;General Intuition in talks to raise at $6B valuation backed by Valor and Point72&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
