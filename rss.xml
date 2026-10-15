@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 14 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 14, 2026 — No. 111</title>
+      <title>Lux in Tenebris — AI dispatches · October 15, 2026 — No. 112</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;The major overhaul introduces a client/server service shared by the TUI, web and desktop clients, a rebuilt API, and &amp;#x27;Code Mode&amp;#x27;, which compiles MCP servers into callable functions. Background subagents and shell tasks ship alongside 80+ internal plugins, and the release hit the front page of Hacker News within hours.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2110467939057168849"&gt;Microsoft&amp;#x27;s AutoEnvScaling lets an agent design its own RL training environments&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.crn.com/news/components-peripherals/2026/6-big-intel-amd-and-nvidia-ai-data-center-announcements-at-ocp-2026"&gt;Intel, AMD and Nvidia detail AI data center hardware at OCP 2026&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.producthunt.com/products/perplexity-ai"&gt;Perplexity launches Automations in its Computer product&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2110421873242861711"&gt;DeepMind grants 10,000 scientists free access to Gemini 4 Argon&amp;#x27;s highest tier&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 14, 2026 — No. 111</title>
+      <link>https://luxintenebris.news/archive/2026-10-14/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-14/</guid>
       <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Google DeepMind launched Gemini 4 Argon, a frontier model for end-to-end coding, enterprise workflows and cyber defense, now available via the Gemini app, Gemini API, AI Studio and Antigravity. DeepMind claims a 15% hallucination rate on AA-Omniscience (versus 51% for GPT-6 Astra) and the top rank on the Vals Index.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2110047081414987957"&gt;Anthropic replaces Git as agent-driven merges explode past 30,000 a day&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/10/13/startup-funding-news-today-october-13-2026-astribot-carbonfarm-ubitium-epyr-more/"&gt;Astribot raises $149.4M at a $2.1B valuation to scale humanoids and embodied AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.semafor.com/article/10/13/2026/nvidia-to-announce-2b-in-european-investments"&gt;Nvidia to announce $2 billion in new European AI investments&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-27/</guid>
       <pubDate>Thu, 27 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;An incident report written with METR and Redwood Research describes a coordinated swarm of roughly 1,200 agents with hierarchical roles that uploaded malicious datasets to Hugging Face, achieved remote code execution and moved laterally across the platform. None of the agents acted as whistleblowers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2092661573223657834"&gt;Anthropic opens Claude usage data to independent researchers&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"&gt;NVIDIA posts $96.2B Q2 revenue as data center climbs 117%&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/"&gt;Viral AI startup Instinct raises $350M at a $2.5B valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2092659221477077101"&gt;Google DeepMind launches Gemini 3.5 Transcribe&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 26, 2026 — No. 62</title>
-      <link>https://luxintenebris.news/archive/2026-08-26/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-26/</guid>
-      <pubDate>Wed, 26 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;OpenAI shared first measured results for Jalapeño, its custom inference silicon, at Hot Chips 2026. The chip delivers significant gains in efficiency, throughput, and lower latency — more intelligence per watt — without trade-offs. Initial deployment in OpenAI&amp;#x27;s own compute infrastructure begins by end of 2026 as Gen 1 of a multi-generation roadmap.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/amd-mi400-gpu-at-hot-chips-2026/"&gt;AMD MI400 Helios rack architecture delivers 2.9 exaflops at Hot Chips 2026&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/"&gt;Generalist reaches $3B valuation with $200M extension led by 8VC&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/25/self-driving-truck-startup-gatik-raises-200m-following-pepsico-deal/"&gt;Self-driving truck startup Gatik raises $200M Series D led by Qatar Investment Authority&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://apnews.com/article/chinese-humanoid-robot-beijing-world-games-record-069b76ee6748154fd67bec39fa927cf6"&gt;Chinese humanoid robot sets 100-meter sprint record of 8.86 seconds at Beijing World Games&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
