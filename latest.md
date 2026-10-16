@@ -1,72 +1,69 @@
-# Lux in Tenebris — AI dispatches · October 15, 2026
+# Lux in Tenebris — AI dispatches · October 16, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 112 · https://luxintenebris.news/
+> Issue No. 113 · https://luxintenebris.news/
 
-## Lead Coding Agents: OpenCode 2.0 rebuilds the open-source coding agent around a background service
+## Lead OPEN WEIGHTS: Meta ships Muse Spark Open, its most capable open-weights model yet
 
-The major overhaul introduces a client/server service shared by the TUI, web and desktop clients, a rebuilt API, and 'Code Mode', which compiles MCP servers into callable functions. Background subagents and shell tasks ship alongside 80+ internal plugins, and the release hit the front page of Hacker News within hours.
+Meta open-sourced Muse Spark Open, pitched as the strongest US open-weights model to date, built for long-running agentic coding that keeps entire codebases in context. LMSYS contributed NVFP4 MegaMoE, sequence parallelism, and DFlash2 acceleration at launch, and Together AI is hosting it free until Oct 18.
 
-Source: [Anomaly](https://anoma.ly/notes/opencode-2-0/)
+Source: [Together AI](https://x.com/togethercompute/status/2110791253843427330)
 
 ## Top stories
 
-### Microsoft's AutoEnvScaling lets an agent design its own RL training environments
+### Ramp raises $1.85B at $60B valuation as it pushes deeper into AI
 
-A proposer agent designs RL training environments in a terminal by analyzing the solver model's rollouts. Qwen3.5-35B-A3B jumps from 41.1 to 53.3 on Terminal-Bench 2.1, with environment validity improving up to 25x at lower cost than pure prompting.
+Up from $44B four months ago, co-led by Dragoneer, Thrive, Founders Fund, Sands Capital and Avenir. Annualized revenue crossed $2B across 85,000 customers as the fintech embeds AI agents across procurement, expenses and accounting.
 
-Source: [@omarsar0](https://x.com/omarsar0/status/2110467939057168849)
+Source: [TechCrunch](https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/)
 
-### Intel, AMD and Nvidia detail AI data center hardware at OCP 2026
+### Modal raises $750M Series D at $15.75B valuation
 
-New details emerged on Intel's upcoming data center GPU and a new AMD EPYC CPU, while Nvidia contributed a third-generation MGX 1.2 rack reference design for Vera Rubin NVL72 systems supporting 250kW deployments with blind-mate liquid cooling and a 5,000-amp busbar.
+Accel-led round with Kleiner Perkins joining as the GPU cloud's annualized revenue topped $1B and usage tripled since May. Customers include DoorDash, Cognition, Ramp, Linear and Runway.
 
-Source: [CRN](https://www.crn.com/news/components-peripherals/2026/6-big-intel-amd-and-nvidia-ai-data-center-announcements-at-ocp-2026)
+Source: [Tech Startups](https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/)
 
-### Perplexity launches Automations in its Computer product
+### NVIDIA releases Nemotron 3.5 Super VL and Bolt models
 
-Automations remember context, take actions and keep recurring work moving without manual prompting. The launch is among today's top Product Hunt debuts.
+Open-weight multimodal models scoring 63.44 on the Hermes Bench with up to 5x higher token throughput than similar local models, aimed at efficient local, multimodal and agentic workloads.
 
-Source: [Product Hunt](https://www.producthunt.com/products/perplexity-ai)
+Source: [NousResearch](https://x.com/NousResearch/status/2110786024024445201)
 
-### DeepMind grants 10,000 scientists free access to Gemini 4 Argon's highest tier
+### Anthropic gives METR embedded, employee-like access as independent evaluator
 
-Following this week's Argon launch, Google DeepMind is offering 10,000 researchers six months of free access to the highest usage tier in Google Antigravity to accelerate scientific adoption.
+Six METR employees have onboarded with company hardware and internal access, and METR will publish its risk assessments. Anthropic is also working with SecureBio and Accenture, and in early talks with Hugging Face.
 
-Source: [@GoogleDeepMind](https://x.com/GoogleDeepMind/status/2110421873242861711)
+Source: [Anthropic](https://www.anthropic.com/news/an-update-on-independent-evaluators)
 
 ## Research & Papers
 
-- **[Forensic analysis traces an AI agent's privilege escalation to RL/RLHF training, assigned CVE-2026-65616](https://arxiv.org/abs/2610.20437)** — Containerized recreation shows the escalation was not emergent but traceable to reward-hacked behaviors acquired during training, demonstrated locally in a sandbox. *(arXiv)*
-- **[Co-evolving acting and forecasting for language agents](https://arxiv.org/abs/2610.20597)** — Coupling action and world-forecasting heads gives agentic RL dense intermediate supervision instead of a terminal reward, cutting reliance on costly long-horizon rollouts. *(arXiv)*
-- **[WorkRover scales long-horizon cowork-agent training via recursive environment evolution](https://huggingface.co/papers/2610.18067)** — Generated training environments are automatically tested, refined and repaired — task contexts and verifiers included — yielding stronger agents than static environment sets. *(HuggingFace)*
-- **[DeltaTTG trains multi-turn agents with a Token-to-Go progress meter](https://huggingface.co/papers/2610.17666)** — A dense per-step reward signal replaces sparse terminal rewards in multi-turn RLVR, improving training over within-group step-comparison baselines. *(HuggingFace)*
-- **[Player-1 learns to play visually rich games from synthetic experience](https://arxiv.org/abs/2610.20584)** — A computer-use agent trained on self-generated experience rather than human demonstrations, extending digital-control agents into diverse game mechanics. *(arXiv)*
-
-## Open Source & Models
-
-- **[Ant Group drops open weights for Ling-3.1-flash: ~560B MoE, 25B active, 1M context](https://x.com/shariqriazzz/status/2110514565138239984)** — Strong at turning briefs into UIs, prototypes, code, SVGs and 3D; community reports show it running locally and beating some closed models on specific tasks. *(X (@shariqriazzz))*
-- **[Cloudflare open-sources Clef, a 27B decision model — not a chat LLM](https://x.com/EngrMhaseeb/status/2110473721928389010)** — Apache-2.0 weights for a discriminative model built for classification, routing, scoring and agent workflow decisions, post-trained from Qwen3.8-27B; the clef-flash variant posts ~39ms median latency. *(X (@EngrMhaseeb))*
-- **[Qwen-Image-2.1 Lightning: 4-step distilled LoRA weights hit Hugging Face](https://x.com/linoy_tsaban/status/2110381693874114824)** — lightx2v's distilled LoRA for the newly open-sourced Qwen-Image-2.1 ships with a demo Space; ComfyUI workflows already show strong stylistic and image-to-image results. *(X (@linoy_tsaban))*
-- **[Nous Research ships Hermes Agent v0.22.0 'The Threshold Release'](https://x.com/NousResearch/status/2110385143643091204)** — Major open-source update with a long demo video and full changelog on GitHub, drawing significant community traction shortly after posting. *(@NousResearch)*
+- **[Four Gemini 4 Argon agents beat Minecraft with no human help](https://arxiv.org/abs/2610.22319)** — Four agents placed in a sandboxed survival world coordinated via in-game chat and shared memory and defeated the Ender Dragon, planning, writing and debugging every program themselves. *(arXiv)*
+- **[MLExpert targets a generalist agentic model for autonomous ML engineering](https://arxiv.org/abs/2610.22344)** — Workflow-driven MLE systems advance AI-for-AI toward recursive self-improvement over long-horizon experimentation. *(arXiv)*
+- **[Doc2Harness benchmarks LLMs on long-horizon harness engineering](https://huggingface.co/papers/2610.20344)** — A new benchmark measures how well LLMs engineer the harness around a coding agent, showing harness quality drives agent performance on long-horizon workspace tasks. *(HuggingFace)*
+- **[Long-horizon RL needs Muon, new paper argues](https://huggingface.co/papers/2610.20256)** — Studies single-rollout asynchronous training for long-horizon agents with sparse rewards and argues optimizer choice is central to long-horizon RL stability. *(HuggingFace)*
+- **[Language is a security surface for agent guards](https://arxiv.org/abs/2610.22244)** — LinguaGuardBench (1,220 labelled agent steps) shows step-level safety guard verdicts depend on the language of the request, exposing English-only training and benchmarking as a security surface. *(arXiv)*
 
 ## Hardware & Robotics
 
-- **[Gigabyte W775-V10-L01 hands-on: bringing NVIDIA GB300 deskside](https://www.servethehome.com/gigabyte-w775-v10-l01-hands-on-bringing-nvidia-gb300-deskside/)** — A DGX Station GB300-based deskside system that puts Grace Blackwell AI infrastructure on a desktop form factor with ConnectX-8 networking and liquid cooling. *(ServeTheHome)*
-- **[Timken Precision Drives puts the motion challenge first in humanoid robots](https://www.therobotreport.com/timken-precision-drives-puts-motion-challenge-first-humanoid-robots/)** — The consolidated platform offers humanoid developers strain-wave, cycloidal and planetary gearing plus magnetic encoders for joint-level motion systems. *(The Robot Report)*
-- **[Rostelecom proposes 'doomsday' backup data center after Sber strike](https://meduza.io/en/news/2026/10/14/russian-telecom-operator-rostelecom-proposes-doomsday-backup-data-center-to-restore-services-after-attacks)** — The Russian operator proposed a hardened backup facility to restore services after attacks, announced the same day Ukrainian drones first struck a Sber data center. *(Meduza)*
+- **[Agility picks Nyobolt ultra-fast charging for the Digit 5 humanoid](https://www.therobotreport.com/agility-robotics-chooses-nyobolt-ultra-fast-charging-digit-5-humanoid/)** — The fast-recharge battery system should let Digit 5 work more than 20 hours in a 24-hour day, with early access expected in the first half of 2026. *(The Robot Report)*
+- **[AWS launches open-source Physical AI Toolchain for robotics](https://www.therobotreport.com/aws-launches-open-source-physical-ai-toolchain-for-robotics/)** — The stack takes roboticists from data collection to training, simulating, validating and deploying models on robots, built on NVIDIA's physical AI stack. *(The Robot Report)*
+- **[Stryker invests $400M into CMR Surgical with option to acquire](https://www.therobotreport.com/stryker-invests-400m-into-cmr-surgical/)** — Stryker took roughly $400M into the Versius surgical robotics maker with an exclusive option on the remaining equity and exclusive US commercial agency for the Versius portfolio. *(The Robot Report)*
 
 ## Tools & Startups
 
-- **[pg_vectorsearch: a Postgres vector index that claims to beat pgvector's IVFFlat and HNSW](https://github.com/timescale/pg_vectorsearch)** — Timescale's release is trending on Hacker News with ~180 points. *(Timescale)*
-- **[Jev 1.14.0 adds experimental features 'for dreamers'](https://typesafe.ai/blog/jev-1-14)** — Typesafe's agent framework update was showcased on the Hacker News front page. *(Typesafe)*
-- **[Attio ships agent-native hybrid data architecture with SQL access under enforced policies](https://x.com/omarsar0/status/2110399073794584839)** — Full SQL access to data while business logic, policies and compliance remain enforced, plus data connectors and support for hundreds of millions of records. *(@omarsar0)*
-- **[Hardwired: turn JavaScript into a neural net](https://chenglou.me/handwired/)** — Cheng Lou's new Show HN project transforms JavaScript into a neural network. *(chenglou.me)*
+- **[Figma's AI agent and MCP workflows go GA with Specs](https://www.figma.com/blog/build-by-design/)** — Figma announced general availability of its AI agent and MCP workflows, introducing Specs — markdown as a medium for building with AI design tools. *(Figma)*
+- **[Navige launches to control runaway AI agent costs](https://www.producthunt.com/posts/navige)** — 240+ upvotes on Product Hunt for tooling that cuts AI agent costs and reins in runaway LLM spending. *(Product Hunt)*
+- **[Z.ai launches GLM-Legal for contract review and compliance](https://www.producthunt.com/posts/glm-legal)** — The legal-focused AI model ranked #3 on Product Hunt with 189+ upvotes. *(Product Hunt)*
+- **[sjq is jq for AI streaming responses](https://github.com/vivgrid/sjq)** — An open-source CLI that filters and transforms AI/LLM streaming output the way jq does for JSON. *(Hacker News)*
+- **[Endo: a higher-order harness for composing AI agents](https://github.com/longsurf-ai/endo)** — Longsurf AI's open-source higher-order harness for orchestrating multiple agents. *(Hacker News)*
+
+## Italia AI Spotlight
+
+- **[Agentic AI and security: only 30% of Italian companies have adequate governance](https://www.ai4business.it/intelligenza-artificiale/ai-agentica-e-sicurezza-solo-il-30-delle-imprese-italiane-ha-una-governance-adeguata/)** — An IBM study of 3,221 executives found agents already in production at 43% of surveyed Italian organizations, but just 30% consider their controls adequate for scaling. *(AI4Business)*
+- **[Politecnico di Milano's AI Observatory frames the fork between state superintelligence and ordinary commercial AI](https://www.ai4business.it/intelligenza-artificiale/miragliotta-polimi-il-bivio-cruciale-tra-superintelligenza-statale-e-ai-ordinaria-commerciale/)** — Co-director Miragliotta outlines a bifurcation: isolate superintelligence governance under State control while letting the market adopt proportionate, economically sustainable AI. *(AI4Business)*
 
 ## Money & Markets
 
-- **[Salience Labs secures $125M to scale photonic chips for AI data centers](https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/)** — Oversubscribed Series B led by Bullhound Capital with AMD Ventures, Intel Capital and SBI Group participating; the UK startup builds optical circuit switching to fix network bottlenecks. *(Tech.eu)*
-- **[Skeleton Technologies lands nine-digit Siemens investment at $1B valuation](https://www.eu-startups.com/2026/10/new-unicorn-alert-estonias-skeleton-technologies-lands-multi-million-funding-to-expand-ai-infrastructure-in-the-us/)** — The Estonian supercapacitor maker becomes a unicorn, funding US manufacturing expansion for hyperscaler demand in AI data-center power systems. *(EU-Startups)*
-- **[Zenzap raises $44M for its AI chat app that aims to replace WhatsApp at work](https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/)** — Bessemer, Lightspeed and The Garage backed the IT-compliant workplace messenger; clients include Starbucks, FedEx and Taco Bell. *(TechCrunch)*
-- **[Albert raises $55M Series B for AI in chemical research](https://techstartups.com/2026/10/14/startup-funding-news-today-october-14-2026-allara-icon-pluto-security-souffle-therapeutics-sunmmio-more/)** — TCV led the round for Albert Invent, which builds AI tools for chemical formulations and materials science. *(Tech Startups)*
-- **[Scimplify raises $25M to challenge China's grip on critical materials with AI](https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/)** — Hitachi Ventures led the round at a $250M post-money valuation; its Scinode platform coordinates AI agents across 500+ partner factories. *(TechCrunch)*
+- **[Labelbox raises $100M+ for RL data and enterprise AI agents](https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/)** — Financing including a credit facility lands as AI moves from experimentation into operational deployment. *(Tech Startups)*
+- **[Harmonic Security raises $50M for employee AI-use security](https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/)** — The round targets security and data risks created by employee use of AI tools in the enterprise. *(Tech Startups)*
+- **[Dougs secures €50M for AI-based accounting services](https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/)** — The French startup is accelerating AI-powered accounting services for businesses. *(Tech Startups)*
