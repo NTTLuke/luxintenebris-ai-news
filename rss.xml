@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 16 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 16, 2026 — No. 113</title>
+      <title>Lux in Tenebris — AI dispatches · October 17, 2026 — No. 114</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sat, 17 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Taiwan is readying tighter export controls on AI chips to align with US restrictions and choke smuggling of cutting-edge semiconductors to China, according to a senior official in Taipei. The move could affect TSMC-made chips and reshape supply for China&amp;#x27;s AI buildout.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/togethercompute/status/2111138228937896125"&gt;Reflection AI open-sources Beam: Apache 2.0 501B MoE for coding agents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/10/16/startup-funding-news-today-october-16-2026-ramp-abby-care-origin-north-cloud-mueon-more/"&gt;Li Auto&amp;#x27;s chip unit Machxin secures $243M for 5nm automotive AI processor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 16, 2026 — No. 113</title>
+      <link>https://luxintenebris.news/archive/2026-10-16/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-16/</guid>
       <pubDate>Fri, 16 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Meta open-sourced Muse Spark Open, pitched as the strongest US open-weights model to date, built for long-running agentic coding that keeps entire codebases in context. LMSYS contributed NVFP4 MegaMoE, sequence parallelism, and DFlash2 acceleration at launch, and Together AI is hosting it free until Oct 18.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/"&gt;Ramp raises $1.85B at $60B valuation as it pushes deeper into AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/"&gt;Modal raises $750M Series D at $15.75B valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2110786024024445201"&gt;NVIDIA releases Nemotron 3.5 Super VL and Bolt models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/news/an-update-on-independent-evaluators"&gt;Anthropic gives METR embedded, employee-like access as independent evaluator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-29/</guid>
       <pubDate>Sat, 29 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic released research showing Claude Sonnet 5 can act as an autonomous AI researcher, using 48 hours and a single GPU to post-train smaller models and hill-climb alignment benchmarks across 10 failure modes. The improvements generalized to unseen benchmarks and models up to 4.7x larger, and Anthropic is releasing the full setup to the community.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2093323034195378306"&gt;DeepMind&amp;#x27;s Co-Scientist moves AI experiments into physical labs&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=EdySgw4C9Yg"&gt;Anthropic wins a legal round against the Trump administration&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=m1oGaHK38Cg"&gt;Bank of England&amp;#x27;s Bailey says AI could push inflation either way&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 28, 2026 — No. 64</title>
-      <link>https://luxintenebris.news/archive/2026-08-28/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-28/</guid>
-      <pubDate>Fri, 28 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Anthropic&amp;#x27;s new standard lets AI agents safely discover and operate physical lab and manufacturing equipment, compressing a multi-week HHMI Janelia imaging experiment into a single day and lifting laser stabilization on QuEra quantum computers from 58% to 99.3%. The company plans to open-source it after further safety work.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2093060670472241368"&gt;OpenAI, Anthropic and Big Tech issue joint call for AI-powered cyber defense&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/_philschmid/status/2093011024370643453"&gt;Google releases Gemini Omni 1.1 Flash video generation model&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techfundingnews.com/openai-launches-400m-second-venture-fund-after-backing-harvey-cursor-and-more/"&gt;OpenAI prepares $400M second venture fund&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

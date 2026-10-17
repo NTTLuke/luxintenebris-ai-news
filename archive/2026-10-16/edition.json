@@ -1,0 +1,305 @@
+{
+  "issue_no": 113,
+  "date_iso": "2026-10-16",
+  "date_human": "October 16, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "OPEN WEIGHTS",
+    "title": "Meta ships Muse Spark Open, its most capable open-weights model yet",
+    "summary": "Meta open-sourced Muse Spark Open, pitched as the strongest US open-weights model to date, built for long-running agentic coding that keeps entire codebases in context. LMSYS contributed NVFP4 MegaMoE, sequence parallelism, and DFlash2 acceleration at launch, and Together AI is hosting it free until Oct 18.",
+    "source": "Together AI",
+    "date": "2026-10-16",
+    "url": "https://x.com/togethercompute/status/2110791253843427330",
+    "image": "images/lead_2026-10-16.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Ramp raises $1.85B at $60B valuation as it pushes deeper into AI",
+      "summary": "Up from $44B four months ago, co-led by Dragoneer, Thrive, Founders Fund, Sands Capital and Avenir. Annualized revenue crossed $2B across 85,000 customers as the fintech embeds AI agents across procurement, expenses and accounting.",
+      "source": "TechCrunch",
+      "date": "2026-10-15",
+      "url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/"
+    },
+    {
+      "title": "Modal raises $750M Series D at $15.75B valuation",
+      "summary": "Accel-led round with Kleiner Perkins joining as the GPU cloud's annualized revenue topped $1B and usage tripled since May. Customers include DoorDash, Cognition, Ramp, Linear and Runway.",
+      "source": "Tech Startups",
+      "date": "2026-10-15",
+      "url": "https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/"
+    },
+    {
+      "title": "NVIDIA releases Nemotron 3.5 Super VL and Bolt models",
+      "summary": "Open-weight multimodal models scoring 63.44 on the Hermes Bench with up to 5x higher token throughput than similar local models, aimed at efficient local, multimodal and agentic workloads.",
+      "source": "NousResearch",
+      "date": "2026-10-15",
+      "url": "https://x.com/NousResearch/status/2110786024024445201"
+    },
+    {
+      "title": "Anthropic gives METR embedded, employee-like access as independent evaluator",
+      "summary": "Six METR employees have onboarded with company hardware and internal access, and METR will publish its risk assessments. Anthropic is also working with SecureBio and Accenture, and in early talks with Hugging Face.",
+      "source": "Anthropic",
+      "date": "2026-10-15",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Four Gemini 4 Argon agents beat Minecraft with no human help",
+          "summary": "Four agents placed in a sandboxed survival world coordinated via in-game chat and shared memory and defeated the Ender Dragon, planning, writing and debugging every program themselves.",
+          "source": "arXiv",
+          "date": "2026-10-15",
+          "url": "https://arxiv.org/abs/2610.22319",
+          "image": "images/section_research-papers_2026-10-16.jpg"
+        },
+        {
+          "title": "MLExpert targets a generalist agentic model for autonomous ML engineering",
+          "summary": "Workflow-driven MLE systems advance AI-for-AI toward recursive self-improvement over long-horizon experimentation.",
+          "source": "arXiv",
+          "date": "2026-10-15",
+          "url": "https://arxiv.org/abs/2610.22344"
+        },
+        {
+          "title": "Doc2Harness benchmarks LLMs on long-horizon harness engineering",
+          "summary": "A new benchmark measures how well LLMs engineer the harness around a coding agent, showing harness quality drives agent performance on long-horizon workspace tasks.",
+          "source": "HuggingFace",
+          "date": "2026-10-14",
+          "url": "https://huggingface.co/papers/2610.20344"
+        },
+        {
+          "title": "Long-horizon RL needs Muon, new paper argues",
+          "summary": "Studies single-rollout asynchronous training for long-horizon agents with sparse rewards and argues optimizer choice is central to long-horizon RL stability.",
+          "source": "HuggingFace",
+          "date": "2026-10-14",
+          "url": "https://huggingface.co/papers/2610.20256"
+        },
+        {
+          "title": "Language is a security surface for agent guards",
+          "summary": "LinguaGuardBench (1,220 labelled agent steps) shows step-level safety guard verdicts depend on the language of the request, exposing English-only training and benchmarking as a security surface.",
+          "source": "arXiv",
+          "date": "2026-10-15",
+          "url": "https://arxiv.org/abs/2610.22244"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "Agility picks Nyobolt ultra-fast charging for the Digit 5 humanoid",
+          "summary": "The fast-recharge battery system should let Digit 5 work more than 20 hours in a 24-hour day, with early access expected in the first half of 2026.",
+          "source": "The Robot Report",
+          "date": "2026-10-15",
+          "url": "https://www.therobotreport.com/agility-robotics-chooses-nyobolt-ultra-fast-charging-digit-5-humanoid/",
+          "image": "images/section_hardware-robotics_2026-10-16.jpg"
+        },
+        {
+          "title": "AWS launches open-source Physical AI Toolchain for robotics",
+          "summary": "The stack takes roboticists from data collection to training, simulating, validating and deploying models on robots, built on NVIDIA's physical AI stack.",
+          "source": "The Robot Report",
+          "date": "2026-10-15",
+          "url": "https://www.therobotreport.com/aws-launches-open-source-physical-ai-toolchain-for-robotics/"
+        },
+        {
+          "title": "Stryker invests $400M into CMR Surgical with option to acquire",
+          "summary": "Stryker took roughly $400M into the Versius surgical robotics maker with an exclusive option on the remaining equity and exclusive US commercial agency for the Versius portfolio.",
+          "source": "The Robot Report",
+          "date": "2026-10-15",
+          "url": "https://www.therobotreport.com/stryker-invests-400m-into-cmr-surgical/"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Figma's AI agent and MCP workflows go GA with Specs",
+          "summary": "Figma announced general availability of its AI agent and MCP workflows, introducing Specs — markdown as a medium for building with AI design tools.",
+          "source": "Figma",
+          "date": "2026-10-15",
+          "url": "https://www.figma.com/blog/build-by-design/",
+          "image": "images/section_tools-startups_2026-10-16.jpg"
+        },
+        {
+          "title": "Navige launches to control runaway AI agent costs",
+          "summary": "240+ upvotes on Product Hunt for tooling that cuts AI agent costs and reins in runaway LLM spending.",
+          "source": "Product Hunt",
+          "date": "2026-10-15",
+          "url": "https://www.producthunt.com/posts/navige"
+        },
+        {
+          "title": "Z.ai launches GLM-Legal for contract review and compliance",
+          "summary": "The legal-focused AI model ranked #3 on Product Hunt with 189+ upvotes.",
+          "source": "Product Hunt",
+          "date": "2026-10-15",
+          "url": "https://www.producthunt.com/posts/glm-legal"
+        },
+        {
+          "title": "sjq is jq for AI streaming responses",
+          "summary": "An open-source CLI that filters and transforms AI/LLM streaming output the way jq does for JSON.",
+          "source": "Hacker News",
+          "date": "2026-10-16",
+          "url": "https://github.com/vivgrid/sjq"
+        },
+        {
+          "title": "Endo: a higher-order harness for composing AI agents",
+          "summary": "Longsurf AI's open-source higher-order harness for orchestrating multiple agents.",
+          "source": "Hacker News",
+          "date": "2026-10-15",
+          "url": "https://github.com/longsurf-ai/endo"
+        }
+      ]
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "Agentic AI and security: only 30% of Italian companies have adequate governance",
+          "summary": "An IBM study of 3,221 executives found agents already in production at 43% of surveyed Italian organizations, but just 30% consider their controls adequate for scaling.",
+          "source": "AI4Business",
+          "date": "2026-10-15",
+          "url": "https://www.ai4business.it/intelligenza-artificiale/ai-agentica-e-sicurezza-solo-il-30-delle-imprese-italiane-ha-una-governance-adeguata/",
+          "image": "images/section_italia-ai-spotlight_2026-10-16.jpg"
+        },
+        {
+          "title": "Politecnico di Milano's AI Observatory frames the fork between state superintelligence and ordinary commercial AI",
+          "summary": "Co-director Miragliotta outlines a bifurcation: isolate superintelligence governance under State control while letting the market adopt proportionate, economically sustainable AI.",
+          "source": "AI4Business",
+          "date": "2026-10-15",
+          "url": "https://www.ai4business.it/intelligenza-artificiale/miragliotta-polimi-il-bivio-cruciale-tra-superintelligenza-statale-e-ai-ordinaria-commerciale/"
+        }
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "Labelbox raises $100M+ for RL data and enterprise AI agents",
+          "summary": "Financing including a credit facility lands as AI moves from experimentation into operational deployment.",
+          "source": "Tech Startups",
+          "date": "2026-10-15",
+          "url": "https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/",
+          "image": "images/section_money-markets_2026-10-16.jpg"
+        },
+        {
+          "title": "Harmonic Security raises $50M for employee AI-use security",
+          "summary": "The round targets security and data risks created by employee use of AI tools in the enterprise.",
+          "source": "Tech Startups",
+          "date": "2026-10-15",
+          "url": "https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/"
+        },
+        {
+          "title": "Dougs secures €50M for AI-based accounting services",
+          "summary": "The French startup is accelerating AI-powered accounting services for businesses.",
+          "source": "Tech Startups",
+          "date": "2026-10-15",
+          "url": "https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-10-16",
+      "items": [
+        {"name": "morluto/rea", "url": "https://github.com/morluto/rea", "meta": "TypeScript · 143.7k ★ · +45495 today"},
+        {"name": "bilawalsidhu/gods-eye-view", "url": "https://github.com/bilawalsidhu/gods-eye-view", "meta": "JavaScript · 53.1k ★ · +1903 today"},
+        {"name": "mksglu/context-mode", "url": "https://github.com/mksglu/context-mode", "meta": "TypeScript · 27.0k ★ · +394 today"},
+        {"name": "storytold/artcraft", "url": "https://github.com/storytold/artcraft", "meta": "Rust · 20.8k ★ · +4106 today"},
+        {"name": "open-webui/open-webui", "url": "https://github.com/open-webui/open-webui", "meta": "Python · 154.7k ★ · +142 today"},
+        {"name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "meta": "HTML · 52.1k ★ · +2100 today"},
+        {"name": "lyogavin/airllm", "url": "https://github.com/lyogavin/airllm", "meta": "Jupyter Notebook · 37.3k ★ · +886 today"},
+        {"name": "microsoft/BitNet", "url": "https://github.com/microsoft/BitNet", "meta": "C++ · 40.8k ★ · +134 today"},
+        {"name": "Alishahryar1/free-claude-code", "url": "https://github.com/Alishahryar1/free-claude-code", "meta": "Python · 58.7k ★ · +705 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-10-16",
+      "items": [
+        {"name": "convaiinnovations/laya", "url": "https://huggingface.co/convaiinnovations/laya", "meta": "Conversational model from ConvAI Innovations"},
+        {"name": "Cloudflare/clef", "url": "https://huggingface.co/Cloudflare/clef", "meta": "Cloudflare's new model release"},
+        {"name": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF", "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF", "meta": "Uncensored GGUF quant of Qwen-Image-2.1"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Video generation model from Lightricks"},
+        {"name": "Contrastive-LM/CLM-v0.1-8B", "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B", "meta": "8B contrastive language model, first release"},
+        {"name": "SupersonicLabs/Julia-1", "url": "https://huggingface.co/SupersonicLabs/Julia-1", "meta": "New model from Supersonic Labs"},
+        {"name": "Qwen/Qwen-Image-2.1", "url": "https://huggingface.co/Qwen/Qwen-Image-2.1", "meta": "Latest Qwen image generation model"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27B model from the Qwen3.8 generation"},
+        {"name": "Cloudflare/clef-flash", "url": "https://huggingface.co/Cloudflare/clef-flash", "meta": "Fast variant of Cloudflare's clef model"},
+        {"name": "deepseek-ai/DeepSeek-V4.1-Flash", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash", "meta": "Fast variant of DeepSeek V4.1"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-10-16",
+      "items": [
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Super VL (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-10-16",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "DeepSeek V4.1 Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "deepseek-v4.1-flash-free"},
+        {"name": "Space Bunny Free", "url": "https://opencode.ai/docs/zen/", "meta": "space-bunny-free"},
+        {"name": "Cat Jam Free", "url": "https://opencode.ai/docs/zen/", "meta": "cat-jam-free"},
+        {"name": "LongCat 2.5 Preview Free", "url": "https://opencode.ai/docs/zen/", "meta": "longcat-2.5-preview-free"},
+        {"name": "Exo Free", "url": "https://opencode.ai/docs/zen/", "meta": "exo-free"},
+        {"name": "MiMo-V2.6-Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.6-flash-free"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Nemotron 3.5 Super VL Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-super-vl-free"},
+        {"name": "Muse Spark 1.3 Contributor Free", "url": "https://opencode.ai/docs/zen/", "meta": "muse-spark-1.3-contributor-free"},
+        {"name": "Jev 1.13 Free", "url": "https://opencode.ai/docs/zen/", "meta": "jev-1.13-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {"title": "OpenAI launches Rosalind Academic Plan for biological research", "source": "OpenAI", "date": "2026-10-15", "url": "https://x.com/OpenAI/status/2110841898076418336"},
+    {"title": "OpenAI and Anthropic each pledge $5M for mathematicians to verify AI math results", "source": "OpenAI", "date": "2026-10-15", "url": "https://x.com/OpenAI/status/2110741355739963884"},
+    {"title": "DeepLearning.AI highlights HYSET: holistic tool-set evaluation for agents", "source": "DeepLearning.AI", "date": "2026-10-15", "url": "https://x.com/DeepLearningAI/status/2110762648136450528"},
+    {"title": "Muse Spark Open live on Together AI, free until Oct 18", "source": "Together AI", "date": "2026-10-16", "url": "https://x.com/togethercompute/status/2110837272279232738"},
+    {"title": "SGLang adds launch-day support for Muse Spark Open", "source": "LMSYS", "date": "2026-10-16", "url": "https://x.com/lmsysorg/status/2110834406760034791"},
+    {"title": "Sakana AI publishes 'Agentic Scientist' framework paper", "source": "omarsar0", "date": "2026-10-15", "url": "https://x.com/omarsar0/status/2110733945323368822"},
+    {"title": "RedMagic 12 Pro+ launches in China with Snapdragon 8 Elite Extreme Gen 6", "source": "Gagadget", "date": "2026-10-15", "url": "https://gagadget.com/en/727784-redmagic-12-pro-lands-october-15-with-snapdragon-8-elite-extreme-gen-6/"},
+    {"title": "Ubuntu 26.10 'Stonking Stingray' ships with GNOME 51 and Rust coreutils", "source": "Product Hunt", "date": "2026-10-15", "url": "https://www.producthunt.com/posts/ubuntu-26-10-stonking-stingray"},
+    {"title": "OpenMuse debuts as a self-hostable open-source AI assistant", "source": "Product Hunt", "date": "2026-10-15", "url": "https://www.producthunt.com/posts/openmuse"},
+    {"title": "withHuman adds open-source human approval checkpoints to agent workflows", "source": "Product Hunt", "date": "2026-10-15", "url": "https://www.producthunt.com/posts/withhuman"}
+  ],
+  "spiked": {
+    "low signal": 8,
+    "duplicate url": 1,
+    "same story": 2,
+    "already ran": 6,
+    "thin section": 1
+  }
+}

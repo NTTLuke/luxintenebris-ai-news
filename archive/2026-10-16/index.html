@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · October 16, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 113 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>October 16, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>80 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Benchmark says AI is eroding venture capital&#x27;s unwritten pact against backing direct rivals" data-b="For decades, venture capital firms observed an unwritten rule: never invest in two startups that compete head-on. That norm is now under strain, and even Benchmark — a firm known for its long-term loyalty to founders — is acknowledging it. According to TechCrunch, Benchmark&#x27;s partners said at TechCrunch Disrupt that conflicts between portfolio companies have become a necessity to accept rather than a choice.
+
+The tension is visible across the industry. Major AI labs already share many of the same backers, and a recent public dispute between two competing AI coding startups — one of which fired an adviser over alleged dealings with its rival — drew open commentary from a prominent investor whose firm backs both sides.
+
+Partner Eric Vishria told the conference that companies evolve so quickly that conflicts are simply the current reality, while insisting the firm stays loyal to each founder and keeps what it learns confidential. Chetan Puttagunta argued AI is accelerating the problem: as the cost of building software shrinks, founders become more ambitious and increasingly collide with each other. Peter Fenton went furthest, calling the issue the firm&#x27;s toughest problem and likening it to kryptonite, though he stressed transparency should prevent founders from feeling blindsided.
+
+Benchmark is not declaring the old pact dead — but its candor suggests founders can no longer take exclusivity for granted.
+
+*If even the most loyalty-obsessed firm in Silicon Valley is hedging, the era of picking sides may be truly over.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/15/even-benchmark-thinks-ai-is-eroding-the-venture-pact-against-backing-rivals/"><span class="tih">Benchmark says AI is eroding venture capital&#x27;s unwritten pact against backing direct rivals</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tesla&#x27;s New Roadster 2 Took Flight at a SpaceX Test Site" data-b="Tesla has lifted the curtain on the long-delayed Roadster 2, the sequel to the company&#x27;s first car and what Elon Musk has described as Tesla&#x27;s final vehicle designed for human drivers. At a demonstration held at the company&#x27;s rocket development and testing facility in McGregor, Texas, the sports car briefly lifted off the ground in a burst of steam, at one point gliding over the rest of the Tesla lineup, according to WIRED.
+
+Tesla vehicle engineering head Lars Moravy said the flying capability comes from four thrusters powered by onboard compressed gas. Executives claimed the car could reach 60 mph in about a second, and Musk suggested the same thruster system could generate downforce for fast cornering, predicting it would beat every track record in existence.
+
+The car was first announced in 2017 with a promised 2020 ship date; production is now slated for 2028. Pricing was not disclosed, though the company says reservations currently cost $5,000 with another $45,000 due within ten days. Three versions are planned: a road-ready Performance model without thrusters, a limited Thrust variant, and a single-seat Rocket version open by invitation only. Reservation holders from the original announcement put down $50,000 deposits, and some, including OpenAI CEO Sam Altman, have complained publicly about the wait or about canceling. The reveal lands amid a shaky moment for EVs, with US sales slowing after federal support was cut while luxury makers like Lamborghini have shelved EV plans.
+
+*Flying sports cars make for great theater, but after nearly a decade of slipped deadlines, the real story is whether Tesla can still be trusted on its own timelines.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/tesla-roadster-2-launch/"><span class="tih">Tesla&#x27;s New Roadster 2 Took Flight at a SpaceX Test Site</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Cal AI&#x27;s viral rise was fueled by a paid army of influencers, founder says" data-b="Speaking at TechCrunch Disrupt, Zach Yadegari — the 19-year-old founder of the AI-powered calorie tracking app Cal AI — explained how the startup built its viral following. According to TechCrunch, Cal AI was founded in 2024 and grew largely through a strategy of recruiting influencers to promote the brand. The company reportedly generated over $30 million in revenue in two years and was acquired by MyFitnessPal in March, for an undisclosed sum.
+
+Yadegari said the first sign the approach could work came when a single influencer&#x27;s post brought in roughly a thousand new users over two days. From that point, he said, the team began signing up as many influencers as possible, paying them to post until they delivered a set amount of users. He described the model as linear but extremely fast, with each post converting a predictable share of viewers.
+
+He stressed the importance of picking influencers with measurable, tightly-knit communities, and said many were young students who simply wanted cash in exchange for defined reach targets.
+
+Yadegari also credited his family for supporting his ambitions, while dismissing higher education as mostly a social experience, according to the report. Earlier this month he launched Persona, an AI agent startup that has already raised $10 million.
+
+*Growth-hacking an app into the mainstream with paid college kids is clever — though whether that playbook outlasts the hype cycle is another question.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/"><span class="tih">Cal AI&#x27;s viral rise was fueled by a paid army of influencers, founder says</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="ChatGPT&#x27;s Chrome extension can now see your open tabs" data-b="OpenAI has upgraded its ChatGPT extension for Google Chrome so the assistant can draw on the browser tabs a user already has open, according to The Verge. The move comes as the company&#x27;s dedicated ChatGPT Atlas browser has been discontinued, shifting the focus to tooling that works inside Chrome itself.
+
+Once the extension is installed, ChatGPT can view a user&#x27;s tabs when Chrome is tagged in the ChatGPT web or desktop app. OpenAI demonstrated the feature with a video of someone asking the assistant to compare three open tabs showing sofas they were considering. The company also listed example prompts, such as pulling vendor details from several tabs into a comparison sheet, comparing contractor services and drafting an email to the best fit, or filling out a registration form from an event brief — with instructions to stop before submitting.
+
+The sidebar version of ChatGPT has been updated as well, offering the full assistant and a user&#x27;s complete Chat or Work conversation history without leaving the current page. ChatGPT Work can also take control of tabs to handle tasks like sending messages, completing forms, downloading files, and organizing or grouping open tabs — a capability The Verge notes resembles Google&#x27;s Gemini-powered &quot;auto browse&quot; feature.
+
+*Handing an AI agent the keys to your live browsing session is convenient, no doubt — but the privacy trade-off deserves more than a demo video.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"><span class="tih">ChatGPT&#x27;s Chrome extension can now see your open tabs</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Sega pulls botched Total War: Shogun 2 remaster from sale after AI-upscaling backlash" data-b="Sega is removing Total War: Shogun 2 — Complete Edition from storefronts after a rocky debut in which players flagged bugs and upscaling work that appears to have been done with AI, according to The Verge.
+
+The Complete Edition, a remaster of the 2011 strategy game, launched on Tuesday and bundled the base title with all of its downloadable content. Sega had promised upgrades including improved visuals, 1440p and 4K UI scaling, and modernized controls. Instead, the release earned an &quot;Overwhelmingly Negative&quot; rating on Steam, where it has already been pulled, and posts on Reddit showcase artwork that players believe AI mangled.
+
+In a joint post, Sega and developer Creative Assembly acknowledged that the remaster &quot;has fallen short of both your expectations and our own standards,&quot; adding that the current experience is not where it needs to be. The companies said they will reinstate the original game, while existing owners will keep access to the Complete Edition. They also said they are working with their development partner to identify the causes of the problems and deliver improvements. A studio called Mataboo is also listed as a developer on Steam and showcases the project on its website.
+
+*The rush to sprinkle AI upscaled assets into classic catalog titles keeps backfiring, and Sega&#x27;s full retreat here shows how quickly goodwill evaporates when quality slips.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"><span class="tih">Sega pulls botched Total War: Shogun 2 remaster from sale after AI-upscaling backlash</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Benchmark says AI is eroding venture capital&#x27;s unwritten pact against backing direct rivals" data-b="For decades, venture capital firms observed an unwritten rule: never invest in two startups that compete head-on. That norm is now under strain, and even Benchmark — a firm known for its long-term loyalty to founders — is acknowledging it. According to TechCrunch, Benchmark&#x27;s partners said at TechCrunch Disrupt that conflicts between portfolio companies have become a necessity to accept rather than a choice.
+
+The tension is visible across the industry. Major AI labs already share many of the same backers, and a recent public dispute between two competing AI coding startups — one of which fired an adviser over alleged dealings with its rival — drew open commentary from a prominent investor whose firm backs both sides.
+
+Partner Eric Vishria told the conference that companies evolve so quickly that conflicts are simply the current reality, while insisting the firm stays loyal to each founder and keeps what it learns confidential. Chetan Puttagunta argued AI is accelerating the problem: as the cost of building software shrinks, founders become more ambitious and increasingly collide with each other. Peter Fenton went furthest, calling the issue the firm&#x27;s toughest problem and likening it to kryptonite, though he stressed transparency should prevent founders from feeling blindsided.
+
+Benchmark is not declaring the old pact dead — but its candor suggests founders can no longer take exclusivity for granted.
+
+*If even the most loyalty-obsessed firm in Silicon Valley is hedging, the era of picking sides may be truly over.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/15/even-benchmark-thinks-ai-is-eroding-the-venture-pact-against-backing-rivals/"><span class="tih">Benchmark says AI is eroding venture capital&#x27;s unwritten pact against backing direct rivals</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tesla&#x27;s New Roadster 2 Took Flight at a SpaceX Test Site" data-b="Tesla has lifted the curtain on the long-delayed Roadster 2, the sequel to the company&#x27;s first car and what Elon Musk has described as Tesla&#x27;s final vehicle designed for human drivers. At a demonstration held at the company&#x27;s rocket development and testing facility in McGregor, Texas, the sports car briefly lifted off the ground in a burst of steam, at one point gliding over the rest of the Tesla lineup, according to WIRED.
+
+Tesla vehicle engineering head Lars Moravy said the flying capability comes from four thrusters powered by onboard compressed gas. Executives claimed the car could reach 60 mph in about a second, and Musk suggested the same thruster system could generate downforce for fast cornering, predicting it would beat every track record in existence.
+
+The car was first announced in 2017 with a promised 2020 ship date; production is now slated for 2028. Pricing was not disclosed, though the company says reservations currently cost $5,000 with another $45,000 due within ten days. Three versions are planned: a road-ready Performance model without thrusters, a limited Thrust variant, and a single-seat Rocket version open by invitation only. Reservation holders from the original announcement put down $50,000 deposits, and some, including OpenAI CEO Sam Altman, have complained publicly about the wait or about canceling. The reveal lands amid a shaky moment for EVs, with US sales slowing after federal support was cut while luxury makers like Lamborghini have shelved EV plans.
+
+*Flying sports cars make for great theater, but after nearly a decade of slipped deadlines, the real story is whether Tesla can still be trusted on its own timelines.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/tesla-roadster-2-launch/"><span class="tih">Tesla&#x27;s New Roadster 2 Took Flight at a SpaceX Test Site</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Cal AI&#x27;s viral rise was fueled by a paid army of influencers, founder says" data-b="Speaking at TechCrunch Disrupt, Zach Yadegari — the 19-year-old founder of the AI-powered calorie tracking app Cal AI — explained how the startup built its viral following. According to TechCrunch, Cal AI was founded in 2024 and grew largely through a strategy of recruiting influencers to promote the brand. The company reportedly generated over $30 million in revenue in two years and was acquired by MyFitnessPal in March, for an undisclosed sum.
+
+Yadegari said the first sign the approach could work came when a single influencer&#x27;s post brought in roughly a thousand new users over two days. From that point, he said, the team began signing up as many influencers as possible, paying them to post until they delivered a set amount of users. He described the model as linear but extremely fast, with each post converting a predictable share of viewers.
+
+He stressed the importance of picking influencers with measurable, tightly-knit communities, and said many were young students who simply wanted cash in exchange for defined reach targets.
+
+Yadegari also credited his family for supporting his ambitions, while dismissing higher education as mostly a social experience, according to the report. Earlier this month he launched Persona, an AI agent startup that has already raised $10 million.
+
+*Growth-hacking an app into the mainstream with paid college kids is clever — though whether that playbook outlasts the hype cycle is another question.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/"><span class="tih">Cal AI&#x27;s viral rise was fueled by a paid army of influencers, founder says</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="ChatGPT&#x27;s Chrome extension can now see your open tabs" data-b="OpenAI has upgraded its ChatGPT extension for Google Chrome so the assistant can draw on the browser tabs a user already has open, according to The Verge. The move comes as the company&#x27;s dedicated ChatGPT Atlas browser has been discontinued, shifting the focus to tooling that works inside Chrome itself.
+
+Once the extension is installed, ChatGPT can view a user&#x27;s tabs when Chrome is tagged in the ChatGPT web or desktop app. OpenAI demonstrated the feature with a video of someone asking the assistant to compare three open tabs showing sofas they were considering. The company also listed example prompts, such as pulling vendor details from several tabs into a comparison sheet, comparing contractor services and drafting an email to the best fit, or filling out a registration form from an event brief — with instructions to stop before submitting.
+
+The sidebar version of ChatGPT has been updated as well, offering the full assistant and a user&#x27;s complete Chat or Work conversation history without leaving the current page. ChatGPT Work can also take control of tabs to handle tasks like sending messages, completing forms, downloading files, and organizing or grouping open tabs — a capability The Verge notes resembles Google&#x27;s Gemini-powered &quot;auto browse&quot; feature.
+
+*Handing an AI agent the keys to your live browsing session is convenient, no doubt — but the privacy trade-off deserves more than a demo video.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"><span class="tih">ChatGPT&#x27;s Chrome extension can now see your open tabs</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Sega pulls botched Total War: Shogun 2 remaster from sale after AI-upscaling backlash" data-b="Sega is removing Total War: Shogun 2 — Complete Edition from storefronts after a rocky debut in which players flagged bugs and upscaling work that appears to have been done with AI, according to The Verge.
+
+The Complete Edition, a remaster of the 2011 strategy game, launched on Tuesday and bundled the base title with all of its downloadable content. Sega had promised upgrades including improved visuals, 1440p and 4K UI scaling, and modernized controls. Instead, the release earned an &quot;Overwhelmingly Negative&quot; rating on Steam, where it has already been pulled, and posts on Reddit showcase artwork that players believe AI mangled.
+
+In a joint post, Sega and developer Creative Assembly acknowledged that the remaster &quot;has fallen short of both your expectations and our own standards,&quot; adding that the current experience is not where it needs to be. The companies said they will reinstate the original game, while existing owners will keep access to the Complete Edition. They also said they are working with their development partner to identify the causes of the problems and deliver improvements. A studio called Mataboo is also listed as a developer on Steam and showcases the project on its website.
+
+*The rush to sprinkle AI upscaled assets into classic catalog titles keeps backfiring, and Sega&#x27;s full retreat here shows how quickly goodwill evaporates when quality slips.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"><span class="tih">Sega pulls botched Total War: Shogun 2 remaster from sale after AI-upscaling backlash</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/togethercompute/status/2110791253843427330" target="_blank" rel="noopener">
+    <img src="images/lead_2026-10-16.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">OPEN WEIGHTS</p>
+        <h1>Meta ships Muse Spark Open, its most capable open-weights model yet</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Meta open-sourced Muse Spark Open, pitched as the strongest US open-weights model to date, built for long-running agentic coding that keeps entire codebases in context. LMSYS contributed NVFP4 MegaMoE, sequence parallelism, and DFlash2 acceleration at launch, and Together AI is hosting it free until Oct 18.</p>
+        <p class="byline"><span class="src">Together AI</span> · <span>2026-10-16</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:13</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-10-15.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/" target="_blank" rel="noopener">
+    <h3>Ramp raises $1.85B at $60B valuation as it pushes deeper into AI</h3>
+    <p>Up from $44B four months ago, co-led by Dragoneer, Thrive, Founders Fund, Sands Capital and Avenir. Annualized revenue crossed $2B across 85,000 customers as the fintech embeds AI agents across procurement, expenses and accounting.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/" target="_blank" rel="noopener">
+    <h3>Modal raises $750M Series D at $15.75B valuation</h3>
+    <p>Accel-led round with Kleiner Perkins joining as the GPU cloud's annualized revenue topped $1B and usage tripled since May. Customers include DoorDash, Cognition, Ramp, Linear and Runway.</p>
+    <p class="byline"><span class="src">Tech Startups</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/NousResearch/status/2110786024024445201" target="_blank" rel="noopener">
+    <h3>NVIDIA releases Nemotron 3.5 Super VL and Bolt models</h3>
+    <p>Open-weight multimodal models scoring 63.44 on the Hermes Bench with up to 5x higher token throughput than similar local models, aimed at efficient local, multimodal and agentic workloads.</p>
+    <p class="byline"><span class="src">NousResearch</span> · 2026-10-15</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://arxiv.org/abs/2610.22319" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-10-16.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Four Gemini 4 Argon agents beat Minecraft with no human help</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.22319" target="_blank" rel="noopener">
+    <h4>Four Gemini 4 Argon agents beat Minecraft with no human help</h4>
+    <p>Four agents placed in a sandboxed survival world coordinated via in-game chat and shared memory and defeated the Ender Dragon, planning, writing and debugging every program themselves.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.22344" target="_blank" rel="noopener">
+    <h4>MLExpert targets a generalist agentic model for autonomous ML engineering</h4>
+    <p>Workflow-driven MLE systems advance AI-for-AI toward recursive self-improvement over long-horizon experimentation.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2610.20344" target="_blank" rel="noopener">
+    <h4>Doc2Harness benchmarks LLMs on long-horizon harness engineering</h4>
+    <p>A new benchmark measures how well LLMs engineer the harness around a coding agent, showing harness quality drives agent performance on long-horizon workspace tasks.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-10-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2610.20256" target="_blank" rel="noopener">
+    <h4>Long-horizon RL needs Muon, new paper argues</h4>
+    <p>Studies single-rollout asynchronous training for long-horizon agents with sparse rewards and argues optimizer choice is central to long-horizon RL stability.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-10-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.22244" target="_blank" rel="noopener">
+    <h4>Language is a security surface for agent guards</h4>
+    <p>LinguaGuardBench (1,220 labelled agent steps) shows step-level safety guard verdicts depend on the language of the request, exposing English-only training and benchmarking as a security surface.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <a href="https://www.therobotreport.com/agility-robotics-chooses-nyobolt-ultra-fast-charging-digit-5-humanoid/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_hardware-robotics_2026-10-16.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Agility picks Nyobolt ultra-fast charging for the Digit 5 humanoid</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.therobotreport.com/agility-robotics-chooses-nyobolt-ultra-fast-charging-digit-5-humanoid/" target="_blank" rel="noopener">
+    <h4>Agility picks Nyobolt ultra-fast charging for the Digit 5 humanoid</h4>
+    <p>The fast-recharge battery system should let Digit 5 work more than 20 hours in a 24-hour day, with early access expected in the first half of 2026.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/aws-launches-open-source-physical-ai-toolchain-for-robotics/" target="_blank" rel="noopener">
+    <h4>AWS launches open-source Physical AI Toolchain for robotics</h4>
+    <p>The stack takes roboticists from data collection to training, simulating, validating and deploying models on robots, built on NVIDIA's physical AI stack.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/stryker-invests-400m-into-cmr-surgical/" target="_blank" rel="noopener">
+    <h4>Stryker invests $400M into CMR Surgical with option to acquire</h4>
+    <p>Stryker took roughly $400M into the Versius surgical robotics maker with an exclusive option on the remaining equity and exclusive US commercial agency for the Versius portfolio.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-10-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://www.figma.com/blog/build-by-design/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-10-16.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Figma's AI agent and MCP workflows go GA with Specs</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.figma.com/blog/build-by-design/" target="_blank" rel="noopener">
+    <h4>Figma's AI agent and MCP workflows go GA with Specs</h4>
+    <p>Figma announced general availability of its AI agent and MCP workflows, introducing Specs — markdown as a medium for building with AI design tools.</p>
+    <p class="byline"><span class="src">Figma</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/posts/navige" target="_blank" rel="noopener">
+    <h4>Navige launches to control runaway AI agent costs</h4>
+    <p>240+ upvotes on Product Hunt for tooling that cuts AI agent costs and reins in runaway LLM spending.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/posts/glm-legal" target="_blank" rel="noopener">
+    <h4>Z.ai launches GLM-Legal for contract review and compliance</h4>
+    <p>The legal-focused AI model ranked #3 on Product Hunt with 189+ upvotes.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/vivgrid/sjq" target="_blank" rel="noopener">
+    <h4>sjq is jq for AI streaming responses</h4>
+    <p>An open-source CLI that filters and transforms AI/LLM streaming output the way jq does for JSON.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-10-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/longsurf-ai/endo" target="_blank" rel="noopener">
+    <h4>Endo: a higher-order harness for composing AI agents</h4>
+    <p>Longsurf AI's open-source higher-order harness for orchestrating multiple agents.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-10-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <a href="https://www.ai4business.it/intelligenza-artificiale/ai-agentica-e-sicurezza-solo-il-30-delle-imprese-italiane-ha-una-governance-adeguata/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_italia-ai-spotlight_2026-10-16.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Agentic AI and security: only 30% of Italian companies have adequate governance</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.ai4business.it/intelligenza-artificiale/ai-agentica-e-sicurezza-solo-il-30-delle-imprese-italiane-ha-una-governance-adeguata/" target="_blank" rel="noopener">
+    <h4>Agentic AI and security: only 30% of Italian companies have adequate governance</h4>
+    <p>An IBM study of 3,221 executives found agents already in production at 43% of surveyed Italian organizations, but just 30% consider their controls adequate for scaling.</p>
+    <p class="byline"><span class="src">AI4Business</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.ai4business.it/intelligenza-artificiale/miragliotta-polimi-il-bivio-cruciale-tra-superintelligenza-statale-e-ai-ordinaria-commerciale/" target="_blank" rel="noopener">
+    <h4>Politecnico di Milano's AI Observatory frames the fork between state superintelligence and ordinary commercial AI</h4>
+    <p>Co-director Miragliotta outlines a bifurcation: isolate superintelligence governance under State control while letting the market adopt proportionate, economically sustainable AI.</p>
+    <p class="byline"><span class="src">AI4Business</span> · 2026-10-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <a href="https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/" target="_blank" rel="noopener" class="section-hero"><img src="images/section_money-markets_2026-10-16.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Labelbox raises $100M+ for RL data and enterprise AI agents</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/" target="_blank" rel="noopener">
+    <h4>Labelbox raises $100M+ for RL data and enterprise AI agents</h4>
+    <p>Financing including a credit facility lands as AI moves from experimentation into operational deployment.</p>
+    <p class="byline"><span class="src">Tech Startups</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/" target="_blank" rel="noopener">
+    <h4>Harmonic Security raises $50M for employee AI-use security</h4>
+    <p>The round targets security and data risks created by employee use of AI tools in the enterprise.</p>
+    <p class="byline"><span class="src">Tech Startups</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/10/15/startup-funding-news-today-october-15-2026-modal-labelbox-omass-therapeutics-skeleton-technologies-more/" target="_blank" rel="noopener">
+    <h4>Dougs secures €50M for AI-based accounting services</h4>
+    <p>The French startup is accelerating AI-powered accounting services for businesses.</p>
+    <p class="byline"><span class="src">Tech Startups</span> · 2026-10-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/morluto/rea" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">morluto/rea</span>
+    <span class="t-meta">TypeScript · 143.7k ★ · +45495 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">bilawalsidhu/gods-eye-view</span>
+    <span class="t-meta">JavaScript · 53.1k ★ · +1903 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">mksglu/context-mode</span>
+    <span class="t-meta">TypeScript · 27.0k ★ · +394 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/storytold/artcraft" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">storytold/artcraft</span>
+    <span class="t-meta">Rust · 20.8k ★ · +4106 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/open-webui/open-webui" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">open-webui/open-webui</span>
+    <span class="t-meta">Python · 154.7k ★ · +142 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">cathrynlavery/diagram-design</span>
+    <span class="t-meta">HTML · 52.1k ★ · +2100 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/lyogavin/airllm" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">lyogavin/airllm</span>
+    <span class="t-meta">Jupyter Notebook · 37.3k ★ · +886 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/microsoft/BitNet" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">microsoft/BitNet</span>
+    <span class="t-meta">C++ · 40.8k ★ · +134 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Alishahryar1/free-claude-code" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Alishahryar1/free-claude-code</span>
+    <span class="t-meta">Python · 58.7k ★ · +705 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/convaiinnovations/laya" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">convaiinnovations/laya</span>
+    <span class="t-meta">Conversational model from ConvAI Innovations</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Cloudflare/clef" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cloudflare/clef</span>
+    <span class="t-meta">Cloudflare's new model release</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">abenzerps/Qwen-Image-2.1-Uncensored-GGUF</span>
+    <span class="t-meta">Uncensored GGUF quant of Qwen-Image-2.1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Video generation model from Lightricks</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Contrastive-LM/CLM-v0.1-8B" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Contrastive-LM/CLM-v0.1-8B</span>
+    <span class="t-meta">8B contrastive language model, first release</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/SupersonicLabs/Julia-1" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">SupersonicLabs/Julia-1</span>
+    <span class="t-meta">New model from Supersonic Labs</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-Image-2.1" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Qwen/Qwen-Image-2.1</span>
+    <span class="t-meta">Latest Qwen image generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B model from the Qwen3.8 generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Cloudflare/clef-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Cloudflare/clef-flash</span>
+    <span class="t-meta">Fast variant of Cloudflare's clef model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4.1-Flash</span>
+    <span class="t-meta">Fast variant of DeepSeek V4.1</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">28</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Space Bunny Free</span>
+    <span class="t-meta">space-bunny-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Cat Jam Free</span>
+    <span class="t-meta">cat-jam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">LongCat 2.5 Preview Free</span>
+    <span class="t-meta">longcat-2.5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Exo Free</span>
+    <span class="t-meta">exo-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Muse Spark 1.3 Contributor Free</span>
+    <span class="t-meta">muse-spark-1.3-contributor-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">10</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/OpenAI/status/2110841898076418336" target="_blank" rel="noopener"><span class="qh-title">OpenAI launches Rosalind Academic Plan for biological research</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://x.com/OpenAI/status/2110741355739963884" target="_blank" rel="noopener"><span class="qh-title">OpenAI and Anthropic each pledge $5M for mathematicians to verify AI math results</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://x.com/DeepLearningAI/status/2110762648136450528" target="_blank" rel="noopener"><span class="qh-title">DeepLearning.AI highlights HYSET: holistic tool-set evaluation for agents</span><span class="qh-src">DeepLearning.AI</span></a></li>
+
+    <li><a href="https://x.com/togethercompute/status/2110837272279232738" target="_blank" rel="noopener"><span class="qh-title">Muse Spark Open live on Together AI, free until Oct 18</span><span class="qh-src">Together AI</span></a></li>
+
+    <li><a href="https://x.com/lmsysorg/status/2110834406760034791" target="_blank" rel="noopener"><span class="qh-title">SGLang adds launch-day support for Muse Spark Open</span><span class="qh-src">LMSYS</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2110733945323368822" target="_blank" rel="noopener"><span class="qh-title">Sakana AI publishes 'Agentic Scientist' framework paper</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://gagadget.com/en/727784-redmagic-12-pro-lands-october-15-with-snapdragon-8-elite-extreme-gen-6/" target="_blank" rel="noopener"><span class="qh-title">RedMagic 12 Pro+ launches in China with Snapdragon 8 Elite Extreme Gen 6</span><span class="qh-src">Gagadget</span></a></li>
+
+    <li><a href="https://www.producthunt.com/posts/ubuntu-26-10-stonking-stingray" target="_blank" rel="noopener"><span class="qh-title">Ubuntu 26.10 'Stonking Stingray' ships with GNOME 51 and Rust coreutils</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/posts/openmuse" target="_blank" rel="noopener"><span class="qh-title">OpenMuse debuts as a self-hostable open-source AI assistant</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/posts/withhuman" target="_blank" rel="noopener"><span class="qh-title">withHuman adds open-source human approval checkpoints to agent workflows</span><span class="qh-src">Product Hunt</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-10-16 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
